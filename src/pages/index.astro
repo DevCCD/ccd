@@ -3,24 +3,19 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Inicio - CCD">
-    <!-- CORRECCIÓN 2: Alto de Pantalla Completa -->
-    <!-- Añadimos `min-h-screen` para que la sección ocupe al menos el alto completo de la pantalla. -->
-    <!-- También usamos `flex` para centrar el contenido verticalmente, lo que mejora la visualización. -->
 
-    <!-- CORRECCIÓN 3: Fondo con Degradado -->
-    <!-- Añadimos las clases `bg-gradient-to-b from-white to-secondary-light/20` -->
-    <!-- Esto crea un degradado de arriba (blanco) a abajo (tu color azul secundario claro con 20% de opacidad). -->
-    <section class="min-h-screen flex items-center bg-gradient-to-b from-white to-secondary-dark/25">
+    <section class="flex items-center bg-gradient-to-b from-white to-secondary-dark/25 pt-0 pb-12 sm:pt-0 sm:pb-0">
+    
 
-        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        <div class="container mx-auto px-6 flex flex-col-reverse md:grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <!-- Columna de Texto -->
-            <div class="text-left">
+            <div class="text-center md:text-left">
                 <!-- CORRECCIÓN 4: Salto de Línea en el Título -->
                 <!-- Añadimos una etiqueta <br /> justo después de "de" para forzar el salto de línea. -->
-                <h1 id="hero-title" class="font-serif text-6xl font-bold text-primary leading-tight">
-                    El Futuro de <br /> las Comunidades
+                <h1 id="hero-title" class="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-primary leading-tight">
+                    El Futuro de <br class="hidden md:block" /> las Comunidades
                 </h1>
-                <p id="hero-subtitle" class="mt-6 font-sans text-xl text-gray-700">
+                <p id="hero-subtitle" class="mt-10 font-sans text-lg md:text-2xl text-gray-700 max-w-lg mx-auto md:mx-0">
                     Cada vez son más las comunidades que priorizan la conectividad económica, física y vital.
                 </p>
                 <a id="hero-button" href="/contacto" class="mt-10 inline-block bg-primary text-white font-bold py-4 px-8 rounded-lg hover:bg-primary-dark transition-colors">
@@ -31,7 +26,7 @@ import Layout from '../layouts/Layout.astro';
             <!-- Columna de Imagen -->
             <!-- NOTA: Reemplaza 'hero-image.png' con el nombre de tu archivo de imagen real. -->
             <!-- Asegúrate de colocar tu imagen en la carpeta `public/`. -->
-            <div id="hero-image">
+            <div id="hero-image" class="w-full max-w-md md:max-w-full mx-auto">
                 <img src="/hero-image.png" alt="Ilustración de una comunidad conectada" class="w-11/12 mx-auto h-auto">
             </div>
         </div>

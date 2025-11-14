@@ -32,5 +32,15 @@ const { title } = Astro.props;
         </main>
 
         <Footer />
+        <script>
+      const header = document.getElementById('main-header');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 10) { // Si el scroll es mayor a 10px
+          header.classList.add('shadow-lg'); // Añade una sombra más notoria
+        } else {
+          header.classList.remove('shadow-lg'); // Quita la sombra
+        }
+      });
+    </script>
     </body>
 </html>

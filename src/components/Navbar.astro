@@ -6,15 +6,15 @@ export interface Props {
 const { currentPath } = Astro.props;
 ---
 
-<header class="bg-white text-gray-800 shadow-md sticky top-0 z-50 transition-all duration-300">
+<header id="main-header" class="bg-white text-gray-800 sticky top-0 z-50 transition-all duration-300">
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
         <!-- Logo -->
         <a href="/">
-            <img src="/logoccd.svg" alt="Logo del Centro para la Competitividad y el Desarrollo" class="h-10 w-auto" />
+            <img src="/logoccd.svg" alt="Logo del Centro para la Competitividad y el Desarrollo" class="h-11 w-auto" />
         </a>
 
         <!-- Menú de Navegación (Desktop) -->
-        <ul class="hidden md:flex items-center space-x-8 text-base font-medium">
+        <ul class="hidden md:flex items-center space-x-8 text-lg font-medium">
             <!-- ... Aquí va todo tu <ul> de escritorio que ya funcionaba perfecto ... -->
             <!-- Lo pego de nuevo para que sea completo -->
             <li class="group relative">
@@ -42,8 +42,8 @@ const { currentPath } = Astro.props;
         </ul>
 
         <!-- Botón a la derecha (Desktop) -->
-        <a href="/milink" class="hidden md:block text-base font-medium text-primary hover:text-primary-dark transition-colors duration-300">
-            MILink
+        <a href="/milink" class="hidden md:block text-lg font-medium text-primary hover:text-primary-dark transition-colors duration-300">
+            MiLink
         </a>
 
         <!-- Botón de Hamburguesa (Móvil) -->
@@ -80,7 +80,7 @@ const { currentPath } = Astro.props;
         <a href="/nosotros" class="block px-3 py-2 rounded-md text-base font-medium text-primary hover:bg-gray-50">Nosotros</a>
         <a href="/contacto" class="block px-3 py-2 rounded-md text-base font-medium text-primary hover:bg-gray-50">Contacto</a>
         <a href="/blog" class="block px-3 py-2 rounded-md text-base font-medium text-primary hover:bg-gray-50">Blog</a>
-        <a href="/milink" class="block px-3 py-2 rounded-md text-base font-medium text-primary hover:bg-gray-50">MILink</a>
+        <a href="/milink" class="block px-3 py-2 rounded-md text-base font-medium text-primary hover:bg-gray-50">MiLink</a>
     </div>
 </div>
     <!-- ========= FIN DE LA NUEVA SECCIÓN ========= -->

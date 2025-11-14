@@ -3,60 +3,53 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Inicio - CCD">
-    <section class="container mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
-        <!-- Columna de Texto -->
-        <div class="text-left">
-            <h1 id="hero-title" class="font-serif text-6xl font-black text-primary leading-tight">
-                El Futuro de las Comunidades
-            </h1>
-            <p id="hero-subtitle" class="mt-6 font-sans text-xl text-gray-700">
-                Cada vez son más las comunidades que priorizan la conectividad económica, física y vital.
-            </p>
-            <a id="hero-button" href="/contacto" class="mt-10 inline-block bg-primary text-white font-bold py-4 px-8 rounded-lg hover:bg-primary-dark transition-colors">
-                Contáctanos
-            </a>
-        </div>
+    <!-- CORRECCIÓN 2: Alto de Pantalla Completa -->
+    <!-- Añadimos `min-h-screen` para que la sección ocupe al menos el alto completo de la pantalla. -->
+    <!-- También usamos `flex` para centrar el contenido verticalmente, lo que mejora la visualización. -->
 
-        <!-- Columna de Imagen (Placeholder) -->
-        <div id="hero-image">
-            <img src="https://placehold.co/600x400/AEC4DB/333333?text=Imagen+del+Hero" alt="Ilustración de una comunidad conectada" class="rounded-lg shadow-2xl">
+    <!-- CORRECCIÓN 3: Fondo con Degradado -->
+    <!-- Añadimos las clases `bg-gradient-to-b from-white to-secondary-light/20` -->
+    <!-- Esto crea un degradado de arriba (blanco) a abajo (tu color azul secundario claro con 20% de opacidad). -->
+    <section class="min-h-screen flex items-center bg-gradient-to-b from-white to-secondary-dark/25">
+
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <!-- Columna de Texto -->
+            <div class="text-left">
+                <!-- CORRECCIÓN 4: Salto de Línea en el Título -->
+                <!-- Añadimos una etiqueta <br /> justo después de "de" para forzar el salto de línea. -->
+                <h1 id="hero-title" class="font-serif text-6xl font-bold text-primary leading-tight">
+                    El Futuro de <br /> las Comunidades
+                </h1>
+                <p id="hero-subtitle" class="mt-6 font-sans text-xl text-gray-700">
+                    Cada vez son más las comunidades que priorizan la conectividad económica, física y vital.
+                </p>
+                <a id="hero-button" href="/contacto" class="mt-10 inline-block bg-primary text-white font-bold py-4 px-8 rounded-lg hover:bg-primary-dark transition-colors">
+                    Contáctanos
+                </a>
+            </div>
+
+            <!-- Columna de Imagen -->
+            <!-- NOTA: Reemplaza 'hero-image.png' con el nombre de tu archivo de imagen real. -->
+            <!-- Asegúrate de colocar tu imagen en la carpeta `public/`. -->
+            <div id="hero-image">
+                <img src="/hero-image.png" alt="Ilustración de una comunidad conectada" class="w-11/12 mx-auto h-auto">
+            </div>
         </div>
     </section>
+
+    <!-- Sección "Nuestros Servicios" como placeholder -->
+    <section class="text-center py-20">
+        <h2 class="font-serif text-4xl font-bold text-primary">Nuestros Servicios</h2>
+    </section>
+
 </Layout>
 
 <script>
-    // Importamos GSAP
     import { gsap } from "gsap";
 
-    // Animamos los elementos "desde" una posición/estado inicial
-    gsap.from("#hero-title", {
-        opacity: 0,
-        y: 50, // Moverse 50px hacia arriba
-        duration: 1, // Duración de 1 segundo
-        ease: "power3.out" // Una curva de aceleración suave
-    });
-
-    gsap.from("#hero-subtitle", {
-        opacity: 0,
-        y: 50,
-        duration: 1,
-        delay: 0.3, // Empezar 0.3s después del título
-        ease: "power3.out"
-    });
-
-    gsap.from("#hero-button", {
-        opacity: 0,
-        y: 50,
-        duration: 1,
-        delay: 0.5,
-        ease: "power3.out"
-    });
-
-    gsap.from("#hero-image", {
-        opacity: 0,
-        scale: 0.9, // Empezar un poco más pequeño
-        duration: 1.2,
-        delay: 0.2,
-        ease: "power3.out"
-    });
+    // Las animaciones de GSAP siguen funcionando perfectamente
+    gsap.from("#hero-title", { opacity: 0, y: 50, duration: 1, ease: "power3.out" });
+    gsap.from("#hero-subtitle", { opacity: 0, y: 50, duration: 1, delay: 0.3, ease: "power3.out" });
+    gsap.from("#hero-button", { opacity: 0, y: 50, duration: 1, delay: 0.5, ease: "power3.out" });
+    gsap.from("#hero-image", { opacity: 0, scale: 0.9, duration: 1.2, delay: 0.2, ease: "power3.out" });
 </script>

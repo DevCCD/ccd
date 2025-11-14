@@ -1,0 +1,116 @@
+---
+// Recibimos la URL actual desde el layout para saber qué página está activa.
+export interface Props {
+    currentPath: string;
+}
+const { currentPath } = Astro.props;
+---
+
+<header class="bg-white text-gray-800 shadow-md sticky top-0 z-50 transition-all duration-300">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <!-- Logo -->
+        <a href="/">
+            <img src="/logoccd.svg" alt="Logo del Centro para la Competitividad y el Desarrollo" class="h-10 w-auto" />
+        </a>
+
+        <!-- Menú de Navegación (Desktop) -->
+        <ul class="hidden md:flex items-center space-x-8 text-base font-medium">
+            <!-- ... Aquí va todo tu <ul> de escritorio que ya funcionaba perfecto ... -->
+            <!-- Lo pego de nuevo para que sea completo -->
+            <li class="group relative">
+                <a href="/capacidades" class="flex items-center text-primary transition-colors duration-300 hover:text-primary-dark" class:list={{ 'underline decoration-primary decoration-2 underline-offset-8': currentPath.startsWith('/capacidades') }}>
+                    Capacidades
+                    <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </a>
+                <!-- Panel del Desplegable Desktop -->
+                <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto w-max">
+                    <div class="bg-white rounded-lg shadow-xl p-8">
+                        <div class="grid grid-cols-3 gap-x-16 gap-y-4 text-gray-800 font-normal text-base">
+                           <ul class="space-y-4"><li><a href="#" class="hover:text-primary">Competitividad</a></li></ul>
+                           <ul class="space-y-4"><li><a href="#" class="hover:text-primary">Innovación</a></li></ul>
+                           <ul class="space-y-4"><li><a href="#" class="hover:text-primary">Proyectos</a></li></ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li><a href="/industrias" class="text-primary transition-colors duration-300 hover:text-primary-dark" class:list={{ "underline decoration-primary decoration-2 underline-offset-8": currentPath === '/industrias' }}>Industrias</a></li>
+            <li><a href="/paises" class="text-primary transition-colors duration-300 hover:text-primary-dark" class:list={{ "underline decoration-primary decoration-2 underline-offset-8": currentPath === '/paises' }}>Países</a></li>
+            <li><a href="/carreras" class="text-primary transition-colors duration-300 hover:text-primary-dark" class:list={{ "underline decoration-primary decoration-2 underline-offset-8": currentPath === '/carreras' }}>Carreras</a></li>
+            <li><a href="/nosotros" class="text-primary transition-colors duration-300 hover:text-primary-dark" class:list={{ "underline decoration-primary decoration-2 underline-offset-8": currentPath === '/nosotros' }}>Nosotros</a></li>
+            <li><a href="/contacto" class="text-primary transition-colors duration-300 hover:text-primary-dark" class:list={{ "underline decoration-primary decoration-2 underline-offset-8": currentPath === '/contacto' }}>Contacto</a></li>
+            <li><a href="/blog" class="text-primary transition-colors duration-300 hover:text-primary-dark" class:list={{ "underline decoration-primary decoration-2 underline-offset-8": currentPath === '/blog' }}>Blog</a></li>
+        </ul>
+
+        <!-- Botón a la derecha (Desktop) -->
+        <a href="/milink" class="hidden md:block text-base font-medium text-primary hover:text-primary-dark transition-colors duration-300">
+            MILink
+        </a>
+
+        <!-- Botón de Hamburguesa (Móvil) -->
+        <button id="mobile-menu-button" class="md:hidden p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary">
+            <!-- Icono de Hamburguesa -->
+            <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            <!-- Icono de 'X' (inicialmente oculto) -->
+            <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+    </nav>
+<!-- ========= INICIO DE LA SECCIÓN MODIFICADA: PANEL DEL MENÚ MÓVIL ========= -->
+<div id="mobile-menu" class="hidden md:hidden bg-white">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-gray-200">
+        <!-- Elemento de Menú con Desplegable (Acordeón) -->
+        <div>
+            <button id="accordion-button" class="w-full flex justify-between items-center px-3 py-2 rounded-md text-base font-medium text-primary hover:bg-gray-50">
+                <span>Capacidades</span>
+                <!-- Icono de flecha que rotará -->
+                <svg id="accordion-arrow" class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <!-- Sub-menú (inicialmente oculto) -->
+            <div id="accordion-panel" class="pl-4 pt-2 pb-1 accordion-panel">
+                <a href="/capacidades/competitividad" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-100">Competitividad</a>
+                <a href="/capacidades/desarrollo" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-100">Desarrollo</a>
+                <a href="/capacidades/digitalizacion" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-100">Digitalización</a>
+                <!-- ... Añade aquí todos los demás sub-enlaces ... -->
+            </div>
+        </div>
+
+        <!-- Resto de enlaces (sin desplegable) -->
+        <a href="/industrias" class="block px-3 py-2 rounded-md text-base font-medium text-primary hover:bg-gray-50">Industrias</a>
+        <a href="/paises" class="block px-3 py-2 rounded-md text-base font-medium text-primary hover:bg-gray-50">Países</a>
+        <a href="/carreras" class="block px-3 py-2 rounded-md text-base font-medium text-primary hover:bg-gray-50">Carreras</a>
+        <a href="/nosotros" class="block px-3 py-2 rounded-md text-base font-medium text-primary hover:bg-gray-50">Nosotros</a>
+        <a href="/contacto" class="block px-3 py-2 rounded-md text-base font-medium text-primary hover:bg-gray-50">Contacto</a>
+        <a href="/blog" class="block px-3 py-2 rounded-md text-base font-medium text-primary hover:bg-gray-50">Blog</a>
+        <a href="/milink" class="block px-3 py-2 rounded-md text-base font-medium text-primary hover:bg-gray-50">MILink</a>
+    </div>
+</div>
+    <!-- ========= FIN DE LA NUEVA SECCIÓN ========= -->
+
+</header>
+
+<!-- ========= INICIO DE LA NUEVA SECCIÓN: SCRIPT DE INTERACTIVIDAD ========= -->
+<script>
+    // --- Lógica del Menú Principal (Hamburguesa) ---
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        hamburgerIcon.classList.toggle('hidden');
+        closeIcon.classList.toggle('hidden');
+    });
+
+    // --- NUEVA LÓGICA: Acordeón para "Capacidades" ---
+   const accordionButton = document.getElementById('accordion-button');
+const accordionPanel = document.getElementById('accordion-panel');
+const accordionArrow = document.getElementById('accordion-arrow');
+
+accordionButton.addEventListener('click', () => {
+    // Alterna nuestra nueva clase de CSS para la transición
+    accordionPanel.classList.toggle('open'); // <-- LÍNEA MODIFICADA
+    // Rota la flecha para indicar el estado (abierto/cerrado)
+    accordionArrow.classList.toggle('rotate-180');
+});
+</script>
+<!-- ========= FIN DE LA NUEVA SECCIÓN ========= -->

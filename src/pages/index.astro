@@ -1,16 +1,62 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Inicio - CCD">
+    <section class="container mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
+        <!-- Columna de Texto -->
+        <div class="text-left">
+            <h1 id="hero-title" class="font-serif text-6xl font-black text-primary leading-tight">
+                El Futuro de las Comunidades
+            </h1>
+            <p id="hero-subtitle" class="mt-6 font-sans text-xl text-gray-700">
+                Cada vez son más las comunidades que priorizan la conectividad económica, física y vital.
+            </p>
+            <a id="hero-button" href="/contacto" class="mt-10 inline-block bg-primary text-white font-bold py-4 px-8 rounded-lg hover:bg-primary-dark transition-colors">
+                Contáctanos
+            </a>
+        </div>
+
+        <!-- Columna de Imagen (Placeholder) -->
+        <div id="hero-image">
+            <img src="https://placehold.co/600x400/AEC4DB/333333?text=Imagen+del+Hero" alt="Ilustración de una comunidad conectada" class="rounded-lg shadow-2xl">
+        </div>
+    </section>
+</Layout>
+
+<script>
+    // Importamos GSAP
+    import { gsap } from "gsap";
+
+    // Animamos los elementos "desde" una posición/estado inicial
+    gsap.from("#hero-title", {
+        opacity: 0,
+        y: 50, // Moverse 50px hacia arriba
+        duration: 1, // Duración de 1 segundo
+        ease: "power3.out" // Una curva de aceleración suave
+    });
+
+    gsap.from("#hero-subtitle", {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        delay: 0.3, // Empezar 0.3s después del título
+        ease: "power3.out"
+    });
+
+    gsap.from("#hero-button", {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        delay: 0.5,
+        ease: "power3.out"
+    });
+
+    gsap.from("#hero-image", {
+        opacity: 0,
+        scale: 0.9, // Empezar un poco más pequeño
+        duration: 1.2,
+        delay: 0.2,
+        ease: "power3.out"
+    });
+</script>

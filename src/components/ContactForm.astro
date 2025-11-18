@@ -1,0 +1,46 @@
+---
+// De momento, este componente no necesita lógica en el servidor.
+---
+<section class="bg-gray-100 py-16 sm:py-24 px-20 lg:px-20">
+    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-24 items-center">
+        
+        <!-- Columna de Texto -->
+        <div class="text-left">
+            <h2 class="font-serif text-5xl font-bold text-gray-900 mb-6">Contáctanos</h2>
+            <p class="font-sans text-lg text-gray-900 mb-4">
+                Si desea obtener más información sobre nuestros servicios, complete el formulario. Un miembro del equipo se pondrá en contacto con usted lo antes posible.
+            </p>
+            <p class="font-sans text-base text-gray-500">
+                Al enviar este formulario, acepta que el CCD se comunique con usted sobre sus productos y servicios. Nunca compartiremos sus datos con terceros y podrá darse de baja en cualquier momento.
+            </p>
+        </div>
+
+        <!-- Columna del Formulario -->
+        <div class="w-full">
+            <form action="#" method="POST" class="space-y-6">
+                <div>
+                    <label for="name" class="block text-lg font-medium text-gray-700">Nombre</label>
+                    <input type="text" name="name" id="name" placeholder="Nombre" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary">
+                </div>
+                <div>
+                    <label for="lastname" class="block text-lg font-medium text-gray-700">Apellido</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Apellido" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary">
+                </div>
+                <div>
+                    <label for="phone" class="block text-lg font-medium text-gray-700">Celular</label>
+                    <input type="tel" name="phone" id="phone" placeholder="+51 999 999 999" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary">
+                </div>
+                <div>
+                    <label for="email" class="block text-lg font-medium text-gray-700">Correo</label>
+                    <input type="email" name="email" id="email" placeholder="usuario@gmail.com" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary">
+                </div>
+                <div>
+                    <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-lg font-medium text-white bg-primary-dark hover:bg-primary transition-colors">
+                        Enviar
+                    </button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</section>

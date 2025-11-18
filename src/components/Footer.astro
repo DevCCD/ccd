@@ -3,10 +3,11 @@ const currentYear = new Date().getFullYear();
 
 ---
 <footer class="bg-primary text-white">
-    <div class="container mx-auto px-6 py-12 md:py-16">
+    <div class="container mx-auto   md:py-16 pb-4 pt-12 md:pt-16 md:pb-8">
 
         <!-- GRID DE 5 COLUMNAS PARA ENLACES -->
-<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-8 gap-y-10 text-center md:text-left">            <!-- Columna 1: Capacidades -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-8 gap-y-10">
+            <!-- Columna 1: Capacidades -->
             <div class="space-y-4">
                 <h4 class="font-bold text-lg">Capacidades</h4>
                 <ul class="space-y-2 font-light">
@@ -56,13 +57,14 @@ const currentYear = new Date().getFullYear();
         <hr class="border-white/20 my-12">
 
         <!-- INFO DE MARCA, CONTACTO Y REDES SOCIALES -->
-<div class="flex flex-col md:flex-row md:justify-between items-center md:items-start gap-8">
+        <div class="flex flex-col md:flex-row md:justify-between items-start md:items-center gap-8">
+            <!-- Izquierda: Logo -->
             <a href="/"><img src="/logo-ccd-white.svg" alt="Logo CCD en blanco" class="h-20 w-auto"></a>
 
             <!-- Derecha: Contacto y Redes -->
-            <div class="flex flex-col items-center md:items-end gap-6">
+            <div class="flex flex-col items-start md:items-end gap-6">
                 <!-- Contacto -->
-                <div class="flex flex-col items-center md:items-end gap-2 font-light text-base">
+                <div class="flex flex-col items-start md:items-end gap-2 font-light text-md">
                     <div class="flex items-center gap-3">
                         <svg class="w-7 h-7 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                         <span>Calle German Schreiber 276 - Lima - Perú</span>

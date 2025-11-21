@@ -1,0 +1,161 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+
+const historia = [
+  {
+    year: "2011", // Índice 0 (Primera fila)
+    title: "Fundación",
+    text: "El Centro para la Competitividad y el Desarrollo (CCD) se constituye con un equipo de profesionales con experiencia principalmente en el Ministerio de Economía y Finanzas (MEF) del Perú, en el Banco Central de Reserva del Perú (BCRP) y en el FMI.",
+    colorClass: "text-[#F47942] border-[#F47942]", 
+    icon: "building"
+  },
+  {
+    year: "2015", // Índice 1 (Segunda fila)
+    title: "Consolidación",
+    text: "El Centro para la Competitividad y el Desarrollo (CCD) se consolida como una institución líder y altamente especializada en competitividad y desarrollo a escalas nacional, regional, local y comunal.",
+    colorClass: "text-[#2E7D75] border-[#2E7D75]", 
+    icon: "chart"
+  },
+  {
+    year: "2020", // Índice 2 (Tercera fila)
+    title: "Expansión",
+    text: "El Centro para la Competitividad y el Desarrollo (CCD) comienza a realizar actividades y proyectos en competitividad y desarrollo con instituciones internacionales para empresas globales.",
+    colorClass: "text-[#6A4C93] border-[#6A4C93]", 
+    icon: "globe"
+  },
+  {
+    year: "2025", // Índice 3 (Cuarta fila)
+    title: "Presente",
+    text: "El Centro para la Competitividad y el Desarrollo (CCD) se encuentra en un proceso de intensificar I+D para mejorar los servicios sobre Desarrollo, Competitividad y Productividad, así como en la automatización y aplicación de tecnologías virtuales.",
+    colorClass: "text-[#910121] border-[#910121]", 
+    icon: "brain"
+  }
+];
+---
+
+<Layout title="Visión e Historia - CCD">
+    
+    <PageHeader 
+        title="Visión" 
+        description="Promover el desarrollo y la prosperidad con oportunidades y alta calidad de vida de la población nacional, regional, provincial, distrital y comunal." 
+    />
+
+    <section class="py-24 pb-60 overflow-hidden bg-white">
+        <div class="container mx-auto px-6 relative">
+            
+            <h2 class="text-center font-serif text-5xl font-bold text-primary mb-32">Historia</h2>
+
+            <!-- ========================================== -->
+            <!-- LÍNEA DE TIEMPO (FONDO)                    -->
+            <!-- ========================================== -->
+            <!-- Desktop: Centro | Móvil: Izquierda (left-8) -->
+            <div class="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 top-40 bottom-0 w-[4px] bg-gray-200 h-[85%] z-0">
+                <div id="line-progress" class="w-full bg-gray-400 origin-top h-0"></div>
+                <!-- Flecha Final -->
+                <div class="absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-gray-400">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                </div>
+            </div>
+
+            <!-- ========================================== -->
+            <!-- ITEMS (GRID 3 COLUMNAS EN DESKTOP)         -->
+            <!-- ========================================== -->
+            <div class="space-y-16 relative z-10">
+                {historia.map((item, index) => {
+                    const isLayoutLeft = index % 2 === 0; // Texto a la izquierda en el primer item (2011)
+                    
+                    return (
+                        <div class="timeline-item flex flex-col md:flex-row items-start md:items-center w-full relative">
+                            
+                            <!-- COLUMNA 1: IZQUIERDA (Desktop: 45%) -->
+                            <div class={`w-full md:w-[45%] pl-20 md:pl-0 md:pr-12 ${isLayoutLeft ? 'text-left md:text-right' : 'text-left'}`}>
+                                {isLayoutLeft ? (
+                                    // CASO A: TEXTO (Ej: Fundación)
+                                    <div class="fade-in-element">
+                                        <!-- Año visible solo en móvil aquí -->
+                                        <span class="md:hidden font-serif text-5xl font-bold text-[#A0A0A0] block mb-2">{item.year}</span>
+                                        <h3 class={`font-serif text-4xl font-bold mb-4 ${item.colorClass}`}>{item.title}</h3>
+                                        <p class="font-sans text-gray-600 text-lg leading-relaxed">{item.text}</p>
+                                    </div>
+                                ) : (
+                                    // CASO B: AÑO (Ej: 2015)
+                                    <div class="fade-in-element hidden md:block">
+                                        <span class="font-serif text-7xl font-bold text-[#A0A0A0]">{item.year}</span>
+                                    </div>
+                                )}
+                            </div>
+
+                            <!-- COLUMNA 2: CENTRO (ICONO) (Desktop: 10%) -->
+                            <!-- En móvil lo posicionamos absoluto a la izquierda -->
+                            <div class="absolute left-[6px] md:static md:w-[10%] flex justify-center items-center z-20 top-0 md:top-auto">
+                                <div class={`group w-16 h-16 md:w-32 md:h-32 rounded-full bg-white border-[3px] md:border-[5px] ${item.colorClass} flex items-center justify-center shadow-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl`}>
+                                    <div class="transform transition-transform duration-500 group-hover:-translate-y-1">
+                                        {item.icon === 'building' && <svg class="w-7 h-7 md:w-14 md:h-14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>}
+                                        {item.icon === 'chart' && <svg class="w-7 h-7 md:w-14 md:h-14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>}
+                                        {item.icon === 'globe' && <svg class="w-7 h-7 md:w-14 md:h-14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>}
+                                        {item.icon === 'brain' && <svg class="w-7 h-7 md:w-14 md:h-14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/></svg>}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- COLUMNA 3: DERECHA (Desktop: 45%) -->
+                            <div class={`w-full md:w-[45%] md:pl-12 ${!isLayoutLeft ? 'text-left' : 'text-left'}`}>
+                                {!isLayoutLeft ? (
+                                    // CASO B: TEXTO (Ej: Consolidación)
+                                    <div class="fade-in-element pt-2 md:pt-0 pl-20 md:pl-0">
+                                        <span class="md:hidden font-serif text-5xl font-bold text-[#A0A0A0] block mb-2">{item.year}</span>
+                                        <h3 class={`font-serif text-4xl font-bold mb-4 ${item.colorClass}`}>{item.title}</h3>
+                                        <p class="font-sans text-gray-600 text-base md:text-lg leading-relaxed">{item.text}</p>
+                                    </div>
+                                ) : (
+                                    // CASO A: AÑO (Ej: 2011)
+                                    <div class="fade-in-element hidden md:block">
+                                        <span class="font-serif text-7xl font-bold text-[#A0A0A0] leading-none">{item.year}</span>
+                                    </div>
+                                )}
+                            </div>
+
+                        </div>
+                    )
+                })}
+            </div>
+        </div>
+    </section>
+
+</Layout>
+
+<script>
+    import { gsap } from "gsap";
+    import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to("#line-progress", {
+        height: "100%",
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".timeline-item",
+            start: "top center",
+            end: "bottom bottom",
+            scrub: 0.5,
+        }
+    });
+
+    const items = document.querySelectorAll('.timeline-item');
+    items.forEach((item) => {
+        const elements = item.querySelectorAll('.fade-in-element, .rounded-full');
+        gsap.from(elements, {
+            y: 30,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.1,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: item,
+                start: "top 85%",
+                toggleActions: "play none none reverse"
+            }
+        });
+    });
+</script>

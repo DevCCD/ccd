@@ -1,92 +1,196 @@
 ---
-// Recibimos la URL actual desde el layout para saber qué página está activa.
 export interface Props {
     currentPath: string;
 }
 const { currentPath } = Astro.props;
+
+// Helpers para saber si estamos dentro de una sección (incluye subpáginas)
+const isCapacidadesActive = currentPath.startsWith('/capacidades');
+const isIndustriasActive = currentPath.startsWith('/industrias');
+const isNosotrosActive = currentPath.startsWith('/nosotros');
+
+// Clase común para el estado activo (Negrita y Subrayado)
+const activeClass = "text-primary font-bold underline decoration-primary decoration-2 underline-offset-8";
+const inactiveClass = "text-primary hover:text-primary-dark";
 ---
 
-<header id="main-header" class="bg-white text-gray-800 sticky top-0 z-50 transition-all duration-300">
-    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+<header id="main-header" class="bg-white text-gray-800 sticky top-0 z-50 transition-all duration-300 py-3">
+    <nav class="container mx-auto px-6 flex justify-between items-center">
         <!-- Logo -->
         <a href="/">
-            <img src="/logoccd.svg" alt="Logo del Centro para la Competitividad y el Desarrollo" class="h-11 w-auto" />
+            <img src="/logoccd.svg" alt="Logo del Centro para la Competitividad y el Desarrollo" class="h-12 w-auto" />
         </a>
 
-        <!-- Menú de Navegación (Desktop) -->
-        <ul class="hidden md:flex items-center space-x-8 text-lg font-light">
-            <!-- ... Aquí va todo tu <ul> de escritorio que ya funcionaba perfecto ... -->
-            <!-- Lo pego de nuevo para que sea completo -->
+        <!-- ============================================ -->
+        <!-- MENÚ DE NAVEGACIÓN (DESKTOP)                 -->
+        <!-- ============================================ -->
+        <ul class="hidden md:flex items-center space-x-8 text-lg font-medium">
+            
+            <!-- 1. CAPACIDADES (DESPLEGABLE MÁS ANCHO) -->
             <li class="group relative">
-                <a href="/capacidades" class="flex items-center text-primary transition-colors duration-300 hover:text-primary-dark" class:list={{ 'underline decoration-primary decoration-2 underline-offset-8': currentPath.startsWith('/capacidades') }}>
+                <a 
+                    href="/capacidades" 
+                    class="flex items-center transition-colors duration-300"
+                    class:list={[ isCapacidadesActive ? activeClass : inactiveClass ]}
+                >
                     Capacidades
-                    <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </a>
-                <!-- Panel del Desplegable Desktop -->
-                <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto w-max">
-                    <div class="bg-white rounded-lg shadow-xl p-8">
-                        <div class="grid grid-cols-3 gap-x-16 gap-y-4 text-gray-800 font-normal text-base">
-                           <ul class="space-y-4"><li><a href="#" class="hover:text-primary">Competitividad</a></li></ul>
-                           <ul class="space-y-4"><li><a href="#" class="hover:text-primary">Innovación</a></li></ul>
-                           <ul class="space-y-4"><li><a href="#" class="hover:text-primary">Proyectos</a></li></ul>
+                <!-- Panel Desplegable: Aumentado a w-[900px] y más padding (p-10) -->
+                <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto w-[900px]">
+                    <div class="bg-white rounded-lg shadow-xl p-10 border-t-4 border-primary">
+                        <div class="grid grid-cols-3 gap-x-12 gap-y-6 text-gray-600 font-normal text-base">
+                            <ul class="space-y-3">
+                                <li><a href="#" class="hover:text-primary hover:underline block">Competitividad</a></li>
+                                <li><a href="#" class="hover:text-primary hover:underline block">Desarrollo</a></li>
+                                <li><a href="#" class="hover:text-primary hover:underline block">Digitalización</a></li>
+                                <li><a href="#" class="hover:text-primary hover:underline block">Estudios</a></li>
+                                <li><a href="#" class="hover:text-primary hover:underline block">Evaluación</a></li>
+                                <li><a href="#" class="hover:text-primary hover:underline block">Fortalecimiento de Capacidades</a></li>
+                            </ul>
+                            <ul class="space-y-3">
+                                <li><a href="#" class="hover:text-primary hover:underline block">Innovación</a></li>
+                                <li><a href="#" class="hover:text-primary hover:underline block">Innovación para el Desarrollo</a></li>
+                                <li><a href="#" class="hover:text-primary hover:underline block">Inversiones</a></li>
+                                <li><a href="#" class="hover:text-primary hover:underline block">KPIs</a></li>
+                                <li><a href="#" class="hover:text-primary hover:underline block">Planeamiento</a></li>
+                                <li><a href="#" class="hover:text-primary hover:underline block">Política y Gestión para el Desarrollo</a></li>
+                            </ul>
+                            <ul class="space-y-3">
+                                <li><a href="#" class="hover:text-primary hover:underline block">Proyectos</a></li>
+                                <li><a href="#" class="hover:text-primary hover:underline block">Sistemas de Desarrollo</a></li>
+                                <li><a href="#" class="hover:text-primary hover:underline block">Sostenibilidad</a></li>
+                                <li><a href="#" class="hover:text-primary hover:underline block">Tecnología</a></li>
+                                <li><a href="#" class="hover:text-primary hover:underline block">Transformación</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </li>
-            <li><a href="/industrias" class="text-primary transition-colors duration-300 hover:text-primary-dark" class:list={{ "underline decoration-primary decoration-2 underline-offset-8": currentPath === '/industrias' }}>Industrias</a></li>
-            <li><a href="/paises" class="text-primary transition-colors duration-300 hover:text-primary-dark" class:list={{ "underline decoration-primary decoration-2 underline-offset-8": currentPath === '/paises' }}>Países</a></li>
-            <li><a href="/carreras" class="text-primary transition-colors duration-300 hover:text-primary-dark" class:list={{ "underline decoration-primary decoration-2 underline-offset-8": currentPath === '/carreras' }}>Carreras</a></li>
-            <li><a href="/nosotros" class="text-primary transition-colors duration-300 hover:text-primary-dark" class:list={{ "underline decoration-primary decoration-2 underline-offset-8": currentPath === '/nosotros' }}>Nosotros</a></li>
-            <li><a href="/contacto" class="text-primary transition-colors duration-300 hover:text-primary-dark" class:list={{ "underline decoration-primary decoration-2 underline-offset-8": currentPath === '/contacto' }}>Contacto</a></li>
-            <li><a href="/blog" class="text-primary transition-colors duration-300 hover:text-primary-dark" class:list={{ "underline decoration-primary decoration-2 underline-offset-8": currentPath === '/blog' }}>Blog</a></li>
+
+            <!-- 2. INDUSTRIAS (DESPLEGABLE MÁS ANCHO) -->
+            <li class="group relative">
+                <a 
+                    href="/industrias" 
+                    class="flex items-center transition-colors duration-300"
+                    class:list={[ isIndustriasActive ? activeClass : inactiveClass ]}
+                >
+                    Industrias
+                    <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </a>
+                <!-- Panel Desplegable: Aumentado a w-[800px] -->
+                <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto w-[800px]">
+                    <div class="bg-white rounded-lg shadow-xl p-10 border-t-4 border-primary">
+                        <div class="grid grid-cols-3 gap-x-12 gap-y-6 text-gray-600 font-normal text-base">
+                            <ul class="space-y-3">
+                                <li><a href="#" class="hover:text-primary hover:underline block">Agricultura</a></li>
+                                <li><a href="#" class="hover:text-primary hover:underline block">Agroindustria</a></li>
+                                <li><a href="#" class="hover:text-primary hover:underline block">Digitalización</a></li>
+                                <li><a href="#" class="hover:text-primary hover:underline block">Avícola</a></li>
+                                <li><a href="#" class="hover:text-primary hover:underline block">Educación</a></li>
+                            </ul>
+                            <ul class="space-y-3">
+                                <li><a href="#" class="hover:text-primary hover:underline block">Infraestructura</a></li>
+                                <li><a href="#" class="hover:text-primary hover:underline block">Minería</a></li>
+                                <li><a href="#" class="hover:text-primary hover:underline block">Pecuario</a></li>
+                                <li><a href="#" class="hover:text-primary hover:underline block">Petróleo y Gas</a></li>
+                                <li><a href="#" class="hover:text-primary hover:underline block">Saneamiento</a></li>
+                            </ul>
+                            <ul class="space-y-3">
+                                <li><a href="#" class="hover:text-primary hover:underline block">Sector Público</a></li>
+                                <li><a href="#" class="hover:text-primary hover:underline block">Sector Social</a></li>
+                                <li><a href="#" class="hover:text-primary hover:underline block">Sostenibilidad</a></li>
+                                <li><a href="#" class="hover:text-primary hover:underline block">Tecnología</a></li>
+                                <li><a href="#" class="hover:text-primary hover:underline block">Textil</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li><a href="/paises" class="transition-colors duration-300" class:list={[ currentPath === '/paises' ? activeClass : inactiveClass ]}>Países</a></li>
+            <li><a href="/carreras" class="transition-colors duration-300" class:list={[ currentPath === '/carreras' ? activeClass : inactiveClass ]}>Carreras</a></li>
+            
+            <!-- 3. NOSOTROS (DESPLEGABLE MÁS ANCHO) -->
+            <li class="group relative">
+                <button 
+                    class="flex items-center transition-colors duration-300 cursor-pointer"
+                    class:list={[ isNosotrosActive ? activeClass : inactiveClass ]}
+                >
+                    Nosotros
+                    <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <!-- Panel Desplegable: Aumentado a w-[650px] -->
+                <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto w-[650px]">
+                    <div class="bg-white rounded-lg shadow-xl p-10 border-t-4 border-primary">
+                        <div class="grid grid-cols-3 gap-10 text-gray-600 font-normal text-base">
+                            <ul class="space-y-4">
+                                <li><a href="/nosotros/vision-historia" class="hover:text-primary hover:underline block">Visión</a></li>
+                                <li><a href="/nosotros/vision-historia#historia" class="hover:text-primary hover:underline block">Historia</a></li>
+                            </ul>
+                            <ul class="space-y-4">
+                                <li><a href="/nosotros/equipo" class="hover:text-primary hover:underline block">Nuestro Equipo</a></li>
+                                <li><a href="/nosotros/equipo#liderazgo" class="hover:text-primary hover:underline block">Nuestro Liderazgo</a></li>
+                            </ul>
+                            <ul class="space-y-4">
+                                <li><a href="/nosotros/enfoque" class="hover:text-primary hover:underline block">Enfoque de trabajo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li><a href="/contacto" class="transition-colors duration-300" class:list={[ currentPath === '/contacto' ? activeClass : inactiveClass ]}>Contacto</a></li>
+            <li><a href="/blog" class="transition-colors duration-300" class:list={[ currentPath === '/blog' ? activeClass : inactiveClass ]}>Blog</a></li>
         </ul>
 
-        <!-- Botón a la derecha (Desktop) -->
+        <!-- Botón MILink -->
         <a href="/milink" class="hidden md:block text-lg font-medium text-primary hover:text-primary-dark transition-colors duration-300">
-            MiLink
+            MILink
         </a>
 
-        <!-- Botón de Hamburguesa (Móvil) -->
-        <button id="mobile-menu-button" class="md:hidden p-2 rounded-md border-2 border-primary text-primary hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary">            <!-- Icono de Hamburguesa -->
-            <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-            <!-- Icono de 'X' (inicialmente oculto) -->
-            <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        <!-- Botón Hamburguesa Móvil -->
+        <button id="mobile-menu-button" class="md:hidden p-2 rounded-md border-2 border-primary text-primary hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary">
+            <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
         </button>
     </nav>
-<!-- ========= INICIO DE LA SECCIÓN MODIFICADA: PANEL DEL MENÚ MÓVIL ========= -->
-<div id="mobile-menu" class="hidden md:hidden bg-white">
-    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-gray-200">
-        <!-- Elemento de Menú con Desplegable (Acordeón) -->
-        <div>
-            <button id="accordion-button" class="w-full flex justify-between items-center px-3 py-2 rounded-md text-base font-medium text-primary hover:bg-gray-50">
-                <span>Capacidades</span>
-                <!-- Icono de flecha que rotará -->
-                <svg id="accordion-arrow" class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-            </button>
-            <!-- Sub-menú (inicialmente oculto) -->
-            <div id="accordion-panel" class="pl-4 pt-2 pb-1 accordion-panel">
-                <a href="/capacidades/competitividad" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-100">Competitividad</a>
-                <a href="/capacidades/desarrollo" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-100">Desarrollo</a>
-                <a href="/capacidades/digitalizacion" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-100">Digitalización</a>
-                <!-- ... Añade aquí todos los demás sub-enlaces ... -->
-            </div>
-        </div>
 
-        <!-- Resto de enlaces (sin desplegable) -->
-        <a href="/industrias" class="block px-3 py-2 rounded-md text-base font-medium text-primary hover:bg-gray-50">Industrias</a>
-        <a href="/paises" class="block px-3 py-2 rounded-md text-base font-medium text-primary hover:bg-gray-50">Países</a>
-        <a href="/carreras" class="block px-3 py-2 rounded-md text-base font-medium text-primary hover:bg-gray-50">Carreras</a>
-        <a href="/nosotros" class="block px-3 py-2 rounded-md text-base font-medium text-primary hover:bg-gray-50">Nosotros</a>
-        <a href="/contacto" class="block px-3 py-2 rounded-md text-base font-medium text-primary hover:bg-gray-50">Contacto</a>
-        <a href="/blog" class="block px-3 py-2 rounded-md text-base font-medium text-primary hover:bg-gray-50">Blog</a>
-        <a href="/milink" class="block px-3 py-2 rounded-md text-base font-medium text-primary hover:bg-gray-50">MiLink</a>
+    <!-- ============================================ -->
+    <!-- MENÚ MÓVIL (SIMPLIFICADO)                    -->
+    <!-- ============================================ -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-inner">
+        <div class="px-4 pt-4 pb-6 space-y-2">
+            
+            <!-- Enlaces simples para facilitar navegación en móvil -->
+            <a href="/capacidades" class="block px-3 py-3 rounded-md text-base font-medium text-primary hover:bg-gray-50 hover:text-primary-dark" class:list={{ 'bg-gray-50 font-bold': isCapacidadesActive }}>Capacidades</a>
+            <a href="/industrias" class="block px-3 py-3 rounded-md text-base font-medium text-primary hover:bg-gray-50 hover:text-primary-dark" class:list={{ 'bg-gray-50 font-bold': isIndustriasActive }}>Industrias</a>
+            <a href="/paises" class="block px-3 py-3 rounded-md text-base font-medium text-primary hover:bg-gray-50 hover:text-primary-dark" class:list={{ 'bg-gray-50 font-bold': currentPath === '/paises' }}>Países</a>
+            <a href="/carreras" class="block px-3 py-3 rounded-md text-base font-medium text-primary hover:bg-gray-50 hover:text-primary-dark" class:list={{ 'bg-gray-50 font-bold': currentPath === '/carreras' }}>Carreras</a>
+            
+            <!-- Acordeón NOSOTROS (Lo mantenemos porque tiene pocas opciones y específicas) -->
+            <div>
+                <button id="accordion-nosotros-btn" class="w-full flex justify-between items-center px-3 py-3 rounded-md text-base font-medium text-primary hover:bg-gray-50 hover:text-primary-dark transition-colors" class:list={{ 'bg-gray-50 font-bold': isNosotrosActive }}>
+                    <span>Nosotros</span>
+                    <svg id="arrow-nosotros" class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div id="panel-nosotros" class="accordion-panel pl-4">
+                    <div class="py-2 space-y-2 border-l-2 border-gray-100 ml-2 pl-2 text-gray-600">
+                        <a href="/nosotros/vision-historia" class="block px-3 py-2 rounded-md text-sm font-medium hover:text-primary hover:bg-gray-50">Visión e Historia</a>
+                        <a href="/nosotros/equipo" class="block px-3 py-2 rounded-md text-sm font-medium hover:text-primary hover:bg-gray-50">Equipo y Liderazgo</a>
+                        <a href="/nosotros/enfoque" class="block px-3 py-2 rounded-md text-sm font-medium hover:text-primary hover:bg-gray-50">Enfoque de trabajo</a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="/contacto" class="block px-3 py-3 rounded-md text-base font-medium text-primary hover:bg-gray-50 hover:text-primary-dark" class:list={{ 'bg-gray-50 font-bold': currentPath === '/contacto' }}>Contacto</a>
+            <a href="/blog" class="block px-3 py-3 rounded-md text-base font-medium text-primary hover:bg-gray-50 hover:text-primary-dark" class:list={{ 'bg-gray-50 font-bold': currentPath === '/blog' }}>Blog</a>
+            <a href="/milink" class="block px-3 py-3 rounded-md text-base font-medium text-primary hover:bg-primary/5 font-bold">MILink</a>
+        </div>
     </div>
-</div>
-    <!-- ========= FIN DE LA NUEVA SECCIÓN ========= -->
 
 </header>
 
-<!-- ========= INICIO DE LA NUEVA SECCIÓN: SCRIPT DE INTERACTIVIDAD ========= -->
 <script>
     // --- Lógica del Menú Principal (Hamburguesa) ---
     const mobileMenuButton = document.getElementById('mobile-menu-button');
@@ -94,22 +198,28 @@ const { currentPath } = Astro.props;
     const hamburgerIcon = document.getElementById('hamburger-icon');
     const closeIcon = document.getElementById('close-icon');
 
-    mobileMenuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-        hamburgerIcon.classList.toggle('hidden');
-        closeIcon.classList.toggle('hidden');
-    });
+    if (mobileMenuButton && mobileMenu && hamburgerIcon && closeIcon) {
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            hamburgerIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        });
+    }
 
-    // --- NUEVA LÓGICA: Acordeón para "Capacidades" ---
-   const accordionButton = document.getElementById('accordion-button');
-const accordionPanel = document.getElementById('accordion-panel');
-const accordionArrow = document.getElementById('accordion-arrow');
+    // --- Lógica de Acordeones (Solo queda el de Nosotros) ---
+    function setupAccordion(btnId, panelId, arrowId) {
+        const btn = document.getElementById(btnId);
+        const panel = document.getElementById(panelId);
+        const arrow = document.getElementById(arrowId);
 
-accordionButton.addEventListener('click', () => {
-    // Alterna nuestra nueva clase de CSS para la transición
-    accordionPanel.classList.toggle('open'); // <-- LÍNEA MODIFICADA
-    // Rota la flecha para indicar el estado (abierto/cerrado)
-    accordionArrow.classList.toggle('rotate-180');
-});
+        if (btn && panel && arrow) {
+            btn.addEventListener('click', () => {
+                panel.classList.toggle('open');
+                arrow.classList.toggle('rotate-180');
+            });
+        }
+    }
+
+    // Solo inicializamos el de Nosotros, ya que Capacidades e Industrias ahora son links directos
+    setupAccordion('accordion-nosotros-btn', 'panel-nosotros', 'arrow-nosotros');
 </script>
-<!-- ========= FIN DE LA NUEVA SECCIÓN ========= -->

@@ -1,0 +1,122 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import TeamCard from '../../components/TeamCard.astro';
+
+// Datos del equipo (Fácil de editar)
+// El 'slug' será la URL de su página de detalle (ej: /nosotros/equipo/rudy-laguna)
+const teamMembers = [
+    {
+        name: "Rudy Laguna",
+        role: "Director",
+        image: "/rudy-laguna.png", // Asegúrate de tener esta imagen en public/
+        slug: "rudy-laguna"
+    },
+    {
+        name: "Viviana Sánchez",
+        role: "Directora",
+        image: "/viviana-sanchez.png",
+        slug: "viviana-sanchez"
+    },
+    {
+        name: "Alvaro Gordillo",
+        role: "Especialista en Inversión y Desarrollo",
+        image: "/alvaro-gordillo.png",
+        slug: "alvaro-gordillo"
+    },
+    {
+        name: "Fernando Jáuregui",
+        role: "Especialista en Inversiones y Modelación Econométrica",
+        image: "/fernando-jauregui.png",
+        slug: "fernando-jauregui"
+    },
+    {
+        name: "Alex Carbajal",
+        role: "Especialista en Evaluación de Proyectos",
+        image: "/alex-carbajal.png",
+        slug: "alex-carbajal"
+    },
+    {
+        name: "Sergio Villegas",
+        role: "Especialista en Inversiones",
+        image: "/sergio-villegas.png",
+        slug: "sergio-villegas"
+    },
+    {
+        name: "Elmer Huamán",
+        role: "Especialista en Inversión para la Competitividad y el Desarrollo",
+        image: "/elmer-huaman.png",
+        slug: "elmer-huaman"
+    },
+    {
+        name: "Karla Casas",
+        role: "Jefe de Proyectos en Planeamientos, Competitividad y Desarrollo",
+        image: "/karla-casas.png",
+        slug: "karla-casas"
+    },
+    {
+        name: "Evelyn Sánchez",
+        role: "Especialista en Economía Aplicada y Evaluación de Proyectos",
+        image: "/evelyn-sanchez.png",
+        slug: "evelyn-sanchez"
+    },
+    {
+        name: "Melissa Sánchez",
+        role: "Especialista en Administración",
+        image: "/melissa-sanchez.png",
+        slug: "melissa-sanchez"
+    },
+    {
+        name: "Jorge Ruiz",
+        role: "Especialista en Planes de Desarrollo e Investigación",
+        image: "/jorge-ruiz.png",
+        slug: "jorge-ruiz"
+    },
+    {
+        name: "Mario Huamán",
+        role: "Especialista en Estudios Económicos",
+        image: "/mario-huaman.png",
+        slug: "mario-huaman"
+    }
+];
+---
+
+<Layout title="Nuestro Equipo - CCD">
+    
+    <PageHeader 
+        title="Nuestro Equipo" 
+        description="Un equipo multidisciplinario de expertos comprometidos con el impulso de la competitividad y el desarrollo sostenible."
+    />
+
+<!-- Sección de Grid con fondo gris para contraste -->
+    <section class="bg-gray-100 py-24 pb-40">
+        <div class="container mx-auto px-6">
+            
+            <!-- 
+               GRID ROBUSTO
+               - grid-cols-1: 1 columna en móvil.
+               - sm:grid-cols-2: 2 columnas en tablet.
+               - lg:grid-cols-3: 3 columnas en escritorio.
+               - gap-8: Espacio entre tarjetas.
+               - max-w-7xl mx-auto: Asegura que el grid no se estire infinitamente en pantallas gigantes.
+            -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                
+                {teamMembers.map((member) => (
+                    <!-- El div contenedor ayuda a prevenir problemas de flexbox -->
+                    <div class="w-full">
+                        <TeamCard 
+                            name={member.name}
+                            role={member.role}
+                            image={member.image}
+                            link={`/nosotros/equipo/${member.slug}`}
+                        />
+                    </div>
+                ))}
+
+            </div>
+
+        </div>
+    </section>
+
+</Layout>

@@ -1,0 +1,75 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+---
+
+<Layout title="Enfoque de Trabajo - CCD">
+    
+    <!-- 1. ENCABEZADO REUTILIZABLE -->
+    <PageHeader 
+        title="Enfoque de Trabajo" 
+        description="Promover la competitividad y desarrollo con principios de libertad, persuasión, análisis integral y procesos metodológicos." 
+    />
+
+    <section class="bg-white pb-24">
+        
+        <!-- ========================================== -->
+        <!-- GRÁFICO 1: DIAGNÓSTICO -> METAS            -->
+        <!-- ========================================== -->
+        <!-- CAMBIO: Reduje un poco el pt (padding top) para acercarlo ligeramente al título -->
+        <div class="container mx-auto px-4 pt-12 md:pt-16">
+            
+
+            <div class="max-w-3xl mx-auto">
+                <img 
+                    src="/enfoque-trabajo.svg" 
+                    alt="Gráfico circular de enfoque: Diagnóstico, Intervenciones, Visión, etc." 
+                    class="w-full h-auto object-contain mx-auto animate-fade-up"
+                />
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- SECCIÓN: FLUJO DE TRABAJO                  -->
+        <!-- ========================================== -->
+        
+        <!-- CAMBIO IMPORTANTE: Aumenté el margen superior -->
+        <!-- De 'mt-20 md:mt-32' pasó a 'mt-24 md:mt-52' para dar mucho más aire antes del título -->
+        <div class="mt-32 md:mt-30">
+            <div class="container mx-auto px-4">
+                
+                <!-- Título de la sección -->
+                <h2 class="text-center font-serif text-4xl md:text-5xl font-bold text-primary mb-12 md:mb-16">
+                    Flujo de Trabajo
+                </h2>
+
+                <!-- GRÁFICO 2: ENGRANAJES / FLUJO -->
+                <!-- Este se mantiene ancho (max-w-6xl) como en el diseño -->
+                <div class="max-w-6xl mx-auto">
+                    <img 
+                        src="/flujo-trabajo.svg" 
+                        alt="Diagrama de flujo de trabajo: Planificación, Gestión, Fortalecimiento..." 
+                        class="w-full h-auto object-contain mx-auto animate-fade-up delay-200"
+                    />
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+</Layout>
+
+<style>
+    @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-up {
+        animation: fadeUp 0.8s ease-out forwards;
+        opacity: 0; 
+    }
+    .delay-200 {
+        animation-delay: 0.2s;
+    }
+</style>

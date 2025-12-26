@@ -1,0 +1,227 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import TeamCard from '../../components/TeamCard.astro';
+import SidebarCard from '../../components/SidebarCard.astro';
+
+// Importamos la data centralizada
+import { teamMembers, industriesData } from '../../data/teamData';
+
+// ========================================================================
+// CONFIGURACIÓN DE LA PÁGINA: EVALUACIÓN DE PROGRAMAS
+// ========================================================================
+
+// 1. SELECCIONA ESPECIALISTAS (Expertos en Evaluación y Economía)
+const selectedSpecialists = [
+    teamMembers["alex-carbajal"],   // Especialista en Evaluación de Proyectos
+
+    teamMembers["mario-huaman"]     // Especialista en Estudios Económicos
+];
+
+// 2. SELECCIONA INDUSTRIAS RELACIONADAS
+const selectedIndustries = [
+   
+    industriesData["mineria"],
+    industriesData["educacion"]
+];
+
+// 3. IMAGEN DE CABECERA
+const headerImage = "/capacidades/evaluacion.jpg"; 
+---
+
+<Layout title="Evaluación de Programas y Proyectos - CCD">
+    
+    <PageHeader 
+        title="Evaluación de Programas y Proyectos" 
+        backgroundImage={headerImage}
+    />
+
+    <section class="bg-white py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
+                
+                <!-- ============================================ -->
+                <!-- COLUMNA IZQUIERDA: CONTENIDO (8/12)          -->
+                <!-- ============================================ -->
+                <div class="lg:col-span-8 space-y-16">
+                    
+                    <!-- 1. GENERACIÓN DE VALOR CLIENTE -->
+                    <div class="bg-blue-50 p-8 rounded-xl border-l-8 border-primary shadow-sm">
+                        <h3 class="font-serif text-2xl font-bold text-gray-900 mb-6">
+                            Generación de Valor Cliente
+                        </h3>
+                        
+                        <ul class="space-y-8">
+                            
+                            <!-- Item con términos técnicos -->
+                            <li class="flex flex-col text-gray-700 text-lg leading-relaxed">
+                                <div class="flex items-start">
+                                    <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                    <span>Mayores calidad y rendimientos esperados de la inversión social en el área de influencia:</span>
+                                </div>
+                                <div class="flex flex-wrap gap-3 mt-3 ml-8">
+                                    <span class="bg-white border border-blue-200 text-blue-800 px-3 py-1 rounded-md text-sm font-semibold">Improvement</span>
+                                    <span class="bg-white border border-blue-200 text-blue-800 px-3 py-1 rounded-md text-sm font-semibold">Accountability</span>
+                                    <span class="bg-white border border-blue-200 text-blue-800 px-3 py-1 rounded-md text-sm font-semibold">Enlightenment</span>
+                                </div>
+                            </li>
+
+                            <!-- Item con sublista -->
+                            <li class="flex flex-col text-gray-700 text-lg leading-relaxed">
+                                <div class="flex items-start">
+                                    <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                    <span>Optimización e integridad vertical y horizontal de la inversión social en todas las etapas:</span>
+                                </div>
+                                <ul class="mt-2 ml-8 grid grid-cols-1 sm:grid-cols-2 gap-2 text-gray-600 text-base">
+                                    <li class="flex items-center"><span class="text-primary mr-2">•</span> Negociación</li>
+                                    <li class="flex items-center"><span class="text-primary mr-2">•</span> Aprobación</li>
+                                    <li class="flex items-center"><span class="text-primary mr-2">•</span> Elaboración de estudios</li>
+                                    <li class="flex items-center"><span class="text-primary mr-2">•</span> Implementación</li>
+                                    <li class="flex items-center"><span class="text-primary mr-2">•</span> Operación y Mantenimiento</li>
+                                </ul>
+                            </li>
+
+                            <li class="flex flex-col text-gray-700 text-lg leading-relaxed">
+                                <div class="flex items-start">
+                                    <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                    <span>Transparencia, ganancias de eficiencias y reportes:</span>
+                                </div>
+                                <p class="text-base text-gray-600 ml-8 mt-1">
+                                    Accionistas, Directorio, Documentos de sostenibilidad, Anuarios, Población beneficiaria, Líderes comunales.
+                                </p>
+                            </li>
+
+                            <li class="flex flex-col text-gray-700 text-lg leading-relaxed">
+                                <div class="flex items-start">
+                                    <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                    <span>Generación de complementariedad con intervenciones público y privadas:</span>
+                                </div>
+                                <div class="flex flex-wrap gap-3 mt-3 ml-8">
+                                    <span class="bg-white border border-blue-200 text-blue-800 px-3 py-1 rounded-md text-sm font-semibold">Inversión</span>
+                                    <span class="bg-white border border-blue-200 text-blue-800 px-3 py-1 rounded-md text-sm font-semibold">Operación y mantenimiento</span>
+                                    <span class="bg-white border border-blue-200 text-blue-800 px-3 py-1 rounded-md text-sm font-semibold">Fondeo</span>
+                                </div>
+                            </li>
+
+                            <li class="flex flex-col text-gray-700 text-lg leading-relaxed">
+                                <div class="flex items-start">
+                                    <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                    <span>Optimizar decisiones sobre intervenciones sociales para el desarrollo:</span>
+                                </div>
+                                <div class="flex flex-wrap gap-3 mt-3 ml-8">
+                                    <span class="bg-white border border-blue-200 text-blue-800 px-3 py-1 rounded-md text-sm font-semibold">Potenciación</span>
+                                    <span class="bg-white border border-blue-200 text-blue-800 px-3 py-1 rounded-md text-sm font-semibold">Restructuración</span>
+                                    <span class="bg-white border border-blue-200 text-blue-800 px-3 py-1 rounded-md text-sm font-semibold">Culminación</span>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!-- 2. NUESTRO TRABAJO -->
+                    <div>
+                        <h3 class="font-serif text-3xl font-bold text-primary mb-8 border-b-2 border-gray-100 pb-2">
+                            Nuestro Trabajo
+                        </h3>
+                        
+                        <ul class="space-y-10">
+                            
+                            <!-- Evaluación Cualitativa/Cuantitativa -->
+                            <li class="flex flex-col text-gray-700 text-lg leading-relaxed">
+                                <div class="flex items-start mb-4">
+                                    <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                    <span class="font-bold text-gray-900">Evaluación cualitativa y cuantitativa integral de programas y proyectos de inversión:</span>
+                                </div>
+                                <div class="bg-gray-50 rounded-xl p-6 ml-6 border-l-4 border-gray-200 grid grid-cols-2 md:grid-cols-3 gap-4">
+                                    <div class="flex items-center"><span class="text-green-600 font-bold mr-2">✓</span> Pertinencia</div>
+                                    <div class="flex items-center"><span class="text-green-600 font-bold mr-2">✓</span> Eficiencia</div>
+                                    <div class="flex items-center"><span class="text-green-600 font-bold mr-2">✓</span> Eficacia</div>
+                                    <div class="flex items-center"><span class="text-green-600 font-bold mr-2">✓</span> Impacto</div>
+                                    <div class="flex items-center"><span class="text-green-600 font-bold mr-2">✓</span> Sostenibilidad</div>
+                                </div>
+                            </li>
+
+                            <!-- Etapas (ExAnte...) -->
+                            <li class="flex flex-col text-gray-700 text-lg leading-relaxed">
+                                <div class="flex items-start mb-3">
+                                    <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                    <span class="font-bold text-gray-900">Evaluar etapas de proyectos y programas de inversión social:</span>
+                                </div>
+                                <div class="flex flex-wrap gap-3 mt-3 ml-8">
+                                    <span class="bg-white border border-blue-200 text-blue-800 px-3 py-1 rounded-md text-sm font-semibold">ExAnte</span>
+                                    <span class="bg-white border border-blue-200 text-blue-800 px-3 py-1 rounded-md text-sm font-semibold">ExDure</span>
+                                    <span class="bg-white border border-blue-200 text-blue-800 px-3 py-1 rounded-md text-sm font-semibold">ExPost</span>
+                                </div>
+                            </li>
+
+                            <!-- Otros items simples -->
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Participación de los stakeholders de los programas y proyectos en el proceso de evaluación.</span>
+                            </li>
+
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Presentación de resultados de la evaluación a Stakeholders.</span>
+                            </li>
+
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Cuantificación de impactos.</span>
+                            </li>
+
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Implementación de recomendaciones de la evaluación en todas las áreas de la institución.</span>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                   
+
+                </div>
+
+                <!-- ============================================ -->
+                <!-- COLUMNA DERECHA: SIDEBAR (4/12)              -->
+                <!-- ============================================ -->
+                <aside class="lg:col-span-4 space-y-12">
+                    <div class="sticky top-32">
+                        <!-- Especialistas -->
+                        <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">
+                            Expertos en Evaluación
+                        </h3>
+                        <div class="space-y-6 mb-12">
+                            {selectedSpecialists.map((member) => (
+                                <TeamCard 
+                                    name={member.name}
+                                    role={member.role}
+                                    image={member.image}
+                                    link={`/nosotros/equipo/${member.slug}`}
+                                />
+                            ))}
+                        </div>
+
+                        <!-- Industrias Relacionadas -->
+                        <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">
+                            Industrias Relacionadas
+                        </h3>
+                        <div class="space-y-4">
+                            {selectedIndustries.map((ind) => (
+                                ind ? (
+                                    <SidebarCard 
+                                        title={ind.title} 
+                                        image={ind.image} 
+                                        link={ind.link} 
+                                    />
+                                ) : null
+                            ))}
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+    </section>
+
+</Layout>

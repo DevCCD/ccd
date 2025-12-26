@@ -1,0 +1,182 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import TeamCard from '../../components/TeamCard.astro';
+import SidebarCard from '../../components/SidebarCard.astro';
+
+// Importamos la data centralizada
+import { teamMembers, industriesData } from '../../data/teamData';
+
+// ========================================================================
+// CONFIGURACIÓN DE LA PÁGINA: CORREDORES ECONÓMICOS
+// ========================================================================
+
+// 1. SELECCIONA ESPECIALISTAS (Expertos en Desarrollo Territorial y Planificación)
+const selectedSpecialists = [
+    teamMembers["alvaro-gordillo"], // Especialista en Inversión y Desarrollo Regional
+
+    teamMembers["rudy-laguna"]      // Director (Visión Estratégica)
+];
+
+// 2. SELECCIONA INDUSTRIAS RELACIONADAS (Sectores de alto impacto territorial)
+const selectedIndustries = [
+    
+    industriesData["infraestructura"],
+    industriesData["agricultura"]
+];
+
+// 3. IMAGEN DE CABECERA
+const headerImage = "/capacidades/corredores.jpg"; 
+---
+
+<Layout title="Corredores Económicos Territoriales - CCD">
+    
+    <PageHeader 
+        title="Corredores Económicos Territoriales" 
+        backgroundImage={headerImage}
+    />
+
+    <section class="bg-white py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
+                
+                <!-- ============================================ -->
+                <!-- COLUMNA IZQUIERDA: CONTENIDO (8/12)          -->
+                <!-- ============================================ -->
+                <div class="lg:col-span-8 space-y-16">
+                    
+                    <!-- 1. GENERACIÓN DE VALOR CLIENTE -->
+                    <div class="bg-blue-50 p-8 rounded-xl border-l-8 border-primary shadow-sm">
+                        <h3 class="font-serif text-2xl font-bold text-gray-900 mb-6">
+                            Generación de Valor Cliente
+                        </h3>
+                        
+                        <ul class="space-y-8">
+                            
+                            <!-- Item Principal con Sub-lista -->
+                            <li class="flex flex-col text-gray-700 text-lg leading-relaxed">
+                                <div class="flex items-start">
+                                    <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                    <span class="font-bold">Optimiza la inversión social pública y privada:</span>
+                                </div>
+                                <!-- Sub-lista de beneficios -->
+                                <ul class="mt-4 ml-8 space-y-3 text-gray-600 text-base bg-white p-5 rounded-lg border border-blue-100">
+                                    <li class="flex items-start"><span class="text-primary mr-2">✓</span> Visión de prosperidad: Multi Regional / Provincial / Distrital / Comunal.</li>
+                                    <li class="flex items-start"><span class="text-primary mr-2">✓</span> Generación de sinergias, complementariedad y mayores beneficios para la población de los proyectos públicos y privados.</li>
+                                    <li class="flex items-start"><span class="text-primary mr-2">✓</span> Mayor movilidad y oportunidades de educación, salud y empleo para la población.</li>
+                                    <li class="flex items-start"><span class="text-primary mr-2">✓</span> Potencia la productividad y el desarrollo de clusters.</li>
+                                </ul>
+                            </li>
+
+                            <!-- Otros Items -->
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Desarrollo integrado del área de influencia o de más de una circunscripción territorial: países, regiones, provincias, distritos y/o comunidades.</span>
+                            </li>
+
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Cubre vacíos existentes en el ordenamiento geopolítico y acelera el desarrollo y la competitividad.</span>
+                            </li>
+
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Robustece el desarrollo bajo el enfoque territorial.</span>
+                            </li>
+
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Potencia el proceso de desarrollo de la población relacionada al Corredor Económico Territorial.</span>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!-- 2. NUESTRO TRABAJO -->
+                    <div>
+                        <h3 class="font-serif text-3xl font-bold text-primary mb-8 border-b-2 border-gray-100 pb-2">
+                            Nuestro Trabajo
+                        </h3>
+                        
+                        <div class="space-y-8">
+                            
+                            <!-- Item 1 -->
+                            <div class="flex flex-col">
+                                <div class="flex items-start">
+                                    <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                    <p class="text-gray-700 text-lg leading-relaxed">
+                                        Elaboración de estudios metodológicos para la constitución, gobernanza, planeamiento y gestión con actores público-privado claves en la formación, consolidación y crecimiento de Corredores Económicos Territoriales.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Item 2 -->
+                            <div class="flex flex-col">
+                                <div class="flex items-start">
+                                    <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                    <p class="text-gray-700 text-lg leading-relaxed">
+                                        Megaproyectos y proyectos de desarrollo para potenciar el impacto en el cierre de brechas y desarrollo de la población del Corredor Económico Territorial.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Item 3 -->
+                            <div class="flex flex-col">
+                                <div class="flex items-start">
+                                    <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                    <p class="text-gray-700 text-lg leading-relaxed">
+                                        KPI y sistema de datos e información digital de Corredores Económicos Territoriales.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+
+                <!-- ============================================ -->
+                <!-- COLUMNA DERECHA: SIDEBAR (4/12)              -->
+                <!-- ============================================ -->
+                <aside class="lg:col-span-4 space-y-12">
+                    <div class="sticky top-32">
+                        <!-- Especialistas -->
+                        <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">
+                            Expertos en Corredores Económicos
+                        </h3>
+                        <div class="space-y-6 mb-12">
+                            {selectedSpecialists.map((member) => (
+                                <TeamCard 
+                                    name={member.name}
+                                    role={member.role}
+                                    image={member.image}
+                                    link={`/nosotros/equipo/${member.slug}`}
+                                />
+                            ))}
+                        </div>
+
+                        <!-- Industrias Relacionadas -->
+                        <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">
+                            Industrias Relacionadas
+                        </h3>
+                        <div class="space-y-4">
+                            {selectedIndustries.map((ind) => (
+                                ind ? (
+                                    <SidebarCard 
+                                        title={ind.title} 
+                                        image={ind.image} 
+                                        link={ind.link} 
+                                    />
+                                ) : null
+                            ))}
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+    </section>
+
+</Layout>

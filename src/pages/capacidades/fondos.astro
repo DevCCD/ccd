@@ -1,0 +1,182 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import TeamCard from '../../components/TeamCard.astro';
+import SidebarCard from '../../components/SidebarCard.astro';
+
+// Importamos la data centralizada
+import { teamMembers, industriesData } from '../../data/teamData';
+
+// ========================================================================
+// CONFIGURACIÓN DE LA PÁGINA: FONDOS DE DESARROLLO
+// ========================================================================
+
+// 1. SELECCIONA ESPECIALISTAS (Expertos en Inversión y Gestión)
+const selectedSpecialists = [
+    teamMembers["alvaro-gordillo"], // Especialista en Inversión y Desarrollo
+    teamMembers["elmer-huaman"]  // Especialista en Inversión
+  
+];
+
+// 2. SELECCIONA INDUSTRIAS RELACIONADAS (Donde más se usan los fondos)
+const selectedIndustries = [
+    industriesData["mineria"],
+    
+    industriesData["agricultura"]
+];
+
+// 3. IMAGEN DE CABECERA
+const headerImage = "/capacidades/fondos.jpg"; 
+---
+
+<Layout title="Fondos de Desarrollo - CCD">
+    
+    <PageHeader 
+        title="Fondos de Desarrollo" 
+        backgroundImage={headerImage}
+    />
+
+    <section class="bg-white py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
+                
+                <!-- ============================================ -->
+                <!-- COLUMNA IZQUIERDA: CONTENIDO (8/12)          -->
+                <!-- ============================================ -->
+                <div class="lg:col-span-8 space-y-16">
+                    
+                    <!-- SECCIÓN: Generación de Valor Cliente -->
+                    <div>
+                        <h3 class="font-serif text-3xl font-bold text-primary mb-6 border-b-2 border-gray-100 pb-2">
+                            Generación de Valor Cliente
+                        </h3>
+                        
+                        <!-- Intro destacada -->
+                        <div class="bg-blue-50 p-6 rounded-lg mb-8 border-l-4 border-primary">
+                            <p class="text-gray-800 text-lg font-medium italic">
+                                Los fondos de desarrollo locales o comunales (públicos, privados o públicos-privados), con adecuada gobernanza:
+                            </p>
+                        </div>
+
+                        <!-- Lista de puntos del PDF -->
+                        <ul class="space-y-6">
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Aceleran el proceso de desarrollo local y comunal.</span>
+                            </li>
+
+                            <li class="flex flex-col text-gray-700 text-lg leading-relaxed">
+                                <div class="flex items-start">
+                                    <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                    <span>Los fondos de desarrollo locales o comunales contribuyen con la gestión social de la empresa</span>
+                                </div>
+                                <div class="bg-gray-50 rounded-xl p-6 ml-6 mt-4">
+                                    <ul class="grid md:grid-cols-1 gap-y-3 gap-x-6">
+                                        <li class="flex items-center text-gray-700"><span class="text-primary mr-2">✓</span> Generación de confianza con actores</li>
+                                        <li class="flex items-center text-gray-700"><span class="text-primary mr-2">✓</span> Proceso participativo</li>
+                                        <li class="flex items-center text-gray-700"><span class="text-primary mr-2">✓</span> Legitimidad</li>
+                                        <li class="flex items-center text-gray-700"><span class="text-primary mr-2">✓</span> Mayor calidad y rapidez en las intervenciones con los proyectos sociales</li>
+                                        <li class="flex items-center text-gray-700"><span class="text-primary mr-2">✓</span> Mejores beneficios para la población</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            
+
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Cofinancian y potencian la intervención pública y privada en favor del desarrollo de la población.</span>
+                            </li>
+                            
+                            
+                        </ul>
+                    </div>
+
+                    <!-- SECCIÓN: Nuestro Trabajo -->
+                    <div>
+                        <h3 class="font-serif text-3xl font-bold text-primary mb-8 border-b-2 border-gray-100 pb-2">
+                            Nuestro Trabajo
+                        </h3>
+                        
+                        <ul class="space-y-6">
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Evaluar, diseñar y brindar asistencia técnica en la constitución y operatividad de fondos de desarrollo.</span>
+                            </li>
+
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Mejorar gobernanza de los fondos sociales.</span>
+                            </li>
+
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Diseñar, fortalecer capacidades y asistencia técnica para mejorar y optimizar procesos, MAPROS, comités, protocolos y manuales para mejorar la inversión social.</span>
+                            </li>
+
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Diseñar e implementar estrategias para potenciar procesos participativos de los beneficiarios en los fondos sociales.</span>
+                            </li>
+
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Estructuramos mecanismos de complementariedad y sostenibilidad de los fondos sociales con otras fuentes de financiamiento para el desarrollo.</span>
+                            </li>
+
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>La experiencia pública y privada incluye la participación en el diseño, constitución y operatividad de más de cincuenta (50) fondos de desarrollo en comunidades, distritos y regiones del país.</span>
+                            </li>
+                            
+                            
+
+                            
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- ============================================ -->
+                <!-- COLUMNA DERECHA: SIDEBAR (4/12)              -->
+                <!-- ============================================ -->
+                <aside class="lg:col-span-4 space-y-12">
+                    <div class="sticky top-32">
+                        <!-- Especialistas -->
+                        <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">
+                            Expertos en Fondos
+                        </h3>
+                        <div class="space-y-6 mb-12">
+                            {selectedSpecialists.map((member) => (
+                                <TeamCard 
+                                    name={member.name}
+                                    role={member.role}
+                                    image={member.image}
+                                    link={`/nosotros/equipo/${member.slug}`}
+                                />
+                            ))}
+                        </div>
+
+                        <!-- Industrias Relacionadas -->
+                        <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">
+                            Industrias Relacionadas
+                        </h3>
+                        <div class="space-y-4">
+                            {selectedIndustries.map((ind) => (
+                                // Verificación de seguridad por si la industria no existe en tu data
+                                ind ? (
+                                    <SidebarCard 
+                                        title={ind.title} 
+                                        image={ind.image} 
+                                        link={ind.link} 
+                                    />
+                                ) : null
+                            ))}
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+    </section>
+
+</Layout>

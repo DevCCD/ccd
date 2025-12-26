@@ -1,0 +1,208 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import TeamCard from '../../components/TeamCard.astro';
+import SidebarCard from '../../components/SidebarCard.astro';
+
+// Importamos nuestra "base de datos"
+import { teamMembers, industriesData } from '../../data/teamData';
+
+// ========================================================================
+// 1. CONFIGURACIÓN DE LA PÁGINA (AQUÍ EDITAS LO QUE QUIERES MOSTRAR)
+// ========================================================================
+
+// A. SELECCIONA LOS ESPECIALISTAS PARA ESTA PÁGINA
+// Solo pon los IDs de las personas que definiste en teamData.js
+const selectedSpecialists = [
+    teamMembers["rudy-laguna"], 
+    teamMembers["alvaro-gordillo"] 
+];
+
+// B. SELECCIONA LAS INDUSTRIAS RELACIONADAS
+const selectedIndustries = [
+    industriesData["mineria"],
+    industriesData["agricultura"]
+];
+
+// C. IMAGEN DE CABECERA
+const headerImage = "/capacidades/desarrollo.jpg"; // Asegúrate de tener esta imagen
+---
+
+<Layout title="Desarrollo - CCD">
+    
+    <!-- ENCABEZADO CON IMAGEN DE FONDO -->
+    <PageHeader 
+        title="Desarrollo" 
+        backgroundImage={headerImage}
+    />
+
+    <section class="bg-white py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
+                
+                <!-- ============================================ -->
+                <!-- COLUMNA IZQUIERDA: CONTENIDO DEL PDF (8/12)  -->
+                <!-- ============================================ -->
+                <div class="lg:col-span-8 space-y-16">
+                    
+                    <!-- SECCIÓN: Generación de Valor Cliente -->
+                    <div>
+                        <h3 class="font-serif text-3xl font-bold text-primary mb-6 border-b-2 border-gray-100 pb-2">
+                            Generación de Valor Cliente
+                        </h3>
+                        
+                        <!-- Intro destacada -->
+                        <div class="bg-blue-50 p-6 rounded-lg mb-8 border-l-4 border-primary">
+                            <p class="text-gray-800 text-lg font-medium italic">
+Mejorar la calidad de vida de las personas de manera integral, para circunscripciones: país, estado, región, provincia, distrito y comunidad.                            </p>
+                        </div>
+
+                        <!-- Lista de puntos del PDF -->
+                        <ul class="space-y-6">
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Mejorar las condiciones de vida de las personas: educación universal, caminos transitables, calidad de la atención de la salud, buen gobierno y aumentar ingresos.</span>
+                            </li>
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Promover la competitividad mediante el cierre de brechas, mejorando el bienestar económico y social de las personas.</span>
+                            </li>
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Crear riqueza a fin de mantener la prosperidad o bienestar económico y social de los habitantes.</span>
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                    <!-- SECCIÓN: Nuestro Trabajo -->
+                    <div>
+                        <h3 class="font-serif text-3xl font-bold text-primary mb-8 border-b-2 border-gray-100 pb-2">
+                            Nuestro Trabajo
+                        </h3>
+                        
+                        <ul class="space-y-6">
+                            
+                            
+                            <!-- Item 2 (Con Sub-lista) -->
+                            <li class="flex flex-col text-gray-700 text-lg leading-relaxed">
+                                <div class="flex items-start">
+                                    <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                    <span>Elaborar planes y estudios de desarrollo</span>
+                                </div>
+                                <div class="bg-gray-50 rounded-xl p-6 ml-6 mt-4">
+                                    <ul class="grid md:grid-cols-1 gap-y-3 gap-x-6">
+                                        <li class="flex items-center text-gray-700"><span class="text-primary mr-2">✓</span> Concertado de ámbitos regional, provincial y distrital</li>
+                                        <li class="flex items-center text-gray-700"><span class="text-primary mr-2">✓</span> Territorial de comunidades, localidades y caseríos </li>
+                                        <li class="flex items-center text-gray-700"><span class="text-primary mr-2">✓</span> Territorial en contextos de reasentamiento poblacional</li>
+                                        <li class="flex items-center text-gray-700"><span class="text-primary mr-2">✓</span> Territorial para áreas de influencia directa e indirecta</li>
+                                        
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="flex flex-col text-gray-700 text-lg leading-relaxed">
+                                <div class="flex items-start">
+                                    <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                    <span>Brindar asistencia técnica en la implementación, seguimiento y monitoreo de planes de desarrollo </span>
+                                </div>
+                                <div class="bg-gray-50 rounded-xl p-6 ml-6 mt-4">
+                                    <ul class="grid md:grid-cols-1 gap-y-3 gap-x-6">
+                                        <li class="flex items-center text-gray-700"><span class="text-primary mr-2">✓</span> Sociodemográfico</li>
+                                        <li class="flex items-center text-gray-700"><span class="text-primary mr-2">✓</span> Crecimiento económico </li>
+                                        <li class="flex items-center text-gray-700"><span class="text-primary mr-2">✓</span> Conectividad</li>
+                                        <li class="flex items-center text-gray-700"><span class="text-primary mr-2">✓</span> Ambiental</li>
+                                        <li class="flex items-center text-gray-700"><span class="text-primary mr-2">✓</span> Riesgos y desastres</li>
+                                        <li class="flex items-center text-gray-700"><span class="text-primary mr-2">✓</span> Gobernanza</li>
+                                        
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Identificar, diseñar, asesorar y asistencia técnica para promover y desarrollar corredores económicos territoriales a escala nacional, regional, local y comunal.</span>
+                            </li>
+
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Elaborar e implementar planes de inversión para el desarrollo de corredores económicos territoriales  .</span>
+                            </li>
+
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Elaborar e implementar planes estratégicos y de inversión para el desarrollo de zonas de influencia directa e indirecta.</span>
+                            </li>
+
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Asesoría y asistencia técnica en el planeamiento y la gestión de los proyectos de inversión social de los fondos sociales.</span>
+                            </li>
+
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Asesoría y asistencia técnica en el planeamiento y la gestión de proyectos de inversión social de los fondos sociales para el desarrollo.</span>
+                            </li>
+
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Creación de sistemas de medición integrales, parciales y KPIs (Key Performance Indicators) para el desarrollo de circunscripciones país, estado, región, provincia, distrito, comunidad, localidad y caserío.</span>
+                            </li>
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Diseñar e implementar proyectos para mejorar la educación en niveles básico regular, técnico y universitario .</span>
+                            </li>
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Diseño, creación e implementación de metodologías para el desarrollo a circunscripciones concretas.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- ============================================ -->
+                <!-- COLUMNA DERECHA: SIDEBAR (4/12)              -->
+                <!-- ============================================ -->
+                <aside class="lg:col-span-4 space-y-12">
+                    
+                    <div class="sticky top-32">
+                        <!-- Especialistas -->
+                        <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">
+                            Especialistas en Desarrollo
+                        </h3>
+                        
+                        <div class="space-y-6 mb-12">
+                            {selectedSpecialists.map((member) => (
+                                // Usamos el TeamCard que ya funciona
+                                <TeamCard 
+                                    name={member.name}
+                                    role={member.role}
+                                    image={member.image}
+                                    link={`/nosotros/equipo/${member.slug}`}
+                                />
+                            ))}
+                        </div>
+
+                        <!-- Industrias Relacionadas -->
+                        <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">
+                            Industrias Relacionadas
+                        </h3>
+                        <div class="space-y-4">
+                            {selectedIndustries.map((ind) => (
+                                <SidebarCard 
+                                    title={ind.title} 
+                                    image={ind.image} 
+                                    link={ind.link} 
+                                />
+                            ))}
+                        </div>
+                    </div>
+
+                </aside>
+
+            </div>
+        </div>
+    </section>
+
+</Layout>

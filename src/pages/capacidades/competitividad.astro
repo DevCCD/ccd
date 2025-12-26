@@ -1,0 +1,184 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import TeamCard from '../../components/TeamCard.astro';
+import SidebarCard from '../../components/SidebarCard.astro';
+
+// Importamos nuestra "base de datos"
+import { teamMembers, industriesData } from '../../data/teamData';
+
+// ========================================================================
+// 1. CONFIGURACIÓN DE LA PÁGINA (AQUÍ EDITAS LO QUE QUIERES MOSTRAR)
+// ========================================================================
+
+// A. SELECCIONA LOS ESPECIALISTAS PARA ESTA PÁGINA
+// Solo pon los IDs de las personas que definiste en teamData.js
+const selectedSpecialists = [
+    teamMembers["rudy-laguna"], 
+    teamMembers["alvaro-gordillo"] 
+];
+
+// B. SELECCIONA LAS INDUSTRIAS RELACIONADAS
+const selectedIndustries = [
+    industriesData["mineria"],
+    industriesData["agricultura"]
+];
+
+// C. IMAGEN DE CABECERA
+const headerImage = "/capacidades/competitividad.jpg"; // Asegúrate de tener esta imagen
+---
+
+<Layout title="Competitividad - CCD">
+    
+    <!-- ENCABEZADO CON IMAGEN DE FONDO -->
+    <PageHeader 
+        title="Competitividad" 
+        backgroundImage={headerImage}
+    />
+
+    <section class="bg-white py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
+                
+                <!-- ============================================ -->
+                <!-- COLUMNA IZQUIERDA: CONTENIDO DEL PDF (8/12)  -->
+                <!-- ============================================ -->
+                <div class="lg:col-span-8 space-y-16">
+                    
+                    <!-- SECCIÓN: Generación de Valor Cliente -->
+                    <div>
+                        <h3 class="font-serif text-3xl font-bold text-primary mb-6 border-b-2 border-gray-100 pb-2">
+                            Generación de Valor Cliente
+                        </h3>
+                        
+                        <!-- Intro destacada -->
+                        <div class="bg-blue-50 p-6 rounded-lg mb-8 border-l-4 border-primary">
+                            <p class="text-gray-800 text-lg font-medium italic">
+                                Mejorar productividad, empleabilidad e ingresos de la Población en Edad de Trabajar (PET) de circunscripción directa e indirectamente relacionada: zona económica, multipaís, país, estado, región, provincia, distrito, comunidad y/o población directa e indirectamente relacionada.
+                            </p>
+                        </div>
+
+                        <!-- Lista de puntos del PDF -->
+                        <ul class="space-y-6">
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>La competitividad es el conjunto de instituciones, políticas, normas y procedimientos, interacciones y participación público y privada que determinan el nivel de productividad.</span>
+                            </li>
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>La productividad es la capacidad de producción de los agentes económicos (personas, empresas, entre otros) dados sus recursos disponibles.</span>
+                            </li>
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>La competitividad y productividad determinan el desarrollo de la circunscripción de interés: zona económica, multipaís, país, estado, región, provincia, distrito, comunidad y/o población.</span>
+                            </li>
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>La competitividad y productividad determinan el crecimiento de los sectores económicos, clusters y cadenas de valor de bienes y servicios.</span>
+                            </li>
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>La competitividad y productividad al impulsar las condiciones de empleabilidad y los ingresos determinan el bienestar y la calidad de vida de la población.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- SECCIÓN: Nuestro Trabajo -->
+                    <div>
+                        <h3 class="font-serif text-3xl font-bold text-primary mb-8 border-b-2 border-gray-100 pb-2">
+                            Nuestro Trabajo
+                        </h3>
+                        
+                        <ul class="space-y-6">
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Asesoría y asistencia técnica para mejorar la competitividad y productividad para circunscripción de interés: zona económica, multipaís, país, estado, región, provincia, distrito, comunidad y/o población, así como de sectores económicos, empresarial y proveedores, clusters y cadenas de valor de bienes y servicios.</span>
+                            </li>
+                            
+                            <!-- Item 2 (Con Sub-lista) -->
+                            <li class="flex flex-col text-gray-700 text-lg leading-relaxed">
+                                <div class="flex items-start">
+                                    <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                    <span>Asesoría y asistencia técnica en planes de competitividad y productividades para países y regiones</span>
+                                </div>
+                                <div class="bg-gray-50 rounded-xl p-6 ml-6 mt-4">
+                                    <ul class="grid md:grid-cols-2 gap-y-3 gap-x-6">
+                                        <li class="flex items-center text-gray-700"><span class="text-primary mr-2">✓</span> Infraestructura</li>
+                                        <li class="flex items-center text-gray-700"><span class="text-primary mr-2">✓</span> Capital Humano</li>
+                                        <li class="flex items-center text-gray-700"><span class="text-primary mr-2">✓</span> Innovación</li>
+                                        <li class="flex items-center text-gray-700"><span class="text-primary mr-2">✓</span> Financiamiento</li>
+                                        <li class="flex items-center text-gray-700"><span class="text-primary mr-2">✓</span> Mercado Laboral</li>
+                                        <li class="flex items-center text-gray-700"><span class="text-primary mr-2">✓</span> Ambiente de Negocios</li>
+                                        <li class="flex items-center text-gray-700"><span class="text-primary mr-2">✓</span> Comercio Exterior y Turismo</li>
+                                        <li class="flex items-center text-gray-700"><span class="text-primary mr-2">✓</span> Institucionalidad</li>
+                                        <li class="flex items-center text-gray-700"><span class="text-primary mr-2">✓</span> Sostenibilidad Ambiental</li>
+                                        <li class="flex items-center text-gray-700"><span class="text-primary mr-2">✓</span> Dotación de recursos naturales</li>
+                                        <li class="flex items-center text-gray-700"><span class="text-primary mr-2">✓</span> Mega y micro proyectos</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Creación de sistemas de medición parciales e integrales para impulsar competitividad y productividad.</span>
+                            </li>
+
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Evaluar y promover actividades económicas y clusters, microclusters a niveles sectoriales y productos de alto potencial de crecimiento.</span>
+                            </li>
+
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2 w-2 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Diseño, creación, implementación, seguimiento y acompañamiento en iniciativas integrales y parciales de competitividad y productividad para áreas de influencia directa e indirecta, a niveles de sectores y productos de alto potencial de crecimiento: comercialización, logística, transformación e industrialización y producción.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- ============================================ -->
+                <!-- COLUMNA DERECHA: SIDEBAR (4/12)              -->
+                <!-- ============================================ -->
+                <aside class="lg:col-span-4 space-y-12">
+                    
+                    <div class="sticky top-32">
+                        <!-- Especialistas -->
+                        <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">
+                            Especialistas en Competitividad
+                        </h3>
+                        
+                        <div class="space-y-6 mb-12">
+                            {selectedSpecialists.map((member) => (
+                                // Usamos el TeamCard que ya funciona
+                                <TeamCard 
+                                    name={member.name}
+                                    role={member.role}
+                                    image={member.image}
+                                    link={`/nosotros/equipo/${member.slug}`}
+                                />
+                            ))}
+                        </div>
+
+                        <!-- Industrias Relacionadas -->
+                        <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">
+                            Industrias Relacionadas
+                        </h3>
+                        <div class="space-y-4">
+                            {selectedIndustries.map((ind) => (
+                                <SidebarCard 
+                                    title={ind.title} 
+                                    image={ind.image} 
+                                    link={ind.link} 
+                                />
+                            ))}
+                        </div>
+                    </div>
+
+                </aside>
+
+            </div>
+        </div>
+    </section>
+
+</Layout>

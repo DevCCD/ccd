@@ -1,5 +1,27 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import TeamCard from '../components/TeamCard.astro';
+
+// Importamos los datos centralizados
+import { teamMembers } from '../data/teamData';
+
+// Datos de las 7 capacidades
+const capacidades = [
+    { title: "Competitividad", slug: "competitividad", image: "/capacidades/competitividad.jpg" },
+    { title: "Desarrollo", slug: "desarrollo", image: "/capacidades/desarrollo.jpg" },
+    { title: "Fortalecimiento de Capacidades y Capital Humano", slug: "fortalecimiento", image: "/capacidades/fortalecimiento.jpg" },
+    { title: "Fondos de Desarrollo", slug: "fondos", image: "/capacidades/fondos.jpg" },
+    { title: "Evaluación de Programas y Proyectos", slug: "evaluacion", image: "/capacidades/evaluacion.jpg" },
+    { title: "Corredores Económicos Territoriales", slug: "corredores", image: "/capacidades/corredores.jpg" },
+    { title: "Inversiones y Proyectos", slug: "inversiones", image: "/capacidades/inversiones.jpg" }
+];
+
+// Directores principales
+const directores = [
+    teamMembers["rudy-laguna"],
+    teamMembers["viviana-sanchez"],
+    teamMembers["alvaro-gordillo"]
+];
 
 ---
 
@@ -33,9 +55,70 @@ import Layout from '../layouts/Layout.astro';
         </div>
     </section>
 
-    <!-- Sección "Nuestros Servicios" como placeholder -->
-    <section class="text-center py-20">
-        <h2 class="font-serif text-4xl font-bold text-primary">Nuestros Servicios</h2>
+    <!-- SECCIÓN: CAPACIDADES -->
+    <section class="bg-white py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="font-serif text-4xl md:text-5xl font-bold text-primary text-center mb-4">
+                Nuestras Capacidades
+            </h2>
+            <p class="text-center text-gray-600 text-lg max-w-2xl mx-auto mb-16">
+                Soluciones especializadas en competitividad, desarrollo y transformación territorial para impulsar el progreso sostenible.
+            </p>
+
+            <!-- Grid de Capacidades: 3 columnas en desktop, 1 en móvil -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {capacidades.map((cap) => (
+                    <a href={`/capacidades/${cap.slug}`} class="group block">
+                        <div class="relative rounded-lg overflow-hidden h-64 md:h-72 shadow-lg hover:shadow-xl transition-all duration-300 bg-gray-100">
+                            <img 
+                                src={cap.image} 
+                                alt={cap.title}
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                            />
+                            <!-- Overlay oscuro -->
+                            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-300 flex items-end p-6">
+                                <h3 class="font-serif text-white text-2xl font-bold">
+                                    {cap.title}
+                                </h3>
+                            </div>
+                        </div>
+                    </a>
+                ))}
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: EQUIPO PRINCIPAL -->
+    <section class="bg-gray-50 py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="font-serif text-4xl md:text-5xl font-bold text-primary text-center mb-4">
+                Nuestro Equipo
+            </h2>
+            <p class="text-center text-gray-600 text-lg max-w-2xl mx-auto mb-16">
+                Líderes y especialistas con experiencia en desarrollo territorial, inversión y competitividad regional.
+            </p>
+
+            <!-- Grid de Equipo: 3 columnas centradas -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
+                {directores.map((member) => (
+                    <div>
+                        <TeamCard 
+                            name={member.name}
+                            role={member.role}
+                            image={member.image}
+                            link={`/nosotros/equipo/${member.slug}`}
+                        />
+                    </div>
+                ))}
+            </div>
+
+            <!-- Enlace a equipo completo -->
+            <div class="text-center mt-16">
+                <a href="/nosotros/equipo" class="inline-block bg-primary text-white font-bold py-3 px-8 rounded-lg hover:bg-primary-dark transition-colors">
+                    Ver Equipo Completo
+                </a>
+            </div>
+        </div>
     </section>
 
 </Layout>

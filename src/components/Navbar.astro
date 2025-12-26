@@ -28,41 +28,31 @@ const inactiveClass = "text-primary hover:text-primary-dark";
             
             <!-- 1. CAPACIDADES (DESPLEGABLE MÁS ANCHO) -->
             <li class="group relative">
-                <a 
-                    href="/capacidades" 
-                    class="flex items-center transition-colors duration-300"
+                <button 
+                    class="flex items-center transition-colors duration-300 cursor-pointer"
                     class:list={[ isCapacidadesActive ? activeClass : inactiveClass ]}
                 >
                     Capacidades
                     <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                </a>
+                </button>
                 <!-- Panel Desplegable: Aumentado a w-[900px] y más padding (p-10) -->
                 <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto w-[900px]">
-                    <div class="bg-white rounded-lg shadow-xl p-10 border-t-4 border-primary">
-                        <div class="grid grid-cols-3 gap-x-12 gap-y-6 text-gray-600 font-normal text-base">
+                    <div class="bg-white rounded-lg shadow-xl p-10  border-t-4 border-primary">
+                        <div class="grid grid-cols-2 gap-x-12 gap-y-4 text-gray-600 font-normal text-base">
                             <ul class="space-y-3">
-                                <li><a href="#" class="hover:text-primary hover:underline block">Competitividad</a></li>
-                                <li><a href="#" class="hover:text-primary hover:underline block">Desarrollo</a></li>
-                                <li><a href="#" class="hover:text-primary hover:underline block">Digitalización</a></li>
-                                <li><a href="#" class="hover:text-primary hover:underline block">Estudios</a></li>
-                                <li><a href="#" class="hover:text-primary hover:underline block">Evaluación</a></li>
-                                <li><a href="#" class="hover:text-primary hover:underline block">Fortalecimiento de Capacidades</a></li>
+                                <li><a href="/capacidades/competitividad" class="hover:text-primary hover:underline block">Competitividad</a></li>
+                                <li><a href="/capacidades/desarrollo" class="hover:text-primary hover:underline block">Desarrollo</a></li>
+                                <li><a href="/capacidades/fortalecimiento" class="hover:text-primary hover:underline block">Fortalecimiento de Capacidades y <br>Capital Humano</a></li>
+
                             </ul>
                             <ul class="space-y-3">
-                                <li><a href="#" class="hover:text-primary hover:underline block">Innovación</a></li>
-                                <li><a href="#" class="hover:text-primary hover:underline block">Innovación para el Desarrollo</a></li>
-                                <li><a href="#" class="hover:text-primary hover:underline block">Inversiones</a></li>
-                                <li><a href="#" class="hover:text-primary hover:underline block">KPIs</a></li>
-                                <li><a href="#" class="hover:text-primary hover:underline block">Planeamiento</a></li>
-                                <li><a href="#" class="hover:text-primary hover:underline block">Política y Gestión para el Desarrollo</a></li>
+                                <li><a href="/capacidades/fondos" class="hover:text-primary hover:underline block">Fondos de Desarrollo</a></li>
+                                <li><a href="/capacidades/evaluacion" class="hover:text-primary hover:underline block">Evaluación de Programas y Proyectos</a></li>
+                                <li><a href="/capacidades/corredores" class="hover:text-primary hover:underline block">Corredores Económicos Territoriales</a></li>
+                                <li><a href="/capacidades/inversiones" class="hover:text-primary hover:underline block">Inversiones y Proyectos</a></li>
+                                
                             </ul>
-                            <ul class="space-y-3">
-                                <li><a href="#" class="hover:text-primary hover:underline block">Proyectos</a></li>
-                                <li><a href="#" class="hover:text-primary hover:underline block">Sistemas de Desarrollo</a></li>
-                                <li><a href="#" class="hover:text-primary hover:underline block">Sostenibilidad</a></li>
-                                <li><a href="#" class="hover:text-primary hover:underline block">Tecnología</a></li>
-                                <li><a href="#" class="hover:text-primary hover:underline block">Transformación</a></li>
-                            </ul>
+                            
                         </div>
                     </div>
                 </div>
@@ -145,7 +135,7 @@ const inactiveClass = "text-primary hover:text-primary-dark";
         </ul>
 
         <!-- Botón MILink -->
-        <a href="/milink" class="hidden md:block text-lg font-medium text-primary hover:text-primary-dark transition-colors duration-300">
+        <a href="https://campus.competitividadccd.com/" class="hidden md:block text-lg font-medium text-primary hover:text-primary-dark transition-colors duration-300">
             MILink
         </a>
 

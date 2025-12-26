@@ -1,0 +1,182 @@
+---
+// DEPRECATED: This file has been renamed to inversion.astro
+// Please use /capacidades/inversion instead
+import Layout from '../../layouts/Layout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import TeamCard from '../../components/TeamCard.astro';
+import SidebarCard from '../../components/SidebarCard.astro';
+
+// Importamos la data centralizada
+import { teamMembers, industriesData } from '../../data/teamData';
+
+// ========================================================================
+// CONFIGURACIÓN DE LA PÁGINA: INVERSIONES Y PROYECTOS
+// ========================================================================
+
+// 1. SELECCIONA ESPECIALISTAS (Expertos en Inversión Pública y Privada)
+const selectedSpecialists = [
+    teamMembers["sergio-villegas"]
+];
+
+// 2. SELECCIONA INDUSTRIAS RELACIONADAS
+const selectedIndustries = [
+    industriesData["agricola"],
+    industriesData["infraestructura"]
+ 
+];
+
+// 3. IMAGEN DE CABECERA
+const headerImage = "/capacidades/inversiones.jpg"; 
+---
+
+<Layout title="Inversiones y Proyectos - CCD">
+    
+    <PageHeader 
+        title="Inversiones y Proyectos" 
+        backgroundImage={headerImage}
+    />
+
+    <section class="bg-white py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
+                
+                <!-- ============================================ -->
+                <!-- COLUMNA IZQUIERDA: CONTENIDO (8/12)          -->
+                <!-- ============================================ -->
+                <div class="lg:col-span-8 space-y-16">
+                    
+                    <!-- 1. GENERACIÓN DE VALOR CLIENTE -->
+                    <div class="bg-blue-50 p-8 rounded-xl border-l-8 border-primary shadow-sm">
+                        <h3 class="font-serif text-2xl font-bold text-gray-900 mb-6">
+                            Generación de Valor Cliente
+                        </h3>
+                        
+                        <ul class="space-y-4">
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Inversiones y proyectos permiten reducir y cerrar brechas, desarrollo y mejoran calidad de vida de la población.</span>
+                            </li>
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Desarrollo y prosperidad para todos.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 2. NUESTRO TRABAJO -->
+                    <div>
+                        <h3 class="font-serif text-3xl font-bold text-primary mb-8 border-b-2 border-gray-100 pb-2">
+                            Nuestro Trabajo
+                        </h3>
+                        
+                        <ul class="space-y-10">
+                            
+                            <!-- ITEM 1: ELABORAR ESTUDIOS (Con Sub-lista Detallada) -->
+                            <li class="flex flex-col text-gray-700 text-lg leading-relaxed">
+                                <div class="flex items-start mb-4">
+                                    <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                    <span class="font-bold text-gray-900">Elaborar estudios para proyectos de inversión:</span>
+                                </div>
+                                <!-- Sub-lista organizada -->
+                                <div class="bg-gray-50 rounded-xl p-6 ml-6 border-l-4 border-gray-200">
+                                    <ul class="space-y-3 text-gray-600 text-base">
+                                        <li class="flex flex-col sm:flex-row sm:items-center">
+                                            <strong class="text-primary w-24 flex-shrink-0">Tipo:</strong>
+                                            <span>Preinversión, expedientes técnicos, prefactibilidad y factibilidad.</span>
+                                        </li>
+                                        <li class="flex flex-col sm:flex-row sm:items-center">
+                                            <strong class="text-primary w-24 flex-shrink-0">Rubro:</strong>
+                                            <span>Dimensiones del desarrollo y determinantes de la competitividad.</span>
+                                        </li>
+                                        <li class="flex flex-col sm:flex-row sm:items-center">
+                                            <strong class="text-primary w-24 flex-shrink-0">Tamaño:</strong>
+                                            <span>Mega, grande, mediano y pequeño.</span>
+                                        </li>
+                                        <li class="flex flex-col sm:flex-row sm:items-start">
+                                            <strong class="text-primary w-24 flex-shrink-0">Sectores:</strong>
+                                            <span>Educación, salud, saneamiento, productivos, seguridad penitenciaria, entre otros.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- ITEM 2 -->
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Fortalecer capacidades y asistencia técnica para elaborar Programas Multianuales de Inversiones (PMI).</span>
+                            </li>
+
+                            <!-- ITEM 3 -->
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Elaborar programas de inversiones para impulsar el desarrollo y la competitividad.</span>
+                            </li>
+
+                            <!-- ITEM 4 -->
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Fortalecer capacidades y asistencia técnica integral a equipos de profesionales y colaboradores de organizaciones públicas y privadas para mejorar velocidad y calidad en la ejecución de inversión.</span>
+                            </li>
+
+                            <!-- ITEM 5 -->
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Diseñar e implementar proyectos innovadores de inversión en todas las dimensiones del desarrollo y determinantes de la competitividad.</span>
+                            </li>
+
+                            <!-- ITEM 6 -->
+                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
+                                <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
+                                <span>Asesorar y asistencia técnica en modalidades de inversión Obras por Impuestos, Asociaciones Público Privadas e Iniciativas Privadas.</span>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!-- SIN CTA (Call to Action eliminado) -->
+
+                </div>
+
+                <!-- ============================================ -->
+                <!-- COLUMNA DERECHA: SIDEBAR (4/12)              -->
+                <!-- ============================================ -->
+                <aside class="lg:col-span-4 space-y-12">
+                    <div class="sticky top-32">
+                        <!-- Especialistas -->
+                        <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">
+                            Expertos en Inversión
+                        </h3>
+                        <div class="space-y-6 mb-12">
+                            {selectedSpecialists.map((member) => (
+                                <TeamCard 
+                                    name={member.name}
+                                    role={member.role}
+                                    image={member.image}
+                                    link={`/nosotros/equipo/${member.slug}`}
+                                />
+                            ))}
+                        </div>
+
+                        <!-- Industrias Relacionadas -->
+                        <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">
+                            Industrias Relacionadas
+                        </h3>
+                        <div class="space-y-4">
+                            {selectedIndustries.map((ind) => (
+                                ind ? (
+                                    <SidebarCard 
+                                        title={ind.title} 
+                                        image={ind.image} 
+                                        link={ind.link} 
+                                    />
+                                ) : null
+                            ))}
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+    </section>
+
+</Layout>

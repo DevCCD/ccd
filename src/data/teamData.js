@@ -3,13 +3,13 @@ export const teamMembers = {
     "rudy-laguna": {
         name: "Rudy Laguna",
         role: "Director",
-        image: "/rudy-laguna.png",
+        image: "/rudy-laguna-rostro.png",
         slug: "rudy-laguna"
     },
     "viviana-sanchez": {
         name: "Viviana Sánchez",
         role: "Directora",
-        image: "/viviana-sanchez.png",
+        image: "/viviana-sanchez-rostro.png",
         slug: "viviana-sanchez"
     },
 
@@ -17,7 +17,7 @@ export const teamMembers = {
     "alvaro-gordillo": {
         name: "Alvaro Gordillo",
         role: "Especialista en Inversión y Desarrollo",
-        image: "/alvaro-gordillo.png",
+        image: "/alvaro-gordillo-rostro.png",
         slug: "alvaro-gordillo"
     },
     "fernando-jauregui": {

@@ -1,0 +1,127 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHeader from '../components/PageHeader.astro';
+
+// Datos de ejemplo para los artículos del blog
+const blogPosts = [
+    {
+        id: 1,
+        title: "Estrategias de Competitividad Territorial en el Siglo XXI",
+        excerpt: "Explora las mejores prácticas y metodologías para fortalecer la competitividad de territorios en un contexto global cada vez más dinámico.",
+        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop",
+        category: "Competitividad",
+        date: "15 de enero de 2026"
+    },
+    {
+        id: 2,
+        title: "Desarrollo Sostenible: Un Modelo Integral para Comunidades",
+        excerpt: "Conoce cómo implementar planes de desarrollo que balanceen crecimiento económico con responsabilidad ambiental y social.",
+        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop",
+        category: "Desarrollo",
+        date: "12 de enero de 2026"
+    },
+    {
+        id: 3,
+        title: "Fortalecimiento de Capital Humano: Inversión en Personas",
+        excerpt: "Descubre por qué el capital humano es la piedra angular del desarrollo territorial y cómo fortalecerlo efectivamente.",
+        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop",
+        category: "Capacidades",
+        date: "10 de enero de 2026"
+    },
+    {
+        id: 4,
+        title: "Fondos de Desarrollo Local: Movilizando Recursos para el Cambio",
+        excerpt: "Analiza cómo los fondos de desarrollo locales pueden ser catalizadores de transformación económica territorial.",
+        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop",
+        category: "Fondos",
+        date: "8 de enero de 2026"
+    },
+    {
+        id: 5,
+        title: "Evaluación de Impacto: Midiendo el Éxito de Proyectos Sociales",
+        excerpt: "Aprende metodologías rigurosas para evaluar el verdadero impacto de proyectos e iniciativas de desarrollo.",
+        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop",
+        category: "Evaluación",
+        date: "5 de enero de 2026"
+    },
+    {
+        id: 6,
+        title: "Corredores Económicos: Conectando Territorios y Oportunidades",
+        excerpt: "Entiende cómo los corredores económicos territoriales generan integración y crecimiento compartido.",
+        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop",
+        category: "Corredores",
+        date: "2 de enero de 2026"
+    }
+];
+
+const headerImage = "/capacidades/competitividad.jpg";
+---
+
+<Layout title="Blog - Centro para la Competitividad y el Desarrollo">
+    
+    <PageHeader 
+        title="Blog CCD" 
+        backgroundImage={headerImage}
+    />
+
+    <section class="bg-white py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <!-- Introducción -->
+            <div class="text-center mb-16 max-w-3xl mx-auto">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-primary mb-6">
+                    Insights y Análisis
+                </h2>
+                <p class="text-gray-600 text-lg leading-relaxed">
+                    Explora artículos, análisis y reflexiones sobre competitividad, desarrollo territorial y transformación regional. Nuestro blog es un espacio para compartir conocimiento y experiencias.
+                </p>
+            </div>
+
+            <!-- Grid de Artículos: 2 columnas en desktop, 1 en móvil -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {blogPosts.map((post) => (
+                    <article class="group flex flex-col rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 bg-white hover:translate-y-[-8px]">
+                        <!-- Imagen -->
+                        <div class="relative h-48 overflow-hidden bg-gray-100">
+                            <img 
+                                src={post.image} 
+                                alt={post.title}
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                            />
+                            <!-- Categoría Badge -->
+                            <div class="absolute top-4 right-4">
+                                <span class="bg-primary text-white text-xs font-semibold px-3 py-1 rounded-full">
+                                    {post.category}
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Contenido -->
+                        <div class="flex flex-col flex-grow p-6 md:p-8">
+                            <!-- Fecha -->
+                            <div class="text-sm text-gray-500 mb-4">
+                                {post.date}
+                            </div>
+
+                            <!-- Título -->
+                            <h3 class="font-serif text-xl md:text-2xl font-bold text-gray-900 mb-4 line-clamp-2 group-hover:text-primary transition-colors duration-300">
+                                {post.title}
+                            </h3>
+
+                            <!-- Excerpt -->
+                            <p class="text-gray-600 text-sm md:text-base leading-relaxed mb-6 flex-grow line-clamp-3">
+                                {post.excerpt}
+                            </p>
+
+                            <!-- Botón Leer Más -->
+                            <a href="#" class="inline-flex items-center gap-2 text-primary font-semibold text-sm md:text-base group-hover:gap-3 transition-all duration-300">
+                                Leer artículo completo
+                                <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+                            </a>
+                        </div>
+                    </article>
+                ))}
+            </div>
+        </div>
+    </section>
+
+</Layout>

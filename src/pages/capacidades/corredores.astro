@@ -94,42 +94,74 @@ const headerImage = "/capacidades/corredores.jpg";
 
                     <!-- 2. NUESTRO TRABAJO -->
                     <div>
-                        <h3 class="font-serif text-3xl font-bold text-primary mb-8 border-b-2 border-gray-100 pb-2">
+                        <h3 class="font-serif text-3xl font-bold text-primary mb-8">
                             Nuestro Trabajo
                         </h3>
-                        
-                        <div class="space-y-8">
-                            
-                            <!-- Item 1 -->
-                            <div class="flex flex-col">
-                                <div class="flex items-start">
-                                    <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
-                                    <p class="text-gray-700 text-lg leading-relaxed">
-                                        Elaboración de estudios metodológicos para la constitución, gobernanza, planeamiento y gestión con actores público-privado claves en la formación, consolidación y crecimiento de Corredores Económicos Territoriales.
-                                    </p>
+
+                        <!-- Card A -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 items-center bg-gray-50 p-8 rounded-xl">
+                            <div>
+                                <div class="flex items-start mb-4">
+                                    <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary text-white font-bold text-lg flex-shrink-0">A</div>
+                                    <h4 class="font-bold text-xl text-gray-900 ml-4">Constitución y Gobernanza</h4>
+                                </div>
+                                <div class="ml-14">
+                                    <ul class="space-y-2">
+                                        <li class="flex items-center text-gray-700">
+                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                            Estudios metodológicos
+                                        </li>
+                                        <li class="flex items-center text-gray-700">
+                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                            Gobernanza público-privada
+                                        </li>
+                                        <li class="flex items-center text-gray-700">
+                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                            Planeamiento territorial
+                                        </li>
+                                        <li class="flex items-center text-gray-700">
+                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                            Formación de corredores
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
+                            <div class="rounded-lg overflow-hidden shadow-lg h-64 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
+                                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop" alt="Gobernanza" class="w-full h-full object-cover"/>
+                            </div>
+                        </div>
 
-                            <!-- Item 2 -->
-                            <div class="flex flex-col">
-                                <div class="flex items-start">
-                                    <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
-                                    <p class="text-gray-700 text-lg leading-relaxed">
-                                        Megaproyectos y proyectos de desarrollo para potenciar el impacto en el cierre de brechas y desarrollo de la población del Corredor Económico Territorial.
-                                    </p>
+                        <!-- Card B -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-gray-50 p-8 rounded-xl">
+                            <div class="rounded-lg overflow-hidden shadow-lg h-64 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center order-2 md:order-1">
+                                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=400&fit=crop" alt="Desarrollo" class="w-full h-full object-cover"/>
+                            </div>
+                            <div class="order-1 md:order-2">
+                                <div class="flex items-start mb-4">
+                                    <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary text-white font-bold text-lg flex-shrink-0">B</div>
+                                    <h4 class="font-bold text-xl text-gray-900 ml-4">Proyectos y Monitoreo</h4>
+                                </div>
+                                <div class="ml-14">
+                                    <ul class="space-y-2">
+                                        <li class="flex items-center text-gray-700">
+                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                            Megaproyectos de desarrollo
+                                        </li>
+                                        <li class="flex items-center text-gray-700">
+                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                            Cierre de brechas
+                                        </li>
+                                        <li class="flex items-center text-gray-700">
+                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                            KPI y indicadores
+                                        </li>
+                                        <li class="flex items-center text-gray-700">
+                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                            Sistema digital de datos
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-
-                            <!-- Item 3 -->
-                            <div class="flex flex-col">
-                                <div class="flex items-start">
-                                    <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
-                                    <p class="text-gray-700 text-lg leading-relaxed">
-                                        KPI y sistema de datos e información digital de Corredores Económicos Territoriales.
-                                    </p>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
 

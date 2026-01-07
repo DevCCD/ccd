@@ -1,0 +1,351 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHeader from '../components/PageHeader.astro';
+
+const headerImage = "https://images.unsplash.com/photo-1549923746-c502d488b3ea?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+
+const industries = [
+    "Minería",
+    "Petróleo y Gas",
+    "Educación",
+    "Agricultura",
+    "Pecuario",
+    "Infraestructura"
+];
+
+const countries = [
+    { name: "Perú", provinces: ["Lima", "Arequipa", "Cusco", "Junín", "La Libertad", "Lambayeque", "Loreto", "Puno", "San Martín", "Ucayali", "Ancash", "Apurímac", "Ayacucho", "Cajamarca", "Ica", "Moquegua", "Tacna", "Tumbes", "Huancavelica"] },
+    { name: "Bolivia", provinces: [] },
+    { name: "Colombia", provinces: [] },
+    { name: "Ecuador", provinces: [] },
+    { name: "Chile", provinces: [] },
+    { name: "Argentina", provinces: [] },
+    { name: "Paraguay", provinces: [] },
+    { name: "Uruguay", provinces: [] },
+    { name: "Venezuela", provinces: [] },
+    { name: "Otros", provinces: [] }
+];
+---
+
+<Layout title="Carreras - Centro para la Competitividad y el Desarrollo">
+    
+    <PageHeader 
+        title="Únete a Nuestro Equipo" 
+        backgroundImage={headerImage}
+    />
+
+    <!-- SECCIÓN: INTRODUCCIÓN -->
+    <section class="bg-white py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-primary mb-6">
+                    Expertos en Competitividad y Desarrollo
+                </h2>
+                <p class="text-gray-600 text-lg leading-relaxed">
+                    En CCD buscamos profesionales apasionados que quieran contribuir al desarrollo económico y competitivo de empresas e industrias. Si tienes experiencia en consultoría, desarrollo empresarial, evaluación de proyectos o cualquier área relacionada, nos gustaría conocerte.
+                </p>
+            </div>
+
+            <!-- Valores -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="text-center">
+                    <div class="flex justify-center mb-4">
+                        <div class="flex items-center justify-center w-16 h-16 rounded-full bg-primary/10">
+                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-xl text-gray-900 mb-2">Impacto Real</h3>
+                    <p class="text-gray-600">Trabaja en proyectos que generan cambio tangible en empresas e industrias</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="flex justify-center mb-4">
+                        <div class="flex items-center justify-center w-16 h-16 rounded-full bg-primary/10">
+                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-xl text-gray-900 mb-2">Desarrollo Continuo</h3>
+                    <p class="text-gray-600">Acceso a capacitación y oportunidades para crecer profesionalmente</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="flex justify-center mb-4">
+                        <div class="flex items-center justify-center w-16 h-16 rounded-full bg-primary/10">
+                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.856-1.487M15 10a3 3 0 11-6 0 3 3 0 016 0zM4.318 20H3a2 2 0 00-2 2v2h4v-2a2 2 0 00-1.682-1.973M11 7a4 4 0 110 8 4 4 0 010-8z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-xl text-gray-900 mb-2">Equipo Colaborativo</h3>
+                    <p class="text-gray-600">Forma parte de un equipo multidisciplinario y de alto rendimiento</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: FORMULARIO DE CARRERAS -->
+    <section class="bg-gray-50 py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="font-serif text-4xl md:text-5xl font-bold text-primary mb-4">
+                        Envía tu CV
+                    </h2>
+                    <p class="text-gray-600 text-lg">
+                        Completa el formulario con tu información y adjunta tu CV. Revisaremos tu perfil y nos pondremos en contacto pronto.
+                    </p>
+                </div>
+
+                <form class="space-y-6 bg-white p-8 md:p-12 rounded-xl shadow-lg" id="careerForm">
+                    <!-- Nombre Completo -->
+                    <div>
+                        <label for="nombre" class="block text-sm font-semibold text-gray-700 mb-2">
+                            Nombre Completo *
+                        </label>
+                        <input 
+                            type="text" 
+                            id="nombre" 
+                            name="nombre" 
+                            required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                            placeholder="Tu nombre completo"
+                        />
+                    </div>
+
+                    <!-- Email -->
+                    <div>
+                        <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
+                            Email *
+                        </label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                            placeholder="tu@email.com"
+                        />
+                    </div>
+
+                    <!-- Teléfono -->
+                    <div>
+                        <label for="telefono" class="block text-sm font-semibold text-gray-700 mb-2">
+                            Teléfono *
+                        </label>
+                        <input 
+                            type="tel" 
+                            id="telefono" 
+                            name="telefono"
+                            required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                            placeholder="+51 9 XXXX XXXX"
+                        />
+                    </div>
+
+                    <!-- País -->
+                    <div>
+                        <label for="pais" class="block text-sm font-semibold text-gray-700 mb-2">
+                            País *
+                        </label>
+                        <select 
+                            id="pais" 
+                            name="pais"
+                            required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                        >
+                            <option value="">Selecciona un país</option>
+                            {countries.map(country => (
+                                <option value={country.name}>{country.name}</option>
+                            ))}
+                        </select>
+                    </div>
+
+                    <!-- Provincia (Solo visible si es Perú) -->
+                    <div id="provinceContainer" class="hidden">
+                        <label for="provincia" class="block text-sm font-semibold text-gray-700 mb-2">
+                            Provincia *
+                        </label>
+                        <select 
+                            id="provincia" 
+                            name="provincia"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                        >
+                            <option value="">Selecciona una provincia</option>
+                            {countries.find(c => c.name === "Perú")?.provinces.map(province => (
+                                <option value={province}>{province}</option>
+                            ))}
+                        </select>
+                    </div>
+
+                    <!-- Industria de Interés -->
+                    <div>
+                        <label for="industria" class="block text-sm font-semibold text-gray-700 mb-2">
+                            Industria de Interés *
+                        </label>
+                        <select 
+                            id="industria" 
+                            name="industria"
+                            required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                        >
+                            <option value="">Selecciona una industria</option>
+                            {industries.map(industry => (
+                                <option value={industry}>{industry}</option>
+                            ))}
+                        </select>
+                    </div>
+
+                    <!-- Experiencia -->
+                    <div>
+                        <label for="experiencia" class="block text-sm font-semibold text-gray-700 mb-2">
+                            Años de Experiencia *
+                        </label>
+                        <select 
+                            id="experiencia" 
+                            name="experiencia"
+                            required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                        >
+                            <option value="">Selecciona tu experiencia</option>
+                            <option value="0-2">0-2 años</option>
+                            <option value="2-5">2-5 años</option>
+                            <option value="5-10">5-10 años</option>
+                            <option value="10+">10+ años</option>
+                        </select>
+                    </div>
+
+                    <!-- Mensaje / Presentación -->
+                    <div>
+                        <label for="mensaje" class="block text-sm font-semibold text-gray-700 mb-2">
+                            Cuéntanos sobre ti *
+                        </label>
+                        <textarea 
+                            id="mensaje" 
+                            name="mensaje" 
+                            rows="5"
+                            required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                            placeholder="Comparte tu experiencia, logros destacados y por qué te interesa unirte a CCD..."
+                        ></textarea>
+                    </div>
+
+                    <!-- Archivo CV -->
+                    <div>
+                        <label for="cv" class="block text-sm font-semibold text-gray-700 mb-2">
+                            Adjunta tu CV *
+                        </label>
+                        <div class="mt-2 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-lg hover:border-primary transition-colors duration-300">
+                            <div class="space-y-1 text-center">
+                                <svg class="mx-auto h-12 w-12 text-gray-400" stroke="white" fill="none" viewBox="0 0 48 48">
+                                    <path d="M28 8H12a4 4 0 00-4 4v20a4 4 0 004 4h24a4 4 0 004-4V20m-2-6l-8.5-8.5m0 0L28 2m0 4v16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <div class="flex text-sm text-gray-600">
+                                    <label for="cv" class="relative cursor-pointer rounded-md font-medium text-primary hover:text-primary-dark">
+                                        <span>Selecciona un archivo</span>
+                                        <input 
+                                            id="cv" 
+                                            name="cv" 
+                                            type="file" 
+                                            accept=".pdf,.doc,.docx"
+                                            required
+                                            class="sr-only"
+                                        />
+                                    </label>
+                                    <br />
+                                    
+                                </div>
+                                <p class="text-xs text-gray-500">PDF, DOC o DOCX hasta 10MB</p>
+                            </div>
+                        </div>
+                        <p id="fileName" class="text-sm text-gray-600 mt-2"></p>
+                    </div>
+
+                    <!-- Términos y Condiciones -->
+                    <div class="flex items-start">
+                        <div class="flex items-center h-5">
+                            <input 
+                                id="terminos" 
+                                name="terminos" 
+                                type="checkbox"
+                                required
+                                class="h-4 w-4 text-primary rounded focus:ring-primary border-gray-300"
+                            />
+                        </div>
+                        <label for="terminos" class="ml-3 text-sm text-gray-600">
+                            Acepto que mis datos sean procesados para evaluar mi candidatura *
+                        </label>
+                    </div>
+
+                    <!-- Botones -->
+                    <div class="flex gap-4 pt-4">
+                        <button 
+                            type="submit" 
+                            class="flex-1 bg-primary text-white font-bold py-3 px-6 rounded-lg hover:bg-primary-dark transition-colors duration-300"
+                        >
+                            Enviar CV
+                        </button>
+                        <button 
+                            type="reset" 
+                            class="flex-1 bg-gray-200 text-gray-800 font-bold py-3 px-6 rounded-lg hover:bg-gray-300 transition-colors duration-300"
+                        >
+                            Limpiar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</Layout>
+
+<script define:vars={{ countries }}>
+    // Manejo del campo de país y provincia
+    const countrySelect = document.getElementById('pais');
+    const provinceContainer = document.getElementById('provinceContainer');
+    const provinceSelect = document.getElementById('provincia');
+
+    countrySelect.addEventListener('change', function() {
+        if (this.value === 'Perú') {
+            provinceContainer.classList.remove('hidden');
+            provinceSelect.required = true;
+        } else {
+            provinceContainer.classList.add('hidden');
+            provinceSelect.required = false;
+            provinceSelect.value = '';
+        }
+    });
+
+    // Manejo de archivo CV
+    const cvInput = document.getElementById('cv');
+    const fileName = document.getElementById('fileName');
+
+    cvInput.addEventListener('change', function() {
+        if (this.files && this.files[0]) {
+            const file = this.files[0];
+            fileName.textContent = `Archivo seleccionado: ${file.name} (${(file.size / 1024 / 1024).toFixed(2)}MB)`;
+        }
+    });
+
+    // Validación de tamaño de archivo
+    cvInput.addEventListener('change', function() {
+        const maxSize = 10 * 1024 * 1024; // 10MB
+        if (this.files && this.files[0] && this.files[0].size > maxSize) {
+            alert('El archivo es muy grande. Por favor sube un archivo menor a 10MB');
+            this.value = '';
+            fileName.textContent = '';
+        }
+    });
+
+    // Manejo del formulario
+    const form = document.getElementById('careerForm');
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Gracias por tu candidatura. Nos pondremos en contacto pronto.');
+        this.reset();
+        fileName.textContent = '';
+    });
+</script>

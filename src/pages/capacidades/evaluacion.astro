@@ -120,62 +120,76 @@ const headerImage = "/capacidades/evaluacion.jpg";
 
                     <!-- 2. NUESTRO TRABAJO -->
                     <div>
-                        <h3 class="font-serif text-3xl font-bold text-primary mb-8 border-b-2 border-gray-100 pb-2">
+                        <h3 class="font-serif text-3xl font-bold text-primary mb-8">
                             Nuestro Trabajo
                         </h3>
                         
-                        <ul class="space-y-10">
-                            
-                            <!-- Evaluación Cualitativa/Cuantitativa -->
-                            <li class="flex flex-col text-gray-700 text-lg leading-relaxed">
+                        <!-- Card A -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 items-center bg-gray-50 p-8 rounded-xl">
+                            <div>
                                 <div class="flex items-start mb-4">
-                                    <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
-                                    <span class="font-bold text-gray-900">Evaluación cualitativa y cuantitativa integral de programas y proyectos de inversión:</span>
+                                    <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary text-white font-bold text-lg flex-shrink-0">A</div>
+                                    <h4 class="font-bold text-xl text-gray-900 ml-4">Evaluación Integral</h4>
                                 </div>
-                                <div class="bg-gray-50 rounded-xl p-6 ml-6 border-l-4 border-gray-200 grid grid-cols-2 md:grid-cols-3 gap-4">
-                                    <div class="flex items-center"><span class="text-green-600 font-bold mr-2">✓</span> Pertinencia</div>
-                                    <div class="flex items-center"><span class="text-green-600 font-bold mr-2">✓</span> Eficiencia</div>
-                                    <div class="flex items-center"><span class="text-green-600 font-bold mr-2">✓</span> Eficacia</div>
-                                    <div class="flex items-center"><span class="text-green-600 font-bold mr-2">✓</span> Impacto</div>
-                                    <div class="flex items-center"><span class="text-green-600 font-bold mr-2">✓</span> Sostenibilidad</div>
+                                <div class="ml-14">
+                                    <p class="text-gray-700 text-sm font-semibold mb-3">Evaluación cualitativa y cuantitativa de programas y proyectos:</p>
+                                    <ul class="space-y-2">
+                                        <li class="flex items-center text-gray-700">
+                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                            Pertinencia y eficiencia
+                                        </li>
+                                        <li class="flex items-center text-gray-700">
+                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                            Eficacia e impacto
+                                        </li>
+                                        <li class="flex items-center text-gray-700">
+                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                            Sostenibilidad
+                                        </li>
+                                        <li class="flex items-center text-gray-700">
+                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                            ExAnte, ExDure, ExPost
+                                        </li>
+                                    </ul>
                                 </div>
-                            </li>
+                            </div>
+                            <div class="rounded-lg overflow-hidden shadow-lg h-64 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
+                                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop" alt="Evaluación" class="w-full h-full object-cover"/>
+                            </div>
+                        </div>
 
-                            <!-- Etapas (ExAnte...) -->
-                            <li class="flex flex-col text-gray-700 text-lg leading-relaxed">
-                                <div class="flex items-start mb-3">
-                                    <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
-                                    <span class="font-bold text-gray-900">Evaluar etapas de proyectos y programas de inversión social:</span>
+                        <!-- Card B -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-gray-50 p-8 rounded-xl">
+                            <div class="rounded-lg overflow-hidden shadow-lg h-64 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center order-2 md:order-1">
+                                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=400&fit=crop" alt="Implementación" class="w-full h-full object-cover"/>
+                            </div>
+                            <div class="order-1 md:order-2">
+                                <div class="flex items-start mb-4">
+                                    <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary text-white font-bold text-lg flex-shrink-0">B</div>
+                                    <h4 class="font-bold text-xl text-gray-900 ml-4">Participación y Resultados</h4>
                                 </div>
-                                <div class="flex flex-wrap gap-3 mt-3 ml-8">
-                                    <span class="bg-white border border-blue-200 text-blue-800 px-3 py-1 rounded-md text-sm font-semibold">ExAnte</span>
-                                    <span class="bg-white border border-blue-200 text-blue-800 px-3 py-1 rounded-md text-sm font-semibold">ExDure</span>
-                                    <span class="bg-white border border-blue-200 text-blue-800 px-3 py-1 rounded-md text-sm font-semibold">ExPost</span>
+                                <div class="ml-14">
+                                    <ul class="space-y-2">
+                                        <li class="flex items-center text-gray-700">
+                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                            Participación de stakeholders
+                                        </li>
+                                        <li class="flex items-center text-gray-700">
+                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                            Presentación de resultados
+                                        </li>
+                                        <li class="flex items-center text-gray-700">
+                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                            Cuantificación de impactos
+                                        </li>
+                                        <li class="flex items-center text-gray-700">
+                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                            Implementar recomendaciones
+                                        </li>
+                                    </ul>
                                 </div>
-                            </li>
-
-                            <!-- Otros items simples -->
-                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
-                                <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
-                                <span>Participación de los stakeholders de los programas y proyectos en el proceso de evaluación.</span>
-                            </li>
-
-                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
-                                <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
-                                <span>Presentación de resultados de la evaluación a Stakeholders.</span>
-                            </li>
-
-                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
-                                <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
-                                <span>Cuantificación de impactos.</span>
-                            </li>
-
-                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
-                                <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
-                                <span>Implementación de recomendaciones de la evaluación en todas las áreas de la institución.</span>
-                            </li>
-
-                        </ul>
+                            </div>
+                        </div>
                     </div>
 
                    

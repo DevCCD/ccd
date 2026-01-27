@@ -26,15 +26,16 @@ const inactiveClass = "text-primary hover:text-primary-dark";
         <!-- ============================================ -->
         <ul class="hidden md:flex items-center space-x-8 text-lg font-medium">
             
-            <!-- 1. CAPACIDADES (DESPLEGABLE MÁS ANCHO) -->
+            <!-- 1. CAPACIDADES (LANDING + DESPLEGABLE) -->
             <li class="group relative">
-                <button 
+                <a 
+                    href="/capacidades"
                     class="flex items-center transition-colors duration-300 cursor-pointer"
                     class:list={[ isCapacidadesActive ? activeClass : inactiveClass ]}
                 >
                     Capacidades
                     <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                </button>
+                </a>
                 <!-- Panel Desplegable: Aumentado a w-[900px] y más padding (p-10) -->
                 <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto w-[900px]">
                     <div class="bg-white rounded-lg shadow-xl p-10  border-t-4 border-primary">

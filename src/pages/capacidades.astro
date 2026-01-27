@@ -1,0 +1,101 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHeader from '../components/PageHeader.astro';
+
+// Datos de las 7 capacidades
+const capacidades = [
+  {
+    slug: 'competitividad',
+    title: 'Competitividad',
+    description: 'Mejorar productividad, empleabilidad e ingresos de la Población en Edad de Trabajar (PET) de circunscripción directa e indirectamente relacionada: zona económica, multipaís, país, estado, región, provincia, distrito, comunidad y/o población directa e indirectamente relacionada.',
+    image: '/capacidades/competitividad.jpg'
+  },
+  {
+    slug: 'desarrollo',
+    title: 'Desarrollo',
+    description: 'Mejorar la calidad de vida de las personas de manera integral, para circunscripciones: país, estado, región, provincia, distrito y comunidad.',
+    image: '/capacidades/desarrollo.jpg'
+  },
+  {
+    slug: 'fortalecimiento',
+    title: 'Fortalecimiento de Capacidades',
+    description: 'Desarrollamos capital humano e institucional para impulsar el desarrollo sostenible.',
+    image: '/capacidades/fortalecimiento.jpg'
+  },
+  {
+    slug: 'fondos',
+    title: 'Fondos de Desarrollo',
+    description: 'Los fondos de desarrollo locales o comunales (públicos, privados o públicos-privados), con adecuada gobernanza, contribuyen con la gestión social de la empresa.',
+    image: '/capacidades/fondos.jpg'
+  },
+  {
+    slug: 'evaluacion',
+    title: 'Evaluación de Programas y Proyectos',
+    description: 'Mayores calidad y rendimientos esperados de la inversión social en el área de influencia.',
+    image: '/capacidades/evaluacion.jpg'
+  },
+  {
+    slug: 'corredores',
+    title: 'Corredores Económicos Territoriales',
+    description: 'Desarrollo integrado del área de influencia o de más de una circunscripción territorial: países, regiones, provincias, distritos y/o comunidades.',
+    image: '/capacidades/corredores.jpg'
+  },
+  {
+    slug: 'inversiones',
+    title: 'Inversiones y Proyectos',
+    description: 'Inversiones y proyectos permiten reducir y cerrar brechas, desarrollo y mejoran calidad de vida de la población.',
+    image: '/capacidades/inversiones.jpg'
+  }
+];
+---
+
+<Layout title="Nuestras Capacidades - CCD">
+  <!-- HEADER SECTION USANDO PAGEHEADER COMPONENT -->
+  <PageHeader 
+    title="Nuestras Capacidades"
+    description="Siete pilares de excelencia que nos permiten transformar territorios y crear valor sostenible para nuestros clientes."
+  />
+
+  <!-- CAPACIDADES GRID -->
+  <section class="bg-white">
+    <div>
+      <div class="space-y-0">
+        {capacidades.map((capacidad, index) => (
+          <a href={`/capacidades/${capacidad.slug}`} class="block group hover:bg-gray-50 transition-colors duration-300">
+            <div class={`grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch h-screen md:min-h-[65vh] px-6 md:px-12 ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
+              
+              <!-- IMAGEN -->
+              <div class={`${index % 2 === 1 ? 'md:order-2 -mr-6 md:-mr-12' : 'md:order-1 -ml-6 md:-ml-12'}`}>
+                <div class="relative h-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center min-h-80 md:min-h-[75vh] overflow-hidden">
+                  <img 
+                    src={capacidad.image} 
+                    alt={capacidad.title}
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              </div>
+
+              <!-- CONTENIDO -->
+              <div class={`${index % 2 === 1 ? 'md:order-1 md:pr-12' : 'md:order-2 md:pl-12'} flex flex-col justify-center py-8 md:py-20`}>
+                <div class="flex items-center gap-2">
+                  <h2 class="font-serif text-4xl md:text-5xl font-bold text-primary flex-1">
+                    {capacidad.title}
+                  </h2>
+                  <svg class="w-8 h-8 md:w-10 md:h-10 text-gray-400 flex-shrink-0 transition-all duration-300 group-hover:text-primary group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </div>
+                
+                <p class="text-gray-700 text-base md:text-lg leading-relaxed md:leading-loose mt-6">
+                  {capacidad.description}
+                </p>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+
+</Layout>

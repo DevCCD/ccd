@@ -5,17 +5,6 @@ import TeamCard from '../components/TeamCard.astro';
 // Importamos los datos centralizados
 import { teamMembers } from '../data/teamData';
 
-// Datos de las 7 capacidades
-const capacidades = [
-    { title: "Competitividad", slug: "competitividad", image: "/capacidades/competitividad.jpg" },
-    { title: "Desarrollo", slug: "desarrollo", image: "/capacidades/desarrollo.jpg" },
-    { title: "Fortalecimiento de Capacidades y Capital Humano", slug: "fortalecimiento", image: "/capacidades/fortalecimiento.jpg" },
-    { title: "Fondos de Desarrollo", slug: "fondos", image: "/capacidades/fondos.jpg" },
-    { title: "Evaluación de Programas y Proyectos", slug: "evaluacion", image: "/capacidades/evaluacion.jpg" },
-    { title: "Corredores Económicos Territoriales", slug: "corredores", image: "/capacidades/corredores.jpg" },
-    { title: "Inversión y Proyectos", slug: "inversion", image: "/capacidades/inversiones.jpg" }
-];
-
 // Directores principales
 const directores = [
     teamMembers["rudy-laguna"],
@@ -55,59 +44,66 @@ const directores = [
         </div>
     </section>
 
-    <!-- SECCIÓN: CAPACIDADES - DISEÑO MODERNO -->
-    <section class="bg-white py-16 md:py-32">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-20">
-                <h2 class="font-serif text-5xl md:text-6xl font-bold text-primary mb-6">
-                    Nuestras Capacidades
-                </h2>
-                <p class="text-gray-600 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-                    Soluciones especializadas en competitividad, desarrollo y transformación territorial para impulsar el progreso sostenible.
-                </p>
+    <!-- SECCIÓN: CAPACIDADES - BANNER IMPACTANTE -->
+    <section class="bg-white py-0">
+        <div class="grid grid-cols-1 lg:grid-cols-2 min-h-screen lg:min-h-screen">
+            <!-- Imagen Grande -->
+            <div class="relative overflow-hidden order-2 lg:order-1">
+                <img 
+                    src="/capacidades/capacidades.png" 
+                    alt="Nuestras Capacidades"
+                    class="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+                />
+                <div class="absolute inset-0 bg-gradient-to-r from-transparent to-black/20"></div>
             </div>
 
-            <!-- Grid de Capacidades con layout alternado -->
-            <div class="space-y-24">
-                {capacidades.map((cap, index) => (
-                    <a href={`/capacidades/${cap.slug}`} class="group block">
-                        <div class={`grid grid-cols-1 md:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'md:grid-flow-dense' : ''}`}>
-                            <!-- Imagen -->
-                            <div class={`${index % 2 === 1 ? 'md:order-2' : ''}`}>
-                                <div class="relative overflow-hidden rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-500 h-80 md:h-96">
-                                    <img 
-                                        src={cap.image} 
-                                        alt={cap.title}
-                                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                    />
-                                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
-                                </div>
-                            </div>
-
-                            <!-- Contenido -->
-                            <div class={`${index % 2 === 1 ? 'md:order-1' : ''} flex flex-col justify-center`}>
-                                <div class="space-y-6">
-                                    <!-- Número -->
-                                    <div class="flex items-center gap-4">
-                                        <span class="text-6xl md:text-5xl font-bold text-primary/40">{(index + 1).toString().padStart(2, '0')}</span>
-                                        <div class="flex-1 h-1 bg-gradient-to-r from-primary to-transparent"></div>
-                                    </div>
-
-                                    <!-- Título -->
-                                    <h3 class="font-serif text-3xl md:text-6xl font-bold text-gray-900 leading-tight group-hover:text-primary transition-colors duration-300">
-                                        {cap.title}
-                                    </h3>
-
-                                    <!-- Botón/Link -->
-                                    <div class="inline-flex items-center gap-3 text-primary font-semibold text-lg group-hover:gap-6 transition-all duration-300">
-                                        <span>Explorar</span>
-                                        <svg class="w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <!-- Contenido Grande -->
+            <div class="order-1 lg:order-2 flex flex-col justify-center px-8 sm:px-12 md:px-16 py-12 lg:py-0 bg-white">
+                <div class="max-w-lg">
+                    
+                    <h2 class="font-serif text-5xl sm:text-6xl md:text-7xl font-bold text-gray-900 mt-4 mb-8 leading-tight">
+                        Nuestras Capacidades
+                    </h2>
+                    <p class="text-gray-700 text-lg md:text-xl leading-relaxed mb-10">
+                        Soluciones integrales en competitividad, desarrollo territorial, inversión y evaluación de proyectos que transforman comunidades.
+                    </p>
+                    <a href="/capacidades" class="inline-flex items-center gap-4 bg-primary text-white font-bold py-5 px-10 rounded-lg hover:bg-primary-dark transition-all duration-300 hover:gap-6 group text-lg">
+                        <span>Explorar</span>
+                        <svg class="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
                     </a>
-                ))}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: INDUSTRIAS - BANNER IMPACTANTE -->
+    <section class="bg-white py-0">
+        <div class="grid grid-cols-1 lg:grid-cols-2 min-h-screen lg:min-h-screen">
+            <!-- Contenido Grande -->
+            <div class="order-1 lg:order-1 flex flex-col justify-center px-8 sm:px-12 md:px-16 py-12 lg:py-0 bg-white">
+                <div class="max-w-lg">
+                    
+                    <h2 class="font-serif text-5xl sm:text-6xl md:text-7xl font-bold text-gray-900 mt-4 mb-8 leading-tight">
+                        Nuestras Industrias
+                    </h2>
+                    <p class="text-gray-700 text-lg md:text-xl leading-relaxed mb-10">
+                        Experiencia en múltiples sectores económicos, potenciando el crecimiento y la competitividad de industrias clave en el territorio.
+                    </p>
+                    <a href="/industrias" class="inline-flex items-center gap-4 bg-primary text-white font-bold py-5 px-10 rounded-lg hover:bg-primary-dark transition-all duration-300 hover:gap-6 group text-lg">
+                        <span>Explorar</span>
+                        <svg class="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Imagen Grande -->
+            <div class="relative overflow-hidden order-2 lg:order-2">
+                <img 
+                    src="/industrias/industrias.png" 
+                    alt="Nuestras Industrias"
+                    class="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+                />
+                <div class="absolute inset-0 bg-gradient-to-l from-transparent to-black/20"></div>
             </div>
         </div>
     </section>

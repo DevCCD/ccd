@@ -1,32 +1,21 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import PageHeader from '../../components/PageHeader.astro';
-import TeamCard from '../../components/TeamCard.astro';
-import SidebarCard from '../../components/SidebarCard.astro';
 
-// Importamos la data centralizada
+// Importamos nuestra "base de datos"
 import { teamMembers, industriesData } from '../../data/teamData';
 
-// ========================================================================
-// CONFIGURACIÓN DE LA PÁGINA: CORREDORES ECONÓMICOS
-// ========================================================================
-
-// 1. SELECCIONA ESPECIALISTAS (Expertos en Desarrollo Territorial y Planificación)
 const selectedSpecialists = [
-    teamMembers["alvaro-gordillo"], // Especialista en Inversión y Desarrollo Regional
-
-    teamMembers["rudy-laguna"]      // Director (Visión Estratégica)
+    teamMembers["alvaro-gordillo"],
+    teamMembers["rudy-laguna"]
 ];
 
-// 2. SELECCIONA INDUSTRIAS RELACIONADAS (Sectores de alto impacto territorial)
 const selectedIndustries = [
-    
     industriesData["infraestructura"],
     industriesData["agricultura"]
 ];
 
-// 3. IMAGEN DE CABECERA
-const headerImage = "/capacidades/corredores.jpg"; 
+const headerImage = "/capacidades/corredores.jpg";
 ---
 
 <Layout title="Corredores Económicos Territoriales - CCD">
@@ -36,174 +25,274 @@ const headerImage = "/capacidades/corredores.jpg";
         backgroundImage={headerImage}
     />
 
-    <section class="bg-white py-16 md:py-24">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
+    <section class="bg-white py-20 md:py-32">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
                 
-                <!-- ============================================ -->
-                <!-- COLUMNA IZQUIERDA: CONTENIDO (8/12)          -->
-                <!-- ============================================ -->
-                <div class="lg:col-span-8 space-y-16">
+                <!-- COLUMNA IZQUIERDA: CONTENIDO PRINCIPAL (9/12) -->
+                <div class="lg:col-span-9 space-y-20">
                     
-                    <!-- 1. GENERACIÓN DE VALOR CLIENTE -->
-                    <div class="bg-blue-50 p-8 rounded-xl border-l-8 border-primary shadow-sm">
-                        <h3 class="font-serif text-2xl font-bold text-gray-900 mb-6">
+                    <!-- SECCIÓN 1: GENERACIÓN DE VALOR CLIENTE -->
+                    <div class="space-y-12">
+                        <h2 class="font-serif text-5xl md:text-6xl font-bold text-primary leading-tight">
                             Generación de Valor Cliente
-                        </h3>
+                        </h2>
                         
-                        <ul class="space-y-8">
-                            
-                            <!-- Item Principal con Sub-lista -->
-                            <li class="flex flex-col text-gray-700 text-lg leading-relaxed">
-                                <div class="flex items-start">
-                                    <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
-                                    <span class="font-bold">Optimiza la inversión social pública y privada:</span>
-                                </div>
-                                <!-- Sub-lista de beneficios -->
-                                <ul class="mt-4 ml-8 space-y-3 text-gray-600 text-base bg-white p-5 rounded-lg border border-blue-100">
-                                    <li class="flex items-start"><span class="text-primary mr-2">✓</span> Visión de prosperidad: Multi Regional / Provincial / Distrital / Comunal.</li>
-                                    <li class="flex items-start"><span class="text-primary mr-2">✓</span> Generación de sinergias, complementariedad y mayores beneficios para la población de los proyectos públicos y privados.</li>
-                                    <li class="flex items-start"><span class="text-primary mr-2">✓</span> Mayor movilidad y oportunidades de educación, salud y empleo para la población.</li>
-                                    <li class="flex items-start"><span class="text-primary mr-2">✓</span> Potencia la productividad y el desarrollo de clusters.</li>
-                                </ul>
-                            </li>
+                        <div class="space-y-8">
+                            <p class="text-2xl text-gray-800 leading-relaxed font-light">
+                                Optimiza la inversión social pública y privada mediante corredores económicos territoriales que generan sinergias, complementariedad y mayores beneficios para la población.
+                            </p>
+                        </div>
 
-                            <!-- Otros Items -->
-                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
-                                <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
-                                <span>Desarrollo integrado del área de influencia o de más de una circunscripción territorial: países, regiones, provincias, distritos y/o comunidades.</span>
-                            </li>
-
-                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
-                                <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
-                                <span>Cubre vacíos existentes en el ordenamiento geopolítico y acelera el desarrollo y la competitividad.</span>
-                            </li>
-
-                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
-                                <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
-                                <span>Robustece el desarrollo bajo el enfoque territorial.</span>
-                            </li>
-
-                            <li class="flex items-start text-gray-700 text-lg leading-relaxed">
-                                <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
-                                <span>Potencia el proceso de desarrollo de la población relacionada al Corredor Económico Territorial.</span>
-                            </li>
-
-                        </ul>
+                        <!-- IMAGEN 1 -->
+                        <div class="w-full h-96 bg-gray-100 rounded-lg overflow-hidden">
+                            <img 
+                                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop" 
+                                alt="Corredores Económicos"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
                     </div>
 
-                    <!-- 2. NUESTRO TRABAJO -->
-                    <div>
-                        <h3 class="font-serif text-3xl font-bold text-primary mb-8">
+                    <!-- SECCIÓN 2: CONCEPTOS CLAVE -->
+                    <div class="space-y-16">
+                        <!-- Concepto 1: Con Imagen Derecha -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                            <div class="border-l-4 border-primary pl-8">
+                                <p class="text-xl text-gray-800 leading-relaxed">
+                                    Visión de prosperidad multi regional, provincial, distrital y comunitaria que genera sinergias y complementariedad entre los proyectos públicos y privados.
+                                </p>
+                            </div>
+                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" 
+                                    alt="Visión de Prosperidad"
+                                    class="w-full h-full object-cover"
+                                />
+                            </div>
+                        </div>
+
+                        <!-- Concepto 2: Con Imagen Izquierda -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" 
+                                    alt="Mayor Movilidad"
+                                    class="w-full h-full object-cover"
+                                />
+                            </div>
+                            <div class="border-l-4 border-primary pl-8">
+                                <p class="text-xl text-gray-800 leading-relaxed">
+                                    Mayor movilidad y oportunidades de educación, salud y empleo para la población del área de influencia del corredor.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Concepto 3: Solo Texto -->
+                        <div class="border-l-4 border-primary pl-8 py-6">
+                            <p class="text-xl text-gray-800 leading-relaxed">
+                                Desarrollo integrado del área de influencia o de más de una circunscripción territorial: países, regiones, provincias, distritos y/o comunidades.
+                            </p>
+                        </div>
+
+                        <!-- Concepto 4: Con Imagen Derecha -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                            <div class="border-l-4 border-primary pl-8">
+                                <p class="text-xl text-gray-800 leading-relaxed">
+                                    Cubre vacíos existentes en el ordenamiento geopolítico y acelera el desarrollo y la competitividad territorial.
+                                </p>
+                            </div>
+                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" 
+                                    alt="Ordenamiento Geopolítico"
+                                    class="w-full h-full object-cover"
+                                />
+                            </div>
+                        </div>
+
+                        <!-- Concepto 5: Con Imagen Izquierda -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" 
+                                    alt="Productividad"
+                                    class="w-full h-full object-cover"
+                                />
+                            </div>
+                            <div class="border-l-4 border-primary pl-8">
+                                <p class="text-xl text-gray-800 leading-relaxed">
+                                    Potencia la productividad y el desarrollo de clusters, robusteciendo el desarrollo bajo enfoque territorial.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IMAGEN 2 -->
+                    <div class="w-full h-96 bg-gray-100 rounded-lg overflow-hidden">
+                        <img 
+                            src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop" 
+                            alt="Corredores Territoriales"
+                            class="w-full h-full object-cover"
+                        />
+                    </div>
+
+                    <!-- SECCIÓN 3: NUESTRO TRABAJO -->
+                    <div class="space-y-12 pt-12 border-t-2 border-gray-200">
+                        <h2 class="font-serif text-5xl md:text-6xl font-bold text-primary leading-tight">
                             Nuestro Trabajo
-                        </h3>
-
-                        <!-- Card A -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 items-center bg-gray-50 p-8 rounded-xl">
-                            <div>
-                                <div class="flex items-start mb-4">
-                                    <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary text-white font-bold text-lg flex-shrink-0">A</div>
-                                    <h4 class="font-bold text-xl text-gray-900 ml-4">Constitución y Gobernanza</h4>
-                                </div>
-                                <div class="ml-14">
-                                    <ul class="space-y-2">
-                                        <li class="flex items-center text-gray-700">
-                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                                            Estudios metodológicos
-                                        </li>
-                                        <li class="flex items-center text-gray-700">
-                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                                            Gobernanza público-privada
-                                        </li>
-                                        <li class="flex items-center text-gray-700">
-                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                                            Planeamiento territorial
-                                        </li>
-                                        <li class="flex items-center text-gray-700">
-                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                                            Formación de corredores
-                                        </li>
-                                    </ul>
-                                </div>
+                        </h2>
+                        
+                        <div class="space-y-8">
+                            <div class="bg-gray-50 p-8 rounded-lg">
+                                <p class="text-xl text-gray-800 leading-relaxed">
+                                    Elaboración de estudios metodológicos para la constitución, gobernanza, planeamiento y gestión con actores público - privado claves en la formación, consolidación y crecimiento de Corredores Económicos Territoriales.
+                                </p>
                             </div>
-                            <div class="rounded-lg overflow-hidden shadow-lg h-64 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop" alt="Gobernanza" class="w-full h-full object-cover"/>
+
+                            <div class="bg-gray-50 p-8 rounded-lg">
+                                <p class="text-xl text-gray-800 leading-relaxed">
+                                    Megaproyectos e proyectos de desarrollo para potenciar el impacto en el cierre de brechas y desarrollo de la población del Corredor Económico Territorial.
+                                </p>
+                            </div>
+
+                            <div class="bg-gray-50 p-8 rounded-lg">
+                                <p class="text-xl text-gray-800 leading-relaxed">
+                                    KPI y sistema de datos e información digital de Corredores Económicos Territoriales.
+                                </p>
                             </div>
                         </div>
 
-                        <!-- Card B -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-gray-50 p-8 rounded-xl">
-                            <div class="rounded-lg overflow-hidden shadow-lg h-64 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center order-2 md:order-1">
-                                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=400&fit=crop" alt="Desarrollo" class="w-full h-full object-cover"/>
-                            </div>
-                            <div class="order-1 md:order-2">
-                                <div class="flex items-start mb-4">
-                                    <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary text-white font-bold text-lg flex-shrink-0">B</div>
-                                    <h4 class="font-bold text-xl text-gray-900 ml-4">Proyectos y Monitoreo</h4>
-                                </div>
-                                <div class="ml-14">
-                                    <ul class="space-y-2">
-                                        <li class="flex items-center text-gray-700">
-                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                                            Megaproyectos de desarrollo
-                                        </li>
-                                        <li class="flex items-center text-gray-700">
-                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                                            Cierre de brechas
-                                        </li>
-                                        <li class="flex items-center text-gray-700">
-                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                                            KPI y indicadores
-                                        </li>
-                                        <li class="flex items-center text-gray-700">
-                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                                            Sistema digital de datos
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <!-- IMAGEN 3 -->
+                        <div class="w-full h-80 bg-gray-100 rounded-lg overflow-hidden">
+                            <img 
+                                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop" 
+                                alt="Nuestro Trabajo"
+                                class="w-full h-full object-cover"
+                            />
                         </div>
                     </div>
 
-                    
+                    <!-- SECCIÓN 4: COMPONENTES DEL CORREDOR -->
+                    <div class="space-y-8">
+                        <h3 class="text-3xl font-bold text-gray-900">Componentes del Corredor Económico</h3>
+                        
+                        <!-- GRID UNIFORME: 1 columna en móvil, 2 en tablet, 4 en desktop -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                            
+                            <!-- COMPONENTE 1: Rojo Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-red-50 border border-red-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-red-900 font-bold text-lg">Constitución y Gobernanza</h4>
+                            </div>
+
+                            <!-- COMPONENTE 2: Celeste Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-sky-50 border border-sky-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-sky-900 font-bold text-lg">Planeamiento Territorial</h4>
+                            </div>
+
+                            <!-- COMPONENTE 3: Gris Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-gray-50 border border-gray-200 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-gray-900 font-bold text-lg">Estudios Metodológicos</h4>
+                            </div>
+
+                            <!-- COMPONENTE 4: Rojo Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-red-50 border border-red-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-red-900 font-bold text-lg">Formación de Corredores</h4>
+                            </div>
+
+                            <!-- COMPONENTE 5: Celeste Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-sky-50 border border-sky-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-sky-900 font-bold text-lg">Megaproyectos de Desarrollo</h4>
+                            </div>
+
+                            <!-- COMPONENTE 6: Gris Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-gray-50 border border-gray-200 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-gray-900 font-bold text-lg">Cierre de Brechas</h4>
+                            </div>
+
+                            <!-- COMPONENTE 7: Rojo Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-red-50 border border-red-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-red-900 font-bold text-lg">KPI e Indicadores</h4>
+                            </div>
+
+                            <!-- COMPONENTE 8: Celeste Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-sky-50 border border-sky-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-sky-900 font-bold text-lg">Sistema Digital de Datos</h4>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- IMAGEN 4 -->
+                    <div class="w-full h-80 bg-gray-100 rounded-lg overflow-hidden">
+                        <img 
+                            src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop" 
+                            alt="Componentes"
+                            class="w-full h-full object-cover"
+                        />
+                    </div>
 
                 </div>
 
-                <!-- ============================================ -->
-                <!-- COLUMNA DERECHA: SIDEBAR (4/12)              -->
-                <!-- ============================================ -->
-                <aside class="lg:col-span-4 space-y-12">
-                    <div class="sticky top-32">
-                        <!-- Especialistas -->
-                        <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">
-                            Expertos en Corredores Económicos
-                        </h3>
-                        <div class="space-y-6 mb-12">
-                            {selectedSpecialists.map((member) => (
-                                <TeamCard 
-                                    name={member.name}
-                                    role={member.role}
-                                    image={member.image}
-                                    link={`/nosotros/equipo/${member.slug}`}
-                                />
-                            ))}
+                <!-- COLUMNA DERECHA: SIDEBAR (3/12) -->
+                <aside class="lg:col-span-3">
+                    <div class="sticky top-32 space-y-12">
+                        
+                        <!-- ESPECIALISTAS -->
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-3 border-b border-gray-300">
+                                Especialistas
+                            </h3>
+                            <div class="space-y-6">
+                                {selectedSpecialists.map((member) => (
+                                    <a 
+                                        href={`/nosotros/equipo/${member.slug}`}
+                                        class="group block hover:opacity-70 transition-opacity"
+                                    >
+                                        <div class="mb-3 h-40 bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
+                                            <img 
+                                                src={member.image} 
+                                                alt={member.name}
+                                                class="h-full w-auto object-contain"
+                                            />
+                                        </div>
+                                        <h4 class="font-bold text-sm text-gray-900 group-hover:text-primary transition-colors">
+                                            {member.name}
+                                        </h4>
+                                        <p class="text-xs text-gray-600 mt-1 leading-tight">
+                                            {member.role}
+                                        </p>
+                                    </a>
+                                ))}
+                            </div>
                         </div>
 
-                        <!-- Industrias Relacionadas -->
-                        <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">
-                            Industrias Relacionadas
-                        </h3>
-                        <div class="space-y-4">
-                            {selectedIndustries.map((ind) => (
-                                ind ? (
-                                    <SidebarCard 
-                                        title={ind.title} 
-                                        image={ind.image} 
-                                        link={ind.link} 
-                                    />
-                                ) : null
-                            ))}
+                        <!-- INDUSTRIAS -->
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-3 border-b border-gray-300">
+                                Industrias Relacionadas
+                            </h3>
+                            <div class="space-y-4">
+                                {selectedIndustries.map((ind) => (
+                                    <a 
+                                        href={ind.link}
+                                        class="group block hover:opacity-70 transition-opacity"
+                                    >
+                                        <div class="mb-2 h-24 bg-gray-100 rounded-lg overflow-hidden flex items-center justify-center">
+                                            <img 
+                                                src={ind.image} 
+                                                alt={ind.title}
+                                                class="w-full h-full object-cover"
+                                            />
+                                        </div>
+                                        <h4 class="font-bold text-xs text-gray-900 group-hover:text-primary transition-colors">
+                                            {ind.title}
+                                        </h4>
+                                    </a>
+                                ))}
+                            </div>
                         </div>
+
                     </div>
                 </aside>
 

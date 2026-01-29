@@ -35,13 +35,27 @@ export async function getStaticPaths() {
       experience: ["Rudy ha sido director de Electro Sur Este y presidente del Comité Pro Conectividad de la Agencia de Promoción de la Inversión Privada del Perú (Proinversión): hidrocarburos, electricidad y telecomunicaciones.",
         "Rudy ha laborado en instituciones lideres que promueven la competitividad y el desarrollo, como consultor en el Ministerio de Economía y Finanzas (MEF) y como co-líder en proyectos de investigación en tributación, política fiscal y crecimiento de sectores mineroenergéticos de países de América Latina para el Banco Interamericano de Desarrollo (BID) y para el Banco Mundial (BM). Antes de laborar en el MEF y en proyectos para multilaterales, Rudy se desempeñaba como especialista económico financiero en reestructuración de importantes empresas del país.",
         "Rudy ha sido docente universitario por más de 20 años:",
-        "• Maestría en Regulación: Mercado y Regulación de Petróleo", "ㅤEscuela de Postgrado de la Universidad Peruana de Ciencias Aplicadas (UPC).",
+        "• Maestría en Regulación: Mercado y Regulación de Petróleo", "ㅤEscuela de Postgrado de la Universidad Peruana de Ciencias Aplicadas (UPC)",
         "• Econometría e Informática para Economistas","ㅤUniversidad San Ignacio de Loyola (USIL)",
     "• Econometría I, Econometría II y Análisis de Series de Tiempo"  , "ㅤUniversidad Nacional de Ingeniería (UNI)" ,
 "• Economía Pública y Recursos Naturales" , "ㅤUniversidad de San Martín de Porres (USMP)" ],
-      education: [{ degree: "Máster en Tributación y Política fiscal", institution: "Universidad Autónoma de Madrid (UAM) - Universidad de Lima (ULima)" },
-        { degree: "Ingeniero Economista", institution: "Universidad Nacional de Ingeniería (UNI)" }
-      ],
+      education: [
+  { 
+    degree: "Máster en Tributación y Política fiscal", 
+    // CAMBIO AQUÍ: Convertimos el texto en un Array (lista)
+    institution: [
+        "Universidad Autónoma de Madrid (UAM)",
+        "Universidad de Lima (ULima)"
+    ],
+    logos: ["/logos/logo-uamadrid.png", "/logos/Universidad_de_Lima_logo.png"] 
+  },
+  { 
+    degree: "Ingeniero Economista", 
+    // Puedes dejarlo como string si es solo uno, o ponerlo en array ["Texto"]
+    institution: "Universidad Nacional de Ingeniería (UNI)",
+    logos: ["/logos/Universidad_de_Lima_logo.png"] 
+  }
+],
       highlightedCapabilities: ['competitividad', 'fortalecimiento', 'evaluacion'],
       highlightedIndustries: ['educacion', 'sector_publico', 'sector_social']
     },
@@ -107,7 +121,7 @@ export async function getStaticPaths() {
         { degree: "Especialista en Formulación y Evaluación de Proyectos de Inversión Pública", institution: "Universidad ESAN" },
         { degree: "Bachiller en Ingeniería Económica", institution: "Universidad Nacional de Ingeniería (UNI)" },
       ],
-      highlightedCapabilities: ['inversion', 'fondos', 'competitividad'], 
+      highlightedCapabilities: ['inversiones', 'fondos', 'evaluacion'], 
       highlightedIndustries: ['mineria', 'educacion', 'sector_publico']
 },
 {
@@ -194,7 +208,7 @@ export async function getStaticPaths() {
         { degree: "Diplomado de Gobernabilidad e Innovación Pública", institution: "Pontificia Universidad Católica del Perú (PUCP) y Banco de Desarrollo de América Latina y el Caribe (CAF)" },
         { degree: "Economista", institution: "Universidad San Martín de Porres (USMP)" }
       ],
-      highlightedCapabilities: ['desarrollo', 'competitividad', 'fondos'], 
+      highlightedCapabilities: ['desarrollo', 'competitividad', 'fortalecimiento'], 
       highlightedIndustries: ['infraestructura', 'educacion', 'sector_social']
 },
 {
@@ -213,7 +227,7 @@ export async function getStaticPaths() {
         { degree: "Bachiller en Administración de Negocios Internacionales", institution: "Universidad Femenina del Sagrado Corazón (UNIFE)" },
         { degree: "KEY USER SAP B1", institution: "ITSYSTEMS PERU" }
       ],
-      highlightedCapabilities: ['fondos', 'competitividad', 'desarrollo'], 
+      highlightedCapabilities: ['evaluacion', 'competitividad', 'desarrollo'], 
       highlightedIndustries: ['sector_publico', 'sector_social', 'educacion']
 },
 {
@@ -232,7 +246,7 @@ export async function getStaticPaths() {
         { degree: "Metodología Ágil – Scrum Master", institution: "Edúcate Perú Consultores" },
         { degree: "Bachiller en Ingeniería Económica", institution: "Universidad Nacional de Ingeniería (UNI)" }
       ],
-      highlightedCapabilities: ['desarrollo', 'evaluacion', 'competitividad'], 
+      highlightedCapabilities: ['desarrollo', 'evaluacion', 'corredores'], 
       highlightedIndustries: ['infraestructura', 'agricultura', 'sector_social']
 },
 {
@@ -341,19 +355,47 @@ const { member } = Astro.props;
                         </div>
                     </div>
 
-                    <!-- Educación -->
-                    <div>
-                        <h3 class="font-serif text-3xl font-bold text-primary mb-6">Educación</h3>
-                        <div class="grid gap-6">
-                            {member.education.map((item) => (
-                                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-primary hover:shadow-md transition-shadow">
-                                    <h4 class="font-bold text-gray-900 text-xl">{item.degree}</h4>
-                                    <p class="text-gray-600 mt-1 text-lg">{item.institution}</p>
+<!-- SECCIÓN EDUCACIÓN (Formato Astro) -->
+<div>
+    <h3 class="font-serif text-3xl font-bold text-primary mb-6">Educación</h3>
+    <div class="grid gap-6">
+        {member.education.map((item) => (
+            <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-primary hover:shadow-md transition-shadow flex flex-col sm:flex-row items-center justify-between gap-6">
+                
+                {/* --- TEXTO --- */}
+                <div class="flex-1 w-full sm:w-auto text-left">
+                    <h4 class="font-bold text-gray-900 text-xl leading-tight mb-2">{item.degree}</h4>
+                    
+                    <div class="text-gray-600 text-lg">
+                        {/* Lógica: Si es Array (lista), mapeamos. Si es texto, mostramos directo */}
+                        {Array.isArray(item.institution) ? (
+                            item.institution.map((instName) => (
+                                <div class="block mb-1">
+                                    {instName}
                                 </div>
-                            ))}
-                        </div>
+                            ))
+                        ) : (
+                            <span>{item.institution}</span>
+                        )}
                     </div>
+                </div>
 
+                {/* --- LOGOS (Grandes y Horizontales) --- */}
+                {item.logos && item.logos.length > 0 && (
+                    <div class="flex flex-row items-center justify-center gap-4 mt-4 sm:mt-0 flex-shrink-0">
+                        {item.logos.map((logoUrl) => (
+                            <img 
+                                src={logoUrl} 
+                                alt="Logo Institución" 
+                                class="h-20 md:h-28 w-auto object-contain mix-blend-multiply"
+                            />
+                        ))}
+                    </div>
+                )}
+            </div>
+        ))}
+    </div>
+</div>
                 </div>
 
                 <!-- COLUMNA DERECHA: SIDEBAR (4/12) -->

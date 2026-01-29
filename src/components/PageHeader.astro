@@ -25,7 +25,7 @@ const { title, description, backgroundImage } = Astro.props;
   <div class="container mx-auto max-w-5xl text-center relative z-10">
     
     <!-- Título: Si hay imagen de fondo, texto blanco. Si no, texto oscuro. -->
-    <h1 class={`font-serif text-5xl md:text-7xl font-black mb-6 ${backgroundImage ? 'text-white' : 'text-gray-900'}`}>
+    <h1 class={`font-serif text-5xl md:text-7xl font-black mb-6 leading-[1.2] md:leading-[1.2] ${backgroundImage ? 'text-white' : 'text-gray-900'}`}>
       {title}
     </h1>
 

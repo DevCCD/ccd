@@ -14,23 +14,268 @@ const industries = [
 ];
 
 const countries = [
-    { name: "Perú", provinces: ["Lima", "Arequipa", "Cusco", "Junín", "La Libertad", "Lambayeque", "Loreto", "Puno", "San Martín", "Ucayali", "Ancash", "Apurímac", "Ayacucho", "Cajamarca", "Ica", "Moquegua", "Tacna", "Tumbes", "Huancavelica"] },
-    { name: "Bolivia", provinces: [] },
-    { name: "Colombia", provinces: [] },
-    { name: "Ecuador", provinces: [] },
-    { name: "Chile", provinces: [] },
+    { name: "Afganistán", provinces: [] },
+    { name: "Alemania", provinces: [] },
+    { name: "Arabia Saudita", provinces: [] },
+    { name: "Argelia", provinces: [] },
     { name: "Argentina", provinces: [] },
+    { name: "Australia", provinces: [] },
+    { name: "Austria", provinces: [] },
+    { name: "Bahamas", provinces: [] },
+    { name: "Bangladés", provinces: [] },
+    { name: "Barbados", provinces: [] },
+    { name: "Bélgica", provinces: [] },
+    { name: "Belice", provinces: [] },
+    { name: "Benín", provinces: [] },
+    { name: "Bielorrusia", provinces: [] },
+    { name: "Birmania", provinces: [] },
+    { name: "Bolivia", provinces: [] },
+    { name: "Bosnia y Herzegovina", provinces: [] },
+    { name: "Botsuana", provinces: [] },
+    { name: "Brasil", provinces: [] },
+    { name: "Brunéi", provinces: [] },
+    { name: "Bulgaria", provinces: [] },
+    { name: "Burkina Faso", provinces: [] },
+    { name: "Burundi", provinces: [] },
+    { name: "Bután", provinces: [] },
+    { name: "Camboya", provinces: [] },
+    { name: "Camerún", provinces: [] },
+    { name: "Canadá", provinces: [] },
+    { name: "Catar", provinces: [] },
+    { name: "Chad", provinces: [] },
+    { name: "Chile", provinces: [] },
+    { name: "China", provinces: [] },
+    { name: "Chipre", provinces: [] },
+    { name: "Ciudad del Vaticano", provinces: [] },
+    { name: "Colombia", provinces: [] },
+    { name: "Comoras", provinces: [] },
+    { name: "Congo", provinces: [] },
+    { name: "Corea del Norte", provinces: [] },
+    { name: "Corea del Sur", provinces: [] },
+    { name: "Costa de Marfil", provinces: [] },
+    { name: "Costa Rica", provinces: [] },
+    { name: "Croacia", provinces: [] },
+    { name: "Cuba", provinces: [] },
+    { name: "Dinamarca", provinces: [] },
+    { name: "Dominica", provinces: [] },
+    { name: "Ecuador", provinces: [] },
+    { name: "Egipto", provinces: [] },
+    { name: "El Salvador", provinces: [] },
+    { name: "Emiratos Árabes Unidos", provinces: [] },
+    { name: "Eslovaquia", provinces: [] },
+    { name: "Eslovenia", provinces: [] },
+    { name: "España", provinces: [] },
+    { name: "Estados Unidos", provinces: [] },
+    { name: "Estonia", provinces: [] },
+    { name: "Esuatini", provinces: [] },
+    { name: "Etiopía", provinces: [] },
+    { name: "Filipinas", provinces: [] },
+    { name: "Finlandia", provinces: [] },
+    { name: "Fiyi", provinces: [] },
+    { name: "Francia", provinces: [] },
+    { name: "Gabón", provinces: [] },
+    { name: "Gales", provinces: [] },
+    { name: "Gambia", provinces: [] },
+    { name: "Georgia", provinces: [] },
+    { name: "Ghana", provinces: [] },
+    { name: "Gibraltar", provinces: [] },
+    { name: "Granada", provinces: [] },
+    { name: "Grecia", provinces: [] },
+    { name: "Groenlandia", provinces: [] },
+    { name: "Guadalupe", provinces: [] },
+    { name: "Guam", provinces: [] },
+    { name: "Guatemala", provinces: [] },
+    { name: "Guayana Francesa", provinces: [] },
+    { name: "Guernesey", provinces: [] },
+    { name: "Guinea", provinces: [] },
+    { name: "Guinea Ecuatorial", provinces: [] },
+    { name: "Guinea-Bisáu", provinces: [] },
+    { name: "Guyana", provinces: [] },
+    { name: "Haití", provinces: [] },
+    { name: "Holanda", provinces: [] },
+    { name: "Honduras", provinces: [] },
+    { name: "Hong Kong", provinces: [] },
+    { name: "Hungría", provinces: [] },
+    { name: "India", provinces: [] },
+    { name: "Indonesia", provinces: [] },
+    { name: "Irak", provinces: [] },
+    { name: "Irán", provinces: [] },
+    { name: "Irlanda", provinces: [] },
+    { name: "Irlanda del Norte", provinces: [] },
+    { name: "Isla Bouvet", provinces: [] },
+    { name: "Isla de Man", provinces: [] },
+    { name: "Isla Norfolk", provinces: [] },
+    { name: "Islandia", provinces: [] },
+    { name: "Islas Åland", provinces: [] },
+    { name: "Islas Caimán", provinces: [] },
+    { name: "Islas Cocos", provinces: [] },
+    { name: "Islas Faroe", provinces: [] },
+    { name: "Islas Heard y McDonald", provinces: [] },
+    { name: "Islas Malvinas", provinces: [] },
+    { name: "Islas Marianas del Norte", provinces: [] },
+    { name: "Islas Pitcairn", provinces: [] },
+    { name: "Islas Salomón", provinces: [] },
+    { name: "Islas Turcas y Caicos", provinces: [] },
+    { name: "Islas Vírgenes Británicas", provinces: [] },
+    { name: "Islas Vírgenes de EE.UU.", provinces: [] },
+    { name: "Israel", provinces: [] },
+    { name: "Italia", provinces: [] },
+    { name: "Jamaica", provinces: [] },
+    { name: "Japón", provinces: [] },
+    { name: "Jersey", provinces: [] },
+    { name: "Jordania", provinces: [] },
+    { name: "Kazajstán", provinces: [] },
+    { name: "Kenia", provinces: [] },
+    { name: "Kirguistán", provinces: [] },
+    { name: "Kiribati", provinces: [] },
+    { name: "Kuwait", provinces: [] },
+    { name: "Laos", provinces: [] },
+    { name: "Lesoto", provinces: [] },
+    { name: "Letonia", provinces: [] },
+    { name: "Líbano", provinces: [] },
+    { name: "Liberia", provinces: [] },
+    { name: "Libia", provinces: [] },
+    { name: "Liechtenstein", provinces: [] },
+    { name: "Lituania", provinces: [] },
+    { name: "Luxemburgo", provinces: [] },
+    { name: "Macao", provinces: [] },
+    { name: "Madagascar", provinces: [] },
+    { name: "Malasia", provinces: [] },
+    { name: "Malaui", provinces: [] },
+    { name: "Maldivas", provinces: [] },
+    { name: "Mali", provinces: [] },
+    { name: "Malta", provinces: [] },
+    { name: "Marruecos", provinces: [] },
+    { name: "Martinica", provinces: [] },
+    { name: "Mauricio", provinces: [] },
+    { name: "Mauritania", provinces: [] },
+    { name: "Mayotte", provinces: [] },
+    { name: "México", provinces: [] },
+    { name: "Micronesia", provinces: [] },
+    { name: "Moldavia", provinces: [] },
+    { name: "Mónaco", provinces: [] },
+    { name: "Mongolia", provinces: [] },
+    { name: "Montenegro", provinces: [] },
+    { name: "Montserrat", provinces: [] },
+    { name: "Mozambique", provinces: [] },
+    { name: "Namibia", provinces: [] },
+    { name: "Nauru", provinces: [] },
+    { name: "Nepal", provinces: [] },
+    { name: "Nicaragua", provinces: [] },
+    { name: "Níger", provinces: [] },
+    { name: "Nigeria", provinces: [] },
+    { name: "Niue", provinces: [] },
+    { name: "Noruega", provinces: [] },
+    { name: "Nueva Caledonia", provinces: [] },
+    { name: "Nueva Zelanda", provinces: [] },
+    { name: "Omán", provinces: [] },
+    { name: "Organización Territorial Británica del Océano Índico", provinces: [] },
+    { name: "Países Bajos", provinces: [] },
+    { name: "Pakistán", provinces: [] },
+    { name: "Palaos", provinces: [] },
+    { name: "Palestina", provinces: [] },
+    { name: "Panamá", provinces: [] },
+    { name: "Papúa Nueva Guinea", provinces: [] },
     { name: "Paraguay", provinces: [] },
+{ 
+  name: "Perú", 
+  provinces: [
+    "Ancash", 
+    "Apurímac", 
+    "Arequipa", 
+    "Ayacucho", 
+    "Cajamarca", 
+    "Cusco", 
+    "Huancavelica", 
+    "Ica", 
+    "Junín", 
+    "La Libertad", 
+    "Lambayeque", 
+    "Lima", 
+    "Loreto", 
+    "Moquegua", 
+    "Puno", 
+    "San Martín", 
+    "Tacna", 
+    "Tumbes", 
+    "Ucayali"  ] 
+},
+    { name: "Polinesia Francesa", provinces: [] },
+    { name: "Polonia", provinces: [] },
+    { name: "Portugal", provinces: [] },
+    { name: "Príncipe de Gales", provinces: [] },
+    { name: "Principales islas menores de EE.UU.", provinces: [] },
+    { name: "Puerto Rico", provinces: [] },
+    { name: "Reino Unido", provinces: [] },
+    { name: "República Centroafricana", provinces: [] },
+    { name: "República Checa", provinces: [] },
+    { name: "República Democrática del Congo", provinces: [] },
+    { name: "República Dominicana", provinces: [] },
+    { name: "Reunión", provinces: [] },
+    { name: "Ruanda", provinces: [] },
+    { name: "Rumania", provinces: [] },
+    { name: "Rusia", provinces: [] },
+    { name: "Sahara Occidental", provinces: [] },
+    { name: "Samoa", provinces: [] },
+    { name: "Samoa Americana", provinces: [] },
+    { name: "San Bartolomé", provinces: [] },
+    { name: "San Cristóbal y Nieves", provinces: [] },
+    { name: "San Marino", provinces: [] },
+    { name: "San Martín", provinces: [] },
+    { name: "San Vicente y las Granadinas", provinces: [] },
+    { name: "Santa Elena", provinces: [] },
+    { name: "Santa Lucía", provinces: [] },
+    { name: "Santo Tomé y Príncipe", provinces: [] },
+    { name: "Senegal", provinces: [] },
+    { name: "Serbia", provinces: [] },
+    { name: "Seychelles", provinces: [] },
+    { name: "Sierra Leona", provinces: [] },
+    { name: "Singapur", provinces: [] },
+    { name: "Sint Maarten", provinces: [] },
+    { name: "Siria", provinces: [] },
+    { name: "Somalia", provinces: [] },
+    { name: "Sri Lanka", provinces: [] },
+    { name: "Sudáfrica", provinces: [] },
+    { name: "Sudán", provinces: [] },
+    { name: "Sudán del Sur", provinces: [] },
+    { name: "Suecia", provinces: [] },
+    { name: "Suiza", provinces: [] },
+    { name: "Surinam", provinces: [] },
+    { name: "Tailandia", provinces: [] },
+    { name: "Taiwán", provinces: [] },
+    { name: "Tanzania", provinces: [] },
+    { name: "Tayikistán", provinces: [] },
+    { name: "Territorio Británico del Océano Índico", provinces: [] },
+    { name: "Territorios Australes Franceses", provinces: [] },
+    { name: "Tetuan", provinces: [] },
+    { name: "Timor Oriental", provinces: [] },
+    { name: "Togo", provinces: [] },
+    { name: "Tokelau", provinces: [] },
+    { name: "Tonga", provinces: [] },
+    { name: "Trinidad y Tobago", provinces: [] },
+    { name: "Túnez", provinces: [] },
+    { name: "Turkmenistán", provinces: [] },
+    { name: "Turquía", provinces: [] },
+    { name: "Tuvalu", provinces: [] },
+    { name: "Ucrania", provinces: [] },
+    { name: "Uganda", provinces: [] },
     { name: "Uruguay", provinces: [] },
+    { name: "Uzbekistán", provinces: [] },
+    { name: "Vanuatu", provinces: [] },
     { name: "Venezuela", provinces: [] },
-    { name: "Otros", provinces: [] }
+    { name: "Vietnam", provinces: [] },
+    { name: "Wallis y Futuna", provinces: [] },
+    { name: "Yemen", provinces: [] },
+    { name: "Yibuti", provinces: [] },
+    { name: "Zambia", provinces: [] },
+    { name: "Zimbabue", provinces: [] }
 ];
 ---
 
 <Layout title="Carreras - Centro para la Competitividad y el Desarrollo">
     
     <PageHeader 
-        title="Únete a Nuestro Equipo" 
+        title="Expertos en Competitividad y Desarrollo" 
         backgroundImage={headerImage}
     />
 
@@ -39,49 +284,66 @@ const countries = [
         <div class="container mx-auto px-6">
             <div class="max-w-3xl mx-auto text-center mb-16">
                 <h2 class="font-serif text-3xl md:text-4xl font-bold text-primary mb-6">
-                    Expertos en Competitividad y Desarrollo
+                    ¡Creemos en tu potencial, experiencia y habilidad!
                 </h2>
-                <p class="text-gray-600 text-lg leading-relaxed">
-                    En CCD buscamos profesionales apasionados que quieran contribuir al desarrollo económico y competitivo de empresas e industrias. Si tienes experiencia en consultoría, desarrollo empresarial, evaluación de proyectos o cualquier área relacionada, nos gustaría conocerte.
+                <p class="text-gray-600 text-xl leading-relaxed">
+Forma parte de la institución líder en competitividad, con más de una década impulsando el desarrollo nacional, regional, provincial, distrital y comunal
+
                 </p>
+
             </div>
 
             <!-- Valores -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                <div class="text-center">
-                    <div class="flex justify-center mb-4">
-                        <div class="flex items-center justify-center w-16 h-16 rounded-full bg-primary/10">
-                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                <!-- Beneficio 1: Impacto Real -->
+                <div class="group">
+                    <div class="relative h-64 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center hover:from-primary/30 hover:to-primary/10">
+                        <div class="text-center px-6">
+                            <svg class="w-16 h-16 text-primary mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
                             </svg>
+                            <h3 class="font-serif text-2xl font-bold text-gray-900 group-hover:text-primary transition-colors duration-300">
+                                Impacto Real
+                            </h3>
+                            <p class="text-gray-600 text-sm mt-2">
+                                Trabaja en proyectos que generan cambio tangible en empresas e industrias
+                            </p>
                         </div>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-2">Impacto Real</h3>
-                    <p class="text-gray-600">Trabaja en proyectos que generan cambio tangible en empresas e industrias</p>
                 </div>
 
-                <div class="text-center">
-                    <div class="flex justify-center mb-4">
-                        <div class="flex items-center justify-center w-16 h-16 rounded-full bg-primary/10">
-                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <!-- Beneficio 2: Desarrollo Continuo -->
+                <div class="group">
+                    <div class="relative h-64 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center hover:from-primary/30 hover:to-primary/10">
+                        <div class="text-center px-6">
+                            <svg class="w-16 h-16 text-primary mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
                             </svg>
+                            <h3 class="font-serif text-2xl font-bold text-gray-900 group-hover:text-primary transition-colors duration-300">
+                                Desarrollo Continuo
+                            </h3>
+                            <p class="text-gray-600 text-sm mt-2">
+                                Acceso a capacitación y oportunidades para crecer profesionalmente
+                            </p>
                         </div>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-2">Desarrollo Continuo</h3>
-                    <p class="text-gray-600">Acceso a capacitación y oportunidades para crecer profesionalmente</p>
                 </div>
 
-                <div class="text-center">
-                    <div class="flex justify-center mb-4">
-                        <div class="flex items-center justify-center w-16 h-16 rounded-full bg-primary/10">
-                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.856-1.487M15 10a3 3 0 11-6 0 3 3 0 016 0zM4.318 20H3a2 2 0 00-2 2v2h4v-2a2 2 0 00-1.682-1.973M11 7a4 4 0 110 8 4 4 0 010-8z"></path>
+                <!-- Beneficio 3: Equipo Colaborativo -->
+                <div class="group">
+                    <div class="relative h-64 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center hover:from-primary/30 hover:to-primary/10">
+                        <div class="text-center px-6">
+                            <svg class="w-16 h-16 text-primary mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>                            </svg>
                             </svg>
+                            <h3 class="font-serif text-2xl font-bold text-gray-900 group-hover:text-primary transition-colors duration-300">
+                                Equipo Colaborativo
+                            </h3>
+                            <p class="text-gray-600 text-sm mt-2">
+                                Forma parte de un equipo multidisciplinario y de alto rendimiento
+                            </p>
                         </div>
                     </div>
-                    <h3 class="font-bold text-xl text-gray-900 mb-2">Equipo Colaborativo</h3>
-                    <p class="text-gray-600">Forma parte de un equipo multidisciplinario y de alto rendimiento</p>
                 </div>
             </div>
         </div>
@@ -95,8 +357,8 @@ const countries = [
                     <h2 class="font-serif text-4xl md:text-5xl font-bold text-primary mb-4">
                         Envía tu CV
                     </h2>
-                    <p class="text-gray-600 text-lg">
-                        Completa el formulario con tu información y adjunta tu CV. Revisaremos tu perfil y nos pondremos en contacto pronto.
+                    <p class="text-gray-600 text-xl">
+Únete a nosotros y vive la experiencia y la pasión por el desarrollo
                     </p>
                 </div>
 
@@ -104,7 +366,7 @@ const countries = [
                     <!-- Nombre Completo -->
                     <div>
                         <label for="nombre" class="block text-sm font-semibold text-gray-700 mb-2">
-                            Nombre Completo *
+                            Nombre *
                         </label>
                         <input 
                             type="text" 
@@ -119,7 +381,7 @@ const countries = [
                     <!-- Email -->
                     <div>
                         <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
-                            Email *
+                            Correo *
                         </label>
                         <input 
                             type="email" 
@@ -134,7 +396,7 @@ const countries = [
                     <!-- Teléfono -->
                     <div>
                         <label for="telefono" class="block text-sm font-semibold text-gray-700 mb-2">
-                            Teléfono *
+                            Celular *
                         </label>
                         <input 
                             type="tel" 
@@ -181,62 +443,10 @@ const countries = [
                         </select>
                     </div>
 
-                    <!-- Industria de Interés -->
-                    <div>
-                        <label for="industria" class="block text-sm font-semibold text-gray-700 mb-2">
-                            Industria de Interés *
-                        </label>
-                        <select 
-                            id="industria" 
-                            name="industria"
-                            required
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
-                        >
-                            <option value="">Selecciona una industria</option>
-                            {industries.map(industry => (
-                                <option value={industry}>{industry}</option>
-                            ))}
-                        </select>
-                    </div>
-
-                    <!-- Experiencia -->
-                    <div>
-                        <label for="experiencia" class="block text-sm font-semibold text-gray-700 mb-2">
-                            Años de Experiencia *
-                        </label>
-                        <select 
-                            id="experiencia" 
-                            name="experiencia"
-                            required
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
-                        >
-                            <option value="">Selecciona tu experiencia</option>
-                            <option value="0-2">0-2 años</option>
-                            <option value="2-5">2-5 años</option>
-                            <option value="5-10">5-10 años</option>
-                            <option value="10+">10+ años</option>
-                        </select>
-                    </div>
-
-                    <!-- Mensaje / Presentación -->
-                    <div>
-                        <label for="mensaje" class="block text-sm font-semibold text-gray-700 mb-2">
-                            Cuéntanos sobre ti *
-                        </label>
-                        <textarea 
-                            id="mensaje" 
-                            name="mensaje" 
-                            rows="5"
-                            required
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
-                            placeholder="Comparte tu experiencia, logros destacados y por qué te interesa unirte a CCD..."
-                        ></textarea>
-                    </div>
-
                     <!-- Archivo CV -->
                     <div>
                         <label for="cv" class="block text-sm font-semibold text-gray-700 mb-2">
-                            Adjunta tu CV *
+                            Adjuntar CV *
                         </label>
                         <div class="mt-2 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-lg hover:border-primary transition-colors duration-300">
                             <div class="space-y-1 text-center">
@@ -255,8 +465,6 @@ const countries = [
                                             class="sr-only"
                                         />
                                     </label>
-                                    <br />
-                                    
                                 </div>
                                 <p class="text-xs text-gray-500">PDF, DOC o DOCX hasta 10MB</p>
                             </div>
@@ -280,21 +488,13 @@ const countries = [
                         </label>
                     </div>
 
-                    <!-- Botones -->
-                    <div class="flex gap-4 pt-4">
-                        <button 
-                            type="submit" 
-                            class="flex-1 bg-primary text-white font-bold py-3 px-6 rounded-lg hover:bg-primary-dark transition-colors duration-300"
-                        >
-                            Enviar CV
-                        </button>
-                        <button 
-                            type="reset" 
-                            class="flex-1 bg-gray-200 text-gray-800 font-bold py-3 px-6 rounded-lg hover:bg-gray-300 transition-colors duration-300"
-                        >
-                            Limpiar
-                        </button>
-                    </div>
+                    <!-- Botón Enviar -->
+                    <button 
+                        type="submit" 
+                        class="w-full bg-primary text-white font-bold py-3 px-6 rounded-lg hover:bg-primary-dark transition-colors duration-300"
+                    >
+                        Enviar CV
+                    </button>
                 </form>
             </div>
         </div>

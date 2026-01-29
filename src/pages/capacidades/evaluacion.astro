@@ -1,32 +1,21 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import PageHeader from '../../components/PageHeader.astro';
-import TeamCard from '../../components/TeamCard.astro';
-import SidebarCard from '../../components/SidebarCard.astro';
 
-// Importamos la data centralizada
+// Importamos nuestra "base de datos"
 import { teamMembers, industriesData } from '../../data/teamData';
 
-// ========================================================================
-// CONFIGURACIÓN DE LA PÁGINA: EVALUACIÓN DE PROGRAMAS
-// ========================================================================
-
-// 1. SELECCIONA ESPECIALISTAS (Expertos en Evaluación y Economía)
 const selectedSpecialists = [
-    teamMembers["alex-carbajal"],   // Especialista en Evaluación de Proyectos
-
-    teamMembers["mario-huaman"]     // Especialista en Estudios Económicos
+    teamMembers["alex-carbajal"],
+    teamMembers["mario-huaman"]
 ];
 
-// 2. SELECCIONA INDUSTRIAS RELACIONADAS
 const selectedIndustries = [
-   
     industriesData["mineria"],
     industriesData["educacion"]
 ];
 
-// 3. IMAGEN DE CABECERA
-const headerImage = "/capacidades/evaluacion.jpg"; 
+const headerImage = "/capacidades/evaluacion.jpg";
 ---
 
 <Layout title="Evaluación de Programas y Proyectos - CCD">
@@ -36,206 +25,284 @@ const headerImage = "/capacidades/evaluacion.jpg";
         backgroundImage={headerImage}
     />
 
-    <section class="bg-white py-16 md:py-24">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
+    <section class="bg-white py-20 md:py-32">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
                 
-                <!-- ============================================ -->
-                <!-- COLUMNA IZQUIERDA: CONTENIDO (8/12)          -->
-                <!-- ============================================ -->
-                <div class="lg:col-span-8 space-y-16">
+                <!-- COLUMNA IZQUIERDA: CONTENIDO PRINCIPAL (9/12) -->
+                <div class="lg:col-span-9 space-y-20">
                     
-                    <!-- 1. GENERACIÓN DE VALOR CLIENTE -->
-                    <div class="bg-blue-50 p-8 rounded-xl border-l-8 border-primary shadow-sm">
-                        <h3 class="font-serif text-2xl font-bold text-gray-900 mb-6">
+                    <!-- SECCIÓN 1: GENERACIÓN DE VALOR CLIENTE -->
+                    <div class="space-y-12">
+                        <h2 class="font-serif text-5xl md:text-6xl font-bold text-primary leading-tight">
                             Generación de Valor Cliente
-                        </h3>
+                        </h2>
                         
-                        <ul class="space-y-8">
-                            
-                            <!-- Item con términos técnicos -->
-                            <li class="flex flex-col text-gray-700 text-lg leading-relaxed">
-                                <div class="flex items-start">
-                                    <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
-                                    <span>Mayores calidad y rendimientos esperados de la inversión social en el área de influencia:</span>
-                                </div>
-                                <div class="flex flex-wrap gap-3 mt-3 ml-8">
-                                    <span class="bg-white border border-blue-200 text-blue-800 px-3 py-1 rounded-md text-sm font-semibold">Improvement</span>
-                                    <span class="bg-white border border-blue-200 text-blue-800 px-3 py-1 rounded-md text-sm font-semibold">Accountability</span>
-                                    <span class="bg-white border border-blue-200 text-blue-800 px-3 py-1 rounded-md text-sm font-semibold">Enlightenment</span>
-                                </div>
-                            </li>
+                        <div class="space-y-8">
+                            <p class="text-2xl text-gray-800 leading-relaxed font-light">
+                                Evaluamos programas y proyectos para garantizar la calidad, eficiencia y el máximo impacto en el desarrollo.
+                            </p>
+                        </div>
 
-                            <!-- Item con sublista -->
-                            <li class="flex flex-col text-gray-700 text-lg leading-relaxed">
-                                <div class="flex items-start">
-                                    <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
-                                    <span>Optimización e integridad vertical y horizontal de la inversión social en todas las etapas:</span>
-                                </div>
-                                <ul class="mt-2 ml-8 grid grid-cols-1 sm:grid-cols-2 gap-2 text-gray-600 text-base">
-                                    <li class="flex items-center"><span class="text-primary mr-2">•</span> Negociación</li>
-                                    <li class="flex items-center"><span class="text-primary mr-2">•</span> Aprobación</li>
-                                    <li class="flex items-center"><span class="text-primary mr-2">•</span> Elaboración de estudios</li>
-                                    <li class="flex items-center"><span class="text-primary mr-2">•</span> Implementación</li>
-                                    <li class="flex items-center"><span class="text-primary mr-2">•</span> Operación y Mantenimiento</li>
-                                </ul>
-                            </li>
+                        <!-- IMAGEN 1 -->
+                        <div class="w-full h-96 bg-gray-100 rounded-lg overflow-hidden">
+                            <img 
+                                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop" 
+                                alt="Evaluación"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                    </div>
 
-                            <li class="flex flex-col text-gray-700 text-lg leading-relaxed">
-                                <div class="flex items-start">
-                                    <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
-                                    <span>Transparencia, ganancias de eficiencias y reportes:</span>
-                                </div>
-                                <p class="text-base text-gray-600 ml-8 mt-1">
-                                    Accionistas, Directorio, Documentos de sostenibilidad, Anuarios, Población beneficiaria, Líderes comunales.
+                    <!-- SECCIÓN 2: CONCEPTOS CLAVE -->
+                    <div class="space-y-16">
+                        <!-- Concepto 1: Con Imagen Derecha -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                            <div class="border-l-4 border-primary pl-8">
+                                <p class="text-xl text-gray-800 leading-relaxed">
+                                    Pertinencia y eficiencia en la asignación de recursos para maximizar el retorno social de las inversiones.
                                 </p>
-                            </li>
+                            </div>
+                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" 
+                                    alt="Pertinencia"
+                                    class="w-full h-full object-cover"
+                                />
+                            </div>
+                        </div>
 
-                            <li class="flex flex-col text-gray-700 text-lg leading-relaxed">
-                                <div class="flex items-start">
-                                    <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
-                                    <span>Generación de complementariedad con intervenciones público y privadas:</span>
-                                </div>
-                                <div class="flex flex-wrap gap-3 mt-3 ml-8">
-                                    <span class="bg-white border border-blue-200 text-blue-800 px-3 py-1 rounded-md text-sm font-semibold">Inversión</span>
-                                    <span class="bg-white border border-blue-200 text-blue-800 px-3 py-1 rounded-md text-sm font-semibold">Operación y mantenimiento</span>
-                                    <span class="bg-white border border-blue-200 text-blue-800 px-3 py-1 rounded-md text-sm font-semibold">Fondeo</span>
-                                </div>
-                            </li>
+                        <!-- Concepto 2: Con Imagen Izquierda -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" 
+                                    alt="Eficacia"
+                                    class="w-full h-full object-cover"
+                                />
+                            </div>
+                            <div class="border-l-4 border-primary pl-8">
+                                <p class="text-xl text-gray-800 leading-relaxed">
+                                    Eficacia e impacto en la generación de resultados duraderos para el desarrollo territorial.
+                                </p>
+                            </div>
+                        </div>
 
-                            <li class="flex flex-col text-gray-700 text-lg leading-relaxed">
-                                <div class="flex items-start">
-                                    <span class="bg-primary h-2.5 w-2.5 rounded-full mt-2.5 mr-4 flex-shrink-0"></span>
-                                    <span>Optimizar decisiones sobre intervenciones sociales para el desarrollo:</span>
-                                </div>
-                                <div class="flex flex-wrap gap-3 mt-3 ml-8">
-                                    <span class="bg-white border border-blue-200 text-blue-800 px-3 py-1 rounded-md text-sm font-semibold">Potenciación</span>
-                                    <span class="bg-white border border-blue-200 text-blue-800 px-3 py-1 rounded-md text-sm font-semibold">Restructuración</span>
-                                    <span class="bg-white border border-blue-200 text-blue-800 px-3 py-1 rounded-md text-sm font-semibold">Culminación</span>
-                                </div>
-                            </li>
+                        <!-- Concepto 3: Solo Texto -->
+                        <div class="border-l-4 border-primary pl-8 py-6">
+                            <p class="text-xl text-gray-800 leading-relaxed">
+                                Sostenibilidad de los resultados para asegurar que las iniciativas generen valor a largo plazo.
+                            </p>
+                        </div>
 
-                        </ul>
+                        <!-- Concepto 4: Con Imagen Derecha -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                            <div class="border-l-4 border-primary pl-8">
+                                <p class="text-xl text-gray-800 leading-relaxed">
+                                    Evaluaciones ex ante para diseñar intervenciones más efectivas desde el inicio.
+                                </p>
+                            </div>
+                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" 
+                                    alt="Ex Ante"
+                                    class="w-full h-full object-cover"
+                                />
+                            </div>
+                        </div>
+
+                        <!-- Concepto 5: Con Imagen Izquierda -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" 
+                                    alt="Ex Post"
+                                    class="w-full h-full object-cover"
+                                />
+                            </div>
+                            <div class="border-l-4 border-primary pl-8">
+                                <p class="text-xl text-gray-800 leading-relaxed">
+                                    Evaluaciones ex post para aprender de resultados y mejorar futuras intervenciones.
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- 2. NUESTRO TRABAJO -->
-                    <div>
-                        <h3 class="font-serif text-3xl font-bold text-primary mb-8">
+                    <!-- IMAGEN 2 -->
+                    <div class="w-full h-96 bg-gray-100 rounded-lg overflow-hidden">
+                        <img 
+                            src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop" 
+                            alt="Evaluación Integral"
+                            class="w-full h-full object-cover"
+                        />
+                    </div>
+
+                    <!-- SECCIÓN 3: NUESTRO TRABAJO -->
+                    <div class="space-y-12 pt-12 border-t-2 border-gray-200">
+                        <h2 class="font-serif text-5xl md:text-6xl font-bold text-primary leading-tight">
                             Nuestro Trabajo
-                        </h3>
+                        </h2>
                         
-                        <!-- Card A -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 items-center bg-gray-50 p-8 rounded-xl">
-                            <div>
-                                <div class="flex items-start mb-4">
-                                    <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary text-white font-bold text-lg flex-shrink-0">A</div>
-                                    <h4 class="font-bold text-xl text-gray-900 ml-4">Evaluación Integral</h4>
-                                </div>
-                                <div class="ml-14">
-                                    <p class="text-gray-700 text-sm font-semibold mb-3">Evaluación cualitativa y cuantitativa de programas y proyectos:</p>
-                                    <ul class="space-y-2">
-                                        <li class="flex items-center text-gray-700">
-                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                                            Pertinencia y eficiencia
-                                        </li>
-                                        <li class="flex items-center text-gray-700">
-                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                                            Eficacia e impacto
-                                        </li>
-                                        <li class="flex items-center text-gray-700">
-                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                                            Sostenibilidad
-                                        </li>
-                                        <li class="flex items-center text-gray-700">
-                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                                            ExAnte, ExDure, ExPost
-                                        </li>
-                                    </ul>
-                                </div>
+                        <div class="space-y-8">
+                            <div class="bg-gray-50 p-8 rounded-lg">
+                                <p class="text-xl text-gray-800 leading-relaxed">
+                                    Realizamos evaluaciones de impacto para identificar efectos reales de programas en la población.
+                                </p>
                             </div>
-                            <div class="rounded-lg overflow-hidden shadow-lg h-64 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop" alt="Evaluación" class="w-full h-full object-cover"/>
+
+                            <div class="bg-gray-50 p-8 rounded-lg">
+                                <p class="text-xl text-gray-800 leading-relaxed">
+                                    Desarrollamos marcos lógicos y teorías de cambio que alinean objetivos con resultados esperados.
+                                </p>
+                            </div>
+
+                            <div class="bg-gray-50 p-8 rounded-lg">
+                                <p class="text-xl text-gray-800 leading-relaxed">
+                                    Establecemos sistemas de monitoreo y seguimiento con indicadores de desempeño y logros.
+                                </p>
+                            </div>
+
+                            <div class="bg-gray-50 p-8 rounded-lg">
+                                <p class="text-xl text-gray-800 leading-relaxed">
+                                    Proporcionamos recomendaciones de mejora continua basadas en evidencia y análisis riguroso.
+                                </p>
                             </div>
                         </div>
 
-                        <!-- Card B -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-gray-50 p-8 rounded-xl">
-                            <div class="rounded-lg overflow-hidden shadow-lg h-64 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center order-2 md:order-1">
-                                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=400&fit=crop" alt="Implementación" class="w-full h-full object-cover"/>
-                            </div>
-                            <div class="order-1 md:order-2">
-                                <div class="flex items-start mb-4">
-                                    <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary text-white font-bold text-lg flex-shrink-0">B</div>
-                                    <h4 class="font-bold text-xl text-gray-900 ml-4">Participación y Resultados</h4>
-                                </div>
-                                <div class="ml-14">
-                                    <ul class="space-y-2">
-                                        <li class="flex items-center text-gray-700">
-                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                                            Participación de stakeholders
-                                        </li>
-                                        <li class="flex items-center text-gray-700">
-                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                                            Presentación de resultados
-                                        </li>
-                                        <li class="flex items-center text-gray-700">
-                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                                            Cuantificación de impactos
-                                        </li>
-                                        <li class="flex items-center text-gray-700">
-                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                                            Implementar recomendaciones
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <!-- IMAGEN 3 -->
+                        <div class="w-full h-80 bg-gray-100 rounded-lg overflow-hidden">
+                            <img 
+                                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop" 
+                                alt="Nuestro Trabajo"
+                                class="w-full h-full object-cover"
+                            />
                         </div>
                     </div>
 
-                   
+                    <!-- SECCIÓN 4: ENFOQUES DE EVALUACIÓN -->
+                    <div class="space-y-8">
+                        <h3 class="text-3xl font-bold text-gray-900">Enfoques de Evaluación</h3>
+                        
+                        <!-- GRID UNIFORME: 1 columna en móvil, 2 en tablet, 4 en desktop -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                            
+                            <!-- ENFOQUE 1: Rojo Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-red-50 border border-red-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-red-900 font-bold text-lg">Impacto y Resultados</h4>
+                            </div>
+
+                            <!-- ENFOQUE 2: Celeste Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-sky-50 border border-sky-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-sky-900 font-bold text-lg">Eficiencia Operativa</h4>
+                            </div>
+
+                            <!-- ENFOQUE 3: Gris Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-gray-50 border border-gray-200 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-gray-900 font-bold text-lg">Pertinencia Estratégica</h4>
+                            </div>
+
+                            <!-- ENFOQUE 4: Rojo Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-red-50 border border-red-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-red-900 font-bold text-lg">Relevancia Social</h4>
+                            </div>
+
+                            <!-- ENFOQUE 5: Celeste Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-sky-50 border border-sky-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-sky-900 font-bold text-lg">Sostenibilidad</h4>
+                            </div>
+
+                            <!-- ENFOQUE 6: Gris Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-gray-50 border border-gray-200 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-gray-900 font-bold text-lg">Equidad e Inclusión</h4>
+                            </div>
+
+                            <!-- ENFOQUE 7: Rojo Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-red-50 border border-red-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-red-900 font-bold text-lg">Análisis Costo-Beneficio</h4>
+                            </div>
+
+                            <!-- ENFOQUE 8: Celeste Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-sky-50 border border-sky-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-sky-900 font-bold text-lg">Lecciones Aprendidas</h4>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- IMAGEN 4 -->
+                    <div class="w-full h-80 bg-gray-100 rounded-lg overflow-hidden">
+                        <img 
+                            src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop" 
+                            alt="Enfoques"
+                            class="w-full h-full object-cover"
+                        />
+                    </div>
 
                 </div>
 
-                <!-- ============================================ -->
-                <!-- COLUMNA DERECHA: SIDEBAR (4/12)              -->
-                <!-- ============================================ -->
-                <aside class="lg:col-span-4 space-y-12">
-                    <div class="sticky top-32">
-                        <!-- Especialistas -->
-                        <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">
-                            Expertos en Evaluación
-                        </h3>
-                        <div class="space-y-6 mb-12">
-                            {selectedSpecialists.map((member) => (
-                                <TeamCard 
-                                    name={member.name}
-                                    role={member.role}
-                                    image={member.image}
-                                    link={`/nosotros/equipo/${member.slug}`}
-                                />
-                            ))}
+                <!-- COLUMNA DERECHA: SIDEBAR (3/12) -->
+                <aside class="lg:col-span-3">
+                    <div class="sticky top-32 space-y-12">
+                        
+                        <!-- ESPECIALISTAS -->
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-3 border-b border-gray-300">
+                                Especialistas
+                            </h3>
+                            <div class="space-y-6">
+                                {selectedSpecialists.map((member) => (
+                                    <a 
+                                        href={`/nosotros/equipo/${member.slug}`}
+                                        class="group block hover:opacity-70 transition-opacity"
+                                    >
+                                        <div class="mb-3 h-40 bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
+                                            <img 
+                                                src={member.image} 
+                                                alt={member.name}
+                                                class="h-full w-auto object-contain"
+                                            />
+                                        </div>
+                                        <h4 class="font-bold text-sm text-gray-900 group-hover:text-primary transition-colors">
+                                            {member.name}
+                                        </h4>
+                                        <p class="text-xs text-gray-600 mt-1 leading-tight">
+                                            {member.role}
+                                        </p>
+                                    </a>
+                                ))}
+                            </div>
                         </div>
 
-                        <!-- Industrias Relacionadas -->
-                        <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">
-                            Industrias Relacionadas
-                        </h3>
-                        <div class="space-y-4">
-                            {selectedIndustries.map((ind) => (
-                                ind ? (
-                                    <SidebarCard 
-                                        title={ind.title} 
-                                        image={ind.image} 
-                                        link={ind.link} 
-                                    />
-                                ) : null
-                            ))}
+                        <!-- INDUSTRIAS -->
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-3 border-b border-gray-300">
+                                Industrias Relacionadas
+                            </h3>
+                            <div class="space-y-4">
+                                {selectedIndustries.map((ind) => (
+                                    <a 
+                                        href={ind.link}
+                                        class="group block hover:opacity-70 transition-opacity"
+                                    >
+                                        <div class="mb-2 h-24 bg-gray-100 rounded-lg overflow-hidden flex items-center justify-center">
+                                            <img 
+                                                src={ind.image} 
+                                                alt={ind.title}
+                                                class="w-full h-full object-cover"
+                                            />
+                                        </div>
+                                        <h4 class="font-bold text-xs text-gray-900 group-hover:text-primary transition-colors">
+                                            {ind.title}
+                                        </h4>
+                                    </a>
+                                ))}
+                            </div>
                         </div>
+
                     </div>
                 </aside>
 
             </div>
         </div>
     </section>
-
 </Layout>

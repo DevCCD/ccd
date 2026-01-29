@@ -1,256 +1,308 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import PageHeader from '../../components/PageHeader.astro';
-import TeamCard from '../../components/TeamCard.astro';
-import SidebarCard from '../../components/SidebarCard.astro';
 
 // Importamos nuestra "base de datos"
 import { teamMembers, industriesData } from '../../data/teamData';
 
-// ========================================================================
-// 1. CONFIGURACIÓN DE LA PÁGINA (AQUÍ EDITAS LO QUE QUIERES MOSTRAR)
-// ========================================================================
-
-// A. SELECCIONA LOS ESPECIALISTAS PARA ESTA PÁGINA
-// Solo pon los IDs de las personas que definiste en teamData.js
 const selectedSpecialists = [
-    teamMembers["rudy-laguna"], 
-    teamMembers["alvaro-gordillo"] 
+    teamMembers["karla-casas"], 
+    teamMembers["alex-carbajal"] 
 ];
 
-// B. SELECCIONA LAS INDUSTRIAS RELACIONADAS
 const selectedIndustries = [
     industriesData["mineria"],
     industriesData["agricultura"]
 ];
 
-// C. IMAGEN DE CABECERA
-const headerImage = "/capacidades/desarrollo.jpg"; // Asegúrate de tener esta imagen
+const headerImage = "/capacidades/desarrollo.jpg";
 ---
 
 <Layout title="Desarrollo - CCD">
     
-    <!-- ENCABEZADO CON IMAGEN DE FONDO -->
     <PageHeader 
         title="Desarrollo" 
         backgroundImage={headerImage}
     />
 
-    <section class="bg-white py-16 md:py-24">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
+    <section class="bg-white py-20 md:py-32">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
                 
-                <!-- ============================================ -->
-                <!-- COLUMNA IZQUIERDA: CONTENIDO DEL PDF (8/12)  -->
-                <!-- ============================================ -->
-                <div class="lg:col-span-8 space-y-16">
+                <!-- COLUMNA IZQUIERDA: CONTENIDO PRINCIPAL (9/12) -->
+                <div class="lg:col-span-9 space-y-20">
                     
-                    <!-- SECCIÓN: Generación de Valor Cliente -->
-                    <div>
-                        <h3 class="font-serif text-3xl font-bold text-primary mb-8">
+                    <!-- SECCIÓN 1: GENERACIÓN DE VALOR CLIENTE -->
+                    <div class="space-y-12">
+                        <h2 class="font-serif text-5xl md:text-6xl font-bold text-primary leading-tight">
                             Generación de Valor Cliente
-                        </h3>
+                        </h2>
                         
-                        <!-- Intro destacada -->
-                        <div class="bg-gradient-to-r from-primary/5 to-primary/10 p-8 rounded-xl mb-12 border-l-4 border-primary">
-                            <p class="text-gray-800 text-lg font-medium leading-relaxed">
-                                Mejoramos la <span class="font-bold text-primary">calidad de vida integral</span> de las personas mediante desarrollo territorial planificado que cierra brechas económicas y sociales.
+                        <div class="space-y-8">
+                            <p class="text-2xl text-gray-800 leading-relaxed font-light">
+                                Mejoramos la calidad de vida integral de las personas mediante desarrollo territorial planificado que cierra brechas económicas y sociales.
                             </p>
                         </div>
 
-                        <!-- Layout: Texto + Imagen alternado -->
-                        
-                        <!-- Item 1: Texto Izquierda, Imagen Derecha -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 items-center">
-                            <div>
-                                <div class="flex items-start mb-4">
-                                    <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary/10 text-primary font-bold text-lg flex-shrink-0">1</div>
-                                    <h4 class="font-bold text-xl text-gray-900 ml-4">Mejora de condiciones de vida</h4>
-                                </div>
-                                <p class="text-gray-700 text-base leading-relaxed ml-14">
-                                    Educación universal, infraestructura básica, servicios de salud de calidad, buen gobierno e incremento de ingresos.
+                        <!-- IMAGEN 1 -->
+                        <div class="w-full h-96 bg-gray-100 rounded-lg overflow-hidden">
+                            <img 
+                                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop" 
+                                alt="Desarrollo Territorial"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- SECCIÓN 2: CONCEPTOS CLAVE -->
+                    <div class="space-y-16">
+                        <!-- Concepto 1: Con Imagen Derecha -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                            <div class="border-l-4 border-primary pl-8">
+                                <p class="text-xl text-gray-800 leading-relaxed">
+                                    Mejora de condiciones de vida mediante educación universal, infraestructura básica, servicios de salud de calidad, buen gobierno e incremento de ingresos.
                                 </p>
                             </div>
-                            <div class="rounded-lg overflow-hidden shadow-lg h-64 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop" alt="Desarrollo" class="w-full h-full object-cover"/>
+                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" 
+                                    alt="Mejora de Condiciones"
+                                    class="w-full h-full object-cover"
+                                />
                             </div>
                         </div>
 
-                        <!-- Item 2: Imagen Izquierda, Texto Derecha -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 items-center">
-                            <div class="rounded-lg overflow-hidden shadow-lg h-64 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center order-2 md:order-1">
-                                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=400&fit=crop" alt="Competitividad" class="w-full h-full object-cover"/>
+                        <!-- Concepto 2: Con Imagen Izquierda -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" 
+                                    alt="Cierre de Brechas"
+                                    class="w-full h-full object-cover"
+                                />
                             </div>
-                            <div class="order-1 md:order-2">
-                                <div class="flex items-start mb-4">
-                                    <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary/10 text-primary font-bold text-lg flex-shrink-0">2</div>
-                                    <h4 class="font-bold text-xl text-gray-900 ml-4">Cierre de brechas</h4>
-                                </div>
-                                <p class="text-gray-700 text-base leading-relaxed ml-14">
-                                    Promovemos competitividad territorial mediante soluciones que mejoran el bienestar económico y social.
+                            <div class="border-l-4 border-primary pl-8">
+                                <p class="text-xl text-gray-800 leading-relaxed">
+                                    Cierre de brechas mediante el impulso de competitividad territorial y soluciones que mejoran el bienestar económico y social.
                                 </p>
                             </div>
                         </div>
 
-                        <!-- Item 3: Texto Izquierda, Imagen Derecha -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                            <div>
-                                <div class="flex items-start mb-4">
-                                    <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary/10 text-primary font-bold text-lg flex-shrink-0">3</div>
-                                    <h4 class="font-bold text-xl text-gray-900 ml-4">Creación de riqueza</h4>
-                                </div>
-                                <p class="text-gray-700 text-base leading-relaxed ml-14">
-                                    Generamos prosperidad económica y social que mantiene y mejora el bienestar de los habitantes.
+                        <!-- Concepto 3: Solo Texto -->
+                        <div class="border-l-4 border-primary pl-8 py-6">
+                            <p class="text-xl text-gray-800 leading-relaxed">
+                                Creación de riqueza que genera prosperidad económica y social, manteniendo y mejorando el bienestar de los habitantes.
+                            </p>
+                        </div>
+
+                        <!-- Concepto 4: Con Imagen Derecha -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                            <div class="border-l-4 border-primary pl-8">
+                                <p class="text-xl text-gray-800 leading-relaxed">
+                                    Desarrollo integral que aborda múltiples dimensiones sociales, económicas, ambientales e institucionales de forma equilibrada.
                                 </p>
                             </div>
-                            <div class="rounded-lg overflow-hidden shadow-lg h-64 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                                <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=500&h=400&fit=crop" alt="Prosperidad" class="w-full h-full object-cover"/>
+                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" 
+                                    alt="Desarrollo Integral"
+                                    class="w-full h-full object-cover"
+                                />
+                            </div>
+                        </div>
+
+                        <!-- Concepto 5: Con Imagen Izquierda -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" 
+                                    alt="Sostenibilidad"
+                                    class="w-full h-full object-cover"
+                                />
+                            </div>
+                            <div class="border-l-4 border-primary pl-8">
+                                <p class="text-xl text-gray-800 leading-relaxed">
+                                    Sostenibilidad del desarrollo a través de iniciativas que responden a las necesidades presentes sin comprometer el futuro de las generaciones venideras.
+                                </p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- SECCIÓN: Nuestro Trabajo -->
-                    <div>
-                        <h3 class="font-serif text-3xl font-bold text-primary mb-8">
+                    <!-- IMAGEN 2 -->
+                    <div class="w-full h-96 bg-gray-100 rounded-lg overflow-hidden">
+                        <img 
+                            src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop" 
+                            alt="Áreas de Desarrollo"
+                            class="w-full h-full object-cover"
+                        />
+                    </div>
+
+                    <!-- SECCIÓN 3: NUESTRO TRABAJO -->
+                    <div class="space-y-12 pt-12 border-t-2 border-gray-200">
+                        <h2 class="font-serif text-5xl md:text-6xl font-bold text-primary leading-tight">
                             Nuestro Trabajo
-                        </h3>
+                        </h2>
                         
-                        <!-- Card 1: Planes de Desarrollo -->
-                        <div class="mb-12">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                                <div>
-                                    <div class="flex items-start mb-4">
-                                        <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary text-white font-bold flex-shrink-0">A</div>
-                                        <h4 class="font-bold text-xl text-gray-900 ml-4">Planes y Estudios de Desarrollo</h4>
-                                    </div>
-                                    <p class="text-gray-700 text-base leading-relaxed ml-14 mb-4">
-                                        Elaboramos planes participativos a nivel regional, provincial, distrital y comunitario con visión integral de desarrollo territorial.
-                                    </p>
-                                </div>
-                                <div class="rounded-lg overflow-hidden shadow-lg h-64 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop" alt="Planes" class="w-full h-full object-cover"/>
-                                </div>
+                        <div class="space-y-8">
+                            <div class="bg-gray-50 p-8 rounded-lg">
+                                <p class="text-xl text-gray-800 leading-relaxed">
+                                    Elaboramos planes de desarrollo participativos a nivel regional, provincial, distrital y comunitario con visión integral de desarrollo territorial.
+                                </p>
+                            </div>
+
+                            <div class="bg-gray-50 p-8 rounded-lg">
+                                <p class="text-xl text-gray-800 leading-relaxed">
+                                    Brindamos asistencia técnica en seguimiento de planes con indicadores en sociodemografía, crecimiento económico, conectividad, ambiente, riesgos y gobernanza.
+                                </p>
+                            </div>
+
+                            <div class="bg-gray-50 p-8 rounded-lg">
+                                <p class="text-xl text-gray-800 leading-relaxed">
+                                    Identificamos, diseñamos y promovemos corredores económicos territoriales a escala nacional, regional, local y comunitaria.
+                                </p>
+                            </div>
+
+                            <div class="bg-gray-50 p-8 rounded-lg">
+                                <p class="text-xl text-gray-800 leading-relaxed">
+                                    Elaboramos e implementamos planes estratégicos e inversiones para zonas de influencia directa e indirecta con máximo impacto social.
+                                </p>
                             </div>
                         </div>
 
-                        <!-- Card 2: Asistencia Técnica -->
-                        <div class="mb-12 bg-gray-50 p-8 rounded-xl">
-                            <div class="flex items-start mb-6">
-                                <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary text-white font-bold flex-shrink-0">B</div>
-                                <h4 class="font-bold text-xl text-gray-900 ml-4">Implementación y Monitoreo</h4>
-                            </div>
-                            <p class="text-gray-700 text-base leading-relaxed ml-14 mb-6">
-                                Brindamos asistencia técnica integral en seguimiento de planes con indicadores en:
-                            </p>
-                            <div class="ml-14 grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <div class="flex items-center">
-                                    <span class="flex items-center justify-center h-8 w-8 rounded-full bg-primary/10 text-primary font-bold text-sm flex-shrink-0">✓</span>
-                                    <span class="ml-3 text-gray-700">Sociodemografía</span>
-                                </div>
-                                <div class="flex items-center">
-                                    <span class="flex items-center justify-center h-8 w-8 rounded-full bg-primary/10 text-primary font-bold text-sm flex-shrink-0">✓</span>
-                                    <span class="ml-3 text-gray-700">Crecimiento Económico</span>
-                                </div>
-                                <div class="flex items-center">
-                                    <span class="flex items-center justify-center h-8 w-8 rounded-full bg-primary/10 text-primary font-bold text-sm flex-shrink-0">✓</span>
-                                    <span class="ml-3 text-gray-700">Conectividad</span>
-                                </div>
-                                <div class="flex items-center">
-                                    <span class="flex items-center justify-center h-8 w-8 rounded-full bg-primary/10 text-primary font-bold text-sm flex-shrink-0">✓</span>
-                                    <span class="ml-3 text-gray-700">Ambiental</span>
-                                </div>
-                                <div class="flex items-center">
-                                    <span class="flex items-center justify-center h-8 w-8 rounded-full bg-primary/10 text-primary font-bold text-sm flex-shrink-0">✓</span>
-                                    <span class="ml-3 text-gray-700">Riesgos y Desastres</span>
-                                </div>
-                                <div class="flex items-center">
-                                    <span class="flex items-center justify-center h-8 w-8 rounded-full bg-primary/10 text-primary font-bold text-sm flex-shrink-0">✓</span>
-                                    <span class="ml-3 text-gray-700">Gobernanza</span>
-                                </div>
-                            </div>
+                        <!-- IMAGEN 3 -->
+                        <div class="w-full h-80 bg-gray-100 rounded-lg overflow-hidden">
+                            <img 
+                                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop" 
+                                alt="Nuestro Trabajo"
+                                class="w-full h-full object-cover"
+                            />
                         </div>
+                    </div>
 
-                        <!-- Card 3: Corredores y Zonas de Influencia -->
-                        <div class="mb-12">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                                <div class="rounded-lg overflow-hidden shadow-lg h-64 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center order-2 md:order-1">
-                                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=400&fit=crop" alt="Corredores" class="w-full h-full object-cover"/>
-                                </div>
-                                <div class="order-1 md:order-2">
-                                    <div class="flex items-start mb-4">
-                                        <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary text-white font-bold flex-shrink-0">C</div>
-                                        <h4 class="font-bold text-xl text-gray-900 ml-4">Corredores Económicos</h4>
-                                    </div>
-                                    <p class="text-gray-700 text-base leading-relaxed ml-14">
-                                        Identificamos, diseñamos y promovemos corredores económicos territoriales a escala nacional, regional, local y comunal.
-                                    </p>
-                                </div>
+                    <!-- SECCIÓN 4: ÁREAS DE TRABAJO -->
+                    <div class="space-y-8">
+                        <h3 class="text-3xl font-bold text-gray-900">Áreas de Trabajo en Desarrollo</h3>
+                        
+                        <!-- GRID UNIFORME: 1 columna en móvil, 2 en tablet, 4 en desktop -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                            
+                            <!-- ÁREA 1: Rojo Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-red-50 border border-red-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-red-900 font-bold text-lg">Planes de Desarrollo</h4>
                             </div>
-                        </div>
 
-                        <!-- Card 4: Planes de Inversión -->
-                        <div>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                                <div>
-                                    <div class="flex items-start mb-4">
-                                        <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary text-white font-bold flex-shrink-0">D</div>
-                                        <h4 class="font-bold text-xl text-gray-900 ml-4">Planes Estratégicos</h4>
-                                    </div>
-                                    <p class="text-gray-700 text-base leading-relaxed ml-14">
-                                        Elaboramos e implementamos planes estratégicos e inversiones para zonas de influencia directa e indirecta con máximo impacto social.
-                                    </p>
-                                </div>
-                                <div class="rounded-lg overflow-hidden shadow-lg h-64 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                                    <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=500&h=400&fit=crop" alt="Estrategia" class="w-full h-full object-cover"/>
-                                </div>
+                            <!-- ÁREA 2: Celeste Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-sky-50 border border-sky-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-sky-900 font-bold text-lg">Monitoreo y Seguimiento</h4>
                             </div>
+
+                            <!-- ÁREA 3: Gris Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-gray-50 border border-gray-200 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-gray-900 font-bold text-lg">Indicadores Territoriales</h4>
+                            </div>
+
+                            <!-- ÁREA 4: Rojo Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-red-50 border border-red-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-red-900 font-bold text-lg">Planificación Estratégica</h4>
+                            </div>
+
+                            <!-- ÁREA 5: Celeste Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-sky-50 border border-sky-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-sky-900 font-bold text-lg">Cierre de Brechas</h4>
+                            </div>
+
+                            <!-- ÁREA 6: Gris Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-gray-50 border border-gray-200 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-gray-900 font-bold text-lg">Sostenibilidad</h4>
+                            </div>
+
+                            <!-- ÁREA 7: Rojo Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-red-50 border border-red-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-red-900 font-bold text-lg">Gobernanza Local</h4>
+                            </div>
+
+                            <!-- ÁREA 8: Celeste Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-sky-50 border border-sky-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-sky-900 font-bold text-lg">Inversión Social</h4>
+                            </div>
+
                         </div>
+                    </div>
+
+                    <!-- IMAGEN 4 -->
+                    <div class="w-full h-80 bg-gray-100 rounded-lg overflow-hidden">
+                        <img 
+                            src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop" 
+                            alt="Áreas"
+                            class="w-full h-full object-cover"
+                        />
                     </div>
 
                 </div>
 
-                <!-- ============================================ -->
-                <!-- COLUMNA DERECHA: SIDEBAR (4/12)              -->
-                <!-- ============================================ -->
-                <aside class="lg:col-span-4 space-y-12">
-                    
-                    <div class="sticky top-32">
-                        <!-- Especialistas -->
-                        <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">
-                            Especialistas en Desarrollo
-                        </h3>
+                <!-- COLUMNA DERECHA: SIDEBAR (3/12) -->
+                <aside class="lg:col-span-3">
+                    <div class="sticky top-32 space-y-12">
                         
-                        <div class="space-y-6 mb-12">
-                            {selectedSpecialists.map((member) => (
-                                // Usamos el TeamCard que ya funciona
-                                <TeamCard 
-                                    name={member.name}
-                                    role={member.role}
-                                    image={member.image}
-                                    link={`/nosotros/equipo/${member.slug}`}
-                                />
-                            ))}
+                        <!-- ESPECIALISTAS -->
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-3 border-b border-gray-300">
+                                Especialistas
+                            </h3>
+                            <div class="space-y-6">
+                                {selectedSpecialists.map((member) => (
+                                    <a 
+                                        href={`/nosotros/equipo/${member.slug}`}
+                                        class="group block hover:opacity-70 transition-opacity"
+                                    >
+                                        <div class="mb-3 h-40 bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
+                                            <img 
+                                                src={member.image} 
+                                                alt={member.name}
+                                                class="h-full w-auto object-contain"
+                                            />
+                                        </div>
+                                        <h4 class="font-bold text-sm text-gray-900 group-hover:text-primary transition-colors">
+                                            {member.name}
+                                        </h4>
+                                        <p class="text-xs text-gray-600 mt-1 leading-tight">
+                                            {member.role}
+                                        </p>
+                                    </a>
+                                ))}
+                            </div>
                         </div>
 
-                        <!-- Industrias Relacionadas -->
-                        <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">
-                            Industrias Relacionadas
-                        </h3>
-                        <div class="space-y-4">
-                            {selectedIndustries.map((ind) => (
-                                <SidebarCard 
-                                    title={ind.title} 
-                                    image={ind.image} 
-                                    link={ind.link} 
-                                />
-                            ))}
+                        <!-- INDUSTRIAS -->
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-3 border-b border-gray-300">
+                                Industrias Relacionadas
+                            </h3>
+                            <div class="space-y-4">
+                                {selectedIndustries.map((ind) => (
+                                    <a 
+                                        href={ind.link}
+                                        class="group block hover:opacity-70 transition-opacity"
+                                    >
+                                        <div class="mb-2 h-24 bg-gray-100 rounded-lg overflow-hidden flex items-center justify-center">
+                                            <img 
+                                                src={ind.image} 
+                                                alt={ind.title}
+                                                class="w-full h-full object-cover"
+                                            />
+                                        </div>
+                                        <h4 class="font-bold text-xs text-gray-900 group-hover:text-primary transition-colors">
+                                            {ind.title}
+                                        </h4>
+                                    </a>
+                                ))}
+                            </div>
                         </div>
+
                     </div>
-
                 </aside>
 
             </div>
         </div>
     </section>
-
 </Layout>

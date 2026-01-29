@@ -1,32 +1,21 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import PageHeader from '../../components/PageHeader.astro';
-import TeamCard from '../../components/TeamCard.astro';
-import SidebarCard from '../../components/SidebarCard.astro';
 
-// Importamos la data centralizada
+// Importamos nuestra "base de datos"
 import { teamMembers, industriesData } from '../../data/teamData';
 
-// ========================================================================
-// CONFIGURACIÓN DE LA PÁGINA: FONDOS DE DESARROLLO
-// ========================================================================
-
-// 1. SELECCIONA ESPECIALISTAS (Expertos en Inversión y Gestión)
 const selectedSpecialists = [
-    teamMembers["alvaro-gordillo"], // Especialista en Inversión y Desarrollo
-    teamMembers["elmer-huaman"]  // Especialista en Inversión
-  
+    teamMembers["alvaro-gordillo"],
+    teamMembers["elmer-huaman"]
 ];
 
-// 2. SELECCIONA INDUSTRIAS RELACIONADAS (Donde más se usan los fondos)
 const selectedIndustries = [
     industriesData["mineria"],
-    
     industriesData["agricultura"]
 ];
 
-// 3. IMAGEN DE CABECERA
-const headerImage = "/capacidades/fondos.jpg"; 
+const headerImage = "/capacidades/fondos.jpg";
 ---
 
 <Layout title="Fondos de Desarrollo - CCD">
@@ -36,176 +25,284 @@ const headerImage = "/capacidades/fondos.jpg";
         backgroundImage={headerImage}
     />
 
-    <section class="bg-white py-16 md:py-24">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
+    <section class="bg-white py-20 md:py-32">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
                 
-                <!-- ============================================ -->
-                <!-- COLUMNA IZQUIERDA: CONTENIDO (8/12)          -->
-                <!-- ============================================ -->
-                <div class="lg:col-span-8 space-y-16">
+                <!-- COLUMNA IZQUIERDA: CONTENIDO PRINCIPAL (9/12) -->
+                <div class="lg:col-span-9 space-y-20">
                     
-                    <!-- SECCIÓN: Generación de Valor Cliente -->
-                    <div>
-                        <h3 class="font-serif text-3xl font-bold text-primary mb-8">
+                    <!-- SECCIÓN 1: GENERACIÓN DE VALOR CLIENTE -->
+                    <div class="space-y-12">
+                        <h2 class="font-serif text-5xl md:text-6xl font-bold text-primary leading-tight">
                             Generación de Valor Cliente
-                        </h3>
+                        </h2>
                         
-                        <!-- Intro destacada -->
-                        <div class="bg-gradient-to-r from-primary/5 to-primary/10 p-8 rounded-xl mb-12 border-l-4 border-primary">
-                            <p class="text-gray-800 text-lg font-medium leading-relaxed">
-                                Fondos de desarrollo con adecuada gobernanza <span class="font-bold text-primary">aceleran el desarrollo local</span> y potencian la inversión pública y privada.
+                        <div class="space-y-8">
+                            <p class="text-2xl text-gray-800 leading-relaxed font-light">
+                                Fondos de desarrollo con adecuada gobernanza aceleran el desarrollo local y potencian la inversión pública y privada.
                             </p>
                         </div>
 
-                        <!-- Layout: Texto + Imagen alternado -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 items-center">
-                            <div>
-                                <div class="flex items-start mb-4">
-                                    <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary/10 text-primary font-bold text-lg flex-shrink-0">1</div>
-                                    <h4 class="font-bold text-xl text-gray-900 ml-4">Gobernanza Efectiva</h4>
-                                </div>
-                                <p class="text-gray-700 text-base leading-relaxed ml-14">
-                                    Fondos de desarrollo con gobernanza adecuada generan confianza, participación legitimidad y mejores resultados en las intervenciones sociales.
+                        <!-- IMAGEN 1 -->
+                        <div class="w-full h-96 bg-gray-100 rounded-lg overflow-hidden">
+                            <img 
+                                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop" 
+                                alt="Fondos de Desarrollo"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- SECCIÓN 2: CONCEPTOS CLAVE -->
+                    <div class="space-y-16">
+                        <!-- Concepto 1: Con Imagen Derecha -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                            <div class="border-l-4 border-primary pl-8">
+                                <p class="text-xl text-gray-800 leading-relaxed">
+                                    Gobernanza efectiva que genera confianza, participación y legitimidad en la gestión de fondos.
                                 </p>
                             </div>
-                            <div class="rounded-lg overflow-hidden shadow-lg h-64 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop" alt="Gobernanza" class="w-full h-full object-cover"/>
+                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" 
+                                    alt="Gobernanza"
+                                    class="w-full h-full object-cover"
+                                />
                             </div>
                         </div>
 
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                            <div class="rounded-lg overflow-hidden shadow-lg h-64 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center order-2 md:order-1">
-                                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=400&fit=crop" alt="Cofinanciamiento" class="w-full h-full object-cover"/>
+                        <!-- Concepto 2: Con Imagen Izquierda -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" 
+                                    alt="Cofinanciamiento"
+                                    class="w-full h-full object-cover"
+                                />
                             </div>
-                            <div class="order-1 md:order-2">
-                                <div class="flex items-start mb-4">
-                                    <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary/10 text-primary font-bold text-lg flex-shrink-0">2</div>
-                                    <h4 class="font-bold text-xl text-gray-900 ml-4">Cofinanciamiento Público-Privado</h4>
-                                </div>
-                                <p class="text-gray-700 text-base leading-relaxed ml-14">
-                                    Los fondos de desarrollo cofinancian e integran recursos públicos y privados, potenciando el impacto de la inversión social en el desarrollo local y comunal.
+                            <div class="border-l-4 border-primary pl-8">
+                                <p class="text-xl text-gray-800 leading-relaxed">
+                                    Cofinanciamiento estratégico que apalanca recursos de múltiples fuentes para maximizar impacto.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Concepto 3: Solo Texto -->
+                        <div class="border-l-4 border-primary pl-8 py-6">
+                            <p class="text-xl text-gray-800 leading-relaxed">
+                                Transparencia y rendición de cuentas en la asignación y uso de fondos para fortalecer credibilidad.
+                            </p>
+                        </div>
+
+                        <!-- Concepto 4: Con Imagen Derecha -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                            <div class="border-l-4 border-primary pl-8">
+                                <p class="text-xl text-gray-800 leading-relaxed">
+                                    Sostenibilidad financiera que asegura la continuidad y escalabilidad de iniciativas de desarrollo.
+                                </p>
+                            </div>
+                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" 
+                                    alt="Sostenibilidad"
+                                    class="w-full h-full object-cover"
+                                />
+                            </div>
+                        </div>
+
+                        <!-- Concepto 5: Con Imagen Izquierda -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" 
+                                    alt="Resultados"
+                                    class="w-full h-full object-cover"
+                                />
+                            </div>
+                            <div class="border-l-4 border-primary pl-8">
+                                <p class="text-xl text-gray-800 leading-relaxed">
+                                    Resultados medibles que demuestran el retorno social de la inversión en desarrollo territorial.
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- SECCIÓN: Nuestro Trabajo -->
-                    <div>
-                        <h3 class="font-serif text-3xl font-bold text-primary mb-8">
+                    <!-- IMAGEN 2 -->
+                    <div class="w-full h-96 bg-gray-100 rounded-lg overflow-hidden">
+                        <img 
+                            src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop" 
+                            alt="Fondos Institucionales"
+                            class="w-full h-full object-cover"
+                        />
+                    </div>
+
+                    <!-- SECCIÓN 3: NUESTRO TRABAJO -->
+                    <div class="space-y-12 pt-12 border-t-2 border-gray-200">
+                        <h2 class="font-serif text-5xl md:text-6xl font-bold text-primary leading-tight">
                             Nuestro Trabajo
-                        </h3>
-
-                        <!-- Card A -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 items-center bg-gray-50 p-8 rounded-xl">
-                            <div>
-                                <div class="flex items-start mb-4">
-                                    <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary text-white font-bold text-lg flex-shrink-0">A</div>
-                                    <h4 class="font-bold text-xl text-gray-900 ml-4">Constitución y Operatividad</h4>
-                                </div>
-                                <div class="ml-14">
-                                    <ul class="space-y-2">
-                                        <li class="flex items-center text-gray-700">
-                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                                            Evaluación y diseño de fondos
-                                        </li>
-                                        <li class="flex items-center text-gray-700">
-                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                                            Asistencia técnica en constitución
-                                        </li>
-                                        <li class="flex items-center text-gray-700">
-                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                                            Mejora de gobernanza de fondos
-                                        </li>
-                                        <li class="flex items-center text-gray-700">
-                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                                            Fortalecimiento de capacidades
-                                        </li>
-                                    </ul>
-                                </div>
+                        </h2>
+                        
+                        <div class="space-y-8">
+                            <div class="bg-gray-50 p-8 rounded-lg">
+                                <p class="text-xl text-gray-800 leading-relaxed">
+                                    Diseñamos estructuras de gobernanza participativa y democrática para fondos de desarrollo.
+                                </p>
                             </div>
-                            <div class="rounded-lg overflow-hidden shadow-lg h-64 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop" alt="Constitución" class="w-full h-full object-cover"/>
+
+                            <div class="bg-gray-50 p-8 rounded-lg">
+                                <p class="text-xl text-gray-800 leading-relaxed">
+                                    Elaboramos marcos de asignación y cofinanciamiento que atraen capital privado y público.
+                                </p>
+                            </div>
+
+                            <div class="bg-gray-50 p-8 rounded-lg">
+                                <p class="text-xl text-gray-800 leading-relaxed">
+                                    Implementamos sistemas de monitoreo, reporte y rendición de cuentas financiera y social.
+                                </p>
+                            </div>
+
+                            <div class="bg-gray-50 p-8 rounded-lg">
+                                <p class="text-xl text-gray-800 leading-relaxed">
+                                    Aportamos asistencia técnica en gestión operativa y sostenibilidad de fondos a largo plazo.
+                                </p>
                             </div>
                         </div>
 
-                        <!-- Card B -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-gray-50 p-8 rounded-xl">
-                            <div class="rounded-lg overflow-hidden shadow-lg h-64 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center order-2 md:order-1">
-                                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=400&fit=crop" alt="Participación" class="w-full h-full object-cover"/>
-                            </div>
-                            <div class="order-1 md:order-2">
-                                <div class="flex items-start mb-4">
-                                    <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary text-white font-bold text-lg flex-shrink-0">B</div>
-                                    <h4 class="font-bold text-xl text-gray-900 ml-4">Optimización y Complementariedad</h4>
-                                </div>
-                                <div class="ml-14">
-                                    <ul class="space-y-2">
-                                        <li class="flex items-center text-gray-700">
-                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                                            Mejora de procesos y protocolos
-                                        </li>
-                                        <li class="flex items-center text-gray-700">
-                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                                            Estrategias de participación
-                                        </li>
-                                        <li class="flex items-center text-gray-700">
-                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                                            Mecanismos de complementariedad
-                                        </li>
-                                        <li class="flex items-center text-gray-700">
-                                            <svg class="h-4 w-4 text-primary mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                                            Experiencia en 50+ fondos
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <!-- IMAGEN 3 -->
+                        <div class="w-full h-80 bg-gray-100 rounded-lg overflow-hidden">
+                            <img 
+                                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop" 
+                                alt="Nuestro Trabajo"
+                                class="w-full h-full object-cover"
+                            />
                         </div>
+                    </div>
+
+                    <!-- SECCIÓN 4: INSTRUMENTOS DE FONDOS -->
+                    <div class="space-y-8">
+                        <h3 class="text-3xl font-bold text-gray-900">Instrumentos de Fondos</h3>
+                        
+                        <!-- GRID UNIFORME: 1 columna en móvil, 2 en tablet, 4 en desktop -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                            
+                            <!-- INSTRUMENTO 1: Rojo Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-red-50 border border-red-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-red-900 font-bold text-lg">Fondo Rotatorio</h4>
+                            </div>
+
+                            <!-- INSTRUMENTO 2: Celeste Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-sky-50 border border-sky-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-sky-900 font-bold text-lg">Cofinanciamiento</h4>
+                            </div>
+
+                            <!-- INSTRUMENTO 3: Gris Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-gray-50 border border-gray-200 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-gray-900 font-bold text-lg">Garantías</h4>
+                            </div>
+
+                            <!-- INSTRUMENTO 4: Rojo Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-red-50 border border-red-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-red-900 font-bold text-lg">Subvenciones</h4>
+                            </div>
+
+                            <!-- INSTRUMENTO 5: Celeste Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-sky-50 border border-sky-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-sky-900 font-bold text-lg">Fondos de Riesgo</h4>
+                            </div>
+
+                            <!-- INSTRUMENTO 6: Gris Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-gray-50 border border-gray-200 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-gray-900 font-bold text-lg">Donaciones</h4>
+                            </div>
+
+                            <!-- INSTRUMENTO 7: Rojo Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-red-50 border border-red-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-red-900 font-bold text-lg">Préstamos Blandos</h4>
+                            </div>
+
+                            <!-- INSTRUMENTO 8: Celeste Sutil -->
+                            <div class="group relative rounded-xl h-40 bg-sky-50 border border-sky-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
+                                <h4 class="text-sky-900 font-bold text-lg">Alianzas</h4>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- IMAGEN 4 -->
+                    <div class="w-full h-80 bg-gray-100 rounded-lg overflow-hidden">
+                        <img 
+                            src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop" 
+                            alt="Instrumentos"
+                            class="w-full h-full object-cover"
+                        />
                     </div>
 
                 </div>
 
-                <!-- ============================================ -->
-                <!-- COLUMNA DERECHA: SIDEBAR (4/12)              -->
-                <!-- ============================================ -->
-                <aside class="lg:col-span-4 space-y-12">
-                    <div class="sticky top-32">
-                        <!-- Especialistas -->
-                        <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">
-                            Expertos en Fondos
-                        </h3>
-                        <div class="space-y-6 mb-12">
-                            {selectedSpecialists.map((member) => (
-                                <TeamCard 
-                                    name={member.name}
-                                    role={member.role}
-                                    image={member.image}
-                                    link={`/nosotros/equipo/${member.slug}`}
-                                />
-                            ))}
+                <!-- COLUMNA DERECHA: SIDEBAR (3/12) -->
+                <aside class="lg:col-span-3">
+                    <div class="sticky top-32 space-y-12">
+                        
+                        <!-- ESPECIALISTAS -->
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-3 border-b border-gray-300">
+                                Especialistas
+                            </h3>
+                            <div class="space-y-6">
+                                {selectedSpecialists.map((member) => (
+                                    <a 
+                                        href={`/nosotros/equipo/${member.slug}`}
+                                        class="group block hover:opacity-70 transition-opacity"
+                                    >
+                                        <div class="mb-3 h-40 bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
+                                            <img 
+                                                src={member.image} 
+                                                alt={member.name}
+                                                class="h-full w-auto object-contain"
+                                            />
+                                        </div>
+                                        <h4 class="font-bold text-sm text-gray-900 group-hover:text-primary transition-colors">
+                                            {member.name}
+                                        </h4>
+                                        <p class="text-xs text-gray-600 mt-1 leading-tight">
+                                            {member.role}
+                                        </p>
+                                    </a>
+                                ))}
+                            </div>
                         </div>
 
-                        <!-- Industrias Relacionadas -->
-                        <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-2 border-b border-gray-200">
-                            Industrias Relacionadas
-                        </h3>
-                        <div class="space-y-4">
-                            {selectedIndustries.map((ind) => (
-                                // Verificación de seguridad por si la industria no existe en tu data
-                                ind ? (
-                                    <SidebarCard 
-                                        title={ind.title} 
-                                        image={ind.image} 
-                                        link={ind.link} 
-                                    />
-                                ) : null
-                            ))}
+                        <!-- INDUSTRIAS -->
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-3 border-b border-gray-300">
+                                Industrias Relacionadas
+                            </h3>
+                            <div class="space-y-4">
+                                {selectedIndustries.map((ind) => (
+                                    <a 
+                                        href={ind.link}
+                                        class="group block hover:opacity-70 transition-opacity"
+                                    >
+                                        <div class="mb-2 h-24 bg-gray-100 rounded-lg overflow-hidden flex items-center justify-center">
+                                            <img 
+                                                src={ind.image} 
+                                                alt={ind.title}
+                                                class="w-full h-full object-cover"
+                                            />
+                                        </div>
+                                        <h4 class="font-bold text-xs text-gray-900 group-hover:text-primary transition-colors">
+                                            {ind.title}
+                                        </h4>
+                                    </a>
+                                ))}
+                            </div>
                         </div>
+
                     </div>
                 </aside>
 
             </div>
         </div>
     </section>
-
 </Layout>

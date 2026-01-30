@@ -1,306 +1,190 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import PageHeader from '../../components/PageHeader.astro';
+import Layout from "../../layouts/Layout.astro";
+import PageHeader from "../../components/PageHeader.astro";
+import ValueGenerationHero from "../../components/capacidades/ValueGenerationHero.astro";
+import BentoGrid from "../../components/capacidades/BentoGrid.astro";
+import CapabilitySidebar from "../../components/capacidades/CapabilitySidebar.astro";
 
 // Importamos nuestra "base de datos"
-import { teamMembers, industriesData } from '../../data/teamData';
+import { teamMembers, industriesData } from "../../data/teamData";
 
-const selectedSpecialists = [
-    teamMembers["sergio-villegas"]
-];
+const selectedSpecialists = [teamMembers["sergio-villegas"]];
 
 const selectedIndustries = [
     industriesData["agricultura"],
-    industriesData["infraestructura"]
+    industriesData["infraestructura"],
+];
+
+// Bento Grid Items for Generación de Valor Cliente
+const valueGenerationItems = [
+    {
+        text: "Estudios sólidos que fundamentan decisiones de inversión y aseguran viabilidad técnica, ambiental y financiera.",
+        image: "/capacidades/inversiones y proyectos/anta.png",
+        imageAlt: "Estudios de Inversión",
+        size: "large" as const,
+    },
+    {
+        text: "Implementación eficiente que ejecuta proyectos dentro de presupuesto, cronograma y con la calidad mundial esperada.",
+        image: "/capacidades/inversiones y proyectos/exportaciones.jpg",
+        imageAlt: "Implementación",
+        size: "small" as const,
+    },
+    {
+        text: "Impacto transformador que genera cambios sostenibles en la vida de las personas y sus comunidades cercanas.",
+        image: "/capacidades/inversiones y proyectos/Quinua en Puno.jpg",
+        imageAlt: "Impacto Transformador",
+        size: "large" as const,
+    },
+    {
+        text: "Gestión de corredores que integra inversiones estratégicas en infraestructura, producción y conectividad regional.",
+        image: "/capacidades/inversiones y proyectos/000619362W.jpg",
+        imageAlt: "Gestión de Corredores",
+        size: "small" as const,
+    },
+    {
+        text: "Planes estratégicos que alinean las inversiones con metas claras de desarrollo regional y competitividad nacional.",
+        image: "/capacidades/inversiones y proyectos/001070146W.jpg",
+        imageAlt: "Planes Estratégicos",
+        size: "wide" as const,
+    },
+];
+
+// Bento Grid Items for Nuestro Trabajo
+const ourWorkItems = [
+    {
+        text: "Elaboramos estudios de pre-inversión para identificar oportunidades con el máximo potencial de impacto.",
+        image: "https://images.unsplash.com/photo-1454165833762-d286d1949ad8?w=800&h=600&fit=crop",
+        imageAlt: "Estudios",
+        size: "small" as const,
+    },
+    {
+        text: "Gestionamos la ejecución de proyectos desde su diseño inicial hasta la puesta en marcha operativa.",
+        image: "/capacidades/inversiones y proyectos/desarrollo 1.jpg",
+        imageAlt: "Gestión",
+        size: "medium" as const,
+    },
+    {
+        text: "Promovemos alianzas público-privadas que potencian recursos y amplían el alcance de las inversiones.",
+        image: "/capacidades/inversiones y proyectos/inversiones2.jpg",
+        imageAlt: "Alianzas",
+        size: "medium" as const,
+    },
 ];
 
 const headerImage = "/capacidades/inversiones.jpg";
 ---
 
-<Layout title="Inversiones y Proyectos - CCD">
-    
-    <PageHeader 
-        title="Inversiones y Proyectos" 
+<Layout title="Inversiones y Proyectos de Desarrollo - CCD">
+    <PageHeader
+        title="Inversiones y Proyectos de Desarrollo"
         backgroundImage={headerImage}
     />
 
-    <section class="bg-white py-20 md:py-32">
-        <div class="container mx-auto px-6 lg:px-12">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
-                
-                <!-- COLUMNA IZQUIERDA: CONTENIDO PRINCIPAL (9/12) -->
-                <div class="lg:col-span-9 space-y-20">
-                    
+    <section class="bg-white">
+        <div class="container mx-auto px-6 lg:px-12 py-16 md:py-24">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+                <!-- CONTENIDO PRINCIPAL (9 columnas) -->
+                <div class="lg:col-span-9 space-y-24">
                     <!-- SECCIÓN 1: GENERACIÓN DE VALOR CLIENTE -->
                     <div class="space-y-12">
-                        <h2 class="font-serif text-5xl md:text-6xl font-bold text-primary leading-tight">
-                            Generación de Valor Cliente
-                        </h2>
-                        
-                        <div class="space-y-8">
-                            <p class="text-2xl text-gray-800 leading-relaxed font-light">
-                                Inversiones y proyectos que permiten reducir y cerrar brechas, generando desarrollo y mejorando la calidad de vida de la población.
-                            </p>
-                        </div>
-
-                        <!-- IMAGEN 1 -->
-                        <div class="w-full h-96 bg-gray-100 rounded-lg overflow-hidden">
-                            <img 
-                                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop" 
-                                alt="Inversiones y Proyectos"
-                                class="w-full h-full object-cover"
-                            />
-                        </div>
-                    </div>
-
-                    <!-- SECCIÓN 2: CONCEPTOS CLAVE -->
-                    <div class="space-y-16">
-                        <!-- Concepto 1: Con Imagen Derecha -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                            <div class="border-l-4 border-primary pl-8">
-                                <p class="text-xl text-gray-800 leading-relaxed">
-                                    Estudios sólidos que fundamentan decisiones de inversión y aseguran viabilidad técnica y financiera.
-                                </p>
-                            </div>
-                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
-                                <img 
-                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" 
-                                    alt="Estudios"
-                                    class="w-full h-full object-cover"
-                                />
-                            </div>
-                        </div>
-
-                        <!-- Concepto 2: Con Imagen Izquierda -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
-                                <img 
-                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" 
-                                    alt="Implementación"
-                                    class="w-full h-full object-cover"
-                                />
-                            </div>
-                            <div class="border-l-4 border-primary pl-8">
-                                <p class="text-xl text-gray-800 leading-relaxed">
-                                    Implementación eficiente que ejecuta proyectos dentro de presupuesto, cronograma y calidad esperada.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Concepto 3: Solo Texto -->
-                        <div class="border-l-4 border-primary pl-8 py-6">
-                            <p class="text-xl text-gray-800 leading-relaxed">
-                                Impacto transformador que genera cambios sostenibles en la vida de las personas y comunidades.
-                            </p>
-                        </div>
-
-                        <!-- Concepto 4: Con Imagen Derecha -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                            <div class="border-l-4 border-primary pl-8">
-                                <p class="text-xl text-gray-800 leading-relaxed">
-                                    Gestión de corredores que integra inversiones en infraestructura, producción y conectividad.
-                                </p>
-                            </div>
-                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
-                                <img 
-                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" 
-                                    alt="Corredores"
-                                    class="w-full h-full object-cover"
-                                />
-                            </div>
-                        </div>
-
-                        <!-- Concepto 5: Con Imagen Izquierda -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
-                                <img 
-                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" 
-                                    alt="Planes Estratégicos"
-                                    class="w-full h-full object-cover"
-                                />
-                            </div>
-                            <div class="border-l-4 border-primary pl-8">
-                                <p class="text-xl text-gray-800 leading-relaxed">
-                                    Planes estratégicos que alinean inversiones con metas de desarrollo regional y nacional.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- IMAGEN 2 -->
-                    <div class="w-full h-96 bg-gray-100 rounded-lg overflow-hidden">
-                        <img 
-                            src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop" 
-                            alt="Proyectos Estratégicos"
-                            class="w-full h-full object-cover"
+                        <ValueGenerationHero
+                            title="Generación de Valor Cliente"
+                            description="Diseñamos y gestionamos inversiones y proyectos que permiten reducir y cerrar brechas críticas, generando un desarrollo real y mejorando la calidad de vida de la población."
                         />
+
+                        <BentoGrid items={valueGenerationItems} />
                     </div>
 
-                    <!-- SECCIÓN 3: NUESTRO TRABAJO -->
-                    <div class="space-y-12 pt-12 border-t-2 border-gray-200">
-                        <h2 class="font-serif text-5xl md:text-6xl font-bold text-primary leading-tight">
-                            Nuestro Trabajo
-                        </h2>
-                        
-                        <div class="space-y-8">
-                            <div class="bg-gray-50 p-8 rounded-lg">
-                                <p class="text-xl text-gray-800 leading-relaxed">
-                                    Elaboramos estudios de pre-inversión para identificar oportunidades de inversión con máximo potencial.
-                                </p>
-                            </div>
-
-                            <div class="bg-gray-50 p-8 rounded-lg">
-                                <p class="text-xl text-gray-800 leading-relaxed">
-                                    Gestionamos la ejecución de proyectos desde diseño hasta operación, asegurando calidad y cumplimiento.
-                                </p>
-                            </div>
-
-                            <div class="bg-gray-50 p-8 rounded-lg">
-                                <p class="text-xl text-gray-800 leading-relaxed">
-                                    Promovemos alianzas público-privadas que potencian recursos y amplían el alcance de inversiones.
-                                </p>
-                            </div>
-
-                            <div class="bg-gray-50 p-8 rounded-lg">
-                                <p class="text-xl text-gray-800 leading-relaxed">
-                                    Monitoreamos impacto social y ambiental para asegurar que inversiones generen valor sostenible.
-                                </p>
-                            </div>
+                    <!-- SECCIÓN 2: NUESTRO TRABAJO -->
+                    <div class="space-y-12 pt-12 border-t border-gray-200">
+                        <div class="text-center md:text-left">
+                            <h2
+                                class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+                            >
+                                Nuestro Trabajo
+                            </h2>
                         </div>
 
-                        <!-- IMAGEN 3 -->
-                        <div class="w-full h-80 bg-gray-100 rounded-lg overflow-hidden">
-                            <img 
-                                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop" 
-                                alt="Nuestro Trabajo"
-                                class="w-full h-full object-cover"
-                            />
+                        <BentoGrid items={ourWorkItems} />
+
+                        <!-- Tipos de Inversión -->
+                        <div
+                            class="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 md:p-12 border border-gray-200 shadow-sm"
+                        >
+                            <h4
+                                class="font-serif text-2xl font-bold text-gray-900 mb-8 pb-4 border-b border-gray-200"
+                            >
+                                Tipos de Inversión
+                            </h4>
+                            <ul
+                                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-5"
+                            >
+                                {
+                                    [
+                                        "Infraestructura",
+                                        "Capital Humano",
+                                        "Productividad",
+                                        "Ambiente",
+                                        "Tecnología",
+                                        "Conectividad",
+                                        "Gobernanza",
+                                        "Servicios Sociales",
+                                    ].map((item) => (
+                                        <li class="flex items-start group">
+                                            <span class="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0 group-hover:scale-150 transition-transform" />
+                                            <span class="text-gray-700 font-medium text-base group-hover:text-primary transition-colors">
+                                                {item}
+                                            </span>
+                                        </li>
+                                    ))
+                                }
+                            </ul>
+                        </div>
+
+                        <!-- Siguiente Capacidad -->
+                        <div class="pt-12">
+                            <a
+                                href="/capacidades/competitividad"
+                                class="group flex items-center justify-between p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:border-primary/30 transition-all"
+                            >
+                                <div>
+                                    <span
+                                        class="text-sm font-bold text-primary uppercase tracking-widest"
+                                        >Siguiente Capacidad</span
+                                    >
+                                    <h4
+                                        class="text-2xl font-serif font-bold text-gray-900 mt-2"
+                                    >
+                                        Competitividad y Productividad
+                                    </h4>
+                                </div>
+                                <div
+                                    class="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-6 w-6"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </div>
+                            </a>
                         </div>
                     </div>
-
-                    <!-- SECCIÓN 4: TIPOS DE INVERSIÓN -->
-                    <div class="space-y-8">
-                        <h3 class="text-3xl font-bold text-gray-900">Tipos de Inversión</h3>
-                        
-                        <!-- GRID UNIFORME: 1 columna en móvil, 2 en tablet, 4 en desktop -->
-                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-                            
-                            <!-- TIPO 1: Rojo Sutil -->
-                            <div class="group relative rounded-xl h-40 bg-red-50 border border-red-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-                                <h4 class="text-red-900 font-bold text-lg">Infraestructura</h4>
-                            </div>
-
-                            <!-- TIPO 2: Celeste Sutil -->
-                            <div class="group relative rounded-xl h-40 bg-sky-50 border border-sky-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-                                <h4 class="text-sky-900 font-bold text-lg">Capital Humano</h4>
-                            </div>
-
-                            <!-- TIPO 3: Gris Sutil -->
-                            <div class="group relative rounded-xl h-40 bg-gray-50 border border-gray-200 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-                                <h4 class="text-gray-900 font-bold text-lg">Productividad</h4>
-                            </div>
-
-                            <!-- TIPO 4: Rojo Sutil -->
-                            <div class="group relative rounded-xl h-40 bg-red-50 border border-red-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-                                <h4 class="text-red-900 font-bold text-lg">Ambiente</h4>
-                            </div>
-
-                            <!-- TIPO 5: Celeste Sutil -->
-                            <div class="group relative rounded-xl h-40 bg-sky-50 border border-sky-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-                                <h4 class="text-sky-900 font-bold text-lg">Tecnología</h4>
-                            </div>
-
-                            <!-- TIPO 6: Gris Sutil -->
-                            <div class="group relative rounded-xl h-40 bg-gray-50 border border-gray-200 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-                                <h4 class="text-gray-900 font-bold text-lg">Conectividad</h4>
-                            </div>
-
-                            <!-- TIPO 7: Rojo Sutil -->
-                            <div class="group relative rounded-xl h-40 bg-red-50 border border-red-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-                                <h4 class="text-red-900 font-bold text-lg">Gobernanza</h4>
-                            </div>
-
-                            <!-- TIPO 8: Celeste Sutil -->
-                            <div class="group relative rounded-xl h-40 bg-sky-50 border border-sky-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-                                <h4 class="text-sky-900 font-bold text-lg">Servicios Sociales</h4>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- IMAGEN 4 -->
-                    <div class="w-full h-80 bg-gray-100 rounded-lg overflow-hidden">
-                        <img 
-                            src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop" 
-                            alt="Tipos de Inversión"
-                            class="w-full h-full object-cover"
-                        />
-                    </div>
-
                 </div>
 
                 <!-- COLUMNA DERECHA: SIDEBAR (3/12) -->
-                <aside class="lg:col-span-3">
-                    <div class="sticky top-32 space-y-12">
-                        
-                        <!-- ESPECIALISTAS -->
-                        <div>
-                            <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-3 border-b border-gray-300">
-                                Especialistas
-                            </h3>
-                            <div class="space-y-6">
-                                {selectedSpecialists.map((member) => (
-                                    <a 
-                                        href={`/nosotros/equipo/${member.slug}`}
-                                        class="group block hover:opacity-70 transition-opacity"
-                                    >
-                                        <div class="mb-3 h-40 bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
-                                            <img 
-                                                src={member.image} 
-                                                alt={member.name}
-                                                class="h-full w-auto object-contain"
-                                            />
-                                        </div>
-                                        <h4 class="font-bold text-sm text-gray-900 group-hover:text-primary transition-colors">
-                                            {member.name}
-                                        </h4>
-                                        <p class="text-xs text-gray-600 mt-1 leading-tight">
-                                            {member.role}
-                                        </p>
-                                    </a>
-                                ))}
-                            </div>
-                        </div>
-
-                        <!-- INDUSTRIAS -->
-                        <div>
-                            <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-3 border-b border-gray-300">
-                                Industrias Relacionadas
-                            </h3>
-                            <div class="space-y-4">
-                                {selectedIndustries.map((ind) => (
-                                    <a 
-                                        href={ind.link}
-                                        class="group block hover:opacity-70 transition-opacity"
-                                    >
-                                        <div class="mb-2 h-24 bg-gray-100 rounded-lg overflow-hidden flex items-center justify-center">
-                                            <img 
-                                                src={ind.image} 
-                                                alt={ind.title}
-                                                class="w-full h-full object-cover"
-                                            />
-                                        </div>
-                                        <h4 class="font-bold text-xs text-gray-900 group-hover:text-primary transition-colors">
-                                            {ind.title}
-                                        </h4>
-                                    </a>
-                                ))}
-                            </div>
-                        </div>
-
-                    </div>
-                </aside>
-
+                <CapabilitySidebar
+                    specialists={selectedSpecialists}
+                    industries={selectedIndustries}
+                />
             </div>
         </div>
     </section>

@@ -1,344 +1,210 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import PageHeader from '../../components/PageHeader.astro';
+import Layout from "../../layouts/Layout.astro";
+import PageHeader from "../../components/PageHeader.astro";
+import ValueGenerationHero from "../../components/capacidades/ValueGenerationHero.astro";
+import BentoGrid from "../../components/capacidades/BentoGrid.astro";
+import CapabilitySidebar from "../../components/capacidades/CapabilitySidebar.astro";
 
 // Importamos nuestra "base de datos"
-import { teamMembers, industriesData } from '../../data/teamData';
+import { teamMembers, industriesData } from "../../data/teamData";
 
 const selectedSpecialists = [
-    teamMembers["rudy-laguna"], 
+    teamMembers["rudy-laguna"],
     teamMembers["alvaro-gordillo"],
 ];
 
 const selectedIndustries = [
     industriesData["mineria"],
-    industriesData["agricultura"]
+    industriesData["agricultura"],
 ];
 
-const headerImage = "/capacidades/competitividad.jpg";
+// Bento Grid Items for Generación de Valor Cliente
+const valueGenerationItems = [
+    {
+        text: "La competitividad es el conjunto de instituciones, políticas, normas y procedimientos, interacciones y participación público y privada que determinan el nivel de productividad.",
+        image: "/capacidades/competitividad/2.jpg",
+        imageAlt: "Competitividad e instituciones",
+        size: "small" as const,
+    },
+    {
+        text: "La productividad es la capacidad de producción de los agentes económicos (personas, empresas, entre otros) dados sus recursos disponibles.",
+        image: "/capacidades/competitividad/3.jpg",
+        imageAlt: "Productividad y recursos",
+        size: "large" as const,
+    },
+    {
+        text: "La competitividad y productividad determinan el desarrollo de la circunscripción de interés: zona económica, multipaís, país, estado, región, provincia, distrito, comunidad y/o población.",
+        image: "/capacidades/competitividad/4.jpg",
+        imageAlt: "Desarrollo Regional",
+        size: "large" as const,
+    },
+    {
+        text: "La competitividad y productividad determinan el crecimiento de los sectores económicos, clusters y cadenas de valor de bienes y servicios.",
+        image: "/capacidades/competitividad/6.jpg",
+        imageAlt: "Crecimiento de Sectores",
+        size: "small" as const,
+    },
+    {
+        text: "La competitividad y productividad al impulsar las condiciones de empleabilidad y los ingresos determinan el bienestar y la calidad de vida de la población.",
+        image: "/capacidades/competitividad/9.jpg",
+        imageAlt: "Calidad de Vida",
+        size: "wide" as const,
+    },
+];
+
+// Bento Grid Items for Nuestro Trabajo
+const ourWorkItems = [
+    {
+        text: "Asesoría y asistencia técnica en planes de competitividad y productividades para países y regionesCreación de sistemas de medición parciales e integrales para impulsar competitividad y productividad.",
+        image: "/capacidades/competitividad/7.jpg",
+        imageAlt: "Fondo Asesoría",
+        size: "small" as const,
+    },
+    {
+        text: "Asesoría y asistencia técnica para mejorar la competitividad y productividad para circunscripción de interés: zona económica, multipaís, país, estado, región, provincia, distrito, comunidad y/o población, así como de sectores económicos, empresarial y proveedores, clusters y cadenas de valor de bienes y servicios.",
+        image: "/capacidades/competitividad/8.jpeg",
+        imageAlt: "Planes Globales",
+        size: "medium" as const,
+    },
+    {
+        text: "Diseño, creación, implementación, seguimiento y acompañamiento en iniciativas integrales y parciales de competitividad y productividad para áreas de influencia directa e indirecta, a niveles de sectores y productos de alto potencial de crecimiento: comercialización, logística, transformación e industrialización y producción.",
+        image: "/capacidades/competitividad/2.jpg",
+        imageAlt: "Sistemas de Medición",
+        size: "medium" as const,
+    },
+    {
+        text: "Evaluar y promover actividades económicas y clusters, microclusters a niveles sectoriales y productos de alto potencial de crecimiento.",
+        image: "/capacidades/competitividad/3.jpg",
+        imageAlt: "Clusters",
+        size: "small" as const,
+    },
+    {
+        text: "Asesoría y asistencia técnica en planes de competitividad y productividades para países y regiones.",
+        image: "/capacidades/competitividad/4.jpg",
+        imageAlt: "Iniciativas",
+        size: "wide" as const,
+    },
+];
+
+const headerImage = "/capacidades/competitividad2.jpeg";
 ---
 
 <Layout title="Competitividad - CCD">
-    
-    <PageHeader 
-        title="Competitividad" 
-        backgroundImage={headerImage}
-    />
+    <PageHeader title="Competitividad" backgroundImage={headerImage} />
 
-    <section class="bg-white py-20 md:py-32">
-        <div class="container mx-auto px-6 lg:px-12">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
-                
-                <!-- COLUMNA IZQUIERDA: CONTENIDO PRINCIPAL (9/12) -->
-                <div class="lg:col-span-9 space-y-20">
-                    
-                    <!-- SECCIÓN 1: GENERACIÓN DE VALOR CLIENTE -->
+    <section class="bg-white">
+        <div class="container mx-auto px-6 lg:px-12 py-16 md:py-24">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+                <!-- CONTENIDO PRINCIPAL (9 columnas) -->
+                <div class="lg:col-span-9 space-y-24">
+                    <!-- ============================================== -->
+                    <!-- SECCIÓN 1: GENERACIÓN DE VALOR CLIENTE         -->
+                    <!-- ============================================== -->
                     <div class="space-y-12">
-                        <h2 class="font-serif text-5xl md:text-6xl font-bold text-primary leading-tight">
-                            Generación de Valor Cliente
-                        </h2>
-                        
-                        <div class="space-y-8">
-                            <p class="text-2xl text-gray-800 leading-relaxed font-light">
-                                Mejorar productividad, empleabilidad e ingresos de la Población en Edad de Trabajar (PET) de circunscripción directa e indirectamente relacionada: zona económica, multipaís, país, estado, región, provincia, distrito, comunidad y/o población directa e indirectamente relacionada.
-                            </p>
-                        </div>
-
-                        <!-- IMAGEN 1: Generación de Valor -->
-                        <div class="w-full h-96 bg-gray-100 rounded-lg overflow-hidden">
-                            <img 
-                                src="/capacidades/competitividad/1.jpg" 
-                                alt="Generación de Valor"
-                                class="w-full h-full object-cover"
-                            />
-                        </div>
-                    </div>
-
-                    <!-- SECCIÓN 2: CONCEPTOS CLAVE -->
-                    <div class="space-y-16">
-                        <!-- Concepto 1: Con Imagen Derecha -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                            <div class="border-l-4 border-primary pl-8">
-                                <p class="text-xl text-gray-800 leading-relaxed">
-                                    La competitividad es el conjunto de instituciones, políticas, normas y procedimientos, interacciones y participación público y privada que determinan el nivel de productividad.
-                                </p>
-                            </div>
-                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
-                                <img 
-                                    src="/capacidades/competitividad/4.jpg" 
-                                    alt="Instituciones y Políticas"
-                                    class="w-full h-full object-cover"
-                                />
-                            </div>
-                        </div>
-
-                        <!-- Concepto 2: Con Imagen Izquierda -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
-                                <img 
-                                    src="/capacidades/competitividad/3.jpg" 
-                                    alt="Productividad y Capacidad"
-                                    class="w-full h-full object-cover"
-                                />
-                            </div>
-                            <div class="border-l-4 border-primary pl-8">
-                                <p class="text-xl text-gray-800 leading-relaxed">
-                                    La productividad es la capacidad de producción de los agentes económicos (personas, empresas, entre otros) dados sus recursos disponibles.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Concepto 3: Solo Texto -->
-                        <div class="border-l-4 border-primary pl-8 py-6">
-                            <p class="text-xl text-gray-800 leading-relaxed">
-                                La competitividad y productividad determinan el desarrollo de la circunscripción de interés: zona económica, multipaís, país, estado, región, provincia, distrito, comunidad y/o población.
-                            </p>
-                        </div>
-
-                        <!-- Concepto 4: Con Imagen Derecha -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                            <div class="border-l-4 border-primary pl-8">
-                                <p class="text-xl text-gray-800 leading-relaxed">
-                                    La competitividad y productividad determinan el crecimiento de los sectores económicos, clusters y cadenas de valor de bienes y servicios.
-                                </p>
-                            </div>
-                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
-                                <img 
-                                    src="/capacidades/competitividad/8.jpeg" 
-                                    alt="Sectores y Cadenas de Valor"
-                                    class="w-full h-full object-cover"
-                                />
-                            </div>
-                        </div>
-
-                        <!-- Concepto 5: Con Imagen Izquierda -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
-                                <img 
-                                    src="/capacidades/competitividad/6.jpg" 
-                                    alt="Bienestar y Calidad de Vida"
-                                    class="w-full h-full object-cover"
-                                />
-                            </div>
-                            <div class="border-l-4 border-primary pl-8">
-                                <p class="text-xl text-gray-800 leading-relaxed">
-                                    La competitividad y productividad al impulsar las condiciones de empleabilidad y los ingresos determinan el bienestar y la calidad de vida de la población.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- IMAGEN 2: Conceptos de Competitividad -->
-                    <div class="w-full h-96 bg-gray-100 rounded-lg overflow-hidden">
-                        <img 
-                            src="/capacidades/competitividad/2.jpg" 
-                            alt="Conceptos de Competitividad"
-                            class="w-full h-full object-cover"
+                        <ValueGenerationHero
+                            title="Generación de Valor Cliente"
+                            description="Mejorar productividad, empleabilidad e ingresos de la Población en Edad de Trabajar (PET) de circunscripción directa e indirectamente relacionada: zona económica, multipaís, país, estado, región, provincia, distrito, comunidad y/o población directa e indirectamente relacionada."
                         />
+
+                        <BentoGrid items={valueGenerationItems} />
                     </div>
 
-                    <!-- SECCIÓN 3: NUESTRO TRABAJO -->
-                    <div class="space-y-12 pt-12 border-t-2 border-gray-200">
-                        <h2 class="font-serif text-5xl md:text-6xl font-bold text-primary leading-tight">
-                            Nuestro Trabajo
-                        </h2>
-                        
-                        <div class="space-y-8">
-                            <div class="bg-gray-50 p-8 rounded-lg">
-                                <p class="text-xl text-gray-800 leading-relaxed">
-                                    Asesoría y asistencia técnica para mejorar la competitividad y productividad para circunscripción de interés: zona económica, multipaís, país, estado, región, provincia, distrito, comunidad y/o población, así como de sectores económicos, empresarial y proveedores, clusters y cadenas de valor de bienes y servicios.
-                                </p>
-                            </div>
-
-                            <div class="bg-gray-50 p-8 rounded-lg">
-                                <p class="text-xl text-gray-800 leading-relaxed">
-                                    Asesoría y asistencia técnica en planes de competitividad y productividades para países y regiones.
-                                </p>
-                            </div>
+                    <!-- ============================================== -->
+                    <!-- SECCIÓN 2: NUESTRO TRABAJO                     -->
+                    <!-- ============================================== -->
+                    <div class="space-y-12 pt-12 border-t border-gray-200">
+                        <div class="text-center md:text-left">
+                            <h2
+                                class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+                            >
+                                Nuestro Trabajo
+                            </h2>
                         </div>
 
-                        <!-- IMAGEN 3: Asesoría y Asistencia Técnica -->
-                        <div class="w-full h-80 bg-gray-100 rounded-lg overflow-hidden">
-                            <img 
-                            src="/capacidades/competitividad/7.jpg" 
-                                alt="Asesoría y Asistencia Técnica"
-                                class="w-full h-full object-cover"
-                            />
-                        </div>
-                    </div>
+                        <BentoGrid items={ourWorkItems} />
 
-                   <!-- SECCIÓN 4: PILARES DE COMPETITIVIDAD - GRID UNIFORME -->
-<div class="space-y-8">
-    <h3 class="text-3xl font-bold text-gray-900">Pilares del Desarrollo Competitivo</h3>
-    
-    <!-- GRID UNIFORME: 1 columna en móvil, 2 en tablet, 4 en desktop -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-        
-        <!-- PILAR 1: Rojo Sutil -->
-        <div class="group relative rounded-xl h-40 bg-red-50 border border-red-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-            <h4 class="text-red-900 font-bold text-lg">Infraestructura</h4>
-        </div>
-
-        <!-- PILAR 2: Celeste Sutil -->
-        <div class="group relative rounded-xl h-40 bg-sky-50 border border-sky-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-            <h4 class="text-sky-900 font-bold text-lg">Capital Humano</h4>
-        </div>
-
-        <!-- PILAR 3: Gris Sutil -->
-        <div class="group relative rounded-xl h-40 bg-gray-50 border border-gray-200 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-            <h4 class="text-gray-900 font-bold text-lg">Innovación</h4>
-        </div>
-
-        <!-- PILAR 4: Rojo Sutil -->
-        <div class="group relative rounded-xl h-40 bg-red-50 border border-red-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-            <h4 class="text-red-900 font-bold text-lg">Financiamiento</h4>
-        </div>
-
-        <!-- PILAR 5: Celeste Sutil -->
-        <div class="group relative rounded-xl h-40 bg-sky-50 border border-sky-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-            <h4 class="text-sky-900 font-bold text-lg">Mercado Laboral</h4>
-        </div>
-
-        <!-- PILAR 6: Gris Sutil -->
-        <div class="group relative rounded-xl h-40 bg-gray-50 border border-gray-200 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-            <h4 class="text-gray-900 font-bold text-lg">Ambiente de Negocios</h4>
-        </div>
-
-        <!-- PILAR 7: Rojo Sutil -->
-        <div class="group relative rounded-xl h-40 bg-red-50 border border-red-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-            <h4 class="text-red-900 font-bold text-lg">Comercio Exterior y Turismo</h4>
-        </div>
-
-        <!-- PILAR 8: Celeste Sutil -->
-        <div class="group relative rounded-xl h-40 bg-sky-50 border border-sky-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-            <h4 class="text-sky-900 font-bold text-lg">Institucionalidad</h4>
-        </div>
-
-        <!-- PILAR 9: Gris Sutil -->
-        <div class="group relative rounded-xl h-40 bg-gray-50 border border-gray-200 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-            <h4 class="text-gray-900 font-bold text-lg">Sostenibilidad Ambiental</h4>
-        </div>
-
-        <!-- PILAR 10: Rojo Sutil -->
-        <div class="group relative rounded-xl h-40 bg-red-50 border border-red-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-            <h4 class="text-red-900 font-bold text-lg">Dotación de Recursos Naturales</h4>
-        </div>
-
-        <!-- PILAR 11: Celeste Sutil (Ahora igual a los demás) -->
-        <div class="group relative rounded-xl h-40 bg-sky-50 border border-sky-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-            <h4 class="text-sky-900 font-bold text-lg leading-tight">Mega y micro proyectos</h4>
-        </div>
-
-    </div>
-</div>
-
-                    <!-- IMAGEN 4: Pilares de Competitividad -->
-                    <div class="w-full h-80 bg-gray-100 rounded-lg overflow-hidden">
-                        <img 
-                            src="/capacidades/competitividad/5.webp" 
-                            alt="Pilares de Competitividad"
-                            class="w-full h-full object-cover"
-                        />
-                    </div>
-
-                    <!-- SECCIÓN 5: INICIATIVAS Y PROYECTOS -->
-                    <div class="space-y-10">
-                        
-
-                        <div class="border-l-4 border-primary pl-8">
-                            <p class="text-xl text-gray-800 leading-relaxed font-semibold">
-                                Creación de sistemas de medición parciales e integrales para impulsar competitividad y productividad.
-                            </p>
+                        <!-- Áreas de Intervención -->
+                        <div
+                            class="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 md:p-12 border border-gray-200 shadow-sm"
+                        >
+                            <h4
+                                class="font-serif text-2xl font-bold text-gray-900 mb-8 pb-4 border-b border-gray-200"
+                            >
+                                Áreas de Intervención
+                            </h4>
+                            <ul
+                                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-5"
+                            >
+                                {
+                                    [
+                                        "Infraestructura",
+                                        "Comercio Exterior y Turismo",
+                                        "Capital Humano",
+                                        "Institucionalidad",
+                                        "Innovación",
+                                        "Sostenibilidad Ambiental",
+                                        "Financiamiento",
+                                        "Dotación de recursos naturales",
+                                        "Mercado Laboral",
+                                        "Mega y micro proyectos",
+                                        "Ambiente de Negocios",
+                                    ].map((item) => (
+                                        <li class="flex items-start group">
+                                            <span class="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0 group-hover:scale-150 transition-transform" />
+                                            <span class="text-gray-700 font-medium text-base group-hover:text-primary transition-colors">
+                                                {item}
+                                            </span>
+                                        </li>
+                                    ))
+                                }
+                            </ul>
                         </div>
 
-                        <div class="border-l-4 border-primary pl-8">
-                            <p class="text-xl text-gray-800 leading-relaxed font-semibold">
-                                Evaluar y promover actividades económicas y clusters, microclusters a niveles sectoriales y productos de alto potencial de crecimiento.
-                            </p>
-                        </div>
-
-                        <div class="border-l-4 border-primary pl-8">
-                            <p class="text-xl text-gray-800 leading-relaxed font-semibold">
-                                Diseño, creación, implementación, seguimiento y acompañamiento en iniciativas integrales y parciales de competitividad y productividad para áreas de influencia directa e indirecta, a niveles de sectores y productos de alto potencial de crecimiento: comercialización, logística, transformación e industrialización y producción.
-                            </p>
+                        <!-- Siguiente Capacidad -->
+                        <div class="pt-12">
+                            <a
+                                href="/capacidades/desarrollo"
+                                class="group flex items-center justify-between p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:border-primary/30 transition-all"
+                            >
+                                <div>
+                                    <span
+                                        class="text-sm font-bold text-primary uppercase tracking-widest"
+                                        >Siguiente Capacidad</span
+                                    >
+                                    <h4
+                                        class="text-2xl font-serif font-bold text-gray-900 mt-2"
+                                    >
+                                        Desarrollo
+                                    </h4>
+                                </div>
+                                <div
+                                    class="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-6 w-6"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </div>
+                            </a>
                         </div>
                     </div>
-
-                    <!-- IMAGEN 5: Iniciativas y Proyectos -->
-                    <div class="w-full h-80 bg-gray-100 rounded-lg overflow-hidden">
-                        <img 
-                            src="/capacidades/competitividad/9.jpg" 
-                            alt="Iniciativas y Proyectos"
-                            class="w-full h-full object-cover"
-                        />
-                    </div>
-
                 </div>
 
                 <!-- COLUMNA DERECHA: SIDEBAR (3/12) -->
-                <aside class="lg:col-span-3">
-                    <div class="sticky top-32 space-y-12">
-                        
-                        <!-- ESPECIALISTAS -->
-                        <div>
-                            <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-3 border-b border-gray-300">
-                                Especialistas
-                            </h3>
-                            <div class="space-y-6">
-                                {selectedSpecialists.map((member) => (
-                                    <a 
-                                        href={`/nosotros/equipo/${member.slug}`}
-                                        class="group block hover:opacity-70 transition-opacity"
-                                    >
-                                        <div class="mb-3 h-40 bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
-                                            <img 
-                                                src={member.image} 
-                                                alt={member.name}
-                                                class="h-full w-auto object-contain"
-                                            />
-                                        </div>
-                                        <h4 class="font-bold text-sm text-gray-900 group-hover:text-primary transition-colors">
-                                            {member.name}
-                                        </h4>
-                                        <p class="text-xs text-gray-600 mt-1 leading-tight">
-                                            {member.role}
-                                        </p>
-                                    </a>
-                                ))}
-                            </div>
-                        </div>
-
-                        <!-- INDUSTRIAS -->
-                        <div>
-                            <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-3 border-b border-gray-300">
-                                Industrias Relacionadas
-                            </h3>
-                            <div class="space-y-4">
-                                {selectedIndustries.map((ind) => (
-                                    <a 
-                                        href={ind.link}
-                                        class="group block hover:opacity-70 transition-opacity"
-                                    >
-                                        <div class="mb-2 h-24 bg-gray-100 rounded-lg overflow-hidden flex items-center justify-center">
-                                            <img 
-                                                src={ind.image} 
-                                                alt={ind.title}
-                                                class="w-full h-full object-cover"
-                                            />
-                                        </div>
-                                        <h4 class="font-bold text-xs text-gray-900 group-hover:text-primary transition-colors">
-                                            {ind.title}
-                                        </h4>
-                                    </a>
-                                ))}
-                            </div>
-                        </div>
-
-                    </div>
-                </aside>
-
+                <CapabilitySidebar
+                    specialists={selectedSpecialists}
+                    industries={selectedIndustries}
+                />
             </div>
         </div>
     </section>
-
 </Layout>

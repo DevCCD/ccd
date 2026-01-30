@@ -1,307 +1,193 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import PageHeader from '../../components/PageHeader.astro';
+import Layout from "../../layouts/Layout.astro";
+import PageHeader from "../../components/PageHeader.astro";
+import ValueGenerationHero from "../../components/capacidades/ValueGenerationHero.astro";
+import BentoGrid from "../../components/capacidades/BentoGrid.astro";
+import CapabilitySidebar from "../../components/capacidades/CapabilitySidebar.astro";
 
 // Importamos nuestra "base de datos"
-import { teamMembers, industriesData } from '../../data/teamData';
+import { teamMembers, industriesData } from "../../data/teamData";
 
 const selectedSpecialists = [
     teamMembers["alex-carbajal"],
-    teamMembers["mario-huaman"]
+    teamMembers["mario-huaman"],
 ];
 
 const selectedIndustries = [
     industriesData["mineria"],
-    industriesData["educacion"]
+    industriesData["educacion"],
+];
+
+// Bento Grid Items for Generación de Valor Cliente
+const valueGenerationItems = [
+    {
+        text: "Pertinencia y eficiencia en la asignación de recursos para maximizar el retorno social de las inversiones.",
+        image: "/capacidades/evaluacion de proyectos/casual-business-man-working-with-laptop.jpg",
+        imageAlt: "Pertinencia y Eficiencia",
+        size: "large" as const,
+    },
+    {
+        text: "Eficacia e impacto en la generación de resultados duraderos para el desarrollo territorial.",
+        image: "/capacidades/evaluacion de proyectos/antamina.jpg",
+        imageAlt: "Eficacia e Impacto",
+        size: "small" as const,
+    },
+    {
+        text: "Sostenibilidad de los resultados para asegurar que las iniciativas generen valor a largo plazo.",
+        image: "/capacidades/evaluacion de proyectos/evaluacion3.jpg",
+        imageAlt: "Sostenibilidad",
+        size: "large" as const,
+    },
+    {
+        text: "Evaluaciones ex ante para diseñar intervenciones más efectivas desde el inicio.",
+        image: "/capacidades/evaluacion de proyectos/evaluacion2.jpg",
+        imageAlt: "Evaluación Ex Ante",
+        size: "small" as const,
+    },
+    {
+        text: "Evaluaciones ex post para aprender de los resultados y mejorar futuras intervenciones estratégicas.",
+        image: "/capacidades/evaluacion de proyectos/open_pit_Barrick-Gold-Mine-e1493577591276-960x480.jpg",
+        imageAlt: "Evaluación Ex Post",
+        size: "wide" as const,
+    },
+];
+
+// Bento Grid Items for Nuestro Trabajo
+const ourWorkItems = [
+    {
+        text: "Realizamos evaluaciones de impacto para identificar efectos reales de programas en la población.",
+        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+        imageAlt: "Impacto",
+        size: "small" as const,
+    },
+    {
+        text: "Desarrollamos marcos lógicos y teorías de cambio que alinean objetivos con resultados.",
+        image: "https://images.unsplash.com/photo-1454165833762-d286d1949ad8?w=800&h=600&fit=crop",
+        imageAlt: "Planificación",
+        size: "medium" as const,
+    },
+    {
+        text: "Establecemos sistemas de monitoreo y seguimiento con indicadores de desempeño rigurosos.",
+        image: "https://images.unsplash.com/photo-1551288049-bbbda5366991?w=800&h=600&fit=crop",
+        imageAlt: "Monitoreo",
+        size: "medium" as const,
+    },
 ];
 
 const headerImage = "/capacidades/evaluacion.jpg";
 ---
 
 <Layout title="Evaluación de Programas y Proyectos - CCD">
-    
-    <PageHeader 
-        title="Evaluación de Programas y Proyectos" 
+    <PageHeader
+        title="Evaluación de Programas y Proyectos"
         backgroundImage={headerImage}
     />
 
-    <section class="bg-white py-20 md:py-32">
-        <div class="container mx-auto px-6 lg:px-12">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
-                
-                <!-- COLUMNA IZQUIERDA: CONTENIDO PRINCIPAL (9/12) -->
-                <div class="lg:col-span-9 space-y-20">
-                    
+    <section class="bg-white">
+        <div class="container mx-auto px-6 lg:px-12 py-16 md:py-24">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+                <!-- CONTENIDO PRINCIPAL (9 columnas) -->
+                <div class="lg:col-span-9 space-y-24">
                     <!-- SECCIÓN 1: GENERACIÓN DE VALOR CLIENTE -->
                     <div class="space-y-12">
-                        <h2 class="font-serif text-5xl md:text-6xl font-bold text-primary leading-tight">
-                            Generación de Valor Cliente
-                        </h2>
-                        
-                        <div class="space-y-8">
-                            <p class="text-2xl text-gray-800 leading-relaxed font-light">
-                                Evaluamos programas y proyectos para garantizar la calidad, eficiencia y el máximo impacto en el desarrollo.
-                            </p>
-                        </div>
-
-                        <!-- IMAGEN 1 -->
-                        <div class="w-full h-96 bg-gray-100 rounded-lg overflow-hidden">
-                            <img 
-                                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop" 
-                                alt="Evaluación"
-                                class="w-full h-full object-cover"
-                            />
-                        </div>
-                    </div>
-
-                    <!-- SECCIÓN 2: CONCEPTOS CLAVE -->
-                    <div class="space-y-16">
-                        <!-- Concepto 1: Con Imagen Derecha -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                            <div class="border-l-4 border-primary pl-8">
-                                <p class="text-xl text-gray-800 leading-relaxed">
-                                    Pertinencia y eficiencia en la asignación de recursos para maximizar el retorno social de las inversiones.
-                                </p>
-                            </div>
-                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
-                                <img 
-                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" 
-                                    alt="Pertinencia"
-                                    class="w-full h-full object-cover"
-                                />
-                            </div>
-                        </div>
-
-                        <!-- Concepto 2: Con Imagen Izquierda -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
-                                <img 
-                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" 
-                                    alt="Eficacia"
-                                    class="w-full h-full object-cover"
-                                />
-                            </div>
-                            <div class="border-l-4 border-primary pl-8">
-                                <p class="text-xl text-gray-800 leading-relaxed">
-                                    Eficacia e impacto en la generación de resultados duraderos para el desarrollo territorial.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Concepto 3: Solo Texto -->
-                        <div class="border-l-4 border-primary pl-8 py-6">
-                            <p class="text-xl text-gray-800 leading-relaxed">
-                                Sostenibilidad de los resultados para asegurar que las iniciativas generen valor a largo plazo.
-                            </p>
-                        </div>
-
-                        <!-- Concepto 4: Con Imagen Derecha -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                            <div class="border-l-4 border-primary pl-8">
-                                <p class="text-xl text-gray-800 leading-relaxed">
-                                    Evaluaciones ex ante para diseñar intervenciones más efectivas desde el inicio.
-                                </p>
-                            </div>
-                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
-                                <img 
-                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" 
-                                    alt="Ex Ante"
-                                    class="w-full h-full object-cover"
-                                />
-                            </div>
-                        </div>
-
-                        <!-- Concepto 5: Con Imagen Izquierda -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
-                                <img 
-                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" 
-                                    alt="Ex Post"
-                                    class="w-full h-full object-cover"
-                                />
-                            </div>
-                            <div class="border-l-4 border-primary pl-8">
-                                <p class="text-xl text-gray-800 leading-relaxed">
-                                    Evaluaciones ex post para aprender de resultados y mejorar futuras intervenciones.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- IMAGEN 2 -->
-                    <div class="w-full h-96 bg-gray-100 rounded-lg overflow-hidden">
-                        <img 
-                            src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop" 
-                            alt="Evaluación Integral"
-                            class="w-full h-full object-cover"
+                        <ValueGenerationHero
+                            title="Generación de Valor Cliente"
+                            description="Evaluamos programas y proyectos para garantizar la calidad, eficiencia y el máximo impacto en el desarrollo, optimizando cada recurso invertido."
                         />
+
+                        <BentoGrid items={valueGenerationItems} />
                     </div>
 
-                    <!-- SECCIÓN 3: NUESTRO TRABAJO -->
-                    <div class="space-y-12 pt-12 border-t-2 border-gray-200">
-                        <h2 class="font-serif text-5xl md:text-6xl font-bold text-primary leading-tight">
-                            Nuestro Trabajo
-                        </h2>
-                        
-                        <div class="space-y-8">
-                            <div class="bg-gray-50 p-8 rounded-lg">
-                                <p class="text-xl text-gray-800 leading-relaxed">
-                                    Realizamos evaluaciones de impacto para identificar efectos reales de programas en la población.
-                                </p>
-                            </div>
-
-                            <div class="bg-gray-50 p-8 rounded-lg">
-                                <p class="text-xl text-gray-800 leading-relaxed">
-                                    Desarrollamos marcos lógicos y teorías de cambio que alinean objetivos con resultados esperados.
-                                </p>
-                            </div>
-
-                            <div class="bg-gray-50 p-8 rounded-lg">
-                                <p class="text-xl text-gray-800 leading-relaxed">
-                                    Establecemos sistemas de monitoreo y seguimiento con indicadores de desempeño y logros.
-                                </p>
-                            </div>
-
-                            <div class="bg-gray-50 p-8 rounded-lg">
-                                <p class="text-xl text-gray-800 leading-relaxed">
-                                    Proporcionamos recomendaciones de mejora continua basadas en evidencia y análisis riguroso.
-                                </p>
-                            </div>
+                    <!-- SECCIÓN 2: NUESTRO TRABAJO -->
+                    <div class="space-y-12 pt-12 border-t border-gray-200">
+                        <div class="text-center md:text-left">
+                            <h2
+                                class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+                            >
+                                Nuestro Trabajo
+                            </h2>
                         </div>
 
-                        <!-- IMAGEN 3 -->
-                        <div class="w-full h-80 bg-gray-100 rounded-lg overflow-hidden">
-                            <img 
-                                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop" 
-                                alt="Nuestro Trabajo"
-                                class="w-full h-full object-cover"
-                            />
+                        <BentoGrid items={ourWorkItems} />
+
+                        <!-- Enfoques de Evaluación -->
+                        <div
+                            class="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 md:p-12 border border-gray-200 shadow-sm"
+                        >
+                            <h4
+                                class="font-serif text-2xl font-bold text-gray-900 mb-8 pb-4 border-b border-gray-200"
+                            >
+                                Enfoques de Evaluación
+                            </h4>
+                            <ul
+                                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-5"
+                            >
+                                {
+                                    [
+                                        "Impacto y Resultados",
+                                        "Eficiencia Operativa",
+                                        "Pertinencia Estratégica",
+                                        "Relevancia Social",
+                                        "Sostenibilidad",
+                                        "Equidad e Inclusión",
+                                        "Análisis Costo-Beneficio",
+                                        "Lecciones Aprendidas",
+                                    ].map((item) => (
+                                        <li class="flex items-start group">
+                                            <span class="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0 group-hover:scale-150 transition-transform" />
+                                            <span class="text-gray-700 font-medium text-base group-hover:text-primary transition-colors">
+                                                {item}
+                                            </span>
+                                        </li>
+                                    ))
+                                }
+                            </ul>
+                        </div>
+
+                        <!-- Siguiente Capacidad -->
+                        <div class="pt-12">
+                            <a
+                                href="/capacidades/fondos"
+                                class="group flex items-center justify-between p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:border-primary/30 transition-all"
+                            >
+                                <div>
+                                    <span
+                                        class="text-sm font-bold text-primary uppercase tracking-widest"
+                                        >Siguiente Capacidad</span
+                                    >
+                                    <h4
+                                        class="text-2xl font-serif font-bold text-gray-900 mt-2"
+                                    >
+                                        Fondos de Desarrollo y Financiamiento
+                                    </h4>
+                                </div>
+                                <div
+                                    class="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-6 w-6"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </div>
+                            </a>
                         </div>
                     </div>
-
-                    <!-- SECCIÓN 4: ENFOQUES DE EVALUACIÓN -->
-                    <div class="space-y-8">
-                        <h3 class="text-3xl font-bold text-gray-900">Enfoques de Evaluación</h3>
-                        
-                        <!-- GRID UNIFORME: 1 columna en móvil, 2 en tablet, 4 en desktop -->
-                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-                            
-                            <!-- ENFOQUE 1: Rojo Sutil -->
-                            <div class="group relative rounded-xl h-40 bg-red-50 border border-red-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-                                <h4 class="text-red-900 font-bold text-lg">Impacto y Resultados</h4>
-                            </div>
-
-                            <!-- ENFOQUE 2: Celeste Sutil -->
-                            <div class="group relative rounded-xl h-40 bg-sky-50 border border-sky-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-                                <h4 class="text-sky-900 font-bold text-lg">Eficiencia Operativa</h4>
-                            </div>
-
-                            <!-- ENFOQUE 3: Gris Sutil -->
-                            <div class="group relative rounded-xl h-40 bg-gray-50 border border-gray-200 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-                                <h4 class="text-gray-900 font-bold text-lg">Pertinencia Estratégica</h4>
-                            </div>
-
-                            <!-- ENFOQUE 4: Rojo Sutil -->
-                            <div class="group relative rounded-xl h-40 bg-red-50 border border-red-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-                                <h4 class="text-red-900 font-bold text-lg">Relevancia Social</h4>
-                            </div>
-
-                            <!-- ENFOQUE 5: Celeste Sutil -->
-                            <div class="group relative rounded-xl h-40 bg-sky-50 border border-sky-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-                                <h4 class="text-sky-900 font-bold text-lg">Sostenibilidad</h4>
-                            </div>
-
-                            <!-- ENFOQUE 6: Gris Sutil -->
-                            <div class="group relative rounded-xl h-40 bg-gray-50 border border-gray-200 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-                                <h4 class="text-gray-900 font-bold text-lg">Equidad e Inclusión</h4>
-                            </div>
-
-                            <!-- ENFOQUE 7: Rojo Sutil -->
-                            <div class="group relative rounded-xl h-40 bg-red-50 border border-red-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-                                <h4 class="text-red-900 font-bold text-lg">Análisis Costo-Beneficio</h4>
-                            </div>
-
-                            <!-- ENFOQUE 8: Celeste Sutil -->
-                            <div class="group relative rounded-xl h-40 bg-sky-50 border border-sky-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-                                <h4 class="text-sky-900 font-bold text-lg">Lecciones Aprendidas</h4>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- IMAGEN 4 -->
-                    <div class="w-full h-80 bg-gray-100 rounded-lg overflow-hidden">
-                        <img 
-                            src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop" 
-                            alt="Enfoques"
-                            class="w-full h-full object-cover"
-                        />
-                    </div>
-
                 </div>
 
                 <!-- COLUMNA DERECHA: SIDEBAR (3/12) -->
-                <aside class="lg:col-span-3">
-                    <div class="sticky top-32 space-y-12">
-                        
-                        <!-- ESPECIALISTAS -->
-                        <div>
-                            <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-3 border-b border-gray-300">
-                                Especialistas
-                            </h3>
-                            <div class="space-y-6">
-                                {selectedSpecialists.map((member) => (
-                                    <a 
-                                        href={`/nosotros/equipo/${member.slug}`}
-                                        class="group block hover:opacity-70 transition-opacity"
-                                    >
-                                        <div class="mb-3 h-40 bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
-                                            <img 
-                                                src={member.image} 
-                                                alt={member.name}
-                                                class="h-full w-auto object-contain"
-                                            />
-                                        </div>
-                                        <h4 class="font-bold text-sm text-gray-900 group-hover:text-primary transition-colors">
-                                            {member.name}
-                                        </h4>
-                                        <p class="text-xs text-gray-600 mt-1 leading-tight">
-                                            {member.role}
-                                        </p>
-                                    </a>
-                                ))}
-                            </div>
-                        </div>
-
-                        <!-- INDUSTRIAS -->
-                        <div>
-                            <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-3 border-b border-gray-300">
-                                Industrias Relacionadas
-                            </h3>
-                            <div class="space-y-4">
-                                {selectedIndustries.map((ind) => (
-                                    <a 
-                                        href={ind.link}
-                                        class="group block hover:opacity-70 transition-opacity"
-                                    >
-                                        <div class="mb-2 h-24 bg-gray-100 rounded-lg overflow-hidden flex items-center justify-center">
-                                            <img 
-                                                src={ind.image} 
-                                                alt={ind.title}
-                                                class="w-full h-full object-cover"
-                                            />
-                                        </div>
-                                        <h4 class="font-bold text-xs text-gray-900 group-hover:text-primary transition-colors">
-                                            {ind.title}
-                                        </h4>
-                                    </a>
-                                ))}
-                            </div>
-                        </div>
-
-                    </div>
-                </aside>
-
+                <CapabilitySidebar
+                    specialists={selectedSpecialists}
+                    industries={selectedIndustries}
+                />
             </div>
         </div>
     </section>

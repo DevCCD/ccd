@@ -1,307 +1,231 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import PageHeader from '../../components/PageHeader.astro';
+import Layout from "../../layouts/Layout.astro";
+import PageHeader from "../../components/PageHeader.astro";
+import ValueGenerationHero from "../../components/capacidades/ValueGenerationHero.astro";
+import BentoGrid from "../../components/capacidades/BentoGrid.astro";
+import CapabilitySidebar from "../../components/capacidades/CapabilitySidebar.astro";
 
 // Importamos nuestra "base de datos"
-import { teamMembers, industriesData } from '../../data/teamData';
+import { teamMembers, industriesData } from "../../data/teamData";
 
 const selectedSpecialists = [
-    teamMembers["karla-casas"], 
-    teamMembers["alex-carbajal"] 
+    teamMembers["karla-casas"],
+    teamMembers["alex-carbajal"],
 ];
 
 const selectedIndustries = [
     industriesData["mineria"],
-    industriesData["agricultura"]
+    industriesData["agricultura"],
 ];
 
-const headerImage = "/capacidades/desarrollo.jpg";
+// Bento Grid Items for Generación de Valor Cliente
+const valueGenerationItems = [
+    {
+        text: "Mejorar las condiciones de vida de las personas: educación universal, caminos transitables, calidad de la atención de la salud, buen gobierno y aumentar ingresos.",
+        image: "/capacidades/desarrollo/InstitucionEducativaIntegrada.png",
+        imageAlt: "Mejora de Condiciones",
+        size: "large" as const,
+    },
+    {
+        text: "Promover la competitividad mediante el cierre de brechas, mejorando el bienestar económico y social de las personas.",
+        image: "/capacidades/desarrollo/internet 1.jpg",
+        imageAlt: "Cierre de Brechas",
+        size: "small" as const,
+    },
+    {
+        text: "Crear riqueza a fin de mantener la prosperidad o bienestar económico y social de los habitantes.",
+        image: "/capacidades/desarrollo/mangos.jpg",
+        imageAlt: "Prosperidad Económica",
+        size: "wide" as const,
+    },
+];
+
+// Bento Grid Items for Nuestro Trabajo
+const ourWorkItems = [
+    {
+        text: "Elaborar e implementar planes estratégicos y de inversión para el desarrollo de zonas de influencia directa e indirecta.",
+        image: "/capacidades/desarrollo/agropecuario 3.jpg",
+        imageAlt: "Planes de Desarrollo",
+        size: "small" as const,
+    },
+    {
+        text: "Identificar, diseñar, asesorar y asistencia técnica para promover y desarrollar corredores económicos territoriales a escala nacional, regional, local y comunal.",
+        image: "/capacidades/desarrollo/Antamina operaciones_0.jpg",
+        imageAlt: "Seguimiento",
+        size: "medium" as const,
+    },
+    {
+        text: "Elaborar e implementar planes de inversión para el desarrollo de corredores económicos territoriales.",
+        image: "/capacidades/desarrollo/palta.png",
+        imageAlt: "Inversiones",
+        size: "medium" as const,
+    },
+
+    {
+        text: "Asesoría y asistencia técnica en el planeamiento y la gestión de proyectos de inversión social de los fondos sociales para el desarrollo.",
+        image: "/capacidades/desarrollo/evaluacion3.jpg",
+        imageAlt: "Planes de Desarrollo",
+        size: "small" as const,
+    },
+    {
+        text: "Creación de sistemas de medición integrales, parciales y KPIs (Key Performance Indicators) para el desarrollo de circunscripciones país, estado, región, provincia, distrito, comunidad, localidad y caserío.",
+        image: "/capacidades/desarrollo/desarrollo.jpg",
+        imageAlt: "Planes de Desarrollo",
+        size: "wide" as const,
+    },
+    {
+        text: "Diseñar e implementar proyectos para mejorar la educación en niveles básico regular, técnico y universitario.",
+        image: "/capacidades/desarrollo/IMG_1050.JPG",
+        imageAlt: "Planes de Desarrollo",
+        size: "medium" as const,
+    },
+    {
+        text: "Diseño, creación e implementación de metodologías para el desarrollo a circunscripciones concretas.",
+        image: "/capacidades/desarrollo/Truchas en Huancané.jpg",
+        imageAlt: "Planes de Desarrollo",
+        size: "small" as const,
+    },
+];
+
+const headerImage = "/capacidades/desarrollo2.jpg";
 ---
 
 <Layout title="Desarrollo - CCD">
-    
-    <PageHeader 
-        title="Desarrollo" 
-        backgroundImage={headerImage}
-    />
+    <PageHeader title="Desarrollo" backgroundImage={headerImage} />
 
-    <section class="bg-white py-20 md:py-32">
-        <div class="container mx-auto px-6 lg:px-12">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
-                
-                <!-- COLUMNA IZQUIERDA: CONTENIDO PRINCIPAL (9/12) -->
-                <div class="lg:col-span-9 space-y-20">
-                    
+    <section class="bg-white">
+        <div class="container mx-auto px-6 lg:px-12 py-16 md:py-24">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+                <!-- CONTENIDO PRINCIPAL (9 columnas) -->
+                <div class="lg:col-span-9 space-y-24">
                     <!-- SECCIÓN 1: GENERACIÓN DE VALOR CLIENTE -->
                     <div class="space-y-12">
-                        <h2 class="font-serif text-5xl md:text-6xl font-bold text-primary leading-tight">
-                            Generación de Valor Cliente
-                        </h2>
-                        
-                        <div class="space-y-8">
-                            <p class="text-2xl text-gray-800 leading-relaxed font-light">
-                                Mejoramos la calidad de vida integral de las personas mediante desarrollo territorial planificado que cierra brechas económicas y sociales.
-                            </p>
-                        </div>
-
-                        <!-- IMAGEN 1 -->
-                        <div class="w-full h-96 bg-gray-100 rounded-lg overflow-hidden">
-                            <img 
-                                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop" 
-                                alt="Desarrollo Territorial"
-                                class="w-full h-full object-cover"
-                            />
-                        </div>
-                    </div>
-
-                    <!-- SECCIÓN 2: CONCEPTOS CLAVE -->
-                    <div class="space-y-16">
-                        <!-- Concepto 1: Con Imagen Derecha -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                            <div class="border-l-4 border-primary pl-8">
-                                <p class="text-xl text-gray-800 leading-relaxed">
-                                    Mejora de condiciones de vida mediante educación universal, infraestructura básica, servicios de salud de calidad, buen gobierno e incremento de ingresos.
-                                </p>
-                            </div>
-                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
-                                <img 
-                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" 
-                                    alt="Mejora de Condiciones"
-                                    class="w-full h-full object-cover"
-                                />
-                            </div>
-                        </div>
-
-                        <!-- Concepto 2: Con Imagen Izquierda -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
-                                <img 
-                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" 
-                                    alt="Cierre de Brechas"
-                                    class="w-full h-full object-cover"
-                                />
-                            </div>
-                            <div class="border-l-4 border-primary pl-8">
-                                <p class="text-xl text-gray-800 leading-relaxed">
-                                    Cierre de brechas mediante el impulso de competitividad territorial y soluciones que mejoran el bienestar económico y social.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Concepto 3: Solo Texto -->
-                        <div class="border-l-4 border-primary pl-8 py-6">
-                            <p class="text-xl text-gray-800 leading-relaxed">
-                                Creación de riqueza que genera prosperidad económica y social, manteniendo y mejorando el bienestar de los habitantes.
-                            </p>
-                        </div>
-
-                        <!-- Concepto 4: Con Imagen Derecha -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                            <div class="border-l-4 border-primary pl-8">
-                                <p class="text-xl text-gray-800 leading-relaxed">
-                                    Desarrollo integral que aborda múltiples dimensiones sociales, económicas, ambientales e institucionales de forma equilibrada.
-                                </p>
-                            </div>
-                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
-                                <img 
-                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" 
-                                    alt="Desarrollo Integral"
-                                    class="w-full h-full object-cover"
-                                />
-                            </div>
-                        </div>
-
-                        <!-- Concepto 5: Con Imagen Izquierda -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                            <div class="h-64 bg-gray-100 rounded-lg overflow-hidden">
-                                <img 
-                                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" 
-                                    alt="Sostenibilidad"
-                                    class="w-full h-full object-cover"
-                                />
-                            </div>
-                            <div class="border-l-4 border-primary pl-8">
-                                <p class="text-xl text-gray-800 leading-relaxed">
-                                    Sostenibilidad del desarrollo a través de iniciativas que responden a las necesidades presentes sin comprometer el futuro de las generaciones venideras.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- IMAGEN 2 -->
-                    <div class="w-full h-96 bg-gray-100 rounded-lg overflow-hidden">
-                        <img 
-                            src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop" 
-                            alt="Áreas de Desarrollo"
-                            class="w-full h-full object-cover"
+                        <ValueGenerationHero
+                            title="Generación de Valor Cliente"
+                            description="Mejorar la calidad de vida de las personas de manera integral, para circunscripciones: país, estado, región, provincia, distrito y comunidad."
                         />
+
+                        <BentoGrid items={valueGenerationItems} />
                     </div>
 
-                    <!-- SECCIÓN 3: NUESTRO TRABAJO -->
-                    <div class="space-y-12 pt-12 border-t-2 border-gray-200">
-                        <h2 class="font-serif text-5xl md:text-6xl font-bold text-primary leading-tight">
-                            Nuestro Trabajo
-                        </h2>
-                        
-                        <div class="space-y-8">
-                            <div class="bg-gray-50 p-8 rounded-lg">
-                                <p class="text-xl text-gray-800 leading-relaxed">
-                                    Elaboramos planes de desarrollo participativos a nivel regional, provincial, distrital y comunitario con visión integral de desarrollo territorial.
-                                </p>
-                            </div>
+                    <!-- SECCIÓN 2: NUESTRO TRABAJO -->
+                    <div class="space-y-12 pt-12 border-t border-gray-200">
+                        <div class="text-center md:text-left">
+                            <h2
+                                class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+                            >
+                                Nuestro Trabajo
+                            </h2>
+                        </div>
+                        <!-- Áreas de Trabajo -->
+                        <div
+                            class="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 md:p-12 border border-gray-200 shadow-sm"
+                        >
+                            <h4
+                                class="font-serif text-2xl font-bold text-gray-900 mb-8 pb-4 border-b border-gray-200"
+                            >
+                                Elaborar planes y estudios de Desarrollo:
+                            </h4>
+                            <ul
+                                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-5"
+                            >
+                                {
+                                    [
+                                        "Concertado de ámbitos regional, provincial y distrital.",
+                                        "Territorial de comunidades, localidades y caseríos.",
+                                        "Territorial en contextos de reasentamiento poblacional.",
+                                        "Territorial para áreas de influencia directa e indirecta.",
+                                    ].map((item) => (
+                                        <li class="flex items-start group">
+                                            <span class="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0 group-hover:scale-150 transition-transform" />
+                                            <span class="text-gray-700 font-medium text-base group-hover:text-primary transition-colors">
+                                                {item}
+                                            </span>
+                                        </li>
+                                    ))
+                                }
+                            </ul>
+                        </div>
+                        <BentoGrid items={ourWorkItems} />
 
-                            <div class="bg-gray-50 p-8 rounded-lg">
-                                <p class="text-xl text-gray-800 leading-relaxed">
-                                    Brindamos asistencia técnica en seguimiento de planes con indicadores en sociodemografía, crecimiento económico, conectividad, ambiente, riesgos y gobernanza.
-                                </p>
-                            </div>
-
-                            <div class="bg-gray-50 p-8 rounded-lg">
-                                <p class="text-xl text-gray-800 leading-relaxed">
-                                    Identificamos, diseñamos y promovemos corredores económicos territoriales a escala nacional, regional, local y comunitaria.
-                                </p>
-                            </div>
-
-                            <div class="bg-gray-50 p-8 rounded-lg">
-                                <p class="text-xl text-gray-800 leading-relaxed">
-                                    Elaboramos e implementamos planes estratégicos e inversiones para zonas de influencia directa e indirecta con máximo impacto social.
-                                </p>
-                            </div>
+                        <!-- Áreas de Trabajo -->
+                        <div
+                            class="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 md:p-12 border border-gray-200 shadow-sm"
+                        >
+                            <h4
+                                class="font-serif text-2xl font-bold text-gray-900 mb-8 pb-4 border-b border-gray-200"
+                            >
+                                Brindar asistencia técnica en la implementación,
+                                seguimiento y monitoreo de planes de desarrollo:
+                            </h4>
+                            <ul
+                                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-5"
+                            >
+                                {
+                                    [
+                                        "Sociodemográfico",
+                                        "Crecimiento económico",
+                                        "Conectividad",
+                                        "Ambiental",
+                                        "Riesgos y desastres",
+                                        "Gobernanza",
+                                    ].map((item) => (
+                                        <li class="flex items-start group">
+                                            <span class="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0 group-hover:scale-150 transition-transform" />
+                                            <span class="text-gray-700 font-medium text-base group-hover:text-primary transition-colors">
+                                                {item}
+                                            </span>
+                                        </li>
+                                    ))
+                                }
+                            </ul>
                         </div>
 
-                        <!-- IMAGEN 3 -->
-                        <div class="w-full h-80 bg-gray-100 rounded-lg overflow-hidden">
-                            <img 
-                                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop" 
-                                alt="Nuestro Trabajo"
-                                class="w-full h-full object-cover"
-                            />
+                        <!-- Siguiente Capacidad -->
+                        <div class="pt-12">
+                            <a
+                                href="/capacidades/fortalecimiento"
+                                class="group flex items-center justify-between p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:border-primary/30 transition-all"
+                            >
+                                <div>
+                                    <span
+                                        class="text-sm font-bold text-primary uppercase tracking-widest"
+                                        >Siguiente Capacidad</span
+                                    >
+                                    <h4
+                                        class="text-2xl font-serif font-bold text-gray-900 mt-2"
+                                    >
+                                        Fortalecimiento de Capacidades y Capital
+                                        Humano
+                                    </h4>
+                                </div>
+                                <div
+                                    class="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-6 w-6"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </div>
+                            </a>
                         </div>
                     </div>
-
-                    <!-- SECCIÓN 4: ÁREAS DE TRABAJO -->
-                    <div class="space-y-8">
-                        <h3 class="text-3xl font-bold text-gray-900">Áreas de Trabajo en Desarrollo</h3>
-                        
-                        <!-- GRID UNIFORME: 1 columna en móvil, 2 en tablet, 4 en desktop -->
-                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-                            
-                            <!-- ÁREA 1: Rojo Sutil -->
-                            <div class="group relative rounded-xl h-40 bg-red-50 border border-red-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-                                <h4 class="text-red-900 font-bold text-lg">Planes de Desarrollo</h4>
-                            </div>
-
-                            <!-- ÁREA 2: Celeste Sutil -->
-                            <div class="group relative rounded-xl h-40 bg-sky-50 border border-sky-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-                                <h4 class="text-sky-900 font-bold text-lg">Monitoreo y Seguimiento</h4>
-                            </div>
-
-                            <!-- ÁREA 3: Gris Sutil -->
-                            <div class="group relative rounded-xl h-40 bg-gray-50 border border-gray-200 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-                                <h4 class="text-gray-900 font-bold text-lg">Indicadores Territoriales</h4>
-                            </div>
-
-                            <!-- ÁREA 4: Rojo Sutil -->
-                            <div class="group relative rounded-xl h-40 bg-red-50 border border-red-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-                                <h4 class="text-red-900 font-bold text-lg">Planificación Estratégica</h4>
-                            </div>
-
-                            <!-- ÁREA 5: Celeste Sutil -->
-                            <div class="group relative rounded-xl h-40 bg-sky-50 border border-sky-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-                                <h4 class="text-sky-900 font-bold text-lg">Cierre de Brechas</h4>
-                            </div>
-
-                            <!-- ÁREA 6: Gris Sutil -->
-                            <div class="group relative rounded-xl h-40 bg-gray-50 border border-gray-200 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-                                <h4 class="text-gray-900 font-bold text-lg">Sostenibilidad</h4>
-                            </div>
-
-                            <!-- ÁREA 7: Rojo Sutil -->
-                            <div class="group relative rounded-xl h-40 bg-red-50 border border-red-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-                                <h4 class="text-red-900 font-bold text-lg">Gobernanza Local</h4>
-                            </div>
-
-                            <!-- ÁREA 8: Celeste Sutil -->
-                            <div class="group relative rounded-xl h-40 bg-sky-50 border border-sky-100 hover:shadow-md transition-all duration-300 flex items-center justify-center p-6 text-center">
-                                <h4 class="text-sky-900 font-bold text-lg">Inversión Social</h4>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- IMAGEN 4 -->
-                    <div class="w-full h-80 bg-gray-100 rounded-lg overflow-hidden">
-                        <img 
-                            src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=500&fit=crop" 
-                            alt="Áreas"
-                            class="w-full h-full object-cover"
-                        />
-                    </div>
-
                 </div>
 
                 <!-- COLUMNA DERECHA: SIDEBAR (3/12) -->
-                <aside class="lg:col-span-3">
-                    <div class="sticky top-32 space-y-12">
-                        
-                        <!-- ESPECIALISTAS -->
-                        <div>
-                            <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-3 border-b border-gray-300">
-                                Especialistas
-                            </h3>
-                            <div class="space-y-6">
-                                {selectedSpecialists.map((member) => (
-                                    <a 
-                                        href={`/nosotros/equipo/${member.slug}`}
-                                        class="group block hover:opacity-70 transition-opacity"
-                                    >
-                                        <div class="mb-3 h-40 bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
-                                            <img 
-                                                src={member.image} 
-                                                alt={member.name}
-                                                class="h-full w-auto object-contain"
-                                            />
-                                        </div>
-                                        <h4 class="font-bold text-sm text-gray-900 group-hover:text-primary transition-colors">
-                                            {member.name}
-                                        </h4>
-                                        <p class="text-xs text-gray-600 mt-1 leading-tight">
-                                            {member.role}
-                                        </p>
-                                    </a>
-                                ))}
-                            </div>
-                        </div>
-
-                        <!-- INDUSTRIAS -->
-                        <div>
-                            <h3 class="font-serif text-2xl font-bold text-primary mb-6 pb-3 border-b border-gray-300">
-                                Industrias Relacionadas
-                            </h3>
-                            <div class="space-y-4">
-                                {selectedIndustries.map((ind) => (
-                                    <a 
-                                        href={ind.link}
-                                        class="group block hover:opacity-70 transition-opacity"
-                                    >
-                                        <div class="mb-2 h-24 bg-gray-100 rounded-lg overflow-hidden flex items-center justify-center">
-                                            <img 
-                                                src={ind.image} 
-                                                alt={ind.title}
-                                                class="w-full h-full object-cover"
-                                            />
-                                        </div>
-                                        <h4 class="font-bold text-xs text-gray-900 group-hover:text-primary transition-colors">
-                                            {ind.title}
-                                        </h4>
-                                    </a>
-                                ))}
-                            </div>
-                        </div>
-
-                    </div>
-                </aside>
-
+                <CapabilitySidebar
+                    specialists={selectedSpecialists}
+                    industries={selectedIndustries}
+                />
             </div>
         </div>
     </section>

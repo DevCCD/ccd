@@ -8,17 +8,17 @@ const capacidades = [
     slug: 'competitividad',
     title: 'Competitividad',
     description: 'Mejorar productividad, empleabilidad e ingresos de la Población en Edad de Trabajar (PET) de circunscripción directa e indirectamente relacionada: zona económica, multipaís, país, estado, región, provincia, distrito, comunidad y/o población directa e indirectamente relacionada.',
-    image: '/capacidades/competitividad.jpg'
+    image: '/capacidades/competitividad2.jpeg'
   },
   {
     slug: 'desarrollo',
     title: 'Desarrollo',
     description: 'Mejorar la calidad de vida de las personas de manera integral, para circunscripciones: país, estado, región, provincia, distrito y comunidad.',
-    image: '/capacidades/desarrollo.jpg'
+    image: '/capacidades/desarrollo2.jpg'
   },
   {
     slug: 'fortalecimiento',
-    title: 'Fortalecimiento de Capacidades',
+    title: 'Fortalecimiento de Capacidades y Capital Humano',
     description: 'Desarrollamos capital humano e institucional para impulsar el desarrollo sostenible.',
     image: '/capacidades/fortalecimiento.jpg'
   },
@@ -32,19 +32,19 @@ const capacidades = [
     slug: 'evaluacion',
     title: 'Evaluación de Programas y Proyectos',
     description: 'Mayores calidad y rendimientos esperados de la inversión social en el área de influencia.',
-    image: '/capacidades/evaluacion.jpg'
+    image: '/capacidades/evaluacion2.jpg'
   },
   {
     slug: 'corredores',
     title: 'Corredores Económicos Territoriales',
     description: 'Desarrollo integrado del área de influencia o de más de una circunscripción territorial: países, regiones, provincias, distritos y/o comunidades.',
-    image: '/capacidades/corredores.jpg'
+    image: '/capacidades/corredores2.jpg'
   },
   {
     slug: 'inversiones',
     title: 'Inversiones y Proyectos',
     description: 'Inversiones y proyectos permiten reducir y cerrar brechas, desarrollo y mejoran calidad de vida de la población.',
-    image: '/capacidades/inversiones.jpg'
+    image: '/capacidades/inversiones2.jpg'
   }
 ];
 ---
@@ -57,43 +57,47 @@ const capacidades = [
   />
 
   <!-- CAPACIDADES GRID -->
-  <section class="bg-white">
-    <div>
-      <div class="space-y-0">
-        {capacidades.map((capacidad, index) => (
-          <a href={`/capacidades/${capacidad.slug}`} class="block group hover:bg-gray-50 transition-colors duration-300">
-            <div class={`grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch h-screen md:min-h-[65vh] px-6 md:px-12 ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
-              
-              <!-- IMAGEN -->
-              <div class={`${index % 2 === 1 ? 'md:order-2 -mr-6 md:-mr-12' : 'md:order-1 -ml-6 md:-ml-12'}`}>
-                <div class="relative h-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center min-h-80 md:min-h-[75vh] overflow-hidden">
-                  <img 
-                    src={capacidad.image} 
-                    alt={capacidad.title}
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-              </div>
+  <!-- CAPACIDADES LIST - WIDE CARDS -->
+  <!-- CAPACIDADES LIST - WIDE CARDS ALTERNATING -->
+  <section class="bg-gray-50 py-12 md:py-20">
+    <!-- Increased max-width to 7xl and reduced padding for wider cards -->
+    <div class="container mx-auto px-4 md:px-6 max-w-[1600px] space-y-8 md:space-y-12">
+      {capacidades.map((capacidad, index) => (
+        <a href={`/capacidades/${capacidad.slug}`} class="group block bg-white shadow-sm hover:shadow-xl transition-shadow duration-300 rounded-sm overflow-hidden border border-gray-100">
+          <div class={`flex flex-col md:flex-row min-h-[450px] ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
+            
+            <!-- IMAGEN -->
+            <div class="w-full md:w-1/2 relative overflow-hidden">
+                <div class="absolute inset-0 bg-gray-900/10 group-hover:bg-transparent transition-colors duration-300 z-10"></div>
+                <img 
+                  src={capacidad.image} 
+                  alt={capacidad.title}
+                  class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                />
+            </div>
 
-              <!-- CONTENIDO -->
-              <div class={`${index % 2 === 1 ? 'md:order-1 md:pr-12' : 'md:order-2 md:pl-12'} flex flex-col justify-center py-8 md:py-20`}>
-                <div class="flex items-center gap-2">
-                  <h2 class="font-serif text-4xl md:text-5xl font-bold text-primary flex-1">
-                    {capacidad.title}
-                  </h2>
-                  <svg class="w-8 h-8 md:w-10 md:h-10 text-gray-400 flex-shrink-0 transition-all duration-300 group-hover:text-primary group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                  </svg>
-                </div>
+            <!-- CONTENIDO -->
+            <div class="w-full md:w-1/2 p-8 md:p-16 lg:p-24 flex flex-col justify-center">
                 
-                <p class="text-gray-700 text-base md:text-lg leading-relaxed md:leading-loose mt-6">
+                <!-- Título + Flecha Grande -->
+                <div class="flex items-start gap-4 mb-6">
+                    <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight group-hover:text-primary transition-colors duration-300">
+                        {capacidad.title}
+                    </h2>
+                    <!-- Flecha Grande Estilo McKinsey -->
+                    <svg class="w-8 h-8 md:w-10 md:h-10 text-primary flex-shrink-0 mt-1.5 md:mt-2 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </div>
+
+                <p class="text-gray-600 text-lg md:text-xl leading-relaxed">
                   {capacidad.description}
                 </p>
-              </div>
+
             </div>
-          </a>
-        ))}
-      </div>
+          </div>
+        </a>
+      ))}
     </div>
   </section>
 

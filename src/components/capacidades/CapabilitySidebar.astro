@@ -1,0 +1,113 @@
+---
+interface TeamMember {
+    name: string;
+    role: string;
+    image: string;
+    slug: string;
+}
+
+interface Industry {
+    title: string;
+    image: string;
+    link: string;
+}
+
+interface Props {
+    specialists: TeamMember[];
+    industries: Industry[];
+}
+
+const { specialists, industries } = Astro.props;
+---
+
+<aside
+    class="lg:col-span-3 lg:pl-8 border-t lg:border-t-0 lg:border-l border-gray-200 mt-10 lg:mt-0 pt-10 lg:pt-0"
+>
+    <div class="sticky top-24 space-y-10">
+        <!-- ESPECIALISTAS -->
+        <div class="space-y-6">
+            <h3
+                class="font-serif text-2xl font-bold text-gray-900 pb-3 border-b-2 border-primary w-fit"
+            >
+                Especialistas
+            </h3>
+            <div class="space-y-8">
+                {
+                    specialists.map((member) => (
+                        <a
+                            href={`/nosotros/equipo/${member.slug}`}
+                            class="group block transition-all"
+                        >
+                            <div class="mb-3 h-68 bg-gray-100 rounded-xl overflow-hidden shadow-sm group-hover:shadow-md transition-all">
+                                <img
+                                    src={member.image}
+                                    alt={member.name}
+                                    class="h-full w-full object-cover transition-all duration-500 group-hover:scale-105"
+                                />
+                            </div>
+                            <h4 class="font-bold text-gray-900 group-hover:text-primary transition-colors">
+                                {member.name}
+                            </h4>
+                            <p class="text-sm text-gray-500 mt-1 leading-tight">
+                                {member.role}
+                            </p>
+                        </a>
+                    ))
+                }
+            </div>
+        </div>
+
+        <!-- INDUSTRIAS / SECTORES -->
+        <div class="space-y-6">
+            <h3
+                class="font-serif text-2xl font-bold text-gray-900 pb-3 border-b-2 border-primary w-fit"
+            >
+                Sectores Clave
+            </h3>
+            <div class="space-y-8">
+                {
+                    industries.map((ind) => (
+                        <a href={ind.link} class="group block transition-all">
+                            <div class="mb-3 h-48 bg-gray-100 rounded-xl overflow-hidden shadow-sm group-hover:shadow-md transition-all">
+                                <img
+                                    src={ind.image}
+                                    alt={ind.title}
+                                    class="h-full w-full object-cover transition-all duration-500 group-hover:scale-105"
+                                />
+                            </div>
+                            <h4 class="font-bold text-gray-900 group-hover:text-primary transition-colors">
+                                {ind.title}
+                            </h4>
+                            <p class="text-sm text-gray-500 mt-1 leading-tight">
+                                Industria Relacionada
+                            </p>
+                        </a>
+                    ))
+                }
+            </div>
+        </div>
+
+        <!-- Mini Banner de Proyecto (Opcional, se mantiene con estilo similar) -->
+        <div
+            class="rounded-2xl overflow-hidden relative h-64 group cursor-pointer border border-gray-100 shadow-sm"
+        >
+            <img
+                src="/capacidades/competitividad/5.webp"
+                alt="Proyectos"
+                class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+            <div
+                class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6"
+            >
+                <span
+                    class="text-xs font-bold text-white/80 uppercase tracking-widest mb-1"
+                >
+                    Destacado
+                </span>
+                <h4 class="text-white font-bold text-lg leading-tight">
+                    Proyectos de Alto Impacto
+                </h4>
+            </div>
+        </div>
+    </div>
+</aside>

@@ -1,36 +1,47 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import TeamCard from '../components/TeamCard.astro';
+import Layout from "../layouts/Layout.astro";
+import TeamCard from "../components/TeamCard.astro";
 
 // Importamos los datos centralizados
-import { teamMembers } from '../data/teamData';
+import { teamMembers } from "../data/teamData";
 
 // Directores principales
 const directores = [
     teamMembers["rudy-laguna"],
     teamMembers["viviana-sanchez"],
-    teamMembers["alvaro-gordillo"]
+    teamMembers["alvaro-gordillo"],
 ];
-
 ---
 
 <Layout title="Inicio - CCD">
-
-    <section class="flex items-center bg-gradient-to-b from-white to-secondary-dark/25 pt-0 pb-12 sm:pt-0 sm:pb-0">
-    
-
-        <div class="container mx-auto px-6 flex flex-col-reverse md:grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+    <section
+        class="flex items-center bg-gradient-to-b from-white to-secondary-dark/25 pt-0 pb-12 sm:pt-0 sm:pb-0"
+    >
+        <div
+            class="container mx-auto px-6 flex flex-col-reverse md:grid md:grid-cols-2 gap-8 md:gap-12 items-center"
+        >
             <!-- Columna de Texto -->
             <div class="text-center md:text-left">
                 <!-- CORRECCIÓN 4: Salto de Línea en el Título -->
                 <!-- Añadimos una etiqueta <br /> justo después de "de" para forzar el salto de línea. -->
-                <h1 id="hero-title" class="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-primary leading-tight">
+                <h1
+                    id="hero-title"
+                    class="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-primary leading-tight"
+                >
                     El Futuro de <br class="hidden md:block" /> las Comunidades
                 </h1>
-                <p id="hero-subtitle" class="mt-10 font-sans text-lg md:text-2xl text-gray-700 max-w-lg mx-auto md:mx-0">
-                    Cada vez son más las comunidades que priorizan la conectividad económica, física y vital.
+                <p
+                    id="hero-subtitle"
+                    class="mt-10 font-sans text-lg md:text-2xl text-gray-700 max-w-lg mx-auto md:mx-0"
+                >
+                    Cada vez son más las comunidades que priorizan la
+                    conectividad económica, física y vital.
                 </p>
-                <a id="hero-button" href="/contacto" class="mt-10 inline-block bg-primary text-white font-bold py-4 px-8 rounded-lg hover:bg-primary-dark transition-colors">
+                <a
+                    id="hero-button"
+                    href="/contacto"
+                    class="mt-10 inline-block bg-primary text-white font-bold py-4 px-8 rounded-lg hover:bg-primary-dark transition-colors"
+                >
                     Contáctanos
                 </a>
             </div>
@@ -39,71 +50,132 @@ const directores = [
             <!-- NOTA: Reemplaza 'hero-image.png' con el nombre de tu archivo de imagen real. -->
             <!-- Asegúrate de colocar tu imagen en la carpeta `public/`. -->
             <div id="hero-image" class="w-full max-w-md md:max-w-full mx-auto">
-                <img src="/hero-image.png" alt="Ilustración de una comunidad conectada" class="w-11/12 mx-auto h-auto">
+                <img
+                    src="/hero-image.png"
+                    alt="Ilustración de una comunidad conectada"
+                    class="w-11/12 mx-auto h-auto"
+                />
             </div>
         </div>
     </section>
+    <!-- SECCIÓN: INTRO/VALUE PROP -->
+    <section class="py-20 bg-white text-center">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <p
+                class="font-serif text-2xl md:text-3xl text-gray-800 leading-relaxed font-light"
+            >
+                "Diseñamos estrategias que conectan territorios, impulsan
+                industrias y fortalecen comunidades para un futuro sostenible."
+            </p>
+        </div>
+    </section>
 
-    <!-- SECCIÓN: CAPACIDADES - BANNER IMPACTANTE -->
-    <section class="bg-white py-0">
-        <div class="grid grid-cols-1 lg:grid-cols-2 min-h-screen lg:min-h-screen">
-            <!-- Imagen Grande -->
-            <div class="relative overflow-hidden order-2 lg:order-1">
-                <img 
-                    src="/capacidades/capacidades.png" 
-                    alt="Nuestras Capacidades"
-                    class="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
-                />
-                <div class="absolute inset-0 bg-gradient-to-r from-transparent to-black/20"></div>
-            </div>
+    <!-- SECCIÓN: CAPACIDADES - FEATURE BLOCK -->
+    <section class="bg-gray-50 py-20 lg:py-28">
+        <div class="container mx-auto px-6 md:px-12">
+            <div
+                class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20"
+            >
+                <!-- Imagen -->
+                <div class="w-full lg:w-1/2 order-2 lg:order-1">
+                    <div
+                        class="relative overflow-hidden rounded-sm shadow-lg aspect-video"
+                    >
+                        <img
+                            src="/capacidades/capacidades.png"
+                            alt="Nuestras Capacidades"
+                            class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
+                        />
+                    </div>
+                </div>
 
-            <!-- Contenido Grande -->
-            <div class="order-1 lg:order-2 flex flex-col justify-center px-8 sm:px-12 md:px-16 py-12 lg:py-0 bg-white">
-                <div class="max-w-lg">
-                    
-                    <h2 class="font-serif text-5xl sm:text-6xl md:text-7xl font-bold text-gray-900 mt-4 mb-8 leading-tight">
+                <!-- Contenido -->
+                <div class="w-full lg:w-1/2 order-1 lg:order-2">
+                    <h2
+                        class="font-serif text-4xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight"
+                    >
                         Nuestras Capacidades
                     </h2>
-                    <p class="text-gray-700 text-lg md:text-xl leading-relaxed mb-10">
-                        Soluciones integrales en competitividad, desarrollo territorial, inversión y evaluación de proyectos que transforman comunidades.
+                    <div class="w-20 h-1 bg-primary mb-8"></div>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-8">
+                        Ofrecemos soluciones integrales en competitividad,
+                        desarrollo territorial, inversión y evaluación de
+                        proyectos. Nuestro enfoque multidisciplinario transforma
+                        comunidades y genera impacto sostenible a largo plazo.
                     </p>
-                    <a href="/capacidades" class="inline-flex items-center gap-4 bg-primary text-white font-bold py-5 px-10 rounded-lg hover:bg-primary-dark transition-all duration-300 hover:gap-6 group text-lg">
-                        <span>Explorar</span>
-                        <svg class="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+                    <a
+                        href="/capacidades"
+                        class="group inline-flex items-center text-primary font-bold text-lg hover:text-primary-dark transition-colors"
+                    >
+                        <span>Ver Capacidades</span>
+                        <svg
+                            class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            ><path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg
+                        >
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECCIÓN: INDUSTRIAS - BANNER IMPACTANTE -->
-    <section class="bg-white py-0">
-        <div class="grid grid-cols-1 lg:grid-cols-2 min-h-screen lg:min-h-screen">
-            <!-- Contenido Grande -->
-            <div class="order-1 lg:order-1 flex flex-col justify-center px-8 sm:px-12 md:px-16 py-12 lg:py-0 bg-white">
-                <div class="max-w-lg">
-                    
-                    <h2 class="font-serif text-5xl sm:text-6xl md:text-7xl font-bold text-gray-900 mt-4 mb-8 leading-tight">
+    <!-- SECCIÓN: INDUSTRIAS - FEATURE BLOCK ALTERNADO -->
+    <section class="bg-white py-20 lg:py-28">
+        <div class="container mx-auto px-6 md:px-12">
+            <div
+                class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20"
+            >
+                <!-- Contenido (Izquierda en Desktop) -->
+                <div class="w-full lg:w-1/2 order-1">
+                    <h2
+                        class="font-serif text-4xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight"
+                    >
                         Nuestras Industrias
                     </h2>
-                    <p class="text-gray-700 text-lg md:text-xl leading-relaxed mb-10">
-                        Experiencia en múltiples sectores económicos, potenciando el crecimiento y la competitividad de industrias clave en el territorio.
+                    <div class="w-20 h-1 bg-primary mb-8"></div>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-8">
+                        Aportamos experiencia estratégica en múltiples sectores
+                        económicos, potenciando el crecimiento, la innovación y
+                        la competitividad de industrias clave dentro del
+                        territorio.
                     </p>
-                    <a href="/industrias" class="inline-flex items-center gap-4 bg-primary text-white font-bold py-5 px-10 rounded-lg hover:bg-primary-dark transition-all duration-300 hover:gap-6 group text-lg">
-                        <span>Explorar</span>
-                        <svg class="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+                    <a
+                        href="/industrias"
+                        class="group inline-flex items-center text-primary font-bold text-lg hover:text-primary-dark transition-colors"
+                    >
+                        <span>Ver Industrias</span>
+                        <svg
+                            class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            ><path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg
+                        >
                     </a>
                 </div>
-            </div>
 
-            <!-- Imagen Grande -->
-            <div class="relative overflow-hidden order-2 lg:order-2">
-                <img 
-                    src="/industrias/industrias.png" 
-                    alt="Nuestras Industrias"
-                    class="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
-                />
-                <div class="absolute inset-0 bg-gradient-to-l from-transparent to-black/20"></div>
+                <!-- Imagen (Derecha en Desktop) -->
+                <div class="w-full lg:w-1/2 order-2">
+                    <div
+                        class="relative overflow-hidden rounded-sm shadow-lg aspect-video"
+                    >
+                        <img
+                            src="/industrias/industrias.png"
+                            alt="Nuestras Industrias"
+                            class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
+                        />
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -111,44 +183,78 @@ const directores = [
     <!-- SECCIÓN: EQUIPO PRINCIPAL -->
     <section class="bg-gray-50 py-16 md:py-24">
         <div class="container mx-auto px-6">
-            <h2 class="font-serif text-4xl md:text-5xl font-bold text-primary text-center mb-4">
+            <h2
+                class="font-serif text-4xl md:text-5xl font-bold text-primary text-center mb-4"
+            >
                 Nuestro Equipo
             </h2>
-            <p class="text-center text-gray-600 text-lg max-w-2xl mx-auto mb-16">
-                Líderes y especialistas con experiencia en desarrollo territorial, inversión y competitividad regional.
+            <p
+                class="text-center text-gray-600 text-lg max-w-2xl mx-auto mb-16"
+            >
+                Líderes y especialistas con experiencia en desarrollo
+                territorial, inversión y competitividad regional.
             </p>
 
             <!-- Grid de Equipo: 3 columnas centradas -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
-                {directores.map((member) => (
-                    <div>
-                        <TeamCard 
-                            name={member.name}
-                            role={member.role}
-                            image={member.image}
-                            link={`/nosotros/equipo/${member.slug}`}
-                        />
-                    </div>
-                ))}
+            <div
+                class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto"
+            >
+                {
+                    directores.map((member) => (
+                        <div>
+                            <TeamCard
+                                name={member.name}
+                                role={member.role}
+                                image={member.image}
+                                link={`/nosotros/equipo/${member.slug}`}
+                            />
+                        </div>
+                    ))
+                }
             </div>
 
             <!-- Enlace a equipo completo -->
             <div class="text-center mt-16">
-                <a href="/nosotros/equipo" class="inline-block bg-primary text-white font-bold py-3 px-8 rounded-lg hover:bg-primary-dark transition-colors">
+                <a
+                    href="/nosotros/equipo"
+                    class="inline-block bg-primary text-white font-bold py-3 px-8 rounded-lg hover:bg-primary-dark transition-colors"
+                >
                     Ver Equipo Completo
                 </a>
             </div>
         </div>
     </section>
-
 </Layout>
 
 <script>
     import { gsap } from "gsap";
 
     // Las animaciones de GSAP siguen funcionando perfectamente
-    gsap.from("#hero-title", { opacity: 0, y: 50, duration: 1, ease: "power3.out" });
-    gsap.from("#hero-subtitle", { opacity: 0, y: 50, duration: 1, delay: 0.3, ease: "power3.out" });
-    gsap.from("#hero-button", { opacity: 0, y: 50, duration: 1, delay: 0.5, ease: "power3.out" });
-    gsap.from("#hero-image", { opacity: 0, scale: 0.9, duration: 1.2, delay: 0.2, ease: "power3.out" });
+    gsap.from("#hero-title", {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        ease: "power3.out",
+    });
+    gsap.from("#hero-subtitle", {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        delay: 0.3,
+        ease: "power3.out",
+    });
+    gsap.from("#hero-button", {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        delay: 0.5,
+        ease: "power3.out",
+    });
+    gsap.from("#hero-image", {
+        opacity: 0,
+        scale: 0.9,
+        duration: 1.2,
+        delay: 0.2,
+        ease: "power3.out",
+    });
 </script>

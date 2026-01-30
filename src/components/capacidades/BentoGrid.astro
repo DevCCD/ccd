@@ -1,0 +1,66 @@
+---
+interface BentoItem {
+    text: string;
+    image: string;
+    imageAlt: string;
+    size?: "small" | "medium" | "large" | "wide";
+}
+
+interface Props {
+    items: BentoItem[];
+}
+
+const { items } = Astro.props;
+
+// Define grid classes for different sizes
+const sizeClasses = {
+    small: "md:col-span-1 md:row-span-1",
+    medium: "md:col-span-2 md:row-span-1",
+    large: "md:col-span-2 md:row-span-2",
+    wide: "md:col-span-3 md:row-span-3",
+};
+
+const imageHeights = {
+    small: "h-48 md:h-56",
+    medium: "h-64 md:h-80",
+    large: "h-80 md:h-[400px]",
+    wide: "h-56 md:h-96",
+};
+---
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-auto">
+    {
+        items.map((item, index) => {
+            const size = item.size || "small";
+            const gridClass = sizeClasses[size];
+            const imageHeight = imageHeights[size];
+
+            // Alternate layout for variety - some have text first, some image first
+            const isTextFirst = index % 4 === 1 || index % 4 === 3;
+
+            return (
+                <div
+                    class={`group ${gridClass} flex flex-col bg-gray-50 rounded-2xl overflow-hidden hover:shadow-md transition-all duration-300 border border-gray-100`}
+                >
+                    <div
+                        class={`relative overflow-hidden ${imageHeight} ${isTextFirst ? "order-2" : "order-1"}`}
+                    >
+                        <img
+                            src={item.image}
+                            alt={item.imageAlt}
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        />
+                    </div>
+
+                    <div
+                        class={`p-6 md:p-8 flex flex-col justify-center flex-1 ${isTextFirst ? "order-1" : "order-2"}`}
+                    >
+                        <p class="text-gray-900 leading-relaxed text-base md:text-lg font-medium">
+                            {item.text}
+                        </p>
+                    </div>
+                </div>
+            );
+        })
+    }
+</div>

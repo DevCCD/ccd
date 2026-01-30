@@ -9,8 +9,8 @@ export interface Props {
 const { name, role, image, link } = Astro.props;
 ---
 
-<a 
-    href={link} 
+<a
+    href={link}
     class="group flex flex-col bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden h-full"
 >
     <!-- 
@@ -20,7 +20,9 @@ const { name, role, image, link } = Astro.props;
       - overflow-hidden: Si algo intenta salirse, lo corta.
       - flex items-end justify-center: Centra la imagen abajo y al centro.
     -->
-    <div class="h-72 w-full bg-gray-50 flex items-end justify-center overflow-hidden pt-4">
+    <div
+        class="h-72 w-full bg-gray-50 flex items-end justify-center overflow-hidden pt-4"
+    >
         <!-- 
            IMAGEN
            - h-full: Intenta llenar la altura.
@@ -28,19 +30,25 @@ const { name, role, image, link } = Astro.props;
            - max-w-full: CRUCIAL. Prohibe que la imagen sea más ancha que la tarjeta.
            - object-contain: Asegura que se vea entera sin deformarse.
         -->
-        <img 
-            src={image} 
-            alt={`Foto de ${name}`} 
+        <img
+            src={image}
+            alt={`Foto de ${name}`}
             class="h-full w-auto max-w-full object-contain filter grayscale-[10%] group-hover:grayscale-0 transition-all duration-500"
         />
     </div>
 
     <!-- INFORMACIÓN -->
-    <div class="p-6 text-center border-t border-gray-100 flex-grow flex flex-col justify-center">
-        <h3 class="font-serif text-xl font-bold text-gray-900 group-hover:text-primary transition-colors duration-300">
+    <div
+        class="p-6 text-center border-t border-gray-100 flex-grow flex flex-col justify-center"
+    >
+        <h3
+            class="font-serif text-xl font-bold text-gray-900 group-hover:text-primary transition-colors duration-300"
+        >
             {name}
         </h3>
-        <p class="font-sans text-sm text-gray-600 mt-2 font-medium leading-relaxed">
+        <p
+            class="font-sans text-sm text-gray-600 mt-2 font-medium leading-relaxed"
+        >
             {role}
         </p>
     </div>

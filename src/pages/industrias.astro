@@ -1,20 +1,148 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import PageHeader from "../components/PageHeader.astro";
+
+
+const industrias = [
+    {
+        title: "Agricultura",
+        slug: "agricultura",
+        description: "Impulsamos la productividad agrícola mediante estrategias que integran tecnología, sostenibilidad y acceso a nuevos mercados, garantizando la seguridad alimentaria y el desarrollo rural.",
+        image: "/industrias/agricultura.jpg", 
+    },
+    {
+        title: "Agroexportación",
+        slug: "agroexportacion",
+        description: "Potenciamos la cadena de valor agroexportadora cumpliendo estándares internacionales de calidad y competitividad para posicionar productos locales en los mercados globales más exigentes.",
+        image: "/industrias/agroexportacion.jpg",
+    },
+    {
+        title: "Educación",
+        slug: "educacion",
+        description: "Fortalecemos la gestión educativa y la formación de capital humano para responder a las demandas del mercado laboral, cerrando brechas de conocimiento y habilidades.",
+        image: "/industrias/educacion.jpg",
+    },
+    {
+        title: "Hidrocarburos",
+        slug: "hidrocarburos",
+        description: "Asesoría especializada en el desarrollo sostenible y eficiente de proyectos de gas y petróleo con enfoque territorial, maximizando el valor compartido con las comunidades.",
+        image: "/industrias/hidrocarburos.jpg",
+    },
+    {
+        title: "Infraestructura y Construcción",
+        slug: "infraestructura",
+        description: "Gestión y planificación de proyectos de infraestructura física que cierran brechas, conectan comunidades y dinamizan la economía local y regional.",
+        image: "/industrias/infraestructura.jpg",
+    },
+    {
+        title: "Inteligencia Artificial",
+        slug: "inteligencia",
+        description: "Implementación estratégica de soluciones de IA para optimizar procesos, predecir tendencias y mejorar la toma de decisiones basadas en datos en diversos sectores.",
+        image: "/industrias/inteligencia.jpg",
+    },
+    {
+        title: "Manufactura",
+        slug: "manufactura",
+        description: "Modernización de procesos industriales para aumentar la eficiencia, calidad y valor agregado de la producción, fomentando la innovación tecnológica.",
+        image: "/industrias/manufactura.jpg",
+    },
+    {
+        title: "Minería",
+        slug: "mineria",
+        description: "Las etapas de la actividad minera comprenden principalmente el proceso de obtención de la concesión minera, la exploración, la construcción y el desarrollo de la mina, la explotación y transformación del recursos minero o mineral en productos comercializables, el transporte y el cierre de minas.",
+        image: "/industrias/mineria.jpg",
+    },
+    {
+        title: "Saneamiento",
+        slug: "saneamiento",
+        description: "Desarrollo y supervisión de proyectos de agua y saneamiento que mejoran directamente la calidad de vida, la salud pública y el bienestar social.",
+        image: "/industrias/saneamiento.jpg",
+    },
+    {
+        title: "Seguridad",
+        slug: "seguridad",
+        description: "Estrategias integrales para la seguridad ciudadana y patrimonial, creando entornos estables fundamentales para el clima de negocios y la paz social.",
+        image: "/industrias/seguridad.jpg",
+    },
+    {
+        title: "Sector Público",
+        slug: "publico",
+        description: "Modernización de la gestión pública para brindar servicios eficientes, transparentes y centrados en el ciudadano, fortaleciendo la gobernanza institucional.",
+        image: "/industrias/publico.jpg",
+    },
+    {
+        title: "Servicios Portuarios",
+        slug: "portuarios",
+        description: "Optimización logística y operativa de puertos para mejorar la conectividad, reducir costos logísticos y potenciar el comercio exterior del país.",
+        image: "/industrias/portuarios.jpg",
+    },
+    {
+        title: "Sistema Financiero",
+        slug: "financiero",
+        description: "Fortalecimiento de la inclusión financiera y desarrollo de instrumentos de inversión que faciliten el acceso a capital para emprendimientos y proyectos de desarrollo.",
+        image: "/industrias/financiero.jpg",
+    },
+    {
+        title: "Tecnología",
+        slug: "tecnologia",
+        description: "Impulso a la transformación digital transversal para elevar la competitividad, agilidad y capacidad de innovación en todos los sectores económicos.",
+        image: "/industrias/tecnologia.jpg",
+    },
+];
+
+const headerImage = "/industrias/header-main.jpg"; // Imagen opcional para el PageHeader si decides usarlo
 ---
 
 <Layout title="Industrias - CCD">
-    
-    <!-- Aquí va el contenido específico de esta página -->
-    <div class="container mx-auto px-6 py-16">
-        <h1 class="font-serif text-5xl font-bold text-primary mb-4">
-            Página de Industrias
-        </h1>
-        <p class="font-sans text-lg text-gray-700">
-            Esta es la página de prueba para la sección de Industrias.
-        </p>
-        <p class="font-sans text-lg text-gray-700 mt-2">
-            Si todo es correcto, el enlace "Industrias" en el menú de navegación principal debería estar resaltado en color rojo
-        </p>
+
+    <!-- HEADER SECTION USANDO PAGEHEADER COMPONENT -->
+  <PageHeader 
+    title="Nuestras Industrias"
+    description="Aportamos experiencia estratégica en múltiples sectores económicos, potenciando el crecimiento y la competitividad."
+  />
+
+  <section class="bg-gray-50 py-12 md:py-20">
+    <!-- Increased max-width to 7xl and reduced padding for wider cards -->
+    <div class="container mx-auto px-4 md:px-6 max-w-[1600px] space-y-8 md:space-y-12">
+      {industrias.map((industria, index) => (
+        <a href={`/industrias/${industria.slug}`} class="group block bg-white shadow-sm hover:shadow-xl transition-shadow duration-300 rounded-sm overflow-hidden border border-gray-100">
+          <div class={`flex flex-col md:flex-row min-h-[450px] ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
+            
+            <!-- IMAGEN -->
+            <div class="w-full md:w-1/2 relative overflow-hidden">
+                <div class="absolute inset-0 bg-gray-900/10 group-hover:bg-transparent transition-colors duration-300 z-10"></div>
+                <img 
+                  src={industria.image} 
+                  alt={industria.title}
+                  class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                />
+            </div>
+
+            <!-- CONTENIDO -->
+            <div class="w-full md:w-1/2 p-8 md:p-16 lg:p-24 flex flex-col justify-center">
+                
+                <!-- Título + Flecha Grande -->
+                <div class="flex items-start gap-4 mb-6">
+                    <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight group-hover:text-primary transition-colors duration-300">
+                        {industria.title}
+                    </h2>
+                    <!-- Flecha Grande Estilo McKinsey -->
+                    <svg class="w-8 h-8 md:w-10 md:h-10 text-primary flex-shrink-0 mt-1.5 md:mt-2 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </div>
+
+                <p class="text-gray-600 text-lg md:text-xl leading-relaxed">
+                  {industria.description}
+                </p>
+
+            </div>
+          </div>
+        </a>
+      ))}
     </div>
+  </section>
+
+
 
 </Layout>

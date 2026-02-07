@@ -84,8 +84,29 @@ export const teamMembers = {
 
 // Datos de las industrias para reutilizar en el sidebar
 export const industriesData = {
-    "mineria": { title: "Minería", image: "/industrias/mineria.jpg", link: "/industrias/mineria" },
     "agricultura": { title: "Agricultura", image: "/industrias/agricultura.jpg", link: "/industrias/agricultura" },
+    "agroexportacion": { title: "Agroexportación", image: "/industrias/agroexportacion.jpg", link: "/industrias/agroexportacion" },
     "educacion": { title: "Educación", image: "/industrias/educacion.jpg", link: "/industrias/educacion" },
-    "infraestructura": { title: "Infraestructura", image: "/industrias/infraestructura.jpg", link: "/industrias/infraestructura" },
+    "hidrocarburos": { title: "Hidrocarburos", image: "/industrias/hidrocarburos.jpg", link: "/industrias/hidrocarburos" },
+    "infraestructura": { title: "Infraestructura y Construcción", image: "/industrias/infraestructura.jpg", link: "/industrias/infraestructura" },
+    "inteligencia": { title: "Inteligencia Artificial", image: "/industrias/inteligencia.jpg", link: "/industrias/inteligencia" },
+    "manufactura": { title: "Manufactura", image: "/industrias/manufactura.jpg", link: "/industrias/manufactura" },
+    "mineria": { title: "Minería", image: "/industrias/mineria.jpg", link: "/industrias/mineria" },
+    "saneamiento": { title: "Saneamiento", image: "/industrias/saneamiento.jpg", link: "/industrias/saneamiento" },
+    "seguridad": { title: "Seguridad", image: "/industrias/seguridad.jpg", link: "/industrias/seguridad" },
+    "publico": { title: "Sector Público", image: "/industrias/publico.jpg", link: "/industrias/publico" },
+    "portuarios": { title: "Servicios Portuarios", image: "/industrias/portuarios.jpg", link: "/industrias/portuarios" },
+    "financiero": { title: "Sistema Financiero", image: "/industrias/financiero.jpg", link: "/industrias/financiero" },
+    "tecnologia": { title: "Tecnología", image: "/industrias/tecnologia.jpg", link: "/industrias/tecnologia" },
+};
+
+// Datos de las capacidades para reutilizar en el sidebar de industrias
+export const capabilitiesData = {
+    "competitividad": { title: "Competitividad", image: "/capacidades/competitividad2.jpeg", link: "/capacidades/competitividad" },
+    "desarrollo": { title: "Desarrollo", image: "/capacidades/desarrollo2.jpg", link: "/capacidades/desarrollo" },
+    "fortalecimiento": { title: "Fortalecimiento de Capacidades", image: "/capacidades/fortalecimiento.jpg", link: "/capacidades/fortalecimiento" },
+    "fondos": { title: "Fondos de Desarrollo", image: "/capacidades/fondos.jpg", link: "/capacidades/fondos" },
+    "evaluacion": { title: "Evaluación de Programas", image: "/capacidades/evaluacion2.jpg", link: "/capacidades/evaluacion" },
+    "corredores": { title: "Corredores Económicos", image: "/capacidades/corredores2.jpg", link: "/capacidades/corredores" },
+    "inversiones": { title: "Inversiones y Proyectos", image: "/capacidades/inversiones2.jpg", link: "/capacidades/inversiones" },
 };

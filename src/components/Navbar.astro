@@ -159,111 +159,104 @@ const inactiveClass = "text-primary hover:text-primary-dark";
                             <ul class="space-y-3">
                                 <li>
                                     <a
-                                        href="#"
+                                        href="/industrias/agricultura"
                                         class="hover:text-primary hover:underline block"
                                         >Agricultura</a
                                     >
                                 </li>
                                 <li>
                                     <a
-                                        href="#"
+                                        href="/industrias/agroexportacion"
                                         class="hover:text-primary hover:underline block"
-                                        >Agroindustria</a
+                                        >Agroexportación</a
                                     >
                                 </li>
                                 <li>
                                     <a
-                                        href="#"
-                                        class="hover:text-primary hover:underline block"
-                                        >Digitalización</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        class="hover:text-primary hover:underline block"
-                                        >Avícola</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
+                                        href="/industrias/educacion"
                                         class="hover:text-primary hover:underline block"
                                         >Educación</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="/industrias/hidrocarburos"
+                                        class="hover:text-primary hover:underline block"
+                                        >Hidrocarburos</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="/industrias/infraestructura"
+                                        class="hover:text-primary hover:underline block"
+                                        >Infraestructura y Construcción</a
                                     >
                                 </li>
                             </ul>
                             <ul class="space-y-3">
                                 <li>
                                     <a
-                                        href="#"
+                                        href="/industrias/inteligencia"
                                         class="hover:text-primary hover:underline block"
-                                        >Infraestructura</a
+                                        >Inteligencia Artificial</a
                                     >
                                 </li>
                                 <li>
                                     <a
-                                        href="#"
+                                        href="/industrias/manufactura"
+                                        class="hover:text-primary hover:underline block"
+                                        >Manufactura</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="/industrias/mineria"
                                         class="hover:text-primary hover:underline block"
                                         >Minería</a
                                     >
                                 </li>
                                 <li>
                                     <a
-                                        href="#"
-                                        class="hover:text-primary hover:underline block"
-                                        >Pecuario</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        class="hover:text-primary hover:underline block"
-                                        >Petróleo y Gas</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
+                                        href="/industrias/saneamiento"
                                         class="hover:text-primary hover:underline block"
                                         >Saneamiento</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="/industrias/seguridad"
+                                        class="hover:text-primary hover:underline block"
+                                        >Seguridad</a
                                     >
                                 </li>
                             </ul>
                             <ul class="space-y-3">
                                 <li>
                                     <a
-                                        href="#"
+                                        href="/industrias/publico"
                                         class="hover:text-primary hover:underline block"
                                         >Sector Público</a
                                     >
                                 </li>
                                 <li>
                                     <a
-                                        href="#"
+                                        href="/industrias/portuarios"
                                         class="hover:text-primary hover:underline block"
-                                        >Sector Social</a
+                                        >Servicios Portuarios</a
                                     >
                                 </li>
                                 <li>
                                     <a
-                                        href="#"
+                                        href="/industrias/financiero"
                                         class="hover:text-primary hover:underline block"
-                                        >Sostenibilidad</a
+                                        >Sistema Financiero</a
                                     >
                                 </li>
                                 <li>
                                     <a
-                                        href="#"
+                                        href="/industrias/tecnologia"
                                         class="hover:text-primary hover:underline block"
                                         >Tecnología</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        class="hover:text-primary hover:underline block"
-                                        >Textil</a
                                     >
                                 </li>
                             </ul>
@@ -397,7 +390,7 @@ const inactiveClass = "text-primary hover:text-primary-dark";
             href="https://milink.competitividadccd.com/login/index.php"
             class="hidden md:block text-lg font-medium text-primary hover:text-primary-dark transition-colors duration-300"
         >
-            MILink
+            MiLink
         </a>
 
         <!-- Botón Hamburguesa Móvil -->
@@ -550,10 +543,10 @@ const inactiveClass = "text-primary hover:text-primary-dark";
     }
 
     // --- Lógica de Acordeones (Solo queda el de Nosotros) ---
-    function setupAccordion(btnId, panelId, arrowId) {
-        const btn = document.getElementById(btnId);
-        const panel = document.getElementById(panelId);
-        const arrow = document.getElementById(arrowId);
+    function setupAccordion(btnId: string, panelId: string, arrowId: string) {
+        const btn = document.getElementById(btnId) as HTMLElement;
+        const panel = document.getElementById(panelId) as HTMLElement;
+        const arrow = document.getElementById(arrowId) as HTMLElement;
 
         if (btn && panel && arrow) {
             btn.addEventListener("click", () => {
@@ -565,8 +558,8 @@ const inactiveClass = "text-primary hover:text-primary-dark";
 
     // Solo inicializamos el de Nosotros, ya que Capacidades e Industrias ahora son links directos
     setupAccordion(
-        "accordion-nosotros-btn",
-        "panel-nosotros",
-        "arrow-nosotros",
+        "accordion-nosotros-btn" as string,
+        "panel-nosotros" as string,
+        "arrow-nosotros" as string,
     );
 </script>

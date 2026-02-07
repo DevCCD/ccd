@@ -1,0 +1,33 @@
+---
+import IndustryLayout from "../../components/industrias/IndustryLayout.astro";
+import { teamMembers, capabilitiesData } from "../../data/teamData";
+import { industriesContent } from "../../data/industriesContent";
+
+export async function getStaticPaths() {
+    return Object.keys(industriesContent).map((slug) => ({
+        params: { slug },
+        props: { content: industriesContent[slug] },
+    }));
+}
+
+const { content } = Astro.props;
+
+// Mapear los slugs a los objetos reales de datos
+const specialists = content.specialistSlugs
+    .map((slug) => teamMembers[slug])
+    .filter(Boolean);
+const capabilities = content.capabilitySlugs
+    .map((slug) => capabilitiesData[slug])
+    .filter(Boolean);
+---
+
+<IndustryLayout
+    title={content.title}
+    headerImage={content.headerImage}
+    headerImagePosition={content.headerImagePosition}
+    paragraphs={content.paragraphs}
+    mainImageAlt={content.mainImageAlt}
+    flourishId={content.flourishId}
+    specialists={specialists}
+    capabilities={capabilities}
+/>

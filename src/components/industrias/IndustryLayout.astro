@@ -1,0 +1,121 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import IndustrySidebar from "./IndustrySidebar.astro";
+
+interface Props {
+    title: string;
+    headerImage: string;
+    headerImagePosition?: string; // Por ejemplo: 'top', 'bottom', 'center', or percentages like '50% 20%'
+    paragraphs: string[];
+    mainImage?: string;
+    mainImageAlt?: string;
+    flourishId: string;
+    specialists: any[];
+    capabilities: any[];
+}
+
+const {
+    title,
+    headerImage,
+    headerImagePosition = "center",
+    paragraphs,
+    mainImage,
+    mainImageAlt,
+    flourishId,
+    specialists,
+    capabilities,
+} = Astro.props;
+---
+
+<Layout title={`${title} - CCD`}>
+    <!-- BANNER DE ALTO IMPACTO -->
+    <section
+        class="relative w-full h-[65vh] md:h-[75vh] overflow-hidden bg-gray-900"
+    >
+        <img
+            src={headerImage}
+            alt={title}
+            class="w-full h-full object-cover transition-transform duration-[3000ms] hover:scale-110 brightness-[0.85] contrast-[1.05]"
+            style={{ objectPosition: headerImagePosition }}
+        />
+        <!-- Overlay sofisticado -->
+        <div
+            class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"
+        >
+        </div>
+    </section>
+
+    <section class="bg-white">
+        <div class="container mx-auto px-6 lg:px-12 py-12 md:py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+                <!-- CONTENIDO PRINCIPAL (9 columnas) -->
+                <div class="lg:col-span-9 space-y-16">
+                    <!-- TÍTULO BAJO EL BANNER -->
+                    <div class="space-y-4">
+                        <h1
+                            class="font-serif text-5xl md:text-6xl font-black text-gray-900 leading-tight"
+                        >
+                            {title}
+                        </h1>
+                        <div class="w-24 h-2 bg-primary rounded-full"></div>
+                    </div>
+
+                    <!-- PÁRRAFOS EN CARD DISCRETO -->
+                    <div
+                        class="bg-white border border-gray-100 rounded-[2.5rem] p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:border-gray-300 hover:shadow-md transition-all duration-500 space-y-8 group"
+                    >
+                        {
+                            paragraphs.map((p) => (
+                                <p class="font-sans text-lg md:text-xl text-gray-800 leading-[1.8] md:leading-[1.9] font-normal group-hover:text-black transition-colors">
+                                    {p}
+                                </p>
+                            ))
+                        }
+                    </div>
+
+                    <!-- SECCIÓN FLOURISH (DATA COMPETITIVA) -->
+                    {
+                        flourishId && (
+                            <div class="space-y-10 pt-8 border-t border-gray-100">
+                                <div class="text-center md:text-left">
+                                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                                        Data{" "}
+                                        <span class="text-primary italic">
+                                            Competitiva
+                                        </span>
+                                    </h2>
+                                    <p class="text-gray-500 max-w-2xl text-lg">
+                                        Visualización de indicadores clave a
+                                        nivel global.
+                                    </p>
+                                </div>
+
+                                <div class="bg-white border border-gray-100 rounded-[2.5rem] p-6 md:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:border-gray-300 hover:shadow-md transition-all duration-500 min-h-[600px] flex items-center justify-center overflow-hidden">
+                                    <div
+                                        class="flourish-embed flourish-map w-full"
+                                        data-src={`visualisation/${flourishId}`}
+                                    >
+                                        <script src="https://public.flourish.studio/resources/embed.js" />
+                                    </div>
+                                </div>
+                            </div>
+                        )
+                    }
+                </div>
+
+                <!-- COLUMNA DERECHA: SIDEBAR (3/12) -->
+                <IndustrySidebar
+                    specialists={specialists}
+                    capabilities={capabilities}
+                />
+            </div>
+        </div>
+    </section>
+</Layout>
+
+<style>
+    /* Estilizaciones suaves para mejorar la experiencia */
+    p {
+        text-wrap: pretty;
+    }
+</style>

@@ -6,7 +6,7 @@ interface TeamMember {
     slug: string;
 }
 
-interface Industry {
+interface Capability {
     title: string;
     image: string;
     link: string;
@@ -14,10 +14,10 @@ interface Industry {
 
 interface Props {
     specialists: TeamMember[];
-    industries: Industry[];
+    capabilities: Capability[];
 }
 
-const { specialists, industries } = Astro.props;
+const { specialists, capabilities } = Astro.props;
 ---
 
 <aside
@@ -57,29 +57,29 @@ const { specialists, industries } = Astro.props;
             </div>
         </div>
 
-        <!-- INDUSTRIAS / SECTORES -->
+        <!-- CAPACIDADES RELACIONADAS -->
         <div class="space-y-6">
             <h3
                 class="font-serif text-2xl font-bold text-gray-900 pb-3 border-b-2 border-primary w-fit"
             >
-                Industrias Relacionadas
+                Capacidades Relacionadas
             </h3>
             <div class="space-y-8">
                 {
-                    industries.map((ind) => (
-                        <a href={ind.link} class="group block transition-all">
+                    capabilities.map((cap) => (
+                        <a href={cap.link} class="group block transition-all">
                             <div class="mb-3 h-48 bg-gray-100 rounded-xl overflow-hidden shadow-sm group-hover:shadow-md transition-all">
                                 <img
-                                    src={ind.image}
-                                    alt={ind.title}
+                                    src={cap.image}
+                                    alt={cap.title}
                                     class="h-full w-full object-cover transition-all duration-500 group-hover:scale-105"
                                 />
                             </div>
                             <h4 class="font-bold text-gray-900 group-hover:text-primary transition-colors">
-                                {ind.title}
+                                {cap.title}
                             </h4>
                             <p class="text-sm text-gray-500 mt-1 leading-tight">
-                                Industria Relacionada
+                                Capacidad Relacionada
                             </p>
                         </a>
                     ))
@@ -87,7 +87,7 @@ const { specialists, industries } = Astro.props;
             </div>
         </div>
 
-        <!-- Mini Banner de Proyecto (Opcional, se mantiene con estilo similar) -->
+        <!-- Mini Banner de Proyecto (Opcional) -->
         <div
             class="rounded-2xl overflow-hidden relative h-64 group cursor-pointer border border-gray-100 shadow-sm"
         >

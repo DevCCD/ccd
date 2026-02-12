@@ -5,13 +5,15 @@ import IndustrySidebar from "./IndustrySidebar.astro";
 interface Props {
     title: string;
     headerImage: string;
-    headerImagePosition?: string; // Por ejemplo: 'top', 'bottom', 'center', or percentages like '50% 20%'
+    headerImagePosition?: string;
     paragraphs: string[];
     mainImage?: string;
     mainImageAlt?: string;
     flourishId: string;
     specialists: any[];
     capabilities: any[];
+    introImage?: string;
+    relatedWork?: { title: string; image: string; link?: string }[];
 }
 
 const {
@@ -24,6 +26,8 @@ const {
     flourishId,
     specialists,
     capabilities,
+    introImage,
+    relatedWork,
 } = Astro.props;
 ---
 
@@ -35,7 +39,7 @@ const {
         <img
             src={headerImage}
             alt={title}
-            class="w-full h-full object-cover transition-transform duration-[3000ms] hover:scale-110 brightness-[0.85] contrast-[1.05]"
+            class="w-full h-full object-cover transition-transform duration-[30000ms]"
             style={{ objectPosition: headerImagePosition }}
         />
         <!-- Overlay sofisticado -->
@@ -46,7 +50,9 @@ const {
     </section>
 
     <section class="bg-white">
-        <div class="container mx-auto px-6 lg:px-12 py-12 md:py-20">
+        <div
+            class="container mx-auto px-6 lg:px-12 py-12 md:py-20 pt-8 md:pt-8"
+        >
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
                 <!-- CONTENIDO PRINCIPAL (9 columnas) -->
                 <div class="lg:col-span-9 space-y-16">
@@ -62,22 +68,90 @@ const {
 
                     <!-- PÁRRAFOS EN CARD DISCRETO -->
                     <div
-                        class="bg-white border border-gray-100 rounded-[2.5rem] p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:border-gray-300 hover:shadow-md transition-all duration-500 space-y-8 group"
+                        class="bg-white border border-gray-100 rounded-[2.5rem] p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:border-gray-300 hover:shadow-md transition-all duration-500 space-y-8 group pt-8 md:pt-8"
                     >
                         {
-                            paragraphs.map((p) => (
-                                <p class="font-sans text-lg md:text-xl text-gray-800 leading-[1.8] md:leading-[1.9] font-normal group-hover:text-black transition-colors">
-                                    {p}
-                                </p>
+                            paragraphs.map((p, index) => (
+                                <>
+                                    <p class="font-sans text-lg md:text-xl text-gray-800 leading-[1.8] md:leading-[1.9] font-normal group-hover:text-black transition-colors">
+                                        {p}
+                                    </p>
+                                    {index === 0 && introImage && (
+                                        <div class="my-8 rounded-2xl overflow-hidden shadow-lg">
+                                            <img
+                                                src={introImage}
+                                                alt="Imagen introductoria"
+                                                class="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
+                                            />
+                                        </div>
+                                    )}
+                                </>
                             ))
                         }
                     </div>
 
+                    <!-- SECCIÓN NUESTRO TRABAJO (CARDS) -->
+                    {
+                        relatedWork && relatedWork.length > 0 && (
+                            <div class="space-y-10 pt-8 border-t border-gray-100">
+                                <div class="text-center md:text-left">
+                                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                                        Nuestro{" "}
+                                        <span class="text-primary italic">
+                                            Trabajo
+                                        </span>
+                                    </h2>
+                                </div>
+
+                                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                    {relatedWork.map((work) => (
+                                        <a
+                                            href={work.link || "#"}
+                                            class="group relative overflow-hidden rounded-[2rem] bg-white shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 block flex flex-col h-full"
+                                        >
+                                            <div class="aspect-[4/3] overflow-hidden relative">
+                                                <img
+                                                    src={work.image}
+                                                    alt={work.title}
+                                                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                                />
+                                                <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+                                            </div>
+
+                                            <div class="p-6 md:p-8 flex-grow flex flex-col justify-between bg-white relative z-10">
+                                                <h3 class="font-serif text-xl font-bold leading-tight flex items-start justify-between gap-4 text-gray-900 group-hover:text-primary transition-colors duration-300">
+                                                    <span>{work.title}</span>
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        class="h-6 w-6 text-primary opacity-0 group-hover:opacity-100 transition-all duration-300 transform -translate-x-2 group-hover:translate-x-0 flex-shrink-0"
+                                                        fill="none"
+                                                        viewBox="0 0 24 24"
+                                                        stroke="currentColor"
+                                                    >
+                                                        <path
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M17 8l4 4m0 0l-4 4m4-4H3"
+                                                        />
+                                                    </svg>
+                                                </h3>
+
+                                                <div class="mt-6 flex items-center">
+                                                    <div class="h-1 w-12 bg-gray-200 rounded-full group-hover:bg-primary group-hover:w-20 transition-all duration-300" />
+                                                </div>
+                                            </div>
+                                        </a>
+                                    ))}
+                                </div>
+                            </div>
+                        )
+                    }
                     <!-- SECCIÓN FLOURISH (DATA COMPETITIVA) -->
                     {
                         flourishId && (
                             <div class="space-y-10 pt-8 border-t border-gray-100">
-                                <div class="text-center md:text-left">
+                                {/* <div class="text-center md:text-left">
                                     <h2 class="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                                         Data{" "}
                                         <span class="text-primary italic">
@@ -88,7 +162,7 @@ const {
                                         Visualización de indicadores clave a
                                         nivel global.
                                     </p>
-                                </div>
+                                </div> */}
 
                                 <div class="bg-white border border-gray-100 rounded-[2.5rem] p-6 md:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:border-gray-300 hover:shadow-md transition-all duration-500 min-h-[600px] flex items-center justify-center overflow-hidden">
                                     <div

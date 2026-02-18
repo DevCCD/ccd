@@ -42,30 +42,33 @@ const {
             class="w-full h-full object-cover transition-transform duration-[30000ms]"
             style={{ objectPosition: headerImagePosition }}
         />
-        <!-- Overlay sofisticado -->
+        <!-- Overlay sofisticado con degradado para legibilidad -->
         <div
-            class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"
         >
+            <div
+                class="container mx-auto px-6 lg:px-12 h-full flex flex-col justify-end pb-8 md:pb-10"
+            >
+                <div class="space-y-4 max-w-4xl animate-fade-in-up">
+                    <h1
+                        class="font-serif text-5xl md:text-7xl font-black text-white leading-tight drop-shadow-2xl"
+                    >
+                        {title}
+                    </h1>
+                    <div class="w-24 h-2 bg-primary rounded-full shadow-lg">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="bg-white">
         <div
-            class="container mx-auto px-6 lg:px-12 py-12 md:py-20 pt-8 md:pt-8"
+            class="container mx-auto px-6 lg:px-12 py-12 md:py-20 pt-8 md:pt-20"
         >
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
                 <!-- CONTENIDO PRINCIPAL (9 columnas) -->
                 <div class="lg:col-span-9 space-y-16">
-                    <!-- TÍTULO BAJO EL BANNER -->
-                    <div class="space-y-4">
-                        <h1
-                            class="font-serif text-5xl md:text-6xl font-black text-gray-900 leading-tight"
-                        >
-                            {title}
-                        </h1>
-                        <div class="w-24 h-2 bg-primary rounded-full"></div>
-                    </div>
-
                     <!-- PÁRRAFOS EN CARD DISCRETO -->
                     <div
                         class="bg-white border border-gray-100 rounded-[2.5rem] p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:border-gray-300 hover:shadow-md transition-all duration-500 space-y-8 group pt-8 md:pt-8"
@@ -96,9 +99,9 @@ const {
                             <div class="space-y-10 pt-8 border-t border-gray-100">
                                 <div class="text-center md:text-left">
                                     <h2 class="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                                        Nuestro{" "}
+                                        Nuestros{" "}
                                         <span class="text-primary italic">
-                                            Trabajo
+                                            Productos y Servicios
                                         </span>
                                     </h2>
                                 </div>
@@ -191,5 +194,20 @@ const {
     /* Estilizaciones suaves para mejorar la experiencia */
     p {
         text-wrap: pretty;
+    }
+
+    .animate-fade-in-up {
+        animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 </style>

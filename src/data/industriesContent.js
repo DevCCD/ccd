@@ -10,29 +10,29 @@ export const industriesContent = {
         ],
         mainImageAlt: "Sector Agropecuario",
         flourishId: "27519702",
-        specialistSlugs: ["rudy-laguna"],
-        capabilitySlugs: ["competitividad"],
+        specialistSlugs: ["alvaro-gordillo", "karla-casas"],
+        capabilitySlugs: ["corredores", "desarrollo"],
         introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770794345/Web%20CCD/Industrias/agropecuario_w2ulef.jpg",
         relatedWork: [
             {
                 title: "Planes de competitividad y productividad agrícola y/o pecuario",
                 image: "/industrias/mineria1.jpg",
-                link: "/capacidades/evaluacion"
+                link: "/capacidades/competitividad#nuestro-trabajo"
             },
             {
                 title: "Estudio y asistencia técnica en proyectos para mejorar la productividad en cadenas de valor de productos agropecuarios",
                 image: "/industrias/mineria2.jpg",
-                link: "/capacidades/competitividad#nuestro-trabajo"
+                link: "/capacidades/desarrollo#nuestro-trabajo"
             },
             {
                 title: "Evaluación de proyectos de infraestructura agropecuaria",
                 image: "/industrias/mineria.jpg",
-                link: "/capacidades/desarrollo"
+                link: "/capacidades/evaluacion#nuestro-trabajo"
             },
             {
                 title: "Fortalecimiento de capacidades a organizaciones agropecuarias en mejorar la productividad de las cadenas de valor de productos",
                 image: "/industrias/mineria.jpg",
-                link: "/capacidades/fortalecimiento"
+                link: "/capacidades/fortalecimiento#nuestro-trabajo"
             }
         ]
     },
@@ -46,29 +46,29 @@ export const industriesContent = {
         ],
         mainImageAlt: "Agroexportación",
         flourishId: "27519702",
-        specialistSlugs: ["rudy-laguna"],
-        capabilitySlugs: ["competitividad", "corredores"],
+        specialistSlugs: ["alvaro-gordillo", "rudy-laguna", "karla-casas", "alex-carbajal"],
+        capabilitySlugs: ["competitividad", "corredores", "inversiones"],
         introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770795288/Web%20CCD/Industrias/agroexportacion_oeftc2.jpg",
         relatedWork: [
             {
                 title: "Planes de agroexportación",
                 image: "/industrias/mineria1.jpg",
-                link: "/capacidades/evaluacion"
+                link: "/capacidades/competitividad#nuestro-trabajo"
             },
             {
                 title: "Estudios de impactos de proyectos agroexportables",
                 image: "/industrias/mineria2.jpg",
-                link: "/capacidades/competitividad#nuestro-trabajo"
+                link: "/capacidades/desarrollo#nuestro-trabajo"
             },
             {
                 title: "Desarrollo de clusters y microclusters agroexportables",
                 image: "/industrias/mineria.jpg",
-                link: "/capacidades/desarrollo"
+                link: "/capacidades/competitividad#nuestro-trabajo"
             },
             {
                 title: "Evaluación integral de proyectos agroexportables",
                 image: "/industrias/mineria.jpg",
-                link: "/capacidades/fortalecimiento"
+                link: "/capacidades/evaluacion#nuestro-trabajo"
             }
         ]
     },
@@ -82,8 +82,8 @@ export const industriesContent = {
         ],
         mainImageAlt: "Educación",
         flourishId: "27519702",
-        specialistSlugs: ["rudy-laguna"],
-        capabilitySlugs: ["fortalecimiento"],
+        specialistSlugs: ["karla-casas", "rudy-laguna"],
+        capabilitySlugs: ["fortalecimiento", "competitividad"],
         introImage: "/industrias/educacion.jpg",
         relatedWork: [
             {
@@ -123,8 +123,8 @@ export const industriesContent = {
         ],
         mainImageAlt: "Hidrocarburos",
         flourishId: "27519702",
-        specialistSlugs: ["rudy-laguna"],
-        capabilitySlugs: ["inversiones"],
+        specialistSlugs: ["rudy-laguna", "viviana-sanchez", "elmer-huaman"],
+        capabilitySlugs: ["inversiones", "fondos"],
         introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770796112/Web%20CCD/Industrias/hidrocarburos_mz5gjc.jpg",
         relatedWork: [
             {
@@ -178,8 +178,8 @@ export const industriesContent = {
         ],
         mainImageAlt: "Infraestructura",
         flourishId: "27519702",
-        specialistSlugs: ["rudy-laguna"],
-        capabilitySlugs: ["corredores"],
+        specialistSlugs: ["sergio-villegas", "rudy-laguna", "mario-huaman"],
+        capabilitySlugs: ["inversiones", "desarrollo"],
         introImage: "/industrias/infraestructura.jpg",
         relatedWork: [
             {
@@ -216,8 +216,8 @@ export const industriesContent = {
         paragraphs: ["Contenido en desarrollo para IA."],
         mainImageAlt: "Inteligencia Artificial",
         flourishId: "27519702",
-        specialistSlugs: ["rudy-laguna"],
-        capabilitySlugs: ["tecnologia"],
+        specialistSlugs: ["fernando-jauregui", "mario-huaman"],
+        capabilitySlugs: ["fortalecimiento", "evaluacion"],
         introImage: "/industrias/inteligencia.jpg",
         relatedWork: [
             {
@@ -259,8 +259,8 @@ export const industriesContent = {
         paragraphs: ["Contenido en desarrollo para manufactura."],
         mainImageAlt: "Manufactura",
         flourishId: "27519702",
-        specialistSlugs: ["rudy-laguna"],
-        capabilitySlugs: ["competitividad"],
+        specialistSlugs: ["jorge-ruiz"],
+        capabilitySlugs: ["inversiones", "fondos"],
         introImage: "/industrias/manufactura.jpg",
         relatedWork: [
             {
@@ -305,8 +305,8 @@ export const industriesContent = {
         ],
         mainImageAlt: "Operación de minería moderna",
         flourishId: "27519702",
-        specialistSlugs: ["rudy-laguna", "alvaro-gordillo", "karla-casas"],
-        capabilitySlugs: ["corredores", "inversiones"],
+        specialistSlugs: ["rudy-laguna", "viviana-sanchez", "sergio-villegas", "elmer-huaman"],
+        capabilitySlugs: ["inversiones", "corredores"],
         introImage: "/industrias/mineria4.jpg",
         relatedWork: [
             {
@@ -391,8 +391,8 @@ export const industriesContent = {
         paragraphs: ["Contenido en desarrollo para seguridad."],
         mainImageAlt: "Seguridad",
         flourishId: "27519702",
-        specialistSlugs: ["rudy-laguna"],
-        capabilitySlugs: ["fortalecimiento"],
+        specialistSlugs: ["viviana-sanchez", "fernando-jauregui"],
+        capabilitySlugs: ["evaluacion", "fortalecimiento"],
         introImage: "/industrias/seguridad.jpg",
         relatedWork: [
             {
@@ -440,8 +440,8 @@ export const industriesContent = {
         ],
         mainImageAlt: "Sector Público",
         flourishId: "27519702",
-        specialistSlugs: ["rudy-laguna"],
-        capabilitySlugs: ["competitividad"],
+        specialistSlugs: ["rudy-laguna", "viviana-sanchez", "elmer-huaman", "alex-carbajal"],
+        capabilitySlugs: ["competitividad", "desarrollo"],
         introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770796429/Web%20CCD/Industrias/publico_zqyito.jpg",
         relatedWork: [
             {
@@ -483,8 +483,8 @@ export const industriesContent = {
         paragraphs: ["Contenido en desarrollo para servicios portuarios."],
         mainImageAlt: "Servicios Portuarios",
         flourishId: "27519702",
-        specialistSlugs: ["rudy-laguna"],
-        capabilitySlugs: ["inversiones"],
+        specialistSlugs: ["karla-casas", "viviana-sanchez"],
+        capabilitySlugs: ["corredores", "competitividad"],
         introImage: "/industrias/portuarios.jpg",
         relatedWork: [
             {
@@ -532,8 +532,8 @@ export const industriesContent = {
         ],
         mainImageAlt: "Sistema Financiero",
         flourishId: "27519702",
-        specialistSlugs: ["rudy-laguna"],
-        capabilitySlugs: ["inversiones"],
+        specialistSlugs: ["fernando-jauregui", "elmer-huaman"],
+        capabilitySlugs: ["inversiones", "fondos"],
         introImage: "/industrias/financiero.jpg",
         relatedWork: [
             {
@@ -560,8 +560,8 @@ export const industriesContent = {
         paragraphs: ["Contenido en desarrollo para tecnología."],
         mainImageAlt: "Tecnología",
         flourishId: "27519702",
-        specialistSlugs: ["rudy-laguna"],
-        capabilitySlugs: ["competitividad"],
+        specialistSlugs: ["fernando-jauregui"],
+        capabilitySlugs: ["fortalecimiento", "inversiones"],
         introImage: "/industrias/tecnologia.jpg",
         relatedWork: [
             {

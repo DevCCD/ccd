@@ -9,31 +9,51 @@ const { title, description, backgroundImage } = Astro.props;
 ---
 
 
-<section class={`relative w-full pt-40 pb-24 px-6 ${!backgroundImage ? 'bg-gradient-to-b from-white to-[#EAF4FF]' : ''}`}>
+<section class={`relative w-full overflow-hidden ${backgroundImage ? 'h-[65vh] md:h-[75vh] bg-gray-900' : 'pt-40 pb-24 px-6 bg-gradient-to-b from-white to-[#EAF4FF]'}`}>
   
   <!-- IMAGEN DE FONDO (Solo si se provee) -->
   {backgroundImage && (
     <div class="absolute inset-0 z-0">
         <!-- Imagen -->
         <img src={backgroundImage} alt={title} class="w-full h-full object-cover" />
-        <!-- Capa oscura (Overlay) para que el texto se lea -->
-        <div class="absolute inset-0 bg-black/60"></div>
+        <!-- Overlay sofisticado con degradado para legibilidad -->
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
     </div>
   )}
 
   <!-- CONTENIDO -->
-  <div class="container mx-auto max-w-5xl text-center relative z-10">
+  <div class={`container mx-auto px-6 lg:px-12 relative z-10 h-full ${backgroundImage ? 'flex flex-col justify-end pb-8 md:pb-10' : 'max-w-5xl text-center'}`}>
     
-    <!-- Título: Si hay imagen de fondo, texto blanco. Si no, texto oscuro. -->
-    <h1 class={`font-serif text-5xl md:text-7xl font-black mb-6 leading-[1.2] md:leading-[1.2] ${backgroundImage ? 'text-white' : 'text-gray-900'}`}>
-      {title}
-    </h1>
+    <div class={`${backgroundImage ? 'space-y-4 max-w-4xl animate-fade-in-up' : ''}`}>
+        <!-- Título -->
+        <h1 class={`font-serif text-5xl md:text-7xl font-black leading-tight ${backgroundImage ? 'text-white drop-shadow-2xl' : 'text-gray-900 mb-6'}`}>
+          {title}
+        </h1>
 
-    {description && (
-      <p class={`font-sans text-xl md:text-2xl leading-[1.6] max-w-4xl mx-auto ${backgroundImage ? 'text-gray-100' : 'text-gray-700'}`}>
-        {description}
-      </p>
-    )}
-    
+        {backgroundImage && <div class="w-24 h-2 bg-primary rounded-full shadow-lg"></div>}
+
+        {description && (
+          <p class={`font-sans text-xl md:text-2xl leading-[1.6] ${backgroundImage ? 'text-gray-100 mt-4 max-w-3xl' : 'text-gray-700 max-w-4xl mx-auto'}`}>
+            {description}
+          </p>
+        )}
+    </div>
   </div>
 </section>
+
+<style>
+    .animate-fade-in-up {
+        animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>

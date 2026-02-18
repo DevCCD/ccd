@@ -8,11 +8,18 @@ import CapabilitySidebar from "../../components/capacidades/CapabilitySidebar.as
 // Importamos nuestra "base de datos"
 import { teamMembers, industriesData } from "../../data/teamData";
 
-const selectedSpecialists = [teamMembers["sergio-villegas"]];
+const selectedSpecialists = [
+    teamMembers["rudy-laguna"],
+    teamMembers["viviana-sanchez"],
+    teamMembers["sergio-villegas"],
+    teamMembers["elmer-huaman"],
+    teamMembers["alvaro-gordillo"],
+    teamMembers["fernando-jauregui"],
+];
 
 const selectedIndustries = [
-    industriesData["agricultura"],
     industriesData["infraestructura"],
+    industriesData["mineria"],
 ];
 
 // Bento Grid Items for Generación de Valor Cliente
@@ -96,12 +103,18 @@ const headerImage = "/capacidades/inversiones.jpg";
                     </div>
 
                     <!-- SECCIÓN 2: NUESTRO TRABAJO -->
-                    <div class="space-y-12 pt-12 border-t border-gray-200">
+                    <div
+                        id="nuestro-trabajo"
+                        class="scroll-mt-24 space-y-12 pt-12 border-t border-gray-200"
+                    >
                         <div class="text-center md:text-left">
                             <h2
-                                class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+                                class="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-4"
                             >
-                                Nuestro Trabajo
+                                Nuestro{" "}
+                                <span class="text-primary italic">
+                                    Trabajo
+                                </span>
                             </h2>
                         </div>
 

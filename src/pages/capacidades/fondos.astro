@@ -9,13 +9,16 @@ import CapabilitySidebar from "../../components/capacidades/CapabilitySidebar.as
 import { teamMembers, industriesData } from "../../data/teamData";
 
 const selectedSpecialists = [
-    teamMembers["fernando-jauregui"],
+    teamMembers["rudy-laguna"],
+    teamMembers["elmer-huaman"],
+    teamMembers["alvaro-gordillo"],
     teamMembers["alex-carbajal"],
+    teamMembers["jorge-ruiz"],
 ];
 
 const selectedIndustries = [
     industriesData["mineria"],
-    industriesData["agricultura"],
+    industriesData["agropecuario"],
 ];
 
 // Bento Grid Items for Generación de Valor Cliente
@@ -27,7 +30,7 @@ const valueGenerationItems = [
         size: "small" as const,
     },
     {
-        text: "Cofinancian y potencian la intervención pública y privada en favor del desarrollo de la población",
+        text: "Cofinancian y potencian la intervención pública y privada en favor del desarrollo de la población.",
         image: "/capacidades/fondos/fondos-v2.png",
         imageAlt: "Cofinanciamiento",
         size: "medium" as const,
@@ -37,19 +40,37 @@ const valueGenerationItems = [
 // Bento Grid Items for Nuestro Trabajo
 const ourWorkItems = [
     {
-        text: "Diseñamos estructuras de gobernanza participativa para fondos de desarrollo regionales y locales.",
+        text: "Evaluar, diseñar y brindar asistencia técnica en la constitución y operatividad de fondos de desarrollo.",
         image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&h=600&fit=crop",
         imageAlt: "Gobernanza",
         size: "small" as const,
     },
     {
-        text: "Elaboramos marcos de asignación y cofinanciamiento que atraen inversión público-privada.",
+        text: "Mejorar gobernanza de los fondos sociales.",
         image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=800&h=600&fit=crop",
         imageAlt: "Estructuración",
         size: "medium" as const,
     },
     {
-        text: "Implementamos sistemas de monitoreo y rendición de cuentas social y financiera.",
+        text: "Diseñar, fortalecer capacidades y asistencia técnica para mejorar y optimizar procesos, MAPROS, comités, protocolos y manuales para mejorar la inversión social.",
+        image: "/capacidades/fondos/monitoreo.jpg",
+        imageAlt: "Monitoreo",
+        size: "medium" as const,
+    },
+    {
+        text: "Diseñar e implementar estrategias para potenciar procesos participativos de los beneficiarios en los fondos sociales.",
+        image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&h=600&fit=crop",
+        imageAlt: "Gobernanza",
+        size: "small" as const,
+    },
+    {
+        text: "Estructuramos mecanismos de complementariedad y sostenibilidad de los fondos sociales con otras fuentes de financiamiento para el desarrollo.",
+        image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=800&h=600&fit=crop",
+        imageAlt: "Estructuración",
+        size: "small" as const,
+    },
+    {
+        text: "La experiencia pública y privada incluye la participación en el diseño, constitución y operatividad de más de cincuenta (50) fondos de desarrollo en comunidades, distritos y regiones del país.",
         image: "/capacidades/fondos/monitoreo.jpg",
         imageAlt: "Monitoreo",
         size: "medium" as const,
@@ -88,7 +109,6 @@ const headerImage = "/capacidades/fondos.jpg";
                             >
                                 {
                                     [
-                                        "Fondo Rotatorio",
                                         "Legitimidad",
                                         "Proceso participativo",
                                         "Generación de confianza con actores",
@@ -111,12 +131,18 @@ const headerImage = "/capacidades/fondos.jpg";
                     </div>
 
                     <!-- SECCIÓN 2: NUESTRO TRABAJO -->
-                    <div class="space-y-12 pt-12 border-t border-gray-200">
+                    <div
+                        id="nuestro-trabajo"
+                        class="scroll-mt-24 space-y-12 pt-12 border-t border-gray-200"
+                    >
                         <div class="text-center md:text-left">
                             <h2
-                                class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+                                class="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-4"
                             >
-                                Nuestro Trabajo
+                                Nuestro{" "}
+                                <span class="text-primary italic">
+                                    Trabajo
+                                </span>
                             </h2>
                         </div>
 

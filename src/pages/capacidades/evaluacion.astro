@@ -9,8 +9,12 @@ import CapabilitySidebar from "../../components/capacidades/CapabilitySidebar.as
 import { teamMembers, industriesData } from "../../data/teamData";
 
 const selectedSpecialists = [
+    teamMembers["rudy-laguna"],
+    teamMembers["alvaro-gordillo"],
+    teamMembers["fernando-jauregui"],
     teamMembers["alex-carbajal"],
-    teamMembers["mario-huaman"],
+    teamMembers["karla-casas"],
+    teamMembers["melissa-sanchez"],
 ];
 
 const selectedIndustries = [
@@ -99,12 +103,18 @@ const headerImage = "/capacidades/evaluacion.jpg";
                     </div>
 
                     <!-- SECCIÓN 2: NUESTRO TRABAJO -->
-                    <div class="space-y-12 pt-12 border-t border-gray-200">
+                    <div
+                        id="nuestro-trabajo"
+                        class="scroll-mt-24 space-y-12 pt-12 border-t border-gray-200"
+                    >
                         <div class="text-center md:text-left">
                             <h2
-                                class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+                                class="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-4"
                             >
-                                Nuestro Trabajo
+                                Nuestro{" "}
+                                <span class="text-primary italic">
+                                    Trabajo
+                                </span>
                             </h2>
                         </div>
 

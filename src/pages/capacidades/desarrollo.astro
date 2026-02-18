@@ -9,13 +9,18 @@ import CapabilitySidebar from "../../components/capacidades/CapabilitySidebar.as
 import { teamMembers, industriesData } from "../../data/teamData";
 
 const selectedSpecialists = [
+    teamMembers["rudy-laguna"],
+    teamMembers["viviana-sanchez"],
+    teamMembers["sergio-villegas"],
+    teamMembers["elmer-huaman"],
+    teamMembers["alvaro-gordillo"],
     teamMembers["karla-casas"],
-    teamMembers["alex-carbajal"],
+    teamMembers["jorge-ruiz"],
 ];
 
 const selectedIndustries = [
-    industriesData["mineria"],
-    industriesData["agricultura"],
+    industriesData["agropecuario"],
+    industriesData["saneamiento"],
 ];
 
 // Bento Grid Items for Generación de Valor Cliente
@@ -43,11 +48,20 @@ const valueGenerationItems = [
 // Bento Grid Items for Nuestro Trabajo
 const ourWorkItems = [
     {
-        text: "Elaborar e implementar planes estratégicos y de inversión para el desarrollo de zonas de influencia directa e indirecta.",
-        image: "/capacidades/desarrollo/agropecuario 3.jpg",
-        imageAlt: "Planes de Desarrollo",
-        size: "small" as const,
+        text: "Brindar asistencia técnica en la implementación, seguimiento y monitoreo de planes de desarrollo:",
+        bullets: [
+            "Sociodemográfico",
+            "Crecimiento económico",
+            "Conectividad",
+            "Ambiental",
+            "Riesgos y desastres",
+            "Gobernanza",
+        ],
+        image: "/capacidades/competitividad/8.webp",
+        imageAlt: "Planes de Competitividad",
+        size: "wide" as const,
     },
+
     {
         text: "Identificar, diseñar, asesorar y asistencia técnica para promover y desarrollar corredores económicos territoriales a escala nacional, regional, local y comunal.",
         image: "/capacidades/desarrollo/Antamina operaciones_0.jpg",
@@ -58,18 +72,32 @@ const ourWorkItems = [
         text: "Elaborar e implementar planes de inversión para el desarrollo de corredores económicos territoriales.",
         image: "/capacidades/desarrollo/palta.png",
         imageAlt: "Inversiones",
-        size: "medium" as const,
+        size: "small" as const,
     },
 
     {
-        text: "Asesoría y asistencia técnica en el planeamiento y la gestión de proyectos de inversión social de los fondos sociales para el desarrollo.",
+        text: "Elaborar e implementar planes estratégicos y de inversión para el desarrollo de zonas de influencia directa e indirecta.",
+        image: "/capacidades/desarrollo/palta.png",
+        imageAlt: "Inversiones",
+        size: "small" as const,
+    },
+
+    {
+        text: "Asesoría y asistencia técnica en el planeamiento y la gestión de los proyectos de inversión social de los fondos sociales.",
         image: "/capacidades/desarrollo/evaluacion3.jpg",
         imageAlt: "Planes de Desarrollo",
         size: "small" as const,
     },
     {
+        text: "Asesoría y asistencia técnica en el planeamiento y la gestión de proyectos de inversión social de los fondos sociales para el desarrollo.",
+        image: "/capacidades/corredores/APLCMEZPQZBZ3OIEJQMS5TLVYQ.jpg",
+        imageAlt: "Planes de Desarrollo",
+        size: "small" as const,
+    },
+
+    {
         text: "Creación de sistemas de medición integrales, parciales y KPIs (Key Performance Indicators) para el desarrollo de circunscripciones país, estado, región, provincia, distrito, comunidad, localidad y caserío.",
-        image: "/capacidades/desarrollo/desarrollo.jpg",
+        image: "/capacidades/competitividad/10.jpg",
         imageAlt: "Planes de Desarrollo",
         size: "wide" as const,
     },
@@ -109,12 +137,18 @@ const headerImage = "/capacidades/desarrollo2.jpg";
                     </div>
 
                     <!-- SECCIÓN 2: NUESTRO TRABAJO -->
-                    <div class="space-y-12 pt-12 border-t border-gray-200">
+                    <div
+                        id="nuestro-trabajo"
+                        class="scroll-mt-24 space-y-12 pt-12 border-t border-gray-200"
+                    >
                         <div class="text-center md:text-left">
                             <h2
-                                class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+                                class="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-4"
                             >
-                                Nuestro Trabajo
+                                Nuestro{" "}
+                                <span class="text-primary italic">
+                                    Trabajo
+                                </span>
                             </h2>
                         </div>
                         <!-- Áreas de Trabajo -->
@@ -147,39 +181,6 @@ const headerImage = "/capacidades/desarrollo2.jpg";
                             </ul>
                         </div>
                         <BentoGrid items={ourWorkItems} />
-
-                        <!-- Áreas de Trabajo -->
-                        <div
-                            class="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 md:p-12 border border-gray-200 shadow-sm"
-                        >
-                            <h4
-                                class="font-serif text-2xl font-bold text-gray-900 mb-8 pb-4 border-b border-gray-200"
-                            >
-                                Brindar asistencia técnica en la implementación,
-                                seguimiento y monitoreo de planes de desarrollo:
-                            </h4>
-                            <ul
-                                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-5"
-                            >
-                                {
-                                    [
-                                        "Sociodemográfico",
-                                        "Crecimiento económico",
-                                        "Conectividad",
-                                        "Ambiental",
-                                        "Riesgos y desastres",
-                                        "Gobernanza",
-                                    ].map((item) => (
-                                        <li class="flex items-start group">
-                                            <span class="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0 group-hover:scale-150 transition-transform" />
-                                            <span class="text-gray-700 font-medium text-base group-hover:text-primary transition-colors">
-                                                {item}
-                                            </span>
-                                        </li>
-                                    ))
-                                }
-                            </ul>
-                        </div>
 
                         <!-- Siguiente Capacidad -->
                         <div class="pt-12">

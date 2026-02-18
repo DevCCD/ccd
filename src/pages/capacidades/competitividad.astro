@@ -10,12 +10,16 @@ import { teamMembers, industriesData } from "../../data/teamData";
 
 const selectedSpecialists = [
     teamMembers["rudy-laguna"],
+    teamMembers["viviana-sanchez"],
+    teamMembers["elmer-huaman"],
     teamMembers["alvaro-gordillo"],
+    teamMembers["karla-casas"],
+    teamMembers["melissa-sanchez"],
 ];
 
 const selectedIndustries = [
-    industriesData["mineria"],
-    industriesData["agricultura"],
+    industriesData["agroexportacion"],
+    industriesData["infraestructura"],
 ];
 
 // Bento Grid Items for Generación de Valor Cliente
@@ -55,34 +59,48 @@ const valueGenerationItems = [
 // Bento Grid Items for Nuestro Trabajo
 const ourWorkItems = [
     {
+        text: "Asesoría y asistencia técnica en planes de competitividad y productividades para países y regiones:",
+        bullets: [
+            "Infraestructura",
+            "Comercio Exterior y Turismo",
+            "Capital Humano",
+            "Institucionalidad",
+            "Innovación",
+            "Sostenibilidad Ambiental",
+            "Financiamiento",
+            "Dotación de e recursos naturales",
+            "Mercado Laboral",
+            "Ambiente de Negocios",
+            "Mega y micro proyectos para mejorar la competitividad",
+        ],
+        image: "/capacidades/competitividad/8.webp",
+        imageAlt: "Planes de Competitividad",
+        size: "wide" as const,
+    },
+    {
         text: "Asesoría y asistencia técnica para mejorar la competitividad y productividad para circunscripción de interés: zona económica, multipaís, país, estado, región, provincia, distrito, comunidad y/o población, así como de sectores económicos, empresarial y proveedores, clusters y cadenas de valor de bienes y servicios.",
         image: "/capacidades/competitividad/7.jpeg",
-        imageAlt: "Planes Globales",
+        imageAlt: "Asesoría Competitividad",
         size: "medium" as const,
     },
+
     {
         text: "Creación de sistemas de medición parciales e integrales para impulsar competitividad y productividad.",
         image: "/capacidades/competitividad/6.jpg",
-        imageAlt: "Fondo Asesoría",
+        imageAlt: "Sistemas de Medición",
+        size: "small" as const,
+    },
+    {
+        text: "Evaluar y promover actividades económicas y clusters, microclusters a niveles sectoriales y productos de alto potencial de crecimiento.",
+        image: "/capacidades/competitividad/9.webp",
+        imageAlt: "Promoción de Clusters",
         size: "small" as const,
     },
     {
         text: "Diseño, creación, implementación, seguimiento y acompañamiento en iniciativas integrales y parciales de competitividad y productividad para áreas de influencia directa e indirecta, a niveles de sectores y productos de alto potencial de crecimiento: comercialización, logística, transformación e industrialización y producción.",
         image: "/capacidades/competitividad/10.jpg",
-        imageAlt: "Sistemas de Medición",
+        imageAlt: "Iniciativas Integrales",
         size: "medium" as const,
-    },
-    {
-        text: "Evaluar y promover actividades económicas y clusters, microclusters a niveles sectoriales y productos de alto potencial de crecimiento.",
-        image: "/capacidades/competitividad/9.webp",
-        imageAlt: "Clusters",
-        size: "small" as const,
-    },
-    {
-        text: "Asesoría y asistencia técnica en planes de competitividad y productividades para países y regiones.",
-        image: "/capacidades/competitividad/8.webp",
-        imageAlt: "Iniciativas",
-        size: "wide" as const,
     },
 ];
 
@@ -114,54 +132,20 @@ const headerImage = "/capacidades/competitividad2.jpeg";
                     <!-- ============================================== -->
                     <div
                         id="nuestro-trabajo"
-                        class="space-y-12 pt-12 border-t border-gray-200"
+                        class="scroll-mt-24 space-y-12 pt-12 border-t border-gray-200"
                     >
                         <div class="text-center md:text-left">
                             <h2
-                                class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+                                class="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-4"
                             >
-                                Nuestro Trabajo
+                                Nuestro{" "}
+                                <span class="text-primary italic">
+                                    Trabajo
+                                </span>
                             </h2>
                         </div>
 
                         <BentoGrid items={ourWorkItems} />
-
-                        <!-- Áreas de Intervención -->
-                        <div
-                            class="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 md:p-12 border border-gray-200 shadow-sm"
-                        >
-                            <h4
-                                class="font-serif text-2xl font-bold text-gray-900 mb-8 pb-4 border-b border-gray-200"
-                            >
-                                Áreas de Intervención
-                            </h4>
-                            <ul
-                                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-5"
-                            >
-                                {
-                                    [
-                                        "Infraestructura",
-                                        "Comercio Exterior y Turismo",
-                                        "Capital Humano",
-                                        "Institucionalidad",
-                                        "Innovación",
-                                        "Sostenibilidad Ambiental",
-                                        "Financiamiento",
-                                        "Dotación de recursos naturales",
-                                        "Mercado Laboral",
-                                        "Mega y micro proyectos",
-                                        "Ambiente de Negocios",
-                                    ].map((item) => (
-                                        <li class="flex items-start group">
-                                            <span class="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0 group-hover:scale-150 transition-transform" />
-                                            <span class="text-gray-700 font-medium text-base group-hover:text-primary transition-colors">
-                                                {item}
-                                            </span>
-                                        </li>
-                                    ))
-                                }
-                            </ul>
-                        </div>
 
                         <!-- Siguiente Capacidad -->
                         <div class="pt-12">

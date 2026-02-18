@@ -3,6 +3,7 @@ interface BentoItem {
     text: string;
     image: string;
     imageAlt: string;
+    bullets?: string[];
     size?: "small" | "medium" | "large" | "wide";
 }
 
@@ -55,9 +56,20 @@ const imageHeights = {
                     <div
                         class={`p-6 md:p-8 flex flex-col justify-center flex-1 ${isTextFirst ? "order-1" : "order-2"}`}
                     >
-                        <p class="text-gray-900 leading-relaxed text-base md:text-lg font-medium">
+                        <p class="text-gray-900 leading-relaxed text-base md:text-lg font-medium mb-4">
                             {item.text}
                         </p>
+
+                        {item.bullets && (
+                            <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-3 mt-4">
+                                {item.bullets.map((bullet) => (
+                                    <li class="flex items-start text-sm md:text-base text-gray-800">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 mr-2 flex-shrink-0 shadow-sm" />
+                                        <span>{bullet}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
                     </div>
                 </div>
             );

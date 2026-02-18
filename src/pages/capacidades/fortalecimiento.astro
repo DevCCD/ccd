@@ -9,6 +9,9 @@ import CapabilitySidebar from "../../components/capacidades/CapabilitySidebar.as
 import { teamMembers, industriesData } from "../../data/teamData";
 
 const selectedSpecialists = [
+    teamMembers["rudy-laguna"],
+    teamMembers["sergio-villegas"],
+    teamMembers["elmer-huaman"],
     teamMembers["karla-casas"],
     teamMembers["melissa-sanchez"],
 ];
@@ -73,6 +76,25 @@ const valueGenerationItems = [
 // Bento Grid Items for Nuestro Trabajo
 const ourWorkItems = [
     {
+        text: "Administración Financiera del Sector Público:",
+        bullets: [
+            "Programación Multianual y Gestión de Inversiones: Invierte.pe",
+            "Gestión Fiscal de los Recursos Humanos en el Sector Público",
+            "Presupuesto Público",
+            "Abastecimiento: compras públicas",
+            "Tesorería",
+            "Endeudamiento Público",
+            "Contabilidad",
+            "Ingresos y Rentas",
+
+            "Integridad institucional",
+        ],
+        image: "/capacidades/competitividad/8.webp",
+        imageAlt: "Planes de Competitividad",
+        size: "wide" as const,
+    },
+
+    {
         text: "Fortalecimiento de capacidades bajo las modalidades: Presencial, Virtual y Semipresencial.",
         image: "/capacidades/fortalecimiento de capacidades/WhatsApp Image 2024-07-11 at 17.38.59 (2).jpeg",
         imageAlt: "Programas",
@@ -123,12 +145,18 @@ const headerImage = "/capacidades/fortalecimiento.jpg";
                     </div>
 
                     <!-- SECCIÓN 2: NUESTRO TRABAJO -->
-                    <div class="space-y-12 pt-12 border-t border-gray-200">
+                    <div
+                        id="nuestro-trabajo"
+                        class="scroll-mt-24 space-y-12 pt-12 border-t border-gray-200"
+                    >
                         <div class="text-center md:text-left">
                             <h2
-                                class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+                                class="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-4"
                             >
-                                Nuestro Trabajo
+                                Nuestro{" "}
+                                <span class="text-primary italic">
+                                    Trabajo
+                                </span>
                             </h2>
                         </div>
                         <!-- Ejes de Fortalecimiento -->
@@ -149,10 +177,11 @@ const headerImage = "/capacidades/fortalecimiento.jpg";
                                 {
                                     [
                                         "Determinantes de la competitividad, productividad y desarrollo",
-                                        "Inversión pública: Invierte.pe, Programación Multianual de Inversiones y Gestión de Inversiones",
+
                                         "Articulación y complementariedad de los instrumentos de planeamiento y gestión para el desarrollo",
-                                        "Obras por Impuestos",
+                                        "Inversión pública: Invierte.pe, Programación Multianual de Inversiones y Gestión de Inversiones",
                                         "Planeamiento para el desarrollo",
+                                        "Obras por Impuestos",
                                         "Asociaciones Público Privado: APPs",
                                         "Iniciativas Privadas",
                                         "Fondos sociales para el desarrollo",
@@ -169,43 +198,6 @@ const headerImage = "/capacidades/fortalecimiento.jpg";
                         </div>
 
                         <BentoGrid items={ourWorkItems} />
-
-                        <!-- Ejes de Fortalecimiento -->
-                        <div
-                            class="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 md:p-12 border border-gray-200 shadow-sm"
-                        >
-                            <h4
-                                class="font-serif text-2xl font-bold text-gray-900 mb-8 pb-4 border-b border-gray-200"
-                            >
-                                Administración Financiera del Sector Público:
-                            </h4>
-                            <ul
-                                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-5"
-                            >
-                                {
-                                    [
-                                        "Presupuesto Público",
-                                        "Tesorería",
-                                        "Endeudamiento Público",
-                                        "Contabilidad",
-                                        "Ingresos y Rentas",
-                                        "Integridad institucional",
-                                        "Abastecimiento: compras públicas",
-
-                                        "Gestión Fiscal de los Recursos Humanos en el Sector Público",
-
-                                        "Programación Multianual y Gestión de Inversiones: Invierte.pe",
-                                    ].map((item) => (
-                                        <li class="flex items-start group">
-                                            <span class="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0 group-hover:scale-150 transition-transform" />
-                                            <span class="text-gray-700 font-medium text-base group-hover:text-primary transition-colors">
-                                                {item}
-                                            </span>
-                                        </li>
-                                    ))
-                                }
-                            </ul>
-                        </div>
 
                         <!-- Siguiente Capacidad -->
                         <div class="pt-12">

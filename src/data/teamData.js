@@ -3,13 +3,13 @@ export const teamMembers = {
     "rudy-laguna": {
         name: "Rudy Laguna",
         role: "Director",
-        image: "/rudy-laguna-rostro.png",
+        image: "/rudy-laguna.png",
         slug: "rudy-laguna"
     },
     "viviana-sanchez": {
         name: "Viviana Sánchez",
         role: "Directora",
-        image: "/viviana-sanchez-rostro.png",
+        image: "/viviana-sanchez.png",
         slug: "viviana-sanchez"
     },
 
@@ -17,7 +17,7 @@ export const teamMembers = {
     "alvaro-gordillo": {
         name: "Alvaro Gordillo",
         role: "Especialista en Inversión y Desarrollo",
-        image: "/alvaro-gordillo-rostro.png",
+        image: "/alvaro-gordillo.png",
         slug: "alvaro-gordillo"
     },
     "fernando-jauregui": {
@@ -84,8 +84,8 @@ export const teamMembers = {
 
 // Datos de las industrias para reutilizar en el sidebar
 export const industriesData = {
-    "agricultura": { title: "Agricultura", image: "/industrias/agricultura.jpg", link: "/industrias/agricultura" },
-    "agroexportacion": { title: "Agroexportación", image: "/industrias/agroexportacion.jpg", link: "/industrias/agroexportacion" },
+    "agropecuario": { title: "Agropecuario", image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770791069/Web%20CCD/Industrias/agropecuario_pjqvtz.jpg", link: "/industrias/agropecuario" },
+    "agroexportacion": { title: "Agroexportación", image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770795356/Web%20CCD/Industrias/agroexportacion_uwbi1c.jpg", link: "/industrias/agroexportacion" },
     "educacion": { title: "Educación", image: "/industrias/educacion.jpg", link: "/industrias/educacion" },
     "hidrocarburos": { title: "Hidrocarburos", image: "/industrias/hidrocarburos.jpg", link: "/industrias/hidrocarburos" },
     "infraestructura": { title: "Infraestructura y Construcción", image: "/industrias/infraestructura.jpg", link: "/industrias/infraestructura" },

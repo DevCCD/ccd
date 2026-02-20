@@ -92,7 +92,6 @@ export const industriesData = {
     "inteligencia": { title: "Inteligencia Artificial", image: "/industrias/inteligencia.jpg", link: "/industrias/inteligencia" },
     "manufactura": { title: "Manufactura", image: "/industrias/manufactura.jpg", link: "/industrias/manufactura" },
     "mineria": { title: "Minería", image: "/industrias/mineria.jpg", link: "/industrias/mineria" },
-    "saneamiento": { title: "Saneamiento", image: "/industrias/saneamiento.jpg", link: "/industrias/saneamiento" },
     "seguridad": { title: "Seguridad", image: "/industrias/seguridad.jpg", link: "/industrias/seguridad" },
     "publico": { title: "Sector Público", image: "/industrias/publico.jpg", link: "/industrias/publico" },
     "portuarios": { title: "Servicios Portuarios", image: "/industrias/portuarios.jpg", link: "/industrias/portuarios" },

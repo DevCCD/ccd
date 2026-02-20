@@ -341,49 +341,6 @@ export const industriesContent = {
             }
         ]
     },
-    "saneamiento": {
-        title: "Saneamiento",
-        headerImage: "/industrias/saneamiento.jpg",
-        headerImagePosition: "center",
-        paragraphs: ["Contenido en desarrollo para saneamiento."],
-        mainImageAlt: "Saneamiento",
-        flourishId: "27519702",
-        specialistSlugs: ["rudy-laguna"],
-        capabilitySlugs: ["desarrollo"],
-        introImage: "/industrias/saneamiento.jpg",
-        relatedWork: [
-            {
-                title: "Planes de competitividad y productividad",
-                image: "/industrias/mineria1.jpg",
-                link: "/capacidades/evaluacion"
-            },
-            {
-                title: "Planes de desarrollo concertados regionales y locales",
-                image: "/industrias/mineria2.jpg",
-                link: "/capacidades/competitividad#nuestro-trabajo"
-            },
-            {
-                title: "Potenciación del desarrollo con impulso de corredores económicos",
-                image: "/industrias/mineria.jpg",
-                link: "/capacidades/desarrollo"
-            },
-            {
-                title: "Desarrollo de clusters y microclusters",
-                image: "/industrias/mineria.jpg",
-                link: "/capacidades/fortalecimiento"
-            },
-            {
-                title: "Fortalecimiento de capacidades institucionales",
-                image: "/industrias/mineria1.jpg",
-                link: "/capacidades/fortalecimiento"
-            },
-            {
-                title: "Evaluación integral de proyectos de inversión",
-                image: "/industrias/mineria2.jpg",
-                link: "/capacidades/fortalecimiento"
-            }
-        ]
-    },
     "seguridad": {
         title: "Seguridad",
         headerImage: "/industrias/seguridad.jpg",

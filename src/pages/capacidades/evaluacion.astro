@@ -9,72 +9,80 @@ import CapabilitySidebar from "../../components/capacidades/CapabilitySidebar.as
 import { teamMembers, industriesData } from "../../data/teamData";
 
 const selectedSpecialists = [
+    teamMembers["fernando-jauregui"],
     teamMembers["rudy-laguna"],
     teamMembers["alvaro-gordillo"],
-    teamMembers["fernando-jauregui"],
     teamMembers["alex-carbajal"],
     teamMembers["karla-casas"],
     teamMembers["melissa-sanchez"],
 ];
 
 const selectedIndustries = [
-    industriesData["mineria"],
+    industriesData["agropecuario"],
     industriesData["educacion"],
+    industriesData["publico"],
 ];
 
 // Bento Grid Items for Generación de Valor Cliente
 const valueGenerationItems = [
+
     {
-        text: "Pertinencia y eficiencia en la asignación de recursos para maximizar el retorno social de las inversiones.",
-        image: "/capacidades/evaluacion de proyectos/casual-business-man-working-with-laptop.jpg",
-        imageAlt: "Pertinencia y Eficiencia",
-        size: "large" as const,
-    },
-    {
-        text: "Eficacia e impacto en la generación de resultados duraderos para el desarrollo territorial.",
+        text: "Optimización e integridad vertical y horizontal de la inversión social desde la Negociación, Aprobación y Elaboración de estudios hasta su Implementación, Operación y Mantenimiento.",
         image: "/capacidades/evaluacion de proyectos/antamina.jpg",
         imageAlt: "Eficacia e Impacto",
         size: "small" as const,
     },
     {
-        text: "Sostenibilidad de los resultados para asegurar que las iniciativas generen valor a largo plazo.",
+        text: "Generamos transparencia, ganancias de eficiencias y reportes para Accionistas, Directorio, Población beneficiaria y Líderes comunales, reflejados en Anuarios y Documentos de sostenibilidad.",
         image: "/capacidades/evaluacion de proyectos/evaluacion3.jpg",
         imageAlt: "Sostenibilidad",
-        size: "large" as const,
+        size: "medium" as const,
     },
     {
-        text: "Evaluaciones ex ante para diseñar intervenciones más efectivas desde el inicio.",
+        text: "Generación de complementariedad con intervenciones público y privadas en Inversión, Fondeo y Operación y mantenimiento.",
         image: "/capacidades/evaluacion de proyectos/evaluacion2.jpg",
         imageAlt: "Evaluación Ex Ante",
         size: "small" as const,
     },
     {
-        text: "Evaluaciones ex post para aprender de los resultados y mejorar futuras intervenciones estratégicas.",
+        text: "Optimizamos decisiones sobre intervenciones sociales para el desarrollo mediante Potenciación, Restructuración y Culminación.",
         image: "/capacidades/evaluacion de proyectos/open_pit_Barrick-Gold-Mine-e1493577591276-960x480.jpg",
         imageAlt: "Evaluación Ex Post",
-        size: "wide" as const,
+        size: "medium" as const,
     },
 ];
 
 // Bento Grid Items for Nuestro Trabajo
 const ourWorkItems = [
     {
-        text: "Realizamos evaluaciones de impacto para identificar efectos reales de programas en la población.",
+        text: "Evaluamos proyectos y programas de inversión social en sus etapas ExAnte, ExDure y ExPost.",
         image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
         imageAlt: "Impacto",
         size: "small" as const,
     },
     {
-        text: "Desarrollamos marcos lógicos y teorías de cambio que alinean objetivos con resultados.",
+        text: "Participación de los stakeholders de los programas y proyectos en el proceso de evaluación.",
         image: "/capacidades/evaluacion de proyectos/marco.jpg",
         imageAlt: "Planificación",
         size: "medium" as const,
     },
     {
-        text: "Establecemos sistemas de monitoreo y seguimiento con indicadores de desempeño rigurosos.",
+        text: "Presentación de resultados de la evaluación a Stakeholders.",
         image: "/capacidades/fondos/monitoreo.jpg",
         imageAlt: "Monitoreo",
-        size: "medium" as const,
+        size: "small" as const,
+    },
+    {
+        text: "Cuantificación de impactos.",
+        image: "/capacidades/fondos/monitoreo.jpg",
+        imageAlt: "Monitoreo",
+        size: "small" as const,
+    },
+    {
+        text: "Implementación de recomendaciones de la evaluación en todas las áreas de la institución.",
+        image: "/capacidades/fondos/monitoreo.jpg",
+        imageAlt: "Monitoreo",
+        size: "small" as const,
     },
 ];
 
@@ -96,7 +104,7 @@ const headerImage = "/capacidades/evaluacion.jpg";
                     <div class="space-y-12">
                         <ValueGenerationHero
                             title="Generación de Valor Cliente"
-                            description="Evaluamos programas y proyectos para garantizar la calidad, eficiencia y el máximo impacto en el desarrollo, optimizando cada recurso invertido."
+                            description="Aseguramos mayores calidad y rendimientos de la inversión social en el área de influencia mediante Improvement, Accountability y Enlightenment."
                         />
 
                         <BentoGrid items={valueGenerationItems} />
@@ -118,30 +126,25 @@ const headerImage = "/capacidades/evaluacion.jpg";
                             </h2>
                         </div>
 
-                        <BentoGrid items={ourWorkItems} />
-
-                        <!-- Enfoques de Evaluación -->
                         <div
                             class="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 md:p-12 border border-gray-200 shadow-sm"
                         >
                             <h4
                                 class="font-serif text-2xl font-bold text-gray-900 mb-8 pb-4 border-b border-gray-200"
                             >
-                                Enfoques de Evaluación
+                            Evaluación cualitativo y cuantitativo integral de programas y proyectos de inversión:
                             </h4>
                             <ul
                                 class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-5"
                             >
                                 {
                                     [
-                                        "Impacto y Resultados",
-                                        "Eficiencia Operativa",
-                                        "Pertinencia Estratégica",
-                                        "Relevancia Social",
+                                        "Pertinencia",
+                                        "Eficiencia",
+                                        "Eficacia",
+                                        "Impacto",
                                         "Sostenibilidad",
-                                        "Equidad e Inclusión",
-                                        "Análisis Costo-Beneficio",
-                                        "Lecciones Aprendidas",
+                                       
                                     ].map((item) => (
                                         <li class="flex items-start group">
                                             <span class="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0 group-hover:scale-150 transition-transform" />
@@ -153,6 +156,11 @@ const headerImage = "/capacidades/evaluacion.jpg";
                                 }
                             </ul>
                         </div>
+
+                        <BentoGrid items={ourWorkItems} />
+
+                        <!-- Enfoques de Evaluación -->
+                        
 
                         <!-- Siguiente Capacidad -->
                         <div class="pt-12">

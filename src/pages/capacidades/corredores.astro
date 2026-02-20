@@ -9,62 +9,75 @@ import CapabilitySidebar from "../../components/capacidades/CapabilitySidebar.as
 import { teamMembers, industriesData } from "../../data/teamData";
 
 const selectedSpecialists = [
-    teamMembers["rudy-laguna"],
     teamMembers["alvaro-gordillo"],
+    teamMembers["rudy-laguna"],
     teamMembers["alex-carbajal"],
     teamMembers["karla-casas"],
     teamMembers["jorge-ruiz"],
 ];
 
 const selectedIndustries = [
-    industriesData["infraestructura"],
-    industriesData["agropecuario"],
+    industriesData["mineria"],
+    industriesData["portuarios"],
+    industriesData["agroexportacion"],
 ];
 
 // Bento Grid Items for Generación de Valor Cliente
 const valueGenerationItems = [
     {
-        text: "Visión de prosperidad multi regional, provincial, distrital y comunitaria que genera sinergias y complementariedad entre los proyectos públicos y privados.",
+        text: "Visión de prosperidad: Multi Regional/Provincial/Distrital/Comunal.",
         image: "/capacidades/corredores/aerial-view-pastoruri-glacier-ancash-peru.jpg",
         imageAlt: "Visión de Prosperidad",
-        size: "large" as const,
+        size: "small" as const,
     },
     {
-        text: "Mayor movilidad y oportunidades de educación, salud y empleo para la población del área de influencia del corredor.",
+        text: "Mayor movilidad y oportunidades de educación, salud y empleo para la población.",
         image: "/capacidades/corredores/Antamina operaciones_0.jpg",
         imageAlt: "Mayor Movilidad",
         size: "small" as const,
     },
     {
-        text: "Desarrollo integrado del área de influencia o de más de una circunscripción territorial: países, regiones, provincias, distritos y/o comunidades.",
+        text: "Potencia la productividad y el desarrollo de clusters.",
         image: "/capacidades/corredores/palccoyo-rainbow-mountains-near-cusco-peru.jpg",
         imageAlt: "Desarrollo Integrado",
-        size: "large" as const,
+        size: "small" as const,
     },
     {
-        text: "Cubre vacíos existentes en el ordenamiento geopolítico y acelera el desarrollo y la competitividad territorial.",
+        text: "Desarrollo integrado del área de influencia o de más de una circunscripción territorial: países, regiones, provincias, distritos y/o comunidades.",
+        image: "/capacidades/corredores/pesca-1.jpg",
+        imageAlt: "Ordenamiento Geopolítico",
+        size: "medium" as const,
+    },
+    {
+        text: "Cubre vacíos existentes en el ordenamiento geopolítico y acelera el desarrollo y la competitividad.",
+        image: "/capacidades/corredores/Laguna Arapa en Azángaro.jpg",
+        imageAlt: "Productividad",
+        size: "small" as const,
+    },
+    {
+        text: "Robustece el desarrollo bajo el enfoque territorial.",
         image: "/capacidades/corredores/pesca-1.jpg",
         imageAlt: "Ordenamiento Geopolítico",
         size: "small" as const,
     },
     {
-        text: "Potencia la productividad y el desarrollo de clusters, robusteciendo el desarrollo bajo enfoque territorial.",
+        text: "Potencia el proceso de desarrollo de la población relacionada al Corredor Económico Territorial.",
         image: "/capacidades/corredores/Laguna Arapa en Azángaro.jpg",
         imageAlt: "Productividad",
-        size: "wide" as const,
+        size: "medium" as const,
     },
 ];
 
 // Bento Grid Items for Nuestro Trabajo
 const ourWorkItems = [
     {
-        text: "Elaboración de estudios metodológicos para la constitución, gobernanza, planeamiento y gestión con actores clave.",
+        text: "Elaboración de estudios metodológicos para la constitución, gobernanza, planeamiento y gestión con actores público - privado claves en la formación, consolidación y crecimiento de Corredores Económicos Territoriales.",
         image: "/capacidades/corredores/APLCMEZPQZBZ3OIEJQMS5TLVYQ.jpg",
         imageAlt: "Estudios Metodológicos",
-        size: "small" as const,
+        size: "wide" as const,
     },
     {
-        text: "Megaproyectos e proyectos de desarrollo para potenciar el impacto en el cierre de brechas.",
+        text: "Megaproyectos e proyectos de desarrollo para potenciar el impacto en el cierre de brechas y desarrollo de la población del Corredor Económico Territorial.",
         image: "/capacidades/corredores/corredores.jpg",
         imageAlt: "Megaproyectos",
         size: "medium" as const,
@@ -73,7 +86,7 @@ const ourWorkItems = [
         text: "KPI y sistema de datos e información digital de Corredores Económicos Territoriales.",
         image: "/capacidades/corredores/kpi.jpg",
         imageAlt: "Sistemas de Datos",
-        size: "medium" as const,
+        size: "small" as const,
     },
 ];
 
@@ -95,7 +108,7 @@ const headerImage = "/capacidades/corredores.jpg";
                     <div class="space-y-12">
                         <ValueGenerationHero
                             title="Generación de Valor Cliente"
-                            description="Optimiza la inversión social pública y privada mediante corredores económicos territoriales que generan sinergias, complementariedad y mayores beneficios para la población."
+                            description="Optimiza la inversión social pública y privada mediante corredores económicos territoriales que generan sinergias, complementariedad y mayores beneficios para la población de los proyectos públicos y privados."
                         />
 
                         <BentoGrid items={valueGenerationItems} />
@@ -119,39 +132,7 @@ const headerImage = "/capacidades/corredores.jpg";
 
                         <BentoGrid items={ourWorkItems} />
 
-                        <!-- Componentes del Corredor -->
-                        <div
-                            class="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 md:p-12 border border-gray-200 shadow-sm"
-                        >
-                            <h4
-                                class="font-serif text-2xl font-bold text-gray-900 mb-8 pb-4 border-b border-gray-200"
-                            >
-                                Componentes del Corredor Económico
-                            </h4>
-                            <ul
-                                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-5"
-                            >
-                                {
-                                    [
-                                        "Constitución y Gobernanza",
-                                        "Planeamiento Territorial",
-                                        "Estudios Metodológicos",
-                                        "Formación de Corredores",
-                                        "Megaproyectos de Desarrollo",
-                                        "Cierre de Brechas",
-                                        "KPI e Indicadores",
-                                        "Sistema Digital de Datos",
-                                    ].map((item) => (
-                                        <li class="flex items-start group">
-                                            <span class="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0 group-hover:scale-150 transition-transform" />
-                                            <span class="text-gray-700 font-medium text-base group-hover:text-primary transition-colors">
-                                                {item}
-                                            </span>
-                                        </li>
-                                    ))
-                                }
-                            </ul>
-                        </div>
+                        
 
                         <!-- Siguiente Capacidad -->
                         <div class="pt-12">

@@ -1,5 +1,9 @@
 ---
+import { industriesData, capabilitiesData } from "../data/teamData";
 const currentYear = new Date().getFullYear();
+
+const industries = Object.values(industriesData);
+const capabilities = Object.values(capabilitiesData);
 ---
 
 <footer class="bg-primary text-white">
@@ -10,69 +14,61 @@ const currentYear = new Date().getFullYear();
     >
       <!-- Columna 1: Capacidades -->
       <div class="space-y-4">
-        <h4 class="font-bold text-lg">Capacidades</h4>
-        <ul class="space-y-2 font-light">
-          <li>
-            <a href="/capacidades/competitividad" class="hover:underline"
-              >Competitividad</a
-            >
-          </li>
-          <li>
-            <a href="/capacidades/desarrollo" class="hover:underline"
-              >Desarrollo</a
-            >
-          </li>
-          <li>
-            <a href="/capacidades/fortalecimiento" class="hover:underline"
-              >Fortalecimiento</a
-            >
-          </li>
-          <li>
-            <a href="/capacidades/fondos" class="hover:underline"
-              >Fondos de Desarrollo</a
-            >
-          </li>
-          <li>
-            <a href="/capacidades/evaluacion" class="hover:underline"
-              >Evaluación</a
-            >
-          </li>
-          <li>
-            <a href="/capacidades/corredores" class="hover:underline"
-              >Corredores</a
-            >
-          </li>
-          <li>
-            <a href="/capacidades/inversion" class="hover:underline"
-              >Inversión</a
-            >
-          </li>
+        <h4 class="font-bold text-lg border-b border-white/20 pb-2">
+          <a href="/capacidades" class="hover:text-white/80 transition-colors"
+            >Capacidades</a
+          >
+        </h4>
+        <ul class="space-y-2 font-light text-sm">
+          {
+            capabilities.map((cap) => (
+              <li>
+                <a
+                  href={cap.link}
+                  class="hover:underline transition-colors hover:text-white/80"
+                >
+                  {cap.title}
+                </a>
+              </li>
+            ))
+          }
         </ul>
       </div>
+
       <!-- Columna 2: Industrias -->
-      <div class="space-y-4">
-        <h4 class="font-bold text-lg">Industrias</h4>
-        <ul class="space-y-2 font-light">
-          <li><a href="#" class="hover:underline">Minería</a></li>
-          <li><a href="#" class="hover:underline">Petróleo y Gas</a></li>
-          <li><a href="#" class="hover:underline">Educación</a></li>
-          <li><a href="#" class="hover:underline">Agricultura</a></li>
-          <li><a href="#" class="hover:underline">Pecuario</a></li>
-          <li><a href="#" class="hover:underline">Infraestructura</a></li>
+      <div class="space-y-4 col-span-1 sm:col-span-2 md:col-span-2">
+        <h4 class="font-bold text-lg border-b border-white/20 pb-2">
+          <a href="/industrias" class="hover:text-white/80 transition-colors"
+            >Industrias</a
+          >
+        </h4>
+        <ul
+          class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2 font-light text-sm"
+        >
+          {
+            industries.map((ind) => (
+              <li>
+                <a
+                  href={ind.link}
+                  class="hover:underline transition-colors hover:text-white/80"
+                >
+                  {ind.title}
+                </a>
+              </li>
+            ))
+          }
         </ul>
       </div>
+
       <!-- Columna 3: Nosotros -->
       <div class="space-y-4">
-        <h4 class="font-bold text-lg">Nosotros</h4>
-        <ul class="space-y-2 font-light">
+        <h4 class="font-bold text-lg border-b border-white/20 pb-2">
+          Nosotros
+        </h4>
+        <ul class="space-y-2 font-light text-sm">
           <li>
             <a href="/nosotros/vision-historia" class="hover:underline"
-              >Visión</a
-            >
-          </li>
-          <li>
-            <a href="/nosotros/vision-historia#historia" class="hover:underline"
-              >Historia</a
+              >Visión e Historia</a
             >
           </li>
           <li>
@@ -80,28 +76,33 @@ const currentYear = new Date().getFullYear();
             >
           </li>
           <li>
-            <a href="/nosotros/equipo#liderazgo" class="hover:underline"
-              >Nuestro Liderazgo</a
-            >
-          </li>
-          <li>
             <a href="/nosotros/enfoque" class="hover:underline"
               >Enfoque de trabajo</a
             >
           </li>
+          <li>
+            <a href="/contacto" class="hover:underline">Contacto</a>
+          </li>
         </ul>
       </div>
-      <!-- Columna 4: MiLink -->
+
+      <!-- Columna 4: Oportunidades y Logueo -->
       <div class="space-y-4">
-        <h4 class="font-bold text-lg">
-          <a href="#" class="hover:underline">MiLink</a>
+        <h4 class="font-bold text-lg border-b border-white/20 pb-2">
+          Recursos
         </h4>
-      </div>
-      <!-- Columna 5: Carreras -->
-      <div class="space-y-4">
-        <h4 class="font-bold text-lg">
-          <a href="#" class="hover:underline">Carreras</a>
-        </h4>
+        <ul class="space-y-2 font-light text-sm">
+          <a
+            href="https://milink.competitividadccd.com/login/index.php"
+            class="hover:underline"
+            target="_blank"
+            rel="noopener noreferrer">MiLink</a
+          >
+          <li>
+            <a href="/carreras" class="hover:underline">Carreras</a>
+          </li>
+          <li></li>
+        </ul>
       </div>
     </div>
 

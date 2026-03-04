@@ -93,7 +93,7 @@ export const industriesData = {
     "manufactura": { title: "Manufactura", image: "/industrias/manufactura.jpg", link: "/industrias/manufactura" },
     "mineria": { title: "Minería", image: "/industrias/mineria.jpg", link: "/industrias/mineria" },
     "seguridad": { title: "Seguridad", image: "/industrias/seguridad.jpg", link: "/industrias/seguridad" },
-    "publico": { title: "Sector Público", image: "/industrias/publico.jpg", link: "/industrias/publico" },
+    "publico": { title: "Sector Público", image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770796429/Web%20CCD/Industrias/publico_zqyito.jpg", link: "/industrias/publico" },
     "portuarios": { title: "Servicios Portuarios", image: "/industrias/portuarios.jpg", link: "/industrias/portuarios" },
     "financiero": { title: "Sistema Financiero", image: "/industrias/financiero.jpg", link: "/industrias/financiero" },
     "tecnologia": { title: "Tecnología", image: "/industrias/tecnologia.jpg", link: "/industrias/tecnologia" },

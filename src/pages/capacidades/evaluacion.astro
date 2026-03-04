@@ -25,7 +25,6 @@ const selectedIndustries = [
 
 // Bento Grid Items for Generación de Valor Cliente
 const valueGenerationItems = [
-
     {
         text: "Optimización e integridad vertical y horizontal de la inversión social desde la Negociación, Aprobación y Elaboración de estudios hasta su Implementación, Operación y Mantenimiento.",
         image: "/capacidades/evaluacion de proyectos/antamina.jpg",
@@ -68,7 +67,7 @@ const ourWorkItems = [
     },
     {
         text: "Presentación de resultados de la evaluación a Stakeholders.",
-        image: "/capacidades/fondos/monitoreo.jpg",
+        image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772645346/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_1_qzpwtu.jpg",
         imageAlt: "Monitoreo",
         size: "small" as const,
     },
@@ -80,13 +79,14 @@ const ourWorkItems = [
     },
     {
         text: "Implementación de recomendaciones de la evaluación en todas las áreas de la institución.",
-        image: "/capacidades/fondos/monitoreo.jpg",
+        image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770857524/Web%20CCD/Corporate%20Flat%20Illustration/planes_de_desarrollo2_tb0bj3.jpg",
         imageAlt: "Monitoreo",
         size: "small" as const,
     },
 ];
 
-const headerImage = "/capacidades/evaluacion.jpg";
+const headerImage =
+    "https://res.cloudinary.com/ccdcloudy/image/upload/v1772641630/Web%20CCD/Capacidades%20e%20Industrias/Evaluaci%C3%B3n%20de%20Programas/Evaluacion_paq2ri.webp";
 ---
 
 <Layout title="Evaluación de Programas y Proyectos - CCD">
@@ -132,7 +132,8 @@ const headerImage = "/capacidades/evaluacion.jpg";
                             <h4
                                 class="font-serif text-2xl font-bold text-gray-900 mb-8 pb-4 border-b border-gray-200"
                             >
-                            Evaluación cualitativo y cuantitativo integral de programas y proyectos de inversión:
+                                Evaluación cualitativo y cuantitativo integral
+                                de programas y proyectos de inversión:
                             </h4>
                             <ul
                                 class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-5"
@@ -144,7 +145,6 @@ const headerImage = "/capacidades/evaluacion.jpg";
                                         "Eficacia",
                                         "Impacto",
                                         "Sostenibilidad",
-                                       
                                     ].map((item) => (
                                         <li class="flex items-start group">
                                             <span class="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0 group-hover:scale-150 transition-transform" />
@@ -160,7 +160,6 @@ const headerImage = "/capacidades/evaluacion.jpg";
                         <BentoGrid items={ourWorkItems} />
 
                         <!-- Enfoques de Evaluación -->
-                        
 
                         <!-- Siguiente Capacidad -->
                         <div class="pt-12">

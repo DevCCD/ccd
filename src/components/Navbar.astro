@@ -19,447 +19,416 @@ const inactiveClass = "text-primary hover:text-primary-dark";
     id="main-header"
     class="bg-white text-gray-800 sticky top-0 z-50 transition-all duration-300 py-3"
 >
-    <nav class="container mx-auto px-6 flex justify-between items-center">
-        <!-- Logo -->
-        <a href="/">
-            <img
-                src="/logoccd.svg"
-                alt="Logo del Centro para la Competitividad y el Desarrollo"
-                class="h-12 w-auto"
-            />
-        </a>
+    <nav
+        class="container mx-auto px-6 grid grid-cols-2 md:grid-cols-3 items-center"
+    >
+        <!-- Logo (Lado Izquierdo) -->
+        <div class="flex justify-start">
+            <a href="/">
+                <img
+                    src="/logoccd.svg"
+                    alt="Logo del Centro para la Competitividad y el Desarrollo"
+                    class="h-12 w-auto"
+                />
+            </a>
+        </div>
 
-        <!-- ============================================ -->
-        <!-- MENÚ DE NAVEGACIÓN (DESKTOP)                 -->
-        <!-- ============================================ -->
-        <ul class="hidden md:flex items-center space-x-8 text-lg font-medium">
-            <!-- 1. CAPACIDADES (LANDING + DESPLEGABLE) -->
-            <li class="group relative">
-                <a
-                    href="/capacidades"
-                    class="flex items-center transition-colors duration-300 cursor-pointer"
-                    class:list={[
-                        isCapacidadesActive ? activeClass : inactiveClass,
-                    ]}
-                >
-                    Capacidades
-                    <svg
-                        class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        ><path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M19 9l-7 7-7-7"></path></svg
+        <!-- MENÚ DE NAVEGACIÓN (Centro - Desktop) -->
+        <div class="hidden md:flex justify-center">
+            <ul class="flex items-center space-x-8 text-lg font-medium">
+                <!-- 1. CAPACIDADES (LANDING + DESPLEGABLE) -->
+                <li class="group relative">
+                    <a
+                        href="/capacidades"
+                        class="flex items-center transition-colors duration-300 cursor-pointer"
+                        class:list={[
+                            isCapacidadesActive ? activeClass : inactiveClass,
+                        ]}
                     >
-                </a>
-                <!-- Panel Desplegable: Aumentado a w-[900px] y más padding (p-10) -->
-                <div
-                    class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto w-[900px]"
-                >
+                        Capacidades
+                        <svg
+                            class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            ><path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M19 9l-7 7-7-7"></path></svg
+                        >
+                    </a>
+                    <!-- Panel Desplegable -->
                     <div
-                        class="bg-white rounded-sm shadow-lg p-10 border-t-2 border-primary"
+                        class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto w-[800px]"
                     >
                         <div
-                            class="grid grid-cols-2 gap-x-12 gap-y-4 text-gray-600 font-normal text-base"
+                            class="bg-white rounded-sm shadow-lg p-10 border-t-2 border-primary"
                         >
-                            <ul class="space-y-3">
-                                <li>
-                                    <a
-                                        href="/capacidades/competitividad"
-                                        class="hover:text-primary hover:underline block"
-                                        >Competitividad</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="/capacidades/desarrollo"
-                                        class="hover:text-primary hover:underline block"
-                                        >Desarrollo</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="/capacidades/fortalecimiento"
-                                        class="hover:text-primary hover:underline block"
-                                        >Fortalecimiento de Capacidades y <br
-                                        />Capital Humano</a
-                                    >
-                                </li>
-                            </ul>
-                            <ul class="space-y-3">
-                                <li>
-                                    <a
-                                        href="/capacidades/fondos"
-                                        class="hover:text-primary hover:underline block"
-                                        >Fondos de Desarrollo</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="/capacidades/evaluacion"
-                                        class="hover:text-primary hover:underline block"
-                                        >Evaluación de Programas y Proyectos</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="/capacidades/corredores"
-                                        class="hover:text-primary hover:underline block"
-                                        >Corredores Económicos Territoriales</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="/capacidades/inversiones"
-                                        class="hover:text-primary hover:underline block"
-                                        >Inversiones y Proyectos</a
-                                    >
-                                </li>
-                            </ul>
+                            <div
+                                class="grid grid-cols-2 gap-x-12 gap-y-4 text-gray-600 font-normal text-base"
+                            >
+                                <ul class="space-y-3">
+                                    <li>
+                                        <a
+                                            href="/capacidades/competitividad"
+                                            class="hover:text-primary hover:underline block"
+                                            >Competitividad</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="/capacidades/desarrollo"
+                                            class="hover:text-primary hover:underline block"
+                                            >Desarrollo</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="/capacidades/fortalecimiento"
+                                            class="hover:text-primary hover:underline block"
+                                            >Fortalecimiento de Capacidades y <br
+                                            />Capital Humano</a
+                                        >
+                                    </li>
+                                </ul>
+                                <ul class="space-y-3">
+                                    <li>
+                                        <a
+                                            href="/capacidades/fondos"
+                                            class="hover:text-primary hover:underline block"
+                                            >Fondos de Desarrollo</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="/capacidades/evaluacion"
+                                            class="hover:text-primary hover:underline block"
+                                            >Evaluación de Programas y Proyectos</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="/capacidades/corredores"
+                                            class="hover:text-primary hover:underline block"
+                                            >Corredores Económicos Territoriales</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="/capacidades/inversiones"
+                                            class="hover:text-primary hover:underline block"
+                                            >Inversiones y Proyectos</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </li>
+                </li>
 
-            <!-- 2. INDUSTRIAS (DESPLEGABLE MÁS ANCHO) -->
-            <li class="group relative">
-                <a
-                    href="/industrias"
-                    class="flex items-center transition-colors duration-300"
-                    class:list={[
-                        isIndustriasActive ? activeClass : inactiveClass,
-                    ]}
-                >
-                    Industrias
-                    <svg
-                        class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        ><path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M19 9l-7 7-7-7"></path></svg
+                <!-- 2. INDUSTRIAS (DESPLEGABLE) -->
+                <li class="group relative">
+                    <a
+                        href="/industrias"
+                        class="flex items-center transition-colors duration-300"
+                        class:list={[
+                            isIndustriasActive ? activeClass : inactiveClass,
+                        ]}
                     >
-                </a>
-                <!-- Panel Desplegable: Aumentado a w-[800px] -->
-                <div
-                    class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto w-[800px]"
-                >
+                        Industrias
+                        <svg
+                            class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            ><path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M19 9l-7 7-7-7"></path></svg
+                        >
+                    </a>
+                    <!-- Panel Desplegable -->
                     <div
-                        class="bg-white rounded-sm shadow-lg p-10 border-t-2 border-primary"
+                        class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto w-[800px]"
                     >
                         <div
-                            class="grid grid-cols-3 gap-x-12 gap-y-6 text-gray-600 font-normal text-base"
+                            class="bg-white rounded-sm shadow-lg p-10 border-t-2 border-primary"
                         >
-                            <ul class="space-y-3">
-                                <li>
-                                    <a
-                                        href="/industrias/agropecuario"
-                                        class="hover:text-primary hover:underline block"
-                                        >Agropecuario</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="/industrias/agroexportacion"
-                                        class="hover:text-primary hover:underline block"
-                                        >Agroexportación</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="/industrias/educacion"
-                                        class="hover:text-primary hover:underline block"
-                                        >Educación</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="/industrias/hidrocarburos"
-                                        class="hover:text-primary hover:underline block"
-                                        >Hidrocarburos</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="/industrias/infraestructura"
-                                        class="hover:text-primary hover:underline block"
-                                        >Infraestructura y Construcción</a
-                                    >
-                                </li>
-                            </ul>
-                            <ul class="space-y-3">
-                                <li>
-                                    <a
-                                        href="/industrias/inteligencia"
-                                        class="hover:text-primary hover:underline block"
-                                        >Inteligencia Artificial</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="/industrias/manufactura"
-                                        class="hover:text-primary hover:underline block"
-                                        >Manufactura</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="/industrias/mineria"
-                                        class="hover:text-primary hover:underline block"
-                                        >Minería</a
-                                    >
-                                </li>
-                                
-                                <li>
-                                    <a
-                                        href="/industrias/seguridad"
-                                        class="hover:text-primary hover:underline block"
-                                        >Seguridad</a
-                                    >
-                                </li>
-                            </ul>
-                            <ul class="space-y-3">
-                                <li>
-                                    <a
-                                        href="/industrias/publico"
-                                        class="hover:text-primary hover:underline block"
-                                        >Sector Público</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="/industrias/portuarios"
-                                        class="hover:text-primary hover:underline block"
-                                        >Servicios Portuarios</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="/industrias/financiero"
-                                        class="hover:text-primary hover:underline block"
-                                        >Sistema Financiero</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="/industrias/tecnologia"
-                                        class="hover:text-primary hover:underline block"
-                                        >Tecnología</a
-                                    >
-                                </li>
-                            </ul>
+                            <div
+                                class="grid grid-cols-3 gap-x-12 gap-y-6 text-gray-600 font-normal text-base"
+                            >
+                                <ul class="space-y-3">
+                                    <li>
+                                        <a
+                                            href="/industrias/agropecuario"
+                                            class="hover:text-primary hover:underline block"
+                                            >Agropecuario</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="/industrias/agroexportacion"
+                                            class="hover:text-primary hover:underline block"
+                                            >Agroexportación</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="/industrias/educacion"
+                                            class="hover:text-primary hover:underline block"
+                                            >Educación</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="/industrias/hidrocarburos"
+                                            class="hover:text-primary hover:underline block"
+                                            >Hidrocarburos</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="/industrias/infraestructura"
+                                            class="hover:text-primary hover:underline block"
+                                            >Infraestructura</a
+                                        >
+                                    </li>
+                                </ul>
+                                <ul class="space-y-3">
+                                    <li>
+                                        <a
+                                            href="/industrias/inteligencia"
+                                            class="hover:text-primary hover:underline block"
+                                            >Inteligencia Artificial</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="/industrias/manufactura"
+                                            class="hover:text-primary hover:underline block"
+                                            >Manufactura</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="/industrias/mineria"
+                                            class="hover:text-primary hover:underline block"
+                                            >Minería</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="/industrias/seguridad"
+                                            class="hover:text-primary hover:underline block"
+                                            >Seguridad</a
+                                        >
+                                    </li>
+                                </ul>
+                                <ul class="space-y-3">
+                                    <li>
+                                        <a
+                                            href="/industrias/publico"
+                                            class="hover:text-primary hover:underline block"
+                                            >Sector Público</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="/industrias/portuarios"
+                                            class="hover:text-primary hover:underline block"
+                                            >Servicios Portuarios</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="/industrias/financiero"
+                                            class="hover:text-primary hover:underline block"
+                                            >Financiero</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="/industrias/tecnologia"
+                                            class="hover:text-primary hover:underline block"
+                                            >Tecnología</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </li>
+                </li>
 
-            <li>
-                <a
-                    href="/paises"
-                    class="transition-colors duration-300"
-                    class:list={[
-                        currentPath === "/paises" ? activeClass : inactiveClass,
-                    ]}>Países</a
-                >
-            </li>
-            <li>
-                <a
-                    href="/carreras"
-                    class="transition-colors duration-300"
-                    class:list={[
-                        currentPath === "/carreras"
-                            ? activeClass
-                            : inactiveClass,
-                    ]}>Carreras</a
-                >
-            </li>
-
-            <!-- 3. NOSOTROS (DESPLEGABLE MÁS ANCHO) -->
-            <li class="group relative">
-                <button
-                    class="flex items-center transition-colors duration-300 cursor-pointer"
-                    class:list={[
-                        isNosotrosActive ? activeClass : inactiveClass,
-                    ]}
-                >
-                    Nosotros
-                    <svg
-                        class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        ><path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M19 9l-7 7-7-7"></path></svg
+                <li>
+                    <a
+                        href="/carreras"
+                        class="transition-colors duration-300"
+                        class:list={[
+                            currentPath === "/carreras"
+                                ? activeClass
+                                : inactiveClass,
+                        ]}>Carreras</a
                     >
-                </button>
-                <!-- Panel Desplegable: Aumentado a w-[650px] -->
-                <div
-                    class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto w-[650px]"
-                >
+                </li>
+
+                <!-- 3. NOSOTROS (DESPLEGABLE) -->
+                <li class="group relative">
+                    <button
+                        class="flex items-center transition-colors duration-300 cursor-pointer"
+                        class:list={[
+                            isNosotrosActive ? activeClass : inactiveClass,
+                        ]}
+                    >
+                        Nosotros
+                        <svg
+                            class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            ><path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M19 9l-7 7-7-7"></path></svg
+                        >
+                    </button>
                     <div
-                        class="bg-white rounded-sm shadow-lg p-10 border-t-2 border-primary"
+                        class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto w-[650px]"
                     >
                         <div
-                            class="grid grid-cols-3 gap-10 text-gray-600 font-normal text-base"
+                            class="bg-white rounded-sm shadow-lg p-10 border-t-2 border-primary"
                         >
-                            <ul class="space-y-4">
-                                <li>
-                                    <a
-                                        href="/nosotros/vision-historia"
-                                        class="hover:text-primary hover:underline block"
-                                        >Visión</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="/nosotros/vision-historia#historia"
-                                        class="hover:text-primary hover:underline block"
-                                        >Historia</a
-                                    >
-                                </li>
-                            </ul>
-                            <ul class="space-y-4">
-                                <li>
-                                    <a
-                                        href="/nosotros/equipo"
-                                        class="hover:text-primary hover:underline block"
-                                        >Nuestro Equipo</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="/nosotros/equipo#liderazgo"
-                                        class="hover:text-primary hover:underline block"
-                                        >Nuestro Liderazgo</a
-                                    >
-                                </li>
-                            </ul>
-                            <ul class="space-y-4">
-                                <li>
-                                    <a
-                                        href="/nosotros/enfoque"
-                                        class="hover:text-primary hover:underline block"
-                                        >Enfoque de trabajo</a
-                                    >
-                                </li>
-                            </ul>
+                            <div
+                                class="grid grid-cols-3 gap-10 text-gray-600 font-normal text-base"
+                            >
+                                <ul class="space-y-4">
+                                    <li>
+                                        <a
+                                            href="/nosotros/vision-historia"
+                                            class="hover:text-primary hover:underline block"
+                                            >Visión</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="/nosotros/vision-historia#historia"
+                                            class="hover:text-primary hover:underline block"
+                                            >Historia</a
+                                        >
+                                    </li>
+                                </ul>
+                                <ul class="space-y-4">
+                                    <li>
+                                        <a
+                                            href="/nosotros/equipo"
+                                            class="hover:text-primary hover:underline block"
+                                            >Equipo</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="/nosotros/equipo#liderazgo"
+                                            class="hover:text-primary hover:underline block"
+                                            >Liderazgo</a
+                                        >
+                                    </li>
+                                </ul>
+                                <ul class="space-y-4">
+                                    <li>
+                                        <a
+                                            href="/nosotros/enfoque"
+                                            class="hover:text-primary hover:underline block"
+                                            >Enfoque</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </li>
+                </li>
 
-            <li>
-                <a
-                    href="/contacto"
-                    class="transition-colors duration-300"
-                    class:list={[
-                        currentPath === "/contacto"
-                            ? activeClass
-                            : inactiveClass,
-                    ]}>Contacto</a
-                >
-            </li>
-            <li>
-                <a
-                    href="/blog"
-                    class="transition-colors duration-300"
-                    class:list={[
-                        currentPath === "/blog" ? activeClass : inactiveClass,
-                    ]}>Blog</a
-                >
-            </li>
-        </ul>
+                <li>
+                    <a
+                        href="/contacto"
+                        class="transition-colors duration-300"
+                        class:list={[
+                            currentPath === "/contacto"
+                                ? activeClass
+                                : inactiveClass,
+                        ]}>Contacto</a
+                    >
+                </li>
+            </ul>
+        </div>
 
-        <!-- Botón MILink -->
-        <a
-            href="https://milink.competitividadccd.com/login/index.php"
-            class="hidden md:block text-lg font-medium text-primary hover:text-primary-dark transition-colors duration-300"
-        >
-            MiLink
-        </a>
-
-        <!-- Botón Hamburguesa Móvil -->
-        <button
-            id="mobile-menu-button"
-            class="md:hidden p-2 rounded-md border-2 border-primary text-primary hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary"
-        >
-            <svg
-                id="hamburger-icon"
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                ><path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16m-7 6h7"></path></svg
+        <!-- Acciones Derecha (MiLink + Hamburguesa) -->
+        <div class="flex justify-end items-center space-x-6">
+            <a
+                href="https://milink.competitividadccd.com/login/index.php"
+                class="hidden md:block text-lg font-medium text-primary hover:text-primary-dark transition-colors duration-300"
             >
-            <svg
-                id="close-icon"
-                class="w-6 h-6 hidden"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                ><path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M6 18L18 6M6 6l12 12"></path></svg
+                MiLink
+            </a>
+
+            <button
+                id="mobile-menu-button"
+                class="md:hidden p-2 rounded-md border-2 border-primary text-primary hover:bg-primary/10 transition-colors"
             >
-        </button>
+                <svg
+                    id="hamburger-icon"
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+                <svg
+                    id="close-icon"
+                    class="w-6 h-6 hidden"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
     </nav>
 
-    <!-- ============================================ -->
-    <!-- MENÚ MÓVIL (SIMPLIFICADO)                    -->
-    <!-- ============================================ -->
+    <!-- MENÚ MÓVIL -->
     <div
         id="mobile-menu"
         class="hidden md:hidden bg-white border-t border-gray-100 shadow-inner"
     >
         <div class="px-4 pt-4 pb-6 space-y-2">
-            <!-- Enlaces simples para facilitar navegación en móvil -->
             <a
                 href="/capacidades"
-                class="block px-3 py-3 rounded-md text-base font-medium text-primary hover:bg-gray-50 hover:text-primary-dark"
+                class="block px-3 py-3 rounded-md text-base font-medium text-primary hover:bg-gray-50"
                 class:list={{ "bg-gray-50 font-bold": isCapacidadesActive }}
                 >Capacidades</a
             >
             <a
                 href="/industrias"
-                class="block px-3 py-3 rounded-md text-base font-medium text-primary hover:bg-gray-50 hover:text-primary-dark"
+                class="block px-3 py-3 rounded-md text-base font-medium text-primary hover:bg-gray-50"
                 class:list={{ "bg-gray-50 font-bold": isIndustriasActive }}
                 >Industrias</a
             >
-            <a
-                href="/paises"
-                class="block px-3 py-3 rounded-md text-base font-medium text-primary hover:bg-gray-50 hover:text-primary-dark"
-                class:list={{
-                    "bg-gray-50 font-bold": currentPath === "/paises",
-                }}>Países</a
-            >
-            <a
-                href="/carreras"
-                class="block px-3 py-3 rounded-md text-base font-medium text-primary hover:bg-gray-50 hover:text-primary-dark"
-                class:list={{
-                    "bg-gray-50 font-bold": currentPath === "/carreras",
-                }}>Carreras</a
-            >
 
-            <!-- Acordeón NOSOTROS (Lo mantenemos porque tiene pocas opciones y específicas) -->
             <div>
                 <button
                     id="accordion-nosotros-btn"
-                    class="w-full flex justify-between items-center px-3 py-3 rounded-md text-base font-medium text-primary hover:bg-gray-50 hover:text-primary-dark transition-colors"
+                    class="w-full flex justify-between items-center px-3 py-3 rounded-md text-base font-medium text-primary hover:bg-gray-50 transition-colors"
                     class:list={{ "bg-gray-50 font-bold": isNosotrosActive }}
                 >
                     <span>Nosotros</span>
@@ -469,52 +438,53 @@ const inactiveClass = "text-primary hover:text-primary-dark";
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
-                        ><path
+                    >
+                        <path
                             stroke-linecap="round"
                             stroke-linejoin="round"
                             stroke-width="2"
-                            d="M19 9l-7 7-7-7"></path></svg
-                    >
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
                 </button>
-                <div id="panel-nosotros" class="accordion-panel pl-4">
-                    <div
-                        class="py-2 space-y-2 border-l-2 border-gray-100 ml-2 pl-2 text-gray-600"
+                <div
+                    id="panel-nosotros"
+                    class="accordion-panel hidden px-4 py-2 space-y-2 text-gray-600"
+                >
+                    <a
+                        href="/nosotros/vision-historia"
+                        class="block py-2 hover:text-primary"
+                        >Visión e Historia</a
                     >
-                        <a
-                            href="/nosotros/vision-historia"
-                            class="block px-3 py-2 rounded-md text-sm font-medium hover:text-primary hover:bg-gray-50"
-                            >Visión e Historia</a
-                        >
-                        <a
-                            href="/nosotros/equipo"
-                            class="block px-3 py-2 rounded-md text-sm font-medium hover:text-primary hover:bg-gray-50"
-                            >Equipo y Liderazgo</a
-                        >
-                        <a
-                            href="/nosotros/enfoque"
-                            class="block px-3 py-2 rounded-md text-sm font-medium hover:text-primary hover:bg-gray-50"
-                            >Enfoque de trabajo</a
-                        >
-                    </div>
+                    <a
+                        href="/nosotros/equipo"
+                        class="block py-2 hover:text-primary"
+                        >Equipo y Liderazgo</a
+                    >
+                    <a
+                        href="/nosotros/enfoque"
+                        class="block py-2 hover:text-primary"
+                        >Enfoque de trabajo</a
+                    >
                 </div>
             </div>
 
             <a
                 href="/contacto"
-                class="block px-3 py-3 rounded-md text-base font-medium text-primary hover:bg-gray-50 hover:text-primary-dark"
+                class="block px-3 py-3 rounded-md text-base font-medium text-primary hover:bg-gray-50"
                 class:list={{
                     "bg-gray-50 font-bold": currentPath === "/contacto",
                 }}>Contacto</a
             >
             <a
-                href="/blog"
-                class="block px-3 py-3 rounded-md text-base font-medium text-primary hover:bg-gray-50 hover:text-primary-dark"
-                class:list={{ "bg-gray-50 font-bold": currentPath === "/blog" }}
-                >Blog</a
+                href="/carreras"
+                class="block px-3 py-3 rounded-md text-base font-medium text-primary hover:bg-gray-50"
+                class:list={{
+                    "bg-gray-50 font-bold": currentPath === "/carreras",
+                }}>Carreras</a
             >
             <a
-                href="/milink"
-                class="block px-3 py-3 rounded-md text-base font-medium text-primary hover:bg-primary/5 font-bold"
+                href="https://milink.competitividadccd.com/login/index.php"
+                class="block px-3 py-3 rounded-md text-base font-medium text-primary font-bold"
                 >MiLink</a
             >
         </div>
@@ -522,7 +492,6 @@ const inactiveClass = "text-primary hover:text-primary-dark";
 </header>
 
 <script>
-    // --- Lógica del Menú Principal (Hamburguesa) ---
     const mobileMenuButton = document.getElementById("mobile-menu-button");
     const mobileMenu = document.getElementById("mobile-menu");
     const hamburgerIcon = document.getElementById("hamburger-icon");
@@ -536,24 +505,20 @@ const inactiveClass = "text-primary hover:text-primary-dark";
         });
     }
 
-    // --- Lógica de Acordeones (Solo queda el de Nosotros) ---
-    function setupAccordion(btnId: string, panelId: string, arrowId: string) {
-        const btn = document.getElementById(btnId) as HTMLElement;
-        const panel = document.getElementById(panelId) as HTMLElement;
-        const arrow = document.getElementById(arrowId) as HTMLElement;
+    const nosotrosBtn = document.getElementById("accordion-nosotros-btn");
+    const nosotrosPanel = document.getElementById("panel-nosotros");
+    const nosotrosArrow = document.getElementById("arrow-nosotros");
 
-        if (btn && panel && arrow) {
-            btn.addEventListener("click", () => {
-                panel.classList.toggle("open");
-                arrow.classList.toggle("rotate-180");
-            });
-        }
+    if (nosotrosBtn && nosotrosPanel && nosotrosArrow) {
+        nosotrosBtn.addEventListener("click", () => {
+            nosotrosPanel.classList.toggle("hidden");
+            nosotrosArrow.classList.toggle("rotate-180");
+        });
     }
-
-    // Solo inicializamos el de Nosotros, ya que Capacidades e Industrias ahora son links directos
-    setupAccordion(
-        "accordion-nosotros-btn" as string,
-        "panel-nosotros" as string,
-        "arrow-nosotros" as string,
-    );
 </script>
+
+<style>
+    .accordion-panel {
+        transition: max-height 0.3s ease-out;
+    }
+</style>

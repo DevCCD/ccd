@@ -1,46 +1,181 @@
 ---
 // De momento, este componente no necesita lógica en el servidor.
 ---
+
 <section class="bg-gray-100 py-12 sm:py-24 px-8 lg:px-20">
-    <div class="container mx-auto grid md:grid-cols-2 gap-10 md:gap-16 items-center">
-        
+    <div
+        class="container mx-auto grid md:grid-cols-2 gap-10 md:gap-16 items-center"
+    >
         <!-- Columna de Texto -->
         <div class="md:text-left">
-            <h2 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-6  md:text-left">Contáctanos</h2>
+            <h2
+                class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-6 md:text-left"
+            >
+                Contáctanos
+            </h2>
             <p class="font-sans text-lg text-gray-900 mb-4">
-                Si desea obtener más información sobre nuestros servicios, complete el formulario. Un miembro del equipo se pondrá en contacto con usted lo antes posible.
+                Si desea obtener más información sobre nuestros servicios,
+                complete el formulario. Un miembro del equipo se pondrá en
+                contacto con usted lo antes posible.
             </p>
             <p class="font-sans text-base text-gray-500">
-                Al enviar este formulario, acepta que el CCD se comunique con usted sobre sus productos y servicios. Nunca compartiremos sus datos con terceros y podrá darse de baja en cualquier momento.
+                Al enviar este formulario, acepta que el CCD se comunique con
+                usted sobre sus productos y servicios. Nunca compartiremos sus
+                datos con terceros y podrá darse de baja en cualquier momento.
             </p>
         </div>
 
         <!-- Columna del Formulario -->
         <div class="w-full">
-            <form action="#" method="POST" class="space-y-6">
+            <form id="contact-form" class="space-y-6">
                 <div>
-                    <label for="name" class="block text-lg font-medium text-gray-700">Nombre</label>
-                    <input type="text" name="name" id="name" placeholder="Nombre" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary">
+                    <label
+                        for="name"
+                        class="block text-lg font-medium text-gray-700"
+                        >Nombre</label
+                    >
+                    <input
+                        type="text"
+                        name="user_name"
+                        id="name"
+                        placeholder="Nombre"
+                        required
+                        class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary"
+                    />
                 </div>
                 <div>
-                    <label for="lastname" class="block text-lg font-medium text-gray-700">Apellido</label>
-                    <input type="text" name="lastname" id="lastname" placeholder="Apellido" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary">
+                    <label
+                        for="lastname"
+                        class="block text-lg font-medium text-gray-700"
+                        >Apellido</label
+                    >
+                    <input
+                        type="text"
+                        name="user_lastname"
+                        id="lastname"
+                        placeholder="Apellido"
+                        required
+                        class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary"
+                    />
                 </div>
                 <div>
-                    <label for="phone" class="block text-lg font-medium text-gray-700">Celular</label>
-                    <input type="tel" name="phone" id="phone" placeholder="+51 999 999 999" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary">
+                    <label
+                        for="phone"
+                        class="block text-lg font-medium text-gray-700"
+                        >Celular</label
+                    >
+                    <input
+                        type="tel"
+                        name="user_phone"
+                        id="phone"
+                        placeholder="+51 999 999 999"
+                        required
+                        class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary"
+                    />
                 </div>
                 <div>
-                    <label for="email" class="block text-lg font-medium text-gray-700">Correo</label>
-                    <input type="email" name="email" id="email" placeholder="usuario@gmail.com" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary">
+                    <label
+                        for="email"
+                        class="block text-lg font-medium text-gray-700"
+                        >Correo</label
+                    >
+                    <input
+                        type="email"
+                        name="user_email"
+                        id="email"
+                        placeholder="usuario@gmail.com"
+                        required
+                        class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary"
+                    />
                 </div>
                 <div>
-                    <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-lg font-medium text-white bg-primary-dark hover:bg-primary transition-colors">
-                        Enviar
+                    <button
+                        type="submit"
+                        id="submit-button"
+                        class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-lg font-medium text-white bg-primary-dark hover:bg-primary transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                        <span id="button-text">Enviar</span>
                     </button>
+                </div>
+                <div
+                    id="form-status"
+                    class="hidden text-center p-3 rounded-md text-sm font-medium"
+                >
                 </div>
             </form>
         </div>
-
     </div>
 </section>
+
+<script>
+    import emailjs from "@emailjs/browser";
+
+    // CONFIGURACIÓN DE EMAILJS
+    // Sustituye estos valores con tus credenciales de EmailJS
+    const PUBLIC_KEY = "apXqYXf7bQh0WzPfJ"; // Reemplazar con la Public Key real
+    const SERVICE_ID = "service_iaszvze"; // Reemplazar con el Service ID real
+    const TEMPLATE_ID = "template_7l7k4n9"; // Reemplazar con el Template ID real
+
+    const form = document.getElementById("contact-form") as HTMLFormElement;
+    const submitButton = document.getElementById(
+        "submit-button",
+    ) as HTMLButtonElement;
+    const buttonText = document.getElementById("button-text");
+    const formStatus = document.getElementById("form-status");
+
+    if (form) {
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            // Reset status
+            if (formStatus) {
+                formStatus.classList.remove(
+                    "bg-green-100",
+                    "text-green-800",
+                    "bg-red-100",
+                    "text-red-800",
+                );
+                formStatus.classList.add("hidden");
+                formStatus.innerText = "";
+            }
+
+            // UI Feedback
+            if (submitButton) submitButton.disabled = true;
+            if (buttonText) buttonText.innerText = "Enviando...";
+
+            try {
+                // Validación local básica adicional
+                const formData = new FormData(form);
+
+                // Envío vía EmailJS
+                await emailjs.sendForm(
+                    SERVICE_ID,
+                    TEMPLATE_ID,
+                    form,
+                    PUBLIC_KEY,
+                );
+
+                // Éxito
+                if (formStatus) {
+                    formStatus.classList.remove("hidden");
+                    formStatus.classList.add("bg-green-100", "text-green-800");
+                    formStatus.innerText =
+                        "¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.";
+                }
+                form.reset();
+            } catch (error) {
+                console.error("Error al enviar el formulario:", error);
+                // Error
+                if (formStatus) {
+                    formStatus.classList.remove("hidden");
+                    formStatus.classList.add("bg-red-100", "text-red-800");
+                    formStatus.innerText =
+                        "Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.";
+                }
+            } finally {
+                if (submitButton) submitButton.disabled = false;
+                if (buttonText) buttonText.innerText = "Enviar";
+            }
+        });
+    }
+</script>

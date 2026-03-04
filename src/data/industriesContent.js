@@ -9,29 +9,29 @@ export const industriesContent = {
             "En el Centro para la Competitividad y el Desarrollo (CCD) ayudamos a mejorar la productividad agropecuaria, identificando, diseñando e implementando estrategias y actividades con enfoque territoriales y corredores económicos, en la cadena de valor de los productos que incluye comercialización, industrialización o transformación, logística y producción agropecuaria. Evaluamos e identificamos oportunidades para potenciar los beneficios y resultados esperados de las intervenciones agropecuarias como infraestructura, capital humano, promoviendo intervenciones integrales con participación pública y privada."
         ],
         mainImageAlt: "Sector Agropecuario",
-        flourishId: "27519702",
+        flourishId: "27781708",
         specialistSlugs: ["alvaro-gordillo", "karla-casas"],
         capabilitySlugs: ["corredores", "desarrollo"],
         introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770794345/Web%20CCD/Industrias/agropecuario_w2ulef.jpg",
         relatedWork: [
             {
                 title: "Planes de competitividad y productividad agrícola y/o pecuario",
-                image: "/industrias/mineria1.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772645206/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_nvqir5.jpg",
                 link: "/capacidades/competitividad#nuestro-trabajo"
             },
             {
                 title: "Estudio y asistencia técnica en proyectos para mejorar la productividad en cadenas de valor de productos agropecuarios",
-                image: "/industrias/mineria2.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770857525/Web%20CCD/Corporate%20Flat%20Illustration/planes_de_desarrollo_bvvqna.jpg",
                 link: "/capacidades/desarrollo#nuestro-trabajo"
             },
             {
                 title: "Evaluación de proyectos de infraestructura agropecuaria",
-                image: "/industrias/mineria.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772645488/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_4_u9bmzk.jpg",
                 link: "/capacidades/evaluacion#nuestro-trabajo"
             },
             {
                 title: "Fortalecimiento de capacidades a organizaciones agropecuarias en mejorar la productividad de las cadenas de valor de productos",
-                image: "/industrias/mineria.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772652226/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_18_srve9u.jpg",
                 link: "/capacidades/fortalecimiento#nuestro-trabajo"
             }
         ]
@@ -52,22 +52,22 @@ export const industriesContent = {
         relatedWork: [
             {
                 title: "Planes de agroexportación",
-                image: "/industrias/mineria1.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772645206/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_nvqir5.jpg",
                 link: "/capacidades/competitividad#nuestro-trabajo"
             },
             {
                 title: "Estudios de impactos de proyectos agroexportables",
-                image: "/industrias/mineria2.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770857524/Web%20CCD/Corporate%20Flat%20Illustration/planes_de_desarrollo2_tb0bj3.jpg",
                 link: "/capacidades/desarrollo#nuestro-trabajo"
             },
             {
                 title: "Desarrollo de clusters y microclusters agroexportables",
-                image: "/industrias/mineria.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772645346/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_1_qzpwtu.jpg",
                 link: "/capacidades/competitividad#nuestro-trabajo"
             },
             {
                 title: "Evaluación integral de proyectos agroexportables",
-                image: "/industrias/mineria.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772645488/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_4_u9bmzk.jpg",
                 link: "/capacidades/evaluacion#nuestro-trabajo"
             }
         ]
@@ -88,27 +88,27 @@ export const industriesContent = {
         relatedWork: [
             {
                 title: "Estudios de preinversión y expedientes técnicos para la construcción de infraestructura educativa básica regular y superior",
-                image: "/industrias/mineria1.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772649440/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_14_lmtp1h.jpg",
                 link: "/capacidades/evaluacion"
             },
             {
                 title: "Líneas de base, estudios de preinversión y definitivos y evaluación de proyectos sobre logros de aprendizaje",
-                image: "/industrias/mineria2.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772648608/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_13_blx3od.jpg",
                 link: "/capacidades/competitividad#nuestro-trabajo"
             },
             {
                 title: "Implementación de proyectos de formación digital en la educación básica regular",
-                image: "/industrias/mineria.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772649545/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_15_nltxde.jpg",
                 link: "/capacidades/desarrollo"
             },
             {
                 title: "Implementación de proyectos de formación tecnológica en la educación básica regular: computación, electrónica y electricidad",
-                image: "/industrias/mineria.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772645661/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_5_i29fsd.jpg",
                 link: "/capacidades/fortalecimiento"
             },
             {
                 title: "Evaluación de proyectos ambientales en la educación básica regular",
-                image: "/industrias/mineria1.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772652226/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_18_srve9u.jpg",
                 link: "/capacidades/fortalecimiento"
             }
         ]
@@ -211,7 +211,7 @@ export const industriesContent = {
     },
     "inteligencia": {
         title: "Inteligencia Artificial",
-        headerImage: "/industrias/inteligencia.jpg",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772644019/Web%20CCD/Industrias/ia_k5ny4x.webp",
         headerImagePosition: "center",
         paragraphs: ["Contenido en desarrollo para IA."],
         mainImageAlt: "Inteligencia Artificial",
@@ -386,7 +386,7 @@ export const industriesContent = {
     },
     "publico": {
         title: "Sector Público",
-        headerImage: "/industrias/publico.jpg",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770796429/Web%20CCD/Industrias/publico_zqyito.jpg",
         headerImagePosition: "center",
         paragraphs: [
             "El sector público está constituido por un conjunto de instituciones y organismos controlados por el Estado a fin de proveer servicios públicos como seguridad, protección de la propiedad, justicia, salud, educación, infraestructura física y blanda (instituciones, marcos legales y capital humano necesarios para que la infraestructura física funcione), así como estabilidad económica y promoción de los sectores económicos para el crecimiento sostenido y la generación de prosperidad de la población. Para lograr estos fines, el sector público está organizado bajo un sistema de gobernanza nacional, regional o local que debe garantizar el cumplimiento de la ley, con eficiencia, transparencia y rendición de cuentas.",
@@ -399,7 +399,7 @@ export const industriesContent = {
         flourishId: "27519702",
         specialistSlugs: ["rudy-laguna", "viviana-sanchez", "elmer-huaman", "alex-carbajal"],
         capabilitySlugs: ["competitividad", "desarrollo"],
-        introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770796429/Web%20CCD/Industrias/publico_zqyito.jpg",
+        introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770796907/Web%20CCD/Industrias/financiero_sp68st.webp",
         relatedWork: [
             {
                 title: "Asesoría, asistencia técnica y fortalecimiento de capacidades para el diseño, normatividad, implementación y evaluación de políticas públicas",

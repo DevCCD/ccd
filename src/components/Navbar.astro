@@ -12,7 +12,7 @@ const isNosotrosActive = currentPath.startsWith("/nosotros");
 // Clase común para el estado activo (Negrita y Subrayado)
 const activeClass =
     "text-primary font-bold underline decoration-primary decoration-2 underline-offset-8";
-const inactiveClass = "text-primary hover:text-primary-dark";
+const inactiveClass = "text-primary hover:text-primary hover:font-bold";
 ---
 
 <header
@@ -20,7 +20,7 @@ const inactiveClass = "text-primary hover:text-primary-dark";
     class="bg-white text-gray-800 sticky top-0 z-50 transition-all duration-300 py-3"
 >
     <nav
-        class="container mx-auto px-6 grid grid-cols-2 md:grid-cols-3 items-center"
+        class="container mx-auto px-6 grid grid-cols-2 xl:grid-cols-3 items-center"
     >
         <!-- Logo (Lado Izquierdo) -->
         <div class="flex justify-start">
@@ -34,7 +34,7 @@ const inactiveClass = "text-primary hover:text-primary-dark";
         </div>
 
         <!-- MENÚ DE NAVEGACIÓN (Centro - Desktop) -->
-        <div class="hidden md:flex justify-center">
+        <div class="hidden xl:flex justify-center">
             <ul class="flex items-center space-x-8 text-lg font-medium">
                 <!-- 1. CAPACIDADES (LANDING + DESPLEGABLE) -->
                 <li class="group relative">
@@ -60,8 +60,13 @@ const inactiveClass = "text-primary hover:text-primary-dark";
                     </a>
                     <!-- Panel Desplegable -->
                     <div
-                        class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto w-[800px]"
+                        class="absolute top-[calc(100%+12px)] left-1/2 -translate-x-1/2 pt-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto w-[800px]"
                     >
+                        <!-- Puente invisible para mantener el hover -->
+                        <div
+                            class="absolute -top-4 left-0 w-full h-4 bg-transparent"
+                        >
+                        </div>
                         <div
                             class="bg-white rounded-sm shadow-lg p-10 border-t-2 border-primary"
                         >
@@ -151,8 +156,13 @@ const inactiveClass = "text-primary hover:text-primary-dark";
                     </a>
                     <!-- Panel Desplegable -->
                     <div
-                        class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto w-[800px]"
+                        class="absolute top-[calc(100%+12px)] left-1/2 -translate-x-1/2 pt-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto w-[800px]"
                     >
+                        <!-- Puente invisible para mantener el hover -->
+                        <div
+                            class="absolute -top-4 left-0 w-full h-4 bg-transparent"
+                        >
+                        </div>
                         <div
                             class="bg-white rounded-sm shadow-lg p-10 border-t-2 border-primary"
                         >
@@ -263,6 +273,18 @@ const inactiveClass = "text-primary hover:text-primary-dark";
 
                 <li>
                     <a
+                        href="/paises"
+                        class="transition-colors duration-300"
+                        class:list={[
+                            currentPath === "/paises"
+                                ? activeClass
+                                : inactiveClass,
+                        ]}>Países</a
+                    >
+                </li>
+
+                <li>
+                    <a
                         href="/carreras"
                         class="transition-colors duration-300"
                         class:list={[
@@ -295,13 +317,18 @@ const inactiveClass = "text-primary hover:text-primary-dark";
                         >
                     </button>
                     <div
-                        class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto w-[650px]"
+                        class="absolute top-[calc(100%+12px)] left-1/2 -translate-x-1/2 pt-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto w-[400px]"
                     >
+                        <!-- Puente invisible para mantener el hover -->
+                        <div
+                            class="absolute -top-4 left-0 w-full h-4 bg-transparent"
+                        >
+                        </div>
                         <div
                             class="bg-white rounded-sm shadow-lg p-10 border-t-2 border-primary"
                         >
                             <div
-                                class="grid grid-cols-3 gap-10 text-gray-600 font-normal text-base"
+                                class="grid grid-cols-2 gap-10 text-gray-600 font-normal text-base"
                             >
                                 <ul class="space-y-4">
                                     <li>
@@ -329,15 +356,6 @@ const inactiveClass = "text-primary hover:text-primary-dark";
                                     </li>
                                     <li>
                                         <a
-                                            href="/nosotros/equipo#liderazgo"
-                                            class="hover:text-primary hover:underline block"
-                                            >Liderazgo</a
-                                        >
-                                    </li>
-                                </ul>
-                                <ul class="space-y-4">
-                                    <li>
-                                        <a
                                             href="/nosotros/enfoque"
                                             class="hover:text-primary hover:underline block"
                                             >Enfoque</a
@@ -360,21 +378,27 @@ const inactiveClass = "text-primary hover:text-primary-dark";
                         ]}>Contacto</a
                     >
                 </li>
+
+                <li>
+                    <a
+                        href="https://milink.competitividadccd.com/login/index.php"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="transition-colors duration-300"
+                        class:list={[
+                            currentPath === "/milink"
+                                ? activeClass
+                                : inactiveClass,
+                        ]}>MiLink</a
+                    >
+                </li>
             </ul>
         </div>
 
-        <!-- Acciones Derecha (MiLink + Hamburguesa) -->
         <div class="flex justify-end items-center space-x-6">
-            <a
-                href="https://milink.competitividadccd.com/login/index.php"
-                class="hidden md:block text-lg font-medium text-primary hover:text-primary-dark transition-colors duration-300"
-            >
-                MiLink
-            </a>
-
             <button
                 id="mobile-menu-button"
-                class="md:hidden p-2 rounded-md border-2 border-primary text-primary hover:bg-primary/10 transition-colors"
+                class="xl:hidden p-2 rounded-md border-2 border-primary text-primary hover:bg-primary/10 transition-colors"
             >
                 <svg
                     id="hamburger-icon"
@@ -409,7 +433,7 @@ const inactiveClass = "text-primary hover:text-primary-dark";
     <!-- MENÚ MÓVIL -->
     <div
         id="mobile-menu"
-        class="hidden md:hidden bg-white border-t border-gray-100 shadow-inner"
+        class="hidden xl:hidden bg-white border-t border-gray-100 shadow-inner"
     >
         <div class="px-4 pt-4 pb-6 space-y-2">
             <a
@@ -423,6 +447,13 @@ const inactiveClass = "text-primary hover:text-primary-dark";
                 class="block px-3 py-3 rounded-md text-base font-medium text-primary hover:bg-gray-50"
                 class:list={{ "bg-gray-50 font-bold": isIndustriasActive }}
                 >Industrias</a
+            >
+            <a
+                href="/paises"
+                class="block px-3 py-3 rounded-md text-base font-medium text-primary hover:bg-gray-50"
+                class:list={{
+                    "bg-gray-50 font-bold": currentPath === "/paises",
+                }}>Países</a
             >
 
             <div>
@@ -484,6 +515,8 @@ const inactiveClass = "text-primary hover:text-primary-dark";
             >
             <a
                 href="https://milink.competitividadccd.com/login/index.php"
+                target="_blank"
+                rel="noopener noreferrer"
                 class="block px-3 py-3 rounded-md text-base font-medium text-primary font-bold"
                 >MiLink</a
             >

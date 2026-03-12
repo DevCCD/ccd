@@ -1,143 +1,165 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import PageHeader from "../components/PageHeader.astro";
+import IndustryCard from "../components/industrias/IndustryCard.astro";
 
-
-const industrias = [
+const sections = [
     {
-        title: "Agropecuario",
-        slug: "agropecuario",
-        description: "Las actividades agropecuarias modernas y en proceso de modernización, de alta y baja escala y productividad, coexisten.",
-        image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770791069/Web%20CCD/Industrias/agropecuario_pjqvtz.jpg", 
+        bg: "bg-white",
+        items: [
+            {
+                title: "Agropecuario",
+                slug: "agropecuario",
+                description:
+                    "El sector agropecuario está conformado por las actividades agrícolas y pecuarias. La agrícola, realizada principalmente a través del uso de la tierra, produce alimentos para la población y los animales, mientras que el pecuario está conformado por aquellas actividades dedicadas a la crianza, manejo y explotación de animales para la obtención de alimentos y materias primas.",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770791069/Web%20CCD/Industrias/agropecuario_pjqvtz.jpg",
+                span: "col-span-6 md:col-span-3 lg:col-span-2",
+            },
+            {
+                title: "Agroexportación",
+                slug: "agroexportacion",
+                description:
+                    "Es una industria creciente cuyos productos agrícolas se comercializan globalmente, influenciado por el aumento de la población, los ingresos, la aplicación de nuevas tecnologías que amplían fronteras agrícolas, así como por la tendencia creciente en el consumo de productos naturales, frescos y saludables.",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770795288/Web%20CCD/Industrias/agroexportacion_oeftc2.jpg",
+                span: "col-span-6 md:col-span-3 lg:col-span-2",
+            },
+            {
+                title: "Educación",
+                slug: "educacion",
+                description:
+                    "La educación adecuada y de calidad es fundamental en todo proceso de desarrollo sostenible. La educación genera importantes externalidades positivas, principalmente en los factores productivo, social y cultural.",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770795786/Web%20CCD/Industrias/educacion_ftmssr.jpg",
+                span: "col-span-6 md:col-span-3 lg:col-span-2",
+            },
+        ],
     },
     {
-        title: "Agroexportación",
-        slug: "agroexportacion",
-        description: "Es una industria creciente cuyos productos agrícolas se comercializan globalmente, influenciado por el aumento de la población, los ingresos, la aplicación de nuevas tecnologías que amplían fronteras agrícolas, así como por la tendencia creciente en el consumo de productos naturales, frescos y saludables.",
-        image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770795288/Web%20CCD/Industrias/agroexportacion_oeftc2.jpg",
+        bg: "bg-gradient-to-t from-secondary-light/20 to-secondary", // Fondo diferente para sección de 2
+        items: [
+            {
+                title: "Hidrocarburos",
+                slug: "hidrocarburos",
+                description:
+                    "El desarrollo de un proyecto en el sector hidrocarburos comprenden principalmente el proceso de obtención de los lotes, la exploración, la construcción y el desarrollo de los lotes y pozos hidrocarburiferos.",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770796112/Web%20CCD/Industrias/hidrocarburos_mz5gjc.jpg",
+                span: "col-span-6 md:col-span-3 lg:col-span-3",
+            },
+            {
+                title: "Infraestructura y Construcción",
+                slug: "infraestructura",
+                description:
+                    "La infraestructura es el conjunto de estructuras de ingeniería y equipos cuya utilidad y uso se prolonga por un largo periodo. A través del uso de la infraestructura los agentes económicos generan bienes y servicios con fines individuales, sociales y productivos e incrementan los ingresos.",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773279732/Web%20CCD/Industrias/pexels-diego-pontes-901015-2314021_spgwqa.jpg",
+                span: "col-span-6 md:col-span-3 lg:col-span-3",
+            },
+        ],
     },
     {
-        title: "Educación",
-        slug: "educacion",
-        description: "La educación adecuada y de calidad es fundamental en todo proceso de desarrollo sostenible. La educación genera importantes externalidades positivas, principalmente en los factores productivo, social y cultural.",
-        image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770795786/Web%20CCD/Industrias/educacion_ftmssr.jpg",
+        bg: "bg-gray-200",
+        items: [
+            {
+                title: "Inteligencia Artificial",
+                slug: "inteligencia",
+                description:
+                    "La inteligencia artificial es un conjunto de sistemas tecnológicos (software o hardware) diseñados y elaborados para realizar funciones de aprendizaje profundo (deep learning), análisis de grandes volúmenes de datos, razonamiento y percepción, a fin de resolver problemas de manera creativa buscando imitar funcionalidades de la inteligencia humana.",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772644019/Web%20CCD/Industrias/ia_k5ny4x.webp",
+                span: "col-span-6 md:col-span-3 lg:col-span-2",
+            },
+            {
+                title: "Manufactura",
+                slug: "manufactura",
+                description:
+                    "El sector manufacturero mediante métodos, formulas, procesos y actividades se encarga de transformar insumos, materias primas o productos intermedios en bienes terminados o finales para los consumidores o bienes semielaborados demandados o requeridos por diversos sectores de la economía.",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773280947/Web%20CCD/Industrias/pexels-883349675-29899505_vu3z9a.jpg",
+                span: "col-span-6 md:col-span-3 lg:col-span-2",
+            },
+            {
+                title: "Minería",
+                slug: "mineria",
+                description:
+                    "Las etapas de la actividad minera comprenden principalmente el proceso de obtención de la concesión minera, la exploración, la construcción y el desarrollo de la mina, la explotación y transformación del recursos minero o mineral en productos comercializables, el transporte y el cierre de minas.",
+                image: "/industrias/mineria.jpg",
+                span: "col-span-6 md:col-span-3 lg:col-span-2",
+            },
+        ],
     },
     {
-        title: "Hidrocarburos",
-        slug: "hidrocarburos",
-        description: "El desarrollo de un proyecto en el sector hidrocarburos comprenden principalmente el proceso de obtención de los lotes, la exploración, la construcción y el desarrollo de los lotes y pozos hidrocarburiferos.",
-        image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770796112/Web%20CCD/Industrias/hidrocarburos_mz5gjc.jpg",
+        bg: "bg-white",
+        items: [
+            {
+                title: "Seguridad Ciudadana",
+                slug: "seguridad",
+                description:
+                    "La seguridad ciudadana es un derecho humano y un bien público que deben ser garantizados por los Estados, en labor conjunta con la sociedad. El objetivo de la seguridad ciudadana es tener convivencia pacífica que proteja la integridad de las personas naturales y jurídicas, con resguardo de los bienes para poder realizar actividades económicas, sociales, políticas y culturales en un entorno ordenado y seguro.",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773281534/Web%20CCD/Industrias/seguridad-taxi-san-francisco-halloween-1-scaled-1_zxp7te.webp",
+                span: "col-span-6 md:col-span-3 lg:col-span-2",
+            },
+            {
+                title: "Sector Público",
+                slug: "publico",
+                description:
+                    "El sector público está constituido por un conjunto de instituciones y organismos controlados por el Estado a fin de proveer servicios públicos como seguridad, protección de la propiedad, justicia, salud, educación, infraestructura física y blanda.",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770796429/Web%20CCD/Industrias/publico_zqyito.jpg",
+                span: "col-span-6 md:col-span-3 lg:col-span-2",
+            },
+            {
+                title: "Servicios Portuarios",
+                slug: "portuarios",
+                description:
+                    "Los sistemas portuarios son fundamentales en todo proceso de desarrollo porque permiten la transacción de bienes, mayor comercio internacional, ampliación de mercados y expansión de las ventas de las grandes, medianas, pequeñas y micro empresas ubicadas en el país, región, distrito o comunidad.",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773281993/Web%20CCD/Industrias/96694_j7iiry.jpg",
+                span: "col-span-6 md:col-span-3 lg:col-span-2",
+            },
+        ],
     },
     {
-        title: "Infraestructura y Construcción",
-        slug: "infraestructura",
-        description: "La infraestructura es el conjunto de estructuras de ingeniería y equipos cuya utilidad y uso se prolonga por un largo periodo. A través del uso de la infraestructura los agentes económicos generan bienes y servicios con fines individuales, sociales y productivos e incrementan los ingresos.",
-        image: "/industrias/infraestructura.jpg",
-    },
-    {
-        title: "Inteligencia Artificial",
-        slug: "inteligencia",
-        description: "Implementación estratégica de soluciones de IA para optimizar procesos, predecir tendencias y mejorar la toma de decisiones basadas en datos en diversos sectores.",
-        image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772644019/Web%20CCD/Industrias/ia_k5ny4x.webp",
-    },
-    {
-        title: "Manufactura",
-        slug: "manufactura",
-        description: "Modernización de procesos industriales para aumentar la eficiencia, calidad y valor agregado de la producción, fomentando la innovación tecnológica.",
-        image: "/industrias/manufactura.jpg",
-    },
-    {
-        title: "Minería",
-        slug: "mineria",
-        description: "Las etapas de la actividad minera comprenden principalmente el proceso de obtención de la concesión minera, la exploración, la construcción y el desarrollo de la mina, la explotación y transformación del recursos minero o mineral en productos comercializables, el transporte y el cierre de minas.",
-        image: "/industrias/mineria.jpg",
-    },
-
-    {
-        title: "Seguridad",
-        slug: "seguridad",
-        description: "Estrategias integrales para la seguridad ciudadana y patrimonial, creando entornos estables fundamentales para el clima de negocios y la paz social.",
-        image: "/industrias/seguridad.jpg",
-    },
-    {
-        title: "Sector Público",
-        slug: "publico",
-        description: "El sector público está constituido por un conjunto de instituciones y organismos controlados por el Estado a fin de proveer servicios públicos como seguridad, protección de la propiedad, justicia, salud, educación, infraestructura física y blanda.",
-        image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770796429/Web%20CCD/Industrias/publico_zqyito.jpg",
-    },
-    {
-        title: "Servicios Portuarios",
-        slug: "portuarios",
-        description: "Optimización logística y operativa de puertos para mejorar la conectividad, reducir costos logísticos y potenciar el comercio exterior del país.",
-        image: "/industrias/portuarios.jpg",
-    },
-    {
-        title: "Sistema Financiero",
-        slug: "financiero",
-        description: "El sistema financiero es el conjunto de instituciones, normas, medios físicos y virtuales y mercados que tienen por objetivo principal canalizar el ahorro de quienes tienen excedente de dinero, hacia quienes necesitan financiamiento.",
-        image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770796907/Web%20CCD/Industrias/financiero_sp68st.webp",
-    },
-    {
-        title: "Tecnología",
-        slug: "tecnologia",
-        description: "Impulso a la transformación digital transversal para elevar la competitividad, agilidad y capacidad de innovación en todos los sectores económicos.",
-        image: "/industrias/tecnologia.jpg",
+        bg: "bg-gradient-to-t from-secondary-light/20 to-secondary-light", // Fondo diferente para sección de 2
+        items: [
+            {
+                title: "Sistema Financiero",
+                slug: "financiero",
+                description:
+                    "El sistema financiero es el conjunto de instituciones, normas, medios físicos y virtuales y mercados que tienen por objetivo principal canalizar el ahorro de quienes tienen excedente de dinero, hacia quienes necesitan financiamiento.",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770796907/Web%20CCD/Industrias/financiero_sp68st.webp",
+                span: "col-span-6 md:col-span-3 lg:col-span-3",
+            },
+            {
+                title: "Tecnología",
+                slug: "tecnologia",
+                description:
+                    "La tecnología integra y realiza aplicación práctica del conocimiento para crear dispositivos y servicios que funcionen de manera autónoma y reproducible para resolver problemas y mejorar la calidad de vida de las personas.",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773289166/Web%20CCD/Industrias/energi%CC%81a_renovable_apertura-paneles-sostenible-panel-solar-eolica-molinos-medioambiente_zuseid.avif",
+                span: "col-span-6 md:col-span-3 lg:col-span-3",
+            },
+        ],
     },
 ];
 
-const headerImage = "/industrias/header-main.jpg"; // Imagen opcional para el PageHeader si decides usarlo
+const headerImage =
+    "https://res.cloudinary.com/ccdcloudy/image/upload/v1773271887/Web%20CCD/Industrias/frames-for-your-heart-VoI2jd75M6Q-unsplash_ttz5om.jpg";
 ---
 
 <Layout title="Industrias - CCD">
+    <!-- HEADER SECTION -->
+    <PageHeader title="Nuestras Industrias" backgroundImage={headerImage} />
 
-    <!-- HEADER SECTION USANDO PAGEHEADER COMPONENT -->
-  <PageHeader 
-    title="Nuestras Industrias"
-    description="Aportamos experiencia estratégica en múltiples sectores económicos, potenciando el crecimiento y la competitividad."
-  />
-
-  <section class="bg-gray-50 py-12 md:py-20">
-    <!-- Increased max-width to 7xl and reduced padding for wider cards -->
-    <div class="container mx-auto px-4 md:px-6 max-w-[1600px] space-y-8 md:space-y-12">
-      {industrias.map((industria, index) => (
-        <a href={`/industrias/${industria.slug}`} class="group block bg-white shadow-sm hover:shadow-xl transition-shadow duration-300 rounded-sm overflow-hidden border border-gray-100">
-          <div class={`flex flex-col md:flex-row min-h-[450px] ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
-            
-            <!-- IMAGEN -->
-            <div class="w-full md:w-1/2 relative overflow-hidden">
-                <div class="absolute inset-0 bg-gray-900/10 group-hover:bg-transparent transition-colors duration-300 z-10"></div>
-                <img 
-                  src={industria.image} 
-                  alt={industria.title}
-                  class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                />
-            </div>
-
-            <!-- CONTENIDO -->
-            <div class="w-full md:w-1/2 p-8 md:p-16 lg:p-24 flex flex-col justify-center">
-                
-                <!-- Título + Flecha Grande -->
-                <div class="flex items-start gap-4 mb-6">
-                    <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight group-hover:text-primary transition-colors duration-300">
-                        {industria.title}
-                    </h2>
-                    <!-- Flecha Grande Estilo McKinsey -->
-                    <svg class="w-8 h-8 md:w-10 md:h-10 text-primary flex-shrink-0 mt-1.5 md:mt-2 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
-                    </svg>
+    {
+        sections.map((section) => (
+            <section class={`${section.bg} py-20`}>
+                <div class="container mx-auto px-6 max-w-[1600px]">
+                    <div class="grid grid-cols-6 gap-x-8 gap-y-16">
+                        {section.items.map((industria) => (
+                            <IndustryCard
+                                title={industria.title}
+                                description={industria.description}
+                                image={industria.image}
+                                link={`/industrias/${industria.slug}`}
+                                colSpan={industria.span}
+                            />
+                        ))}
+                    </div>
                 </div>
-
-                <p class="text-gray-600 text-lg md:text-xl leading-relaxed">
-                  {industria.description}
-                </p>
-
-            </div>
-          </div>
-        </a>
-      ))}
-    </div>
-  </section>
-
-
-
+            </section>
+        ))
+    }
 </Layout>

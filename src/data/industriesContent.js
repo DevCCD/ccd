@@ -9,29 +9,29 @@ export const industriesContent = {
             "En el Centro para la Competitividad y el Desarrollo (CCD) ayudamos a mejorar la productividad agropecuaria, identificando, diseñando e implementando estrategias y actividades con enfoque territoriales y corredores económicos, en la cadena de valor de los productos que incluye comercialización, industrialización o transformación, logística y producción agropecuaria. Evaluamos e identificamos oportunidades para potenciar los beneficios y resultados esperados de las intervenciones agropecuarias como infraestructura, capital humano, promoviendo intervenciones integrales con participación pública y privada."
         ],
         mainImageAlt: "Sector Agropecuario",
-        flourishId: "27781708",
+        flourishId: "28018262",
         specialistSlugs: ["alvaro-gordillo", "karla-casas"],
         capabilitySlugs: ["corredores", "desarrollo"],
         introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770794345/Web%20CCD/Industrias/agropecuario_w2ulef.jpg",
         relatedWork: [
             {
                 title: "Planes de competitividad y productividad agrícola y/o pecuario",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772645206/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_nvqir5.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773296620/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/8_xci6pf.webp",
                 link: "/capacidades/competitividad#nuestro-trabajo"
             },
             {
                 title: "Estudio y asistencia técnica en proyectos para mejorar la productividad en cadenas de valor de productos agropecuarios",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770857525/Web%20CCD/Corporate%20Flat%20Illustration/planes_de_desarrollo_bvvqna.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773296981/Web%20CCD/Industrias/agricultura-peruana_zd2ogr.webp",
                 link: "/capacidades/desarrollo#nuestro-trabajo"
             },
             {
                 title: "Evaluación de proyectos de infraestructura agropecuaria",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772645488/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_4_u9bmzk.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773297099/Web%20CCD/Industrias/standard_WhatsApp-Image-2023-04-25-at-11.24.51-AM-2_judom4.jpg",
                 link: "/capacidades/evaluacion#nuestro-trabajo"
             },
             {
                 title: "Fortalecimiento de capacidades a organizaciones agropecuarias en mejorar la productividad de las cadenas de valor de productos",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772652226/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_18_srve9u.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773297234/Web%20CCD/Industrias/El-rol-de-ingeniero-agroindustrial1_owf0wj.jpg",
                 link: "/capacidades/fortalecimiento#nuestro-trabajo"
             }
         ]
@@ -52,22 +52,22 @@ export const industriesContent = {
         relatedWork: [
             {
                 title: "Planes de agroexportación",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772645206/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_nvqir5.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773300048/Web%20CCD/Industrias/boom-agroexportador-scaled_d4qkqo.jpg",
                 link: "/capacidades/competitividad#nuestro-trabajo"
             },
             {
                 title: "Estudios de impactos de proyectos agroexportables",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770857524/Web%20CCD/Corporate%20Flat%20Illustration/planes_de_desarrollo2_tb0bj3.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773300238/Web%20CCD/Industrias/Agroexportacion-02-scaled_gdxep3.webp",
                 link: "/capacidades/desarrollo#nuestro-trabajo"
             },
             {
                 title: "Desarrollo de clusters y microclusters agroexportables",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772645346/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_1_qzpwtu.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773300051/Web%20CCD/Industrias/07-DE-FEBRERO-AGRO-CHAVIC-2_sgsd8q.jpg",
                 link: "/capacidades/competitividad#nuestro-trabajo"
             },
             {
                 title: "Evaluación integral de proyectos agroexportables",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772645488/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_4_u9bmzk.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773300235/Web%20CCD/Industrias/Westfalia-Peru-impulsa-un-modelo-sostenible-de-agroexportacion-con-foco-en-calidad-tecnologia-y-alianzas-con-pequenos-medianos-y-grandes-productores_ufc8bm.jpg",
                 link: "/capacidades/evaluacion#nuestro-trabajo"
             }
         ]
@@ -435,7 +435,7 @@ export const industriesContent = {
     },
     "portuarios": {
         title: "Servicios Portuarios",
-        headerImage: "/industrias/portuarios.jpg",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773281993/Web%20CCD/Industrias/96694_j7iiry.jpg",
         headerImagePosition: "center",
         paragraphs: ["Contenido en desarrollo para servicios portuarios."],
         mainImageAlt: "Servicios Portuarios",
@@ -512,7 +512,7 @@ export const industriesContent = {
     },
     "tecnologia": {
         title: "Tecnología",
-        headerImage: "/industrias/tecnologia.jpg",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773278321/Web%20CCD/Industrias/tecnologia_kx2cv2.jpg",
         headerImagePosition: "center",
         paragraphs: ["Contenido en desarrollo para tecnología."],
         mainImageAlt: "Tecnología",

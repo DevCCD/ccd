@@ -59,10 +59,18 @@ const directores = [
         </div>
     </section>
     <!-- SECCIÓN: INTRO/VALUE PROP -->
-    <section class="py-20 bg-white text-center">
+    <section
+        class="py-24 bg-gradient-to-r from-primary-dark via-primary to-primary-dark text-white text-center"
+    >
         <div class="container mx-auto px-6 max-w-4xl">
             <p
-                class="font-serif text-2xl md:text-3xl text-gray-800 leading-relaxed font-light"
+                class="font-serif text-xl md:text-xl text-white font-light gsap-fade-up leading-[1.8] md:leading-[1.9]"
+            >
+                Visión
+            </p>
+            <br />
+            <p
+                class="font-serif text-3xl md:text-4xl text-white leading-relaxed font-light gsap-fade-up leading-[1.8] md:leading-[1.3]"
             >
                 "Promover el desarrollo y la prosperidad con oportunidades y
                 alta calidad de vida de la población nacional, regional,
@@ -91,7 +99,7 @@ const directores = [
                 </div>
 
                 <!-- Contenido -->
-                <div class="w-full lg:w-1/2 order-1 lg:order-2">
+                <div class="w-full lg:w-1/2 order-1 lg:order-2 gsap-slide-left">
                     <h2
                         class="font-serif text-4xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight"
                     >
@@ -133,7 +141,7 @@ const directores = [
                 class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20"
             >
                 <!-- Contenido (Izquierda en Desktop) -->
-                <div class="w-full lg:w-1/2 order-1">
+                <div class="w-full lg:w-1/2 order-1 gsap-slide-right">
                     <h2
                         class="font-serif text-4xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight"
                     >
@@ -182,10 +190,12 @@ const directores = [
     </section>
 
     <!-- SECCIÓN: EQUIPO PRINCIPAL -->
-    <section class="bg-gray-50 py-16 md:py-24">
+    <section
+        class="bg-gradient-to-b from-secondary-light/20 to-secondary py-16 md:py-24"
+    >
         <div class="container mx-auto px-6">
             <h2
-                class="font-serif text-4xl md:text-5xl font-bold text-primary text-center mb-4"
+                class="font-serif text-4xl md:text-5xl font-bold text-black text-center mb-4"
             >
                 Nuestro Equipo
             </h2>
@@ -198,11 +208,11 @@ const directores = [
 
             <!-- Grid de Equipo: 3 columnas centradas -->
             <div
-                class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto"
+                class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto gsap-team-grid"
             >
                 {
                     directores.map((member) => (
-                        <div>
+                        <div class="gsap-team-card">
                             <TeamCard
                                 name={member.name}
                                 role={member.role}
@@ -218,7 +228,7 @@ const directores = [
             <div class="text-center mt-16">
                 <a
                     href="/nosotros/equipo"
-                    class="inline-block bg-primary text-white font-bold py-3 px-8 rounded-lg hover:bg-primary-dark transition-colors"
+                    class="inline-block bg-primary border-2 border-primary text-white font-bold py-3 px-8 rounded-lg hover:bg-primary-dark hover:text-white transition-all duration-300"
                 >
                     Ver Equipo Completo
                 </a>
@@ -229,33 +239,89 @@ const directores = [
 
 <script>
     import { gsap } from "gsap";
+    import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-    // Las animaciones de GSAP siguen funcionando perfectamente
-    gsap.from("#hero-title", {
-        opacity: 0,
-        y: 50,
-        duration: 1,
-        ease: "power3.out",
+    // Registramos el plugin para que funcione con el scroll
+    gsap.registerPlugin(ScrollTrigger);
+
+    // ==========================================
+    // 1. ANIMACIÓN DEL HERO (Aparece al cargar)
+    // ==========================================
+    const heroTl = gsap.timeline();
+    heroTl
+        .from("#hero-title", {
+            opacity: 0,
+            y: 40,
+            duration: 1,
+            ease: "power3.out",
+        })
+        .from(
+            "#hero-subtitle",
+            { opacity: 0, y: 40, duration: 1, ease: "power3.out" },
+            "-=0.7",
+        )
+        .from(
+            "#hero-button",
+            { opacity: 0, y: 40, duration: 1, ease: "power3.out" },
+            "-=0.8",
+        )
+        .from(
+            "#hero-image",
+            { opacity: 0, x: 50, duration: 1.2, ease: "power3.out" },
+            "-=1",
+        );
+
+    // ==========================================
+    // 2. ANIMACIONES AL HACER SCROLL
+    // ==========================================
+
+    // A. Elementos que suben suavemente (Textos, Títulos)
+    gsap.utils.toArray(".gsap-fade-up").forEach((elem: any) => {
+        gsap.from(elem, {
+            scrollTrigger: {
+                trigger: elem,
+                start: "top 85%", // La animación empieza cuando el elemento toca el 85% de la pantalla
+                toggleActions: "play none none none",
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            ease: "power3.out",
+        });
     });
-    gsap.from("#hero-subtitle", {
-        opacity: 0,
-        y: 50,
-        duration: 1,
-        delay: 0.3,
-        ease: "power3.out",
+
+    // B. Elementos que entran desde la Izquierda (Imágenes o Textos)
+    gsap.utils.toArray(".gsap-slide-left").forEach((elem: any) => {
+        gsap.from(elem, {
+            scrollTrigger: { trigger: elem, start: "top 85%" },
+            x: -60,
+            opacity: 0,
+            duration: 1.2,
+            ease: "power3.out",
+        });
     });
-    gsap.from("#hero-button", {
-        opacity: 0,
-        y: 50,
-        duration: 1,
-        delay: 0.5,
-        ease: "power3.out",
+
+    // C. Elementos que entran desde la Derecha (Imágenes o Textos)
+    gsap.utils.toArray(".gsap-slide-right").forEach((elem: any) => {
+        gsap.from(elem, {
+            scrollTrigger: { trigger: elem, start: "top 85%" },
+            x: 60,
+            opacity: 0,
+            duration: 1.2,
+            ease: "power3.out",
+        });
     });
-    gsap.from("#hero-image", {
+
+    // D. Efecto Cascada (Stagger) para las tarjetas del Equipo
+    gsap.from(".gsap-team-card", {
+        scrollTrigger: {
+            trigger: ".gsap-team-grid", // Contenedor padre
+            start: "top 80%",
+        },
+        y: 50,
         opacity: 0,
-        scale: 0.9,
-        duration: 1.2,
-        delay: 0.2,
+        duration: 0.8,
+        stagger: 0.2, // Cada tarjeta aparece 0.2s después de la anterior
         ease: "power3.out",
     });
 </script>

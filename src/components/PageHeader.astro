@@ -15,7 +15,7 @@ const { title, description, backgroundImage } = Astro.props;
   {backgroundImage && (
     <div class="absolute inset-0 z-0">
         <!-- Imagen -->
-        <img src={backgroundImage} alt={title} class="w-full h-full object-cover" />
+        <img src={backgroundImage} alt={title} class="w-full h-full object-cover transition-transform duration-[30000ms]" />
         <!-- Overlay sofisticado con degradado para legibilidad -->
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
     </div>

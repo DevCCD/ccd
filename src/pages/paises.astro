@@ -1,0 +1,434 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PageHeader from "../components/PageHeader.astro";
+
+// Contenido para la página de Países
+// Usamos imágenes de referencia que el usuario ha estado utilizando o placeholders premium
+const headerImage =
+    "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg";
+const introImage =
+    "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"; // Placeholder para imagen de impacto
+---
+
+<Layout title="Países - CCD">
+    <!-- 1. BANNER CON IMAGEN -->
+    <PageHeader title="Países" backgroundImage={headerImage} />
+
+    <!-- 2. PÁRRAFO DE SOLO TEXTO -->
+    <section class="bg-white py-20 md:py-28">
+        <div class="container mx-auto px-6 lg:px-12 max-w-5xl text-center">
+            <p
+                class="font-sans text-xl md:text-2xl text-gray-700 leading-relaxed"
+            >
+                El Centro para la Competitividad y el Desarrollo (CCD) es un
+                socio estratégico de organizaciones que operan globalmente y
+                tienen como objetivo impulsar la competitividad y el desarrollo
+                del entorno territorial nacional, regional, local o comunal
+                donde realizarán sus actividades.
+            </p>
+        </div>
+    </section>
+
+    <!-- 3. PÁRRAFO ACOMPAÑADO DE IMAGEN AL LADO -->
+    <section
+        class="w-full flex flex-col lg:flex-row items-stretch border-t border-gray-100"
+    >
+        <!-- Imagen -->
+        <div
+            class="relative w-full lg:w-1/2 min-h-[400px] lg:min-h-[600px] overflow-hidden"
+        >
+            <img
+                src="https://res.cloudinary.com/ccdcloudy/image/upload/v1773305559/Web%20CCD/paises/pexels-olly-3769138_o4ipai.jpg"
+                alt="Impacto global"
+                class="absolute inset-0 w-full h-full object-cover"
+            />
+        </div>
+
+        <!-- Texto con fondo sutil -->
+        <div
+            class="w-full lg:w-1/2 bg-secondary-light/50 py-16 px-12 md:px-20 flex flex-col justify-center"
+        >
+            
+            <p
+                class="font-sans text-xl md:text-2xl text-gray-800 leading-relaxed"
+            >
+                Los servicios especializados de asistencia técnica y consultoría
+                que brinda el CCD se encuentran en las áreas de competitividad y
+                desarrollo, política y gestión pública, estudios económicos,
+                legal y CCD Tech, principalmente con amplia experiencia en las
+                industrias agropecuario, agroexportación, educación,
+                hidrocarburos, infraestructura y construcción, inteligencia
+                artificial, manufactura, minería, seguridad ciudadana, sector
+                público, servicios portuarios, sistema financiero y tecnología.
+            </p>
+        </div>
+    </section>
+
+    <!-- 4. MATRIZ DE EXPERIENCIA -->
+    <section class="bg-gray-200 py-20 md:py-28 border-t border-gray-100 overflow-x-auto">
+        <div class="container mx-auto px-6 lg:px-12 max-w-[1600px]">
+            <!-- Título -->
+            <h2 class="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+                Matriz de Experiencia
+            </h2>
+            
+            <!-- La tabla -->
+            <div class="relative w-full">
+                <table class="w-full border-collapse experience-matrix text-sm font-sans" id="matrizExperiencia" style="table-layout: fixed; min-width: 1000px;">
+                    
+                    <!-- ENCABEZADO -->
+                    <colgroup>
+                        <col style="width: 130px;" />
+                        {Array(13).fill(0).map(() => <col style="width: calc(100% / 13);" />)}
+                    </colgroup>
+                    
+                    <thead>
+                        <tr>
+                            <!-- Esquina superior izquierda -->
+                            <th class="sticky left-0 z-20" rowspan="2" style="background-color:#910121;">
+                                <div class="px-2 py-3 text-center">
+                                    <div class=" text-white font-bold text-base tracking-wide">Capacidades</div>
+                                </div>
+                            </th>
+                            <!-- Título "Industrias" -->
+                            <th colspan="13" class="py-3 px-4 text-center text-white font-bold text-base tracking-wide" style="background-color:#6B1A29;">
+                                Industrias
+                            </th>
+                        </tr>
+                        <tr>
+                            <!-- Cabeceras de industrias -->
+                            {["Agropecuario","Agroexportación","Educación","Hidrocarburos","Infraestructura y Construcción","Inteligencia Artificial","Manufactura","Minería","Seguridad Ciudadana","Sector Público","Servicios Portuarios","Sistema Financiero","Tecnología"].map((ind) => (
+                                <th class="py-3 px-1 text-center text-white text-xs font-medium leading-tight" style="background-color:#8B2035; overflow: hidden; text-overflow: ellipsis;">
+                                    {ind}
+                                </th>
+                            ))}
+                        </tr>
+                    </thead>
+
+                    <!-- CUERPO DE LA MATRIZ -->
+                    <tbody>
+                        {/* cada fila: [nombreCapacidad, bgFila, [colores por industria o '' si vacío]] */}
+                        {[
+                            {
+                                cap: "Competitividad y Desarrollo",
+                                rowBg: "#00B050",
+                                cells: [
+                                    { color: "#66FF66", slug: "competitividad", ind: "agropecuario" },
+                                    { color: "#00FF00", slug: "competitividad", ind: "agroexportacion" },
+                                    { color: "#00D25F", slug: "competitividad", ind: "educacion" },
+                                    { color: "#00B050", slug: "competitividad", ind: "hidrocarburos" },
+                                    { color: "#66FF66", slug: "competitividad", ind: "infraestructura" },
+                                    { color: "#C1FFC1", slug: "competitividad", ind: "inteligencia" },
+                                    { color: "#C1FFC1", slug: "competitividad", ind: "manufactura" },
+                                    { color: "#00B050", slug: "competitividad", ind: "mineria" },
+                                    { color: "#C1FFC1", slug: "competitividad", ind: "seguridad" },
+                                    { color: "#00B050", slug: "competitividad", ind: "publico" },
+                                    { color: "#00D25F", slug: "competitividad", ind: "portuarios" },
+                                    { color: "#00FF00", slug: "competitividad", ind: "financiero" },
+                                    { color: "#C1FFC1", slug: "competitividad", ind: "tecnologia" },
+                                ]
+                            },
+                            {
+                                cap: "Política y Gestión Pública",
+                                rowBg: "#E26B0A",
+                                cells: [
+                                    { color: "#FCD5B4", slug: "desarrollo", ind: "agropecuario" },
+                                    { color: "#FABF8F", slug: "desarrollo", ind: "agroexportacion" },
+                                    { color: "#FCD5B4", slug: "desarrollo", ind: "educacion" },
+                                    { color: "#E26B0A", slug: "desarrollo", ind: "hidrocarburos" },
+                                    { color: "#F6903C", slug: "desarrollo", ind: "infraestructura" },
+                                    { color: "#FCD5B4", slug: "desarrollo", ind: "inteligencia" },
+                                    { color: "#FEF2E8", slug: "desarrollo", ind: "manufactura" },
+                                    { color: "#E26B0A", slug: "desarrollo", ind: "mineria" },
+                                    { color: "#FCD5B4", slug: "desarrollo", ind: "seguridad" },
+                                    { color: "#E26B0A", slug: "desarrollo", ind: "publico" },
+                                    { color: "#FCD5B4", slug: "desarrollo", ind: "portuarios" },
+                                    { color: "#FCD5B4", slug: "desarrollo", ind: "financiero" },
+                                    { color: "#FFF2E8", slug: "desarrollo", ind: "tecnologia" },
+                                ]
+                            },
+                            {
+                                cap: "Estudios Económicos",
+                                rowBg: "#0070C0",
+                                cells: [
+                                    { color: "#B8CCE4", slug: "evaluacion", ind: "agropecuario" },
+                                    { color: "#B8CCE4", slug: "evaluacion", ind: "agroexportacion" },
+                                    { color: "#EAF0F6", slug: "evaluacion", ind: "educacion" },
+                                    { color: "#DCE6F1", slug: "evaluacion", ind: "hidrocarburos" },
+                                    { color: "#B8CCE4", slug: "evaluacion", ind: "infraestructura" },
+                                    { color: "#95B3D7", slug: "evaluacion", ind: "inteligencia" },
+                                    { color: "#366092", slug: "evaluacion", ind: "manufactura" },
+                                    { color: "#366092", slug: "evaluacion", ind: "mineria" },
+                                    { color: "#DCE6F1", slug: "evaluacion", ind: "seguridad" },
+                                    { color: "#95B3D7", slug: "evaluacion", ind: "publico" },
+                                    { color: "#DCE6F1", slug: "evaluacion", ind: "portuarios" },
+                                    { color: "#DCE6F1", slug: "evaluacion", ind: "financiero" },
+                                    { color: "#EAF0F6", slug: "evaluacion", ind: "tecnologia" },
+                                ]
+                            },
+                            {
+                                cap: "Inversiones",
+                                rowBg: "#76933C",
+                                cells: [
+                                    { color: "#D8E4BC", slug: "inversiones", ind: "agropecuario" },
+                                    { color: "#D8E4BC", slug: "inversiones", ind: "agroexportacion" },
+                                    { color: "#C4D79B", slug: "inversiones", ind: "educacion" },
+                                    { color: "#76933C", slug: "inversiones", ind: "hidrocarburos" },
+                                    { color: "#76933C", slug: "inversiones", ind: "infraestructura" },
+                                    { color: "#EBF1DE", slug: "inversiones", ind: "inteligencia" },
+                                    { color: "#EBF1DE", slug: "inversiones", ind: "manufactura" },
+                                    { color: "#76933C", slug: "inversiones", ind: "mineria" },
+                                    { color: "#76933C", slug: "inversiones", ind: "seguridad" },
+                                    { color: "#76933C", slug: "inversiones", ind: "publico" },
+                                    { color: "#EBF1DE", slug: "inversiones", ind: "portuarios" },
+                                    { color: "#76933C", slug: "inversiones", ind: "financiero" },
+                                    { color: "#F8FAF4", slug: "inversiones", ind: "tecnologia" },
+                                ]
+                            },
+                            {
+                                cap: "Legal",
+                                rowBg: "#60497A",
+                                cells: [
+                                    { color: "#E4DFEC", slug: "fortalecimiento", ind: "agropecuario" },
+                                    { color: "#CCC0DA", slug: "fortalecimiento", ind: "agroexportacion" },
+                                    { color: "#CCC0DA", slug: "fortalecimiento", ind: "educacion" },
+                                    { color: "#CCC0DA", slug: "fortalecimiento", ind: "hidrocarburos" },
+                                    { color: "#CCC0DA", slug: "fortalecimiento", ind: "infraestructura" },
+                                    { color: "#EDEAF2", slug: "fortalecimiento", ind: "inteligencia" },
+                                    { color: "#60497A", slug: "fortalecimiento", ind: "manufactura" },
+                                    { color: "#CCC0DA", slug: "fortalecimiento", ind: "mineria" },
+                                    { color: "#CCC0DA", slug: "fortalecimiento", ind: "seguridad" },
+                                    { color: "#60497A", slug: "fortalecimiento", ind: "publico" },
+                                    { color: "#E4DFEC", slug: "fortalecimiento", ind: "portuarios" },
+                                    { color: "#E4DFEC", slug: "fortalecimiento", ind: "financiero" },
+                                    { color: "#EDEAF2", slug: "fortalecimiento", ind: "tecnologia" },
+                                ]
+                            },
+                            {
+                                cap: "CCD Tech",
+                                rowBg: "#31869B",
+                                cells: [
+                                    { color: "#DAEEF3", slug: "corredores", ind: "agropecuario" },
+                                    { color: "#DAEEF3", slug: "corredores", ind: "agroexportacion" },
+                                    { color: "#B7DEE8", slug: "corredores", ind: "educacion" },
+                                    { color: "#92CDDC", slug: "corredores", ind: "hidrocarburos" },
+                                    { color: "#DAEEF3", slug: "corredores", ind: "infraestructura" },
+                                    { color: "#31869B", slug: "corredores", ind: "inteligencia" },
+                                    { color: "#92CDDC", slug: "corredores", ind: "manufactura" },
+                                    { color: "#31869B", slug: "corredores", ind: "mineria" },
+                                    { color: "#92CDDC", slug: "corredores", ind: "seguridad" },
+                                    { color: "#DAEEF3", slug: "corredores", ind: "publico" },
+                                    { color: "#DAEEF3", slug: "corredores", ind: "portuarios" },
+                                    { color: "#DAEEF3", slug: "corredores", ind: "financiero" },
+                                    { color: "#E5F4F7", slug: "corredores", ind: "tecnologia" },
+                                ]
+                            },
+                        ].map((row, rowIdx) => (
+                            <tr class={rowIdx % 2 === 0 ? "bg-gray-50" : "bg-white"}>
+                                <!-- Etiqueta de capacidad -->
+                                <td class="sticky left-0 z-10 py-3 px-2 text-white text-xs font-bold leading-tight" style={`background-color:${row.rowBg};`}>
+                                    {row.cap}
+                                </td>
+                                <!-- Celdas de experiencia -->
+                                {row.cells.map((cell) => (
+                                    <td style="height:70px; padding:0;">
+                                        <button
+                                            class="matrix-cell w-full h-full min-h-[70px] cursor-pointer transition-all duration-200 hover:brightness-110 hover:scale-[1.03] hover:shadow-lg hover:z-10 relative"
+                                            style={`background-color:${cell.color}; border:none; outline:none;`}
+                                            data-cap={row.cap}
+                                            data-ind={cell.ind}
+                                            data-cap-slug={cell.slug}
+                                            data-cap-color={row.rowBg}
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                        >
+                                        </button>
+                                    </td>
+                                ))}
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
+
+            
+
+            <!-- Leyenda de colores -->
+            <div class="mt-10 mx-auto" style="max-width:420px;">
+                <h3 class="font-serif text-sm font-bold text-gray-700 mb-3">Leyenda de Colores</h3>
+                <div style="display:grid; gap:2px;">
+                    {[
+                        ["#00B050","#00D25F","#00FF00","#66FF66","#C1FFC1"],
+                        ["#E26B0A","#F6903C","#FCD5B4","#FDE9D9","#FEF2E8"],
+                        ["#366092","#95B3D7","#B8CCE4","#DCE6F1","#EAF0F6"],
+                        ["#76933C","#C4D79B","#D8E4BC","#EBF1DE","#F8FAF4"],
+                        ["#60497A","#B1A0C7","#CCC0DA","#E4DFEC","#EDEAF2"],
+                        ["#31869B","#92CDDC","#B7DEE8","#DAEEF3","#E5F4F7"],
+                    ].map((colors) => (
+                        <div style="display:flex; gap:2px;">
+                            {colors.map((c) => (
+                                <div style={`background-color:${c}; height:14px; flex:1; min-width:0; border-radius:2px;`}></div>
+                            ))}
+                        </div>
+                    ))}
+                </div>
+                <div class="flex justify-between mt-1.5 text-[10px] text-gray-400 font-sans">
+                    <span>Mayor experiencia</span>
+                    <span>Menor experiencia</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POPOVER FLOTANTE -->
+    <div id="matrixPopover" style="display:none; position:absolute; z-index:9999; background:#fff; border-radius:14px; box-shadow:0 10px 40px rgba(0,0,0,0.22); border:1px solid #e5e7eb; padding:10px; width:280px; pointer-events:auto;">
+        <div id="popoverLinks" style="display:flex; flex-direction:column; gap:6px;"></div>
+    </div>
+
+    <div class="flourish-embed flourish-chart" data-src="visualisation/28019801"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28019801/thumbnail" width="100%" alt="visualization" /></noscript></div>
+
+    <script is:inline>
+    // @ts-nocheck
+    (function() {
+        var IND_NAMES = {
+            agropecuario: "Agropecuario",
+            agroexportacion: "Agroexportación",
+            educacion: "Educación",
+            hidrocarburos: "Hidrocarburos",
+            infraestructura: "Infraestructura y Construcción",
+            inteligencia: "Inteligencia Artificial",
+            manufactura: "Manufactura",
+            mineria: "Minería",
+            seguridad: "Seguridad Ciudadana",
+            publico: "Sector Público",
+            portuarios: "Servicios Portuarios",
+            financiero: "Sistema Financiero",
+            tecnologia: "Tecnología"
+        };
+
+        var CAP_DATA = {
+            competitividad: { name: "Competitividad y Desarrollo", link: "/capacidades/competitividad", color: "#00B050" },
+            desarrollo:     { name: "Política y Gestión Pública",  link: "/capacidades/desarrollo",     color: "#E26B0A" },
+            evaluacion:     { name: "Estudios Económicos",          link: "/capacidades/evaluacion",    color: "#0070C0" },
+            inversiones:    { name: "Inversiones y Proyectos",      link: "/capacidades/inversiones",   color: "#76933C" },
+            fortalecimiento:{ name: "Legal",                        link: "/capacidades/fortalecimiento", color: "#60497A" },
+            corredores:     { name: "CCD Tech",                     link: "/capacidades/corredores",    color: "#31869B" }
+        };
+
+        function setup() {
+            var popover = document.getElementById("matrixPopover");
+            var linksDiv = document.getElementById("popoverLinks");
+            var table = document.getElementById("matrizExperiencia");
+
+            if (!popover || !table) return;
+
+            function hidePopover() {
+                popover.style.display = "none";
+            }
+
+            function showPopover(btn) {
+                var capSlug = btn.getAttribute("data-cap-slug");
+                var indSlug = btn.getAttribute("data-ind");
+                if (!capSlug || !indSlug) return;
+
+                var cap = CAP_DATA[capSlug];
+                var indName = IND_NAMES[indSlug] || indSlug;
+                if (!cap) return;
+
+                linksDiv.innerHTML =
+                    '<a href="' + cap.link + '" style="display:flex;align-items:center;gap:10px;padding:14px 16px;border-radius:10px;background:' + cap.color + ';color:#fff;font-size:14px;font-weight:600;text-decoration:none;transition:opacity 0.15s;">' +
+                    '<svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>' +
+                    'Ir a ' + cap.name + '</a>' +
+                    '<a href="/industrias/' + indSlug + '" style="display:flex;align-items:center;gap:10px;padding:14px 16px;border-radius:10px;background:#f3f4f6;color:#374151;font-size:14px;font-weight:600;text-decoration:none;transition:background 0.15s;">' +
+                    '<svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>' +
+                    'Ir a ' + indName + '</a>';
+
+                // Position: use absolute positioning relative to the page
+                var rect = btn.getBoundingClientRect();
+                var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+                popover.style.display = "block";
+
+                var popRect = popover.getBoundingClientRect();
+                var top = rect.bottom + scrollTop + 6;
+                var left = rect.left + scrollLeft + (rect.width / 2) - (popRect.width / 2);
+
+                // Keep within viewport
+                if (left < 10) left = 10;
+                if (left + popRect.width > window.innerWidth - 10) {
+                    left = window.innerWidth - popRect.width - 10;
+                }
+                // If it goes below viewport, show above
+                if (rect.bottom + popRect.height + 10 > window.innerHeight) {
+                    top = rect.top + scrollTop - popRect.height - 6;
+                }
+
+                popover.style.position = "absolute";
+                popover.style.top = top + "px";
+                popover.style.left = left + "px";
+            }
+
+            // Use event delegation on the TABLE for all .matrix-cell clicks
+            table.addEventListener("click", function(e) {
+                var btn = e.target.closest(".matrix-cell");
+                if (!btn) return;
+                e.preventDefault();
+                e.stopPropagation();
+
+                // Toggle: if already showing for this cell, hide
+                if (popover.style.display === "block" && popover._activeBtn === btn) {
+                    hidePopover();
+                    popover._activeBtn = null;
+                } else {
+                    showPopover(btn);
+                    popover._activeBtn = btn;
+                }
+            });
+
+            // Close when clicking outside
+            document.addEventListener("click", function(e) {
+                if (popover.style.display !== "block") return;
+                if (popover.contains(e.target)) return;
+                // Don't close if clicking a matrix-cell (handled above)
+                if (e.target.closest && e.target.closest(".matrix-cell")) return;
+                hidePopover();
+                popover._activeBtn = null;
+            });
+
+            // Close on Escape
+            document.addEventListener("keydown", function(e) {
+                if (e.key === "Escape") {
+                    hidePopover();
+                    popover._activeBtn = null;
+                }
+            });
+        }
+
+        // Run setup when DOM is ready
+        if (document.readyState === "loading") {
+            document.addEventListener("DOMContentLoaded", setup);
+        } else {
+            setup();
+        }
+        // Also run on Astro page transitions
+        document.addEventListener("astro:page-load", setup);
+    })();
+    </script>
+
+</Layout>
+
+<style>
+    .experience-matrix th,
+    .experience-matrix td {
+        border: 1px solid rgba(0,0,0,0.06);
+    }
+    .experience-matrix thead th {
+        position: sticky;
+        top: 0;
+    }
+    .matrix-cell:focus-visible {
+        outline: 3px solid #910121;
+        outline-offset: 2px;
+    }
+</style>

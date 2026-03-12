@@ -10,68 +10,79 @@ const teamMembers = [
         name: "Rudy Laguna",
         role: "Director",
         image: "/rudy-laguna.png", 
-        slug: "rudy-laguna"
+        slug: "rudy-laguna",
+        linkedin: "https://www.linkedin.com/in/rudy-laguna-b2432a39/"
     },
     {
         name: "Viviana Sánchez",
         role: "Directora",
         image: "/viviana-sanchez.png",
-        slug: "viviana-sanchez"
+        slug: "viviana-sanchez",
+        linkedin: ""
     },
     {
         name: "Alvaro Gordillo",
         role: "Especialista en Inversión y Desarrollo",
         image: "/alvaro-gordillo.png",
-        slug: "alvaro-gordillo"
+        slug: "alvaro-gordillo",
+        linkedin: "https://www.linkedin.com/in/alvaro-jos%C3%A9-gordillo-lezcano-343564a3/"
     },
     {
         name: "Fernando Jáuregui",
         role: "Especialista en Inversiones y Modelación Econométrica",
         image: "/fernando-jauregui.png",
-        slug: "fernando-jauregui"
+        slug: "fernando-jauregui",
+        linkedin: ""
     },
     {
         name: "Alex Carbajal",
         role: "Especialista en Evaluación de Proyectos",
         image: "/alex-carbajal.png",
-        slug: "alex-carbajal"
+        slug: "alex-carbajal",
+        linkedin: ""
     },
     {
         name: "Sergio Villegas",
         role: "Especialista en Inversiones",
         image: "/sergio-villegas.png",
-        slug: "sergio-villegas"
+        slug: "sergio-villegas",
+        linkedin: ""
     },
     {
         name: "Elmer Huamán",
         role: "Especialista en Inversión para la Competitividad y el Desarrollo",
         image: "/elmer-huaman.png",
-        slug: "elmer-huaman"
+        slug: "elmer-huaman",
+        linkedin: ""
     },
     {
         name: "Karla Casas",
         role: "Jefe de Proyectos en Planeamientos, Competitividad y Desarrollo",
         image: "/karla-casas.png",
-        slug: "karla-casas"
+        slug: "karla-casas",
+        linkedin: "https://www.linkedin.com/in/karla-casas-b1384146/"
     },
 
     {
         name: "Melissa Sánchez",
         role: "Especialista en Administración",
         image: "/melissa-sanchez.png",
-        slug: "melissa-sanchez"
+        slug: "melissa-sanchez",
+        linkedin: "https://www.linkedin.com/in/melissa-s%C3%A1nchez-cam%C3%A1n-a2b67b161/"
     },
     {
         name: "Jorge Ruiz",
         role: "Especialista en Planes de Desarrollo e Investigación",
         image: "/jorge-ruiz.png",
-        slug: "jorge-ruiz"
+        slug: "jorge-ruiz",
+        linkedin: "https://www.linkedin.com/in/jorge-andrew-ruiz-barrios-ba27b1203/"
     },
     {
         name: "Mario Huamán",
         role: "Especialista en Estudios Económicos",
         image: "/mario-huaman.png",
-        slug: "mario-huaman"
+        slug: "mario-huaman",
+        linkedin: "https://www.linkedin.com/in/mario-jes%C3%BAs-huam%C3%A1n-mart%C3%ADnez-a430351b5/"
     }
 ];
 ---
@@ -105,6 +116,7 @@ const teamMembers = [
                             role={member.role}
                             image={member.image}
                             link={`/nosotros/equipo/${member.slug}`}
+                            linkedin={member.linkedin}
                         />
                     </div>
                 ))}

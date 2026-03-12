@@ -4,14 +4,15 @@ export interface Props {
     role: string;
     image: string;
     link: string;
+    linkedin?: string;
 }
 
-const { name, role, image, link } = Astro.props;
+const { name, role, image, link, linkedin } = Astro.props;
 ---
 
 <a
     href={link}
-    class="group flex flex-col bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden h-full"
+    class="group flex flex-col bg-gray-50 rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden h-full relative"
 >
     <!-- 
       CONTENEDOR DE LA IMAGEN (Area restringida)
@@ -21,7 +22,7 @@ const { name, role, image, link } = Astro.props;
       - flex items-end justify-center: Centra la imagen abajo y al centro.
     -->
     <div
-        class="h-72 w-full bg-gray-50 flex items-end justify-center overflow-hidden pt-4"
+        class="h-72 w-full bg-white flex items-end justify-center overflow-hidden pt-4"
     >
         <!-- 
            IMAGEN
@@ -39,7 +40,7 @@ const { name, role, image, link } = Astro.props;
 
     <!-- INFORMACIÓN -->
     <div
-        class="p-6 text-center border-t border-gray-100 flex-grow flex flex-col justify-center"
+        class="p-6 text-center border-t border-gray-200 flex-grow flex flex-col justify-center relative"
     >
         <h3
             class="font-serif text-xl font-bold text-gray-900 group-hover:text-primary transition-colors duration-300"
@@ -51,5 +52,32 @@ const { name, role, image, link } = Astro.props;
         >
             {role}
         </p>
+
+        {
+            linkedin && (
+                <div class="mt-4 flex justify-center">
+                    <object>
+                        <a
+                            href={linkedin}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-[#0A66C2] transition-colors duration-300"
+                            title={`LinkedIn de ${name}`}
+                            onclick="event.stopPropagation();"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                            >
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                    </object>
+                </div>
+            )
+        }
     </div>
 </a>

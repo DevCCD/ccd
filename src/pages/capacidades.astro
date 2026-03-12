@@ -1,104 +1,114 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import PageHeader from '../components/PageHeader.astro';
+import Layout from "../layouts/Layout.astro";
+import PageHeader from "../components/PageHeader.astro";
+import IndustryCard from "../components/industrias/IndustryCard.astro";
 
-// Datos de las 7 capacidades
-const capacidades = [
+const sections = [
   {
-    slug: 'competitividad',
-    title: 'Competitividad',
-    description: 'Mejorar productividad, empleabilidad e ingresos de la Población en Edad de Trabajar (PET) de circunscripción directa e indirectamente relacionada: zona económica, multipaís, país, estado, región, provincia, distrito, comunidad y/o población directa e indirectamente relacionada.',
-    image: 'https://res.cloudinary.com/ccdcloudy/image/upload/v1772640888/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/Competitividad_inpcde.webp'
+    bg: "bg-white",
+    items: [
+      {
+        title: "Competitividad",
+        description:
+          "Mejorar productividad, empleabilidad e ingresos de la Población en Edad de Trabajar (PET) en diversas circunscripciones territoriales y zonas económicas.",
+        image:
+          "https://res.cloudinary.com/ccdcloudy/image/upload/v1772640888/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/Competitividad_inpcde.webp",
+        slug: "competitividad",
+        span: "col-span-6 md:col-span-3 lg:col-span-3",
+      },
+      {
+        title: "Desarrollo",
+        description:
+          "Mejorar la calidad de vida de las personas de manera integral, para circunscripciones: país, estado, región, provincia, distrito y comunidad.",
+        image:
+          "https://res.cloudinary.com/ccdcloudy/image/upload/v1772640288/Web%20CCD/Capacidades%20e%20Industrias/Desarrollo/Desarrollo_xepqfz.webp",
+        slug: "desarrollo",
+        span: "col-span-6 md:col-span-3 lg:col-span-3",
+      },
+    ],
   },
   {
-    slug: 'desarrollo',
-    title: 'Desarrollo',
-    description: 'Mejorar la calidad de vida de las personas de manera integral, para circunscripciones: país, estado, región, provincia, distrito y comunidad.',
-    image: 'https://res.cloudinary.com/ccdcloudy/image/upload/v1772640288/Web%20CCD/Capacidades%20e%20Industrias/Desarrollo/Desarrollo_xepqfz.webp'
+    bg: "bg-gradient-to-t from-secondary-light/20 to-secondary",
+    items: [
+      {
+        title: "Corredores Económicos Territoriales",
+        description:
+          "Desarrollo integrado del área de influencia o de más de una circunscripción territorial: países, regiones, provincias, distritos y/o comunidades.",
+        image:
+          "https://res.cloudinary.com/ccdcloudy/image/upload/v1772641842/Web%20CCD/Capacidades%20e%20Industrias/Corredores/Corredores_wctx4s.webp",
+        slug: "corredores",
+        span: "col-span-6 md:col-span-3 lg:col-span-2",
+      },
+      {
+        title: "Inversiones y Proyectos",
+        description:
+          "Inversiones y proyectos permiten reducir y cerrar brechas, desarrollo y mejoran calidad de vida de la población.",
+        image:
+          "https://res.cloudinary.com/ccdcloudy/image/upload/v1772644229/Web%20CCD/Capacidades%20e%20Industrias/Inversiones/inversiones2_gxdoll.jpg",
+        slug: "inversiones",
+        span: "col-span-6 md:col-span-3 lg:col-span-2",
+      },
+      {
+        title: "Evaluación de Programas y Proyectos",
+        description:
+          "Mayores calidad y rendimientos esperados de la inversión social en el área de influencia.",
+        image:
+          "https://res.cloudinary.com/ccdcloudy/image/upload/v1772641630/Web%20CCD/Capacidades%20e%20Industrias/Evaluaci%C3%B3n%20de%20Programas/Evaluacion_paq2ri.webp",
+        slug: "evaluacion",
+        span: "col-span-6 md:col-span-3 lg:col-span-2",
+      },
+    ],
   },
   {
-    slug: 'fortalecimiento',
-    title: 'Fortalecimiento de Capacidades y Capital Humano',
-    description: 'Desarrollamos capital humano e institucional para impulsar el desarrollo sostenible.',
-    image: 'https://res.cloudinary.com/ccdcloudy/image/upload/v1772640780/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/Fortalecimiento_hk8y2r.webp'
+    bg: "bg-gray-200",
+    items: [
+      {
+        title: "Fondos de Desarrollo",
+        description:
+          "Los fondos de desarrollo locales o comunales (públicos, privados o públicos-privados), con adecuada gobernanza, contribuyen con la gestión social de la empresa.",
+        image:
+          "https://res.cloudinary.com/ccdcloudy/image/upload/v1772641183/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20de%20Desarrollo/Fondos_fljzpp.webp",
+        slug: "fondos",
+        span: "col-span-6 md:col-span-3 lg:col-span-3",
+      },
+      {
+        title: "Fortalecimiento de Capacidades y Capital Humano",
+        description:
+          "Desarrollamos capital humano e institucional para impulsar el desarrollo sostenible.",
+        image:
+          "https://res.cloudinary.com/ccdcloudy/image/upload/v1772640780/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/Fortalecimiento_hk8y2r.webp",
+        slug: "fortalecimiento",
+        span: "col-span-6 md:col-span-3 lg:col-span-3",
+      },
+    ],
   },
-  {
-    slug: 'fondos',
-    title: 'Fondos de Desarrollo',
-    description: 'Los fondos de desarrollo locales o comunales (públicos, privados o públicos-privados), con adecuada gobernanza, contribuyen con la gestión social de la empresa.',
-    image: 'https://res.cloudinary.com/ccdcloudy/image/upload/v1772641183/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20de%20Desarrollo/Fondos_fljzpp.webp'
-  },
-  {
-    slug: 'evaluacion',
-    title: 'Evaluación de Programas y Proyectos',
-    description: 'Mayores calidad y rendimientos esperados de la inversión social en el área de influencia.',
-    image: 'https://res.cloudinary.com/ccdcloudy/image/upload/v1772641630/Web%20CCD/Capacidades%20e%20Industrias/Evaluaci%C3%B3n%20de%20Programas/Evaluacion_paq2ri.webp'
-  },
-  {
-    slug: 'corredores',
-    title: 'Corredores Económicos Territoriales',
-    description: 'Desarrollo integrado del área de influencia o de más de una circunscripción territorial: países, regiones, provincias, distritos y/o comunidades.',
-    image: 'https://res.cloudinary.com/ccdcloudy/image/upload/v1772641842/Web%20CCD/Capacidades%20e%20Industrias/Corredores/Corredores_wctx4s.webp'
-  },
-  {
-    slug: 'inversiones',
-    title: 'Inversiones y Proyectos',
-    description: 'Inversiones y proyectos permiten reducir y cerrar brechas, desarrollo y mejoran calidad de vida de la población.',
-    image: 'https://res.cloudinary.com/ccdcloudy/image/upload/v1772644229/Web%20CCD/Capacidades%20e%20Industrias/Inversiones/inversiones2_gxdoll.jpg'
-  }
 ];
+
+const headerImage =
+  "https://res.cloudinary.com/ccdcloudy/image/upload/v1773273741/Web%20CCD/Capacidades%20e%20Industrias/vitaly-gariev-_BHlEskTT4c-unsplash_nnbaf7.jpg";
 ---
 
 <Layout title="Nuestras Capacidades - CCD">
-  <!-- HEADER SECTION USANDO PAGEHEADER COMPONENT -->
-  <PageHeader 
-    title="Nuestras Capacidades"
-    description="Pilares de excelencia que nos permiten transformar territorios y crear valor sostenible para nuestros clientes."
-  />
+  <!-- HEADER SECTION -->
+  <PageHeader title="Nuestras Capacidades" backgroundImage={headerImage} />
 
-
-  <!-- CAPACIDADES LIST - WIDE CARDS ALTERNATING -->
-  <section class="bg-gray-50 py-12 md:py-20">
-    <!-- Increased max-width to 7xl and reduced padding for wider cards -->
-    <div class="container mx-auto px-4 md:px-6 max-w-[1600px] space-y-8 md:space-y-12">
-      {capacidades.map((capacidad, index) => (
-        <a href={`/capacidades/${capacidad.slug}`} class="group block bg-white shadow-sm hover:shadow-xl transition-shadow duration-300 rounded-sm overflow-hidden border border-gray-100">
-          <div class={`flex flex-col md:flex-row min-h-[450px] ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
-            
-            <!-- IMAGEN -->
-            <div class="w-full md:w-1/2 relative overflow-hidden">
-                <div class="absolute inset-0 bg-gray-900/10 group-hover:bg-transparent transition-colors duration-300 z-10"></div>
-                <img 
-                  src={capacidad.image} 
-                  alt={capacidad.title}
-                  class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                />
-            </div>
-
-            <!-- CONTENIDO -->
-            <div class="w-full md:w-1/2 p-8 md:p-16 lg:p-24 flex flex-col justify-center">
-                
-                <!-- Título + Flecha Grande -->
-                <div class="flex items-start gap-4 mb-6">
-                    <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight group-hover:text-primary transition-colors duration-300">
-                        {capacidad.title}
-                    </h2>
-                    <!-- Flecha Grande Estilo McKinsey -->
-                    <svg class="w-8 h-8 md:w-10 md:h-10 text-primary flex-shrink-0 mt-1.5 md:mt-2 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                </div>
-
-                <p class="text-gray-600 text-lg md:text-xl leading-relaxed">
-                  {capacidad.description}
-                </p>
-
-            </div>
+  {
+    sections.map((section) => (
+      <section class={`${section.bg} py-20`}>
+        <div class="container mx-auto px-6 max-w-[1600px]">
+          <div class="grid grid-cols-6 gap-x-8 gap-y-16">
+            {section.items.map((capacidad) => (
+              <IndustryCard
+                title={capacidad.title}
+                description={capacidad.description}
+                image={capacidad.image}
+                link={`/capacidades/${capacidad.slug}`}
+                colSpan={capacidad.span}
+              />
+            ))}
           </div>
-        </a>
-      ))}
-    </div>
-  </section>
-
-
+        </div>
+      </section>
+    ))
+  }
 </Layout>

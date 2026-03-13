@@ -1,11 +1,5 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import PageHeader from "../../components/PageHeader.astro";
-import ValueGenerationHero from "../../components/capacidades/ValueGenerationHero.astro";
-import BentoGrid from "../../components/capacidades/BentoGrid.astro";
-import CapabilitySidebar from "../../components/capacidades/CapabilitySidebar.astro";
-
-// Importamos nuestra "base de datos"
+import CapabilityLayout from "../../components/capacidades/CapabilityLayout.astro";
 import { teamMembers, industriesData } from "../../data/teamData";
 
 const selectedSpecialists = [
@@ -119,116 +113,47 @@ const headerImage =
     "https://res.cloudinary.com/ccdcloudy/image/upload/v1772640288/Web%20CCD/Capacidades%20e%20Industrias/Desarrollo/Desarrollo_xepqfz.webp";
 ---
 
-<Layout title="Desarrollo - CCD">
-    <PageHeader title="Desarrollo" backgroundImage={headerImage} />
-
-    <section class="bg-white">
-        <div class="container mx-auto px-6 lg:px-12 py-16 md:py-24">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
-                <!-- CONTENIDO PRINCIPAL (9 columnas) -->
-                <div class="lg:col-span-9 space-y-24">
-                    <!-- SECCIÓN 1: GENERACIÓN DE VALOR CLIENTE -->
-                    <div class="space-y-12">
-                        <ValueGenerationHero
-                            title="Generación de Valor Cliente"
-                            description="Mejorar la calidad de vida de las personas de manera integral, para circunscripciones: país, estado, región, provincia, distrito y comunidad."
-                        />
-
-                        <BentoGrid items={valueGenerationItems} />
-                    </div>
-
-                    <!-- SECCIÓN 2: NUESTRO TRABAJO -->
-                    <div
-                        id="nuestro-trabajo"
-                        class="scroll-mt-24 space-y-12 pt-12 border-t border-gray-200"
-                    >
-                        <div class="text-center md:text-left">
-                            <h2
-                                class="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-4"
-                            >
-                                Nuestro{" "}
-                                <span class="text-primary italic">
-                                    Trabajo
-                                </span>
-                            </h2>
-                        </div>
-                        <!-- Áreas de Trabajo -->
-                        <div
-                            class="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 md:p-12 border border-gray-200 shadow-sm"
-                        >
-                            <h4
-                                class="font-serif text-2xl font-bold text-gray-900 mb-8 pb-4 border-b border-gray-200"
-                            >
-                                Elaborar planes y estudios de Desarrollo:
-                            </h4>
-                            <ul
-                                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-x-8 gap-y-5"
-                            >
-                                {
-                                    [
-                                        "Concertado de ámbitos regional, provincial y distrital.",
-                                        "Territorial de comunidades, localidades y caseríos.",
-                                        "Territorial en contextos de reasentamiento poblacional.",
-                                        "Territorial para áreas de influencia directa e indirecta.",
-                                    ].map((item) => (
-                                        <li class="flex items-start group">
-                                            <span class="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0 group-hover:scale-150 transition-transform" />
-                                            <span class="text-gray-700 font-medium text-base group-hover:text-primary transition-colors">
-                                                {item}
-                                            </span>
-                                        </li>
-                                    ))
-                                }
-                            </ul>
-                        </div>
-                        <BentoGrid items={ourWorkItems} />
-
-                        <!-- Siguiente Capacidad -->
-                        <div class="pt-12">
-                            <a
-                                href="/capacidades/fortalecimiento"
-                                class="group flex items-center justify-between p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:border-primary/30 transition-all"
-                            >
-                                <div>
-                                    <span
-                                        class="text-sm font-bold text-primary uppercase tracking-widest"
-                                        >Siguiente Capacidad</span
-                                    >
-                                    <h4
-                                        class="text-2xl font-serif font-bold text-gray-900 mt-2"
-                                    >
-                                        Fortalecimiento de Capacidades y Capital
-                                        Humano
-                                    </h4>
-                                </div>
-                                <div
-                                    class="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="h-6 w-6"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
-                                    >
-                                        <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            stroke-width="2"
-                                            d="M9 5l7 7-7 7"></path>
-                                    </svg>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- COLUMNA DERECHA: SIDEBAR (3/12) -->
-                <CapabilitySidebar
-                    specialists={selectedSpecialists}
-                    industries={selectedIndustries}
-                />
-            </div>
-        </div>
-    </section>
-</Layout>
+<CapabilityLayout
+    title="Desarrollo"
+    description="Mejorar la calidad de vida de las personas de manera integral, para circunscripciones: país, estado, región, provincia, distrito y comunidad."
+    headerImage={headerImage}
+    valueGenerationItems={valueGenerationItems}
+    ourWorkItems={ourWorkItems}
+    specialists={selectedSpecialists}
+    industries={selectedIndustries}
+    nextCapability={{
+        title: "Fortalecimiento de Capacidades y Capital Humano",
+        link: "/capacidades/fortalecimiento",
+    }}
+>
+    <!-- Slot para contenido antes de Nuestro Trabajo -->
+    <div
+        slot="before-work"
+        class="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 md:p-12 border border-gray-200 shadow-sm mb-12"
+    >
+        <h4
+            class="font-serif text-2xl font-bold text-gray-900 mb-8 pb-4 border-b border-gray-200"
+        >
+            Elaborar planes y estudios de Desarrollo:
+        </h4>
+        <ul
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-x-8 gap-y-5"
+        >
+            {
+                [
+                    "Concertado de ámbitos regional, provincial y distrital.",
+                    "Territorial de comunidades, localidades y caseríos.",
+                    "Territorial en contextos de reasentamiento poblacional.",
+                    "Territorial para áreas de influencia directa e indirecta.",
+                ].map((item) => (
+                    <li class="flex items-start group">
+                        <span class="w-2 h-2 rounded-full bg-primary mt-2 mr-3 flex-shrink-0 group-hover:scale-150 transition-transform" />
+                        <span class="text-gray-700 font-medium text-base group-hover:text-primary transition-colors">
+                            {item}
+                        </span>
+                    </li>
+                ))
+            }
+        </ul>
+    </div>
+</CapabilityLayout>

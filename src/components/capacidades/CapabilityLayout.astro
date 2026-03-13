@@ -1,0 +1,271 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+interface Props {
+    title: string;
+    description: string;
+    headerImage: string;
+    headerImagePosition?: string;
+    valueGenerationItems: { text: string; image: string; imageAlt?: string }[];
+    ourWorkItems: { text: string; image: string; imageAlt?: string; bullets?: string[] }[];
+    specialists: any[];
+    industries: any[];
+    nextCapability?: { title: string; link: string };
+}
+
+const {
+    title,
+    description,
+    headerImage,
+    headerImagePosition = "center",
+    valueGenerationItems,
+    ourWorkItems,
+    specialists,
+    industries,
+    nextCapability,
+} = Astro.props;
+---
+
+<Layout title={`${title} - CCD`}>
+    <!-- BANNER DE ALTO IMPACTO -->
+    <section class="relative w-full h-[65vh] md:h-[75vh] overflow-hidden bg-gray-900">
+        <img
+            src={headerImage}
+            alt={title}
+            class="w-full h-full object-cover transition-transform duration-[30000ms]"
+            style={{ objectPosition: headerImagePosition }}
+        />
+        <!-- Overlay sofisticado con degradado para legibilidad -->
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent">
+            <div class="container mx-auto px-6 lg:px-12 h-full flex flex-col justify-end pb-8 md:pb-10">
+                <div class="space-y-4 max-w-4xl animate-fade-in-up">
+                    <h1 class="font-serif text-5xl md:text-7xl font-black text-white leading-tight drop-shadow-2xl">
+                        {title}
+                    </h1>
+                    <div class="w-24 h-2 bg-primary rounded-full shadow-lg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GENERACIÓN DE VALOR CLIENTE -->
+    {valueGenerationItems && valueGenerationItems.length > 0 && (
+        <>
+            <section class="bg-white pt-16 md:pt-20 pb-16">
+                <div class="container mx-auto px-6 lg:px-12 max-w-5xl text-center md:text-left">
+                    <h2 class="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-8 border-b-2 border-primary pb-4 inline-block">
+                        Generación de <span class="text-primary italic">Valor Cliente</span>
+                    </h2>
+                    <p class="font-sans text-md md:text-lg lg:text-xl text-gray-700 leading-[1.8] md:leading-[2.2] lg:leading-[1.6]">
+                        {description}
+                    </p>
+                </div>
+            </section>
+
+            <div class="container mx-auto px-6 lg:px-12 max-w-5xl mb-16">
+                <slot name="before-value" />
+            </div>
+
+            <!-- Items alternados Edge-to-Edge -->
+            {valueGenerationItems.map((item, index) => (
+                <section class={`w-full flex flex-col lg:flex-row items-stretch ${index % 2 !== 0 ? "lg:flex-row-reverse" : ""}`}>
+                    <div class="relative w-full lg:w-1/2 min-h-[400px] lg:min-h-[500px] overflow-hidden">
+                        <img
+                            src={item.image}
+                            alt={item.imageAlt || item.text}
+                            class="absolute inset-0 w-full h-full object-cover"
+                        />
+                    </div>
+
+                    <div class="w-full lg:w-1/2 bg-secondary-light/50 py-12 px-8 lg:py-16 lg:px-16 flex flex-col justify-center">
+                        <div class="w-16 h-1.5 bg-secondary mb-8" />
+                        <p class="font-sans text-md md:text-lg lg:text-xl text-gray-800 leading-[1.8] md:leading-[2.1]">
+                            {item.text}
+                        </p>
+                    </div>
+                </section>
+            ))}
+        </>
+    )}
+
+    <!-- NUESTRO TRABAJO -->
+    {ourWorkItems && ourWorkItems.length > 0 && (
+        <section class="bg-gray-300 py-20 border-t border-gray-100" id="nuestro-trabajo">
+            <div class="container mx-auto px-6 lg:px-12 max-w-[1600px]">
+                <h2 class="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-12 border-b-2 border-primary pb-4 inline-block">
+                    Nuestro <span class="text-primary italic">Trabajo</span>
+                </h2>
+
+                <div class="mb-12">
+                    <slot name="before-work" />
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12">
+                    {ourWorkItems.map((work, index) => {
+                        const total = ourWorkItems.length;
+                        let colClass = "md:col-span-6 lg:col-span-4"; // 3 columnas por defecto
+
+                        if (total === 1) {
+                            colClass = "md:col-span-12 lg:col-span-8 lg:col-start-3";
+                        } else if (total === 2) {
+                            colClass = "md:col-span-6";
+                        } else if (total === 4) {
+                            colClass = "md:col-span-6 lg:col-span-3"; // 4 columnas
+                        } else if (total === 5) {
+                            colClass = index < 2 ? "md:col-span-6" : "md:col-span-6 lg:col-span-4";
+                        } else if (total === 7) {
+                            colClass = index < 4 ? "md:col-span-6 lg:col-span-3" : "md:col-span-6 lg:col-span-4";
+                        } else if (total === 8) {
+                            colClass = "md:col-span-6 lg:col-span-3"; // 4 columnas
+                        } else if (total === 10) {
+                            colClass = index < 4 ? "md:col-span-6 lg:col-span-3" : "md:col-span-6 lg:col-span-4";
+                        } else if (total === 11) {
+                            colClass = index < 8 ? "md:col-span-6 lg:col-span-3" : "md:col-span-6 lg:col-span-4";
+                        }
+
+                        return (
+                            <div class={`group block mb-4 bg-white shadow-sm overflow-hidden flex flex-col ${colClass}`}>
+                                <div class="overflow-hidden bg-gray-200 aspect-video flex-shrink-0">
+                                    <img
+                                        src={work.image}
+                                        alt={work.imageAlt || work.text}
+                                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                    />
+                                </div>
+                                <div class="p-6 flex-grow flex flex-col">
+                                    <h4 class="font-serif text-[1.1rem] md:text-xl font-bold text-gray-900 mb-4 transition-colors duration-300">
+                                        {work.text}
+                                    </h4>
+                                    {work.bullets && work.bullets.length > 0 && (
+                                        <ul class="space-y-2 mt-auto">
+                                            {work.bullets.map((bullet) => (
+                                                <li class="flex items-start">
+                                                    <span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                                                    <span class="text-gray-700 text-sm ml-3 leading-relaxed">{bullet}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    )}
+                                </div>
+                            </div>
+                        );
+                    })}
+                </div>
+
+                <!-- Siguiente Capacidad -->
+                {nextCapability && (
+                    <div class="pt-16 max-w-4xl mx-auto">
+                        <a
+                            href={nextCapability.link}
+                            class="group flex items-center justify-between p-8 rounded-2xl bg-white shadow-md hover:shadow-xl border border-gray-100 hover:border-primary/30 transition-all duration-300 transform hover:-translate-y-1"
+                        >
+                            <div>
+                                <span class="text-sm font-bold text-primary uppercase tracking-widest">Siguiente Capacidad</span>
+                                <h4 class="text-2xl font-serif font-bold text-gray-900 mt-2">
+                                    {nextCapability.title}
+                                </h4>
+                            </div>
+                            <div class="w-12 h-12 rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                )}
+            </div>
+        </section>
+    )}
+
+    <!-- ESPECIALISTAS E INDUSTRIAS -->
+    {(((specialists && specialists.length > 0) || (industries && industries.length > 0))) && (
+        <section class="bg-gradient-to-b from-secondary-light/20 to-secondary py-20 border-t border-gray-100">
+            <div class="container mx-auto px-6 lg:px-12 max-w-[1600px] space-y-24">
+                
+                {/* Especialistas */}
+                {specialists && specialists.length > 0 && (
+                    <div class="flex flex-col items-center text-center w-full">
+                        <h2 class="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-16">
+                            Especialistas
+                        </h2>
+                        <div class="flex flex-col md:flex-row justify-center items-center md:items-stretch gap-6 md:gap-0 md:divide-x divide-gray-100 w-full max-w-[1400px] flex-wrap">
+                            {specialists.map((member) => (
+                                <a
+                                    href={`/nosotros/equipo/${member.slug}`}
+                                    class="group flex flex-col items-center text-center w-full md:flex-1 px-4 lg:px-8 py-10 bg-white transition-all duration-300 hover:shadow-xl relative z-10"
+                                >
+                                    <div class="w-48 h-48 md:w-48 md:h-48 lg:w-56 lg:h-56 mb-8 overflow-hidden rounded-full bg-gray-100 border-4 border-gray-50/50">
+                                        <img
+                                            src={member.image}
+                                            alt={member.name}
+                                            class="w-full h-full object-cover object-top scale-225 transition-transform duration-700 group-hover:scale-[1.1]"
+                                        />
+                                    </div>
+                                    <h4 class="font-serif font-bold text-xl md:text-2xl text-gray-900 group-hover:text-primary transition-colors leading-tight">
+                                        {member.name}
+                                    </h4>
+                                    <p class="text-gray-900 text-sm md:text-base mt-3 tracking-wide px-2">
+                                        {member.role}
+                                    </p>
+                                </a>
+                            ))}
+                        </div>
+                    </div>
+                )}
+
+                {/* Industrias Relacionadas */}
+                {industries && industries.length > 0 && (
+                    <div>
+                        <h2 class="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-12 border-b-2 border-primary pb-4 inline-block text-center w-full md:w-auto md:text-left">
+                            Industrias Relacionadas
+                        </h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                            {industries.map((industry) => (
+                                <a href={industry.link} class="group block bg-white shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+                                    <div class="aspect-video bg-gray-100 overflow-hidden">
+                                        <img
+                                            src={industry.image}
+                                            alt={industry.title}
+                                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                        />
+                                    </div>
+                                    <div class="p-5 flex items-center justify-between">
+                                        <h3 class="font-serif text-lg font-bold text-gray-900 group-hover:text-primary transition-colors">
+                                            {industry.title}
+                                        </h3>
+                                        <svg
+                                            class="w-5 h-5 text-primary opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all duration-300 flex-shrink-0"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="3"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                                        </svg>
+                                    </div>
+                                </a>
+                            ))}
+                        </div>
+                    </div>
+                )}
+            </div>
+        </section>
+    )}
+</Layout>
+
+<style>
+    .animate-fade-in-up {
+        animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>

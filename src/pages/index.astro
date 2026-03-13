@@ -13,7 +13,110 @@ const directores = [
 ];
 ---
 
-<Layout title="Inicio - CCD">
+<Layout title="CCD - Centro para la Competitividad y el Desarrollo" description="Promovemos el desarrollo territorial sostenible a través de soluciones integrales en competitividad, inversión y evaluación de proyectos.">
+
+<!-- ========================================================================= -->
+    <!-- 1. HERO SECTION: Estilo McKinsey (Fondo Claro a Secundario)               -->
+    <!-- ========================================================================= -->
+    <section class="bg-gradient-to-b from-white via-white to-secondary-light/30 pt-24 md:pt-32 pb-20 px-6 lg:px-12 w-full max-w-[2000px] mx-auto min-h-screen flex flex-col justify-center">
+        
+        <div class="container mx-auto">
+            
+            <!-- TÍTULO PRINCIPAL (Oscuro para contrastar con el fondo claro) -->
+            <div class="max-w-5xl mb-12 md:mb-16 gsap-hero-element">
+                <h1 class="font-serif text-5xl md:text-6xl xl:text-[5rem] text-gray-900 font-bold leading-[1.05] tracking-tight mb-6">
+                    Transformamos el futuro <br class="hidden md:block"/> de las comunidades.
+                </h1>
+                <p class="text-gray-600 text-lg md:text-xl xl:text-2xl font-light leading-relaxed max-w-3xl border-l-4 border-primary pl-6">
+                    Impulsamos la conectividad económica y vital, siendo socios estratégicos para el desarrollo territorial sostenible.
+                </p>
+            </div>
+
+            <!-- ========================================================= -->
+            <!-- GRID DE TARJETAS (Bento Grid Asimétrico Nivel McKinsey)   -->
+            <!-- ========================================================= -->
+            <!-- Usamos un grid de 12 columnas. En móvil es 1 col, en tablet 2, en desktop 12 para control total -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 auto-rows-[300px] gap-4 md:gap-6 w-full">
+                
+                <!-- TARJETA 1: COMPETITIVIDAD (Grande - Ocupa 6 cols y 2 filas) -->
+                <a href="/capacidades/competitividad" class="group relative rounded-sm overflow-hidden lg:col-span-6 row-span-2 min-h-[400px] md:min-h-full gsap-hero-card">
+                    <!-- Degradado oscuro inferior para lectura perfecta -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent z-10 transition-opacity duration-500 opacity-90 group-hover:opacity-100"></div>
+                    <!-- Foto -->
+                    <img src="/capacidades/competitividad.png" alt="Competitividad y Desarrollo" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                    
+                    <!-- Contenido -->
+                    <div class="absolute bottom-0 left-0 p-8 md:p-10 z-20 w-full pr-12">
+                        <span class="text-white/80 font-sans text-[11px] tracking-[0.2em] uppercase mb-3 block">Capacidad Principal</span>
+                        <h3 class="font-serif text-3xl md:text-4xl xl:text-5xl text-white font-bold leading-tight group-hover:text-primary-light transition-colors">
+                            Generación de Valor y Competitividad Territorial 
+                            <svg class="w-6 h-6 md:w-8 md:h-8 inline-block ml-1 -mt-2 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
+                        </h3>
+                    </div>
+                </a>
+
+                <!-- TARJETA 2: MINERÍA (Cuadrada - Ocupa 3 cols) -->
+                <a href="/industrias/mineria" class="group relative rounded-sm overflow-hidden lg:col-span-3 row-span-1 gsap-hero-card">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/50 to-transparent z-10 transition-opacity duration-500 opacity-90 group-hover:opacity-100"></div>
+                    <img src="/industrias/mineria.png" alt="Minería Responsable" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                    
+                    <div class="absolute bottom-0 left-0 p-6 z-20 w-full pr-8">
+                        <span class="text-white/80 font-sans text-[11px] tracking-[0.2em] uppercase mb-2 block">Industria Destacada</span>
+                        <h3 class="font-serif text-xl md:text-2xl text-white font-bold leading-snug">
+                            Minería responsable y valor compartido
+                            <svg class="w-5 h-5 inline-block ml-1 -mt-1 transform group-hover:translate-x-1.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
+                        </h3>
+                    </div>
+                </a>
+
+                <!-- TARJETA 3: PAÍSES / MATRIZ DE EXPERIENCIA (Cuadrada - Ocupa 3 cols) -->
+                <a href="/paises" class="group relative rounded-sm overflow-hidden lg:col-span-3 row-span-1 gsap-hero-card">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/50 to-transparent z-10 transition-opacity duration-500 opacity-90 group-hover:opacity-100"></div>
+                    <!-- Te sugiero una imagen de un mapa, conexiones globales o personas diversas -->
+                    <img src="https://images.unsplash.com/photo-1529400971008-f566de0e6dfc?q=80&w=2070&auto=format&fit=crop" alt="Matriz de Experiencia" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 filter grayscale-[30%]" />
+                    
+                    <div class="absolute bottom-0 left-0 p-6 z-20 w-full pr-8">
+                        <span class="text-secondary-light font-sans text-[11px] tracking-[0.2em] uppercase mb-2 block">Alcance Global</span>
+                        <h3 class="font-serif text-xl md:text-2xl text-white font-bold leading-snug">
+                            Explora nuestra Matriz de Experiencia
+                            <svg class="w-5 h-5 inline-block ml-1 -mt-1 transform group-hover:translate-x-1.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
+                        </h3>
+                    </div>
+                </a>
+
+                <!-- TARJETA 4: INSIGHTS / BLOG (Recomendada - Cuadrada - Ocupa 3 cols) -->
+                <a href="/blog" class="group relative rounded-sm overflow-hidden lg:col-span-3 row-span-1 gsap-hero-card hidden md:block">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/50 to-transparent z-10 transition-opacity duration-500 opacity-90 group-hover:opacity-100"></div>
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop" alt="Insights y Estudios" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                    
+                    <div class="absolute bottom-0 left-0 p-6 z-20 w-full pr-8">
+                        <span class="text-white/80 font-sans text-[11px] tracking-[0.2em] uppercase mb-2 block">Perspectivas CCD</span>
+                        <h3 class="font-serif text-xl md:text-2xl text-white font-bold leading-snug group-hover:underline decoration-1 underline-offset-4">
+                            Últimos estudios y publicaciones
+                            <svg class="w-5 h-5 inline-block ml-1 -mt-1 transform group-hover:translate-x-1.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
+                        </h3>
+                    </div>
+                </a>
+
+                <!-- TARJETA 5: CONTACTO (Sólida - Rompe el patrón visual - Ocupa 3 cols) -->
+                <a href="/contacto" class="group relative rounded-sm overflow-hidden lg:col-span-3 row-span-1 bg-primary flex flex-col justify-end p-6 gsap-hero-card hidden md:flex hover:bg-primary-dark transition-colors duration-300">
+                    <div class="absolute top-0 right-0 w-40 h-40 bg-white opacity-5 rounded-full transform translate-x-1/2 -translate-y-1/3 group-hover:scale-[1.5] transition-transform duration-700 pointer-events-none"></div>
+                    
+                    <div class="relative z-20">
+                        <span class="text-white/70 font-sans text-[11px] tracking-[0.2em] uppercase mb-3 block">Conversemos</span>
+                        <h3 class="font-serif text-2xl text-white font-bold leading-snug mb-4">
+                            ¿Buscas potenciar tu proyecto territorial?
+                        </h3>
+                        <div class="inline-flex items-center text-sm font-bold text-white bg-slate-900/20 px-4 py-2 rounded-sm group-hover:bg-slate-900 transition-colors">
+                            Contáctanos <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+    
     <section
         class="flex items-center bg-gradient-to-b from-white to-secondary-dark/25 pt-0 pb-12 sm:pt-0 sm:pb-0"
     >
@@ -58,6 +161,7 @@ const directores = [
             </div>
         </div>
     </section>
+    
     <!-- SECCIÓN: INTRO/VALUE PROP -->
     <section
         class="py-24 bg-gradient-to-r from-primary-dark via-primary to-primary-dark text-white text-center"

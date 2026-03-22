@@ -50,51 +50,73 @@ const {
 
     <!-- GENERACIÓN DE VALOR CLIENTE -->
     {valueGenerationItems && valueGenerationItems.length > 0 && (
-        <>
-            <section class="bg-white pt-16 md:pt-20 pb-16">
-                <div class="container mx-auto px-6 lg:px-12 max-w-5xl text-center md:text-left">
-                    <h2 class="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-8 border-b-2 border-primary pb-4 inline-block">
-                        Generación de <span class="text-primary italic">Valor Cliente</span>
+        <section class="bg-gray-100 pb-24">
+            <!-- Título Principal con Degradado -->
+            <div class="relative bg-gradient-to-br from-[#6B1A29] via-[#910121] to-[#4A0D15] py-24 md:py-32 text-white overflow-hidden shadow-2xl mb-16 md:mb-24">
+                <!-- Capa extra para profundidad -->
+                <div class="absolute inset-0 bg-black/30 pointer-events-none"></div>
+                <div class="absolute -top-32 -left-32 w-96 h-96 bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-black/20 rounded-full blur-3xl pointer-events-none"></div>
+                
+                <div class="container mx-auto px-6 lg:px-12 max-w-[1600px] text-center relative z-10">
+                    <h2 class="font-serif text-5xl md:text-6xl lg:text-7xl font-bold mb-8 drop-shadow-xl tracking-wide">
+                        Generación de <span class="font-light italic text-[#ffb3c1]">Valor Cliente</span>
                     </h2>
-                    <p class="font-sans text-md md:text-lg lg:text-xl text-gray-700 leading-[1.8] md:leading-[2.2] lg:leading-[1.6]">
+                    <div class="w-32 h-1 bg-white/50 mx-auto mb-10 rounded-full"></div>
+                    <p class="font-sans text-2xl lg:text-[1.75rem] font-light leading-[1.8] max-w-5xl mx-auto text-white/95 drop-shadow-md">
                         {description}
                     </p>
                 </div>
-            </section>
-
-            <div class="container mx-auto px-6 lg:px-12 max-w-5xl mb-16">
-                <slot name="before-value" />
             </div>
 
-            <!-- Items alternados Edge-to-Edge -->
-            {valueGenerationItems.map((item, index) => (
-                <section class={`w-full flex flex-col lg:flex-row items-stretch ${index % 2 !== 0 ? "lg:flex-row-reverse" : ""}`}>
-                    <div class="relative w-full lg:w-1/2 min-h-[400px] lg:min-h-[500px] overflow-hidden">
-                        <img
-                            src={item.image}
-                            alt={item.imageAlt || item.text}
-                            class="absolute inset-0 w-full h-full object-cover"
-                        />
-                    </div>
+            <div class="container mx-auto px-6 lg:px-12 max-w-[1600px] flex flex-col gap-12 md:gap-16">
+                <slot name="before-value" />
 
-                    <div class="w-full lg:w-1/2 bg-secondary-light/50 py-12 px-8 lg:py-16 lg:px-16 flex flex-col justify-center">
-                        <div class="w-16 h-1.5 bg-secondary mb-8" />
-                        <p class="font-sans text-md md:text-lg lg:text-xl text-gray-800 leading-[1.8] md:leading-[2.1]">
-                            {item.text}
-                        </p>
-                    </div>
-                </section>
-            ))}
-        </>
+                <!-- Layout Premium de Alto Impacto para cada Value Item -->
+                {valueGenerationItems.map((item, index) => {
+                    const isEven = index % 2 === 0;
+                    
+                    return (
+                        <div class="group relative w-full min-h-[500px] lg:min-h-[70vh] rounded-[2rem] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.15)] flex items-center bg-gray-900 transform transition-all duration-700 hover:-translate-y-2 hover:shadow-[0_25px_60px_rgba(0,0,0,0.4)]">
+                            <!-- Huge Image Background -->
+                            <img
+                                src={item.image}
+                                alt={item.imageAlt || item.text}
+                                class="absolute inset-0 w-full h-full object-cover transition-transform duration-[15000ms] ease-out group-hover:scale-110 opacity-80"
+                            />
+                            
+                            <!-- Heavy Gradient Overlay based on orientation -->
+                            <div class={`absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r ${isEven ? 'from-black/95 via-black/80 md:via-black/50 to-transparent' : 'md:from-transparent md:via-black/50 from-black/95 to-black/95'}`}></div>
+                            
+                            <!-- Text Content -->
+                            <div class={`relative z-10 w-full px-8 py-16 md:px-16 lg:px-24 flex ${isEven ? 'justify-start' : 'justify-start md:justify-end'}`}>
+                                <div class="max-w-4xl">
+                                    <div class={`w-24 h-2 bg-primary mb-10 rounded-full shadow-[0_0_20px_rgba(145,1,33,0.8)] ${!isEven && 'md:ml-auto md:mr-0'}`}></div>
+                                    <p class={`font-sans text-3xl md:text-4xl text-white font-light leading-[1.6] md:leading-[1.7] drop-shadow-xl tracking-wide ${!isEven && 'md:text-right'}`}>
+                                        {item.text}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    );
+                })}
+            </div>
+        </section>
     )}
 
     <!-- NUESTRO TRABAJO -->
     {ourWorkItems && ourWorkItems.length > 0 && (
-        <section class="bg-gray-300 py-20 border-t border-gray-100" id="nuestro-trabajo">
-            <div class="container mx-auto px-6 lg:px-12 max-w-[1600px]">
-                <h2 class="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-12 border-b-2 border-primary pb-4 inline-block">
-                    Nuestro <span class="text-primary italic">Trabajo</span>
-                </h2>
+        <section class="bg-gray-100 py-24 border-t border-gray-200 relative overflow-hidden" id="nuestro-trabajo">
+            <!-- Decorative background gradient -->
+            <div class="absolute top-0 left-0 w-full h-[500px] bg-gradient-to-b from-gray-200/80 to-transparent pointer-events-none"></div>
+            
+            <div class="container mx-auto px-6 lg:px-12 max-w-[1600px] relative z-10">
+                <div class="text-center md:text-left mb-16">
+                    <h2 class="font-serif text-5xl md:text-6xl font-bold text-gray-900 mb-6 drop-shadow-sm tracking-tight">
+                        Nuestro Trabajo
+                    </h2>
+                    <div class="w-32 h-1.5 bg-gradient-to-r from-[#910121] to-[#ffb3c1] rounded-full"></div>
+                </div>
 
                 <div class="mb-12">
                     <slot name="before-work" />
@@ -124,27 +146,34 @@ const {
                         }
 
                         return (
-                            <div class={`group block mb-4 bg-white shadow-sm overflow-hidden flex flex-col ${colClass}`}>
-                                <div class="overflow-hidden bg-gray-200 aspect-video flex-shrink-0">
+                            <div class={`group block mb-6 bg-white rounded-2xl shadow-lg hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)] overflow-hidden flex flex-col transform transition-all duration-500 hover:-translate-y-2 ${colClass}`}>
+                                <div class="relative overflow-hidden aspect-[16/10] flex-shrink-0">
                                     <img
                                         src={work.image}
                                         alt={work.imageAlt || work.text}
-                                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                        class="w-full h-full object-cover transition-transform duration-[10000ms] group-hover:scale-110"
                                     />
+                                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-transparent to-transparent opacity-60 group-hover:opacity-100 transition-opacity duration-500"></div>
                                 </div>
-                                <div class="p-6 flex-grow flex flex-col">
-                                    <h4 class="font-serif text-[1.1rem] md:text-xl font-bold text-gray-900 mb-4 transition-colors duration-300">
+                                <div class="p-8 lg:p-10 flex-grow flex flex-col bg-gradient-to-b from-white to-gray-50/50 relative">
+                                    <!-- decorative top line -->
+                                    <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-transparent via-primary/20 to-transparent group-hover:via-primary transition-all duration-700"></div>
+                                    
+                                    <h4 class="font-serif text-xl md:text-[1.35rem] font-bold text-gray-900 mb-6 transition-colors duration-300 group-hover:text-primary leading-[1.5]">
                                         {work.text}
                                     </h4>
+                                    
                                     {work.bullets && work.bullets.length > 0 && (
-                                        <ul class="space-y-2 mt-auto">
-                                            {work.bullets.map((bullet) => (
-                                                <li class="flex items-start">
-                                                    <span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                                                    <span class="text-gray-700 text-sm ml-3 leading-relaxed">{bullet}</span>
-                                                </li>
-                                            ))}
-                                        </ul>
+                                        <div class="mt-auto pt-6 border-t border-gray-100">
+                                            <ul class={`${work.bullets.length > 5 ? 'grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4' : 'space-y-4'}`}>
+                                                {work.bullets.map((bullet) => (
+                                                    <li class="flex items-start group/bullet">
+                                                        <span class="w-1.5 h-1.5 rounded-full bg-primary/40 mt-2 flex-shrink-0 group-hover/bullet:bg-primary group-hover/bullet:shadow-[0_0_8px_rgba(145,1,33,0.6)] transition-all duration-300" />
+                                                        <span class="text-gray-600 text-[0.95rem] ml-3 leading-relaxed group-hover/bullet:text-gray-900 transition-colors duration-300">{bullet}</span>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
                                     )}
                                 </div>
                             </div>

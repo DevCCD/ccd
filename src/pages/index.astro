@@ -13,55 +13,202 @@ const directores = [
 ];
 ---
 
-<Layout title="CCD - Centro para la Competitividad y el Desarrollo" description="Promovemos el desarrollo territorial sostenible a través de soluciones integrales en competitividad, inversión y evaluación de proyectos.">
+<Layout
+    title="CCD - Centro para la Competitividad y el Desarrollo"
+    description="Promovemos el desarrollo territorial sostenible a través de soluciones integrales en competitividad, inversión y evaluación de proyectos."
+>
+    <section class="bg-white pt-16 pb-16 px-6 sm:px-8 xl:px-0">
+        <div class="max-w-screen-xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                <!-- Left Column: Title and 2 Cards -->
+                <div class="lg:col-span-8 flex flex-col gap-6">
+                    <!-- Title Block -->
+                    <div
+                        class="bg-white pr-4 lg:pr-12 pb-4 lg:pb-12 flex flex-col justify-center min-h-[30vh]"
+                    >
+                        <h1
+                            id="hero-title"
+                            class="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[4.5rem] font-bold text-primary leading-[1.05] tracking-tight mb-8"
+                        >
+                            El Futuro de <br class="hidden md:block" /> las Comunidades
+                        </h1>
+                        <div
+                            class="flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-12"
+                        >
+                            <p
+                                id="hero-subtitle"
+                                class="font-sans text-xl md:text-2xl text-gray-700 max-w-xl"
+                            >
+                                Cada vez son más las comunidades que priorizan
+                                la conectividad económica, física y vital.
+                            </p>
+                            <a
+                                id="hero-button"
+                                href="/contacto"
+                                class="shrink-0 flex items-center justify-center w-16 h-16 rounded-full border border-gray-300 hover:border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 group"
+                            >
+                                <svg
+                                    class="w-8 h-8 transform group-hover:translate-x-1 transition-transform"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                    ><path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.5"
+                                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                                    ></path></svg
+                                >
+                            </a>
+                        </div>
+                    </div>
 
+                    <!-- 2 Cards Row -->
+                    <div
+                        class="grid grid-cols-1 sm:grid-cols-2 gap-6 flex-grow"
+                    >
+                        <!-- Card 1: Países -->
+                        <a
+                            href="/paises"
+                            class="group relative overflow-hidden flex flex-col justify-end bg-gray-900 min-h-[350px] md:min-h-[400px]"
+                        >
+                            <img
+                                src="https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                                alt="Países"
+                                class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+                            />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/20 to-transparent"
+                            >
+                            </div>
+                            <div class="relative z-10 p-6 md:p-8">
+                                <p
+                                    class="text-white/80 text-sm font-bold tracking-widest uppercase mb-3"
+                                >
+                                    Cobertura Global
+                                </p>
+                                <h3
+                                    class="text-white text-3xl font-serif font-bold group-hover:text-gray-200 transition-colors flex items-center"
+                                >
+                                    Países
+                                    <svg
+                                        class="w-5 h-5 ml-2 opacity-0 group-hover:opacity-100 transform -translate-x-4 group-hover:translate-x-0 transition-all duration-300"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
+                                        ><path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2.5"
+                                            d="M9 5l7 7-7 7"></path></svg
+                                    >
+                                </h3>
+                            </div>
+                        </a>
 
-    
-    <section
-        class="flex items-center bg-gradient-to-b from-white to-secondary-dark/25 pt-0 pb-12 sm:pt-0 sm:pb-0"
-    >
-        <div
-            class="container mx-auto px-6 flex flex-col-reverse md:grid md:grid-cols-2 gap-8 md:gap-12 items-center"
-        >
-            <!-- Columna de Texto -->
-            <div class="text-center md:text-left">
-                <!-- CORRECCIÓN 4: Salto de Línea en el Título -->
-                <!-- Añadimos una etiqueta <br /> justo después de "de" para forzar el salto de línea. -->
-                <h1
-                    id="hero-title"
-                    class="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-primary leading-tight"
-                >
-                    El Futuro de <br class="hidden md:block" /> las Comunidades
-                </h1>
-                <p
-                    id="hero-subtitle"
-                    class="mt-10 font-sans text-lg md:text-2xl text-gray-700 max-w-lg mx-auto md:mx-0"
-                >
-                    Cada vez son más las comunidades que priorizan la
-                    conectividad económica, física y vital.
-                </p>
-                <a
-                    id="hero-button"
-                    href="/contacto"
-                    class="mt-10 inline-block bg-primary text-white font-bold py-4 px-8 rounded-lg hover:bg-primary-dark transition-colors"
-                >
-                    Contáctanos
-                </a>
-            </div>
+                        <!-- Card 2: Competitividad -->
+                        <a
+                            href="/capacidades/competitividad"
+                            class="group relative overflow-hidden flex flex-col justify-end bg-gray-900 min-h-[350px] md:min-h-[400px]"
+                        >
+                            <img
+                                src="https://res.cloudinary.com/ccdcloudy/image/upload/v1772640888/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/Competitividad_inpcde.webp"
+                                alt="Competitividad"
+                                class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+                            />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/20 to-transparent"
+                            >
+                            </div>
+                            <div class="relative z-10 p-6 md:p-8">
+                                <p
+                                    class="text-white/80 text-sm font-bold tracking-widest uppercase mb-3"
+                                >
+                                    Nuestras Capacidades
+                                </p>
+                                <h3
+                                    class="text-white text-3xl font-serif font-bold group-hover:text-gray-200 transition-colors flex items-center"
+                                >
+                                    Competitividad
+                                    <svg
+                                        class="w-5 h-5 ml-2 opacity-0 group-hover:opacity-100 transform -translate-x-4 group-hover:translate-x-0 transition-all duration-300"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
+                                        ><path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2.5"
+                                            d="M9 5l7 7-7 7"></path></svg
+                                    >
+                                </h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
 
-            <!-- Columna de Imagen -->
-            <!-- NOTA: Reemplaza 'hero-image.png' con el nombre de tu archivo de imagen real. -->
-            <!-- Asegúrate de colocar tu imagen en la carpeta `public/`. -->
-            <div id="hero-image" class="w-full max-w-md md:max-w-full mx-auto">
-                <img
-                    src="/hero-image.png"
-                    alt="Ilustración de una comunidad conectada"
-                    class="w-11/12 mx-auto h-auto"
-                />
+                <!-- Right Column: 2 Stacked Cards -->
+                <div id="hero-image" class="lg:col-span-4 flex flex-col gap-6">
+                    <!-- Tall Featured Card 1: Minería -->
+                    <a
+                        href="/industrias/mineria"
+                        class="group relative overflow-hidden flex flex-col justify-end bg-gray-900 h-full min-h-[300px]"
+                    >
+                        <img
+                            src="https://res.cloudinary.com/ccdcloudy/image/upload/v1773340518/Web%20CCD/Industrias/mineria_ymbax9.jpg"
+                            alt="Minería"
+                            class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 bg-white"
+                        />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-black/10"
+                        >
+                        </div>
+                        <div class="relative z-10 p-6 md:p-8">
+                            <p
+                                class="text-white/80 text-sm font-bold tracking-widest uppercase mb-3"
+                            >
+                                Industrias Principales
+                            </p>
+                            <h3
+                                class="text-white text-3xl md:text-4xl font-serif font-bold leading-tight group-hover:text-gray-200 transition-colors"
+                            >
+                                Minería
+                            </h3>
+                        </div>
+                    </a>
+
+                    <!-- Tall Featured Card 2: Enfoque de Trabajo -->
+                    <a
+                        href="/nosotros/enfoque"
+                        class="group relative overflow-hidden flex flex-col justify-end bg-gray-900 h-full min-h-[300px]"
+                    >
+                        <img
+                            src="/capacidades/capacidades.png"
+                            alt="Enfoque de Trabajo"
+                            class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 bg-white"
+                        />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-black/10"
+                        >
+                        </div>
+                        <div class="relative z-10 p-6 md:p-8">
+                            <p
+                                class="text-white/80 text-sm font-bold tracking-widest uppercase mb-3"
+                            >
+                                Metodología
+                            </p>
+                            <h3
+                                class="text-white text-3xl md:text-4xl font-serif font-bold leading-tight group-hover:text-gray-200 transition-colors"
+                            >
+                                Enfoque de Trabajo
+                            </h3>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
-    
+
     <!-- SECCIÓN: INTRO/VALUE PROP -->
     <section
         class="py-24 bg-gradient-to-r from-primary-dark via-primary to-primary-dark text-white text-center"

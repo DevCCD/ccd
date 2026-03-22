@@ -71,6 +71,10 @@ const introImage =
             <h2 class="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-4">
                 Matriz de Experiencia
             </h2>
+            <h4 class="font-sans text-xl md:text-2xl text-gray-500 mb-4">
+                Click para ver detalle
+            </h4>
+
             
             <!-- La tabla -->
             <div class="relative w-full">
@@ -338,10 +342,10 @@ const introImage =
                 linksDiv.innerHTML =
                     '<a href="' + cap.link + '" style="display:flex;align-items:center;gap:10px;padding:14px 16px;border-radius:10px;background:' + cap.color + ';color:#fff;font-size:14px;font-weight:600;text-decoration:none;transition:opacity 0.15s;">' +
                     '<svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>' +
-                    'Ir a ' + cap.name + '</a>' +
+                    cap.name + '</a>' +
                     '<a href="/industrias/' + indSlug + '" style="display:flex;align-items:center;gap:10px;padding:14px 16px;border-radius:10px;background:#f3f4f6;color:#374151;font-size:14px;font-weight:600;text-decoration:none;transition:background 0.15s;">' +
                     '<svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>' +
-                    'Ir a ' + indName + '</a>';
+                    indName + '</a>';
 
                 // Position: use absolute positioning relative to the page
                 var rect = btn.getBoundingClientRect();

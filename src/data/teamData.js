@@ -3,7 +3,7 @@ export const teamMembers = {
     "rudy-laguna": {
         name: "Rudy Laguna",
         role: "Director",
-        image: "/rudy-laguna.png",
+        image: "/rudy.png",
         slug: "rudy-laguna"
     },
     "viviana-sanchez": {

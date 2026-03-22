@@ -38,7 +38,9 @@ const simpleInactiveClass =
     class="bg-white text-gray-800 sticky top-0 z-50 transition-all duration-300 relative"
 >
     <!-- NAV CONTAINER: Altura reducida a h-[72px] para mayor elegancia -->
-    <nav class="container mx-auto px-6 h-[72px] flex justify-center items-center gap-8">
+    <nav
+        class="container mx-auto px-6 h-[72px] flex justify-center items-center gap-8"
+    >
         <!-- ============================================ -->
         <!-- LOGO (Izquierda)                             -->
         <!-- ============================================ -->
@@ -57,7 +59,7 @@ const simpleInactiveClass =
         <!-- ============================================ -->
         <div class="hidden xl:flex items-center h-full">
             <ul class="flex space-x-6 text-[17px] font-medium h-full">
-                <!-- 1. CAPACIDADES (MEGA MENU) -->
+                <!-- 1. CAPACIDADES (MEGA MENU ALFABÉTICO 4x3) -->
                 <li class="group static h-full flex items-center">
                     <a
                         href="/capacidades"
@@ -87,7 +89,6 @@ const simpleInactiveClass =
                     <div
                         class="absolute left-0 top-full w-full opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50"
                     >
-                        <!-- PUENTE INVISIBLE -->
                         <div
                             class="absolute -top-4 left-0 w-full h-6 bg-transparent"
                         >
@@ -98,6 +99,7 @@ const simpleInactiveClass =
                         >
                             <div class="container mx-auto px-6 py-10">
                                 <div class="flex flex-col md:flex-row gap-12">
+                                    <!-- Cabecera del Menú -->
                                     <div
                                         class="w-full md:w-1/4 border-b md:border-b-0 md:border-r border-gray-100 pb-6 md:pb-0"
                                     >
@@ -127,15 +129,19 @@ const simpleInactiveClass =
                                         <p
                                             class="mt-4 text-sm text-gray-500 leading-relaxed"
                                         >
-                                            Pilares de excelencia que nos
-                                            permiten transformar territorios y
-                                            crear valor sostenible para nuestros
-                                            clientes.
+                                            Soluciones integrales para
+                                            transformar territorios y generar
+                                            valor sostenible.
                                         </p>
                                     </div>
+
+                                    <!-- ============================================ -->
+                                    <!-- GRID ALFABÉTICO (3 COLUMNAS x 4 ITEMS)       -->
+                                    <!-- ============================================ -->
                                     <div
-                                        class="w-full md:w-3/4 grid grid-cols-2 lg:grid-cols-3 gap-y-2 gap-x-8"
+                                        class="w-full md:w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4"
                                     >
+                                        <!-- Columna 1 (C - E) -->
                                         <div class="space-y-1">
                                             <a
                                                 href="/capacidades/competitividad"
@@ -146,11 +152,56 @@ const simpleInactiveClass =
                                                 ></a
                                             >
                                             <a
+                                                href="/capacidades/corredores"
+                                                class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
+                                                ><span
+                                                    class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                                                    >Corredores Económicos
+                                                    Territoriales</span
+                                                ></a
+                                            >
+                                            <a
                                                 href="/capacidades/desarrollo"
                                                 class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
                                                 ><span
                                                     class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
                                                     >Desarrollo</span
+                                                ></a
+                                            >
+                                            <a
+                                                href="#"
+                                                class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
+                                                ><span
+                                                    class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                                                    >Estudios Económicos</span
+                                                ></a
+                                            >
+                                        </div>
+
+                                        <!-- Columna 2 (E - F) -->
+                                        <div class="space-y-1">
+                                            <a
+                                                href="/capacidades/evaluacion"
+                                                class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
+                                                ><span
+                                                    class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                                                    >Evaluación de Proyectos</span
+                                                ></a
+                                            >
+                                            <a
+                                                href="#"
+                                                class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
+                                                ><span
+                                                    class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                                                    >Fondos de Estabilización</span
+                                                ></a
+                                            >
+                                            <a
+                                                href="#"
+                                                class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
+                                                ><span
+                                                    class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                                                    >Fondos Sociales</span
                                                 ></a
                                             >
                                             <a
@@ -163,39 +214,40 @@ const simpleInactiveClass =
                                                 ></a
                                             >
                                         </div>
+
+                                        <!-- Columna 3 (I - P) -->
                                         <div class="space-y-1">
                                             <a
-                                                href="/capacidades/fondos"
+                                                href="#"
                                                 class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
                                                 ><span
                                                     class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
-                                                    >Fondos de Desarrollo</span
+                                                    >Inteligencia Artificial y
+                                                    Analítica</span
                                                 ></a
                                             >
-                                            <a
-                                                href="/capacidades/evaluacion"
-                                                class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
-                                                ><span
-                                                    class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
-                                                    >Evaluación de Proyectos</span
-                                                ></a
-                                            >
-                                            <a
-                                                href="/capacidades/corredores"
-                                                class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
-                                                ><span
-                                                    class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
-                                                    >Corredores Económicos</span
-                                                ></a
-                                            >
-                                        </div>
-                                        <div class="space-y-1">
                                             <a
                                                 href="/capacidades/inversiones"
                                                 class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
                                                 ><span
                                                     class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
-                                                    >Inversiones y Proyectos</span
+                                                    >Inversiones y proyectos</span
+                                                ></a
+                                            >
+                                            <a
+                                                href="#"
+                                                class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
+                                                ><span
+                                                    class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                                                    >Legal</span
+                                                ></a
+                                            >
+                                            <a
+                                                href="#"
+                                                class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
+                                                ><span
+                                                    class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                                                    >Política Fiscal</span
                                                 ></a
                                             >
                                         </div>
@@ -570,7 +622,7 @@ const simpleInactiveClass =
                                 : simpleInactiveClass,
                         ]}
                     >
-                        MiLink
+                        MiLinkCCD
                     </a>
                 </li>
             </ul>
@@ -708,7 +760,7 @@ const simpleInactiveClass =
                 target="_blank"
                 rel="noopener noreferrer"
                 class="block px-3 py-3 rounded-md text-base text-primary hover:bg-primary/5 transition-colors"
-                >MiLink</a
+                >MiLinkCCD</a
             >
         </div>
     </div>

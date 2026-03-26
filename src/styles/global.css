@@ -6,12 +6,38 @@
 .accordion-panel {
   overflow: hidden;
   max-height: 0;
-  transition: max-height 0.4s ease-out; /* La animación! */
+  transition: max-height 0.4s ease-out;
+  /* La animación! */
 }
 
 /* Clase que se añade con JS para abrir el panel */
 .accordion-panel.open {
-  max-height: 500px; /* Un valor lo suficientemente grande para contener los enlaces */
+  max-height: 500px;
+  /* Un valor lo suficientemente grande para contener los enlaces */
   transition: max-height 0.5s ease-in;
 }
 
+
+/* Nuevo truco para Flourish Responsivo (Altura Automática) */
+.flourish-clean-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #ffffff;
+  /* Ya no forzamos una altura (height), dejamos que Flourish la calcule sola */
+}
+
+/* Recortamos exactamente el área del logo en todas las pantallas usando margin negativo */
+.flourish-clean-wrapper iframe.flourish-embed-iframe,
+.flourish-clean-wrapper .flourish-embed-iframe {
+  width: 100% !important;
+  margin-bottom: -65px !important;
+  /* Esto corta exactamente los últimos 65px (el logo) del gráfico */
+  border: none !important;
+}
+
+.flourish-clean-wrapper .flourish-credit {
+  display: none !important;
+}

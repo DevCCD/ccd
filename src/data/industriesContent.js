@@ -401,7 +401,7 @@ export const industriesContent = {
         headerImagePosition: "center",
         paragraphs: ["Los sistemas portuarios son fundamentales en todo proceso de desarrollo porque permiten la transacción de bienes, mayor comercio internacional, ampliación de mercados y expansión de las ventas de las grandes, medianas, pequeñas y micro empresas ubicadas en el país, región, distrito o comunidad. Esto a su vez genera empleos directos, indirectos e inducidos, así como ingresos para los trabajadores y las familias que mejoran la calidad de vida.", "El Centro para la Competitividad y el Desarrollo (CCD) apoya en identificar acciones estratégicas para el crecimiento sostenido de las actividades y del entorno o zona de influencia portuario. Brindamos asistencia técnica en planificación, competitividad y desarrollo con un enfoque de corredores económicos territoriales y el desarrollo de la zona de influencia económica y social del sistema portuario. Evaluamos los beneficios generados por el sistema portuario en la zona de influencia. Fortalecemos capacidades en competitividad y desarrollo a los actores relacionados a los sistemas portuarios, principalmente en proyectos de inversión, sistemas tecnológicos de información para la evaluación, seguimiento y acompañamiento del proceso de prosperidad portuario."],
         mainImageAlt: "Servicios Portuarios",
-        flourishId: "28144753",
+        flourishId: "28237648",
         specialistSlugs: ["karla-casas", "viviana-sanchez"],
         capabilitySlugs: ["corredores", "competitividad"],
         introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773281938/Web%20CCD/Industrias/PCB7W7DFSFE45EF3IWTFQSBESQ_iixzjw.avif",

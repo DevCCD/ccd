@@ -222,14 +222,18 @@ const {
     <!-- SECCIÓN FLOURISH (DATA) -->
     {
         flourishId && (
-            <section class="bg-white py-20 border-t border-gray-100">
-                <div class="container mx-auto px-6 lg:px-12 max-w-6xl">
-                    <div class="min-h-[600px] flex items-center justify-center overflow-hidden">
-                        <div
-                            class="flourish-embed flourish-map w-full"
-                            data-src={`visualisation/${flourishId}`}
-                        >
-                            <script src="https://public.flourish.studio/resources/embed.js" />
+            <section class="w-full bg-white py-16 md:py-24 border-t border-gray-200">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-12 flex flex-col items-center">
+                    <div class="w-full max-w-6xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden rounded-xl border border-gray-100">
+                        <div class="flourish-clean-wrapper">
+                            <div
+                                class="flourish-embed flourish-map w-full"
+                                data-src={`visualisation/${flourishId}`}
+                                data-width="100%"
+                            >
+                                <script is:inline src="https://public.flourish.studio/resources/embed.js" />
+                                <noscript><img src={`https://public.flourish.studio/visualisation/${flourishId}/thumbnail`} width="100%" alt="visualization" /></noscript>
+                            </div>
                         </div>
                     </div>
                 </div>

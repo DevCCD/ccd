@@ -1,0 +1,123 @@
+---
+export interface Props {
+    intro?: string;
+    bullets: {
+        title?: string;
+        text: string;
+        image: string;
+        cols?: number;
+        span?: number; // legacy
+        subBullets?: string[];
+    }[];
+}
+
+const { intro = "", bullets } = Astro.props;
+
+// Helper para convertir el número de columnas deseadas a la clase Tailwind grid-cols-12
+const getSpanClass = (cols: number = 2, span?: number) => {
+    // Si todavía usan el viejo 'span', transformarlo
+    if (span === 4) cols = 1;
+    if (span === 2) cols = 2;
+    
+    switch (cols) {
+        case 1:
+            return "col-span-12"; // 1 item por fila ocupa todo (12)
+        case 2:
+            return "col-span-12 md:col-span-6"; // 2 items por fila ocupan la mitad (6)
+        case 3:
+            return "col-span-12 md:col-span-6 lg:col-span-4"; // 3 items por fila ocupan (4)
+        case 4:
+            return "col-span-12 md:col-span-6 lg:col-span-3"; // 4 items por fila ocupan (3)
+        default:
+            return "col-span-12 md:col-span-6";
+    }
+};
+---
+
+<div class="w-full flex flex-col">
+    {/* INTRODUCCIÓN CON FONDO DEGRADADO PRIMARIO */}
+    {
+        intro && intro.trim() !== "" && (
+            <section class="bg-gradient-to-b from-primary-dark via-primary to-primary/90 py-16 md:py-24 relative overflow-hidden">
+                <div class="container mx-auto px-6 lg:px-12 max-w-5xl relative z-10 text-center animate-fade-in-up">
+                    <h2 class="font-serif text-3xl md:text-5xl font-black text-white mb-8 drop-shadow-md">
+                        Generación de Valor Cliente
+                    </h2>
+                    <div class="w-16 h-1 bg-white/50 mx-auto mb-10 rounded-full" />
+                    <p class="font-sans text-xl md:text-2xl text-white leading-relaxed font-light text-pretty">
+                        {intro}
+                    </p>
+                </div>
+            </section>
+        )
+    }
+
+    {/* GRILLA ESTILO MCKINSEY (12 COLUMNAS BASE PARA MÁXIMA FLEXIBILIDAD) */}
+    {
+        bullets && bullets.length > 0 && (
+            <section class="bg-gray-100 py-16 md:py-24">
+                <div class="container mx-auto px-6 lg:px-12 max-w-[1400px]">
+                    {/* Cambiado a grid-cols-12 */}
+                    <div class="grid grid-cols-12 gap-8 lg:gap-10">
+                        {bullets.map((bullet) => {
+                            // Definimos cuántas columnas queremos o si usamos retrocompatibilidad
+                            const cols = bullet.cols || (bullet.span ? (bullet.span === 4 ? 1 : 2) : 2);
+                            const isHorizontal = cols === 1;
+
+                            return (
+                                <div
+                                    class={`group flex ${isHorizontal ? "flex-col md:flex-row" : "flex-col"} overflow-hidden bg-white border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 hover:bg-gray-50 transition-all duration-500 ${getSpanClass(bullet.cols, bullet.span)}`}
+                                >
+                                    {/* IMAGEN */}
+                                    <div
+                                        class={`relative overflow-hidden ${isHorizontal ? "w-full md:w-[50%] lg:w-[50%]" : "w-full"} ${isHorizontal ? "h-64 md:h-auto min-h-[350px]" : "h-56 md:h-64"}`}
+                                    >
+                                        <img
+                                            src={bullet.image}
+                                            alt={bullet.title || "Generación de Valor"}
+                                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1500ms] group-hover:scale-105"
+                                        />
+                                    </div>
+
+                                    {/* TEXTO */}
+                                    <div
+                                        class={`flex flex-col flex-grow p-8 md:p-10 ${isHorizontal ? "w-full md:w-[50%] lg:w-[50%] justify-center" : ""}`}
+                                    >
+                                        {/* TÍTULO EN NEGRITA */}
+                                        {bullet.title && (
+                                            <h3 class="font-sans text-xl md:text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors">
+                                                {bullet.title}
+                                            </h3>
+                                        )}
+                                        
+                                        {/* DESCRIPCIÓN */}
+                                        <p
+                                            class="font-sans text-[1.05rem] md:text-[1.15rem] text-gray-800 leading-[1.65] font-light"
+                                            style="text-wrap: pretty;"
+                                        >
+                                            {bullet.text}
+                                        </p>
+
+                                        {/* SUB-BULLETS */}
+                                        {bullet.subBullets && bullet.subBullets.length > 0 && (
+                                            <ul class="mt-6 space-y-3">
+                                                {bullet.subBullets.map((sub) => (
+                                                    <li class="flex items-start">
+                                                        <span class="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 mr-3 flex-shrink-0" />
+                                                        <span class="font-sans text-[0.95rem] md:text-[1.05rem] text-gray-700 leading-relaxed font-light">
+                                                            {sub}
+                                                        </span>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        )}
+                                    </div>
+                                </div>
+                            );
+                        })}
+                    </div>
+                </div>
+            </section>
+        )
+    }
+</div>

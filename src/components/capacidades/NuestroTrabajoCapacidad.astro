@@ -1,0 +1,74 @@
+---
+export interface Props {
+    workList: {
+        title?: string;
+        bullet: string;
+        image?: string;
+        subBullets?: string[];
+    }[];
+}
+
+const { workList } = Astro.props;
+---
+
+<section class="bg-gradient-to-br from-primary via-[#6a0016] to-[#2a0008] py-24 md:py-32 relative" id="nuestro-trabajo">
+    <div class="container mx-auto px-6 lg:px-12 max-w-[1600px] relative z-10">
+        {/* Título de Sección Blancos para contrastar el fondo Primario Degradado */}
+        <div class="mb-20 flex flex-col items-center md:items-start text-center md:text-left">
+            <h2 class="font-serif text-3xl md:text-5xl font-black text-white mb-6 tracking-tight">
+                Nuestro Trabajo
+            </h2>
+            <div class="w-24 h-[5px] bg-secondary"></div>
+            <p class="mt-6 text-lg text-white/90 max-w-2xl font-light">
+                Metodologías estructuradas y ejecución precisa para garantizar resultados escalables y beneficios a largo plazo.
+            </p>
+        </div>
+
+        {/* Grilla Masonry (Columnas) para tarjetas blancas inmaculadas sin huecos verticales */}
+        {workList && workList.length > 0 && (
+            <div class="columns-1 md:columns-2 xl:columns-3 gap-8 lg:gap-10">
+                {workList.map((work) => (
+                    <div class="break-inside-avoid mb-8 lg:mb-10 flex flex-col group bg-white border-t-4 border-transparent hover:border-secondary rounded-none overflow-hidden transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-2xl">
+                        
+                        {/* Imagen Encabezado Condicional (Solo si tiene imagen asignada) */}
+                        {work.image && work.image.trim() !== "" && (
+                            <div class="h-[200px] relative overflow-hidden bg-gray-100">
+                                <img 
+                                    src={work.image} 
+                                    alt={work.title || "Nuestro Trabajo"} 
+                                    class="w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-105" 
+                                />
+                            </div>
+                        )}
+                        
+                        {/* Contenido Texto */}
+                        <div class="p-8 lg:p-10 flex flex-col flex-grow">
+                            {work.title && (
+                                <h3 class="font-sans text-xl md:text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors leading-tight">
+                                    {work.title}
+                                </h3>
+                            )}
+                            <p class="font-sans text-base md:text-[1.05rem] text-gray-700 leading-[1.7] font-normal flex-grow">
+                                {work.bullet}
+                            </p>
+                            
+                            {/* Píldoras SubBullets Claras */}
+                            {work.subBullets && work.subBullets.length > 0 && (
+                                <div class="mt-8 pt-6 border-t border-gray-100">
+                                    <div class="flex flex-wrap gap-2.5">
+                                        {work.subBullets.map((sub) => (
+                                            <span class="text-[0.8rem] font-medium bg-gray-50 border border-gray-100 text-gray-600 px-3 py-1.5 rounded-[2px] hover:bg-gray-100 hover:border-gray-200 transition-colors">
+                                                {sub}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+                        
+                    </div>
+                ))}
+            </div>
+        )}
+    </div>
+</section>

@@ -1,0 +1,17 @@
+---
+export interface Props {
+    area: string;
+    color: string;
+}
+
+const { area, color } = Astro.props;
+---
+
+<div
+    class="inline-flex items-center px-4 py-1.5 rounded-sm shadow-sm"
+    style={`background-color: ${color};`}
+>
+    <span class="font-sans text-sm font-bold tracking-wide text-white">
+        {area}
+    </span>
+</div>

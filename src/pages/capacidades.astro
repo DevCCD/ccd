@@ -3,84 +3,63 @@ import Layout from "../layouts/Layout.astro";
 import PageHeader from "../components/PageHeader.astro";
 import IndustryCard from "../components/industrias/IndustryCard.astro";
 
+import { capacidadesContent } from "../data/capacidadesContent.js";
+
+// Dinamización Total de las 12 Capacidades
+const capacidadesArray = Object.entries(capacidadesContent).map(
+  ([slug, data]) => ({
+    slug,
+    title: data.title,
+    // Utilizamos el intro, el primer bullet, o un fallback
+    description:
+      data.valorClienteIntro ||
+      (data.valorClienteBullets &&
+        data.valorClienteBullets[0] &&
+        data.valorClienteBullets[0].text) ||
+      "Impulsamos estrategias de desarrollo sostenible y competitividad.",
+    image: data.headerImage,
+    area: data.area,
+    areaColor: data.areaColor,
+    span: "col-span-6 md:col-span-3 lg:col-span-3", // Uniformamos columnas para un grid ordenado
+  }),
+);
+
+// Orden Alfabético
+capacidadesArray.sort((a, b) => a.title.localeCompare(b.title));
+
+// Aplicar un patrón dinámico de columnas (Layout: 3, 2, 3, 2, 2) para frescura visual
+const layoutPattern = [
+  "col-span-6 md:col-span-3 lg:col-span-2", // Fila 1 (3 items)
+  "col-span-6 md:col-span-3 lg:col-span-2",
+  "col-span-6 md:col-span-3 lg:col-span-2",
+  "col-span-6 md:col-span-3 lg:col-span-3", // Fila 2 (2 items)
+  "col-span-6 md:col-span-3 lg:col-span-3",
+  "col-span-6 md:col-span-3 lg:col-span-2", // Fila 3 (3 items)
+  "col-span-6 md:col-span-3 lg:col-span-2",
+  "col-span-6 md:col-span-3 lg:col-span-2",
+  "col-span-6 md:col-span-3 lg:col-span-3", // Fila 4 (2 items)
+  "col-span-6 md:col-span-3 lg:col-span-3",
+  "col-span-6 md:col-span-3 lg:col-span-3", // Fila 5 (2 items)
+  "col-span-6 md:col-span-3 lg:col-span-3",
+];
+
+capacidadesArray.forEach((item, index) => {
+  item.span = layoutPattern[index] || "col-span-6 lg:col-span-3";
+});
+
+// Agrupar en tres secciones para alternar los fondos temáticos
 const sections = [
   {
     bg: "bg-white",
-    items: [
-      {
-        title: "Competitividad",
-        description:
-          "Mejorar productividad, empleabilidad e ingresos de la Población en Edad de Trabajar (PET) en diversas circunscripciones territoriales y zonas económicas.",
-        image:
-          "https://res.cloudinary.com/ccdcloudy/image/upload/v1772640888/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/Competitividad_inpcde.webp",
-        slug: "competitividad",
-        span: "col-span-6 md:col-span-3 lg:col-span-3",
-      },
-      {
-        title: "Desarrollo",
-        description:
-          "Mejorar la calidad de vida de las personas de manera integral, para circunscripciones: país, estado, región, provincia, distrito y comunidad.",
-        image:
-          "https://res.cloudinary.com/ccdcloudy/image/upload/v1772640288/Web%20CCD/Capacidades%20e%20Industrias/Desarrollo/Desarrollo_xepqfz.webp",
-        slug: "desarrollo",
-        span: "col-span-6 md:col-span-3 lg:col-span-3",
-      },
-    ],
+    items: capacidadesArray.slice(0, 5), // Renderiza Fila 1 (3) y Fila 2 (2)
   },
   {
-    bg: "bg-gradient-to-t from-secondary-light/20 to-secondary",
-    items: [
-      {
-        title: "Corredores Económicos Territoriales",
-        description:
-          "Desarrollo integrado del área de influencia o de más de una circunscripción territorial: países, regiones, provincias, distritos y/o comunidades.",
-        image:
-          "https://res.cloudinary.com/ccdcloudy/image/upload/v1772641842/Web%20CCD/Capacidades%20e%20Industrias/Corredores/Corredores_wctx4s.webp",
-        slug: "corredores",
-        span: "col-span-6 md:col-span-3 lg:col-span-2",
-      },
-      {
-        title: "Inversiones y Proyectos",
-        description:
-          "Inversiones y proyectos permiten reducir y cerrar brechas, desarrollo y mejoran calidad de vida de la población.",
-        image:
-          "https://res.cloudinary.com/ccdcloudy/image/upload/v1772644229/Web%20CCD/Capacidades%20e%20Industrias/Inversiones/inversiones2_gxdoll.jpg",
-        slug: "inversiones",
-        span: "col-span-6 md:col-span-3 lg:col-span-2",
-      },
-      {
-        title: "Evaluación de Programas y Proyectos",
-        description:
-          "Mayores calidad y rendimientos esperados de la inversión social en el área de influencia.",
-        image:
-          "https://res.cloudinary.com/ccdcloudy/image/upload/v1772641630/Web%20CCD/Capacidades%20e%20Industrias/Evaluaci%C3%B3n%20de%20Programas/Evaluacion_paq2ri.webp",
-        slug: "evaluacion",
-        span: "col-span-6 md:col-span-3 lg:col-span-2",
-      },
-    ],
+    bg: "bg-gradient-to-t from-[#e5edf5] to-[#f4f7fa]",
+    items: capacidadesArray.slice(5, 10), // Renderiza Fila 3 (3) y Fila 4 (2)
   },
   {
     bg: "bg-gray-200",
-    items: [
-      {
-        title: "Fondos de Desarrollo",
-        description:
-          "Los fondos de desarrollo locales o comunales (públicos, privados o públicos-privados), con adecuada gobernanza, contribuyen con la gestión social de la empresa.",
-        image:
-          "https://res.cloudinary.com/ccdcloudy/image/upload/v1772641183/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20de%20Desarrollo/Fondos_fljzpp.webp",
-        slug: "fondos",
-        span: "col-span-6 md:col-span-3 lg:col-span-3",
-      },
-      {
-        title: "Fortalecimiento de Capacidades y Capital Humano",
-        description:
-          "Desarrollamos capital humano e institucional para impulsar el desarrollo sostenible.",
-        image:
-          "https://res.cloudinary.com/ccdcloudy/image/upload/v1772640780/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/Fortalecimiento_hk8y2r.webp",
-        slug: "fortalecimiento",
-        span: "col-span-6 md:col-span-3 lg:col-span-3",
-      },
-    ],
+    items: capacidadesArray.slice(10, 12), // Renderiza Fila 5 (2)
   },
 ];
 
@@ -104,6 +83,8 @@ const headerImage =
                 image={capacidad.image}
                 link={`/capacidades/${capacidad.slug}`}
                 colSpan={capacidad.span}
+                area={capacidad.area}
+                areaColor={capacidad.areaColor}
               />
             ))}
           </div>

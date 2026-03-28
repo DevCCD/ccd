@@ -5,6 +5,8 @@ export interface Props {
     image: string;
     link: string;
     colSpan?: string; // Default to '2' for 3 columns in a 6-grid, can be '3' for 2 columns or '6' for 1
+    area?: string;
+    areaColor?: string;
 }
 
 const {
@@ -13,15 +15,27 @@ const {
     image,
     link,
     colSpan = "col-span-6 md:col-span-3 lg:col-span-2",
+    area,
+    areaColor,
 } = Astro.props;
 ---
 
 <a
     href={link}
-    class={`group block ${colSpan} p-4 rounded-xl border border-transparent hover:border-gray-200 hover:bg-white/30 transition-all duration-300`}
+    class={`group block ${colSpan} p-4  border border-transparent hover:border-gray-200 hover:bg-white/30 transition-all duration-300`}
 >
     <!-- IMAGEN -->
-    <div class="aspect-video overflow-hidden mb-6 bg-gray-100">
+    <div class="aspect-video relative overflow-hidden mb-6 bg-gray-100">
+        {
+            area && areaColor && (
+                <span
+                    class="absolute top-3 right-3 z-10 inline-flex items-center px-3 py-1 text-[0.7rem] font-medium text-white rounded-none shadow-sm border border-white/10"
+                    style={`background-color: ${areaColor}E6`}
+                >
+                    {area}
+                </span>
+            )
+        }
         <img
             src={image}
             alt={title}
@@ -31,12 +45,14 @@ const {
 
     <!-- CONTENIDO -->
     <div class="space-y-3">
-        <h2
-            class="font-serif text-2xl font-bold text-gray-900 flex items-center gap-2 group-hover:text-primary transition-colors duration-300"
-        >
-            <span>{title}</span>
+        <div class="flex items-start justify-between gap-4">
+            <h2
+                class="font-serif text-2xl font-bold text-gray-900 leading-tight group-hover:text-primary transition-colors duration-300"
+            >
+                {title}
+            </h2>
             <svg
-                class="w-5 h-5 text-primary transform group-hover:translate-x-1 transition-transform"
+                class="w-5 h-5 flex-shrink-0 mt-1 text-primary transform group-hover:translate-x-1 transition-transform"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="3"
@@ -47,7 +63,7 @@ const {
                     stroke-linejoin="round"
                     d="M9 5l7 7-7 7"></path>
             </svg>
-        </h2>
+        </div>
         <p class="text-gray-600 text-lg leading-relaxed line-clamp-3">
             {description}
         </p>

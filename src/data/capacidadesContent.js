@@ -281,19 +281,19 @@ export const capacidadesContent = {
             {
                 title: "Estabilidad Económica",
                 text: "Estabilidad económica para la prosperidad.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774891933/Web%20CCD/Capacidades%20e%20Industrias/Politica%20Fiscal/BCR-1_e6qgnj.jpg",
                 cols: 3
             },
             {
                 title: "Cierre de Brechas",
                 text: "Dotación de servicios y cierre de brechas económicas y sociales.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774891350/Web%20CCD/Capacidades%20e%20Industrias/Politica%20Fiscal/crecimiento-economico-peru-1_l7bvif.jpg",
                 cols: 3
             },
             {
                 title: "Igualdad de Oportunidades",
                 text: "Crea condiciones de igualdad de oportunidades.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774892068/Web%20CCD/Capacidades%20e%20Industrias/Politica%20Fiscal/63e45ec741bdd9d8fc69932e_Acqui-Hiring_zuqxd4.webp",
                 cols: 3
             }
         ],
@@ -302,7 +302,7 @@ export const capacidadesContent = {
             {
                 title: "Asistencia Técnica",
                 bullet: "Asesoría y asistencia técnica en política fiscal.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "",
                 subBullets: [
                     "Sostenibilidad",
                     "Reglas",
@@ -315,7 +315,7 @@ export const capacidadesContent = {
             {
                 title: "Estudios Fiscales",
                 bullet: "Elaboración de estudios sobre política fiscal.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "",
                 subBullets: [
                     "Modelos cuantitativos y cualitativos para la gestión y sostenibilidad fiscal",
                     "Políticas y reglas fiscales para el crecimiento económico sostenido",
@@ -325,12 +325,12 @@ export const capacidadesContent = {
             {
                 title: "Marcos de Plazo",
                 bullet: "Diseño y actualización de marcos fiscales de mediano y largo plazo.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             },
             {
                 title: "Instrumentos Innovadores",
                 bullet: "Creación de instrumentos fiscales innovadores para la promoción y el crecimiento de sectores productivos de la economía.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             }
         ]
     },
@@ -535,26 +535,26 @@ export const capacidadesContent = {
         title: "Inversiones y Proyectos",
         area: "Inversiones",
         areaColor: "#76933C",
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772651507/Web%20CCD/Capacidades%20e%20Industrias/Inversiones/exportaciones_ee3b4a.jpg",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774890805/Web%20CCD/Capacidades%20e%20Industrias/Inversiones/pexels-betongsmcsg-32690815_hirs0b.jpg",
 
         valorClienteIntro: "",
         valorClienteBullets: [
             {
                 title: "Cierre de Brechas",
                 text: "Inversiones y proyectos permiten reducir y cerrar brechas, generan desarrollo y mejoran la calidad de vida de la población.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772651507/Web%20CCD/Capacidades%20e%20Industrias/Inversiones/exportaciones_ee3b4a.jpg",
                 cols: 1
             },
             {
                 title: "Oportunidades",
                 text: "Contribuye a crear igualdad de oportunidades.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772651826/Web%20CCD/Capacidades%20e%20Industrias/Inversiones/ejec_a3blzb.png",
                 cols: 2
             },
             {
                 title: "Dinamismo Económico",
                 text: "Dinamiza la economía comunal, local, regional y nacional a corto, mediano y largo plazo.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774893657/Web%20CCD/Capacidades%20e%20Industrias/Inversiones/fruit-2_ms0dwz.jpg",
                 cols: 2
             }
         ],
@@ -563,7 +563,7 @@ export const capacidadesContent = {
             {
                 title: "Estudios de Inversión",
                 bullet: "Elaborar estudios para proyectos de inversión.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "",
                 subBullets: [
                     "Tipo: preinversión, expedientes técnicos, prefactibilidad y factibilidad",
                     "Rubro: dimensiones del desarrollo y determinantes de la competitividad",
@@ -574,22 +574,22 @@ export const capacidadesContent = {
             {
                 title: "Programas Multianuales",
                 bullet: "Fortalecer capacidades y asistencia técnica para elaborar Programas Multianuales de Inversiones (PMI).",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             },
             {
                 title: "Impulso Competitivo",
                 bullet: "Elaborar programas de inversiones para impulsar el desarrollo y la competitividad.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             },
             {
                 title: "Capacitación Técnica",
                 bullet: "Fortalecer capacidades y asistencia técnica integral a equipos de profesionales y colaboradores de organizaciones públicas y privadas para mejorar la rapidez y calidad en la ejecución de inversión.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             },
             {
                 title: "Proyectos Innovadores",
                 bullet: "Diseñar e implementar proyectos innovadores de inversión en todas las dimensiones del desarrollo y determinantes de la competitividad.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             }
         ]
     },
@@ -684,19 +684,19 @@ export const capacidadesContent = {
             {
                 title: "Crear Oportunidades",
                 text: "Mejorar los mecanismos creadores de oportunidades de desarrollo.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774892719/Web%20CCD/Capacidades%20e%20Industrias/Legal/12_goqxmm.webp",
                 cols: 1
             },
             {
                 title: "Acelerar Desarrollo",
                 text: "Acelerar el proceso de desarrollo sectorial y las oportunidades de desarrollo.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774892594/Web%20CCD/Capacidades%20e%20Industrias/Legal/images_7_q2yalq.jpg",
                 cols: 2
             },
             {
                 title: "Eficiencias Regulatorias",
                 text: "Generación de eficiencias en los sistemas regulatorios.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774892958/Web%20CCD/Capacidades%20e%20Industrias/Legal/images_8_js6rnr.jpg",
                 cols: 2
             }
         ],
@@ -705,36 +705,36 @@ export const capacidadesContent = {
             {
                 title: "Mejora de Políticas",
                 bullet: "Evaluación y mejora de políticas públicas, principalmente en desarrollo, competitividad, crecimiento económico, infraestructura, planeamiento y descentralización fiscal.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             },
             {
                 title: "Instrumentos Fiscales",
                 bullet: "Evaluación y propuesta de instrumentos fiscales innovadores para promover competitividad y desarrollo nacional y sectorial.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             },
             {
                 title: "Fortalecimiento de Fondos",
                 bullet: "Fortalecimiento de la performance de fondos de desarrollo y fondos sociales de carácter públicos y privados: gobernanza, organización, calidad y velocidad de intervenciones y proyectos de desarrollo y relacionamientos social.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             },
             {
                 title: "Mecanismos de Inversión",
                 bullet: "Mejora de mecanismos de inversión pública y privada: asociaciones público privadas, obras por impuestos e inversión pública.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             },
             {
                 title: "Descentralización",
                 bullet: "Descentralización fiscal y sistemas de administración financiera del sector público.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             },
             {
                 title: "Transferencias",
                 bullet: "Sistema de transferencias intergubernamental de recursos descentralizados: canon, regalías y fondos públicos.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             }
         ]
     },
-    "inteligencia-artificial": {
+    "ia-y-analitica": {
         title: "Inteligencia Artificial y Analítica",
         area: "CCD Tech",
         areaColor: "#31869B",
@@ -745,22 +745,22 @@ export const capacidadesContent = {
             {
                 title: "Decisiones Informadas",
                 text: "Mejora en proceso de toma de decisiones y acompañamiento en el desarrollo.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1760666258/Web%20CCD/Capacidades%20e%20Industrias/Estudios_2_oisfwm.jpg",
                 cols: 2,
                 subBullets: ["Reducción de la incertidumbre mediante modelos predictivos", "Uso de datos históricos y en tiempo real para anticipar escenarios", "Mejora en la calidad, oportunidad y trazabilidad"]
             },
             {
                 title: "Eficiencia Operativa",
                 text: "Optimización de recursos y eficiencia operativa.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774888836/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/descarga_eo8vxw.jpg",
                 cols: 2,
                 subBullets: ["Identificación de ineficiencias operativas y cuellos de botella", "Optimización del presupuesto público y privado", "Priorización inteligente de intervenciones y proyectos", "Automatización de procesos analíticos"]
             },
             {
                 title: "Valor Socioeconómico",
                 text: "Generación de valor económico y social.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
-                cols: 2,
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1760666256/Web%20CCD/Capacidades%20e%20Industrias/Agricultura_1_ffftyc.jpg",
+                cols: 1,
                 subBullets: ["Mejora del impacto de políticas públicas e inversiones", "Incremento del retorno social y económico", "Mejora del targeting de beneficiarios y territorios", "Reducción de riesgos estratégicos"]
             }
         ],
@@ -775,7 +775,7 @@ export const capacidadesContent = {
             {
                 title: "Analítica de Datos",
                 bullet: "Analítica de Datos y Ciencia de Datos.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "",
                 subBullets: ["Análisis exploratorio", "Gobierno de datos", "Integración de fuentes", "Dashboards interactivos", "Modelos descriptivos y predictivos"]
             },
             {
@@ -787,7 +787,7 @@ export const capacidadesContent = {
             {
                 title: "Inteligencia Artificial",
                 bullet: "Inteligencia Artificial para Planeamiento y Gestión Pública.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "",
                 subBullets: ["Planificación territorial inteligente", "Automatización del análisis", "Priorización de inversiones", "Evaluación de políticas públicas"]
             },
             {

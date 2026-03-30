@@ -10,25 +10,25 @@ export const capacidadesContent = {
             {
                 title: "Nivel de Productividad",
                 text: "La competitividad es el conjunto de instituciones, políticas, normas, procedimientos, interacciones y participación público y privado que determina el nivel de productividad.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774878411/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/3_tzmzpt.jpg",
                 cols: 1
             },
             {
                 title: "Capacidad de Producción",
                 text: "La productividad es la capacidad de producción de los agentes económicos como personas, empresas, organizaciones y entidades gubernamentales, dado los recursos disponibles.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774878422/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/8_crktyy.webp",
                 cols: 3
             },
             {
                 title: "Corredores Económicos",
                 text: "La competitividad y productividad determinan el desarrollo de la zona de influencia directa e indirectamente relacionada, así como el crecimiento de los sectores económicos, cadenas de valor de bienes y servicios, clusters y el desarrollo de corredores económicos territoriales.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774878415/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/5_upy7px.webp",
                 cols: 3
             },
             {
                 title: "Bienestar y Calidad",
                 text: "La competitividad y productividad al impulsar las condiciones de empleabilidad y los ingresos mejora el bienestar y la calidad de vida de las personas.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774878423/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/7_q1af8i.jpg",
                 cols: 3
             }
         ],
@@ -37,17 +37,17 @@ export const capacidadesContent = {
             {
                 title: "Asesoría Estratégica",
                 bullet: "Asesoría y asistencia técnica para mejorar la competitividad y productividad de la zona de influencia directa e indirectamente relacionada.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             },
             {
                 title: "Asistencia Sectorial",
                 bullet: "Asesoría y asistencia técnica para mejorar la competitividad y productividad de sectores económicos, proveedores, clusters, cadenas de valor de bienes y servicios, y de corredores económicos territoriales.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772646621/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_7_kr73ms.jpg"
             },
             {
-                title: "Planes Integrales",
+                title: "Planes de Desarrollo",
                 bullet: "Asistencia técnica en planes de competitividad y productividad para regiones y países, teniendo en cuenta determinantes clave.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774879386/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/banner-para-web_mg03wf.jpg",
                 subBullets: [
                     "Infraestructura", "Capital Humano", "Innovación", "Financiamiento",
                     "Mercado laboral", "Ambiente de negocios", "Comercio exterior y turismo",
@@ -58,17 +58,17 @@ export const capacidadesContent = {
             {
                 title: "Evaluación de Clústeres",
                 bullet: "Evaluar y promover actividades económicas y microclusters a niveles sectoriales y productos de alto potencial de crecimiento.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             },
             {
                 title: "Iniciativas Productivas",
                 bullet: "Diseño, creación, implementación, seguimiento y acompañamiento en iniciativas de competitividad y productividad en zonas de influencia directa e indirectamente relacionadas, para sectores y productos de alto potencial de crecimiento: comercialización, logística, transformación e industrialización y producción.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774878409/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/2_r8m7sg.jpg"
             },
             {
                 title: "Sistemas de Medición",
                 bullet: "Creación de sistemas de medición parciales e integrales para impulsar competitividad y productividad.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774878412/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/3_w70hd7.webp"
             }
         ]
     },
@@ -83,19 +83,19 @@ export const capacidadesContent = {
             {
                 title: "Cierre de Brechas",
                 text: "Promover el desarrollo mediante el cierre de brechas para mejorar el bienestar económico y social de las personas.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774880235/Web%20CCD/Capacidades%20e%20Industrias/Desarrollo/mangos_g4prb3.jpg",
                 cols: 1
             },
             {
-                title: "Creación de Riqueza",
+                title: "Prosperidad",
                 text: "Crear riqueza para la prosperidad de los habitantes.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774880197/Web%20CCD/Capacidades%20e%20Industrias/Desarrollo/Truchas_en_Huancan%C3%A9_evnxeo.jpg",
                 cols: 2
             },
             {
                 title: "Igualdad Oportunidades",
                 text: "Mejorar las condiciones de vida de las personas: educación para igualar oportunidades, calidad en la atención de la salud, dotación de servicios básicos, conectividad física y virtual, mayores ingresos, buena gobernanza y desarrollo sostenible.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774880253/Web%20CCD/Capacidades%20e%20Industrias/Desarrollo/IMG_3369_yor2xh.jpg",
                 cols: 2
             }
         ],
@@ -104,29 +104,29 @@ export const capacidadesContent = {
             {
                 title: "Planes Concertados",
                 bullet: "Elaborar planes territoriales de desarrollo concertados.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774879386/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/banner-para-web_mg03wf.jpg",
                 subBullets: ["Comunidades, localidades o caseríos", "Distritos", "Provincias", "Regiones", "Zonas de influencia directa e indirectamente relacionadas", "Contextos de reasentamiento poblacional"]
             },
             {
                 title: "Asistencia Técnica",
                 bullet: "Brindar asistencia técnica en planes territoriales de desarrollo concertados.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1760666268/Web%20CCD/Capacidades%20e%20Industrias/Proyectos_3_hkawuf.jpg",
                 subBullets: ["Sociodemográfico", "Crecimiento económico", "Conectividad", "Ambiental", "Riesgos y desastres", "Gobernanza"]
             },
             {
                 title: "Corredores Territoriales",
                 bullet: "Identificar, diseñar y brindar asistencia técnica sobre corredores económicos territoriales a escalas comunal, local, regional y nacional.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774879757/Web%20CCD/Capacidades%20e%20Industrias/Corredores/corredores_eqjmn8.jpg"
             },
             {
                 title: "Sistemas KPls",
                 bullet: "Creación de sistemas de medición y KPIs (Key Performance Indicators) para el desarrollo de zonas de influencia directa e indirectamente relacionadas.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770857524/Web%20CCD/Corporate%20Flat%20Illustration/planes_de_desarrollo2_tb0bj3.jpg"
             },
             {
                 title: "Proyectos Educativos",
                 bullet: "Diseñar e implementar proyectos para mejorar la educación en niveles básico regular, técnico y universitario.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774880236/Web%20CCD/Capacidades%20e%20Industrias/Desarrollo/InstitucionEducativaIntegrada_hzma4b.png"
             }
         ]
     },
@@ -141,7 +141,7 @@ export const capacidadesContent = {
             {
                 title: "Inversión Social Óptima",
                 text: "Optimiza la inversión social pública y privada.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774879749/Web%20CCD/Capacidades%20e%20Industrias/Corredores/pesca-1_gprrk5.jpg",
                 cols: 1,
                 subBullets: [
                     "Visión de prosperidad para múltiples zonas: comunales, distritales, provinciales y regionales.",
@@ -153,13 +153,13 @@ export const capacidadesContent = {
             {
                 title: "Desarrollo Integrado",
                 text: "Desarrollo integrado de zonas de influencia directa e indirectamente relacionadas.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772651016/Web%20CCD/Capacidades%20e%20Industrias/Corredores/Corredor-logistico_yold3l.webp",
                 cols: 2
             },
             {
                 title: "Enfoque Territorial",
                 text: "Robustece el desarrollo bajo el enfoque territorial.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772641842/Web%20CCD/Capacidades%20e%20Industrias/Corredores/Corredores_wctx4s.webp",
                 cols: 2
             }
         ],
@@ -168,17 +168,17 @@ export const capacidadesContent = {
             {
                 title: "Estudios Metodológicos",
                 bullet: "Elaboración de estudios metodológicos para creación, potenciación, gobernanza, planeamiento y gestión con actores públicos y privados clave en la formación, consolidación y crecimiento de corredores económicos territoriales.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772651018/Web%20CCD/Capacidades%20e%20Industrias/Corredores/corredores_tren_acembc.png"
             },
             {
                 title: "Cartera de Proyectos",
                 bullet: "Elaboración de cartera de proyectos (megas, grandes, medianos y pequeños) para potenciar el impacto en el cierre de brechas y el desarrollo de la población ubicada en el corredor económico territorial.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774879753/Web%20CCD/Capacidades%20e%20Industrias/Corredores/APLCMEZPQZBZ3OIEJQMS5TLVYQ_rziadw.jpg"
             },
             {
                 title: "Sistemas de Datos",
                 bullet: "KPIs (Key Performance Indicators) y sistemas de datos e información digital sobre corredores económicos territoriales.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774879746/Web%20CCD/Capacidades%20e%20Industrias/Corredores/kpi_eylmrc.jpg"
             }
         ]
     },
@@ -186,50 +186,50 @@ export const capacidadesContent = {
         title: "Fortalecimiento de Capacidades",
         area: "Política y Gestión Pública",
         areaColor: "#E26B0A",
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772640780/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/Fortalecimiento_hk8y2r.webp",
 
         valorClienteIntro: "",
         valorClienteBullets: [
             {
                 title: "Inversión Eficiente",
                 text: "Rapidez y calidad de la inversión.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774886113/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/5_irat7h.jpg",
                 cols: 1
             },
             {
                 title: "Cofinanciamiento Social",
                 text: "Cofinanciamiento público y privado y escalamiento de programas y proyectos sociales.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774887095/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/images_6_ngcjvn.jpg",
                 cols: 3
             },
             {
                 title: "Viabilidad Dual",
                 text: "Viabilizar componentes político y técnico para el desarrollo.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774887269/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/La_relaci%C3%B3n_entre_t%C3%A9cnica_pol%C3%ADtica_y_burocracia4_egjrda.webp",
                 cols: 3
             },
             {
                 title: "Generar Confianza",
                 text: "Generar confianza para el desarrollo.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774886192/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/IMG_1050_xeogkv.jpg",
                 cols: 3
             },
             {
                 title: "Logro de Acuerdos",
                 text: "Lograr acuerdos para el desarrollo.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774887578/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/Taller-de-identificacion-de-especies-mderables-780x470_htm1qi.jpg",
                 cols: 3
             },
             {
                 title: "Articulación Clave",
                 text: "Mayor articulación e integración con los actores clave del desarrollo.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774886129/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/reunion_i85wsm.jpg",
                 cols: 3
             },
             {
                 title: "Eficiencias Internas",
                 text: "Generación de eficiencias internas y externas para el desarrollo.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1760666264/Web%20CCD/Capacidades%20e%20Industrias/Infraestructura_1_tshlor.jpg",
                 cols: 3
             }
         ],
@@ -238,7 +238,7 @@ export const capacidadesContent = {
             {
                 title: "Colaboradores y Funcionarios",
                 bullet: "Fortalecimiento de capacidades a colaboradores y funcionarios de instituciones públicas y privadas para el desarrollo comunal, local, regional o nacional.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "",
                 subBullets: [
                     "Administración financiera del sector público",
                     "Inversión pública: invierte.pe",
@@ -250,22 +250,22 @@ export const capacidadesContent = {
             {
                 title: "Cierre de Brechas",
                 bullet: "Fortalecimiento de capacidades en desarrollo y proceso de cierre de brechas económicas y sociales a líderes y actores clave.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             },
             {
                 title: "Diseño de Plataformas",
                 bullet: "Diseño y creación de plataformas y campus físico y virtual para el fortalecimiento de capacidades para planeamiento y gestión del desarrollo.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             },
             {
                 title: "Retroalimentación Excluyente",
                 bullet: "Retroalimentación de mejores experiencias con los mejores gestores de inversión a nivel nacional.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             },
             {
                 title: "Múltiples Modalidades",
                 bullet: "Fortalecimiento de capacidades bajo las modalidades correspondientes.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "",
                 subBullets: ["Modalidad Presencial", "Modalidad Virtual", "Modalidad Semipresencial"]
             }
         ]
@@ -274,7 +274,7 @@ export const capacidadesContent = {
         title: "Política Fiscal",
         area: "Política y Gestión Pública",
         areaColor: "#E26B0A",
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774878115/Web%20CCD/Capacidades%20e%20Industrias/Politica%20Fiscal/Editorial_invhvu.jpg",
 
         valorClienteIntro: "La política fiscal es determinante para la competitividad y el desarrollo. Preservando la sostenibilidad fiscal y la condición necesaria de estabilidad de precios, con los instrumentos fiscales como tributos, gasto público, endeudamiento público y financiamiento público se logra la prosperidad de las naciones.",
         valorClienteBullets: [
@@ -338,14 +338,14 @@ export const capacidadesContent = {
         title: "Fondos Sociales",
         area: "Política y Gestión Pública",
         areaColor: "#E26B0A",
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774876365/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/shutterstock_2021271824_v6ykz2.webp",
 
         valorClienteIntro: "Los fondos sociales para el desarrollo local o comunal (públicos, privados o públicos-privados) contribuyen en la gestión social de las empresas en las zonas de influencia directa e indirectamente relacionadas.",
         valorClienteBullets: [
             {
                 title: "Gestión Social",
                 text: "Contribuyen a la gestión social de empresas generando:",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774886325/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/image_j2vjuk.webp",
                 cols: 1,
                 subBullets: [
                     "Generación de confianza con actores.",
@@ -358,13 +358,13 @@ export const capacidadesContent = {
             {
                 title: "Aceleración Local",
                 text: "Aceleran el proceso de desarrollo local y comunal.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774886784/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/images_5_mkgc6f.jpg",
                 cols: 2
             },
             {
                 title: "Potenciamiento Social",
                 text: "Cofinancian y potencian la intervención pública y privada en favor del desarrollo de la población local y comunal.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774886544/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/village-of-carania-peru-2023-11-27-05-31-55-utc-jpg_igb12q.webp",
                 cols: 2
             }
         ],
@@ -373,37 +373,37 @@ export const capacidadesContent = {
             {
                 title: "Operatividad y Diseño",
                 bullet: "Evaluar, diseñar y brindar asistencia técnica en constitución y operatividad de fondos sociales.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             },
             {
                 title: "Gobernanza",
                 bullet: "Mejorar gobernanza de fondos sociales.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             },
             {
                 title: "Optimización de Procesos",
                 bullet: "Diseñar, fortalecer capacidades y asistencia técnica para mejorar y optimizar la organización, procesos, MAPROS, comités, protocolos y manuales para mejorar rapidez y calidad de la inversión social.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             },
             {
                 title: "Participación de Beneficiarios",
                 bullet: "Diseñar e implementar estrategias para potenciar procesos participativos de los beneficiarios en los fondos sociales.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             },
             {
                 title: "Mecanismos de Sostenibilidad",
                 bullet: "Estructurar mecanismos de complementariedad y sostenibilidad de fondos sociales con otras fuentes de financiamiento para el desarrollo.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             },
             {
                 title: "Planeamiento y Gestión",
                 bullet: "Asesoría y asistencia técnica en planeamiento y gestión de proyectos de inversión de fondos sociales.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             },
             {
                 title: "Entidades Administradoras",
                 bullet: "Crear y operativizar personas jurídicas para administrar fondos sociales e inversión social para el desarrollo de zonas de influencia directa e indirectamente relacionadas.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             }
         ]
     },
@@ -418,25 +418,25 @@ export const capacidadesContent = {
             {
                 title: "Atenuación de Riesgos",
                 text: "Atenuar los efectos negativos de la variación de precios de commodities sobre las finanzas públicas y los precios de la economía.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774885742/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20de%20Estabilizacion/format_auto_w_785_h_442_b5zlay.avif",
                 cols: 2
             },
             {
                 title: "Diversificación Fiscal",
                 text: "Diversificar los riesgos y la exposición de las cuentas fiscales por variaciones de los precios de los commodities.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774885799/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20de%20Estabilizacion/6428e823a05aa704cfa2974c_funding-financing-business-project-2022-02-12-01-24-13-utc-_1__j6luuj.webp",
                 cols: 2
             },
             {
                 title: "Nuevas Oportunidades",
                 text: "Identificar nuevas oportunidades de desarrollo generados por los cambios estructurales de los precios internacionales.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774885868/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20de%20Estabilizacion/WhatsApp-Image-2022-07-05-at-12.20.30-PM_qs5wmb.jpg",
                 cols: 2
             },
             {
                 title: "Medidas Preventivas",
                 text: "Disponer mecanismos preventivos y medidas de política fiscal para responder a crisis económicas y financieras internacionales motivadas por desarreglos institucionales, conflictos geopolíticos y bélicos, embates de la naturaleza y eventos de sanidad.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774885974/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20de%20Estabilizacion/prevencion-de-riesgos-en-economia_dsjp5z.webp",
                 cols: 2
             }
         ],
@@ -445,22 +445,22 @@ export const capacidadesContent = {
             {
                 title: "Asistencia Técnica",
                 bullet: "Evaluar, diseñar y brindar asistencia técnica sobre fondos de estabilización de precios de commodities, principalmente en petróleo crudo, gas natural y minerales.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             },
             {
                 title: "Estudios de Riesgos",
                 bullet: "Elaboración de estudios sobre exposición, riesgos y oportunidades en las cuentas fiscales nacional, regional, local y comunal por cambios transitorios y permanentes en los precios de commodities.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             },
             {
                 title: "Mecanismos Preventivos",
                 bullet: "Diseñar y elaborar mecanismos preventivos y medidas de política fiscal para atenuar los efectos de las crisis económicas y financieras internacionales.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             },
             {
                 title: "Estrategias Combinadas",
                 bullet: "Elaborar estrategias combinadas de fondos de estabilización de precios de commodities y hudge funds.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             }
         ]
     },
@@ -475,25 +475,25 @@ export const capacidadesContent = {
             {
                 title: "Estimación Causal",
                 text: "Estimar parámetros causa efecto para evaluar y crear medidas correctivas.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774881924/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/images_2_qwphjg.jpg",
                 cols: 3
             },
             {
                 title: "Modelos Predictivos",
                 text: "Estimación de modelos económicos y financieros para explicar comportamientos y proyectar valores.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774881975/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/3_pi7h2h.jpg",
                 cols: 3
             },
             {
                 title: "Gestión de Crisis",
                 text: "Preparación preventiva para afrontar crisis económicas y financieras internacionales.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774882077/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/4_sen%CC%83ales_de_que_se_avecina_una_crisis_empresarial_zgjt0x.png",
                 cols: 3
             },
             {
                 title: "Proyección Económica",
                 text: "Interrelación y proyección de variables económicas de ámbito nacional, regional, local y comunal.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774881849/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/Engen_Capital_Estudios_economicos_Economia_internacional_1_c86796f673_rcmeqz.png",
                 cols: 1
             }
         ],
@@ -502,32 +502,32 @@ export const capacidadesContent = {
             {
                 title: "Análisis Global",
                 bullet: "Análisis global, macroeconómico y de mercados para impulsar competitividad y desarrollo.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774876926/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/embeddings-y-busqueda-semantica-la-tecnologia-detras-de-las-apps-de-ia-modernas_sy2oa0.webp"
             },
             {
                 title: "Impacto Sectorial",
                 bullet: "Elaboración de estudios sobre beneficios e impactos de industrias o sectores económicos.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774882345/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/sem-1084_economia-060821-021316_ku858i.png"
             },
             {
                 title: "Modelación Económica",
                 bullet: "Modelación estadística y econometría sobre asuntos económico y financieros relacionados al desarrollo y la competitividad.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774882866/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/modelos-predictivos-series-de-tiempo_hrcwyt.jpg"
             },
             {
                 title: "Paneles de Indicadores",
                 bullet: "Elaboración de paneles de indicadores para evaluar y promover la competitividad local y global de industrias específicas.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774882250/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/1556117030116_zhjnz7.jpg"
             },
             {
                 title: "Tendencias Globales",
                 bullet: "Análisis de tendencias globales para decisiones estratégicas y mitigar riesgos.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774882664/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/images_3_qofxu4.jpg"
             },
             {
                 title: "Optimización Estratégica",
                 bullet: "Identificar oportunidades para potenciar los beneficios y resultados esperados de las intervenciones sobre las industrias y los sectores económicos.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774882549/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/Analisis-de-Modelos-Economicos-Exitosos-1_lfoc36.webp"
             }
         ]
     },
@@ -535,7 +535,7 @@ export const capacidadesContent = {
         title: "Inversiones y Proyectos",
         area: "Inversiones",
         areaColor: "#76933C",
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772651507/Web%20CCD/Capacidades%20e%20Industrias/Inversiones/exportaciones_ee3b4a.jpg",
 
         valorClienteIntro: "",
         valorClienteBullets: [
@@ -604,35 +604,35 @@ export const capacidadesContent = {
             {
                 title: "Calidad y Rendimiento",
                 text: "Mayores calidad y rendimientos esperados de la inversión social en la zona de influencia directa e indirectamente relacionada.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774882930/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/casual-business-man-working-with-laptop_qencii.jpg",
                 cols: 1,
                 subBullets: ["Mejorar", "Lecciones aprendidas y extrapolar", "Comunicación"]
             },
             {
                 title: "Integridad de Inversión",
                 text: "Optimización e integridad vertical y horizontal de la inversión social en todas las etapas.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774648166/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/Evaluacion_paq2ri_smtush.webp",
                 cols: 2,
                 subBullets: ["Negociación", "Aprobación", "Elaboración de estudios", "Implementación", "Operación y mantenimiento"]
             },
             {
                 title: "Transparencia Eficiente",
                 text: "Transparencia, ganancias de eficiencias y reportes.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774882928/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/marco_npn11c.jpg",
                 cols: 2,
                 subBullets: ["Accionistas", "Directorio", "Documentos de sostenibilidad y desarrollo", "Anuarios", "Líderes comunales", "Población beneficiaria"]
             },
             {
                 title: "Sinergia Público-Privada",
                 text: "Generación de complementariedad con intervenciones público y privadas.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774885403/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/images_4_whuxr6.jpg",
                 cols: 2,
                 subBullets: ["Inversión", "Operación y mantenimiento", "Financiamiento"]
             },
             {
                 title: "Decisiones Estratégicas",
                 text: "Optimizar decisiones sobre intervenciones sociales para el desarrollo.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774885516/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/10_redim_0_u2hb1r.jpg",
                 cols: 2,
                 subBullets: ["Potenciación", "Restructuración", "Culminación"]
             }
@@ -642,34 +642,34 @@ export const capacidadesContent = {
             {
                 title: "Evaluación Integral",
                 bullet: "Evaluación cualitativa y cuantitativa integral de programas y proyectos de inversión.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "",
                 subBullets: ["Pertinencia", "Eficiencia", "Eficacia", "Impacto", "Sostenibilidad"]
             },
             {
                 title: "Análisis por Etapas",
                 bullet: "Evaluación por etapas de proyectos y programas de inversión social.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+                image: "",
                 subBullets: ["ExAnte", "ExDure", "ExPost"]
             },
             {
                 title: "Integración de Actores",
                 bullet: "Participación de stakeholders y actores clave de los programas y proyectos en el proceso de evaluación.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             },
             {
                 title: "Exposición de Resultados",
                 bullet: "Presentación de resultados de la evaluación a stakeholders y actores clave.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             },
             {
                 title: "Medición de Impactos",
                 bullet: "Cuantificación de impactos.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             },
             {
                 title: "Acompañamiento Interno",
                 bullet: "Implementación de recomendaciones de la evaluación en todas las áreas de la empresa u organización.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                image: ""
             }
         ]
     },
@@ -677,7 +677,7 @@ export const capacidadesContent = {
         title: "Legal",
         area: "Legal",
         areaColor: "#60497A",
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774877400/Web%20CCD/Capacidades%20e%20Industrias/Legal/fue-placer-hacer-negocio-usted-colega-scaled_mislno.jpg",
 
         valorClienteIntro: "La interpretación, aplicación y mejora de la normatividad vinculada a la competitividad y al desarrollo crea oportunidades para acelerar el proceso de mejora de calidad de vida de la población.",
         valorClienteBullets: [
@@ -738,7 +738,7 @@ export const capacidadesContent = {
         title: "Inteligencia Artificial y Analítica",
         area: "CCD Tech",
         areaColor: "#31869B",
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774876876/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/Progetto-senza-titolo-2025-03-10T112054.013_icetri.webp",
 
         valorClienteIntro: "",
         valorClienteBullets: [

@@ -18,7 +18,7 @@ const getSpanClass = (cols: number = 2, span?: number) => {
     // Si todavía usan el viejo 'span', transformarlo
     if (span === 4) cols = 1;
     if (span === 2) cols = 2;
-    
+
     switch (cols) {
         case 1:
             return "col-span-12"; // 1 item por fila ocupa todo (12)
@@ -61,7 +61,9 @@ const getSpanClass = (cols: number = 2, span?: number) => {
                     <div class="grid grid-cols-12 gap-8 lg:gap-10">
                         {bullets.map((bullet) => {
                             // Definimos cuántas columnas queremos o si usamos retrocompatibilidad
-                            const cols = bullet.cols || (bullet.span ? (bullet.span === 4 ? 1 : 2) : 2);
+                            const cols =
+                                bullet.cols ||
+                                (bullet.span ? (bullet.span === 4 ? 1 : 2) : 2);
                             const isHorizontal = cols === 1;
 
                             return (
@@ -74,7 +76,10 @@ const getSpanClass = (cols: number = 2, span?: number) => {
                                     >
                                         <img
                                             src={bullet.image}
-                                            alt={bullet.title || "Generación de Valor"}
+                                            alt={
+                                                bullet.title ||
+                                                "Generación de Valor"
+                                            }
                                             class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1500ms] group-hover:scale-105"
                                         />
                                     </div>
@@ -89,7 +94,7 @@ const getSpanClass = (cols: number = 2, span?: number) => {
                                                 {bullet.title}
                                             </h3>
                                         )}
-                                        
+
                                         {/* DESCRIPCIÓN */}
                                         <p
                                             class="font-sans text-[1.05rem] md:text-[1.15rem] text-gray-800 leading-[1.65] font-light"
@@ -99,18 +104,21 @@ const getSpanClass = (cols: number = 2, span?: number) => {
                                         </p>
 
                                         {/* SUB-BULLETS */}
-                                        {bullet.subBullets && bullet.subBullets.length > 0 && (
-                                            <ul class="mt-6 space-y-3">
-                                                {bullet.subBullets.map((sub) => (
-                                                    <li class="flex items-start">
-                                                        <span class="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 mr-3 flex-shrink-0" />
-                                                        <span class="font-sans text-[0.95rem] md:text-[1.05rem] text-gray-700 leading-relaxed font-light">
-                                                            {sub}
-                                                        </span>
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        )}
+                                        {bullet.subBullets &&
+                                            bullet.subBullets.length > 0 && (
+                                                <ul class="mt-6 space-y-3">
+                                                    {bullet.subBullets.map(
+                                                        (sub) => (
+                                                            <li class="flex items-start">
+                                                                <span class="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 mr-3 flex-shrink-0" />
+                                                                <span class="font-sans text-[0.95rem] md:text-[1.05rem] text-gray-700 leading-relaxed font-light">
+                                                                    {sub}
+                                                                </span>
+                                                            </li>
+                                                        ),
+                                                    )}
+                                                </ul>
+                                            )}
                                     </div>
                                 </div>
                             );

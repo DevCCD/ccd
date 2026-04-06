@@ -2,7 +2,7 @@
 interface TeamMember {
     name: string;
     role: string;
-    image: string;
+    photos: { formal: string; casual: string; detail: string; extra: string; };
     slug: string;
 }
 
@@ -40,7 +40,7 @@ const { specialists, industries } = Astro.props;
                         >
                             <div class="mb-3 h-68 bg-gray-100 rounded-xl overflow-hidden shadow-sm group-hover:shadow-md transition-all">
                                 <img
-                                    src={member.image}
+                                    src={member.photos.casual}
                                     alt={member.name}
                                     class="h-full w-full object-cover transition-all duration-500 group-hover:scale-105"
                                 />

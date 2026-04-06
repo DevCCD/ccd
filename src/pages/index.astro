@@ -73,7 +73,7 @@ const directores = [
                             class="group relative overflow-hidden flex flex-col justify-end bg-gray-900 min-h-[350px] md:min-h-[400px]"
                         >
                             <img
-                                src="https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"
+                                src="https://res.cloudinary.com/ccdcloudy/image/upload/q_auto/f_auto/v1775054356/Web%20CCD/paises/Me_gusta_foto_202604010938_l3s95i.jpg"
                                 alt="Países"
                                 class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
                             />
@@ -83,7 +83,7 @@ const directores = [
                             </div>
                             <div class="relative z-10 p-6 md:p-8">
                                 <p
-                                    class="text-white/80 text-sm font-bold tracking-widest uppercase mb-3"
+                                    class="text-white/80 text-sm font-bold tracking-widest mb-3"
                                 >
                                     Cobertura Global
                                 </p>
@@ -122,9 +122,9 @@ const directores = [
                             </div>
                             <div class="relative z-10 p-6 md:p-8">
                                 <p
-                                    class="text-white/80 text-sm font-bold tracking-widest uppercase mb-3"
+                                    class="text-white/80 text-sm font-bold tracking-widest mb-3"
                                 >
-                                    Nuestras Capacidades
+                                    Capacidades
                                 </p>
                                 <h3
                                     class="text-white text-3xl font-serif font-bold group-hover:text-gray-200 transition-colors flex items-center"
@@ -165,9 +165,9 @@ const directores = [
                         </div>
                         <div class="relative z-10 p-6 md:p-8">
                             <p
-                                class="text-white/80 text-sm font-bold tracking-widest uppercase mb-3"
+                                class="text-white/80 text-sm font-bold tracking-widest mb-3"
                             >
-                                Industrias Principales
+                                Industrias
                             </p>
                             <h3
                                 class="text-white text-3xl md:text-4xl font-serif font-bold leading-tight group-hover:text-gray-200 transition-colors"
@@ -193,7 +193,7 @@ const directores = [
                         </div>
                         <div class="relative z-10 p-6 md:p-8">
                             <p
-                                class="text-white/80 text-sm font-bold tracking-widest uppercase mb-3"
+                                class="text-white/80 text-sm font-bold tracking-widest mb-3"
                             >
                                 Metodología
                             </p>
@@ -265,7 +265,7 @@ const directores = [
                         <span class="counter-number" data-target="15">0</span>
                     </div>
                     <p
-                        class="text-xs md:text-sm text-gray-500 max-w-[150px] uppercase tracking-widest font-semibold"
+                        class="text-xs md:text-sm text-gray-500 max-w-[150px] tracking-widest font-semibold"
                     >
                         Años de Experiencia
                     </p>
@@ -299,7 +299,7 @@ const directores = [
                         <span class="counter-number" data-target="250">0</span>
                     </div>
                     <p
-                        class="text-xs md:text-sm text-gray-500 max-w-[150px] uppercase tracking-widest font-semibold"
+                        class="text-xs md:text-sm text-gray-500 max-w-[150px] tracking-widest font-semibold"
                     >
                         Proyectos Ejecutados
                     </p>
@@ -333,7 +333,7 @@ const directores = [
                         <span class="counter-number" data-target="120">0</span>
                     </div>
                     <p
-                        class="text-xs md:text-sm text-gray-500 max-w-[150px] uppercase tracking-widest font-semibold"
+                        class="text-xs md:text-sm text-gray-500 max-w-[150px] tracking-widest font-semibold"
                     >
                         Estudios Económicos
                     </p>
@@ -367,7 +367,7 @@ const directores = [
                         <span class="counter-number" data-target="100">0</span>
                     </div>
                     <p
-                        class="text-xs md:text-sm text-gray-500 max-w-[150px] uppercase tracking-widest font-semibold"
+                        class="text-xs md:text-sm text-gray-500 max-w-[150px] tracking-widest font-semibold"
                     >
                         Localidades y Comunidades
                     </p>
@@ -400,7 +400,7 @@ const directores = [
                     <h2
                         class="font-serif text-4xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight"
                     >
-                        Nuestras Capacidades
+                        Capacidades
                     </h2>
                     <div class="w-20 h-1 bg-primary mb-8"></div>
                     <p class="text-gray-600 text-lg leading-relaxed mb-8">
@@ -442,7 +442,7 @@ const directores = [
                     <h2
                         class="font-serif text-4xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight"
                     >
-                        Nuestras Industrias
+                        Industrias
                     </h2>
                     <div class="w-20 h-1 bg-primary mb-8"></div>
                     <p class="text-gray-600 text-lg leading-relaxed mb-8">
@@ -513,7 +513,7 @@ const directores = [
                             <TeamCard
                                 name={member.name}
                                 role={member.role}
-                                image={member.image}
+                                image={member.photos.formal}
                                 link={`/nosotros/equipo/${member.slug}`}
                             />
                         </div>
@@ -521,7 +521,7 @@ const directores = [
                 }
             </div>
 
-            <!-- Enlace a equipo completo -->
+            <!-- Enlace a equipo completo 
             <div class="text-center mt-16">
                 <a
                     href="/nosotros/equipo"
@@ -529,7 +529,7 @@ const directores = [
                 >
                     Ver Equipo Completo
                 </a>
-            </div>
+            </div>-->
         </div>
     </section>
 </Layout>

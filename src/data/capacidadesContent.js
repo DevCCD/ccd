@@ -45,7 +45,7 @@ export const capacidadesContent = {
                 image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772646621/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_7_kr73ms.jpg"
             },
             {
-                title: "Planes de Desarrollo",
+                title: "Planes de Competitividad",
                 bullet: "Asistencia técnica en planes de competitividad y productividad para regiones y países, teniendo en cuenta determinantes clave.",
                 image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774879386/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/banner-para-web_mg03wf.jpg",
                 subBullets: [

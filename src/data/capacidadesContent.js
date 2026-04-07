@@ -1,8 +1,10 @@
 export const capacidadesContent = {
     "competitividad": {
         title: "Competitividad",
+        shortDescription: "Mejorar productividad, empleabilidad e ingresos de la población en edad de trabajar.",
         area: "Competitividad y Desarrollo",
         areaColor: "#00B050",
+        specialistSlugs: ["alvaro-gordillo"],
         headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772640888/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/Competitividad_inpcde.webp",
 
         valorClienteIntro: "Mejorar productividad, empleabilidad e ingresos de la población en edad de trabajar que se encuentra en la zona de influencia directa e indirectamente relacionada: comunidades, distritos, provincias, regiones, países o zonas económicas.",
@@ -74,8 +76,10 @@ export const capacidadesContent = {
     },
     "desarrollo": {
         title: "Desarrollo",
+        shortDescription: "",
         area: "Competitividad y Desarrollo",
         areaColor: "#00B050",
+        specialistSlugs: ["karla-casas", "jorge-ruiz"],
         headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772640288/Web%20CCD/Capacidades%20e%20Industrias/Desarrollo/Desarrollo_xepqfz.webp",
 
         valorClienteIntro: "Mejorar oportunidades y calidad de vida de personas de manera integral, para circunscripciones territoriales comunal, distrital, provincial, regional o países.",
@@ -132,8 +136,10 @@ export const capacidadesContent = {
     },
     "corredores": {
         title: "Corredores Económicos Territoriales",
+        shortDescription: "Aprovechar sinergias, economías de escala y potenciar oportunidades económicas y sociales.",
         area: "Competitividad y Desarrollo",
         areaColor: "#00B050",
+        specialistSlugs: ["jorge-ruiz"],
         headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772650924/Web%20CCD/Capacidades%20e%20Industrias/Corredores/trenes_sls9p0.png",
 
         valorClienteIntro: "Aprovechar sinergias, economías de escala y potenciar oportunidades económicas y sociales que ofrecen a pobladores, empresas y organizaciones públicas y privadas que se encuentran ubicadas en el recorrido de los corredores económicos territoriales.",
@@ -184,8 +190,10 @@ export const capacidadesContent = {
     },
     "fortalecimiento": {
         title: "Fortalecimiento de Capacidades",
+        shortDescription: "Fortalecimiento de capacidades a colaboradores y funcionarios de instituciones públicas y privadas para el desarrollo.",
         area: "Política y Gestión Pública",
         areaColor: "#E26B0A",
+        specialistSlugs: ["sergio-villegas", "alvaro-gordillo"],
         headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772640780/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/Fortalecimiento_hk8y2r.webp",
 
         valorClienteIntro: "",
@@ -272,8 +280,10 @@ export const capacidadesContent = {
     },
     "politica": {
         title: "Política Fiscal",
+        shortDescription: "Es determinante para la competitividad y el desarrollo. Preservando la sostenibilidad fiscal y la condición necesaria de estabilidad de precios.",
         area: "Política y Gestión Pública",
         areaColor: "#E26B0A",
+        specialistSlugs: ["rudy-laguna"],
         headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774878115/Web%20CCD/Capacidades%20e%20Industrias/Politica%20Fiscal/Editorial_invhvu.jpg",
 
         valorClienteIntro: "La política fiscal es determinante para la competitividad y el desarrollo. Preservando la sostenibilidad fiscal y la condición necesaria de estabilidad de precios, con los instrumentos fiscales como tributos, gasto público, endeudamiento público y financiamiento público se logra la prosperidad de las naciones.",
@@ -336,8 +346,10 @@ export const capacidadesContent = {
     },
     "fondos-sociales": {
         title: "Fondos Sociales",
+        shortDescription: "Los fondos sociales para el desarrollo local o comunal contribuyen en la gestión social de las empresas.",
         area: "Política y Gestión Pública",
         areaColor: "#E26B0A",
+        specialistSlugs: ["alex-carbajal"],
         headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774876365/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/shutterstock_2021271824_v6ykz2.webp",
 
         valorClienteIntro: "Los fondos sociales para el desarrollo local o comunal (públicos, privados o públicos-privados) contribuyen en la gestión social de las empresas en las zonas de influencia directa e indirectamente relacionadas.",
@@ -382,7 +394,7 @@ export const capacidadesContent = {
             },
             {
                 title: "Optimización de Procesos",
-                bullet: "Diseñar, fortalecer capacidades y asistencia técnica para mejorar y optimizar la organización, procesos, MAPROS, comités, protocolos y manuales para mejorar rapidez y calidad de la inversión social.",
+                bullet: "Diseñar, fortalecer cap acidades y asistencia técnica para mejorar y optimizar la organización, procesos, MAPROS, comités, protocolos y manuales para mejorar rapidez y calidad de la inversión social.",
                 image: ""
             },
             {
@@ -409,8 +421,10 @@ export const capacidadesContent = {
     },
     "fondos-de-estabilizacion": {
         title: "Fondos de Estabilización",
+        shortDescription: "Reducir riesgos que afectan permanentemente las finanzas públicas y al desarrollo de países.",
         area: "Política y Gestión Pública",
         areaColor: "#E26B0A",
+        specialistSlugs: ["rudy-laguna"],
         headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774648835/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20de%20Estabilizacion/bcr2_emtitl.jpg",
 
         valorClienteIntro: "Reducir riesgos que afectan permanentemente las finanzas públicas y al desarrollo de países por variaciones de precios de commodities en el mercado internacional. La alta volatilidad y los cambios estructurales de los precios internacionales tienen efectos transitorios y permanentes sobre los ingresos, los gastos y la sostenibilidad de las cuentas fiscales, y consecuentemente, sobre el proceso de desarrollo nacional, regional, local y comunal.",
@@ -466,8 +480,10 @@ export const capacidadesContent = {
     },
     "estudios": {
         title: "Estudios Económicos",
+        shortDescription: "Transformar datos cuantitativos, series de tiempo e información transversal.",
         area: "Estudios Económicos",
         areaColor: "#0070C0",
+        specialistSlugs: ["mario-huaman"],
         headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774647866/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/pexels-mikhail-nilov-9301831_l5gyaj.jpg",
 
         valorClienteIntro: "Transformar datos cuantitativos, series de tiempo e información transversal, así como información cualitativa, en conclusiones, recomendaciones, relaciones causa efecto, fuentes de explicación y descripción de comportamientos para la mejor toma de decisiones en materia de competitividad y desarrollo.",
@@ -533,8 +549,10 @@ export const capacidadesContent = {
     },
     "inversiones": {
         title: "Inversiones y Proyectos",
+        shortDescription: "Inversiones y proyectos permiten reducir y cerrar brechas, generan desarrollo y mejoran la calidad de vida de la población.",
         area: "Inversiones",
         areaColor: "#76933C",
+        specialistSlugs: ["elmer-huaman", "sergio-villegas"],
         headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774890805/Web%20CCD/Capacidades%20e%20Industrias/Inversiones/pexels-betongsmcsg-32690815_hirs0b.jpg",
 
         valorClienteIntro: "",
@@ -595,8 +613,10 @@ export const capacidadesContent = {
     },
     "evaluacion": {
         title: "Evaluación de Proyectos",
+        shortDescription: "Mayores calidad y rendimientos esperados de la inversión social en la zona de influencia directa e indirectamente relacionada.",
         area: "Inversiones",
         areaColor: "#76933C",
+        specialistSlugs: ["alex-carbajal"],
         headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774648166/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/Evaluacion_paq2ri_smtush.webp",
 
         valorClienteIntro: "",
@@ -675,9 +695,11 @@ export const capacidadesContent = {
     },
     "legal": {
         title: "Legal",
+        shortDescription: "La interpretación, aplicación y mejora de la normatividad vinculada a la competitividad y al desarrollo crea oportunidades.",
         area: "Legal",
         areaColor: "#60497A",
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774877400/Web%20CCD/Capacidades%20e%20Industrias/Legal/fue-placer-hacer-negocio-usted-colega-scaled_mislno.jpg",
+        specialistSlugs: ["viviana-sanchez"],
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/q_auto/f_auto/v1774877122/Web%20CCD/Capacidades%20e%20Industrias/Legal/administracion-legal-que-es-asesoria-legal-en-una-empresa-lanzatesoloelblog_svwnge.jpg",
 
         valorClienteIntro: "La interpretación, aplicación y mejora de la normatividad vinculada a la competitividad y al desarrollo crea oportunidades para acelerar el proceso de mejora de calidad de vida de la población.",
         valorClienteBullets: [
@@ -736,8 +758,10 @@ export const capacidadesContent = {
     },
     "ia-y-analitica": {
         title: "Inteligencia Artificial y Analítica",
+        shortDescription: "Mejora en proceso de toma de decisiones y acompañamiento en el desarrollo.",
         area: "CCD Tech",
         areaColor: "#31869B",
+        specialistSlugs: ["fernando-jauregui"],
         headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774876876/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/Progetto-senza-titolo-2025-03-10T112054.013_icetri.webp",
 
         valorClienteIntro: "",

@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import PageHeader from "../components/PageHeader.astro";
 import IndustryCard from "../components/industrias/IndustryCard.astro";
+import { industriesContent } from "../data/industriesContent.js";
 
 const sections = [
     {
@@ -151,7 +152,7 @@ const headerImage =
                         {section.items.map((industria) => (
                             <IndustryCard
                                 title={industria.title}
-                                description={industria.description}
+                                description={(industriesContent[industria.slug as keyof typeof industriesContent] as any)?.shortDescription || industria.description}
                                 image={industria.image}
                                 link={`/industrias/${industria.slug}`}
                                 colSpan={industria.span}

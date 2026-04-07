@@ -10,8 +10,9 @@ const capacidadesArray = Object.entries(capacidadesContent).map(
   ([slug, data]) => ({
     slug,
     title: data.title,
-    // Utilizamos el intro, el primer bullet, o un fallback
+    // Utilizamos shortDescription si existe, o el intro, el primer bullet, o fallback
     description:
+      data.shortDescription ||
       data.valorClienteIntro ||
       (data.valorClienteBullets &&
         data.valorClienteBullets[0] &&
@@ -24,8 +25,18 @@ const capacidadesArray = Object.entries(capacidadesContent).map(
   }),
 );
 
-// Orden Alfabético
-capacidadesArray.sort((a, b) => a.title.localeCompare(b.title));
+// Orden Personalizado: Competitividad (1), Desarrollo (2), y el resto alfabético
+const customOrder = ["Competitividad", "Desarrollo"];
+capacidadesArray.sort((a, b) => {
+  const indexA = customOrder.indexOf(a.title);
+  const indexB = customOrder.indexOf(b.title);
+
+  if (indexA !== -1 && indexB !== -1) return indexA - indexB;
+  if (indexA !== -1) return -1;
+  if (indexB !== -1) return 1;
+
+  return a.title.localeCompare(b.title);
+});
 
 // Aplicar un patrón dinámico de columnas (Layout: 3, 2, 3, 2, 2) para frescura visual
 const layoutPattern = [

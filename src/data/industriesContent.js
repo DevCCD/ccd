@@ -1,6 +1,7 @@
 export const industriesContent = {
     "agropecuario": {
         title: "Agropecuario",
+        shortDescription: "El sector agropecuario está conformado por las actividades agrícolas y pecuarias. La agrícola, realizada principalmente a través del uso de la tierra, produce alimentos para la población y los animales.",
         headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/t_Industrias/v1770791069/Web%20CCD/Industrias/agropecuario_pjqvtz.jpg",
         headerImagePosition: "center",
         paragraphs: [
@@ -10,7 +11,7 @@ export const industriesContent = {
         ],
         mainImageAlt: "Sector Agropecuario",
         flourishId: "28018262",
-        specialistSlugs: ["alvaro-gordillo", "karla-casas"],
+        specialistSlugs: ["alvaro-gordillo"],
         capabilitySlugs: ["corredores", "desarrollo"],
         introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770794345/Web%20CCD/Industrias/agropecuario_w2ulef.jpg",
         relatedWork: [
@@ -38,6 +39,7 @@ export const industriesContent = {
     },
     "agroexportacion": {
         title: "Agroexportación",
+        shortDescription: "Es una industria creciente cuyos productos agrícolas se comercializan globalmente, influenciado por el aumento de la población, los ingresos, la aplicación de nuevas tecnologías que amplían fronteras agrícolas.",
         headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770795356/Web%20CCD/Industrias/agroexportacion_uwbi1c.jpg",
         headerImagePosition: "center",
         paragraphs: [
@@ -46,7 +48,7 @@ export const industriesContent = {
         ],
         mainImageAlt: "Agroexportación",
         flourishId: "28143097",
-        specialistSlugs: ["alvaro-gordillo", "rudy-laguna", "karla-casas", "alex-carbajal"],
+        specialistSlugs: ["jorge-ruiz"],
         capabilitySlugs: ["competitividad", "corredores", "inversiones"],
         introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770795288/Web%20CCD/Industrias/agroexportacion_oeftc2.jpg",
         relatedWork: [
@@ -74,6 +76,7 @@ export const industriesContent = {
     },
     "educacion": {
         title: "Educación",
+        shortDescription: "La educación adecuada y de calidad es fundamental en todo proceso de desarrollo sostenible. La educación genera importantes externalidades positivas en los factores productivo, social y cultural.",
         headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770795786/Web%20CCD/Industrias/educacion_ftmssr.jpg",
         headerImagePosition: "center",
         paragraphs: [
@@ -82,7 +85,7 @@ export const industriesContent = {
         ],
         mainImageAlt: "Educación",
         flourishId: "27519702",
-        specialistSlugs: ["karla-casas", "rudy-laguna"],
+        specialistSlugs: ["karla-casas"],
         capabilitySlugs: ["fortalecimiento", "competitividad"],
         introImage: "/industrias/educacion.jpg",
         relatedWork: [
@@ -115,6 +118,7 @@ export const industriesContent = {
     },
     "hidrocarburos": {
         title: "Hidrocarburos",
+        shortDescription: "El desarrollo de un proyecto en el sector hidrocarburos comprenden principalmente el proceso de obtención de los lotes, la exploración, la construcción y el desarrollo de los lotes y pozos hidrocarburiferos.",
         headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770796112/Web%20CCD/Industrias/hidrocarburos_mz5gjc.jpg",
         headerImagePosition: "center",
         paragraphs: [
@@ -123,7 +127,7 @@ export const industriesContent = {
         ],
         mainImageAlt: "Hidrocarburos",
         flourishId: "28026948",
-        specialistSlugs: ["rudy-laguna", "viviana-sanchez", "elmer-huaman", "alex-carbajal"],
+        specialistSlugs: ["rudy-laguna", "karla-casas"],
         capabilitySlugs: ["inversiones", "fondos"],
         introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773326472/Web%20CCD/Industrias/La-historia-del-transporte-de-hidrocarburos-en-el-Peru-el-D.S.-081-2007-EM-e1730707238392_wf5xsp.webp",
         relatedWork: [
@@ -161,6 +165,7 @@ export const industriesContent = {
     },
     "infraestructura": {
         title: "Infraestructura y Construcción",
+        shortDescription: "El sector infraestructura y construcción es uno de los pilares del crecimiento económico para mejorar la calidad de vida de la población a niveles global, nacional, regional, provincial, distrital y comunal.",
         headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773279732/Web%20CCD/Industrias/pexels-diego-pontes-901015-2314021_spgwqa.jpg",
         headerImagePosition: "center",
         paragraphs: [
@@ -178,7 +183,7 @@ export const industriesContent = {
         ],
         mainImageAlt: "Infraestructura",
         flourishId: "28028742",
-        specialistSlugs: ["sergio-villegas", "rudy-laguna", "mario-huaman"],
+        specialistSlugs: ["sergio-villegas"],
         capabilitySlugs: ["inversiones", "desarrollo"],
         introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773279609/Web%20CCD/Industrias/pexels-sevenstormphotography-439416_kkzgsq.jpg",
         relatedWork: [
@@ -211,6 +216,7 @@ export const industriesContent = {
     },
     "inteligencia": {
         title: "Inteligencia Artificial",
+        shortDescription: "La inteligencia artificial es un conjunto de sistemas tecnológicos (software o hardware) diseñados y elaborados para realizar funciones de aprendizaje profundo (deep learning).",
         headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772644019/Web%20CCD/Industrias/ia_k5ny4x.webp",
         headerImagePosition: "center",
         paragraphs: ["La inteligencia artificial es un conjunto de sistemas tecnológicos (software o hardware) diseñados y elaborados para realizar funciones de aprendizaje profundo (deep learning), análisis de grandes volúmenes de datos, razonamiento y percepción, a fin de resolver problemas de manera creativa buscando imitar funcionalidades de la inteligencia humana.",
@@ -218,7 +224,7 @@ export const industriesContent = {
             "En el Centro para la Competitividad y el Desarrollo (CCD) brindamos asistencia técnica especializada y fortalecemos capacidades en inteligencia artificial para actores vinculados a la competitividad y el desarrollo. Desarrollamos soluciones en procesamiento y analítica avanzada de datos, ciencia de datos aplicada, modelos predictivos y prescriptivos, así como en la automatización del análisis situacional y la priorización de inversiones bajo enfoques multicriterio. Asimismo, implementamos sistemas de evaluación automatizada para verificar la consistencia y alineamiento estratégico entre planes, programas, proyectos, actividades y recursos. Complementamos estos servicios con el diseño y desarrollo de plataformas inteligentes y sistemas de información institucional orientados a la toma de decisiones basada en evidencia."],
         mainImageAlt: "Inteligencia Artificial",
         flourishId: "28143981",
-        specialistSlugs: ["fernando-jauregui", "mario-huaman"],
+        specialistSlugs: ["fernando-jauregui"],
         capabilitySlugs: ["fortalecimiento", "evaluacion"],
         introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773339070/Web%20CCD/Industrias/la-inteligencia-artificial-y-su-impacto-en-el-sector-agricola-de-urugu_rqhP1Df_ron3ay.png",
         relatedWork: [
@@ -246,12 +252,13 @@ export const industriesContent = {
     },
     "manufactura": {
         title: "Manufactura",
+        shortDescription: "El sector manufacturero mediante métodos, formulas, procesos y actividades se encarga de transformar insumos, materias primas o productos intermedios en bienes terminados o finales para los consumidores.",
         headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773280947/Web%20CCD/Industrias/pexels-883349675-29899505_vu3z9a.jpg",
         headerImagePosition: "center",
         paragraphs: ["El sector manufacturero mediante métodos, formulas, procesos y actividades se encarga de transformar insumos, materias primas o productos intermedios en bienes terminados o finales para los consumidores o bienes semielaborados demandados o requeridos por diversos sectores de la economía. La manufactura es un sector altamente diversificado y cuando los participantes alcanzan altos niveles de productividad logran posicionamiento local y global, con importantes impactos y beneficios como la generación de eslabonamientos con múltiples sectores y ramas de la economía al crear y consolidar una red importante de proveedores y negocios conexos y relacionados, vinculación con la academia formativa de profesionales, crea empleos directos, indirectos e inducidos y mayor ingresos, así como el mayor pago de impuestos.", "En el Centro para la Competitividad y el Desarrollo (CCD) elaboramos paneles de indicadores para evaluar y promover medidas para mejorar la competitividad local y global de industrias específicas de la manufactura. Elaboramos estudios de impactos y beneficios generados por las múltiples industrias manufactureras sobre la economía nacional, regional y local en términos de producción, ingresos, empleos, desarrollo de proveedores e industrias conexas y relacionadas, pago de impuestos y generación de recursos para el desarrollo."],
         mainImageAlt: "Manufactura",
         flourishId: "27781708",
-        specialistSlugs: ["jorge-ruiz"],
+        specialistSlugs: ["mario-huaman"],
         capabilitySlugs: ["inversiones", "fondos"],
         introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773339941/Web%20CCD/Industrias/IJI72JLZWRFB5MICJP5ULP5LAI_wggg3u.avif",
         relatedWork: [
@@ -274,6 +281,7 @@ export const industriesContent = {
     },
     "mineria": {
         title: "Minería",
+        shortDescription: "Las etapas de la actividad minera comprenden el proceso de obtención de la concesión minera, la exploración, la construcción y el desarrollo de la mina, la explotación y transformación del recursos minero.",
         headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773340513/Web%20CCD/Industrias/mineria4_mmrqhs.jpg",
         headerImagePosition: "center",
         paragraphs: [
@@ -282,7 +290,7 @@ export const industriesContent = {
         ],
         mainImageAlt: "Operación de minería moderna",
         flourishId: "28142481",
-        specialistSlugs: ["rudy-laguna", "viviana-sanchez", "sergio-villegas", "elmer-huaman"],
+        specialistSlugs: ["rudy-laguna", "karla-casas"],
         capabilitySlugs: ["inversiones", "corredores"],
         introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773340518/Web%20CCD/Industrias/mineria_ymbax9.jpg",
         relatedWork: [
@@ -320,12 +328,13 @@ export const industriesContent = {
     },
     "seguridad": {
         title: "Seguridad Ciudadana",
+        shortDescription: "La seguridad ciudadana es un derecho humano y un bien público que deben ser garantizados por los Estados, en labor conjunta con la sociedad.",
         headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773281534/Web%20CCD/Industrias/seguridad-taxi-san-francisco-halloween-1-scaled-1_zxp7te.webp",
         headerImagePosition: "center",
         paragraphs: ["La seguridad ciudadana es un derecho humano y un bien público que deben ser garantizados por los Estados, en labor conjunta con la sociedad. El objetivo de la seguridad ciudadana es tener convivencia pacífica que proteja la integridad de las personas naturales y jurídicas, con resguardo de los bienes para poder realizar actividades económicas, sociales, políticas y culturales en un entorno ordenado y seguro.", "En el Centro para la Competitividad y el Desarrollo (CCD) elaboramos estudios de viabilidad y preinversión, expedientes técnicos, estudios de impactos en el entorno o zona de influencia de la construcción de establecimientos penitenciarios e infraestructura policial, brindamos asistencia técnica en asociaciones público privadas y obras por impuestos para la instalación de sistemas tecnológicos y bloqueo de telecomunicaciones."],
         mainImageAlt: "Seguridad",
         flourishId: "28141987",
-        specialistSlugs: ["viviana-sanchez", "fernando-jauregui"],
+        specialistSlugs: ["viviana-sanchez"],
         capabilitySlugs: ["evaluacion", "fortalecimiento"],
         introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773388020/Web%20CCD/Industrias/carcel_penal_tqpons.jpg",
         relatedWork: [
@@ -348,6 +357,7 @@ export const industriesContent = {
     },
     "publico": {
         title: "Sector Público",
+        shortDescription: "El sector público está constituido por un conjunto de instituciones y organismos controlados por el Estado a fin de proveer servicios públicos.",
         headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770796429/Web%20CCD/Industrias/publico_zqyito.jpg",
         headerImagePosition: "center",
         paragraphs: [
@@ -359,7 +369,7 @@ export const industriesContent = {
         ],
         mainImageAlt: "Sector Público",
         flourishId: "28045098",
-        specialistSlugs: ["rudy-laguna", "viviana-sanchez", "elmer-huaman", "alex-carbajal"],
+        specialistSlugs: ["alex-carbajal", "viviana-sanchez"],
         capabilitySlugs: ["competitividad", "desarrollo"],
         introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770796907/Web%20CCD/Industrias/financiero_sp68st.webp",
         relatedWork: [
@@ -397,12 +407,13 @@ export const industriesContent = {
     },
     "portuarios": {
         title: "Servicios Portuarios",
+        shortDescription: "Son fundamentales en todo proceso de desarrollo porque permiten mayor comercio internacional, ampliación de mercados y expansión de las ventas de las empresas ubicadas en el país.",
         headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773281993/Web%20CCD/Industrias/96694_j7iiry.jpg",
         headerImagePosition: "center",
         paragraphs: ["Los sistemas portuarios son fundamentales en todo proceso de desarrollo porque permiten la transacción de bienes, mayor comercio internacional, ampliación de mercados y expansión de las ventas de las grandes, medianas, pequeñas y micro empresas ubicadas en el país, región, distrito o comunidad. Esto a su vez genera empleos directos, indirectos e inducidos, así como ingresos para los trabajadores y las familias que mejoran la calidad de vida.", "El Centro para la Competitividad y el Desarrollo (CCD) apoya en identificar acciones estratégicas para el crecimiento sostenido de las actividades y del entorno o zona de influencia portuario. Brindamos asistencia técnica en planificación, competitividad y desarrollo con un enfoque de corredores económicos territoriales y el desarrollo de la zona de influencia económica y social del sistema portuario. Evaluamos los beneficios generados por el sistema portuario en la zona de influencia. Fortalecemos capacidades en competitividad y desarrollo a los actores relacionados a los sistemas portuarios, principalmente en proyectos de inversión, sistemas tecnológicos de información para la evaluación, seguimiento y acompañamiento del proceso de prosperidad portuario."],
         mainImageAlt: "Servicios Portuarios",
         flourishId: "28237648",
-        specialistSlugs: ["karla-casas", "viviana-sanchez"],
+        specialistSlugs: ["karla-casas"],
         capabilitySlugs: ["corredores", "competitividad"],
         introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773281938/Web%20CCD/Industrias/PCB7W7DFSFE45EF3IWTFQSBESQ_iixzjw.avif",
         relatedWork: [
@@ -440,6 +451,7 @@ export const industriesContent = {
     },
     "financiero": {
         title: "Sistema Financiero",
+        shortDescription: "El sistema financiero es el conjunto de instituciones, normas, medios físicos y virtuales y mercados que tienen por objetivo principal canalizar el ahorro de quienes tienen excedente de dinero.",
         headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770796907/Web%20CCD/Industrias/financiero_sp68st.webp",
         headerImagePosition: "center",
         paragraphs: [
@@ -451,7 +463,7 @@ export const industriesContent = {
         ],
         mainImageAlt: "Sistema Financiero",
         flourishId: "28140484",
-        specialistSlugs: ["fernando-jauregui", "elmer-huaman"],
+        specialistSlugs: ["fernando-jauregui"],
         capabilitySlugs: ["inversiones", "fondos"],
         introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773375649/Web%20CCD/Industrias/JG3OO5KEDJGWXE4EHASHNTD3YE_zjzqge.jpg",
         relatedWork: [
@@ -474,12 +486,13 @@ export const industriesContent = {
     },
     "tecnologia": {
         title: "Tecnología",
+        shortDescription: "La tecnología integra y realiza aplicación práctica del conocimiento para crear dispositivos y servicios que funcionen de manera autónoma y reproducible para resolver problemas y mejorar la calidad de vida de las personas.",
         headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773289166/Web%20CCD/Industrias/energi%CC%81a_renovable_apertura-paneles-sostenible-panel-solar-eolica-molinos-medioambiente_zuseid.avif",
         headerImagePosition: "center",
         paragraphs: ["La tecnología integra y realiza aplicación práctica del conocimiento para crear dispositivos y servicios que funcionen de manera autónoma y reproducible para resolver problemas y mejorar la calidad de vida de las personas. Mediante aspectos conceptuales, evidencia empírica, métodos, formulas y herramientas digitales, la tecnología permite crear plataformas informáticas para recopilar, analizar y administrar datos, vincular variables e indicadores en el proceso de cierre de brechas en las dimensiones del desarrollo y en los determinantes de la competitividad. Las plataformas tecnológicas sobre el desarrollo y la competitividad permiten planeamiento, fijar niveles de referencia, identificar medidas públicas y privadas correctivas y eficaces, determinar objetivos y metas, fortalecer capacidades, monitorear y acompañar a actores, supervisar avances, evaluar efectos y beneficios, así como comunicar para generar confianza.", "En el Centro para la Competitividad y el Desarrollo (CCD) desarrollamos técnicas, instrumentos y métodos informáticos y digitales para resolver problemas específicos sobre desarrollo y competitividad para circunscripciones de escalas nacional, regional, local o comunal. Elaboramos Sistemas de Administración del Desarrollo (SAD) para todo tipo de circunscripción o zona de influencia, en versiones ofimática y digitales. Asimismo, creamos sistemas digitales para el fortalecimiento de capacidades para actores clave; y evaluamos, diseñamos e implementamos sistemas virtuales institucionales para promover el desarrollo y la competitividad."],
         mainImageAlt: "Tecnología",
         flourishId: "28139841",
-        specialistSlugs: ["fernando-jauregui"],
+        specialistSlugs: ["melissa-sanchez"],
         capabilitySlugs: ["fortalecimiento", "inversiones"],
         introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773278321/Web%20CCD/Industrias/tecnologia_kx2cv2.jpg",
         relatedWork: [

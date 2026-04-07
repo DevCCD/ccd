@@ -26,7 +26,8 @@ const {
 >
     <!-- IMAGEN -->
     <div class="aspect-video relative overflow-hidden mb-6 bg-gray-100">
-        {/*
+        {
+            /*
             area && areaColor && (
                 <span
                     class="absolute top-3 right-3 z-10 inline-flex items-center px-3 py-1 text-[0.7rem] font-medium text-white rounded-none shadow-sm border border-white/10"
@@ -35,7 +36,8 @@ const {
                     {area}
                 </span>
             )
-        */}
+        */
+        }
         <img
             src={image}
             alt={title}
@@ -64,7 +66,7 @@ const {
                     d="M9 5l7 7-7 7"></path>
             </svg>
         </div>
-        <p class="text-gray-600 text-lg leading-relaxed line-clamp-3">
+        <p class="text-gray-600 text-md leading-relaxed line-clamp-4">
             {description}
         </p>
     </div>

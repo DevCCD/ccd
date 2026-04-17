@@ -393,8 +393,8 @@ export const capacidadesContent = {
                 image: ""
             },
             {
-                title: "Optimización de Procesos",
-                bullet: "Diseñar, fortalecer cap acidades y asistencia técnica para mejorar y optimizar la organización, procesos, MAPROS, comités, protocolos y manuales para mejorar rapidez y calidad de la inversión social.",
+                title: "Optimizar Procesos",
+                bullet: "Diseñar, fortalecer capacidades y asistencia técnica para mejorar y optimizar la organización, procesos, MAPROS, comités, protocolos y manuales para mejorar rapidez y calidad de la inversión social.",
                 image: ""
             },
             {
@@ -408,7 +408,7 @@ export const capacidadesContent = {
                 image: ""
             },
             {
-                title: "Planeamiento y Gestión",
+                title: "Optimizar Procesos en Fondos Sociales",
                 bullet: "Asesoría y asistencia técnica en planeamiento y gestión de proyectos de inversión de fondos sociales.",
                 image: ""
             },

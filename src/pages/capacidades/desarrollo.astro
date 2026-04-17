@@ -8,22 +8,48 @@ const data = capacidadesContent["desarrollo"];
 const { nuestroTrabajo, ...layoutData } = data;
 
 const pilaresDesarrollo = [
-    { label: "Sociodemográfica", icon: "👥", color: "#3A86AD", bg: "#3A86AD" },
+    {
+        label: "Sociodemográfica",
+        icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>`,
+        color: "#3A86AD",
+    },
     {
         label: "Crecimiento económico",
-        icon: "📈",
+        icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"></line><line x1="18" y1="20" x2="18" y2="4"></line><line x1="6" y1="20" x2="6" y2="16"></line></svg>`,
         color: "#D97706",
-        bg: "#D97706",
     },
-    { label: "Conectividad", icon: "🛣️", color: "#1E3A8A", bg: "#1E3A8A" },
-    { label: "Gobernanza", icon: "🏛️", color: "#7C3AED", bg: "#7C3AED" },
+    {
+        label: "Conectividad",
+        icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>`,
+        color: "#1E3A8A",
+    },
+    {
+        label: "Gobernanza",
+        icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>`,
+        color: "#7C3AED",
+    },
     {
         label: "Riesgos y desastres",
-        icon: "⚠️",
+        icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>`,
         color: "#B91C1C",
-        bg: "#B91C1C",
     },
-    { label: "Ambiental", icon: "🌳", color: "#059669", bg: "#059669" },
+    {
+        label: "Ambiental",
+        icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path><path d="M2 21c0-3 1.85-5.36 5.08-6C10 14.5 10.5 13.84 12 13"></path></svg>`,
+        color: "#059669",
+    },
+];
+
+const alcancesDesarrollo = [
+    {
+        label: "Zona de influencia directa e indirectamente relacionada",
+        level: 6,
+    },
+    { label: "Región", level: 5 },
+    { label: "Provincia", level: 4 },
+    { label: "Distrito", level: 3 },
+    { label: "Comunidad, localidad o caserío", level: 2 },
+    { label: "Zonas de reasentamiento poblacional", level: 1 },
 ];
 ---
 
@@ -65,7 +91,7 @@ const pilaresDesarrollo = [
                     class="relative overflow-hidden w-full lg:w-[60%] min-h-[300px] lg:min-h-full shrink-0"
                 >
                     <img
-                        src="/planes_concertados_desarrollo.png"
+                        src="https://res.cloudinary.com/ccdcloudy/image/upload/q_auto/f_auto/v1776445891/Web%20CCD/Capacidades%20e%20Industrias/Desarrollo/Imagen2_vk4ehy.png"
                         alt="Planes Concertados — Desarrollo"
                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-[4000ms] ease-in-out group-hover:scale-[1.04]"
                     />
@@ -110,21 +136,8 @@ const pilaresDesarrollo = [
             </div>
 
             <div
-                class="container mx-auto px-6 lg:px-12 max-w-[1400px] relative z-10"
+                class="container mx-auto px-6 lg:px-12 max-w-[1440px] relative z-10"
             >
-                <div class="text-center mb-20 animate-fade-in">
-                    <p
-                        class="font-sans text-[0.7rem] font-bold tracking-[0.4em] uppercase text-secondary mb-4"
-                    >
-                        Metodología de Intervención
-                    </p>
-                    <h3
-                        class="font-serif text-3xl md:text-5xl font-black text-[#0f172a] tracking-tight"
-                    >
-                        Ejes Estratégicos del Desarrollo
-                    </h3>
-                </div>
-
                 <div class="relative flex flex-col items-center">
                     <!-- Hub Central Corporativo -->
                     <div
@@ -132,7 +145,7 @@ const pilaresDesarrollo = [
                     >
                         <div class="text-center">
                             <span
-                                class="block font-serif text-lg font-black text-secondary uppercase tracking-widest"
+                                class="block font-serif text-lg font-black text-secondary tracking-widest"
                                 >Desarrollo</span
                             >
                         </div>
@@ -140,7 +153,7 @@ const pilaresDesarrollo = [
 
                     <!-- Layout de Ejes (2 Columnas) -->
                     <div
-                        class="grid grid-cols-1 lg:grid-cols-2 gap-x-64 gap-y-10 w-full relative"
+                        class="grid grid-cols-1 lg:grid-cols-2 gap-x-60 gap-y-10 w-full relative"
                     >
                         <!-- Columna Izquierda -->
                         <div class="space-y-6">
@@ -148,19 +161,16 @@ const pilaresDesarrollo = [
                                 pilaresDesarrollo.slice(0, 3).map((p) => (
                                     <div class="axis-card group flex items-center gap-6 p-6 bg-white border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-secondary/30 relative">
                                         <div
-                                            class="w-12 h-12 flex items-center justify-center text-2xl shrink-0"
+                                            class="w-12 h-12 flex items-center justify-center text-xl shrink-0"
                                             style={`background-color: ${p.color}15; color: ${p.color}`}
-                                        >
-                                            {p.icon}
-                                        </div>
+                                            set:html={p.icon}
+                                        />
                                         <div class="flex-grow">
                                             <h4 class="font-sans text-lg font-bold text-gray-900">
                                                 {p.label}
                                             </h4>
                                             <div class="w-6 h-0.5 bg-gray-200 mt-2 group-hover:w-16 group-hover:bg-secondary transition-all" />
                                         </div>
-                                        <!-- Línea conectora decorativa -->
-                                        <div class="hidden lg:block absolute right-[-2.5rem] top-1/2 -translate-y-1/2 w-10 h-[2px] bg-blue-100 group-hover:bg-secondary/30 transition-colors" />
                                     </div>
                                 ))
                             }
@@ -172,19 +182,16 @@ const pilaresDesarrollo = [
                                 pilaresDesarrollo.slice(3, 6).map((p) => (
                                     <div class="axis-card group flex items-center lg:flex-row-reverse gap-6 p-6 bg-white border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-secondary/30 relative text-left lg:text-right">
                                         <div
-                                            class="w-12 h-12 flex items-center justify-center text-2xl shrink-0"
+                                            class="w-12 h-12 flex items-center justify-center text-xl shrink-0"
                                             style={`background-color: ${p.color}15; color: ${p.color}`}
-                                        >
-                                            {p.icon}
-                                        </div>
+                                            set:html={p.icon}
+                                        />
                                         <div class="flex-grow">
                                             <h4 class="font-sans text-lg font-bold text-gray-900">
                                                 {p.label}
                                             </h4>
                                             <div class="w-6 h-0.5 bg-gray-200 mt-2 ml-auto group-hover:w-16 group-hover:bg-secondary transition-all" />
                                         </div>
-                                        <!-- Línea conectora decorativa -->
-                                        <div class="hidden lg:block absolute left-[-2.5rem] top-1/2 -translate-y-1/2 w-10 h-[2px] bg-blue-100 group-hover:bg-secondary/30 transition-colors" />
                                     </div>
                                 ))
                             }
@@ -193,6 +200,128 @@ const pilaresDesarrollo = [
                 </div>
             </div>
         </div>
+
+        <!-- ============================================================ -->
+        <!-- SECCIÓN ALCANCES — Gráfico Circular Exacto                   -->
+        <!-- ============================================================ -->
+        <div class="scope-exact-section py-20 md:py-32 bg-gray-50 relative overflow-hidden">
+            <div class="container mx-auto px-6 lg:px-12 max-w-[1400px] relative">
+                
+                <!-- Título -->
+                <div class="text-center mb-16 md:mb-24">
+                    <h3 class="font-serif text-3xl md:text-5xl font-black text-gray-900 tracking-tight">
+                        Alcances de los Planes de Desarrollo Concertados
+                    </h3>
+                </div>
+
+                <div class="flex justify-center w-full relative">
+                    <!-- Contenedor responsivo para el SVG -->
+                    <div class="w-full max-w-[1100px] overflow-visible">
+                        <svg class="w-full h-auto overflow-visible" viewBox="0 0 1100 560" preserveAspectRatio="xMinYMid meet">
+                            <defs>
+                                <filter id="glow-core" x="-20%" y="-20%" width="140%" height="140%">
+                                    <feGaussianBlur stdDeviation="6" result="blur" />
+                                    <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                                </filter>
+                            </defs>
+
+                            <!-- CÍRCULOS CONCÉNTRICOS -->
+                            <g class="circles">
+                                <circle cx="300" cy="300" r="260" fill="#1b3a6b" opacity="0.04" class="c-0 transition-all duration-300" />
+                                <circle cx="300" cy="300" r="215" fill="#1b3a6b" opacity="0.08" class="c-1 transition-all duration-300" />
+                                <circle cx="300" cy="300" r="170" fill="#1b3a6b" opacity="0.12" class="c-2 transition-all duration-300" />
+                                <circle cx="300" cy="300" r="125" fill="#1b3a6b" opacity="0.18" class="c-3 transition-all duration-300" />
+                                <circle cx="300" cy="300" r="80" fill="#1b3a6b" opacity="0.25" class="c-4 transition-all duration-300" />
+                                <!-- Core -->
+                                <circle cx="300" cy="300" r="35" fill="#910121" filter="url(#glow-core)" class="c-5 transition-all duration-500" />
+                            </g>
+
+                            <!-- ITEMS CON HOVER GLOBAL -->
+                            {alcancesDesarrollo.map((item, idx) => {
+                                // Puntos de nacimiento en los círculos
+                                const arrDotY = [65, 110, 155, 200, 245, 300];
+                                const dotY = arrDotY[idx];
+                                
+                                // Posiciones de texto separadas y balanceadas
+                                const textY = 65 + (idx * 80);
+                                const dy = textY - dotY;
+                                
+                                // Path en formato "escalera" a ~45 grados
+                                const pathD = `M300 ${dotY} L360 ${dotY} L${360 + dy} ${textY} L560 ${textY}`;
+                                
+                                return (
+                                    <g class="alcance-group cursor-default" data-index={idx}>
+                                        <!-- Línea conectora acodada -->
+                                        <path d={pathD} stroke="#cbd5e1" stroke-width="2" fill="none" class="conn-line transition-all duration-300" stroke-linejoin="round" />
+                                        
+                                        <!-- Punto de origen -->
+                                        <circle cx="300" cy={dotY} r="5" fill="#f8fafc" stroke="#94a3b8" stroke-width="2" class="conn-dot transition-all duration-300" />
+                                        
+                                        <!-- Texto incrustado (altura extendida para envolver multilinea sin cortarse) -->
+                                        <foreignObject x="580" y={textY - 40} width="520" height="80">
+                                            <div xmlns="http://www.w3.org/1999/xhtml" class="w-full h-full flex items-center">
+                                                <h4 class="font-sans text-[18px] lg:text-[21px] font-bold text-gray-500 transition-all duration-300 hover-text leading-tight w-full pr-4">
+                                                    {item.label}
+                                                </h4>
+                                            </div>
+                                        </foreignObject>
+                                    </g>
+                                );
+                            })}
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            /* Hover States on the Group */
+            .alcance-group:hover .conn-line {
+                stroke: #910121;
+                stroke-width: 3px;
+                opacity: 0.8;
+            }
+            .alcance-group:hover .conn-dot {
+                stroke: #910121;
+                fill: #910121;
+                r: 7px;
+            }
+            .alcance-group:hover .hover-text {
+                color: #910121;
+                transform: translateX(8px);
+            }
+            
+            /* Visual feedback para los círculos */
+            .circle-active-0 { fill: #1b3a6b !important; opacity: 0.08 !important; stroke: #1b3a6b; stroke-width: 2px; }
+            .circle-active-1 { fill: #1b3a6b !important; opacity: 0.12 !important; stroke: #1b3a6b; stroke-width: 2px; }
+            .circle-active-2 { fill: #1b3a6b !important; opacity: 0.18 !important; stroke: #1b3a6b; stroke-width: 2px; }
+            .circle-active-3 { fill: #1b3a6b !important; opacity: 0.25 !important; stroke: #1b3a6b; stroke-width: 2px; }
+            .circle-active-4 { fill: #1b3a6b !important; opacity: 0.35 !important; stroke: #1b3a6b; stroke-width: 2px; }
+            .circle-active-5 { transform: scale(1.05); transform-origin: 300px 300px; }
+        </style>
+
+        <script is:inline>
+            document.addEventListener('DOMContentLoaded', () => {
+                const groups = document.querySelectorAll('.alcance-group');
+                const circlesEl = [];
+                for(let i=0; i<=5; i++) {
+                    circlesEl.push(document.querySelector('.c-' + i));
+                }
+
+                groups.forEach(g => {
+                    g.addEventListener('mouseenter', () => {
+                        const idx = parseInt(g.getAttribute('data-index'));
+                        const circle = circlesEl[idx];
+                        if (circle) circle.classList.add(`circle-active-${idx}`);
+                    });
+                    g.addEventListener('mouseleave', () => {
+                        const idx = parseInt(g.getAttribute('data-index'));
+                        const circle = circlesEl[idx];
+                        if (circle) circle.classList.remove(`circle-active-${idx}`);
+                    });
+                });
+            });
+        </script>
 
         <!-- ============================================================ -->
         <!-- SECCIÓN 2 COLUMNAS — Sistemas KPIs & Proyectos Educativos    -->
@@ -301,22 +430,8 @@ const pilaresDesarrollo = [
         position: relative;
     }
 
-    @media (min-width: 1024px) {
-        /* Línea central sutil que conecta con el hub */
-        .axes-section::after {
-            content: "";
-            position: absolute;
-            top: 25%;
-            bottom: 25%;
-            left: 50%;
-            width: 1px;
-            background: linear-gradient(
-                to bottom,
-                transparent,
-                rgba(30, 58, 138, 0.1),
-                transparent
-            );
-            z-index: 1;
-        }
+    /* Estética Corporativa para la sección de ejes */
+    .axes-section {
+        position: relative;
     }
 </style>

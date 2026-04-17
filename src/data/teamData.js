@@ -5,11 +5,11 @@ export const teamMembers = {
         "role": "Director",
         "photos": {
             "formal": "https://res.cloudinary.com/ccdcloudy/image/upload/q_auto/f_auto/v1774896750/Web%20CCD/Equipo/Rudy/rudy-formal_ncf9gl.png",
-            "casual": "https://res.cloudinary.com/ccdcloudy/image/upload/q_auto/f_auto/v1775072363/Web%20CCD/Equipo/Rudy/rudy-rostro_lf9jrx.jpg",
-            "detail": "/rudy casual.png",
-            "extra": "/rudy-laguna.png"
+            "casual": "https://res.cloudinary.com/ccdcloudy/image/upload/q_auto/f_auto/v1775489018/Web%20CCD/Equipo/Rudy/Rudy-casual_pjpyb9.png",
+            "detail": "https://res.cloudinary.com/ccdcloudy/image/upload/q_auto/f_auto/v1775489018/Web%20CCD/Equipo/Rudy/Rudy-casual_pjpyb9.png",
+            "extra": ""
         },
-        "linkedin": "https://www.linkedin.com/in/rudy-laguna",
+        "linkedin": "https://www.linkedin.com/in/rudy-laguna-b2432a39/",
         "intro": "Rudy lidera el trabajo sobre competitividad y desarrollo para circunscripciones nacional, regional, local y comunal, y para sectores económicos de la economía.",
         "about": "Rudy cuenta con más de 25 años de experiencia en competitividad y desarrollo en los ámbitos público y privado. Comenzó su carrera en el Centro para la Competitividad y el Desarrollo (CCD) en el año 2011, luego de una amplia experiencia en los sectores público y privado, así como en proyectos para instituciones de la banca multilateral. Desde el año 2017 Rudy es director del CCD.",
         "experience": [

@@ -82,12 +82,15 @@ const specialists = specialistSlugs
         )
     }
 
-    <!-- NUESTRO TRABAJO -->
+    <!-- NUESTRO TRABAJO (genérico desde data) -->
     {
         nuestroTrabajo && nuestroTrabajo.length > 0 && (
             <NuestroTrabajoCapacidad workList={nuestroTrabajo} />
         )
     }
+
+    <!-- SLOT: Contenido personalizado por página (ej. Nuestro Trabajo custom) -->
+    <slot />
 
     <!-- ESPECIALISTAS SEC -->
     {
@@ -145,8 +148,6 @@ const specialists = specialistSlugs
         )
     }
 
-    <!-- ESPACIO PARA CUSTOM HTML FUTURO DE CADA PÁGINA ESPECÍFICA -->
-    <slot />
 </Layout>
 
 <style>

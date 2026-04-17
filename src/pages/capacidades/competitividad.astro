@@ -3,6 +3,416 @@ import CapabilityLayout from "../../components/capacidades/CapabilityLayout.astr
 import { capacidadesContent } from "../../data/capacidadesContent.js";
 
 const data = capacidadesContent["competitividad"];
+
+// Extraemos solo los datos necesarios para el layout base (sin nuestroTrabajo)
+const { nuestroTrabajo, ...layoutData } = data;
+
+const determinantes = [
+    { label: "Infraestructura", icon: "🛣️", color: "#7B3FA0", bg: "#7B3FA0" },
+    {
+        label: "Ambiente de Negocios",
+        icon: "🏢",
+        color: "#C0175D",
+        bg: "#C0175D",
+    },
+    {
+        label: "Comercio Exterior y Turismo",
+        icon: "🌐",
+        color: "#1A5276",
+        bg: "#1A5276",
+    },
+    { label: "Capital Humano", icon: "🎓", color: "#C68B00", bg: "#C68B00" },
+    { label: "Financiamiento", icon: "💵", color: "#1A7AB5", bg: "#1A7AB5" },
+    { label: "Institucionalidad", icon: "🏛️", color: "#C0546A", bg: "#C0546A" },
+    { label: "Innovación", icon: "💡", color: "#1E8449", bg: "#1E8449" },
+    { label: "Mercado Laboral", icon: "👷", color: "#5D6E2B", bg: "#5D6E2B" },
+    {
+        label: "Sostenibilidad Ambiental",
+        icon: "🌱",
+        color: "#D4690A",
+        bg: "#D4690A",
+    },
+];
 ---
 
-<CapabilityLayout {...data} />
+<CapabilityLayout {...layoutData}>
+    <!-- ===== NUESTRO TRABAJO — COMPETITIVIDAD (Diseño Manual Restructurado) ===== -->
+    <section
+        class="relative bg-gradient-to-br from-primary via-[#6a0016] to-[#2a0008] pt-24 md:pt-32 pb-0"
+        id="nuestro-trabajo"
+    >
+        <!-- Ruido de textura sutil -->
+        <div
+            class="absolute inset-0 opacity-[0.03] bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJuIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMC42NSIgbnVtT2N0YXZlcz0iMyIgc3RpdGNoVGlsZXM9InN0aXRjaCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiBmaWx0ZXI9InVybCgjbikiIG9wYWNpdHk9IjEiLz48L3N2Zz4=')] pointer-events-none"
+        >
+        </div>
+
+        <div
+            class="container mx-auto px-6 lg:px-12 max-w-[1600px] relative z-10"
+        >
+            <!-- Título de Sección -->
+            <div
+                class="mb-14 flex flex-col items-center md:items-start text-center md:text-left nt-title"
+            >
+                <h2
+                    class="font-serif text-3xl md:text-5xl font-black text-white mb-5 tracking-tight"
+                >
+                    Nuestro Trabajo
+                </h2>
+                <div class="w-24 h-[5px] bg-secondary"></div>
+            </div>
+
+            <!-- ============================================================ -->
+            <!-- TARJETA DESTACADA — Planes de Competitividad                 -->
+            <!-- Imagen protagonista (60%) + título + subtítulo breve         -->
+            <!-- ============================================================ -->
+            <div
+                class="featured-card group bg-white overflow-hidden shadow-2xl mb-10 md:mb-14 flex flex-col lg:flex-row min-h-[460px] md:min-h-[520px]"
+            >
+                <!-- Imagen dominante -->
+                <div
+                    class="relative overflow-hidden w-full lg:w-[60%] min-h-[300px] lg:min-h-full shrink-0"
+                >
+                    <img
+                        src="https://res.cloudinary.com/ccdcloudy/image/upload/q_auto/f_auto/v1776427578/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/aeropuerto-anta_ofyc0q.png"
+                        alt="Aeropuerto de Anta — Planes de Competitividad"
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-[4000ms] ease-in-out group-hover:scale-[1.04]"
+                    />
+                    <!-- Overlay gradiente sobre la imagen -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-black/20 via-transparent to-transparent pointer-events-none"
+                    >
+                    </div>
+                </div>
+
+                <!-- Contenido — solo título y subtítulo -->
+                <div
+                    class="flex flex-col justify-center p-10 md:p-14 lg:p-16 flex-grow border-t-4 border-primary lg:border-t-0 lg:border-l-4"
+                >
+                    <h3
+                        class="font-serif text-4xl md:text-5xl lg:text-6xl font-black text-primary leading-[1.1] mb-6 tracking-tight"
+                    >
+                        Planes de<br />Competitividad
+                    </h3>
+                    <p
+                        class="font-sans text-lg md:text-xl text-gray-500 leading-relaxed max-w-lg"
+                    >
+                        Asistencia técnica en la elaboración de planes de
+                        competitividad y productividad para regiones y países,
+                        teniendo en cuenta los siguientes determinantes clave.
+                    </p>
+                    <!-- Línea decorativa -->
+                    <div class="mt-8 w-16 h-1 bg-secondary"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- SECCIÓN DETERMINANTES — Infografía de determinantes clave    -->
+        <!-- Fondo celeste claro, grid de pills coloridas + 2 filas full  -->
+        <!-- ============================================================ -->
+        <div
+            class="determinants-section py-14 md:py-20 mt-0"
+            style="background-color: #ddeaf5;"
+        >
+            <div class="container mx-auto px-6 lg:px-12 max-w-[1400px]">
+                <!-- Encabezado -->
+
+                <!-- Grid 3×3 de pills de determinantes -->
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-4"
+                >
+                    {
+                        determinantes.map((d, i) => (
+                            <div
+                                class="det-pill group flex items-center gap-4 px-5 py-4 rounded-xl text-white font-semibold shadow-md hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 cursor-default"
+                                style={`background-color: ${d.bg}; animation-delay: ${i * 0.07}s`}
+                            >
+                                <span class="text-2xl w-10 h-10 bg-white/20 flex items-center justify-center rounded-full shrink-0 group-hover:scale-110 transition-transform duration-300">
+                                    {d.icon}
+                                </span>
+                                <span class="font-sans text-[1rem] md:text-[1.05rem] font-semibold leading-tight">
+                                    {d.label}
+                                </span>
+                            </div>
+                        ))
+                    }
+                </div>
+
+                <!-- Fila especial: Mega y micro proyectos -->
+                <div
+                    class="det-pill-full group flex items-center gap-5 px-6 py-4 rounded-xl text-white font-semibold shadow-md hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 cursor-default mb-4"
+                    style="background-color: #1B3A6B; animation-delay: 0.63s"
+                >
+                    <span
+                        class="text-2xl w-10 h-10 bg-white/20 flex items-center justify-center rounded-full shrink-0 group-hover:scale-110 transition-transform duration-300"
+                        >⚙️</span
+                    >
+                    <span
+                        class="font-sans text-[1rem] md:text-[1.1rem] font-semibold leading-tight"
+                        >Mega y micro proyectos para mejorar la productividad</span
+                    >
+                </div>
+
+                <!-- Fila especial: Dotación de recursos -->
+                <div
+                    class="det-pill-full group flex items-center gap-5 px-6 py-4 rounded-xl text-white font-semibold shadow-md hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 cursor-default"
+                    style="background-color: #1E7E45; animation-delay: 0.7s"
+                >
+                    <span
+                        class="text-2xl w-10 h-10 bg-white/20 flex items-center justify-center rounded-full shrink-0 group-hover:scale-110 transition-transform duration-300"
+                        >⛏️</span
+                    >
+                    <span
+                        class="font-sans text-[1rem] md:text-[1.1rem] font-semibold leading-tight"
+                        >Dotación de recursos naturales del subsuelo y suelo</span
+                    >
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- SECCIÓN 2 COLUMNAS — Fondo celeste secundario               -->
+        <!-- ============================================================ -->
+        <div
+            class="bg-secondary-light border-y border-secondary/30 py-12 md:py-16"
+        >
+            <div class="container mx-auto px-6 lg:px-12 max-w-[1600px]">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                    <!-- Tarjeta A: Asesoría Estratégica -->
+                    <div
+                        class="grid-card group bg-white border-t-4 border-transparent hover:border-secondary shadow-md hover:shadow-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1.5 flex flex-col h-full"
+                    >
+                        <!-- Imagen de fondo con gradiente overlay -->
+                        <div
+                            class="relative h-[260px] overflow-hidden bg-gray-100 shrink-0"
+                        >
+                            <img
+                                src="https://res.cloudinary.com/ccdcloudy/image/upload/q_auto/f_auto/v1774878425/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/10_e25vqp.jpg"
+                                alt="Asesoría Estratégica"
+                                class="w-full h-full object-cover transition-transform duration-[2500ms] group-hover:scale-[1.06]"
+                            />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                            >
+                            </div>
+                        </div>
+                        <div class="p-8 lg:p-10 flex flex-col flex-grow">
+                            <h3
+                                class="font-sans text-xl md:text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors duration-300 leading-tight"
+                            >
+                                Asesoría Estratégica
+                            </h3>
+                            <p
+                                class="font-sans text-base text-gray-500 leading-[1.75]"
+                            >
+                                Asesoría y asistencia técnica para mejorar la
+                                competitividad y productividad de la zona de
+                                influencia directa e indirectamente relacionada.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta B: Asistencia Sectorial -->
+                    <div
+                        class="grid-card group bg-white border-t-4 border-transparent hover:border-secondary shadow-md hover:shadow-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1.5 flex flex-col h-full"
+                    >
+                        <div
+                            class="relative h-[260px] overflow-hidden bg-gray-100 shrink-0"
+                        >
+                            <img
+                                src="https://res.cloudinary.com/ccdcloudy/image/upload/v1772646621/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_7_kr73ms.jpg"
+                                alt="Asistencia Sectorial"
+                                class="w-full h-full object-cover transition-transform duration-[2500ms] group-hover:scale-[1.06]"
+                            />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                            >
+                            </div>
+                        </div>
+                        <div class="p-8 lg:p-10 flex flex-col flex-grow">
+                            <h3
+                                class="font-sans text-xl md:text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors duration-300 leading-tight"
+                            >
+                                Asistencia Sectorial
+                            </h3>
+                            <p
+                                class="font-sans text-base text-gray-500 leading-[1.75]"
+                            >
+                                Asesoría y asistencia técnica para mejorar la
+                                competitividad y productividad de sectores
+                                económicos, proveedores, clusters, cadenas de
+                                valor y corredores económicos territoriales.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Tarjeta C: Iniciativas Productivas -->
+                    <div
+                        class="grid-card group bg-white border-t-4 border-transparent hover:border-secondary shadow-md hover:shadow-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1.5 flex flex-col h-full"
+                    >
+                        <div
+                            class="relative h-[260px] overflow-hidden bg-gray-100 shrink-0"
+                        >
+                            <img
+                                src="https://res.cloudinary.com/ccdcloudy/image/upload/v1774878409/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/2_r8m7sg.jpg"
+                                alt="Iniciativas Productivas"
+                                class="w-full h-full object-cover transition-transform duration-[2500ms] group-hover:scale-[1.06]"
+                            />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                            >
+                            </div>
+                        </div>
+                        <div class="p-8 lg:p-10 flex flex-col flex-grow">
+                            <h3
+                                class="font-sans text-xl md:text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors duration-300 leading-tight"
+                            >
+                                Iniciativas Productivas
+                            </h3>
+                            <p
+                                class="font-sans text-base text-gray-500 leading-[1.75]"
+                            >
+                                Diseño, creación, implementación, seguimiento y
+                                acompañamiento en iniciativas de competitividad
+                                y productividad para sectores y productos de
+                                alto potencial de crecimiento.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- SECCIÓN 3 COLUMNAS — Fondo oscuro semi-transparente         -->
+        <!-- ============================================================ -->
+        <div class="bg-black/20 backdrop-blur-sm py-12 md:py-16">
+            <div class="container mx-auto px-6 lg:px-12 max-w-[1600px]">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                    <!-- Tarjeta 3-col A: Evaluación de Clústeres -->
+                    <div
+                        class="grid-card group bg-white border-t-4 border-transparent hover:border-primary shadow-md hover:shadow-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1.5 flex flex-col h-full"
+                    >
+                        <div
+                            class="relative h-[240px] overflow-hidden bg-gray-100 shrink-0"
+                        >
+                            <img
+                                src="https://res.cloudinary.com/ccdcloudy/image/upload/q_auto/f_auto/v1776430643/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/Cluster_2_wg6pvy.jpg"
+                                alt="Evaluación de Clústeres"
+                                class="w-full h-full object-cover transition-transform duration-[2500ms] group-hover:scale-[1.07]"
+                            />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                            >
+                            </div>
+                        </div>
+                        <div class="p-7 flex flex-col flex-grow">
+                            <h3
+                                class="font-sans text-lg md:text-xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300 leading-tight"
+                            >
+                                Evaluación de Clústeres
+                            </h3>
+                            <p
+                                class="font-sans text-base text-gray-500 leading-[1.75]"
+                            >
+                                Evaluar y promover actividades económicas y
+                                microclusters a niveles sectoriales y productos
+                                de alto potencial de crecimiento.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 3-col C: Sistemas de Medición -->
+                    <div
+                        class="grid-card group bg-white border-t-4 border-transparent hover:border-primary shadow-md hover:shadow-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1.5 flex flex-col h-full"
+                    >
+                        <div
+                            class="relative h-[240px] overflow-hidden bg-gray-100 shrink-0"
+                        >
+                            <img
+                                src="https://res.cloudinary.com/ccdcloudy/image/upload/v1774878412/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/3_w70hd7.webp"
+                                alt="Sistemas de Medición"
+                                class="w-full h-full object-cover transition-transform duration-[2500ms] group-hover:scale-[1.07]"
+                            />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                            >
+                            </div>
+                        </div>
+                        <div class="p-7 flex flex-col flex-grow">
+                            <h3
+                                class="font-sans text-lg md:text-xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300 leading-tight"
+                            >
+                                Sistemas de Medición
+                            </h3>
+                            <p
+                                class="font-sans text-base text-gray-500 leading-[1.75]"
+                            >
+                                Creación de sistemas de medición parciales e
+                                integrales para impulsar la competitividad y
+                                productividad de zonas de influencia directa e
+                                indirectamente relacionadas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</CapabilityLayout>
+
+<style>
+    /* ── Fade-in de entrada para el título de sección ── */
+    .nt-title {
+        animation: fadeSlideUp 0.7s ease-out both;
+    }
+
+    /* ── Tarjeta featured: entrada con escala sutil ── */
+    .featured-card {
+        animation: fadeSlideUp 0.8s ease-out 0.1s both;
+    }
+
+    /* ── Pills de determinantes: entrada escalonada ── */
+    .det-pill,
+    .det-pill-full {
+        animation: fadeSlideUp 0.5s ease-out both;
+    }
+
+    /* ── Tarjetas de grillas ── */
+    .grid-card {
+        animation: fadeSlideUp 0.6s ease-out both;
+    }
+
+    @keyframes fadeSlideUp {
+        from {
+            opacity: 0;
+            transform: translateY(22px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* ── Encabezado de sección determinantes ── */
+    .determinants-section {
+        position: relative;
+    }
+
+    /* Línea central decorativa vertical en el grid (solo decorativa, pseudo-elemento) */
+    .determinants-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 1px;
+        background: linear-gradient(
+            to bottom,
+            transparent,
+            rgba(145, 174, 204, 0.4),
+            transparent
+        );
+        pointer-events: none;
+    }
+</style>

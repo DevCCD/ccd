@@ -3,6 +3,320 @@ import CapabilityLayout from "../../components/capacidades/CapabilityLayout.astr
 import { capacidadesContent } from "../../data/capacidadesContent.js";
 
 const data = capacidadesContent["desarrollo"];
+
+// Extraemos datos necesarios para el layout base
+const { nuestroTrabajo, ...layoutData } = data;
+
+const pilaresDesarrollo = [
+    { label: "Sociodemográfica", icon: "👥", color: "#3A86AD", bg: "#3A86AD" },
+    {
+        label: "Crecimiento económico",
+        icon: "📈",
+        color: "#D97706",
+        bg: "#D97706",
+    },
+    { label: "Conectividad", icon: "🛣️", color: "#1E3A8A", bg: "#1E3A8A" },
+    { label: "Gobernanza", icon: "🏛️", color: "#7C3AED", bg: "#7C3AED" },
+    {
+        label: "Riesgos y desastres",
+        icon: "⚠️",
+        color: "#B91C1C",
+        bg: "#B91C1C",
+    },
+    { label: "Ambiental", icon: "🌳", color: "#059669", bg: "#059669" },
+];
 ---
-<CapabilityLayout {...data}>
+
+<CapabilityLayout {...layoutData}>
+    <!-- ===== NUESTRO TRABAJO — DESARROLLO (Diseño Manual Premium) ===== -->
+    <section
+        class="relative bg-gradient-to-br from-primary via-[#6a0016] to-[#2a0008] pt-24 md:pt-32 pb-0"
+        id="nuestro-trabajo"
+    >
+        <!-- Ruido de textura sutil -->
+        <div
+            class="absolute inset-0 opacity-[0.03] bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJuIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMC42NSIgbnVtT2N0YXZlcz0iMyIgc3RpdGNoVGlsZXM9InN0aXRjaCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiBmaWx0ZXI9InVybCgjbikiIG9wYWNpdHk9IjEiLz48L3N2Zz4=')] pointer-events-none"
+        >
+        </div>
+
+        <div
+            class="container mx-auto px-6 lg:px-12 max-w-[1600px] relative z-10"
+        >
+            <!-- Título de Sección -->
+            <div
+                class="mb-14 flex flex-col items-center md:items-start text-center md:text-left nt-title"
+            >
+                <h2
+                    class="font-serif text-3xl md:text-5xl font-black text-white mb-5 tracking-tight"
+                >
+                    Nuestro Trabajo
+                </h2>
+                <div class="w-24 h-[5px] bg-secondary"></div>
+            </div>
+
+            <!-- ============================================================ -->
+            <!-- TARJETA DESTACADA — Planes Concertados                       -->
+            <!-- ============================================================ -->
+            <div
+                class="featured-card group bg-white overflow-hidden shadow-2xl mb-10 md:mb-14 flex flex-col lg:flex-row min-h-[460px] md:min-h-[520px]"
+            >
+                <!-- Imagen dominante -->
+                <div
+                    class="relative overflow-hidden w-full lg:w-[60%] min-h-[300px] lg:min-h-full shrink-0"
+                >
+                    <img
+                        src="/planes_concertados_desarrollo.png"
+                        alt="Planes Concertados — Desarrollo"
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-[4000ms] ease-in-out group-hover:scale-[1.04]"
+                    />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-black/20 via-transparent to-transparent pointer-events-none"
+                    >
+                    </div>
+                </div>
+
+                <!-- Contenido -->
+                <div
+                    class="flex flex-col justify-center p-10 md:p-14 lg:p-16 flex-grow border-t-4 border-primary lg:border-t-0 lg:border-l-4"
+                >
+                    <h3
+                        class="font-serif text-4xl md:text-5xl lg:text-6xl font-black text-primary leading-[1.1] mb-6 tracking-tight"
+                    >
+                        Planes de Desarrollo Concertados
+                    </h3>
+                    <p
+                        class="font-sans text-lg md:text-xl text-gray-500 leading-relaxed max-w-lg"
+                    >
+                        Asistencia técnica en la elaboración de planes
+                        territoriales de desarrollo concertados, teniendo en
+                        cuenta las siguientes dimensiones clave.
+                    </p>
+                    <div class="mt-8 w-16 h-1 bg-secondary"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- SECCIÓN EJES ESTRATÉGICOS — Asistencia Técnica (Ejes)        -->
+        <!-- ============================================================ -->
+        <div
+            class="axes-section py-20 md:py-28 mt-0 bg-[#f4faff] relative overflow-hidden border-y border-blue-100"
+        >
+            <!-- Patrón de cuadrícula técnica sutil -->
+            <div
+                class="absolute inset-0 opacity-[0.05] pointer-events-none"
+                style="background-image: linear-gradient(#1e3a8a 1px, transparent 1px), linear-gradient(90deg, #1e3a8a 1px, transparent 1px); background-size: 50px 50px;"
+            >
+            </div>
+
+            <div
+                class="container mx-auto px-6 lg:px-12 max-w-[1400px] relative z-10"
+            >
+                <div class="text-center mb-20 animate-fade-in">
+                    <p
+                        class="font-sans text-[0.7rem] font-bold tracking-[0.4em] uppercase text-secondary mb-4"
+                    >
+                        Metodología de Intervención
+                    </p>
+                    <h3
+                        class="font-serif text-3xl md:text-5xl font-black text-[#0f172a] tracking-tight"
+                    >
+                        Ejes Estratégicos del Desarrollo
+                    </h3>
+                </div>
+
+                <div class="relative flex flex-col items-center">
+                    <!-- Hub Central Corporativo -->
+                    <div
+                        class="hidden lg:flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-44 h-44 bg-white rounded-full border-[10px] border-blue-50 shadow-xl items-center justify-center z-20"
+                    >
+                        <div class="text-center">
+                            <span
+                                class="block font-serif text-lg font-black text-secondary uppercase tracking-widest"
+                                >Desarrollo</span
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Layout de Ejes (2 Columnas) -->
+                    <div
+                        class="grid grid-cols-1 lg:grid-cols-2 gap-x-64 gap-y-10 w-full relative"
+                    >
+                        <!-- Columna Izquierda -->
+                        <div class="space-y-6">
+                            {
+                                pilaresDesarrollo.slice(0, 3).map((p) => (
+                                    <div class="axis-card group flex items-center gap-6 p-6 bg-white border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-secondary/30 relative">
+                                        <div
+                                            class="w-12 h-12 flex items-center justify-center text-2xl shrink-0"
+                                            style={`background-color: ${p.color}15; color: ${p.color}`}
+                                        >
+                                            {p.icon}
+                                        </div>
+                                        <div class="flex-grow">
+                                            <h4 class="font-sans text-lg font-bold text-gray-900">
+                                                {p.label}
+                                            </h4>
+                                            <div class="w-6 h-0.5 bg-gray-200 mt-2 group-hover:w-16 group-hover:bg-secondary transition-all" />
+                                        </div>
+                                        <!-- Línea conectora decorativa -->
+                                        <div class="hidden lg:block absolute right-[-2.5rem] top-1/2 -translate-y-1/2 w-10 h-[2px] bg-blue-100 group-hover:bg-secondary/30 transition-colors" />
+                                    </div>
+                                ))
+                            }
+                        </div>
+
+                        <!-- Columna Derecha -->
+                        <div class="space-y-6">
+                            {
+                                pilaresDesarrollo.slice(3, 6).map((p) => (
+                                    <div class="axis-card group flex items-center lg:flex-row-reverse gap-6 p-6 bg-white border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-secondary/30 relative text-left lg:text-right">
+                                        <div
+                                            class="w-12 h-12 flex items-center justify-center text-2xl shrink-0"
+                                            style={`background-color: ${p.color}15; color: ${p.color}`}
+                                        >
+                                            {p.icon}
+                                        </div>
+                                        <div class="flex-grow">
+                                            <h4 class="font-sans text-lg font-bold text-gray-900">
+                                                {p.label}
+                                            </h4>
+                                            <div class="w-6 h-0.5 bg-gray-200 mt-2 ml-auto group-hover:w-16 group-hover:bg-secondary transition-all" />
+                                        </div>
+                                        <!-- Línea conectora decorativa -->
+                                        <div class="hidden lg:block absolute left-[-2.5rem] top-1/2 -translate-y-1/2 w-10 h-[2px] bg-blue-100 group-hover:bg-secondary/30 transition-colors" />
+                                    </div>
+                                ))
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- SECCIÓN 2 COLUMNAS — Sistemas KPIs & Proyectos Educativos    -->
+        <!-- ============================================================ -->
+        <div class="bg-black/10 backdrop-blur-sm py-16 md:py-24">
+            <div class="container mx-auto px-6 lg:px-12 max-w-[1600px]">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                    <!-- Tarjeta A: Sistemas KPIs -->
+                    <div
+                        class="grid-card group bg-white border-t-4 border-transparent hover:border-primary shadow-md hover:shadow-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1.5 flex flex-col h-full"
+                    >
+                        <div
+                            class="relative h-[280px] overflow-hidden bg-gray-100 shrink-0"
+                        >
+                            <img
+                                src="https://res.cloudinary.com/ccdcloudy/image/upload/v1770857524/Web%20CCD/Corporate%20Flat%20Illustration/planes_de_desarrollo2_tb0bj3.jpg"
+                                alt="Sistemas KPIs"
+                                class="w-full h-full object-cover transition-transform duration-[2500ms] group-hover:scale-[1.07]"
+                            />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"
+                            >
+                            </div>
+                        </div>
+                        <div class="p-8 lg:p-10 flex flex-col flex-grow">
+                            <h3
+                                class="font-sans text-xl md:text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors duration-300 leading-tight"
+                            >
+                                Sistemas KPIs
+                            </h3>
+                            <p
+                                class="font-sans text-base text-gray-500 leading-relaxed"
+                            >
+                                Creación de sistemas de medición y KPIs para el
+                                desarrollo de zonas de influencia directa e
+                                indirectamente relacionadas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta B: Proyectos Educativos -->
+                    <div
+                        class="grid-card group bg-white border-t-4 border-transparent hover:border-primary shadow-md hover:shadow-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1.5 flex flex-col h-full"
+                    >
+                        <div
+                            class="relative h-[280px] overflow-hidden bg-gray-100 shrink-0"
+                        >
+                            <img
+                                src="https://res.cloudinary.com/ccdcloudy/image/upload/v1774880236/Web%20CCD/Capacidades%20e%20Industrias/Desarrollo/InstitucionEducativaIntegrada_hzma4b.png"
+                                alt="Proyectos Educativos"
+                                class="w-full h-full object-cover transition-transform duration-[2500ms] group-hover:scale-[1.07]"
+                            />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"
+                            >
+                            </div>
+                        </div>
+                        <div class="p-8 lg:p-10 flex flex-col flex-grow">
+                            <h3
+                                class="font-sans text-xl md:text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors duration-300 leading-tight"
+                            >
+                                Proyectos Educativos
+                            </h3>
+                            <p
+                                class="font-sans text-base text-gray-500 leading-relaxed"
+                            >
+                                Diseñar e implementar proyectos para mejorar la
+                                educación en niveles básico regular, técnico y
+                                universitario.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </CapabilityLayout>
+
+<style>
+    .nt-title {
+        animation: fadeSlideUp 0.7s ease-out both;
+    }
+    .featured-card {
+        animation: fadeSlideUp 0.8s ease-out 0.2s both;
+    }
+    .axis-card {
+        animation: fadeSlideUp 0.6s ease-out both;
+    }
+    .grid-card {
+        animation: fadeSlideUp 0.6s ease-out both;
+    }
+
+    @keyframes fadeSlideUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Estética Corporativa para la sección de ejes */
+    .axes-section {
+        position: relative;
+    }
+
+    @media (min-width: 1024px) {
+        /* Línea central sutil que conecta con el hub */
+        .axes-section::after {
+            content: "";
+            position: absolute;
+            top: 25%;
+            bottom: 25%;
+            left: 50%;
+            width: 1px;
+            background: linear-gradient(
+                to bottom,
+                transparent,
+                rgba(30, 58, 138, 0.1),
+                transparent
+            );
+            z-index: 1;
+        }
+    }
+</style>

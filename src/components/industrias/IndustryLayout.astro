@@ -141,7 +141,7 @@ const {
             <section class="bg-gray-300 py-20 border-t border-gray-100">
                 <div class="container mx-auto px-6 lg:px-12 max-w-[1600px]">
                     <h2 class="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-12 border-b-2 border-primary pb-4 inline-block">
-                        Nuestros Productos y Servicios
+                        Nuestros Servicios
                     </h2>
 
                     <div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12">
@@ -264,7 +264,7 @@ const {
                             {/* Usamos md:divide-x para replicar las líneas verticales de la referencia */}
                             <div class=" flex flex-col md:flex-row justify-center items-center md:items-stretch gap-6 md:gap-0 md:divide-x divide-gray-100 w-full max-w-[1400px]">
                                 {specialists.map((member) => (
-                            <a
+                                    <a
                                         href={`/nosotros/equipo/${member.slug}`}
                                         class={`group flex flex-col items-center text-center w-full px-8 py-12 bg-white transition-all duration-300 hover:shadow-xl relative z-10 ${specialists.length === 1 ? "max-w-[450px]" : "md:flex-1"}`}
                                     >

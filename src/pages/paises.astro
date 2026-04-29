@@ -18,13 +18,9 @@ const introImage =
     <section class="bg-white py-20 md:py-28">
         <div class="container mx-auto px-6 lg:px-12 max-w-5xl text-center">
             <p
-                class="font-sans text-xl md:text-2xl text-gray-700 leading-relaxed"
+                class="font-sans text-2xl md:text-3xl text-gray-700 leading-relaxed font-bold"
             >
-                El Centro para la Competitividad y el Desarrollo (CCD) es un
-                socio estratégico de organizaciones que operan globalmente y
-                tienen como objetivo impulsar la competitividad y el desarrollo
-                del entorno territorial nacional, regional, local o comunal
-                donde realizarán sus actividades.
+                El Centro para la Competitividad y el Desarrollo (CCD) es un socio estratégico de organizaciones que operan globalmente y tienen como objetivo impulsar la competitividad y el desarrollo del entorno territorial comunal, local, regional y nacional donde realizarán sus actividades.
             </p>
         </div>
     </section>
@@ -52,14 +48,8 @@ const introImage =
             <p
                 class="font-sans text-xl md:text-2xl text-gray-800 leading-relaxed"
             >
-                Los servicios especializados de asistencia técnica y consultoría
-                que brinda el CCD se encuentran en las áreas de competitividad y
-                desarrollo, política y gestión pública, estudios económicos,
-                legal y CCD Tech, principalmente con amplia experiencia en las
-                industrias agropecuario, agroexportación, educación,
-                hidrocarburos, infraestructura y construcción, inteligencia
-                artificial, manufactura, minería, seguridad ciudadana, sector
-                público, servicios portuarios, sistema financiero y tecnología.
+                Los servicios especializados de asistencia técnica y consultoría que brinda el Centro para la Competitividad y el Desarrollo (CCD) se encuentran en las áreas de competitividad y desarrollo, política y gestión pública, estudios económicos, legal y CCD Tech, principalmente con amplia experiencia en las industrias agropecuario, agroexportación, educación, hidrocarburos, infraestructura y construcción, inteligencia artificial, manufactura, minería, seguridad ciudadana, sector público, servicios portuarios, sistema financiero y tecnología.
+
             </p>
         </div>
     </section>
@@ -100,7 +90,7 @@ const introImage =
                         <tr>
                             <!-- Cabeceras de industrias -->
                             {["Agropecuario","Agroexportación","Educación","Hidrocarburos","Infraestructura y Construcción","Inteligencia Artificial","Manufactura","Minería","Seguridad Ciudadana","Sector Público","Servicios Portuarios","Sistema Financiero","Tecnología"].map((ind) => (
-                                <th class="py-3 px-1 text-center text-white text-xs font-medium leading-tight" style="background-color:#8B2035; overflow: hidden; text-overflow: ellipsis;">
+                                <th class="py-3 px-1 text-center text-white text-xs font-medium leading-tight" style="background-color:#910121; overflow: hidden; text-overflow: ellipsis;">
                                     {ind}
                                 </th>
                             ))}
@@ -288,14 +278,23 @@ const introImage =
     </div>
 
     <!-- 5. SECCIÓN DE GRÁFICO FLOURISH START -->
-    <section class="w-full bg-white py-16 md:py-24 border-t border-gray-200">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-12 flex flex-col items-center">
-            <div class="w-full max-w-6xl shadow-[0_10px_40px_rgba(0,0,0,0.08)]  overflow-hidden">
-                <div class="flourish-clean-wrapper">
-                    <div class="flourish-embed flourish-chart w-full" data-src="visualisation/28019801" data-width="100%">
-                        <script is:inline src="https://public.flourish.studio/resources/embed.js"></script>
-                        <noscript><img src="https://public.flourish.studio/visualisation/28019801/thumbnail" width="100%" alt="visualization" /></noscript>
-                    </div>
+    <section class="w-full flex flex-col lg:flex-row items-stretch border-t border-gray-200 bg-white">
+        <!-- Columna Texto (1/3) -->
+        <div class="w-full lg:w-1/3 bg-primary p-12 md:p-20 flex items-center relative overflow-hidden group">
+            <!-- Efecto de brillo sutil -->
+            <div class="absolute -top-24 -right-24 w-64 h-64 bg-white/10 rounded-full blur-3xl transition-transform duration-700 group-hover:scale-125"></div>
+            
+            <p class="text-white text-2xl md:text-3xl font-serif font-bold leading-tight relative z-10">
+                Las organizaciones que demandan los servicios del Centro para la Competitividad y el Desarrollo (CCD) tienen sus operaciones, accionistas o matrices corporativas en los cinco continentes.
+            </p>
+        </div>
+        
+        <!-- Columna Mapa (2/3) -->
+        <div class="w-full lg:w-2/3 bg-white p-6 md:p-12 flex items-center justify-center">
+            <div class="flourish-clean-wrapper w-full">
+                <div class="flourish-embed flourish-chart w-full" data-src="visualisation/28019801" data-width="100%">
+                    <script is:inline src="https://public.flourish.studio/resources/embed.js"></script>
+                    <noscript><img src="https://public.flourish.studio/visualisation/28019801/thumbnail" width="100%" alt="visualization" /></noscript>
                 </div>
             </div>
         </div>
@@ -331,8 +330,8 @@ const introImage =
            
             fortalecimiento:     { name: "Fortalecimiento de Capacidades",  link: "/capacidades/fortalecimiento",     color: "#E26B0A" },
             politica:     { name: "Política Fiscal",  link: "/capacidades/politica",     color: "#E26B0A" },
-            fondos_sociales:     { name: "Fondos Sociales",  link: "/capacidades/fondos_sociales",     color: "#E26B0A" },
-            fondos_de_estabilizacion:     { name: "Fondos de Estabilización",  link: "/capacidades/fondos_de_estabilizacion",     color: "#E26B0A" },
+            fondos_sociales:     { name: "Fondos Sociales",  link: "/capacidades/fondos-sociales",     color: "#E26B0A" },
+            fondos_de_estabilizacion:     { name: "Mecanismos Reductores de Riesgos",  link: "/capacidades/fondos-de-estabilizacion",     color: "#E26B0A" },
 
 
 
@@ -350,11 +349,13 @@ const introImage =
             var popover = document.getElementById("matrixPopover");
             var linksDiv = document.getElementById("popoverLinks");
             var table = document.getElementById("matrizExperiencia");
+            var hoverTimer = null;
 
             if (!popover || !table) return;
 
             function hidePopover() {
                 popover.classList.remove("show");
+                popover._activeBtn = null;
             }
 
             function showPopover(btn) {
@@ -378,7 +379,7 @@ const introImage =
 
                 if (!linksHtml) return;
 
-                linksHtml += '<a href="/industrias/' + indSlug + '" style="display:flex;align-items:center;gap:10px;padding:14px 16px;border-radius:0;background:#f3f4f6;color:#374151;font-size:14px;font-weight:600;text-decoration:none;transition:background 0.15s;">' +
+                linksHtml += '<a href="/industrias/' + indSlug + '" style="display:flex;align-items:center;gap:10px;padding:14px 16px;border-radius:0;background:#910121;color:#fff;font-size:14px;font-weight:600;text-decoration:none;transition:background 0.15s;">' +
                     '<svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>' +
                     indName + '</a>';
 
@@ -395,7 +396,7 @@ const introImage =
                 }
 
                 var popRect = popover.getBoundingClientRect();
-                var top = rect.bottom + scrollTop + 6;
+                var top = rect.bottom + scrollTop + 2; // Closer to the cell
                 var left = rect.left + scrollLeft + (rect.width / 2) - (popRect.width / 2);
 
                 // Keep within viewport
@@ -405,7 +406,7 @@ const introImage =
                 }
                 // If it goes below viewport, show above
                 if (rect.bottom + popRect.height + 10 > window.innerHeight) {
-                    top = rect.top + scrollTop - popRect.height - 6;
+                    top = rect.top + scrollTop - popRect.height - 2;
                 }
 
                 popover.style.top = top + "px";
@@ -421,11 +422,29 @@ const introImage =
             // Use event delegation on the TABLE for all .matrix-cell hovers
             table.addEventListener("mouseover", function(e) {
                 var btn = e.target.closest(".matrix-cell");
-                if (!btn) return;
+                if (!btn) {
+                    if (hoverTimer) {
+                        clearTimeout(hoverTimer);
+                        hoverTimer = null;
+                    }
+                    return;
+                }
 
                 if (popover._activeBtn !== btn) {
-                    showPopover(btn);
-                    popover._activeBtn = btn;
+                    if (hoverTimer) clearTimeout(hoverTimer);
+                    
+                    hoverTimer = setTimeout(function() {
+                        showPopover(btn);
+                        popover._activeBtn = btn;
+                    }, 150); // Small delay to avoid flickering/accidental switches
+                }
+            });
+
+            // Keep popover visible when hovering over it
+            popover.addEventListener("mouseenter", function() {
+                if (hoverTimer) {
+                    clearTimeout(hoverTimer);
+                    hoverTimer = null;
                 }
             });
 
@@ -435,14 +454,12 @@ const introImage =
                 if (popover.contains(e.target)) return;
                 if (e.target.closest && e.target.closest(".matrix-cell")) return;
                 hidePopover();
-                popover._activeBtn = null;
             });
 
             // Close on Escape
             document.addEventListener("keydown", function(e) {
                 if (e.key === "Escape") {
                     hidePopover();
-                    popover._activeBtn = null;
                 }
             });
         }

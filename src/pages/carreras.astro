@@ -1,8 +1,9 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import PageHeader from '../components/PageHeader.astro';
+import Layout from "../layouts/Layout.astro";
+import PageHeader from "../components/PageHeader.astro";
 
-const headerImage = "https://images.unsplash.com/photo-1549923746-c502d488b3ea?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+const headerImage =
+    "https://images.unsplash.com/photo-1549923746-c502d488b3ea?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 
 const industries = [
     "Minería",
@@ -10,7 +11,7 @@ const industries = [
     "Educación",
     "Agricultura",
     "Pecuario",
-    "Infraestructura"
+    "Infraestructura",
 ];
 
 const countries = [
@@ -169,7 +170,10 @@ const countries = [
     { name: "Nueva Caledonia", provinces: [] },
     { name: "Nueva Zelanda", provinces: [] },
     { name: "Omán", provinces: [] },
-    { name: "Organización Territorial Británica del Océano Índico", provinces: [] },
+    {
+        name: "Organización Territorial Británica del Océano Índico",
+        provinces: [],
+    },
     { name: "Países Bajos", provinces: [] },
     { name: "Pakistán", provinces: [] },
     { name: "Palaos", provinces: [] },
@@ -177,29 +181,30 @@ const countries = [
     { name: "Panamá", provinces: [] },
     { name: "Papúa Nueva Guinea", provinces: [] },
     { name: "Paraguay", provinces: [] },
-{ 
-  name: "Perú", 
-  provinces: [
-    "Ancash", 
-    "Apurímac", 
-    "Arequipa", 
-    "Ayacucho", 
-    "Cajamarca", 
-    "Cusco", 
-    "Huancavelica", 
-    "Ica", 
-    "Junín", 
-    "La Libertad", 
-    "Lambayeque", 
-    "Lima", 
-    "Loreto", 
-    "Moquegua", 
-    "Puno", 
-    "San Martín", 
-    "Tacna", 
-    "Tumbes", 
-    "Ucayali"  ] 
-},
+    {
+        name: "Perú",
+        provinces: [
+            "Ancash",
+            "Apurímac",
+            "Arequipa",
+            "Ayacucho",
+            "Cajamarca",
+            "Cusco",
+            "Huancavelica",
+            "Ica",
+            "Junín",
+            "La Libertad",
+            "Lambayeque",
+            "Lima",
+            "Loreto",
+            "Moquegua",
+            "Puno",
+            "San Martín",
+            "Tacna",
+            "Tumbes",
+            "Ucayali",
+        ],
+    },
     { name: "Polinesia Francesa", provinces: [] },
     { name: "Polonia", provinces: [] },
     { name: "Portugal", provinces: [] },
@@ -268,14 +273,13 @@ const countries = [
     { name: "Yemen", provinces: [] },
     { name: "Yibuti", provinces: [] },
     { name: "Zambia", provinces: [] },
-    { name: "Zimbabue", provinces: [] }
+    { name: "Zimbabue", provinces: [] },
 ];
 ---
 
 <Layout title="Carreras - Centro para la Competitividad y el Desarrollo">
-    
-    <PageHeader 
-        title="Expertos en Competitividad y Desarrollo" 
+    <PageHeader
+        title="Expertos en Competitividad y Desarrollo"
         backgroundImage={headerImage}
     />
 
@@ -283,30 +287,49 @@ const countries = [
     <section class="bg-white py-16 md:py-24">
         <div class="container mx-auto px-6">
             <div class="max-w-3xl mx-auto text-center mb-16">
-                <h2 class="font-serif text-3xl md:text-4xl font-bold text-primary mb-6">
+                <h2
+                    class="font-serif text-3xl md:text-4xl font-bold text-primary mb-6"
+                >
                     ¡Creemos en tu potencial, experiencia y habilidad!
                 </h2>
-                <p class="text-gray-600 text-xl leading-relaxed">
-Forma parte de la institución líder en competitividad, con más de una década impulsando el desarrollo nacional, regional, provincial, distrital y comunal
-
+                <p class="text-gray-600 text-2xl leading-relaxed font-bold">
+                    Forma parte de la institución líder en competitividad, con
+                    más de una década impulsando el desarrollo comunal,
+                    distrital, provincial, regional y nacional.
                 </p>
-
             </div>
 
             <!-- Valores -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div
+                class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-[1400px] mx-auto"
+            >
                 <!-- Beneficio 1: Impacto Real -->
                 <div class="group">
-                    <div class="relative h-64 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center hover:from-primary/30 hover:to-primary/10">
-                        <div class="text-center px-6">
-                            <svg class="w-16 h-16 text-primary mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                    <div
+                        class="relative h-[380px] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center hover:from-primary/30 hover:to-primary/10"
+                    >
+                        <div class="text-center px-10">
+                            <svg
+                                class="w-24 h-24 text-primary mx-auto mb-6"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                                ></path>
                             </svg>
-                            <h3 class="font-serif text-2xl font-bold text-gray-900 group-hover:text-primary transition-colors duration-300">
+                            <h3
+                                class="font-serif text-3xl font-bold text-gray-900 group-hover:text-primary transition-colors duration-300"
+                            >
                                 Impacto Real
                             </h3>
-                            <p class="text-gray-600 text-sm mt-2">
-                                Trabaja en proyectos que generan cambio tangible en empresas e industrias
+                            <p class="text-gray-600 text-2xl mt-4">
+                                Trabaja en proyectos que generan cambio tangible
+                                en empresas e industrias
                             </p>
                         </div>
                     </div>
@@ -314,16 +337,31 @@ Forma parte de la institución líder en competitividad, con más de una década
 
                 <!-- Beneficio 2: Desarrollo Continuo -->
                 <div class="group">
-                    <div class="relative h-64 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center hover:from-primary/30 hover:to-primary/10">
-                        <div class="text-center px-6">
-                            <svg class="w-16 h-16 text-primary mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                    <div
+                        class="relative h-[380px] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center hover:from-primary/30 hover:to-primary/10"
+                    >
+                        <div class="text-center px-10">
+                            <svg
+                                class="w-24 h-24 text-primary mx-auto mb-6"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+                                ></path>
                             </svg>
-                            <h3 class="font-serif text-2xl font-bold text-gray-900 group-hover:text-primary transition-colors duration-300">
+                            <h3
+                                class="font-serif text-3xl font-bold text-gray-900 group-hover:text-primary transition-colors duration-300"
+                            >
                                 Desarrollo Continuo
                             </h3>
-                            <p class="text-gray-600 text-sm mt-2">
-                                Acceso a capacitación y oportunidades para crecer profesionalmente
+                            <p class="text-gray-600 text-2xl mt-4">
+                                Acceso a capacitación y oportunidades para
+                                crecer profesionalmente
                             </p>
                         </div>
                     </div>
@@ -331,16 +369,31 @@ Forma parte de la institución líder en competitividad, con más de una década
 
                 <!-- Beneficio 3: Equipo Colaborativo -->
                 <div class="group">
-                    <div class="relative h-64 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center hover:from-primary/30 hover:to-primary/10">
-                        <div class="text-center px-6">
-                            <svg class="w-16 h-16 text-primary mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>                            </svg>
+                    <div
+                        class="relative h-[380px] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center hover:from-primary/30 hover:to-primary/10"
+                    >
+                        <div class="text-center px-10">
+                            <svg
+                                class="w-24 h-24 text-primary mx-auto mb-6"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="1.7"
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                                ></path>
                             </svg>
-                            <h3 class="font-serif text-2xl font-bold text-gray-900 group-hover:text-primary transition-colors duration-300">
+                            <h3
+                                class="font-serif text-3xl font-bold text-gray-900 group-hover:text-primary transition-colors duration-300"
+                            >
                                 Equipo Colaborativo
                             </h3>
-                            <p class="text-gray-600 text-sm mt-2">
-                                Forma parte de un equipo multidisciplinario y de alto rendimiento
+                            <p class="text-gray-600 text-2xl mt-4">
+                                Forma parte de un equipo multidisciplinario y de
+                                alto rendimiento
                             </p>
                         </div>
                     </div>
@@ -350,28 +403,37 @@ Forma parte de la institución líder en competitividad, con más de una década
     </section>
 
     <!-- SECCIÓN: FORMULARIO DE CARRERAS -->
-    <section class="bg-gray-50 py-16 md:py-24">
+    <section id="cv-form" class="bg-gray-50 py-16 md:py-24">
         <div class="container mx-auto px-6">
             <div class="max-w-3xl mx-auto">
                 <div class="text-center mb-12">
-                    <h2 class="font-serif text-4xl md:text-5xl font-bold text-primary mb-4">
+                    <h2
+                        class="font-serif text-4xl md:text-5xl font-bold text-primary mb-4"
+                    >
                         Envía tu CV
                     </h2>
-                    <p class="text-gray-600 text-xl">
-Únete a nosotros y vive la experiencia y la pasión por el desarrollo
+                    <p class="text-gray-600 text-2xl">
+                        Únete a nosotros y vive la experiencia y la pasión por
+                        la competitividad y el desarrollo.
                     </p>
                 </div>
 
-                <form class="space-y-6 bg-white p-8 md:p-12 rounded-xl shadow-lg" id="careerForm">
+                <form
+                    class="space-y-6 bg-white p-8 md:p-12 rounded-xl shadow-lg"
+                    id="careerForm"
+                >
                     <!-- Nombre Completo -->
                     <div>
-                        <label for="nombre" class="block text-sm font-semibold text-gray-700 mb-2">
+                        <label
+                            for="nombre"
+                            class="block text-sm font-semibold text-gray-700 mb-2"
+                        >
                             Nombre *
                         </label>
-                        <input 
-                            type="text" 
-                            id="nombre" 
-                            name="nombre" 
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
                             required
                             class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
                             placeholder="Tu nombre completo"
@@ -380,13 +442,16 @@ Forma parte de la institución líder en competitividad, con más de una década
 
                     <!-- Email -->
                     <div>
-                        <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
+                        <label
+                            for="email"
+                            class="block text-sm font-semibold text-gray-700 mb-2"
+                        >
                             Correo *
                         </label>
-                        <input 
-                            type="email" 
-                            id="email" 
-                            name="email" 
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
                             required
                             class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
                             placeholder="tu@email.com"
@@ -395,12 +460,15 @@ Forma parte de la institución líder en competitividad, con más de una década
 
                     <!-- Teléfono -->
                     <div>
-                        <label for="telefono" class="block text-sm font-semibold text-gray-700 mb-2">
+                        <label
+                            for="telefono"
+                            class="block text-sm font-semibold text-gray-700 mb-2"
+                        >
                             Celular *
                         </label>
-                        <input 
-                            type="tel" 
-                            id="telefono" 
+                        <input
+                            type="tel"
+                            id="telefono"
                             name="telefono"
                             required
                             class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
@@ -410,63 +478,98 @@ Forma parte de la institución líder en competitividad, con más de una década
 
                     <!-- País -->
                     <div>
-                        <label for="pais" class="block text-sm font-semibold text-gray-700 mb-2">
+                        <label
+                            for="pais"
+                            class="block text-sm font-semibold text-gray-700 mb-2"
+                        >
                             País *
                         </label>
-                        <select 
-                            id="pais" 
+                        <select
+                            id="pais"
                             name="pais"
                             required
                             class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
                         >
                             <option value="">Selecciona un país</option>
-                            {countries.map(country => (
-                                <option value={country.name}>{country.name}</option>
-                            ))}
+                            {
+                                countries.map((country) => (
+                                    <option value={country.name}>
+                                        {country.name}
+                                    </option>
+                                ))
+                            }
                         </select>
                     </div>
 
                     <!-- Provincia (Solo visible si es Perú) -->
                     <div id="provinceContainer" class="hidden">
-                        <label for="provincia" class="block text-sm font-semibold text-gray-700 mb-2">
+                        <label
+                            for="provincia"
+                            class="block text-sm font-semibold text-gray-700 mb-2"
+                        >
                             Provincia *
                         </label>
-                        <select 
-                            id="provincia" 
+                        <select
+                            id="provincia"
                             name="provincia"
                             class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
                         >
                             <option value="">Selecciona una provincia</option>
-                            {countries.find(c => c.name === "Perú")?.provinces.map(province => (
-                                <option value={province}>{province}</option>
-                            ))}
+                            {
+                                countries
+                                    .find((c) => c.name === "Perú")
+                                    ?.provinces.map((province) => (
+                                        <option value={province}>
+                                            {province}
+                                        </option>
+                                    ))
+                            }
                         </select>
                     </div>
 
                     <!-- Archivo CV -->
                     <div>
-                        <label for="cv" class="block text-sm font-semibold text-gray-700 mb-2">
+                        <label
+                            for="cv"
+                            class="block text-sm font-semibold text-gray-700 mb-2"
+                        >
                             Adjuntar CV *
                         </label>
-                        <div class="mt-2 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-lg hover:border-primary transition-colors duration-300">
+                        <div
+                            class="mt-2 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-lg hover:border-primary transition-colors duration-300"
+                        >
                             <div class="space-y-1 text-center">
-                                <svg class="mx-auto h-12 w-12 text-gray-400" stroke="white" fill="none" viewBox="0 0 48 48">
-                                    <path d="M28 8H12a4 4 0 00-4 4v20a4 4 0 004 4h24a4 4 0 004-4V20m-2-6l-8.5-8.5m0 0L28 2m0 4v16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <svg
+                                    class="mx-auto h-12 w-12 text-gray-400"
+                                    stroke="white"
+                                    fill="none"
+                                    viewBox="0 0 48 48"
+                                >
+                                    <path
+                                        d="M28 8H12a4 4 0 00-4 4v20a4 4 0 004 4h24a4 4 0 004-4V20m-2-6l-8.5-8.5m0 0L28 2m0 4v16"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
                                 </svg>
                                 <div class="flex text-sm text-gray-600">
-                                    <label for="cv" class="relative cursor-pointer rounded-md font-medium text-primary hover:text-primary-dark">
+                                    <label
+                                        for="cv"
+                                        class="relative cursor-pointer rounded-md font-medium text-primary hover:text-primary-dark"
+                                    >
                                         <span>Selecciona un archivo</span>
-                                        <input 
-                                            id="cv" 
-                                            name="cv" 
-                                            type="file" 
+                                        <input
+                                            id="cv"
+                                            name="cv"
+                                            type="file"
                                             accept=".pdf,.doc,.docx"
                                             required
                                             class="sr-only"
                                         />
                                     </label>
                                 </div>
-                                <p class="text-xs text-gray-500">PDF, DOC o DOCX hasta 10MB</p>
+                                <p class="text-xs text-gray-500">
+                                    PDF, DOC o DOCX hasta 10MB
+                                </p>
                             </div>
                         </div>
                         <p id="fileName" class="text-sm text-gray-600 mt-2"></p>
@@ -475,22 +578,26 @@ Forma parte de la institución líder en competitividad, con más de una década
                     <!-- Términos y Condiciones -->
                     <div class="flex items-start">
                         <div class="flex items-center h-5">
-                            <input 
-                                id="terminos" 
-                                name="terminos" 
+                            <input
+                                id="terminos"
+                                name="terminos"
                                 type="checkbox"
                                 required
                                 class="h-4 w-4 text-primary rounded focus:ring-primary border-gray-300"
                             />
                         </div>
-                        <label for="terminos" class="ml-3 text-sm text-gray-600">
-                            Acepto que mis datos sean procesados para evaluar mi candidatura *
+                        <label
+                            for="terminos"
+                            class="ml-3 text-sm text-gray-600"
+                        >
+                            Acepto que mis datos sean procesados para evaluar mi
+                            candidatura *
                         </label>
                     </div>
 
                     <!-- Botón Enviar -->
-                    <button 
-                        type="submit" 
+                    <button
+                        type="submit"
                         class="w-full bg-primary text-white font-bold py-3 px-6 rounded-lg hover:bg-primary-dark transition-colors duration-300"
                     >
                         Enviar CV
@@ -499,31 +606,30 @@ Forma parte de la institución líder en competitividad, con más de una década
             </div>
         </div>
     </section>
-
 </Layout>
 
 <script define:vars={{ countries }}>
     // Manejo del campo de país y provincia
-    const countrySelect = document.getElementById('pais');
-    const provinceContainer = document.getElementById('provinceContainer');
-    const provinceSelect = document.getElementById('provincia');
+    const countrySelect = document.getElementById("pais");
+    const provinceContainer = document.getElementById("provinceContainer");
+    const provinceSelect = document.getElementById("provincia");
 
-    countrySelect.addEventListener('change', function() {
-        if (this.value === 'Perú') {
-            provinceContainer.classList.remove('hidden');
+    countrySelect.addEventListener("change", function () {
+        if (this.value === "Perú") {
+            provinceContainer.classList.remove("hidden");
             provinceSelect.required = true;
         } else {
-            provinceContainer.classList.add('hidden');
+            provinceContainer.classList.add("hidden");
             provinceSelect.required = false;
-            provinceSelect.value = '';
+            provinceSelect.value = "";
         }
     });
 
     // Manejo de archivo CV
-    const cvInput = document.getElementById('cv');
-    const fileName = document.getElementById('fileName');
+    const cvInput = document.getElementById("cv");
+    const fileName = document.getElementById("fileName");
 
-    cvInput.addEventListener('change', function() {
+    cvInput.addEventListener("change", function () {
         if (this.files && this.files[0]) {
             const file = this.files[0];
             fileName.textContent = `Archivo seleccionado: ${file.name} (${(file.size / 1024 / 1024).toFixed(2)}MB)`;
@@ -531,21 +637,23 @@ Forma parte de la institución líder en competitividad, con más de una década
     });
 
     // Validación de tamaño de archivo
-    cvInput.addEventListener('change', function() {
+    cvInput.addEventListener("change", function () {
         const maxSize = 10 * 1024 * 1024; // 10MB
         if (this.files && this.files[0] && this.files[0].size > maxSize) {
-            alert('El archivo es muy grande. Por favor sube un archivo menor a 10MB');
-            this.value = '';
-            fileName.textContent = '';
+            alert(
+                "El archivo es muy grande. Por favor sube un archivo menor a 10MB",
+            );
+            this.value = "";
+            fileName.textContent = "";
         }
     });
 
     // Manejo del formulario
-    const form = document.getElementById('careerForm');
-    form.addEventListener('submit', function(e) {
+    const form = document.getElementById("careerForm");
+    form.addEventListener("submit", function (e) {
         e.preventDefault();
-        alert('Gracias por tu candidatura. Nos pondremos en contacto pronto.');
+        alert("Gracias por tu candidatura. Nos pondremos en contacto pronto.");
         this.reset();
-        fileName.textContent = '';
+        fileName.textContent = "";
     });
 </script>

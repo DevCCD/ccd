@@ -333,7 +333,7 @@ export const capacidadesContent = {
                 ]
             },
             {
-                title: "Marcos de Plazo",
+                title: "Marcos Fiscales",
                 bullet: "Diseño y actualización de marcos fiscales de mediano y largo plazo.",
                 image: ""
             },
@@ -526,7 +526,7 @@ export const capacidadesContent = {
                 image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774882345/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/sem-1084_economia-060821-021316_ku858i.png"
             },
             {
-                title: "Modelación Económica",
+                title: "Modelación Económica y Finaciera",
                 bullet: "Modelación estadística y econometría sobre asuntos económico y financieros relacionados al desarrollo y la competitividad.",
                 image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774882866/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/modelos-predictivos-series-de-tiempo_hrcwyt.jpg"
             },

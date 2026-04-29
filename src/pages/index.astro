@@ -18,198 +18,100 @@ const directores = [
     description="Promovemos el desarrollo territorial sostenible a través de soluciones integrales en competitividad, inversión y evaluación de proyectos."
 >
     <section class="bg-white pt-16 pb-16 px-6 sm:px-8 xl:px-0">
-        <div class="max-w-screen-xl mx-auto flex flex-col gap-6">
-            <!-- Top Row: Title and 1 Card -->
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
-                <!-- Title Block -->
-                <div
-                    class="lg:col-span-8 bg-white pr-4 lg:pr-12 pb-4 lg:pb-12 flex flex-col justify-center min-h-[30vh]"
-                >
-                    <h1
-                        id="hero-title"
-                        class="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[4.5rem] font-bold text-primary leading-[1.05] tracking-tight mb-8"
-                    >
-                        El Futuro de <br class="hidden md:block" /> las Comunidades
-                    </h1>
-                    <div
-                        class="flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-12"
-                    >
-                        <p
-                            id="hero-subtitle"
-                            class="font-sans text-xl md:text-2xl text-gray-700 max-w-xl"
-                        >
-                            Cada vez son más las comunidades que priorizan la
-                            conectividad económica, física y vital.
-                        </p>
-                        <a
-                            id="hero-button"
-                            href="/contacto"
-                            class="shrink-0 flex items-center justify-center w-16 h-16 rounded-full border border-gray-300 hover:border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 group"
-                        >
-                            <svg
-                                class="w-8 h-8 transform group-hover:translate-x-1 transition-transform"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                                ><path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="1.5"
-                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg
-                            >
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Tall Featured Card 1: Minería -->
-                <div id="hero-image" class="lg:col-span-4 flex flex-col">
-                    <a
-                        href="/industrias/mineria"
-                        class="group relative overflow-hidden flex flex-col justify-end bg-gray-900 w-full min-h-[280px] md:min-h-[300px] lg:h-[320px] rounded-sm"
-                    >
-                        <img
-                            src="https://res.cloudinary.com/ccdcloudy/image/upload/v1773340518/Web%20CCD/Industrias/mineria_ymbax9.jpg"
-                            alt="Minería"
-                            class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 bg-white"
-                        />
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-black/10"
-                        >
-                        </div>
-                        <div class="relative z-10 p-6 md:p-8">
-                            <p
-                                class="text-white/80 text-sm font-bold tracking-widest mb-3"
-                            >
-                                Industrias
-                            </p>
-                            <h3
-                                class="text-white text-3xl xl:text-4xl font-serif font-bold leading-tight group-hover:text-gray-200 transition-colors"
-                            >
-                                Minería
-                            </h3>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Bottom Row: 3 Cards -->
+        <div class="max-w-screen-xl mx-auto">
+            <!-- 9 Cards Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Card 1: Países -->
-                <a
-                    href="/paises"
-                    class="group relative overflow-hidden flex flex-col justify-end bg-gray-900 min-h-[280px] md:min-h-[300px] lg:h-[320px]"
-                >
-                    <img
-                        src="https://res.cloudinary.com/ccdcloudy/image/upload/q_auto/f_auto/v1775054356/Web%20CCD/paises/Me_gusta_foto_202604010938_l3s95i.jpg"
-                        alt="Países"
-                        class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
-                    />
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/20 to-transparent"
-                    >
-                    </div>
-                    <div class="relative z-10 p-6 md:p-8">
-                        <p
-                            class="text-white/80 text-sm font-bold tracking-widest mb-3"
+                {
+                    [
+                        {
+                            title: "Competitividad",
+                            link: "/capacidades/competitividad",
+                            image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772640888/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/Competitividad_inpcde.webp",
+                            category: "Capacidades",
+                        },
+                        {
+                            title: "Desarrollo",
+                            link: "/capacidades/desarrollo",
+                            image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772640288/Web%20CCD/Capacidades%20e%20Industrias/Desarrollo/Desarrollo_xepqfz.webp",
+                            category: "Capacidades",
+                        },
+                        {
+                            title: "Industrias",
+                            link: "/industrias",
+                            image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773279609/Web%20CCD/Industrias/pexels-sevenstormphotography-439416_kkzgsq.jpg",
+                            category: "Sectores",
+                        },
+                        {
+                            title: "Minería",
+                            link: "/industrias/mineria",
+                            image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773340518/Web%20CCD/Industrias/mineria_ymbax9.jpg",
+                            category: "Industrias",
+                        },
+                        {
+                            title: "Hidrocarburos",
+                            link: "/industrias/hidrocarburos",
+                            image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770796112/Web%20CCD/Industrias/hidrocarburos_mz5gjc.jpg",
+                            category: "Industrias",
+                        },
+                        {
+                            title: "Agroindustria",
+                            link: "/industrias/agropecuario",
+                            image: "https://res.cloudinary.com/ccdcloudy/image/upload/t_Industrias/v1770791069/Web%20CCD/Industrias/agropecuario_pjqvtz.jpg",
+                            category: "Industrias",
+                        },
+                        {
+                            title: "Inteligencia Artificial",
+                            link: "/capacidades/ia-y-analitica",
+                            image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772644019/Web%20CCD/Industrias/ia_k5ny4x.webp",
+                            category: "Industrias",
+                        },
+                        {
+                            title: "Países",
+                            link: "/paises",
+                            image: "https://res.cloudinary.com/ccdcloudy/image/upload/q_auto/f_auto/v1775054356/Web%20CCD/paises/Me_gusta_foto_202604010938_l3s95i.jpg",
+                            category: "Cobertura Global",
+                        },
+                        {
+                            title: "Enfoque de trabajo",
+                            link: "/nosotros/enfoque",
+                            image: "/capacidades/capacidades.png",
+                            category: "Metodología",
+                        },
+                    ].map((card) => (
+                        <a
+                            href={card.link}
+                            class="group relative overflow-hidden flex flex-col justify-end bg-gray-900 h-[220px] md:h-[240px] rounded-sm gsap-hero-card hover:-translate-y-1 hover:shadow-2xl transition-all duration-500 ease-out"
                         >
-                            Cobertura Global
-                        </p>
-                        <h3
-                            class="text-white text-3xl font-serif font-bold group-hover:text-gray-200 transition-colors flex items-center"
-                        >
-                            Países
-                            <svg
-                                class="w-5 h-5 ml-2 opacity-0 group-hover:opacity-100 transform -translate-x-4 group-hover:translate-x-0 transition-all duration-300"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                                ><path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2.5"
-                                    d="M9 5l7 7-7 7"></path></svg
-                            >
-                        </h3>
-                    </div>
-                </a>
-
-                <!-- Card 2: Competitividad -->
-                <a
-                    href="/capacidades/competitividad"
-                    class="group relative overflow-hidden flex flex-col justify-end bg-gray-900 min-h-[280px] md:min-h-[300px] lg:h-[320px]"
-                >
-                    <img
-                        src="https://res.cloudinary.com/ccdcloudy/image/upload/v1772640888/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/Competitividad_inpcde.webp"
-                        alt="Competitividad"
-                        class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
-                    />
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/20 to-transparent"
-                    >
-                    </div>
-                    <div class="relative z-10 p-6 md:p-8">
-                        <p
-                            class="text-white/80 text-sm font-bold tracking-widest mb-3"
-                        >
-                            Capacidades
-                        </p>
-                        <h3
-                            class="text-white text-3xl font-serif font-bold group-hover:text-gray-200 transition-colors flex items-center"
-                        >
-                            Competitividad
-                            <svg
-                                class="w-5 h-5 ml-2 opacity-0 group-hover:opacity-100 transform -translate-x-4 group-hover:translate-x-0 transition-all duration-300"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                                ><path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2.5"
-                                    d="M9 5l7 7-7 7"></path></svg
-                            >
-                        </h3>
-                    </div>
-                </a>
-
-                <!-- Card 3: Enfoque de Trabajo -->
-                <a
-                    href="/nosotros/enfoque"
-                    class="group relative overflow-hidden flex flex-col justify-end bg-gray-900 min-h-[280px] md:min-h-[300px] lg:h-[320px]"
-                >
-                    <img
-                        src="/capacidades/capacidades.png"
-                        alt="Enfoque de Trabajo"
-                        class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 bg-white"
-                    />
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/20 to-transparent"
-                    >
-                    </div>
-                    <div class="relative z-10 p-6 md:p-8">
-                        <p
-                            class="text-white/80 text-sm font-bold tracking-widest mb-3"
-                        >
-                            Metodología
-                        </p>
-                        <h3
-                            class="text-white text-3xl font-serif font-bold group-hover:text-gray-200 transition-colors flex items-center"
-                        >
-                            Enfoque de Trabajo
-                            <svg
-                                class="w-5 h-5 ml-2 opacity-0 group-hover:opacity-100 transform -translate-x-4 group-hover:translate-x-0 transition-all duration-300"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                                ><path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2.5"
-                                    d="M9 5l7 7-7 7"></path></svg
-                            >
-                        </h3>
-                    </div>
-                </a>
+                            <img
+                                src={card.image}
+                                alt={card.title}
+                                class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-1000 bg-white"
+                            />
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/40 to-transparent group-hover:from-gray-900/95 transition-all duration-500" />
+                            <div class="relative z-10 p-6 md:p-8 transform group-hover:translate-y-[-4px] transition-transform duration-500">
+                                <p class="text-white/80 text-xs font-bold tracking-widest mb-2">
+                                    {card.category}
+                                </p>
+                                <h3 class="text-white text-2xl md:text-3xl font-serif font-bold group-hover:text-white transition-colors flex items-center">
+                                    {card.title}
+                                    <svg
+                                        class="w-5 h-5 ml-2 opacity-0 group-hover:opacity-100 transform -translate-x-4 group-hover:translate-x-0 transition-all duration-500"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2.5"
+                                            d="M9 5l7 7-7 7"
+                                        />
+                                    </svg>
+                                </h3>
+                            </div>
+                        </a>
+                    ))
+                }
             </div>
         </div>
     </section>
@@ -534,7 +436,7 @@ const directores = [
                     href="/nosotros/equipo"
                     class="inline-block bg-primary border-2 border-primary text-white font-bold py-3 px-8 rounded-lg hover:bg-primary-dark hover:text-white transition-all duration-300"
                 >
-                    Ver Equipo Completo
+                    Ver Equipo CCD
                 </a>
             </div>
         </div>
@@ -551,29 +453,7 @@ const directores = [
     // ==========================================
     // 1. ANIMACIÓN DEL HERO (Aparece al cargar)
     // ==========================================
-    const heroTl = gsap.timeline();
-    heroTl
-        .from("#hero-title", {
-            opacity: 0,
-            y: 40,
-            duration: 1,
-            ease: "power3.out",
-        })
-        .from(
-            "#hero-subtitle",
-            { opacity: 0, y: 40, duration: 1, ease: "power3.out" },
-            "-=0.7",
-        )
-        .from(
-            "#hero-button",
-            { opacity: 0, y: 40, duration: 1, ease: "power3.out" },
-            "-=0.8",
-        )
-        .from(
-            "#hero-image",
-            { opacity: 0, x: 50, duration: 1.2, ease: "power3.out" },
-            "-=1",
-        );
+    // Eliminada por solicitud del usuario para dejar solo efectos hover
 
     // ==========================================
     // 2. ANIMACIONES AL HACER SCROLL

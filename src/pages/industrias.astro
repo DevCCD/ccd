@@ -120,7 +120,7 @@ const sections = [
                 title: "Sistema Financiero",
                 slug: "financiero",
                 description:
-                    "El sistema financiero es el conjunto de instituciones, normas, medios físicos y virtuales y mercados que tienen por objetivo principal canalizar el ahorro de quienes tienen excedente de dinero, hacia quienes necesitan financiamiento.",
+                    "El sistema financiero es el conjunto de instituciones, normas, medios físicos y virtuales y mercados que tienen por objetivo principal canalizar el ahorro de quienes tienen excedente de dinero (ahorradores) hacia quienes necesitan financiamiento (inversores o deudores). El sistema financiero dispone de acuerdos nacionales e internacionales que regulan el flujo de capitales, facilitando la inversión y el financiamiento nacional y global, preservando la estabilidad y la diversificación de riesgos.",
                 image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770796907/Web%20CCD/Industrias/financiero_sp68st.webp",
                 span: "col-span-6 md:col-span-3 lg:col-span-3",
             },
@@ -152,7 +152,13 @@ const headerImage =
                         {section.items.map((industria) => (
                             <IndustryCard
                                 title={industria.title}
-                                description={(industriesContent[industria.slug as keyof typeof industriesContent] as any)?.shortDescription || industria.description}
+                                description={
+                                    (
+                                        industriesContent[
+                                            industria.slug as keyof typeof industriesContent
+                                        ] as any
+                                    )?.shortDescription || industria.description
+                                }
                                 image={industria.image}
                                 link={`/industrias/${industria.slug}`}
                                 colSpan={industria.span}

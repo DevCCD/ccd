@@ -18,7 +18,7 @@ const baseLinkClass =
 // - Usa 'font-bold' real porque carga así desde el principio y no hace saltar nada.
 // - La línea inferior se dibuja con 'after:' pegada abajo, sin empujar el texto hacia arriba.
 const activeClass =
-    "font-bold after:absolute after:bottom-0 after:left-0 after:w-full after:h-[3px] after:bg-primary";
+    "font-bold after:absolute after:bottom-[16px] after:left-0 after:w-full after:h-[5px] after:bg-primary";
 
 // 3. INACTIVO DESPLEGABLE (Capacidades, Industrias, Nosotros):
 // - font-medium (normal).
@@ -26,11 +26,11 @@ const activeClass =
 // - La línea inferior (bg-primary/40) aparece suavemente.
 // 3. INACTIVO DESPLEGABLE:
 const dropdownInactiveClass =
-    "font-medium group-hover:[text-shadow:0.4px_0_0_currentColor,-0.4px_0_0_currentColor] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[3px] after:bg-primary/40 after:opacity-0 group-hover:after:opacity-100 after:transition-opacity after:duration-300";
+    "font-medium group-hover:[text-shadow:0.4px_0_0_currentColor,-0.4px_0_0_currentColor] after:absolute after:bottom-[16px] after:left-0 after:w-full after:h-[5px] after:bg-primary/40 after:opacity-0 group-hover:after:opacity-100 after:transition-opacity after:duration-300";
 
 // 4. INACTIVO SIMPLE:
 const simpleInactiveClass =
-    "font-medium hover:[text-shadow:0.4px_0_0_currentColor,-0.4px_0_0_currentColor] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[3px] after:bg-primary/40 after:opacity-0 hover:after:opacity-100 after:transition-opacity after:duration-300";
+    "font-medium hover:[text-shadow:0.4px_0_0_currentColor,-0.4px_0_0_currentColor] after:absolute after:bottom-[16px] after:left-0 after:w-full after:h-[5px] after:bg-primary/40 after:opacity-0 hover:after:opacity-100 after:transition-opacity after:duration-300";
 ---
 
 <header
@@ -127,7 +127,7 @@ const simpleInactiveClass =
                                             </svg>
                                         </a>
                                         <p
-                                            class="mt-4 text-sm text-gray-500 leading-relaxed"
+                                            class="mt-4 pr-4 text-lg text-gray-500 leading-relaxed font-semibold"
                                         >
                                             Soluciones integrales para
                                             transformar territorios y generar
@@ -326,7 +326,7 @@ const simpleInactiveClass =
                                             </svg>
                                         </a>
                                         <p
-                                            class="mt-4 text-sm text-gray-500 leading-relaxed"
+                                            class="mt-4 pr-4 text-lg text-gray-500 leading-relaxed font-semibold"
                                         >
                                             Aportamos experiencia estratégica en
                                             múltiples sectores económicos,
@@ -537,7 +537,7 @@ const simpleInactiveClass =
                                             </h2>
                                         </div>
                                         <p
-                                            class="mt-4 text-sm text-gray-500 leading-relaxed"
+                                            class="mt-4 pr-4 text-lg text-gray-500 leading-relaxed font-semibold"
                                         >
                                             "Promover el desarrollo y la
                                             prosperidad"

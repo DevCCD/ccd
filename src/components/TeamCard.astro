@@ -40,22 +40,24 @@ const { name, role, image, link, linkedin } = Astro.props;
 
     <!-- INFORMACIÓN -->
     <div
-        class="p-6 text-center border-t border-gray-200 flex-grow flex flex-col justify-center relative"
+        class="p-6 text-center border-t border-gray-200 flex-grow flex flex-col justify-between items-center relative"
     >
-        <h3
-            class="font-serif text-xl font-bold text-gray-900 group-hover:text-primary transition-colors duration-300"
-        >
-            {name}
-        </h3>
-        <p
-            class="font-sans text-sm text-gray-600 mt-2 font-medium leading-relaxed"
-        >
-            {role}
-        </p>
+        <div class="w-full h-[100px] flex flex-col justify-start">
+            <h3
+                class="font-serif text-xl font-bold text-gray-900 group-hover:text-primary transition-colors duration-300 line-clamp-2"
+            >
+                {name}
+            </h3>
+            <p
+                class="font-sans text-base text-gray-600 mt-3 font-medium leading-snug line-clamp-2"
+            >
+                {role}
+            </p>
+        </div>
 
         {
             linkedin && (
-                <div class="mt-4 flex justify-center">
+                <div class="flex justify-center w-full">
                     <object>
                         <a
                             href={linkedin}

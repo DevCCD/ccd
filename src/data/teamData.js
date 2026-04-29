@@ -66,7 +66,7 @@ export const teamMembers = {
             "detail": "/viviana-sanchez.png",
             "extra": "/viviana-sanchez.png"
         },
-        "linkedin": "",
+        "linkedin": "https://www.linkedin.com",
         "intro": "Viviana es directora del Centro para la Competitividad y el Desarrollo (CCD), con amplia experiencia en análisis legal y marco regulatorio vinculado a trasferencias de recursos a los gobiernos locales y regionales, fondos sociales de desarrollo públicos y privados, asociaciones público privadas, iniciativas privadas, obras por impuestos, comercio exterior, entre otros mecanismos para impulsar el desarrollo nacional, regional y local.",
         "about": "Viviana cuenta con más de 20 años de sólida experiencia profesional en los sectores público y privado. Inició su carrera en el Centro para la Competitividad y el Desarrollo (CCD) en el año 2012, luego de una amplia experiencia en el Ministerio de Economía y Finanzas (MEF). Es gerente legal y directora en instituciones en el sector privado.",
         "experience": [
@@ -145,7 +145,7 @@ export const teamMembers = {
     "alvaro-gordillo": {
         "slug": "alvaro-gordillo",
         "name": "Alvaro Gordillo",
-        "role": "Especialista en Inversión y Desarrollo",
+        "role": "Competitividad, Desarrollo, Agropecuario e Inversiones",
         "photos": {
             "formal": "/alvaro-gordillo.png",
             "casual": "/alvaro-gordillo.png",
@@ -200,14 +200,14 @@ export const teamMembers = {
     "fernando-jauregui": {
         "slug": "fernando-jauregui",
         "name": "Fernando Jáuregui",
-        "role": "Especialista en Inversiones y Modelación Econométrica",
+        "role": "Competitividad, Desarrollo e Inteligencia Artificial",
         "photos": {
             "formal": "/fernando-jauregui.png",
             "casual": "/fernando-jauregui.png",
             "detail": "/fernando-jauregui.png",
             "extra": "/fernando-jauregui.png"
         },
-        "linkedin": "",
+        "linkedin": "https://www.linkedin.com/in/fjaureguip/",
         "intro": "Fernando labora en el Centro para la Competitividad y el Desarrollo (CCD) en proyectos de inversión pública, finanzas públicas y corporativas, competitividad y desarrollo a niveles nacional, regional, local y comunal, así como en sistemas de modelación con soporte estadístico y econométrico, principalmente en materias económicas, competitividad y desarrollo.",
         "about": "Fernando cuenta con más de 15 años de experiencia en inversión pública, finanzas públicas y corporativas, inversiones, estructuración financiera y gestión de riesgos financieros. Durante este período ha sido consultor y expositor internacional en modelación de riesgos financieros, así como en modelación estadística y econométrica en materia económica y corporativa en países de América Latina y Europa, y para grandes empresas.",
         "experience": [
@@ -253,14 +253,14 @@ export const teamMembers = {
     "sergio-villegas": {
         "slug": "sergio-villegas",
         "name": "Sergio Villegas",
-        "role": "Especialista en Inversiones",
+        "role": "Competitividad, Desarrollo, Infraestructura y Construcción",
         "photos": {
             "formal": "/sergio-villegas.png",
             "casual": "/sergio-villegas.png",
             "detail": "/sergio-villegas.png",
             "extra": "/sergio-villegas.png"
         },
-        "linkedin": "",
+        "linkedin": "https://www.linkedin.com",
         "intro": "Sergio es jefe de proyectos en inversión pública y fortalecimiento de capacidades en el Centro para la Competitividad y el Desarrollo (CCD), con amplia experiencia en Invierte.pe y el Sistema Nacional de Inversión Pública, con alcances de gobiernos nacional, regional y local (provincial y distrital), así como en la formulación y aprobación de estudios de inversión en proyectos de escalas pequeña, mediana, grande y megaproyectos. Sergio lidera la elaboración de estudios de preinversión y expedientes técnicos, así como los programas de fortalecimiento de capacidades para funcionarios y colaboradores en los ámbitos de inversión pública y privada, asociaciones público-privadas, obras por impuestos y gestión de proyectos.",
         "about": "Sergio cuenta con más de 30 años de experiencia en los ámbitos económico y financiero de la inversión para impulsar la competitividad y el desarrollo. Ha trabajado en asistencia técnica en proyectos de inversiones públicas y privadas, evaluando y formulando estudios de preinversión, prefactibilidad y factibilidad de proyectos en sectores claves para el desarrollo nacional. También ha sido jefe de proyectos en la formulación de más de 80 estudios de preinversión y expedientes técnicos vinculados a proyectos de infraestructura de riegos y productivos, fortalecimiento institucional, salud, saneamiento, educación universitaria y educación básica regular, patrimonio cultural y desarrollo urbano. De la misma forma, Sergio ha realizado la evaluación de más de 100 estudios de preinversión de proyectos de salud y ha supervisado estudios de preinversión a nivel de factibilidad de proyectos de salud y fortalecimiento institucional.",
         "experience": [
@@ -324,14 +324,14 @@ export const teamMembers = {
     "alex-carbajal": {
         "slug": "alex-carbajal",
         "name": "Alex Carbajal",
-        "role": "Especialista en Evaluación de Proyectos",
+        "role": "Competitividad, Desarrollo y Evaluación de Proyectos",
         "photos": {
             "formal": "/alex-carbajal.png",
             "casual": "/alex-carbajal.png",
             "detail": "/alex-carbajal.png",
             "extra": "/alex-carbajal.png"
         },
-        "linkedin": "",
+        "linkedin": "https://www.linkedin.com",
         "intro": "Alex es especialista en desarrollo, gestión pública y evaluación de proyectos en el Centro para la Competitividad y el Desarrollo (CCD). En la evaluación integral de programas y proyectos, Alex lidera el análisis y la evaluación de los criterios de medición de Impacto, Pertinencia, Eficiencia, Eficacia y Sostenibilidad.",
         "about": "Alex cuenta con más de 15 años de experiencia profesional, desempeñándose en diversas entidades públicas y privadas, pilares de la competitividad y el desarrollo. Alex comenzó su carrera en el Centro para la Competitividad y el Desarrollo en el año 2023, en la evaluación de proyectos multisectoriales, principalmente en los sectores Educación, Tecnologías de la Información y Comunicación (TICs), Agropecuario, Ambiental, Forestal y Laboral, así como en la elaboración de planes de desarrollo concertados de alcances regional y local.",
         "experience": [
@@ -376,14 +376,14 @@ export const teamMembers = {
     "elmer-huaman": {
         "slug": "elmer-huaman",
         "name": "Elmer Huamán",
-        "role": "Especialista en Inversión para la Competitividad y el Desarrollo",
+        "role": "Competitividad, Desarrollo, Evaluación Sectorial y Proyectos de Inversión",
         "photos": {
             "formal": "/elmer-huaman.png",
             "casual": "/elmer-huaman.png",
             "detail": "/elmer-huaman.png",
             "extra": "/elmer-huaman.png"
         },
-        "linkedin": "",
+        "linkedin": "https://www.linkedin.com",
         "intro": "Especialista en administración financiera, inversión pública y privada, sistema de transferencias de recursos a gobiernos regionales y locales (provincias y distrito), con amplia trayectoria en el sector construcción, consultoría y gestión de proyectos de gran envergadura. Actualmente Elmer es jefe de proyectos en el Centro para la Competitividad y el Desarrollo (CCD), especialmente en desarrollo e inversión y gestión financiera.",
         "about": "Elmer cuenta con más de 20 años de experiencia en los ámbitos público y privado, con especialidad en inversión y finanzas públicas, construcción y a nivel corporativo en las gerencias de administración y finanzas. Ha ocupado cargos directivos en empresas constructoras y consultoras, supervisando proyectos de gran impacto económico y social. La experiencia de Elmer incluye asesoría a entidades gubernamentales en inversión pública y concesiones viales de alcance nacional, regional y local.",
         "experience": [
@@ -442,7 +442,7 @@ export const teamMembers = {
     "karla-casas": {
         "slug": "karla-casas",
         "name": "Karla Casas",
-        "role": "Jefe de Proyectos en Planeamientos, Competitividad y Desarrollo",
+        "role": "Competitividad, Desarrollo y Proyectos Sociales",
         "photos": {
             "formal": "/karla-casas.png",
             "casual": "/karla-casas.png",
@@ -491,7 +491,7 @@ export const teamMembers = {
     "melissa-sanchez": {
         "slug": "melissa-sanchez",
         "name": "Melissa Sánchez",
-        "role": "Especialista en Administración",
+        "role": "Directora",
         "photos": {
             "formal": "/melissa-sanchez.png",
             "casual": "/melissa-sanchez.png",
@@ -535,7 +535,7 @@ export const teamMembers = {
     "jorge-ruiz": {
         "slug": "jorge-ruiz",
         "name": "Jorge Ruiz",
-        "role": "Especialista en Planes de Desarrollo e Investigación",
+        "role": "Competitividad, Desarrollo y Manufactura",
         "photos": {
             "formal": "/jorge-ruiz.png",
             "casual": "/jorge-ruiz.png",
@@ -579,7 +579,7 @@ export const teamMembers = {
     "mario-huaman": {
         "slug": "mario-huaman",
         "name": "Mario Huamán",
-        "role": "Especialista en Estudios Económicos",
+        "role": "Estudios Económicos",
         "photos": {
             "formal": "/mario-huaman.png",
             "casual": "/mario-huaman.png",

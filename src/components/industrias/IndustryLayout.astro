@@ -65,7 +65,7 @@ const {
         <div class="container mx-auto px-6 lg:px-12 max-w-5xl">
             {
                 paragraphs.length > 0 && (
-                    <p class="font-sans text-md md:text-lg lg:text-xl text-gray-700 leading-[1.8] md:leading-[2.2] lg:leading-[1.6]">
+                    <p class="font-sans text-2xl text-gray-700 leading-relaxed ">
                         {paragraphs[0]}
                     </p>
                 )
@@ -78,10 +78,10 @@ const {
     }
     {
         (paragraphs.length > 1 || introImage) && (
-            <section class="w-full flex flex-col lg:flex-row items-stretch">
+            <section class="w-full flex flex-col lg:flex-row items-stretch ">
                 {introImage && (
                     <div
-                        class={`relative w-full ${paragraphs.length > 1 ? "lg:w-1/2" : "w-full"} min-h-[400px] lg:min-h-[600px] overflow-hidden`}
+                        class={`relative w-full  ${paragraphs.length > 1 ? "lg:w-1/2" : "w-full"} min-h-[400px] lg:min-h-[600px] overflow-hidden `}
                     >
                         <img
                             src={introImage}
@@ -93,10 +93,10 @@ const {
 
                 {paragraphs.length > 1 && (
                     <div
-                        class={`w-full ${introImage ? "lg:w-1/2" : "w-full"} bg-secondary-light/50 py-8 px-12 flex flex-col justify-center`}
+                        class={`w-full ${introImage ? "lg:w-1/2" : "w-full"} bg-secondary-light/50 py-8 px-12 flex flex-col justify-center `}
                     >
                         <div class="w-20 h-1.5 bg-secondary mb-10" />
-                        <p class="font-sans text-md md:text-lg lg:text-xl text-gray-700 leading-[1.8] md:leading-[2.2] lg:leading-[1.6] px-0 py-0">
+                        <p class="font-sans text-2xl text-gray-700 leading-relaxed px-0 py-0">
                             {paragraphs[1]}
                         </p>
                     </div>
@@ -110,7 +110,7 @@ const {
         paragraphs.length > 2 && (
             <section class="bg-gradient-to-b from-primary-dark via-primary to-primary/60 py-16 md:py-24">
                 <div class="container mx-auto px-6 lg:px-12 max-w-5xl">
-                    <p class="font-sans text-md md:text-lg lg:text-xl text-white leading-[1.8] md:leading-[2.2] lg:leading-[1.6]">
+                    <p class="font-sans text-2xl text-white leading-relaxed">
                         {paragraphs[2]}
                     </p>
                 </div>
@@ -126,7 +126,7 @@ const {
             <section class="bg-white pt-10 pb-16 md:pt-16 md:pb-24">
                 <div class="container mx-auto px-6 lg:px-12 max-w-5xl space-y-10">
                     {paragraphs.slice(3).map((p) => (
-                        <p class="font-sans text-md md:text-lg lg:text-xl text-gray-700 leading-[1.8] md:leading-[2.2] lg:leading-[1.6]">
+                        <p class="font-sans text-2xl text-gray-700 leading-[1.8] md:leading-[2.2] lg:leading-[1.6]">
                             {p}
                         </p>
                     ))}

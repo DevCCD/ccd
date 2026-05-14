@@ -660,7 +660,7 @@ export const capacidadesContent = {
 
         nuestroTrabajo: [
             {
-                title: "Evaluación Integral",
+                title: "Evaluación Integral de Programas y Proyectos",
                 bullet: "Evaluación cualitativa y cuantitativa integral de programas y proyectos de inversión.",
                 image: "",
                 subBullets: ["Pertinencia", "Eficiencia", "Eficacia", "Impacto", "Sostenibilidad"]
@@ -683,7 +683,7 @@ export const capacidadesContent = {
             },
             {
                 title: "Medición de Impactos",
-                bullet: "Cuantificación de impactos.",
+                bullet: "Cuantificación de impactos de los proyectos de inversión social con variables continuas y discretas.",
                 image: ""
             },
             {

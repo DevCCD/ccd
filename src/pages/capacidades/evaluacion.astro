@@ -3,6 +3,346 @@ import CapabilityLayout from "../../components/capacidades/CapabilityLayout.astr
 import { capacidadesContent } from "../../data/capacidadesContent.js";
 
 const data = capacidadesContent["evaluacion"];
+
+// Extraemos datos necesarios para el layout base
+const { nuestroTrabajo, ...layoutData } = data;
+
+// Dividimos el resto de trabajos en pares como pidió el usuario
+const chunk1 = nuestroTrabajo.slice(2, 4); // Integración y Exposición
+const chunk2 = nuestroTrabajo.slice(4, 6); // Medición y Acompañamiento
 ---
 
-<CapabilityLayout {...data} />
+<CapabilityLayout {...layoutData}>
+    <!-- ===== SECCIÓN 1: Evaluación Integral (Fondo Primario) ===== -->
+    <section
+        class="relative bg-gradient-to-br from-primary via-[#6a0016] to-[#2a0008] pt-24 md:pt-32 pb-16"
+        id="nuestro-trabajo"
+    >
+        <div
+            class="absolute inset-0 opacity-[0.03] bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJuIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMC42NSIgbnVtT2N0YXZlcz0iMyIgc3RpdGNoVGlsZXM9InN0aXRjaCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiBmaWx0ZXI9InVybCgjbikiIG9wYWNpdHk9IjEiLz48L3N2Zz4=')] pointer-events-none"
+        >
+        </div>
+
+        <div
+            class="container mx-auto px-6 lg:px-12 max-w-[1600px] relative z-10"
+        >
+            <div
+                class="mb-14 flex flex-col items-center md:items-start text-center md:text-left nt-title"
+            >
+                <h2
+                    class="font-serif text-3xl md:text-5xl font-black text-white mb-5 tracking-tight"
+                >
+                    Nuestro Trabajo
+                </h2>
+                <div class="w-24 h-[5px] bg-secondary"></div>
+            </div>
+
+            <div
+                class="featured-card group bg-white overflow-hidden shadow-2xl mb-12 flex flex-col lg:flex-row min-h-[580px]"
+            >
+                <div
+                    class="w-full lg:w-[60%] p-10 md:p-14 lg:p-16 flex flex-col"
+                >
+                    <div class="mb-8">
+                        <h3
+                            class="font-serif text-4xl md:text-5xl font-black text-primary leading-tight mb-4"
+                        >
+                            Evaluación Integral de Programas y Proyectos
+                        </h3>
+                        <p
+                            class="font-sans text-lg md:text-xl text-gray-600 leading-relaxed max-w-xl"
+                        >
+                            Evaluación cualitativa y cuantitativa integral de
+                            programas y proyectos de inversión.
+                        </p>
+                    </div>
+
+                    <div
+                        class="relative mt-auto pt-14 pb-14 px-4 flex justify-center items-center bg-[#DDF3FF] rounded-[40px] overflow-hidden min-h-[400px]"
+                    >
+                        <div
+                            class="absolute w-[90%] h-[75%] border-4 border-white/40 rounded-[100%] pointer-events-none"
+                        >
+                        </div>
+                        <div
+                            class="relative z-20 w-48 h-28 bg-gradient-to-br from-[#5D467E] to-[#3B2A52] rounded-full shadow-xl flex items-center justify-center p-4 text-center border-4 border-white/20"
+                        >
+                            <span
+                                class="text-white font-serif font-black text-xl md:text-2xl leading-tight"
+                                >Evaluación Integral</span
+                            >
+                        </div>
+                        <div
+                            class="absolute top-4 z-10 w-40 h-24 bg-[#4A90E2] rounded-[100%/120%] shadow-lg border-4 border-white flex items-center justify-center p-3 text-center transition-transform hover:scale-110"
+                        >
+                            <span
+                                class="text-white font-sans font-bold text-base"
+                                >Pertinencia</span>
+                        </div>
+                        <div
+                            class="absolute right-4 top-1/2 -translate-y-12 z-10 w-40 h-24 bg-[#8B4513] rounded-[100%/120%] shadow-lg border-4 border-white flex items-center justify-center p-3 text-center transition-transform hover:scale-110"
+                        >
+                            <span
+                                class="text-white font-sans font-bold text-base"
+                                >Eficiencia</span>
+                        </div>
+                        <div
+                            class="absolute bottom-4 right-12 z-10 w-40 h-24 bg-[#F57C00] rounded-[100%/120%] shadow-lg border-4 border-white flex items-center justify-center p-3 text-center transition-transform hover:scale-110"
+                        >
+                            <span
+                                class="text-white font-sans font-bold text-base"
+                                >Eficacia</span>
+                        </div>
+                        <div
+                            class="absolute bottom-4 left-12 z-10 w-40 h-24 bg-[#3A86AD] rounded-[100%/120%] shadow-lg border-4 border-white flex items-center justify-center p-3 text-center transition-transform hover:scale-110"
+                        >
+                            <span
+                                class="text-white font-sans font-bold text-base"
+                                >Impacto</span>
+                        </div>
+                        <div
+                            class="absolute left-4 top-1/2 -translate-y-12 z-10 w-40 h-24 bg-[#00A650] rounded-[100%/120%] shadow-lg border-4 border-white flex items-center justify-center p-3 text-center transition-transform hover:scale-110"
+                        >
+                            <span
+                                class="text-white font-sans font-bold text-base"
+                                >Sostenibilidad</span>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-full lg:w-[40%] relative overflow-hidden bg-primary/10"
+                >
+                    <img
+                        src="https://res.cloudinary.com/ccdcloudy/image/upload/q_auto/f_auto/v1776445891/Web%20CCD/Capacidades%20e%20Industrias/Desarrollo/Imagen2_vk4ehy.png"
+                        alt="Evaluación Integral"
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-[5000ms] group-hover:scale-[1.05]"
+                    />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-l from-black/20 to-transparent"
+                    >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN 2: Análisis por Etapas (Fondo Gris Claro) ===== -->
+    <section class="bg-[#F1F5F9] py-20 md:py-24 border-y border-gray-200">
+        <div class="container mx-auto px-6 lg:px-12 max-w-[1600px]">
+            <div
+                class="featured-card group bg-white overflow-hidden shadow-2xl flex flex-col lg:flex-row-reverse min-h-[580px]"
+            >
+                <div
+                    class="w-full lg:w-[60%] p-10 md:p-14 lg:p-16 flex flex-col"
+                >
+                    <div class="mb-8">
+                        <h3
+                            class="font-serif text-4xl md:text-5xl font-black text-primary leading-tight mb-4 text-right"
+                        >
+                            Análisis por Etapas
+                        </h3>
+                        <p
+                            class="font-sans text-lg md:text-xl text-gray-600 leading-relaxed max-w-xl ml-auto text-right"
+                        >
+                            Evaluación por etapas de proyectos y programas de
+                            inversión social.
+                        </p>
+                    </div>
+
+                    <!-- Infografía Etapas (Ajustada según referencia) -->
+                    <div
+                        class="relative mt-auto p-8 bg-[#E2E8F0] rounded-[30px] overflow-hidden min-h-[380px] flex flex-col"
+                    >
+                        <div class="flex flex-row gap-6 items-stretch h-full">
+                            <!-- Columna Izquierda: Flecha + Bloques -->
+                            <div class="flex flex-[2.5] flex-col">
+                                <!-- Flecha ajustada: empieza arriba de ExAnte y termina en el panel -->
+                                <div class="relative w-full mb-4">
+                                    <svg
+                                        viewBox="0 0 600 60"
+                                        class="w-full h-14 overflow-visible drop-shadow-sm"
+                                    >
+                                        <path
+                                            d="M0,15 L540,15 L540,0 L600,30 L540,60 L540,45 L0,45 Z"
+                                            fill="#3A86AD"></path>
+                                        <text
+                                            x="270"
+                                            y="38"
+                                            text-anchor="middle"
+                                            fill="white"
+                                            font-family="sans-serif"
+                                            font-weight="800"
+                                            font-size="22">Etapas</text
+                                        >
+                                    </svg>
+                                </div>
+                                <!-- Bloques de Etapas -->
+                                <div class="flex gap-4 h-full">
+                                    <div
+                                        class="flex-1 bg-[#D99A9A] flex items-end p-5 shadow-sm border-t-4 border-white/20 transition-transform hover:-translate-y-1"
+                                        style="clip-path: polygon(0 0, 65% 0, 100% 35%, 100% 100%, 0 100%);"
+                                    >
+                                        <span
+                                            class="text-white font-black text-xl md:text-2xl"
+                                            >ExAnte</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="flex-1 bg-[#00A650] flex items-end p-5 shadow-sm border-t-4 border-white/20 transition-transform hover:-translate-y-1"
+                                        style="clip-path: polygon(0 0, 65% 0, 100% 35%, 100% 100%, 0 100%);"
+                                    >
+                                        <span
+                                            class="text-white font-black text-xl md:text-2xl"
+                                            >ExDure</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="flex-1 bg-[#F57C00] flex items-end p-5 shadow-sm border-t-4 border-white/20 transition-transform hover:-translate-y-1"
+                                        style="clip-path: polygon(0 0, 65% 0, 100% 35%, 100% 100%, 0 100%);"
+                                    >
+                                        <span
+                                            class="text-white font-black text-xl md:text-2xl"
+                                            >ExPost</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Columna Derecha: Panel de Objetivos -->
+                            <div
+                                class="w-full md:w-1/3 bg-[#A5D1E1] rounded-3xl p-4 flex flex-col gap-3 shadow-lg border-4 border-white/50"
+                            >
+                                <div
+                                    class="flex-1 bg-[#FFB370] rounded-xl flex items-center justify-center p-3 text-center shadow-sm transition-all hover:brightness-105"
+                                >
+                                    <span
+                                        class="text-gray-900 font-black text-base"
+                                        >Improvement</span
+                                    >
+                                </div>
+                                <div
+                                    class="flex-1 bg-[#FFD4A1] rounded-xl flex items-center justify-center p-3 text-center shadow-sm transition-all hover:brightness-105"
+                                >
+                                    <span
+                                        class="text-gray-900 font-black text-base"
+                                        >Accountability</span
+                                    >
+                                </div>
+                                <div
+                                    class="flex-1 bg-[#FFE9D1] rounded-xl flex items-center justify-center p-3 text-center shadow-sm transition-all hover:brightness-105"
+                                >
+                                    <span
+                                        class="text-gray-900 font-black text-base"
+                                        >Enligtenment</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-full lg:w-[40%] relative overflow-hidden bg-primary/10"
+                >
+                    <img
+                        src="https://responsabilidadempresarial.one/wp-content/uploads/transformando-comunidades-proyecto-de-inversion-social-que-impulsa-el-cambio-y-el-desarrollo-sostenible.jpg"
+                        alt="Análisis por Etapas"
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-[5000ms] group-hover:scale-[1.05]"
+                    />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent"
+                    >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN 3: Integración y Exposición (Fondo Azul Muy Claro) ===== -->
+    <section class="bg-[#EFF6FF] py-20 md:py-24 border-b border-blue-100">
+        <div class="container mx-auto px-6 lg:px-12 max-w-[1600px]">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                {
+                    chunk1.map((job) => (
+                        <div class="grid-card group bg-white border-t-4 border-transparent hover:border-primary shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 flex flex-col h-full">
+                            <div class="relative h-[280px] overflow-hidden bg-gray-100 shrink-0">
+                                <img
+                                    src={
+                                        job.image ||
+                                        "https://res.cloudinary.com/ccdcloudy/image/upload/v1774882928/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/marco_npn11c.jpg"
+                                    }
+                                    alt={job.title}
+                                    class="w-full h-full object-cover transition-transform duration-[3000ms] group-hover:scale-[1.08]"
+                                />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                            </div>
+                            <div class="p-10 flex flex-col flex-grow">
+                                <h3 class="font-sans text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors leading-tight">
+                                    {job.title}
+                                </h3>
+                                <p class="font-sans text-gray-600 leading-relaxed text-lg">
+                                    {job.bullet}
+                                </p>
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN 4: Medición y Acompañamiento (Fondo Blanco) ===== -->
+    <section class="bg-white py-20 md:py-24">
+        <div class="container mx-auto px-6 lg:px-12 max-w-[1600px]">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                {
+                    chunk2.map((job) => (
+                        <div class="grid-card group bg-white border-t-4 border-transparent hover:border-secondary shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 flex flex-col h-full">
+                            <div class="relative h-[280px] overflow-hidden bg-gray-100 shrink-0">
+                                <img
+                                    src={
+                                        job.image ||
+                                        "https://res.cloudinary.com/ccdcloudy/image/upload/v1772646621/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_7_kr73ms.jpg"
+                                    }
+                                    alt={job.title}
+                                    class="w-full h-full object-cover transition-transform duration-[3000ms] group-hover:scale-[1.08]"
+                                />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                            </div>
+                            <div class="p-10 flex flex-col flex-grow">
+                                <h3 class="font-sans text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors leading-tight">
+                                    {job.title}
+                                </h3>
+                                <p class="font-sans text-gray-600 leading-relaxed text-lg">
+                                    {job.bullet}
+                                </p>
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
+        </div>
+    </section>
+</CapabilityLayout>
+
+<style>
+    .nt-title {
+        animation: fadeSlideUp 0.7s ease-out both;
+    }
+    .featured-card {
+        animation: fadeSlideUp 0.8s ease-out 0.15s both;
+    }
+    .grid-card {
+        animation: fadeSlideUp 0.6s ease-out both;
+    }
+
+    @keyframes fadeSlideUp {
+        from {
+            opacity: 0;
+            transform: translateY(25px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>

@@ -142,6 +142,50 @@ export const teamMembers = {
             "infraestructura"
         ]
     },
+    "melissa-sanchez": {
+        "slug": "melissa-sanchez",
+        "name": "Melissa Sánchez",
+        "role": "Directora",
+        "photos": {
+            "formal": "/melissa-sanchez.png",
+            "casual": "/melissa-sanchez.png",
+            "detail": "/melissa-sanchez.png",
+            "extra": "/melissa-sanchez.png"
+        },
+        "linkedin": "https://www.linkedin.com/in/melissa-s%C3%A1nchez-cam%C3%A1n-a2b67b161/",
+        "intro": "Melissa lidera el área administrativa del Centro para la Competitividad y el Desarrollo (CCD), principalmente en la gestión y organización de los recursos, personas y procesos dentro de la organización.",
+        "about": "Melissa cuenta con amplia experiencia en la gestión administrativa de proyectos, gestión de equipos y procesos internos con clientes. Melissa comenzó su carrera en el área administrativa en el CCD en el año 2019. Desde el año 2021, Melissa lidera el área de Administración, donde se encarga de coordinar y gestionar contratos, órdenes de servicio, presupuestos, cobranzas a clientes y envío de informes.",
+        "experience": [
+            "Melissa comenzó su carrera profesional trabajando en el sector bancario como Representante Financiero en el Banco Financiero, donde desarrolló habilidades en atención al cliente y gestión de transacciones financieras diarias, brindando un servicio eficiente y cordial, resolviendo consultas relacionadas con cuentas bancarias, pagos y transacciones.",
+            "Melissa ha sido asistente administrativa en el Centro para la Competitividad y el Desarrollo (CCD). En esta etapa, sus funciones fueron la gestión de documentos tanto físicos como digitales, asegurando que la información estuviera ordenada, así como organizar reuniones y administrar los recursos necesarios para que cada área cuente con lo necesario para un buen funcionamiento."
+        ],
+        "education": [
+            {
+                "degree": "Bachiller en Administración de Negocios Internacionales",
+                "institution": "Universidad Femenina del Sagrado Corazón (UNIFE)",
+                "logos": [
+                    "/logos/logo-unife.jpg"
+                ]
+            },
+            {
+                "degree": "KEY USER SAP B1",
+                "institution": "ITSYSTEMS PERU",
+                "logos": [
+                    "/logos/logo-its.jpg"
+                ]
+            }
+        ],
+        "highlightedCapabilities": [
+            "evaluacion",
+            "competitividad",
+            "desarrollo"
+        ],
+        "highlightedIndustries": [
+            "sector_publico",
+            "sector_social",
+            "educacion"
+        ]
+    },
     "alvaro-gordillo": {
         "slug": "alvaro-gordillo",
         "name": "Alvaro Gordillo",
@@ -195,6 +239,99 @@ export const teamMembers = {
             "agricultura",
             "educacion",
             "mineria"
+        ]
+    },
+    "karla-casas": {
+        "slug": "karla-casas",
+        "name": "Karla Casas",
+        "role": "Competitividad, Desarrollo y Proyectos Sociales",
+        "photos": {
+            "formal": "https://res.cloudinary.com/ccdcloudy/image/upload/v1778831945/Web%20CCD/Equipo/Karla/karla-casas_ia4gb9.png",
+            "casual": "https://res.cloudinary.com/ccdcloudy/image/upload/v1778832960/Web%20CCD/Equipo/Karla/Karla-casas_gdfadu.png",
+            "detail": "https://res.cloudinary.com/ccdcloudy/image/upload/v1778832960/Web%20CCD/Equipo/Karla/Karla-casas_gdfadu.png",
+            "extra": ""
+        },
+        "linkedin": "https://www.linkedin.com/in/karla-casas-b1384146/",
+        "intro": "Economista con amplia experiencia en desarrollo y competitividad e impacto social en la gestión pública y privada para el desarrollo regional, local y comunal. Lidera proyectos claves orientados a generar impacto social e innovación a través de soluciones estratégicas y sostenibles en sectores como educación y salud, entre otros sectores pilares del desarrollo.",
+        "about": "Karla cuenta con más de 7 años de experiencia en desarrollo, competitividad e impacto social de programas y proyectos, tanto en el sector público como privado. Ha trabajado como especialista en prospectiva y estudios estratégicos en el Centro Nacional de Planeamiento Estratégico (CEPLAN), además de participar en la formulación de planes de desarrollo local concertados para diversos gobiernos regionales y locales (provinciales y distritales). Asimismo, trabajó como especialista en Walsh Perú, participando en la elaboración de estudios de impacto ambiental (EIA y MEIA) de importantes proyectos para el desarrollo del país. Actualmente, ocupa el cargo de Jefe de Proyecto en el Centro para la Competitividad y el Desarrollo (CCD), donde lidera proyectos estratégicos de alto impacto en competitividad, desarrollo económico y gestión pública.",
+        "experience": [
+            "Karla ha sido especialista en la Dirección Nacional de Prospectiva y Estudios Estratégicos de CEPLAN, participando en proyectos claves relacionados con la actividad portuaria y el impacto en el desarrollo nacional: 'Actividad portuaria: impactos y oportunidades para el desarrollo nacional'. En esta herramienta fundamental para convertir al país en un megahub portuario del Pacífico participaron especialistas y actores claves para profundizar en el análisis, además de desarrollar propuestas estratégicas para mejorar la competitividad de los territorios con conectividad portuaria.",
+            "Por más de 5 años ha sido consultora en el Centro para la Competitividad y el Desarrollo (CCD), como líder y co-líder en proyectos de competitividad, fortalecimiento institucional, desarrollo económico, gestión pública y estudios económicos. Karla laboró como especialista en Estudios Sociales Junior en Walsh Perú, en la elaboración de la Línea de Base Socioeconómica y Catastro para proyectos claves para importantes empresas minero-energéticas del país, utilizando herramientas como KMZ y QGIS.",
+            "Karla cuenta con experiencia en la jefatura de prácticas en la Escuela de Economía en la Universidad de San Martín de Porres (USMP), en los cursos: Economía Pública y Recursos Naturales; y Dinámica, Ciclos y Estabilización."
+        ],
+        "education": [
+            {
+                "degree": "Diplomado de Gobernabilidad e Innovación Pública",
+                "institution": [
+                    "Pontificia Universidad Católica del Perú (PUCP)",
+                    "Banco de Desarrollo de América Latina y el Caribe (CAF)"
+                ],
+                "logos": [
+                    "/logos/logo-pucp.png",
+                    "/logos/logo-caf.jpg"
+                ]
+            },
+            {
+                "degree": "Economista",
+                "institution": "Universidad San Martín de Porres (USMP)",
+                "logos": [
+                    "/logos/logo-usmp.png"
+                ]
+            }
+        ],
+        "highlightedCapabilities": [
+            "desarrollo",
+            "competitividad",
+            "fortalecimiento"
+        ],
+        "highlightedIndustries": [
+            "infraestructura",
+            "educacion",
+            "sector_social"
+        ]
+    },
+    "jorge-ruiz": {
+        "slug": "jorge-ruiz",
+        "name": "Jorge Ruiz",
+        "role": "Competitividad, Desarrollo y Manufactura",
+        "photos": {
+            "formal": "https://res.cloudinary.com/ccdcloudy/image/upload/v1778835514/Web%20CCD/Equipo/Jorge/jorge-ruiz1_nthcep.png",
+            "casual": "https://res.cloudinary.com/ccdcloudy/image/upload/v1778835185/Web%20CCD/Equipo/Jorge/jorge-ruiz_ducukr.png",
+            "detail": "https://res.cloudinary.com/ccdcloudy/image/upload/v1778835185/Web%20CCD/Equipo/Jorge/jorge-ruiz_ducukr.png",
+            "extra": "/jorge-ruiz.png"
+        },
+        "linkedin": "https://www.linkedin.com/in/jorge-andrew-ruiz-barrios-ba27b1203/",
+        "intro": "Jorge lidera nuestro trabajo sobre competitividad y desarrollo local concertado a nivel distrital, con soporte del área de estudios económicos, investigación, sistematización y análisis de información estadística.",
+        "about": "Jorge tiene amplia experiencia en la elaboración de Planes de Desarrollo Local Concertado (PDLC) para diversos distritos, contribuyendo al diseño de estrategias orientadas al crecimiento económico y social. Inició su carrera en 2021 en el Centro para la Competitividad y el Desarrollo (CCD), donde ha participado en el análisis y planificación de iniciativas para el desarrollo territorial.",
+        "experience": [
+            "Jorge ha trabajado como analista de investigación en estudios económicos en el CCD, desempeñando diversas funciones clave. Ha participado en la elaboración de informes económicos, financieros y globales, en la evaluación Ex-post de proyectos de inversión y en el diseño de planes de competitividad regional y desarrollo local. También ha participado en la redacción de informes de evaluación Ex-post de proyectos de infraestructura, con un enfoque particular en sistemas de riego, aportando al análisis de su eficiencia y al análisis comparativo con otros proyectos similares.",
+            "Jorge ha sido asistente de investigación de estudios económicos en el CCD, desempeñando funciones como recopilación de series estadísticas y elaboración de documentos de investigación. Jorge participó como investigador y redactor en la cuarta edición de la revista Escenario Económico (junio 2021), con el tema 'Educación Virtual: Lecciones que desnudan nuestra realidad. Análisis económicos, retos y experiencias', publicada por el Círculo Académico de Planificación y Proyectos (CAPP). Su contribución se centró en la sección de noticias internacionales sobre América Latina."
+        ],
+        "education": [
+            {
+                "degree": "Metodología Ágil – Scrum Master",
+                "institution": "Edúcate Perú Consultores",
+                "logos": [
+                    "/logos/logo-epc.png"
+                ]
+            },
+            {
+                "degree": "Bachiller en Ingeniería Económica",
+                "institution": "Universidad Nacional de Ingeniería (UNI)",
+                "logos": [
+                    "/logos/logo-uni2.png"
+                ]
+            }
+        ],
+        "highlightedCapabilities": [
+            "desarrollo",
+            "evaluacion",
+            "corredores"
+        ],
+        "highlightedIndustries": [
+            "infraestructura",
+            "agricultura",
+            "sector_social"
         ]
     },
     "fernando-jauregui": {
@@ -439,143 +576,8 @@ export const teamMembers = {
             "sector_publico"
         ]
     },
-    "karla-casas": {
-        "slug": "karla-casas",
-        "name": "Karla Casas",
-        "role": "Competitividad, Desarrollo y Proyectos Sociales",
-        "photos": {
-            "formal": "/karla-casas.png",
-            "casual": "/karla-casas.png",
-            "detail": "/karla-casas.png",
-            "extra": "/karla-casas.png"
-        },
-        "linkedin": "https://www.linkedin.com/in/karla-casas-b1384146/",
-        "intro": "Economista con amplia experiencia en desarrollo y competitividad e impacto social en la gestión pública y privada para el desarrollo regional, local y comunal. Lidera proyectos claves orientados a generar impacto social e innovación a través de soluciones estratégicas y sostenibles en sectores como educación y salud, entre otros sectores pilares del desarrollo.",
-        "about": "Karla cuenta con más de 7 años de experiencia en desarrollo, competitividad e impacto social de programas y proyectos, tanto en el sector público como privado. Ha trabajado como especialista en prospectiva y estudios estratégicos en el Centro Nacional de Planeamiento Estratégico (CEPLAN), además de participar en la formulación de planes de desarrollo local concertados para diversos gobiernos regionales y locales (provinciales y distritales). Asimismo, trabajó como especialista en Walsh Perú, participando en la elaboración de estudios de impacto ambiental (EIA y MEIA) de importantes proyectos para el desarrollo del país. Actualmente, ocupa el cargo de Jefe de Proyecto en el Centro para la Competitividad y el Desarrollo (CCD), donde lidera proyectos estratégicos de alto impacto en competitividad, desarrollo económico y gestión pública.",
-        "experience": [
-            "Karla ha sido especialista en la Dirección Nacional de Prospectiva y Estudios Estratégicos de CEPLAN, participando en proyectos claves relacionados con la actividad portuaria y el impacto en el desarrollo nacional: 'Actividad portuaria: impactos y oportunidades para el desarrollo nacional'. En esta herramienta fundamental para convertir al país en un megahub portuario del Pacífico participaron especialistas y actores claves para profundizar en el análisis, además de desarrollar propuestas estratégicas para mejorar la competitividad de los territorios con conectividad portuaria.",
-            "Por más de 5 años ha sido consultora en el Centro para la Competitividad y el Desarrollo (CCD), como líder y co-líder en proyectos de competitividad, fortalecimiento institucional, desarrollo económico, gestión pública y estudios económicos. Karla laboró como especialista en Estudios Sociales Junior en Walsh Perú, en la elaboración de la Línea de Base Socioeconómica y Catastro para proyectos claves para importantes empresas minero-energéticas del país, utilizando herramientas como KMZ y QGIS.",
-            "Karla cuenta con experiencia en la jefatura de prácticas en la Escuela de Economía en la Universidad de San Martín de Porres (USMP), en los cursos: Economía Pública y Recursos Naturales; y Dinámica, Ciclos y Estabilización."
-        ],
-        "education": [
-            {
-                "degree": "Diplomado de Gobernabilidad e Innovación Pública",
-                "institution": [
-                    "Pontificia Universidad Católica del Perú (PUCP)",
-                    "Banco de Desarrollo de América Latina y el Caribe (CAF)"
-                ],
-                "logos": [
-                    "/logos/logo-pucp.png",
-                    "/logos/logo-caf.jpg"
-                ]
-            },
-            {
-                "degree": "Economista",
-                "institution": "Universidad San Martín de Porres (USMP)",
-                "logos": [
-                    "/logos/logo-usmp.png"
-                ]
-            }
-        ],
-        "highlightedCapabilities": [
-            "desarrollo",
-            "competitividad",
-            "fortalecimiento"
-        ],
-        "highlightedIndustries": [
-            "infraestructura",
-            "educacion",
-            "sector_social"
-        ]
-    },
-    "melissa-sanchez": {
-        "slug": "melissa-sanchez",
-        "name": "Melissa Sánchez",
-        "role": "Directora",
-        "photos": {
-            "formal": "/melissa-sanchez.png",
-            "casual": "/melissa-sanchez.png",
-            "detail": "/melissa-sanchez.png",
-            "extra": "/melissa-sanchez.png"
-        },
-        "linkedin": "https://www.linkedin.com/in/melissa-s%C3%A1nchez-cam%C3%A1n-a2b67b161/",
-        "intro": "Melissa lidera el área administrativa del Centro para la Competitividad y el Desarrollo (CCD), principalmente en la gestión y organización de los recursos, personas y procesos dentro de la organización.",
-        "about": "Melissa cuenta con amplia experiencia en la gestión administrativa de proyectos, gestión de equipos y procesos internos con clientes. Melissa comenzó su carrera en el área administrativa en el CCD en el año 2019. Desde el año 2021, Melissa lidera el área de Administración, donde se encarga de coordinar y gestionar contratos, órdenes de servicio, presupuestos, cobranzas a clientes y envío de informes.",
-        "experience": [
-            "Melissa comenzó su carrera profesional trabajando en el sector bancario como Representante Financiero en el Banco Financiero, donde desarrolló habilidades en atención al cliente y gestión de transacciones financieras diarias, brindando un servicio eficiente y cordial, resolviendo consultas relacionadas con cuentas bancarias, pagos y transacciones.",
-            "Melissa ha sido asistente administrativa en el Centro para la Competitividad y el Desarrollo (CCD). En esta etapa, sus funciones fueron la gestión de documentos tanto físicos como digitales, asegurando que la información estuviera ordenada, así como organizar reuniones y administrar los recursos necesarios para que cada área cuente con lo necesario para un buen funcionamiento."
-        ],
-        "education": [
-            {
-                "degree": "Bachiller en Administración de Negocios Internacionales",
-                "institution": "Universidad Femenina del Sagrado Corazón (UNIFE)",
-                "logos": [
-                    "/logos/logo-unife.jpg"
-                ]
-            },
-            {
-                "degree": "KEY USER SAP B1",
-                "institution": "ITSYSTEMS PERU",
-                "logos": [
-                    "/logos/logo-its.jpg"
-                ]
-            }
-        ],
-        "highlightedCapabilities": [
-            "evaluacion",
-            "competitividad",
-            "desarrollo"
-        ],
-        "highlightedIndustries": [
-            "sector_publico",
-            "sector_social",
-            "educacion"
-        ]
-    },
-    "jorge-ruiz": {
-        "slug": "jorge-ruiz",
-        "name": "Jorge Ruiz",
-        "role": "Competitividad, Desarrollo y Manufactura",
-        "photos": {
-            "formal": "/jorge-ruiz.png",
-            "casual": "/jorge-ruiz.png",
-            "detail": "/jorge-ruiz.png",
-            "extra": "/jorge-ruiz.png"
-        },
-        "linkedin": "https://www.linkedin.com/in/jorge-andrew-ruiz-barrios-ba27b1203/",
-        "intro": "Jorge lidera nuestro trabajo sobre competitividad y desarrollo local concertado a nivel distrital, con soporte del área de estudios económicos, investigación, sistematización y análisis de información estadística.",
-        "about": "Jorge tiene amplia experiencia en la elaboración de Planes de Desarrollo Local Concertado (PDLC) para diversos distritos, contribuyendo al diseño de estrategias orientadas al crecimiento económico y social. Inició su carrera en 2021 en el Centro para la Competitividad y el Desarrollo (CCD), donde ha participado en el análisis y planificación de iniciativas para el desarrollo territorial.",
-        "experience": [
-            "Jorge ha trabajado como analista de investigación en estudios económicos en el CCD, desempeñando diversas funciones clave. Ha participado en la elaboración de informes económicos, financieros y globales, en la evaluación Ex-post de proyectos de inversión y en el diseño de planes de competitividad regional y desarrollo local. También ha participado en la redacción de informes de evaluación Ex-post de proyectos de infraestructura, con un enfoque particular en sistemas de riego, aportando al análisis de su eficiencia y al análisis comparativo con otros proyectos similares.",
-            "Jorge ha sido asistente de investigación de estudios económicos en el CCD, desempeñando funciones como recopilación de series estadísticas y elaboración de documentos de investigación. Jorge participó como investigador y redactor en la cuarta edición de la revista Escenario Económico (junio 2021), con el tema 'Educación Virtual: Lecciones que desnudan nuestra realidad. Análisis económicos, retos y experiencias', publicada por el Círculo Académico de Planificación y Proyectos (CAPP). Su contribución se centró en la sección de noticias internacionales sobre América Latina."
-        ],
-        "education": [
-            {
-                "degree": "Metodología Ágil – Scrum Master",
-                "institution": "Edúcate Perú Consultores",
-                "logos": [
-                    "/logos/logo-epc.png"
-                ]
-            },
-            {
-                "degree": "Bachiller en Ingeniería Económica",
-                "institution": "Universidad Nacional de Ingeniería (UNI)",
-                "logos": [
-                    "/logos/logo-uni2.png"
-                ]
-            }
-        ],
-        "highlightedCapabilities": [
-            "desarrollo",
-            "evaluacion",
-            "corredores"
-        ],
-        "highlightedIndustries": [
-            "infraestructura",
-            "agricultura",
-            "sector_social"
-        ]
-    },
+
+
     "mario-huaman": {
         "slug": "mario-huaman",
         "name": "Mario Huamán",

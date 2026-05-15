@@ -71,7 +71,7 @@ const { member } = Astro.props;
   >
     <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12">
       <!-- COLUMNA TEXTO (Ocupa 7 de 12 columnas for ser más ancho) -->
-      <div class="lg:col-span-7 py-20 lg:py-32 self-center">
+      <div class="lg:col-span-7 py-12 lg:py-16 self-center">
         <!-- Nombre: Grande y Bold -->
         <h1
           class="font-serif text-5xl md:text-6xl font-black text-gray-900 mb-4 leading-tight"
@@ -80,7 +80,7 @@ const { member } = Astro.props;
         </h1>
 
         <!-- Cargo: Rojo, Serif y Tamaño mediano (Como en el diseño) -->
-        <div class="flex items-center gap-4 mb-10">
+        <div class="flex items-center gap-4 mb-6">
           <h2 class="font-serif text-2xl md:text-3xl text-primary font-bold">
             {member.role}
           </h2>
@@ -95,7 +95,7 @@ const { member } = Astro.props;
 
         {
           member.linkedin && (
-            <div class="mt-10">
+            <div class="mt-8">
               <a
                 href={member.linkedin}
                 target="_blank"

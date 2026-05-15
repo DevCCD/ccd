@@ -2,7 +2,7 @@ export const industriesContent = {
     "agropecuario": {
         title: "Agropecuario",
         shortDescription: "El sector agropecuario está conformado por las actividades agrícolas y pecuarias. La agrícola, realizada principalmente a través del uso de la tierra, produce alimentos para la población y los animales.",
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/t_Industrias/v1770791069/Web%20CCD/Industrias/agropecuario_pjqvtz.jpg",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778793571/Web%20CCD/Industrias/ChatGPT_Image_14_may_2026_04_19_07_p.m_dinu1k.png",
         headerImagePosition: "center",
         paragraphs: [
             "El sector agropecuario está conformado por las actividades agrícolas y pecuarias. La agrícola, realizada principalmente a través del uso de la tierra, produce alimentos para la población y los animales, mientras que el pecuario está conformado por aquellas actividades dedicadas a la crianza, manejo y explotación de animales para la obtención de alimentos y materias primas.",
@@ -17,7 +17,7 @@ export const industriesContent = {
         relatedWork: [
             {
                 title: "Planes de competitividad y productividad agrícola y/o pecuario",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773296620/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/8_xci6pf.webp",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778786558/Web%20CCD/Industrias/Imagen50_ovhwvz.png",
                 link: "/capacidades/competitividad#nuestro-trabajo"
             },
             {

@@ -243,38 +243,27 @@ export const capacidadesContent = {
         ],
 
         nuestroTrabajo: [
+
             {
-                title: "Colaboradores y Funcionarios",
-                bullet: "Fortalecimiento de capacidades a colaboradores y funcionarios de instituciones públicas y privadas para el desarrollo comunal, local, regional o nacional.",
-                image: "",
-                subBullets: [
-                    "Administración financiera del sector público",
-                    "Inversión pública: invierte.pe",
-                    "Obras por impuestos y Asociaciones APP",
-                    "Determinantes de competitividad y desarrollo",
-                    "Planeamiento y gestión para el desarrollo"
-                ]
-            },
-            {
-                title: "Cierre de Brechas",
+                title: "Preparación para Cierre de Brechas",
                 bullet: "Fortalecimiento de capacidades en desarrollo y proceso de cierre de brechas económicas y sociales a líderes y actores clave.",
-                image: ""
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778782113/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/genera_una_imagen_los_mas_202605141308_rqqhtg.jpg"
             },
             {
-                title: "Diseño de Plataformas",
-                bullet: "Diseño y creación de plataformas y campus físico y virtual para el fortalecimiento de capacidades para planeamiento y gestión del desarrollo.",
-                image: ""
-            },
-            {
-                title: "Retroalimentación Excluyente",
+                title: "Fortalecimiento con los Mejores Gestores",
                 bullet: "Retroalimentación de mejores experiencias con los mejores gestores de inversión a nivel nacional.",
-                image: ""
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778781871/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/Imagen41_zctxns.png"
             },
             {
-                title: "Múltiples Modalidades",
-                bullet: "Fortalecimiento de capacidades bajo las modalidades correspondientes.",
-                image: "",
-                subBullets: ["Modalidad Presencial", "Modalidad Virtual", "Modalidad Semipresencial"]
+                title: "Creación de Plataformas Digitales",
+                bullet: "Diseño y creación de plataformas y campus físico y virtual para el fortalecimiento de capacidades para planeamiento y gestión del desarrollo.",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778781937/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/Imagen42_iqidho.jpg"
+            },
+            {
+                title: "Uso de Múltiples Modalidades",
+                bullet: "Fortalecimiento de capacidades bajo las modalidades correspondientes:",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778781869/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/Imagen43_vruewi.png",
+                subBullets: ["Presencial", "Virtual", "Semipresencial"]
             }
         ]
     },
@@ -291,7 +280,7 @@ export const capacidadesContent = {
             {
                 title: "Estabilidad Económica",
                 text: "Estabilidad económica para la prosperidad.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774891933/Web%20CCD/Capacidades%20e%20Industrias/Politica%20Fiscal/BCR-1_e6qgnj.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778789297/Web%20CCD/Industrias/image-1536x768_muqd5a.png",
                 cols: 3
             },
             {
@@ -312,35 +301,24 @@ export const capacidadesContent = {
             {
                 title: "Asistencia Técnica",
                 bullet: "Asesoría y asistencia técnica en política fiscal.",
-                image: "",
-                subBullets: [
-                    "Sostenibilidad",
-                    "Reglas",
-                    "Instrumentos",
-                    "Gobernanza",
-                    "Mecanismos de estabilización",
-                    "Complementariedad con otras políticas económicas y sectoriales"
-                ]
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778792370/Web%20CCD/Industrias/necesito_esta_imagen_pero_resultado_202605141557_sqdsf6.jpg",
+
             },
             {
                 title: "Estudios Fiscales",
                 bullet: "Elaboración de estudios sobre política fiscal.",
-                image: "",
-                subBullets: [
-                    "Modelos cuantitativos y cualitativos para la gestión y sostenibilidad fiscal",
-                    "Políticas y reglas fiscales para el crecimiento económico sostenido",
-                    "Regla fiscal y sostenibilidad de las finanzas públicas"
-                ]
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778792811/Web%20CCD/Industrias/eliminar_este_titulo_2K_202605141606_ofkg7f.jpg",
+
             },
             {
                 title: "Marcos Fiscales",
                 bullet: "Diseño y actualización de marcos fiscales de mediano y largo plazo.",
-                image: ""
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778793229/Web%20CCD/Industrias/imagen_en_muy_alta_resolucion_202605141613_tmkvdb.jpg"
             },
             {
                 title: "Instrumentos Innovadores",
                 bullet: "Creación de instrumentos fiscales innovadores para la promoción y el crecimiento de sectores productivos de la economía.",
-                image: ""
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778793175/Web%20CCD/Industrias/imagen_en_muy_alta_resolucion_202605141612_lzasli.jpg"
             }
         ]
     },
@@ -356,7 +334,7 @@ export const capacidadesContent = {
         valorClienteBullets: [
             {
                 title: "Gestión Social",
-                text: "Contribuyen a la gestión social de empresas generando:",
+                text: "Los fondos sociales contribuyen con la gestión social de la empresa y el desarrollo de la zona de influencia, principalmente mediante:",
                 image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774886325/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/image_j2vjuk.webp",
                 cols: 1,
                 subBullets: [
@@ -368,14 +346,14 @@ export const capacidadesContent = {
                 ]
             },
             {
-                title: "Aceleración Local",
-                text: "Aceleran el proceso de desarrollo local y comunal.",
+                title: "Aceleración del Desarrollo",
+                text: "Los fondos sociales crean herramientas estratégicas que permiten mayor rapidez en el proceso de desarrollo local y comunal de la zona de influencia.",
                 image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774886784/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/images_5_mkgc6f.jpg",
                 cols: 2
             },
             {
-                title: "Potenciamiento Social",
-                text: "Cofinancian y potencian la intervención pública y privada en favor del desarrollo de la población local y comunal.",
+                title: "Sinergias para el Desarrollo",
+                text: "Los fondos sociales cofinancian y potencian la intervención pública y privada en favor del desarrollo de la población local y comunal.",
                 image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774886544/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/village-of-carania-peru-2023-11-27-05-31-55-utc-jpg_igb12q.webp",
                 cols: 2
             }
@@ -383,39 +361,39 @@ export const capacidadesContent = {
 
         nuestroTrabajo: [
             {
-                title: "Operatividad y Diseño",
+                title: "Asistencia Técnica en Fondos Sociales",
                 bullet: "Evaluar, diseñar y brindar asistencia técnica en constitución y operatividad de fondos sociales.",
-                image: ""
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778778707/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/Imagen33_h1n3xd.png"
             },
             {
-                title: "Gobernanza",
+                title: "Fortalecimiento de Gobernanza",
                 bullet: "Mejorar gobernanza de fondos sociales.",
-                image: ""
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778779985/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/Imagen35_vn5mr1.png"
             },
             {
                 title: "Optimizar Procesos",
                 bullet: "Diseñar, fortalecer capacidades y asistencia técnica para mejorar y optimizar la organización, procesos, MAPROS, comités, protocolos y manuales para mejorar rapidez y calidad de la inversión social.",
-                image: ""
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778778813/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/genera_una_imagen_los_mas_202605141213_c64a3c.jpg"
             },
             {
                 title: "Participación de Beneficiarios",
                 bullet: "Diseñar e implementar estrategias para potenciar procesos participativos de los beneficiarios en los fondos sociales.",
-                image: ""
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778780110/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/genera_una_imagen_los_mas_202605141235_pkqxo7.jpg"
             },
             {
                 title: "Mecanismos de Sostenibilidad",
                 bullet: "Estructurar mecanismos de complementariedad y sostenibilidad de fondos sociales con otras fuentes de financiamiento para el desarrollo.",
-                image: ""
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778780002/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/Imagen36_ia44bo.png"
             },
             {
                 title: "Optimizar Procesos en Fondos Sociales",
                 bullet: "Asesoría y asistencia técnica en planeamiento y gestión de proyectos de inversión de fondos sociales.",
-                image: ""
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778778713/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/Imagen34_kmabpi.png"
             },
             {
-                title: "Entidades Administradoras",
+                title: "Creación de Fondos Sociales",
                 bullet: "Crear y operativizar personas jurídicas para administrar fondos sociales e inversión social para el desarrollo de zonas de influencia directa e indirectamente relacionadas.",
-                image: ""
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778778624/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/genera_una_imagen_los_mas_202605141210_n8vnh3.jpg"
             }
         ]
     },
@@ -432,7 +410,7 @@ export const capacidadesContent = {
             {
                 title: "Atenuación de Riesgos",
                 text: "Atenuar los efectos negativos de la variación de precios de commodities sobre las finanzas públicas y los precios de la economía.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/q_auto/f_auto/v1774648835/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20de%20Estabilizacion/bcr2_emtitl.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778776625/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20de%20Estabilizacion/genera_una_imagen_los_mas_202605141136_y7qdfa.jpg",
                 cols: 2
             },
             {
@@ -458,23 +436,23 @@ export const capacidadesContent = {
         nuestroTrabajo: [
             {
                 title: "Asistencia Técnica",
-                bullet: "Evaluar, diseñar y brindar asistencia técnica sobre fondos de estabilización de precios de commodities, principalmente en petróleo crudo, gas natural y minerales.",
-                image: ""
+                bullet: "Evaluar, diseñar y brindar asistencia técnica sobre fondos de estabilización de precios de commodities, principalmente en petróleo crudo, gas natural y minerales, así como en mecanismos que reducen la exposición a los riesgos.",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778777140/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20de%20Estabilizacion/genera_una_imagen_los_mas_202605141145_pbmnn7.jpg"
             },
             {
                 title: "Estudios de Riesgos",
                 bullet: "Elaboración de estudios sobre exposición, riesgos y oportunidades en las cuentas fiscales nacional, regional, local y comunal por cambios transitorios y permanentes en los precios de commodities.",
-                image: ""
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778776735/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20de%20Estabilizacion/Imagen31_kta0p0.png"
             },
             {
                 title: "Mecanismos Preventivos",
                 bullet: "Diseñar y elaborar mecanismos preventivos y medidas de política fiscal para atenuar los efectos de las crisis económicas y financieras internacionales.",
-                image: ""
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778776165/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20de%20Estabilizacion/genera_una_imagen_los_mas_202605141127_rga6og.jpg"
             },
             {
                 title: "Estrategias Combinadas",
-                bullet: "Elaborar estrategias combinadas de fondos de estabilización de precios de commodities y hudge funds.",
-                image: ""
+                bullet: "Elaborar estrategias combinadas de fondos de estabilización de precios de commodities y hudge funds, así como instrumentos fiscales innovadores para atenuar los riesgos.",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778776736/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20de%20Estabilizacion/Imagen32_jabysr.png"
             }
         ]
     },
@@ -555,14 +533,14 @@ export const capacidadesContent = {
         specialistSlugs: ["elmer-huaman", "sergio-villegas"],
         headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774890805/Web%20CCD/Capacidades%20e%20Industrias/Inversiones/pexels-betongsmcsg-32690815_hirs0b.jpg",
 
-        valorClienteIntro: "",
+        valorClienteIntro: "Inversiones y proyectos reducen brechas económicas y sociales, generan desarrollo y mejoran la calidad de vida de la población.",
         valorClienteBullets: [
-            {
+            /* {
                 title: "Cierre de Brechas",
                 text: "Inversiones y proyectos permiten reducir y cerrar brechas, generan desarrollo y mejoran la calidad de vida de la población.",
                 image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772651507/Web%20CCD/Capacidades%20e%20Industrias/Inversiones/exportaciones_ee3b4a.jpg",
                 cols: 1
-            },
+            }, */
             {
                 title: "Oportunidades",
                 text: "Contribuye a crear igualdad de oportunidades.",
@@ -592,22 +570,22 @@ export const capacidadesContent = {
             {
                 title: "Programas Multianuales",
                 bullet: "Fortalecer capacidades y asistencia técnica para elaborar Programas Multianuales de Inversiones (PMI).",
-                image: ""
-            },
-            {
-                title: "Impulso Competitivo",
-                bullet: "Elaborar programas de inversiones para impulsar el desarrollo y la competitividad.",
-                image: ""
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778787991/Web%20CCD/Industrias/no_uses_texto_para_describir_202605141446_o5k5ua.jpg"
             },
             {
                 title: "Capacitación Técnica",
                 bullet: "Fortalecer capacidades y asistencia técnica integral a equipos de profesionales y colaboradores de organizaciones públicas y privadas para mejorar la rapidez y calidad en la ejecución de inversión.",
-                image: ""
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778787524/Web%20CCD/Industrias/Imagen52_zhztg3.png"
             },
             {
                 title: "Proyectos Innovadores",
                 bullet: "Diseñar e implementar proyectos innovadores de inversión en todas las dimensiones del desarrollo y determinantes de la competitividad.",
-                image: ""
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778788165/Web%20CCD/Industrias/aumntar_la_resolucion_y_quede_202605141448_p08udd.jpg"
+            },
+            {
+                title: "Programas de inversión",
+                bullet: "Elaborar programas de inversiones para impulsar el desarrollo y la competitividad.",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778788166/Web%20CCD/Industrias/no_uses_texto_para_describir_202605141449_du6gac.jpg"
             }
         ]
     },
@@ -631,14 +609,14 @@ export const capacidadesContent = {
             {
                 title: "Integridad del proyecto de inversión social",
                 text: "Optimización e integridad vertical y horizontal de la inversión social en todas las etapas.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774648166/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/Evaluacion_paq2ri_smtush.webp",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778773734/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/Imagen22_va1g5o.png ",
                 cols: 2,
                 subBullets: ["Negociación", "Aprobación", "Elaboración de estudios", "Implementación", "Operación y mantenimiento"]
             },
             {
                 title: "Sistema de comunicación",
                 text: "Transparencia, ganancias de eficiencias y reportes.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774882928/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/marco_npn11c.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778773734/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/Imagen23_xwhexx.png",
                 cols: 2,
                 subBullets: ["Accionistas", "Directorio", "Documentos de sostenibilidad y desarrollo", "Anuarios", "Líderes comunales", "Población beneficiaria"]
             },
@@ -674,22 +652,22 @@ export const capacidadesContent = {
             {
                 title: "Integración de Actores",
                 bullet: "Participación de stakeholders y actores clave de los programas y proyectos en el proceso de evaluación.",
-                image: ""
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778775651/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/Imagen24_id2na6.jpg"
             },
             {
                 title: "Exposición de Resultados",
                 bullet: "Presentación de resultados de la evaluación a stakeholders y actores clave.",
-                image: ""
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778775583/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/Imagen26_n9jjy1.png"
             },
             {
                 title: "Medición de Impactos",
                 bullet: "Cuantificación de impactos de los proyectos de inversión social con variables continuas y discretas.",
-                image: ""
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778775582/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/Imagen27_wenkrn.png"
             },
             {
                 title: "Acompañamiento Interno",
                 bullet: "Implementación de recomendaciones de la evaluación en todas las áreas de la empresa u organización.",
-                image: ""
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778775427/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/Imagen25_zte6or.png"
             }
         ]
     },
@@ -725,35 +703,36 @@ export const capacidadesContent = {
 
         nuestroTrabajo: [
             {
-                title: "Mejora de Políticas",
+                title: "Mejora de Políticas Públicas",
                 bullet: "Evaluación y mejora de políticas públicas, principalmente en desarrollo, competitividad, crecimiento económico, infraestructura, planeamiento y descentralización fiscal.",
-                image: ""
-            },
-            {
-                title: "Instrumentos Fiscales",
-                bullet: "Evaluación y propuesta de instrumentos fiscales innovadores para promover competitividad y desarrollo nacional y sectorial.",
-                image: ""
-            },
-            {
-                title: "Fortalecimiento de Fondos",
-                bullet: "Fortalecimiento de la performance de fondos de desarrollo y fondos sociales de carácter públicos y privados: gobernanza, organización, calidad y velocidad de intervenciones y proyectos de desarrollo y relacionamientos social.",
-                image: ""
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778789169/Web%20CCD/Industrias/imagen_en_muy_alta_resolucion_202605141505_jcn1sp.jpg"
             },
             {
                 title: "Mecanismos de Inversión",
                 bullet: "Mejora de mecanismos de inversión pública y privada: asociaciones público privadas, obras por impuestos e inversión pública.",
-                image: ""
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778789442/Web%20CCD/Industrias/imagen_en_muy_alta_resolucion_202605141510_ek0prh.jpg"
             },
             {
-                title: "Descentralización",
-                bullet: "Descentralización fiscal y sistemas de administración financiera del sector público.",
-                image: ""
+                title: "Instrumentos Fiscales",
+                bullet: "Evaluación y propuesta de instrumentos fiscales innovadores para promover competitividad y desarrollo nacional y sectorial.",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778789386/Web%20CCD/Industrias/imagen_en_muy_alta_resolucion_202605141509_pf17vr.jpg"
             },
             {
                 title: "Transferencias",
                 bullet: "Sistema de transferencias intergubernamental de recursos descentralizados: canon, regalías y fondos públicos.",
-                image: ""
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778789584/Web%20CCD/Industrias/imagen_en_muy_alta_resolucion_202605141512_ipt8cp.jpg"
+            },
+            {
+                title: "Descentralización",
+                bullet: "Descentralización fiscal y sistemas de administración financiera del sector público.",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778790061/Web%20CCD/Industrias/upscalemedia-transformed_vyhwlc.jpg"
             }
+            /* {
+                title: "Fortalecimiento de Fondos",
+                bullet: "Fortalecimiento de la performance de fondos de desarrollo y fondos sociales de carácter públicos y privados: gobernanza, organización, calidad y velocidad de intervenciones y proyectos de desarrollo y relacionamientos social.",
+                image: ""
+            }, */
+
         ]
     },
     "ia-y-analitica": {
@@ -793,31 +772,36 @@ export const capacidadesContent = {
             {
                 title: "Sistemas de Administración",
                 bullet: "Sistema de Administración del Desarrollo (SAD).",
-                image: "", // Optionally no image
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778784299/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/Imagen44_jjiza3.png",
+                diagramImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778784701/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/necesito_generar_una_imagen_que_202605141351_dh399m.jpg",
                 subBullets: ["Plataformas tecnológicas", "Planeamiento", "Niveles de referencia", "Medidas correctivas", "Supervisar avances", "Evaluar efectos"]
             },
             {
                 title: "Analítica de Datos",
                 bullet: "Analítica de Datos y Ciencia de Datos.",
-                image: "",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778784297/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/Imagen46_kzslbd.png",
+                diagramImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778785861/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/vamos_a_generar_un_diagrama_202605141410_pgkjda.jpg",
                 subBullets: ["Análisis exploratorio", "Gobierno de datos", "Integración de fuentes", "Dashboards interactivos", "Modelos descriptivos y predictivos"]
             },
             {
                 title: "Modelos Predictivos",
                 bullet: "Modelos Predictivos y Prescriptivos con Machine Learning avanzado.",
-                image: "", // Intentionally empty to test layout
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778784305/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/Imagen48_qzvwkc.png", // Intentionally empty to test layout
+                diagramImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778786013/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/vamos_a_generar_un_diagrama_202605141413_vvwujh.jpg",
                 subBullets: ["Proyección de demanda", "Predicción de crecimiento", "Machine Learning supervisado", "Redes neuronales", "Segmentación"]
             },
             {
                 title: "Inteligencia Artificial",
                 bullet: "Inteligencia Artificial para Planeamiento y Gestión Pública.",
-                image: "",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778784301/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/Imagen45_hspnml.png",
+                diagramImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778785557/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/vamos_a_generar_un_diagrama_202605141405_wofdjx.jpg",
                 subBullets: ["Planificación territorial inteligente", "Automatización del análisis", "Priorización de inversiones", "Evaluación de políticas públicas"]
             },
             {
                 title: "Sistemas de Información",
                 bullet: "Plataformas Inteligentes y Sistemas de Información estructurada.",
-                image: "", // Intentionally empty
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778784308/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/Imagen49_wn0pay.png",
+                diagramImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778786354/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/vamos_a_generar_un_diagrama_202605141419_nwk2i5.jpg", // Intentionally empty
                 subBullets: ["Observatorios económicos y sociales", "Sistemas de monitoreo territorial", "Dashboards estratégicos"]
             }
         ]

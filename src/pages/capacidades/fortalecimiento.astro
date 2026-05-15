@@ -3,6 +3,231 @@ import CapabilityLayout from "../../components/capacidades/CapabilityLayout.astr
 import { capacidadesContent } from "../../data/capacidadesContent.js";
 
 const data = capacidadesContent["fortalecimiento"];
+
+// Extraemos datos necesarios para el layout base
+const { nuestroTrabajo, ...layoutData } = data;
+
+const temasFortalecimiento = [
+    { label: "Administración financiera del sector público", color: "#6b21a8" },
+    { label: "Inversión pública: invierte.pe", color: "#9f1239" },
+    { label: "Obras por impuestos y Asociaciones APP", color: "#0ea5e9" },
+    { label: "Determinantes de competitividad y desarrollo", color: "#d97706" },
+    { label: "Planeamiento y gestión para el desarrollo", color: "#059669" },
+];
 ---
-<CapabilityLayout {...data}>
+
+<CapabilityLayout {...layoutData}>
+    <!-- ===== NUESTRO TRABAJO — FORTALECIMIENTO (Diseño Manual Premium) ===== -->
+    <section
+        class="relative bg-gradient-to-br from-primary via-[#6a0016] to-[#2a0008] pt-24 md:pt-32 pb-24"
+        id="nuestro-trabajo"
+    >
+        <div
+            class="absolute inset-0 opacity-[0.03] bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJuIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMC42NSIgbnVtT2N0YXZlcz0iMyIgc3RpdGNoVGlsZXM9InN0aXRjaCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiBmaWx0ZXI9InVybCgjbikiIG9wYWNpdHk9IjEiLz48L3N2Zz4=')] pointer-events-none"
+        >
+        </div>
+
+        <div
+            class="container mx-auto px-6 lg:px-12 max-w-[1600px] relative z-10"
+        >
+            <!-- Título de Sección -->
+            <div
+                class="mb-14 flex flex-col items-center md:items-start text-center md:text-left nt-title"
+            >
+                <h2
+                    class="font-serif text-3xl md:text-5xl font-black text-white mb-5 tracking-tight"
+                >
+                    Capacidades CCD
+                </h2>
+                <div class="w-24 h-[5px] bg-secondary"></div>
+            </div>
+
+            <!-- TARJETA DESTACADA — Diseño 2 Columna Imagen/Texto + Lista -->
+            <div
+                class="featured-card group overflow-hidden flex flex-col lg:flex-row min-h-[550px]"
+            >
+                <!-- Columna Izquierda: Foto + Texto (Fondo blanco para resaltar) -->
+                <div
+                    class="flex flex-col w-full lg:w-[45%] bg-white shadow-2xl z-10"
+                >
+                    <div
+                        class="relative h-[300px] lg:h-[350px] overflow-hidden"
+                    >
+                        <img
+                            src="https://res.cloudinary.com/ccdcloudy/image/upload/v1778781262/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/genera_una_imagen_los_mas_202605141254_cnmgp7.jpg"
+                            alt="Fortalecimiento de capacidades"
+                            class="w-full h-full object-cover transition-transform duration-[5000ms] group-hover:scale-105"
+                        />
+                        <div
+                            class="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors duration-500"
+                        >
+                        </div>
+                    </div>
+
+                    <div class="p-10 md:p-12">
+                        <h3
+                            class="font-serif text-3xl md:text-4xl font-black text-primary leading-tight mb-5"
+                        >
+                            Fortalecimiento de capacidades
+                        </h3>
+                        <p
+                            class="font-sans text-lg text-gray-600 leading-relaxed"
+                        >
+                            Dirigido a funcionarios y colaboradores de
+                            instituciones públicas y privadas para el desarrollo
+                            y la competitividad comunal, local, regional o
+                            nacional.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Lista de Temas sobre Fondo Rojo -->
+                <div
+                    class="w-full lg:w-[55%] p-10 md:p-14 lg:p-16 flex flex-col justify-center"
+                >
+                    <div class="space-y-4">
+                        {
+                            temasFortalecimiento.map((tema, i) => (
+                                <div
+                                    class="group/item flex items-center bg-white/5 backdrop-blur-sm p-5 md:p-6 rounded-xl border border-white/10 transition-all duration-300 hover:bg-white/10 hover:-translate-y-1 relative overflow-hidden"
+                                    style={`animation-delay: ${0.2 + i * 0.1}s`}
+                                >
+                                    {/* Barra de color lateral */}
+                                    <div
+                                        class="absolute left-0 top-0 bottom-0 w-1.5 transition-all duration-300 group-hover/item:w-2.5"
+                                        style={`background-color: ${tema.color}`}
+                                    />
+
+                                    <div class="flex items-center gap-6 ml-2">
+                                        {/* Círculo indicador sutil */}
+                                        <div
+                                            class="w-3 h-3 rounded-full opacity-40 group-hover/item:opacity-100 transition-opacity"
+                                            style={`background-color: ${tema.color}`}
+                                        />
+                                        <span class="font-sans text-lg md:text-xl font-bold text-white group-hover/item:text-white/90 transition-colors">
+                                            {tema.label}
+                                        </span>
+                                    </div>
+
+                                    {/* Flecha decorativa hover */}
+                                    <div class="ml-auto opacity-0 group-hover/item:opacity-100 transition-all duration-300 translate-x-4 group-hover/item:translate-x-0">
+                                        <svg
+                                            class="w-6 h-6 text-white/30"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2"
+                                                d="M9 5l7 7-7 7"
+                                            />
+                                        </svg>
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN 2: Cierre de Brechas y Gestores (Fondo Gris Claro) ===== -->
+    <section class="bg-[#F1F5F9] py-20 md:py-24 border-y border-gray-200">
+        <div class="container mx-auto px-6 lg:px-12 max-w-[1600px]">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                {
+                    nuestroTrabajo.slice(0, 2).map((job) => (
+                        <div class="grid-card group bg-white border-t-4 border-transparent hover:border-primary shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 flex flex-col h-full">
+                            <div class="relative h-[340px] overflow-hidden bg-gray-100 shrink-0">
+                                <img
+                                    src={
+                                        job.image ||
+                                        "https://res.cloudinary.com/ccdcloudy/image/upload/v1772646621/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_7_kr73ms.jpg"
+                                    }
+                                    alt={job.title}
+                                    class="w-full h-full object-cover transition-transform duration-[3000ms] group-hover:scale-[1.08]"
+                                />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                            </div>
+                            <div class="p-10 flex flex-col flex-grow">
+                                <h3 class="font-sans text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors leading-tight">
+                                    {job.title}
+                                </h3>
+                                <p class="font-sans text-gray-600 leading-relaxed text-lg">
+                                    {job.bullet}
+                                </p>
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN 3: Plataformas y Modalidades (Fondo Blanco) ===== -->
+    <section class="bg-white py-20 md:py-24">
+        <div class="container mx-auto px-6 lg:px-12 max-w-[1600px]">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                {
+                    nuestroTrabajo.slice(2, 4).map((job) => (
+                        <div class="grid-card group bg-white border-t-4 border-transparent hover:border-secondary shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 flex flex-col h-full">
+                            <div class="relative h-[340px] overflow-hidden bg-gray-100 shrink-0">
+                                <img
+                                    src={
+                                        job.image ||
+                                        "https://res.cloudinary.com/ccdcloudy/image/upload/v1770857524/Web%20CCD/Corporate%20Flat%20Illustration/planes_de_desarrollo2_tb0bj3.jpg"
+                                    }
+                                    alt={job.title}
+                                    class="w-full h-full object-cover transition-transform duration-[3000ms] group-hover:scale-[1.08]"
+                                />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                            </div>
+                            <div class="p-10 flex flex-col flex-grow">
+                                <h3 class="font-sans text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors leading-tight">
+                                    {job.title}
+                                </h3>
+                                <p class="font-sans text-gray-600 leading-relaxed text-lg">
+                                    {job.bullet}
+                                </p>
+
+                                {job.subBullets &&
+                                    job.subBullets.length > 0 && (
+                                        <div class="mt-6 flex flex-wrap gap-2">
+                                            {job.subBullets.map((sub) => (
+                                                <span class="bg-gray-50 border border-gray-100 text-gray-600 px-3 py-1 text-sm rounded-sm">
+                                                    {sub}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    )}
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
+        </div>
+    </section>
 </CapabilityLayout>
+
+<style>
+    .nt-title {
+        animation: fadeSlideUp 0.7s ease-out both;
+    }
+    .featured-card {
+        animation: fadeSlideUp 0.8s ease-out 0.2s both;
+    }
+
+    @keyframes fadeSlideUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>

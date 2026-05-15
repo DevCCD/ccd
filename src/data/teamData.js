@@ -5,8 +5,8 @@ export const teamMembers = {
         "role": "Director",
         "photos": {
             "formal": "https://res.cloudinary.com/ccdcloudy/image/upload/q_auto/f_auto/v1774896750/Web%20CCD/Equipo/Rudy/rudy-formal_ncf9gl.png",
-            "casual": "https://res.cloudinary.com/ccdcloudy/image/upload/q_auto/f_auto/v1775489018/Web%20CCD/Equipo/Rudy/Rudy-casual_pjpyb9.png",
-            "detail": "https://res.cloudinary.com/ccdcloudy/image/upload/q_auto/f_auto/v1775489018/Web%20CCD/Equipo/Rudy/Rudy-casual_pjpyb9.png",
+            "casual": "https://res.cloudinary.com/ccdcloudy/image/upload/v1778778040/Web%20CCD/Equipo/Rudy/pro_1_b5qmej.png",
+            "detail": "https://res.cloudinary.com/ccdcloudy/image/upload/v1774896750/Web%20CCD/Equipo/Rudy/rudy-formal_ncf9gl.png",
             "extra": ""
         },
         "linkedin": "https://www.linkedin.com/in/rudy-laguna-b2432a39/",

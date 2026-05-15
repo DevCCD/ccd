@@ -25,54 +25,56 @@ const { workList } = Astro.props;
             <h2
                 class="font-serif text-3xl md:text-5xl font-black text-white mb-6 tracking-tight"
             >
-                Nuestro Trabajo
+                Capacidades CCD
             </h2>
             <div class="w-24 h-[5px] bg-secondary"></div>
         </div>
 
-        {workList && workList.length > 0 && (
-            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-10 items-stretch">
-                {workList.map((work) => (
-                    <div class="h-full flex flex-col group bg-white border-t-4 border-transparent hover:border-secondary overflow-hidden transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-2xl">
-                        {/* Imagen Encabezado Condicional (Solo si tiene imagen asignada) */}
-                        {work.image && work.image.trim() !== "" && (
-                            <div class="h-[220px] relative overflow-hidden bg-gray-100 shrink-0">
-                                <img
-                                    src={work.image}
-                                    alt={work.title || "Nuestro Trabajo"}
-                                    class="w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-105"
-                                />
-                            </div>
-                        )}
-
-                        {/* Contenido Texto */}
-                        <div class="p-8 lg:p-10 flex flex-col flex-grow">
-                            {work.title && (
-                                <h3 class="font-sans text-xl md:text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors leading-tight">
-                                    {work.title}
-                                </h3>
+        {
+            workList && workList.length > 0 && (
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-10 items-stretch">
+                    {workList.map((work) => (
+                        <div class="h-full flex flex-col group bg-white border-t-4 border-transparent hover:border-secondary overflow-hidden transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-2xl">
+                            {/* Imagen Encabezado Condicional (Solo si tiene imagen asignada) */}
+                            {work.image && work.image.trim() !== "" && (
+                                <div class="h-[300px] relative overflow-hidden bg-gray-100 shrink-0">
+                                    <img
+                                        src={work.image}
+                                        alt={work.title || "Nuestro Trabajo"}
+                                        class="w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-105"
+                                    />
+                                </div>
                             )}
-                            <p class="font-sans text-base md:text-[1.05rem] text-gray-700 leading-[1.7] font-normal flex-grow">
-                                {work.bullet}
-                            </p>
 
-                            {/* Píldoras SubBullets Claras */}
-                            {work.subBullets &&
-                                work.subBullets.length > 0 && (
-                                    <div class="mt-8 pt-6 border-t border-gray-100">
-                                        <div class="flex flex-wrap gap-2.5">
-                                            {work.subBullets.map((sub) => (
-                                                <span class="text-[0.8rem] font-medium bg-gray-50 border border-gray-100 text-gray-600 px-3 py-1.5 rounded-[2px] hover:bg-gray-100 hover:border-gray-200 transition-colors">
-                                                    {sub}
-                                                </span>
-                                            ))}
-                                        </div>
-                                    </div>
+                            {/* Contenido Texto */}
+                            <div class="p-8 lg:p-10 flex flex-col flex-grow">
+                                {work.title && (
+                                    <h3 class="font-sans text-xl md:text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors leading-tight">
+                                        {work.title}
+                                    </h3>
                                 )}
+                                <p class="font-sans text-base md:text-[1.05rem] text-gray-700 leading-[1.7] font-normal flex-grow">
+                                    {work.bullet}
+                                </p>
+
+                                {/* Píldoras SubBullets Claras */}
+                                {work.subBullets &&
+                                    work.subBullets.length > 0 && (
+                                        <div class="mt-8 pt-6 border-t border-gray-100">
+                                            <div class="flex flex-wrap gap-2.5">
+                                                {work.subBullets.map((sub) => (
+                                                    <span class="text-[0.8rem] font-medium bg-gray-50 border border-gray-100 text-gray-600 px-3 py-1.5 rounded-[2px] hover:bg-gray-100 hover:border-gray-200 transition-colors">
+                                                        {sub}
+                                                    </span>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    )}
+                            </div>
                         </div>
-                    </div>
-                ))}
-            </div>
-        )}
+                    ))}
+                </div>
+            )
+        }
     </div>
 </section>

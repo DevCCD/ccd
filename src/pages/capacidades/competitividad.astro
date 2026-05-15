@@ -8,27 +8,57 @@ const data = capacidadesContent["competitividad"];
 const { nuestroTrabajo, ...layoutData } = data;
 
 const determinantes = [
-    { label: "Infraestructura", icon: "🛣️", color: "#7B3FA0", bg: "#7B3FA0" },
+    {
+        label: "Infraestructura",
+        icon: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778770898/Web%20CCD/Iconos/Capacidades/Infraestructura_t7zpy7.png",
+        color: "#7B3FA0",
+        bg: "#7B3FA0",
+    },
     {
         label: "Ambiente de Negocios",
-        icon: "🏢",
+        icon: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778770898/Web%20CCD/Iconos/Capacidades/Ambiente_egiweq.png",
         color: "#C0175D",
         bg: "#C0175D",
     },
     {
         label: "Comercio Exterior y Turismo",
-        icon: "🌐",
+        icon: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778770898/Web%20CCD/Iconos/Capacidades/Comercio_d4frz8.png",
         color: "#1A5276",
         bg: "#1A5276",
     },
-    { label: "Capital Humano", icon: "🎓", color: "#C68B00", bg: "#C68B00" },
-    { label: "Financiamiento", icon: "💵", color: "#1A7AB5", bg: "#1A7AB5" },
-    { label: "Institucionalidad", icon: "🏛️", color: "#C0546A", bg: "#C0546A" },
-    { label: "Innovación", icon: "💡", color: "#1E8449", bg: "#1E8449" },
-    { label: "Mercado Laboral", icon: "👷", color: "#5D6E2B", bg: "#5D6E2B" },
+    {
+        label: "Capital Humano",
+        icon: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778770898/Web%20CCD/Iconos/Capacidades/Capital_ebqpmg.png",
+        color: "#C68B00",
+        bg: "#C68B00",
+    },
+    {
+        label: "Financiamiento",
+        icon: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778770898/Web%20CCD/Iconos/Capacidades/Financiamiento_snfg18.png",
+        color: "#1A7AB5",
+        bg: "#1A7AB5",
+    },
+    {
+        label: "Institucionalidad",
+        icon: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778770899/Web%20CCD/Iconos/Capacidades/Insti_aa6zt3.png",
+        color: "#C0546A",
+        bg: "#C0546A",
+    },
+    {
+        label: "Innovación",
+        icon: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778770898/Web%20CCD/Iconos/Capacidades/Innovacion_df7giu.png",
+        color: "#1E8449",
+        bg: "#1E8449",
+    },
+    {
+        label: "Mercado Laboral",
+        icon: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778770899/Web%20CCD/Iconos/Capacidades/Mercado_vkupp2.png",
+        color: "#5D6E2B",
+        bg: "#5D6E2B",
+    },
     {
         label: "Sostenibilidad Ambiental",
-        icon: "🌱",
+        icon: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778770899/Web%20CCD/Iconos/Capacidades/Sostenibilidad_vok2qg.png",
         color: "#D4690A",
         bg: "#D4690A",
     },
@@ -57,7 +87,7 @@ const determinantes = [
                 <h2
                     class="font-serif text-3xl md:text-5xl font-black text-white mb-5 tracking-tight"
                 >
-                    Nuestro Trabajo
+                    Capacidades CCD
                 </h2>
                 <div class="w-24 h-[5px] bg-secondary"></div>
             </div>
@@ -128,8 +158,12 @@ const determinantes = [
                                 class="det-pill group flex items-center gap-4 px-5 py-4 rounded-xl text-white font-semibold shadow-md hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 cursor-default"
                                 style={`background-color: ${d.bg}; animation-delay: ${i * 0.07}s`}
                             >
-                                <span class="text-2xl w-10 h-10 bg-white/20 flex items-center justify-center rounded-full shrink-0 group-hover:scale-110 transition-transform duration-300">
-                                    {d.icon}
+                                <span class="text-2xl w-14 h-14 bg-white/20 flex items-center justify-center rounded-full shrink-0 group-hover:scale-110 transition-transform duration-300 overflow-hidden p-3">
+                                    <img
+                                        src={d.icon}
+                                        alt={d.label}
+                                        class="w-full h-full object-contain filter brightness-0 invert"
+                                    />
                                 </span>
                                 <span class="font-sans text-[1rem] md:text-[1.05rem] font-semibold leading-tight">
                                     {d.label}
@@ -145,9 +179,14 @@ const determinantes = [
                     style="background-color: #1B3A6B; animation-delay: 0.63s"
                 >
                     <span
-                        class="text-2xl w-10 h-10 bg-white/20 flex items-center justify-center rounded-full shrink-0 group-hover:scale-110 transition-transform duration-300"
-                        >⚙️</span
+                        class="text-2xl w-14 h-14 bg-white/20 flex items-center justify-center rounded-full shrink-0 group-hover:scale-110 transition-transform duration-300 overflow-hidden p-3"
                     >
+                        <img
+                            src="https://res.cloudinary.com/ccdcloudy/image/upload/v1778770899/Web%20CCD/Iconos/Capacidades/Proyectos_rktwrw.png"
+                            alt="Icono"
+                            class="w-full h-full object-contain filter brightness-0 invert"
+                        />
+                    </span>
                     <span
                         class="font-sans text-[1rem] md:text-[1.1rem] font-semibold leading-tight"
                         >Mega y micro proyectos para mejorar la productividad</span
@@ -160,9 +199,14 @@ const determinantes = [
                     style="background-color: #1E7E45; animation-delay: 0.7s"
                 >
                     <span
-                        class="text-2xl w-10 h-10 bg-white/20 flex items-center justify-center rounded-full shrink-0 group-hover:scale-110 transition-transform duration-300"
-                        >⛏️</span
+                        class="text-2xl w-14 h-14 bg-white/20 flex items-center justify-center rounded-full shrink-0 group-hover:scale-110 transition-transform duration-300 overflow-hidden p-3"
                     >
+                        <img
+                            src="https://res.cloudinary.com/ccdcloudy/image/upload/v1778770899/Web%20CCD/Iconos/Capacidades/Suelo_pdptjm.png"
+                            alt="Icono"
+                            class="w-full h-full object-contain"
+                        />
+                    </span>
                     <span
                         class="font-sans text-[1rem] md:text-[1.1rem] font-semibold leading-tight"
                         >Dotación de recursos naturales del subsuelo y suelo</span
@@ -188,7 +232,7 @@ const determinantes = [
                             class="relative h-[260px] overflow-hidden bg-gray-100 shrink-0"
                         >
                             <img
-                                src="https://res.cloudinary.com/ccdcloudy/image/upload/q_auto/f_auto/v1774878425/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/10_e25vqp.jpg"
+                                src="https://res.cloudinary.com/ccdcloudy/image/upload/v1778771704/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/Imagen13_jnjpfk.png"
                                 alt="Asesoría Estratégica"
                                 class="w-full h-full object-cover transition-transform duration-[2500ms] group-hover:scale-[1.06]"
                             />
@@ -294,10 +338,10 @@ const determinantes = [
                         class="grid-card group bg-white border-t-4 border-transparent hover:border-primary shadow-md hover:shadow-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1.5 flex flex-col h-full"
                     >
                         <div
-                            class="relative h-[240px] overflow-hidden bg-gray-100 shrink-0"
+                            class="relative h-[340px] overflow-hidden bg-gray-100 shrink-0"
                         >
                             <img
-                                src="https://res.cloudinary.com/ccdcloudy/image/upload/q_auto/f_auto/v1776430643/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/Cluster_2_wg6pvy.jpg"
+                                src="https://res.cloudinary.com/ccdcloudy/image/upload/v1778771705/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/Imagen14_mjp7xf.png"
                                 alt="Evaluación de Clústeres"
                                 class="w-full h-full object-cover transition-transform duration-[2500ms] group-hover:scale-[1.07]"
                             />
@@ -327,7 +371,7 @@ const determinantes = [
                         class="grid-card group bg-white border-t-4 border-transparent hover:border-primary shadow-md hover:shadow-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1.5 flex flex-col h-full"
                     >
                         <div
-                            class="relative h-[240px] overflow-hidden bg-gray-100 shrink-0"
+                            class="relative h-[340px] overflow-hidden bg-gray-100 shrink-0"
                         >
                             <img
                                 src="https://res.cloudinary.com/ccdcloudy/image/upload/v1774878412/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/3_w70hd7.webp"

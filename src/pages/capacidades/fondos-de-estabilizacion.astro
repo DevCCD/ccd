@@ -3,5 +3,116 @@ import CapabilityLayout from "../../components/capacidades/CapabilityLayout.astr
 import { capacidadesContent } from "../../data/capacidadesContent.js";
 
 const data = capacidadesContent["fondos-de-estabilizacion"];
+
+// Extraemos datos necesarios para el layout base
+const { nuestroTrabajo, ...layoutData } = data;
+
+// Reorganizamos según pedido del usuario:
+// Pareja 1: Asistencia Técnica (0) y Mecanismos Preventivos (2)
+const chunk1 = [nuestroTrabajo[0], nuestroTrabajo[2]];
+// Pareja 2: Estudios de Riesgos (1) y Estrategias Combinadas (3)
+const chunk2 = [nuestroTrabajo[1], nuestroTrabajo[3]];
 ---
-<CapabilityLayout {...data} />
+
+<CapabilityLayout {...layoutData}>
+    <!-- ===== SECCIÓN 1: Asistencia y Prevención (Fondo Primario) ===== -->
+    <section
+        class="relative bg-gradient-to-br from-primary via-[#6a0016] to-[#2a0008] pt-24 md:pt-32 pb-24"
+        id="nuestro-trabajo"
+    >
+        <div
+            class="absolute inset-0 opacity-[0.03] bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJuIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMC42NSIgbnVtT2N0YXZlcz0iMyIgc3RpdGNoVGlsZXM9InN0aXRjaCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiBmaWx0ZXI9InVybCgjbikiIG9wYWNpdHk9IjEiLz48L3N2Zz4=')] pointer-events-none"
+        >
+        </div>
+
+        <div
+            class="container mx-auto px-6 lg:px-12 max-w-[1600px] relative z-10"
+        >
+            <div
+                class="mb-14 flex flex-col items-center md:items-start text-center md:text-left nt-title"
+            >
+                <h2
+                    class="font-serif text-3xl md:text-5xl font-black text-white mb-5 tracking-tight"
+                >
+                    Capacidades CCD
+                </h2>
+                <div class="w-24 h-[5px] bg-secondary"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                {
+                    chunk1.map((job) => (
+                        <div class="grid-card group bg-white border-t-4 border-transparent hover:border-secondary shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 flex flex-col h-full">
+                            <div class="relative h-[340px] overflow-hidden bg-gray-100 shrink-0">
+                                <img
+                                    src={job.image}
+                                    alt={job.title}
+                                    class="w-full h-full object-cover transition-transform duration-[3000ms] group-hover:scale-[1.08]"
+                                />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                            </div>
+                            <div class="p-10 flex flex-col flex-grow">
+                                <h3 class="font-sans text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors leading-tight">
+                                    {job.title}
+                                </h3>
+                                <p class="font-sans text-gray-600 leading-relaxed text-lg">
+                                    {job.bullet}
+                                </p>
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN 2: Estudios y Estrategias (Fondo Gris Claro) ===== -->
+    <section class="bg-[#F1F5F9] py-20 md:py-24 border-t border-gray-200">
+        <div class="container mx-auto px-6 lg:px-12 max-w-[1600px]">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                {
+                    chunk2.map((job) => (
+                        <div class="grid-card group bg-white border-t-4 border-transparent hover:border-primary shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 flex flex-col h-full">
+                            <div class="relative h-[340px] overflow-hidden bg-gray-100 shrink-0">
+                                <img
+                                    src={job.image}
+                                    alt={job.title}
+                                    class="w-full h-full object-cover transition-transform duration-[3000ms] group-hover:scale-[1.08]"
+                                />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                            </div>
+                            <div class="p-10 flex flex-col flex-grow">
+                                <h3 class="font-sans text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors leading-tight">
+                                    {job.title}
+                                </h3>
+                                <p class="font-sans text-gray-600 leading-relaxed text-lg">
+                                    {job.bullet}
+                                </p>
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
+        </div>
+    </section>
+</CapabilityLayout>
+
+<style>
+    .nt-title {
+        animation: fadeSlideUp 0.7s ease-out both;
+    }
+    .grid-card {
+        animation: fadeSlideUp 0.6s ease-out both;
+    }
+
+    @keyframes fadeSlideUp {
+        from {
+            opacity: 0;
+            transform: translateY(25px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>

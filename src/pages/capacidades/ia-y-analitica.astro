@@ -3,6 +3,154 @@ import CapabilityLayout from "../../components/capacidades/CapabilityLayout.astr
 import { capacidadesContent } from "../../data/capacidadesContent.js";
 
 const data = capacidadesContent["ia-y-analitica"];
+
+// Extraemos datos necesarios para el layout base
+const { nuestroTrabajo, ...layoutData } = data;
+
+// Reorganizamos según pedido y figura:
+// Fila 1 (3 cols): Sistemas de Administración (0), Inteligencia Artificial (3), Analítica de Datos (1)
+const row1 = [nuestroTrabajo[0], nuestroTrabajo[3], nuestroTrabajo[1]];
+// Fila 2 (2 cols): Modelos Predictivos (2) y Sistemas de Información (4)
+const row2 = [nuestroTrabajo[2], nuestroTrabajo[4]];
 ---
 
-<CapabilityLayout {...data} />
+<CapabilityLayout {...layoutData}>
+    <!-- ===== SECCIÓN 1: Principales Capacidades (Fondo Carmesí - 3 Columnas) ===== -->
+    <section
+        class="relative bg-gradient-to-br from-primary via-[#6a0016] to-[#2a0008] pt-24 md:pt-32 pb-20"
+        id="nuestro-trabajo"
+    >
+        <div
+            class="absolute inset-0 opacity-[0.03] bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJuIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMC42NSIgbnVtT2N0YXZlcz0iMyIgc3RpdGNoVGlsZXM9InN0aXRjaCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiBmaWx0ZXI9InVybCgjbikiIG9wYWNpdHk9IjEiLz48L3N2Zz4=')] pointer-events-none"
+        >
+        </div>
+
+        <div class="container mx-auto px-6 lg:px-12 max-w-[1600px] relative z-10">
+            <div
+                class="mb-14 flex flex-col items-center md:items-start text-center md:text-left nt-title"
+            >
+                <h2
+                    class="font-serif text-3xl md:text-5xl font-black text-white mb-5 tracking-tight"
+                >
+                    Capacidades CCD
+                </h2>
+                <div class="w-24 h-[5px] bg-secondary"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {
+                    row1.map((job) => (
+                        <div class="grid-card group bg-white border-t-4 border-transparent hover:border-secondary shadow-2xl overflow-hidden transition-all duration-300 hover:-translate-y-2 flex flex-col h-full">
+                            {/* Imagen Superior */}
+                            <div class="relative h-[240px] overflow-hidden bg-gray-100 shrink-0">
+                                <img
+                                    src={job.image || "https://res.cloudinary.com/ccdcloudy/image/upload/v1774876876/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/Progetto-senza-titolo-2025-03-10T112054.013_icetri.webp"}
+                                    alt={job.title}
+                                    class="w-full h-full object-cover transition-transform duration-[3000ms] group-hover:scale-[1.08]"
+                                />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                            </div>
+
+                            {/* Contenido Texto */}
+                            <div class="p-8 pb-4 flex flex-col">
+                                <h3 class="font-sans text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors leading-tight">
+                                    {job.title}
+                                </h3>
+                                <p class="font-sans text-gray-600 leading-relaxed text-base mb-6">
+                                    {job.bullet}
+                                </p>
+                            </div>
+
+                            {/* Imagen Diagrama (Bottom) - Reemplaza los bullets */}
+                            <div class="mt-auto p-6 pt-0">
+                                <div class="relative aspect-[4/3] rounded-lg overflow-hidden bg-gray-50 border border-gray-100 shadow-inner group/diagram">
+                                    {job.diagramImage ? (
+                                        <img 
+                                            src={job.diagramImage} 
+                                            alt={`Diagrama de ${job.title}`}
+                                            class="w-full h-full object-contain p-2 transition-transform duration-500 group-hover/diagram:scale-110"
+                                        />
+                                    ) : (
+                                        <div class="w-full h-full flex items-center justify-center text-gray-300">
+                                            <span class="text-xs uppercase font-bold tracking-widest">[ Espacio para Diagrama ]</span>
+                                        </div>
+                                    )}
+                                </div>
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN 2: Modelos y Sistemas (Fondo Gris Claro - 2 Columnas) ===== -->
+    <section class="bg-[#F1F5F9] py-20 md:py-24 border-y border-gray-200">
+        <div class="container mx-auto px-6 lg:px-12 max-w-[1600px]">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                {
+                    row2.map((job) => (
+                        <div class="grid-card group bg-white border-t-4 border-transparent hover:border-primary shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 flex flex-col h-full">
+                            {/* Imagen Superior Horizontal */}
+                            <div class="relative h-[260px] overflow-hidden bg-gray-100 shrink-0">
+                                <img
+                                    src={job.image || "https://res.cloudinary.com/ccdcloudy/image/upload/v1774882866/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/modelos-predictivos-series-de-tiempo_hrcwyt.jpg"}
+                                    alt={job.title}
+                                    class="w-full h-full object-cover transition-transform duration-[3000ms] group-hover:scale-[1.08]"
+                                />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                            </div>
+
+                            {/* Contenido Texto */}
+                            <div class="p-10 pb-4 flex flex-col">
+                                <h3 class="font-sans text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors leading-tight">
+                                    {job.title}
+                                </h3>
+                                <p class="font-sans text-gray-600 leading-relaxed text-lg">
+                                    {job.bullet}
+                                </p>
+                            </div>
+
+                            {/* Imagen Diagrama Grande (Bottom) - Más Estrecho */}
+                            <div class="mt-auto p-10 pt-4">
+                                <div class="relative h-[320px] max-w-[92%] mx-auto rounded-lg overflow-hidden bg-gray-50 border border-gray-100 shadow-inner group/diagram">
+                                    {job.diagramImage ? (
+                                        <img 
+                                            src={job.diagramImage} 
+                                            alt={`Diagrama de ${job.title}`}
+                                            class="w-full h-full object-contain p-2 transition-transform duration-500 group-hover/diagram:scale-110"
+                                        />
+                                    ) : (
+                                        <div class="w-full h-full flex items-center justify-center text-gray-300">
+                                            <span class="text-xs uppercase font-bold tracking-widest">[ Espacio para Diagrama ]</span>
+                                        </div>
+                                    )}
+                                </div>
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
+        </div>
+    </section>
+</CapabilityLayout>
+
+<style>
+    .nt-title {
+        animation: fadeSlideUp 0.7s ease-out both;
+    }
+    .grid-card {
+        animation: fadeSlideUp 0.6s ease-out both;
+    }
+
+    @keyframes fadeSlideUp {
+        from {
+            opacity: 0;
+            transform: translateY(25px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>

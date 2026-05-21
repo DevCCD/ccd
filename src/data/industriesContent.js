@@ -31,7 +31,7 @@ export const industriesContent = {
                 link: "/capacidades/evaluacion#nuestro-trabajo"
             },
             {
-                title: "Fortalecimiento de capacidades a organizaciones agropecuarias para mejorar la productividad de las cadenas de valor de productos.",
+                title: "Fortalecimiento de capacidades a organizaciones agropecuarias para mejorar la productividad de las cadenas de valor de productos",
                 image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773297234/Web%20CCD/Industrias/El-rol-de-ingeniero-agroindustrial1_owf0wj.jpg",
                 link: "/capacidades/fortalecimiento#nuestro-trabajo"
             }

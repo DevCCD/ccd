@@ -296,9 +296,9 @@ export const teamMembers = {
         "role": "Competitividad, Desarrollo y Manufactura",
         "photos": {
             "formal": "https://res.cloudinary.com/ccdcloudy/image/upload/v1778835514/Web%20CCD/Equipo/Jorge/jorge-ruiz1_nthcep.png",
-            "casual": "https://res.cloudinary.com/ccdcloudy/image/upload/v1778835185/Web%20CCD/Equipo/Jorge/jorge-ruiz_ducukr.png",
-            "detail": "https://res.cloudinary.com/ccdcloudy/image/upload/v1778835185/Web%20CCD/Equipo/Jorge/jorge-ruiz_ducukr.png",
-            "extra": "/jorge-ruiz.png"
+            "casual": "https://res.cloudinary.com/ccdcloudy/image/upload/v1778835514/Web%20CCD/Equipo/Jorge/jorge-ruiz1_nthcep.png",
+            "detail": "https://res.cloudinary.com/ccdcloudy/image/upload/v1778835514/Web%20CCD/Equipo/Jorge/jorge-ruiz1_nthcep.png",
+            "extra": "https://res.cloudinary.com/ccdcloudy/image/upload/v1778835514/Web%20CCD/Equipo/Jorge/jorge-ruiz1_nthcep.png"
         },
         "linkedin": "https://www.linkedin.com/in/jorge-andrew-ruiz-barrios-ba27b1203/",
         "intro": "Jorge lidera nuestro trabajo sobre competitividad y desarrollo local concertado a nivel distrital, con soporte del área de estudios económicos, investigación, sistematización y análisis de información estadística.",

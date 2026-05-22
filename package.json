@@ -9,14 +9,18 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/node": "^9.5.5",
     "@emailjs/browser": "^4.4.1",
+    "@sendgrid/mail": "^8.1.6",
     "@tailwindcss/vite": "^4.1.17",
     "astro": "^5.15.5",
-    "gsap": "^3.13.0"
+    "gsap": "^3.13.0",
+    "resend": "^6.12.3"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^6.0.2",
     "autoprefixer": "^10.4.22",
+    "baseline-browser-mapping": "^2.10.32",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.18"
   }

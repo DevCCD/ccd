@@ -1,9 +1,11 @@
 import { defineConfig } from 'astro/config';
-import tailwind from "@astrojs/tailwind"; // <-- 1. LA IMPORTACIÓN
+import node from '@astrojs/node';
+import tailwind from '@astrojs/tailwind';
 
-
-
-// https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind()] // <-- 2. LA INTEGRACIÓN
+  // En Astro 5, el comportamiento 'hybrid' ya es el predeterminado
+  adapter: node({
+    mode: 'standalone'
+  }),
+  integrations: [tailwind()]
 });

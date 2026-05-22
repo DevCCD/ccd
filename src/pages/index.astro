@@ -148,15 +148,16 @@ const directores = [
 
   <!-- SECCIÓN: CONTADORES DE IMPACTO -->
   <section class="bg-white py-12 md:py-20 border-t border-gray-100">
-    <div class="container mx-auto px-6 max-w-[1200px]">
+    <div class="container mx-auto px-6">
+      <!-- Primera fila: 3 tarjetas principales -->
       <div
-        class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 text-center gsap-counter-section"
+        class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 text-center gsap-counter-section mb-6"
       >
-        <!-- Contador 1 -->
+        <!-- Contador 1: Años de Experiencia -->
         <div
-          class="flex flex-col items-center justify-center p-8 bg-gray-50/80 hover:bg-gray-50 transition-colors border-b-4 border-transparent hover:border-primary"
+          class="flex flex-col items-center justify-center p-8 bg-gray-200/80 hover:bg-gray-300 transition-colors border-b-4 border-transparent hover:border-primary"
         >
-          <div class="text-gray-800 mb-6">
+          <div class="text-primary mb-6 flex justify-center items-center h-16">
             <svg
               class="w-14 h-14 md:w-16 md:h-16"
               fill="none"
@@ -177,16 +178,16 @@ const directores = [
             <span class="counter-number" data-target="15">0</span>
           </div>
           <p
-            class="text-lg md:text-xl text-gray-500 max-w-[220px] tracking-widest font-semibold"
+            class="text-xl md:text-xl text-gray-500 max-w-[220px] tracking-widest font-semibold"
           >
             Años de Experiencia
           </p>
         </div>
-        <!-- Contador 2 -->
+        <!-- Contador 2: Proyectos Ejecutados -->
         <div
-          class="flex flex-col items-center justify-center p-8 bg-gray-50/80 hover:bg-gray-50 transition-colors border-b-4 border-transparent hover:border-primary"
+          class="flex flex-col items-center justify-center p-8 bg-gray-200/80 hover:bg-gray-300 transition-colors border-b-4 border-transparent hover:border-primary"
         >
-          <div class="text-gray-800 mb-6">
+          <div class="text-primary mb-6 flex justify-center items-center h-16">
             <svg
               class="w-14 h-14 md:w-16 md:h-16"
               fill="none"
@@ -208,97 +209,171 @@ const directores = [
             <span class="counter-number" data-target="100">0</span>
           </div>
           <p
-            class="text-lg md:text-xl text-gray-500 max-w-[220px] tracking-widest font-semibold"
+            class="text-xl md:text-xl text-gray-500 max-w-[220px] tracking-widest font-semibold"
           >
             Proyectos Ejecutados
           </p>
         </div>
-        <!-- Contador 3 -->
+        <!-- Contador 3: Estudios Económicos -->
         <div
-          class="flex flex-col items-center justify-center p-8 bg-gray-50/80 hover:bg-gray-50 transition-colors border-b-4 border-transparent hover:border-primary"
+          class="flex flex-col items-center justify-center p-8 bg-gray-200/80 hover:bg-gray-300 transition-colors border-b-4 border-transparent hover:border-primary"
         >
-          <div class="text-gray-800 mb-6">
+          <div class="text-primary mb-6 flex justify-center items-center h-16">
             <svg
-              class="w-14 h-14 md:w-16 md:h-16"
+              width="80px"
+              height="90px"
+              viewBox="0 0 64 64"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke-width="3"
+              stroke="#910121"
               fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              stroke-width="1.2"
+              ><circle cx="31.89" cy="22.71" r="5.57"></circle><path
+                d="M43.16,43.74A11.28,11.28,0,0,0,31.89,32.47h0A11.27,11.27,0,0,0,20.62,43.74Z"
+              ></path><circle cx="48.46" cy="22.71" r="5.57"></circle><path
+                d="M46.87,43.74H59.73A11.27,11.27,0,0,0,48.46,32.47h0a11.24,11.24,0,0,0-5.29,1.32"
+              ></path><circle cx="15.54" cy="22.71" r="5.57"></circle><path
+                d="M17.13,43.74H4.27A11.27,11.27,0,0,1,15.54,32.47h0a11.24,11.24,0,0,1,5.29,1.32"
+              ></path></svg
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125v-11.25zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"
-              ></path>
-            </svg>
           </div>
           <div
             class="relative inline-flex items-center justify-center font-sans text-6xl md:text-7xl font-black text-primary mb-4"
           >
             <span class="absolute right-full mr-2 text-4xl md:text-5xl">+</span>
-            <span class="counter-number" data-target="120">0</span>
+            <span class="counter-number" data-target="75">0</span>
           </div>
           <p
-            class="text-lg md:text-xl text-gray-500 max-w-[220px] tracking-widest font-semibold"
+            class="text-xl md:text-xl text-gray-500 max-w-[220px] tracking-widest font-semibold"
           >
-            Estudios Económicos
+            Consultores Externos
           </p>
         </div>
-        <!-- Contador 4 -->
+      </div>
+
+      <!-- Segunda fila: 5 tarjetas simétricas -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6 text-center gsap-counter-section"
+      >
+        <!-- Contador 4: Localidades y Comunidades -->
         <div
-          class="flex flex-col items-center justify-center p-8 bg-gray-50/80 hover:bg-gray-50 transition-colors border-b-4 border-transparent hover:border-primary"
+          class="flex flex-col items-center justify-center p-6 md:p-8 bg-gray-200/80 hover:bg-gray-300 transition-colors border-b-4 border-transparent hover:border-primary"
         >
-          <div class="text-gray-800 mb-6">
-            <svg
-              width="100px"
-              height="100px"
-              viewBox="0 0 64.00 64.00"
-              xmlns="http://www.w3.org/2000/svg"
-              stroke-width="2.432"
-              stroke="currentColor"
-              fill="none"
-              transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)"
-            >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-
-              <g
-                id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke="#CCCCCC"
-                stroke-width="0.256"></g>
-
-              <g id="SVGRepo_iconCarrier">
-                <circle cx="31.89" cy="22.71" r="5.57"></circle>
-
-                <path
-                  d="M43.16,43.74A11.28,11.28,0,0,0,31.89,32.47h0A11.27,11.27,0,0,0,20.62,43.74Z"
-                ></path>
-
-                <circle cx="48.46" cy="22.71" r="5.57"></circle>
-
-                <path
-                  d="M46.87,43.74H59.73A11.27,11.27,0,0,0,48.46,32.47h0a11.24,11.24,0,0,0-5.29,1.32"
-                ></path>
-
-                <circle cx="15.54" cy="22.71" r="5.57"></circle>
-
-                <path
-                  d="M17.13,43.74H4.27A11.27,11.27,0,0,1,15.54,32.47h0a11.24,11.24,0,0,1,5.29,1.32"
-                ></path>
-              </g>
-            </svg>
+          <div class="mb-6 flex justify-center items-center h-24">
+            <img
+              src="https://res.cloudinary.com/ccdcloudy/image/upload/v1779479803/Web%20CCD/Iconos/Imagen16_lbdq3q.png"
+              alt="Localidades"
+              class="w-24 h-24 md:w-32 md:h-32 object-contain"
+            />
           </div>
           <div
-            class="relative inline-flex items-center justify-center font-sans text-6xl md:text-7xl font-black text-primary mb-4"
+            class="relative inline-flex items-center justify-center font-sans text-5xl md:text-6xl font-black text-primary mb-4"
           >
-            <span class="absolute right-full mr-2 text-4xl md:text-5xl">+</span>
-            <span class="counter-number" data-target="100">0</span>
+            <span class="absolute right-full mr-2 text-3xl md:text-xl">+</span>
+            <span class="counter-number" data-target="20">0</span>
           </div>
           <p
-            class="text-lg md:text-xl text-gray-500 max-w-[220px] tracking-widest font-semibold"
+            class="text-xl md:text-lg text-gray-500 max-w-[200px] tracking-widest font-semibold"
           >
-            Localidades y Comunidades
+            Nivel<br /> Países
+          </p>
+        </div>
+
+        <!-- Contador 5: Iniciativas Activas -->
+        <div
+          class="flex flex-col items-center justify-center p-6 md:p-8 bg-gray-200/80 hover:bg-gray-300 transition-colors border-b-4 border-transparent hover:border-primary"
+        >
+          <div class="mb-6 flex justify-center items-center h-24">
+            <img
+              src="https://res.cloudinary.com/ccdcloudy/image/upload/v1779476975/Web%20CCD/Iconos/Imagen18_u9a6eb.png"
+              alt="Iniciativas"
+              class="w-24 h-24 md:w-32 md:h-32 object-contain"
+            />
+          </div>
+          <div
+            class="relative inline-flex items-center justify-center font-sans text-5xl md:text-6xl font-black text-primary mb-4"
+          >
+            <span class="absolute right-full mr-2 text-3xl md:text-4xl">+</span>
+            <span class="counter-number" data-target="20">0</span>
+          </div>
+          <p
+            class="text-xl md:text-lg text-gray-500 max-w-[200px] tracking-widest font-semibold"
+          >
+            Nivel<br /> Regiones
+          </p>
+        </div>
+
+        <!-- Contador 6: Profesionales Especializados -->
+        <div
+          class="flex flex-col items-center justify-center p-6 md:p-8 bg-gray-200/80 hover:bg-gray-300 transition-colors border-b-4 border-transparent hover:border-primary"
+        >
+          <div class="mb-6 flex justify-center items-center h-24">
+            <img
+              src="https://res.cloudinary.com/ccdcloudy/image/upload/v1779479801/Web%20CCD/Iconos/Imagen21_rkyahu.png"
+              alt="Profesionales"
+              class="w-24 h-24 md:w-32 md:h-32 object-contain"
+            />
+          </div>
+          <div
+            class="relative inline-flex items-center justify-center font-sans text-5xl md:text-6xl font-black text-primary mb-4"
+          >
+            <span class="absolute right-full mr-2 text-3xl md:text-4xl">+</span>
+            <span class="counter-number" data-target="25">0</span>
+          </div>
+          <p
+            class="text-xl md:text-lg text-gray-500 max-w-[200px] tracking-widest font-semibold"
+          >
+            Nivel<br /> Provincias
+          </p>
+        </div>
+
+        <!-- Contador 7: Soluciones Implementadas -->
+        <div
+          class="flex flex-col items-center justify-center p-6 md:p-8 bg-gray-200/80 hover:bg-gray-300 transition-colors border-b-4 border-transparent hover:border-primary"
+        >
+          <div class="mb-6 flex justify-center items-center h-24">
+            <img
+              src="https://res.cloudinary.com/ccdcloudy/image/upload/v1779479802/Web%20CCD/Iconos/Imagen92_wfncxt.png"
+              class="w-24
+              h-24
+              md:w-32
+              md:h-32
+              object-contain"
+            />
+          </div>
+          <div
+            class="relative inline-flex items-center justify-center font-sans text-5xl md:text-6xl font-black text-primary mb-4"
+          >
+            <span class="absolute right-full mr-2 text-3xl md:text-4xl">+</span>
+            <span class="counter-number" data-target="190">0</span>
+          </div>
+          <p
+            class="text-xl md:text-lg text-gray-500 max-w-[200px] tracking-widest font-semibold"
+          >
+            Nivel<br /> Distritos
+          </p>
+        </div>
+
+        <!-- Contador 8: Colaboraciones Estratégicas -->
+        <div
+          class="flex flex-col items-center justify-center p-6 md:p-8 bg-gray-200/80 hover:bg-gray-300 transition-colors border-b-4 border-transparent hover:border-primary"
+        >
+          <div class="mb-6 flex justify-center items-center h-24">
+            <img
+              src="https://res.cloudinary.com/ccdcloudy/image/upload/v1779479801/Web%20CCD/Iconos/Imagen23_vujbwi.png"
+              alt="Colaboraciones"
+              class="w-24 h-24 md:w-32 md:h-32 object-contain"
+            />
+          </div>
+          <div
+            class="relative inline-flex items-center justify-center font-sans text-5xl md:text-6xl font-black text-primary mb-4"
+          >
+            <span class="absolute right-full mr-2 text-3xl md:text-4xl">+</span>
+            <span class="counter-number" data-target="350">0</span>
+          </div>
+          <p
+            class="text-xl md:text-lg text-gray-500 max-w-[200px] tracking-widest font-semibold"
+          >
+            Nivel<br /> Comunidades
           </p>
         </div>
       </div>
@@ -525,17 +600,19 @@ const directores = [
   });
 
   // E. Animación de Contadores de Impacto
-  // Animación de aparición de las tarjetas
-  gsap.from(".gsap-counter-section > div", {
-    scrollTrigger: {
-      trigger: ".gsap-counter-section",
-      start: "top 85%",
-    },
-    y: 30,
-    opacity: 0,
-    duration: 0.6,
-    stagger: 0.15,
-    ease: "power3.out",
+  // Animación de aparición de las tarjetas (Primera fila)
+  gsap.utils.toArray(".gsap-counter-section").forEach((section: any) => {
+    gsap.from(section.querySelectorAll(":scope > div"), {
+      scrollTrigger: {
+        trigger: section,
+        start: "top 85%",
+      },
+      y: 30,
+      opacity: 0,
+      duration: 0.6,
+      stagger: 0.15,
+      ease: "power3.out",
+    });
   });
 
   // Animación del conteo de números
@@ -547,7 +624,7 @@ const directores = [
       duration: 2.5,
       ease: "power3.out",
       scrollTrigger: {
-        trigger: ".gsap-counter-section",
+        trigger: el.closest(".gsap-counter-section"),
         start: "top 85%",
       },
       onUpdate: () => {

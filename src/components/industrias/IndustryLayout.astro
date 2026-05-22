@@ -137,7 +137,7 @@ const {
 
     <!-- SECCIÓN NUESTROS PRODUCTOS Y SERVICIOS -->
     {
-        relatedWork && relatedWork.length > 0 && (
+        relatedWork && relatedWork.length > 0 && title !== "Minería" && title !== "Hidrocarburos" && (
             <section class="bg-gray-300 py-20 border-t border-gray-100">
                 <div class="container mx-auto px-6 lg:px-12 max-w-[1600px]">
                     <h2 class="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-12 border-b-2 border-primary pb-4 inline-block">
@@ -147,39 +147,24 @@ const {
                     <div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12">
                         {relatedWork.map((work, index) => {
                             const total = relatedWork.length;
-
-                            // Lógica para grilla de 3 o 4 columnas cubriendo todos los espacios:
-                            let colClass = "md:col-span-6 lg:col-span-4"; // 3 columnas por defecto
+                            let colClass = "md:col-span-6 lg:col-span-4";
 
                             if (total === 1) {
-                                colClass =
-                                    "md:col-span-12 lg:col-span-8 lg:col-start-3";
+                                colClass = "md:col-span-12 lg:col-span-8 lg:col-start-3";
                             } else if (total === 2) {
                                 colClass = "md:col-span-6";
                             } else if (total === 4) {
-                                colClass = "md:col-span-6 lg:col-span-3"; // 4 columnas
+                                colClass = "md:col-span-6 lg:col-span-3";
                             } else if (total === 5) {
-                                colClass =
-                                    index < 2
-                                        ? "md:col-span-6"
-                                        : "md:col-span-6 lg:col-span-4"; // 2 arriba, 3 abajo
+                                colClass = index < 2 ? "md:col-span-6" : "md:col-span-6 lg:col-span-4";
                             } else if (total === 7) {
-                                colClass =
-                                    index < 4
-                                        ? "md:col-span-6 lg:col-span-3"
-                                        : "md:col-span-6 lg:col-span-4"; // 4 arriba, 3 abajo
+                                colClass = index < 4 ? "md:col-span-6 lg:col-span-3" : "md:col-span-6 lg:col-span-4";
                             } else if (total === 8) {
-                                colClass = "md:col-span-6 lg:col-span-3"; // 4 columnas
+                                colClass = "md:col-span-6 lg:col-span-3";
                             } else if (total === 10) {
-                                colClass =
-                                    index < 4
-                                        ? "md:col-span-6 lg:col-span-3"
-                                        : "md:col-span-6 lg:col-span-4"; // 4 arriba, 6 abajo en filas de 3
+                                colClass = index < 4 ? "md:col-span-6 lg:col-span-3" : "md:col-span-6 lg:col-span-4";
                             } else if (total === 11) {
-                                colClass =
-                                    index < 8
-                                        ? "md:col-span-6 lg:col-span-3"
-                                        : "md:col-span-6 lg:col-span-4"; // 8 arriba en filas de 4, 3 abajo
+                                colClass = index < 8 ? "md:col-span-6 lg:col-span-3" : "md:col-span-6 lg:col-span-4";
                             }
 
                             return (
@@ -196,19 +181,7 @@ const {
                                     </div>
                                     <h4 class="font-serif text-xl font-bold text-gray-900 flex items-start justify-between group-hover:text-primary transition-colors duration-300">
                                         <span class="pr-4">{work.title}</span>
-                                        <svg
-                                            class="w-6 h-6 text-primary transform group-hover:translate-x-1 transition-transform mt-1 flex-shrink-0"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="3"
-                                            viewBox="0 0 24 24"
-                                        >
-                                            <path
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                d="M9 5l7 7-7 7"
-                                            />
-                                        </svg>
+                                        <svg class="w-6 h-6 text-primary transform group-hover:translate-x-1 transition-transform mt-1 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
                                     </h4>
                                 </a>
                             );
@@ -216,6 +189,171 @@ const {
                     </div>
                 </div>
             </section>
+        )
+    }
+
+    {
+        relatedWork && relatedWork.length > 0 && title === "Minería" && (
+            <div class="mineria-servicios">
+                <!-- FILA 1 -->
+                <section class="bg-gray-100 py-20 border-t border-gray-200">
+                    <div class="container mx-auto px-6 lg:px-12 max-w-[1600px]">
+                        <h2 class="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-12 border-b-2 border-primary pb-4 inline-block">
+                            Nuestros Servicios
+                        </h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                            {relatedWork.slice(0, 2).map((work) => (
+                                <a href={work.link || "#"} class="grid-card group bg-white shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 flex flex-col h-full rounded-sm">
+                                    <div class="relative aspect-video overflow-hidden bg-gray-200 shrink-0">
+                                        <img src={work.image} alt={work.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                                    </div>
+                                    <div class="p-8 flex flex-col flex-grow">
+                                        <h4 class="font-serif text-xl font-bold text-gray-900 flex items-start justify-between group-hover:text-primary transition-colors duration-300">
+                                            <span class="pr-4">{work.title}</span>
+                                            <svg class="w-6 h-6 text-primary transform group-hover:translate-x-1 transition-transform mt-1 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                                        </h4>
+                                    </div>
+                                </a>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- FILA 2 -->
+                <section class="bg-[#e8f1f8] py-20 border-y border-blue-100/50">
+                    <div class="container mx-auto px-6 lg:px-12 max-w-[1600px]">
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12">
+                            {relatedWork.slice(2, 3).map((work) => (
+                                <a href={work.link || "#"} class="md:col-span-12 lg:col-span-8 lg:col-start-3 grid-card group bg-white shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 flex flex-col h-full rounded-sm">
+                                    <div class="relative aspect-video overflow-hidden bg-gray-200 shrink-0">
+                                        <img src={work.image} alt={work.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                                    </div>
+                                    <div class="p-8 flex flex-col flex-grow">
+                                        <h4 class="font-serif text-2xl font-bold text-gray-900 flex items-start justify-between group-hover:text-primary transition-colors duration-300">
+                                            <span class="pr-4">{work.title}</span>
+                                            <svg class="w-8 h-8 text-primary transform group-hover:translate-x-1 transition-transform mt-1 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                                        </h4>
+                                    </div>
+                                </a>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FILA 3 -->
+                <section class="bg-gray-50 py-20">
+                    <div class="container mx-auto px-6 lg:px-12 max-w-[1600px]">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                            {relatedWork.slice(3, 5).map((work) => (
+                                <a href={work.link || "#"} class="grid-card group bg-white shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 flex flex-col h-full rounded-sm">
+                                    <div class="relative aspect-video overflow-hidden bg-gray-200 shrink-0">
+                                        <img src={work.image} alt={work.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                                    </div>
+                                    <div class="p-8 flex flex-col flex-grow">
+                                        <h4 class="font-serif text-xl font-bold text-gray-900 flex items-start justify-between group-hover:text-primary transition-colors duration-300">
+                                            <span class="pr-4">{work.title}</span>
+                                            <svg class="w-6 h-6 text-primary transform group-hover:translate-x-1 transition-transform mt-1 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                                        </h4>
+                                    </div>
+                                </a>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FILA 4 -->
+                <section class="bg-gray-300 py-20 border-t border-gray-200">
+                    <div class="container mx-auto px-6 lg:px-12 max-w-[1600px]">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                            {relatedWork.slice(5, 7).map((work) => (
+                                <a href={work.link || "#"} class="grid-card group bg-white shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 flex flex-col h-full rounded-sm">
+                                    <div class="relative aspect-video overflow-hidden bg-gray-200 shrink-0">
+                                        <img src={work.image} alt={work.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                                    </div>
+                                    <div class="p-8 flex flex-col flex-grow">
+                                        <h4 class="font-serif text-xl font-bold text-gray-900 flex items-start justify-between group-hover:text-primary transition-colors duration-300">
+                                            <span class="pr-4">{work.title}</span>
+                                            <svg class="w-6 h-6 text-primary transform group-hover:translate-x-1 transition-transform mt-1 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                                        </h4>
+                                    </div>
+                                </a>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+            </div>
+        )
+    }
+
+    {
+        relatedWork && relatedWork.length > 0 && title === "Hidrocarburos" && (
+            <div class="hidrocarburos-servicios">
+                <!-- FILA 1 -->
+                <section class="bg-gray-300 py-20 border-t border-gray-200">
+                    <div class="container mx-auto px-6 lg:px-12 max-w-[1600px]">
+                        <h2 class="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-12 border-b-2 border-primary pb-4 inline-block">
+                            Nuestros Servicios
+                        </h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                            {relatedWork.slice(0, 2).map((work) => (
+                                <a href={work.link || "#"} class="grid-card group bg-white shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 flex flex-col h-full rounded-sm">
+                                    <div class="relative aspect-video overflow-hidden bg-gray-200 shrink-0">
+                                        <img src={work.image} alt={work.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                                    </div>
+                                    <div class="p-8 flex flex-col flex-grow">
+                                        <h4 class="font-serif text-xl font-bold text-gray-900 flex items-start justify-between group-hover:text-primary transition-colors duration-300">
+                                            <span class="pr-4">{work.title}</span>
+                                            <svg class="w-6 h-6 text-primary transform group-hover:translate-x-1 transition-transform mt-1 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                                        </h4>
+                                    </div>
+                                </a>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- FILA 2 -->
+                <section class="bg-primary-dark py-20 border-y border-blue-100/50">
+                    <div class="container mx-auto px-6 lg:px-12 max-w-[1600px]">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                            {relatedWork.slice(2, 4).map((work) => (
+                                <a href={work.link || "#"} class="grid-card group bg-white shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 flex flex-col h-full rounded-sm">
+                                    <div class="relative aspect-video overflow-hidden bg-gray-200 shrink-0">
+                                        <img src={work.image} alt={work.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                                    </div>
+                                    <div class="p-8 flex flex-col flex-grow">
+                                        <h4 class="font-serif text-xl font-bold text-gray-900 flex items-start justify-between group-hover:text-primary transition-colors duration-300">
+                                            <span class="pr-4">{work.title}</span>
+                                            <svg class="w-6 h-6 text-primary transform group-hover:translate-x-1 transition-transform mt-1 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                                        </h4>
+                                    </div>
+                                </a>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FILA 3 -->
+                <section class="bg-secondary-light py-20">
+                    <div class="container mx-auto px-6 lg:px-12 max-w-[1600px]">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                            {relatedWork.slice(4, 6).map((work) => (
+                                <a href={work.link || "#"} class="grid-card group bg-white shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 flex flex-col h-full rounded-sm">
+                                    <div class="relative aspect-video overflow-hidden bg-gray-200 shrink-0">
+                                        <img src={work.image} alt={work.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                                    </div>
+                                    <div class="p-8 flex flex-col flex-grow">
+                                        <h4 class="font-serif text-xl font-bold text-gray-900 flex items-start justify-between group-hover:text-primary transition-colors duration-300">
+                                            <span class="pr-4">{work.title}</span>
+                                            <svg class="w-6 h-6 text-primary transform group-hover:translate-x-1 transition-transform mt-1 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                                        </h4>
+                                    </div>
+                                </a>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+            </div>
         )
     }
 

@@ -35,7 +35,8 @@ const simpleInactiveClass =
 
 <header
     id="main-header"
-    class="bg-white text-gray-800 sticky top-0 z-50 transition-all duration-300 relative"
+    class="bg-white text-gray-800 fixed top-0 left-0 w-full z-50"
+    style="transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;"
 >
     <!-- NAV CONTAINER: Altura reducida a h-[72px] para mayor elegancia -->
     <nav
@@ -767,31 +768,67 @@ const simpleInactiveClass =
         </div>
     </div>
 </header>
+<div id="header-spacer" class="h-[72px]"></div>
 
-<script>
+<script is:inline>
     // Script Menú Hamburguesa
-    const mobileMenuButton = document.getElementById("mobile-menu-button");
-    const mobileMenu = document.getElementById("mobile-menu");
-    const hamburgerIcon = document.getElementById("hamburger-icon");
-    const closeIcon = document.getElementById("close-icon");
+    (function() {
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const hamburgerIcon = document.getElementById("hamburger-icon");
+        const closeIcon = document.getElementById("close-icon");
 
-    if (mobileMenuButton && mobileMenu && hamburgerIcon && closeIcon) {
-        mobileMenuButton.addEventListener("click", () => {
-            mobileMenu.classList.toggle("hidden");
-            hamburgerIcon.classList.toggle("hidden");
-            closeIcon.classList.toggle("hidden");
-        });
-    }
+        if (mobileMenuButton && mobileMenu && hamburgerIcon && closeIcon) {
+            mobileMenuButton.addEventListener("click", function() {
+                mobileMenu.classList.toggle("hidden");
+                hamburgerIcon.classList.toggle("hidden");
+                closeIcon.classList.toggle("hidden");
+            });
+        }
 
-    // Script Acordeón "Nosotros"
-    const nosotrosBtn = document.getElementById("accordion-nosotros-btn");
-    const nosotrosPanel = document.getElementById("panel-nosotros");
-    const nosotrosArrow = document.getElementById("arrow-nosotros");
+        // Script Acordeón "Nosotros"
+        const nosotrosBtn = document.getElementById("accordion-nosotros-btn");
+        const nosotrosPanel = document.getElementById("panel-nosotros");
+        const nosotrosArrow = document.getElementById("arrow-nosotros");
 
-    if (nosotrosBtn && nosotrosPanel && nosotrosArrow) {
-        nosotrosBtn.addEventListener("click", () => {
-            nosotrosPanel.classList.toggle("hidden");
-            nosotrosArrow.classList.toggle("rotate-180");
-        });
-    }
+        if (nosotrosBtn && nosotrosPanel && nosotrosArrow) {
+            nosotrosBtn.addEventListener("click", function() {
+                nosotrosPanel.classList.toggle("hidden");
+                nosotrosArrow.classList.toggle("rotate-180");
+            });
+        }
+
+        // Script: Ocultar navbar al bajar, mostrar al subir
+        const header = document.getElementById("main-header");
+        if (header) {
+            let lastScrollY = window.scrollY;
+            let ticking = false;
+
+            window.addEventListener("scroll", function() {
+                if (!ticking) {
+                    window.requestAnimationFrame(function() {
+                        const currentScrollY = window.scrollY;
+                        const delta = currentScrollY - lastScrollY;
+
+                        // No ocultar si un dropdown está abierto
+                        const isDropdownOpen = header.querySelector(".group:hover") !== null;
+
+                        if (currentScrollY <= 10) {
+                            header.style.transform = "translateY(0)";
+                            header.style.boxShadow = "none";
+                        } else if (delta > 5 && !isDropdownOpen) {
+                            header.style.transform = "translateY(-100%)";
+                        } else if (delta < -5) {
+                            header.style.transform = "translateY(0)";
+                            header.style.boxShadow = "0 2px 20px rgba(0,0,0,0.08)";
+                        }
+
+                        lastScrollY = currentScrollY;
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            }, { passive: true });
+        }
+    })();
 </script>

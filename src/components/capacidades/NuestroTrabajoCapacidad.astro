@@ -34,7 +34,7 @@ const { workList } = Astro.props;
             workList && workList.length > 0 && (
                 <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-10 items-stretch">
                     {workList.map((work) => (
-                        <div class="h-full flex flex-col group bg-white border-t-4 border-transparent hover:border-secondary overflow-hidden transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-2xl">
+                        <div class="h-full flex flex-col group bg-white overflow-hidden transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-2xl">
                             {/* Imagen Encabezado Condicional (Solo si tiene imagen asignada) */}
                             {work.image && work.image.trim() !== "" && (
                                 <div class="h-[300px] relative overflow-hidden bg-gray-100 shrink-0">

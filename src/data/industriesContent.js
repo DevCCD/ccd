@@ -133,12 +133,12 @@ export const industriesContent = {
         relatedWork: [
             {
                 title: "Planes de competitividad y productividad para circunscripciones de proyectos hidrocarburiferos",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773326914/Web%20CCD/Industrias/TRMIDI624RDU3EMHATIHJC756I_kzwdxd.avif",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1779469824/Web%20CCD/Industrias/Imagen12_d819jw.png",
                 link: "/capacidades/evaluacion"
             },
             {
                 title: "Planes de desarrollo concertados regionales y locales",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773326966/Web%20CCD/Industrias/Sector-hidrocarburos-de-Piura-registra-mas-de-50-acciones-de-supervision-ambiental-de-OEFA_l3gyla.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1779470408/Web%20CCD/Industrias/Imagen11_pioicy.png",
                 link: "/capacidades/competitividad#nuestro-trabajo"
             },
             {
@@ -296,22 +296,22 @@ export const industriesContent = {
         relatedWork: [
             {
                 title: "Planes de competitividad y productividad para circunscripciones de proyectos mineros",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773340541/Web%20CCD/Industrias/mineria3_ynklpx.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1779462762/Web%20CCD/Industrias/Imagen2_lnqcou.png",
                 link: "/capacidades/evaluacion"
             },
             {
                 title: "Planes de desarrollo concertados regionales y locales",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773340928/Web%20CCD/Industrias/16914380811G0iaXq3_iundq2.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1779462763/Web%20CCD/Industrias/Imagen3_qrko8y.png",
                 link: "/capacidades/competitividad#nuestro-trabajo"
             },
             {
                 title: "Potenciación del desarrollo con impulso de corredores económicos territoriales",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770859894/Web%20CCD/Corporate%20Flat%20Illustration/corredores_fmafpv.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1779464389/Web%20CCD/Industrias/Captura_de_pantalla_2026-05-22_103931_o3rnjg.png",
                 link: "/capacidades/desarrollo"
             },
             {
-                title: "Desarrollo de clusters y microclusters relacionados a los proyectos mineros",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773341268/Web%20CCD/Corporate%20Flat%20Illustration/Planes_de_desarrollo_evolucion_mineria_minimalist__delpmaspu_pjjmed.jpg",
+                title: "Evaluación integral de proyectos de inversión social relacionados a proyectos mineros",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1779464980/Web%20CCD/Industrias/Imagen6_ss5fve.jpg",
                 link: "/capacidades/fortalecimiento"
             },
             {
@@ -320,10 +320,15 @@ export const industriesContent = {
                 link: "/capacidades/fortalecimiento"
             },
             {
-                title: "Evaluación integral de proyectos de inversión social relacionados a proyectos mineros",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773340985/Web%20CCD/Industrias/PM6_zms1qs.jpg",
+                title: "Desarrollo de proveedores y fuerza laboral local",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1779468594/Web%20CCD/Industrias/Imagen7_mz8hao.png",
+                link: "/capacidades/ia-y-analitica"
+            },
+            {
+                title: "Desarrollo de clusters y microclusters relacionados a los proyectos mineros",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773341268/Web%20CCD/Corporate%20Flat%20Illustration/Planes_de_desarrollo_evolucion_mineria_minimalist__delpmaspu_pjjmed.jpg",
                 link: "/capacidades/fortalecimiento"
-            }
+            },
         ]
     },
     "seguridad": {

@@ -7,563 +7,552 @@ import { teamMembers } from "../data/teamData";
 
 // Directores principales
 const directores = [
-    teamMembers["rudy-laguna"],
-    teamMembers["viviana-sanchez"],
-    teamMembers["alvaro-gordillo"],
+  teamMembers["rudy-laguna"],
+  teamMembers["viviana-sanchez"],
+  teamMembers["melissa-sanchez"],
 ];
 ---
 
 <Layout
-    title="CCD - Centro para la Competitividad y el Desarrollo"
-    description="Promovemos el desarrollo territorial sostenible a través de soluciones integrales en competitividad, inversión y evaluación de proyectos."
+  title="CCD - Centro para la Competitividad y el Desarrollo"
+  description="Promovemos el desarrollo territorial sostenible a través de soluciones integrales en competitividad, inversión y evaluación de proyectos."
 >
-    <section class="bg-white pt-16 pb-16 px-6 sm:px-8 xl:px-0">
-        <div class="max-w-screen-xl mx-auto">
-            <!-- 9 Cards Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {
-                    [
-                        {
-                            title: "Competitividad",
-                            link: "/capacidades/competitividad",
-                            image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772640888/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/Competitividad_inpcde.webp",
-                            category: "Capacidades",
-                        },
-                        {
-                            title: "Desarrollo",
-                            link: "/capacidades/desarrollo",
-                            image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772640288/Web%20CCD/Capacidades%20e%20Industrias/Desarrollo/Desarrollo_xepqfz.webp",
-                            category: "Capacidades",
-                        },
-                        {
-                            title: "Industrias",
-                            link: "/industrias",
-                            image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773279609/Web%20CCD/Industrias/pexels-sevenstormphotography-439416_kkzgsq.jpg",
-                            category: "Experiencia",
-                        },
-                        {
-                            title: "Minería",
-                            link: "/industrias/mineria",
-                            image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773340518/Web%20CCD/Industrias/mineria_ymbax9.jpg",
-                            category: "Industrias",
-                        },
-                        {
-                            title: "Hidrocarburos",
-                            link: "/industrias/hidrocarburos",
-                            image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770796112/Web%20CCD/Industrias/hidrocarburos_mz5gjc.jpg",
-                            category: "Industrias",
-                        },
-                        {
-                            title: "Agropecuario",
-                            link: "/industrias/agropecuario",
-                            image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778793571/Web%20CCD/Industrias/ChatGPT_Image_14_may_2026_04_19_07_p.m_dinu1k.png",
-                            category: "Industrias",
-                        },
-                        {
-                            title: "Inteligencia Artificial",
-                            link: "/capacidades/ia-y-analitica",
-                            image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772644019/Web%20CCD/Industrias/ia_k5ny4x.webp",
-                            category: "Industrias",
-                        },
-                        {
-                            title: "Países",
-                            link: "/paises",
-                            image: "https://res.cloudinary.com/ccdcloudy/image/upload/q_auto/f_auto/v1775054356/Web%20CCD/paises/Me_gusta_foto_202604010938_l3s95i.jpg",
-                            category: "Cobertura Global",
-                        },
-                        {
-                            title: "Enfoque de trabajo",
-                            link: "/nosotros/enfoque",
-                            image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778831173/Web%20CCD/Industrias/modificar_imagen_para___cambiar_202605150245_g35r1u.jpg",
-                            category: "Metodología",
-                        },
-                    ].map((card) => (
-                        <a
-                            href={card.link}
-                            class="group relative overflow-hidden flex flex-col justify-end bg-gray-900 h-[220px] md:h-[240px] rounded-sm gsap-hero-card hover:-translate-y-1 hover:shadow-2xl transition-all duration-500 ease-out"
-                        >
-                            <img
-                                src={card.image}
-                                alt={card.title}
-                                class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-1000 bg-white"
-                            />
-                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/40 to-transparent group-hover:from-gray-900/95 transition-all duration-500" />
-                            <div class="relative z-10 p-6 md:p-8 transform group-hover:translate-y-[-4px] transition-transform duration-500">
-                                <p class="text-white/80 text-xs font-bold tracking-widest mb-2">
-                                    {card.category}
-                                </p>
-                                <h3 class="text-white text-2xl md:text-3xl font-serif font-bold group-hover:text-white transition-colors flex items-center">
-                                    {card.title}
-                                    <svg
-                                        class="w-5 h-5 ml-2 opacity-0 group-hover:opacity-100 transform -translate-x-4 group-hover:translate-x-0 transition-all duration-500"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        viewBox="0 0 24 24"
-                                    >
-                                        <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            stroke-width="2.5"
-                                            d="M9 5l7 7-7 7"
-                                        />
-                                    </svg>
-                                </h3>
-                            </div>
-                        </a>
-                    ))
-                }
-            </div>
+  <section class="bg-white pt-16 pb-16 px-6 sm:px-8 xl:px-0">
+    <div class="max-w-screen-xl mx-auto">
+      <!-- 9 Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {
+          [
+            {
+              title: "Competitividad",
+              link: "/capacidades/competitividad",
+              image:
+                "https://res.cloudinary.com/ccdcloudy/image/upload/v1772640888/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/Competitividad_inpcde.webp",
+              category: "Capacidades",
+            },
+            {
+              title: "Desarrollo",
+              link: "/capacidades/desarrollo",
+              image:
+                "https://res.cloudinary.com/ccdcloudy/image/upload/v1772640288/Web%20CCD/Capacidades%20e%20Industrias/Desarrollo/Desarrollo_xepqfz.webp",
+              category: "Capacidades",
+            },
+            {
+              title: "Industrias",
+              link: "/industrias",
+              image:
+                "https://res.cloudinary.com/ccdcloudy/image/upload/v1773279609/Web%20CCD/Industrias/pexels-sevenstormphotography-439416_kkzgsq.jpg",
+              category: "Experiencia",
+            },
+            {
+              title: "Minería",
+              link: "/industrias/mineria",
+              image:
+                "https://res.cloudinary.com/ccdcloudy/image/upload/v1773340518/Web%20CCD/Industrias/mineria_ymbax9.jpg",
+              category: "Industrias",
+            },
+            {
+              title: "Hidrocarburos",
+              link: "/industrias/hidrocarburos",
+              image:
+                "https://res.cloudinary.com/ccdcloudy/image/upload/v1770796112/Web%20CCD/Industrias/hidrocarburos_mz5gjc.jpg",
+              category: "Industrias",
+            },
+            {
+              title: "Agropecuario",
+              link: "/industrias/agropecuario",
+              image:
+                "https://res.cloudinary.com/ccdcloudy/image/upload/v1778793571/Web%20CCD/Industrias/ChatGPT_Image_14_may_2026_04_19_07_p.m_dinu1k.png",
+              category: "Industrias",
+            },
+            {
+              title: "Inteligencia Artificial",
+              link: "/capacidades/ia-y-analitica",
+              image:
+                "https://res.cloudinary.com/ccdcloudy/image/upload/v1772644019/Web%20CCD/Industrias/ia_k5ny4x.webp",
+              category: "Industrias",
+            },
+            {
+              title: "Países",
+              link: "/paises",
+              image:
+                "https://res.cloudinary.com/ccdcloudy/image/upload/q_auto/f_auto/v1775054356/Web%20CCD/paises/Me_gusta_foto_202604010938_l3s95i.jpg",
+              category: "Cobertura Global",
+            },
+            {
+              title: "Enfoque de trabajo",
+              link: "/nosotros/enfoque",
+              image:
+                "https://res.cloudinary.com/ccdcloudy/image/upload/v1778831173/Web%20CCD/Industrias/modificar_imagen_para___cambiar_202605150245_g35r1u.jpg",
+              category: "Metodología",
+            },
+          ].map((card) => (
+            <a
+              href={card.link}
+              class="group relative overflow-hidden flex flex-col justify-end bg-gray-900 h-[220px] md:h-[240px] rounded-sm gsap-hero-card hover:-translate-y-1 hover:shadow-2xl transition-all duration-500 ease-out"
+            >
+              <img
+                src={card.image}
+                alt={card.title}
+                class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-1000 bg-white"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/40 to-transparent group-hover:from-gray-900/95 transition-all duration-500" />
+              <div class="relative z-10 p-6 md:p-8 transform group-hover:translate-y-[-4px] transition-transform duration-500">
+                <p class="text-white/80 text-xs font-bold tracking-widest mb-2">
+                  {card.category}
+                </p>
+                <h3 class="text-white text-2xl md:text-3xl font-serif font-bold group-hover:text-white transition-colors flex items-center">
+                  {card.title}
+                  <svg
+                    class="w-5 h-5 ml-2 opacity-0 group-hover:opacity-100 transform -translate-x-4 group-hover:translate-x-0 transition-all duration-500"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.5"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </h3>
+              </div>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: INTRO/VALUE PROP -->
+  <section
+    class="py-24 bg-gradient-to-r from-primary-dark via-primary to-primary-dark text-white text-center"
+  >
+    <div class="container mx-auto px-6 max-w-4xl">
+      <p
+        class="font-serif text-xl md:text-xl text-white font-light gsap-fade-up leading-[1.8] md:leading-[1.9]"
+      >
+        Visión
+      </p>
+      <br />
+      <p
+        class="font-serif text-3xl md:text-4xl text-white leading-relaxed font-light gsap-fade-up leading-[1.8] md:leading-[1.3]"
+      >
+        "Promover el desarrollo y la prosperidad con oportunidades y alta
+        calidad de vida de la población nacional, regional, provincial,
+        distrital y comunal."
+      </p>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: CONTADORES DE IMPACTO -->
+  <section class="bg-white py-12 md:py-20 border-t border-gray-100">
+    <div class="container mx-auto px-6 max-w-[1200px]">
+      <div
+        class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 text-center gsap-counter-section"
+      >
+        <!-- Contador 1 -->
+        <div
+          class="flex flex-col items-center justify-center p-8 bg-gray-50/80 hover:bg-gray-50 transition-colors border-b-4 border-transparent hover:border-primary"
+        >
+          <div class="text-gray-800 mb-6">
+            <svg
+              class="w-14 h-14 md:w-16 md:h-16"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              stroke-width="1.2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <div
+            class="relative inline-flex items-center justify-center font-sans text-6xl md:text-7xl font-black text-primary mb-4"
+          >
+            <span class="absolute right-full mr-2 text-4xl md:text-5xl">+</span>
+            <span class="counter-number" data-target="15">0</span>
+          </div>
+          <p
+            class="text-lg md:text-xl text-gray-500 max-w-[220px] tracking-widest font-semibold"
+          >
+            Años de Experiencia
+          </p>
         </div>
-    </section>
-
-    <!-- SECCIÓN: INTRO/VALUE PROP -->
-    <section
-        class="py-24 bg-gradient-to-r from-primary-dark via-primary to-primary-dark text-white text-center"
-    >
-        <div class="container mx-auto px-6 max-w-4xl">
-            <p
-                class="font-serif text-xl md:text-xl text-white font-light gsap-fade-up leading-[1.8] md:leading-[1.9]"
+        <!-- Contador 2 -->
+        <div
+          class="flex flex-col items-center justify-center p-8 bg-gray-50/80 hover:bg-gray-50 transition-colors border-b-4 border-transparent hover:border-primary"
+        >
+          <div class="text-gray-800 mb-6">
+            <svg
+              class="w-14 h-14 md:w-16 md:h-16"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              stroke-width="1.2"
             >
-                Visión
-            </p>
-            <br />
-            <p
-                class="font-serif text-3xl md:text-4xl text-white leading-relaxed font-light gsap-fade-up leading-[1.8] md:leading-[1.3]"
-            >
-                "Promover el desarrollo y la prosperidad con oportunidades y
-                alta calidad de vida de la población nacional, regional,
-                provincial, distrital y comunal."
-            </p>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z"
+              ></path>
+            </svg>
+          </div>
+          <div
+            class="relative inline-flex items-center justify-center font-sans text-6xl md:text-7xl font-black text-primary mb-4"
+          >
+            <span class="absolute right-full mr-2 text-4xl md:text-5xl">+</span>
+            <span class="counter-number" data-target="100">0</span>
+          </div>
+          <p
+            class="text-lg md:text-xl text-gray-500 max-w-[220px] tracking-widest font-semibold"
+          >
+            Proyectos Ejecutados
+          </p>
         </div>
-    </section>
-
-    <!-- SECCIÓN: CONTADORES DE IMPACTO -->
-    <section class="bg-white py-12 md:py-20 border-t border-gray-100">
-        <div class="container mx-auto px-6 max-w-[1200px]">
-            <div
-                class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 text-center gsap-counter-section"
+        <!-- Contador 3 -->
+        <div
+          class="flex flex-col items-center justify-center p-8 bg-gray-50/80 hover:bg-gray-50 transition-colors border-b-4 border-transparent hover:border-primary"
+        >
+          <div class="text-gray-800 mb-6">
+            <svg
+              class="w-14 h-14 md:w-16 md:h-16"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              stroke-width="1.2"
             >
-                <!-- Contador 1 -->
-                <div
-                    class="flex flex-col items-center justify-center p-8 bg-gray-50/80 hover:bg-gray-50 transition-colors border-b-4 border-transparent hover:border-primary"
-                >
-                    <div class="text-gray-800 mb-6">
-                        <svg
-                            class="w-14 h-14 md:w-16 md:h-16"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            stroke-width="1.2"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                            ></path>
-                        </svg>
-                    </div>
-                    <div
-                        class="relative inline-flex items-center justify-center font-sans text-6xl md:text-7xl font-black text-primary mb-4"
-                    >
-                        <span
-                            class="absolute right-full mr-2 text-4xl md:text-5xl"
-                            >+</span
-                        >
-                        <span class="counter-number" data-target="15">0</span>
-                    </div>
-                    <p
-                        class="text-lg md:text-xl text-gray-500 max-w-[220px] tracking-widest font-semibold"
-                    >
-                        Años de Experiencia
-                    </p>
-                </div>
-                <!-- Contador 2 -->
-                <div
-                    class="flex flex-col items-center justify-center p-8 bg-gray-50/80 hover:bg-gray-50 transition-colors border-b-4 border-transparent hover:border-primary"
-                >
-                    <div class="text-gray-800 mb-6">
-                        <svg
-                            class="w-14 h-14 md:w-16 md:h-16"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            stroke-width="1.2"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z"
-                            ></path>
-                        </svg>
-                    </div>
-                    <div
-                        class="relative inline-flex items-center justify-center font-sans text-6xl md:text-7xl font-black text-primary mb-4"
-                    >
-                        <span
-                            class="absolute right-full mr-2 text-4xl md:text-5xl"
-                            >+</span
-                        >
-                        <span class="counter-number" data-target="100">0</span>
-                    </div>
-                    <p
-                        class="text-lg md:text-xl text-gray-500 max-w-[220px] tracking-widest font-semibold"
-                    >
-                        Proyectos Ejecutados
-                    </p>
-                </div>
-                <!-- Contador 3 -->
-                <div
-                    class="flex flex-col items-center justify-center p-8 bg-gray-50/80 hover:bg-gray-50 transition-colors border-b-4 border-transparent hover:border-primary"
-                >
-                    <div class="text-gray-800 mb-6">
-                        <svg
-                            class="w-14 h-14 md:w-16 md:h-16"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            stroke-width="1.2"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125v-11.25zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"
-                            ></path>
-                        </svg>
-                    </div>
-                    <div
-                        class="relative inline-flex items-center justify-center font-sans text-6xl md:text-7xl font-black text-primary mb-4"
-                    >
-                        <span
-                            class="absolute right-full mr-2 text-4xl md:text-5xl"
-                            >+</span
-                        >
-                        <span class="counter-number" data-target="120">0</span>
-                    </div>
-                    <p
-                        class="text-lg md:text-xl text-gray-500 max-w-[220px] tracking-widest font-semibold"
-                    >
-                        Estudios Económicos
-                    </p>
-                </div>
-                <!-- Contador 4 -->
-                <div
-                    class="flex flex-col items-center justify-center p-8 bg-gray-50/80 hover:bg-gray-50 transition-colors border-b-4 border-transparent hover:border-primary"
-                >
-                    <div class="text-gray-800 mb-6">
-                        <svg
-                            width="100px"
-                            height="100px"
-                            viewBox="0 0 64.00 64.00"
-                            xmlns="http://www.w3.org/2000/svg"
-                            stroke-width="2.432"
-                            stroke="currentColor"
-                            fill="none"
-                            transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)"
-                        >
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-
-                            <g
-                                id="SVGRepo_tracerCarrier"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke="#CCCCCC"
-                                stroke-width="0.256"></g>
-
-                            <g id="SVGRepo_iconCarrier">
-                                <circle cx="31.89" cy="22.71" r="5.57"></circle>
-
-                                <path
-                                    d="M43.16,43.74A11.28,11.28,0,0,0,31.89,32.47h0A11.27,11.27,0,0,0,20.62,43.74Z"
-                                ></path>
-
-                                <circle cx="48.46" cy="22.71" r="5.57"></circle>
-
-                                <path
-                                    d="M46.87,43.74H59.73A11.27,11.27,0,0,0,48.46,32.47h0a11.24,11.24,0,0,0-5.29,1.32"
-                                ></path>
-
-                                <circle cx="15.54" cy="22.71" r="5.57"></circle>
-
-                                <path
-                                    d="M17.13,43.74H4.27A11.27,11.27,0,0,1,15.54,32.47h0a11.24,11.24,0,0,1,5.29,1.32"
-                                ></path>
-                            </g>
-                        </svg>
-                    </div>
-                    <div
-                        class="relative inline-flex items-center justify-center font-sans text-6xl md:text-7xl font-black text-primary mb-4"
-                    >
-                        <span
-                            class="absolute right-full mr-2 text-4xl md:text-5xl"
-                            >+</span
-                        >
-                        <span class="counter-number" data-target="100">0</span>
-                    </div>
-                    <p
-                        class="text-lg md:text-xl text-gray-500 max-w-[220px] tracking-widest font-semibold"
-                    >
-                        Localidades y Comunidades
-                    </p>
-                </div>
-            </div>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125v-11.25zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"
+              ></path>
+            </svg>
+          </div>
+          <div
+            class="relative inline-flex items-center justify-center font-sans text-6xl md:text-7xl font-black text-primary mb-4"
+          >
+            <span class="absolute right-full mr-2 text-4xl md:text-5xl">+</span>
+            <span class="counter-number" data-target="120">0</span>
+          </div>
+          <p
+            class="text-lg md:text-xl text-gray-500 max-w-[220px] tracking-widest font-semibold"
+          >
+            Estudios Económicos
+          </p>
         </div>
-    </section>
-
-    <!-- SECCIÓN: CAPACIDADES - FEATURE BLOCK -->
-    <section class="bg-gray-50 py-20 lg:py-28">
-        <div class="container mx-auto px-6 md:px-12">
-            <div
-                class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20"
+        <!-- Contador 4 -->
+        <div
+          class="flex flex-col items-center justify-center p-8 bg-gray-50/80 hover:bg-gray-50 transition-colors border-b-4 border-transparent hover:border-primary"
+        >
+          <div class="text-gray-800 mb-6">
+            <svg
+              width="100px"
+              height="100px"
+              viewBox="0 0 64.00 64.00"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke-width="2.432"
+              stroke="currentColor"
+              fill="none"
+              transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)"
             >
-                <!-- Imagen -->
-                <div class="w-full lg:w-1/2 order-2 lg:order-1">
-                    <div
-                        class="relative overflow-hidden rounded-sm shadow-lg aspect-video"
-                    >
-                        <img
-                            src="https://res.cloudinary.com/ccdcloudy/image/upload/v1778831465/Web%20CCD/Capacidades%20e%20Industrias/capacidades_ewyx6g.png"
-                            alt="Nuestras Capacidades"
-                            class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
-                        />
-                    </div>
-                </div>
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
 
-                <!-- Contenido -->
-                <div class="w-full lg:w-1/2 order-1 lg:order-2 gsap-slide-left">
-                    <h2
-                        class="font-serif text-4xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight"
-                    >
-                        Capacidades
-                    </h2>
-                    <div class="w-20 h-1 bg-primary mb-8"></div>
-                    <p class="text-gray-600 text-lg leading-relaxed mb-8">
-                        Ofrecemos soluciones integrales en competitividad,
-                        desarrollo territorial, inversión y evaluación de
-                        proyectos. Nuestro enfoque multidisciplinario transforma
-                        comunidades y genera impacto sostenible a largo plazo.
-                    </p>
-                    <a
-                        href="/capacidades"
-                        class="group inline-flex items-center text-primary font-bold text-lg hover:text-primary-dark transition-colors"
-                    >
-                        <span>Ver Capacidades</span>
-                        <svg
-                            class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            ><path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg
-                        >
-                    </a>
-                </div>
-            </div>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="#CCCCCC"
+                stroke-width="0.256"></g>
+
+              <g id="SVGRepo_iconCarrier">
+                <circle cx="31.89" cy="22.71" r="5.57"></circle>
+
+                <path
+                  d="M43.16,43.74A11.28,11.28,0,0,0,31.89,32.47h0A11.27,11.27,0,0,0,20.62,43.74Z"
+                ></path>
+
+                <circle cx="48.46" cy="22.71" r="5.57"></circle>
+
+                <path
+                  d="M46.87,43.74H59.73A11.27,11.27,0,0,0,48.46,32.47h0a11.24,11.24,0,0,0-5.29,1.32"
+                ></path>
+
+                <circle cx="15.54" cy="22.71" r="5.57"></circle>
+
+                <path
+                  d="M17.13,43.74H4.27A11.27,11.27,0,0,1,15.54,32.47h0a11.24,11.24,0,0,1,5.29,1.32"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div
+            class="relative inline-flex items-center justify-center font-sans text-6xl md:text-7xl font-black text-primary mb-4"
+          >
+            <span class="absolute right-full mr-2 text-4xl md:text-5xl">+</span>
+            <span class="counter-number" data-target="100">0</span>
+          </div>
+          <p
+            class="text-lg md:text-xl text-gray-500 max-w-[220px] tracking-widest font-semibold"
+          >
+            Localidades y Comunidades
+          </p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- SECCIÓN: INDUSTRIAS - FEATURE BLOCK ALTERNADO -->
-    <section class="bg-white py-20 lg:py-28">
-        <div class="container mx-auto px-6 md:px-12">
-            <div
-                class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20"
-            >
-                <!-- Contenido (Izquierda en Desktop) -->
-                <div class="w-full lg:w-1/2 order-1 gsap-slide-right">
-                    <h2
-                        class="font-serif text-4xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight"
-                    >
-                        Industrias
-                    </h2>
-                    <div class="w-20 h-1 bg-primary mb-8"></div>
-                    <p class="text-gray-600 text-lg leading-relaxed mb-8">
-                        Aportamos experiencia estratégica en múltiples sectores
-                        económicos, potenciando el crecimiento, la innovación y
-                        la competitividad de industrias clave dentro del
-                        territorio.
-                    </p>
-                    <a
-                        href="/industrias"
-                        class="group inline-flex items-center text-primary font-bold text-lg hover:text-primary-dark transition-colors"
-                    >
-                        <span>Ver Industrias</span>
-                        <svg
-                            class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            ><path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg
-                        >
-                    </a>
-                </div>
-
-                <!-- Imagen (Derecha en Desktop) -->
-                <div class="w-full lg:w-1/2 order-2">
-                    <div
-                        class="relative overflow-hidden rounded-sm shadow-lg aspect-video"
-                    >
-                        <img
-                            src="https://res.cloudinary.com/ccdcloudy/image/upload/v1778831559/Web%20CCD/Capacidades%20e%20Industrias/industrias_nlankz.png"
-                            alt="Nuestras Industrias"
-                            class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
-                        />
-                    </div>
-                </div>
-            </div>
+  <!-- SECCIÓN: CAPACIDADES - FEATURE BLOCK -->
+  <section class="bg-gray-50 py-20 lg:py-28">
+    <div class="container mx-auto px-6 md:px-12">
+      <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+        <!-- Imagen -->
+        <div class="w-full lg:w-1/2 order-2 lg:order-1">
+          <div
+            class="relative overflow-hidden rounded-sm shadow-lg aspect-video"
+          >
+            <img
+              src="https://res.cloudinary.com/ccdcloudy/image/upload/v1778831465/Web%20CCD/Capacidades%20e%20Industrias/capacidades_ewyx6g.png"
+              alt="Nuestras Capacidades"
+              class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
+            />
+          </div>
         </div>
-    </section>
 
-    <!-- SECCIÓN: EQUIPO PRINCIPAL -->
-    <section
-        class="bg-gradient-to-b from-secondary-light/20 to-secondary py-16 md:py-24"
-    >
-        <div class="container mx-auto px-6">
-            <h2
-                class="font-serif text-4xl md:text-5xl font-bold text-black text-center mb-4"
-            >
-                Nuestro Equipo
-            </h2>
-            <p
-                class="text-center text-gray-600 text-lg max-w-2xl mx-auto mb-16"
-            >
-                Líderes especializados con amplia experiencia en competitividad
-                y desarrollo, con alcance comunal, distrital, provincial,
-                regional y nacional.
-            </p>
-
-            <!-- Grid de Equipo: 3 columnas centradas -->
-            <div
-                class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto gsap-team-grid"
-            >
-                {
-                    directores.map((member) => (
-                        <div class="gsap-team-card">
-                            <TeamCard
-                                name={member.name}
-                                role={member.role}
-                                image={member.photos.formal}
-                                link={`/nosotros/equipo/${member.slug}`}
-                                linkedin={member.linkedin}
-                            />
-                        </div>
-                    ))
-                }
-            </div>
-
-            <!-- Enlace a equipo completo -->
-            <div class="text-center mt-16">
-                <a
-                    href="/nosotros/equipo"
-                    class="inline-block bg-primary border-2 border-primary text-white font-bold py-3 px-8 rounded-lg hover:bg-primary-dark hover:text-white transition-all duration-300"
-                >
-                    Ver Equipo CCD
-                </a>
-            </div>
+        <!-- Contenido -->
+        <div class="w-full lg:w-1/2 order-1 lg:order-2 gsap-slide-left">
+          <h2
+            class="font-serif text-4xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight"
+          >
+            Capacidades
+          </h2>
+          <div class="w-20 h-1 bg-primary mb-8"></div>
+          <p class="text-gray-600 text-lg leading-relaxed mb-8">
+            Ofrecemos soluciones integrales en competitividad, desarrollo
+            territorial, inversión y evaluación de proyectos. Nuestro enfoque
+            multidisciplinario transforma comunidades y genera impacto
+            sostenible a largo plazo.
+          </p>
+          <a
+            href="/capacidades"
+            class="group inline-flex items-center text-primary font-bold text-lg hover:text-primary-dark transition-colors"
+          >
+            <span>Ver Capacidades</span>
+            <svg
+              class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
+          </a>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: INDUSTRIAS - FEATURE BLOCK ALTERNADO -->
+  <section class="bg-white py-20 lg:py-28">
+    <div class="container mx-auto px-6 md:px-12">
+      <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+        <!-- Contenido (Izquierda en Desktop) -->
+        <div class="w-full lg:w-1/2 order-1 gsap-slide-right">
+          <h2
+            class="font-serif text-4xl sm:text-5xl font-bold text-gray-900 mb-6 leading-tight"
+          >
+            Industrias
+          </h2>
+          <div class="w-20 h-1 bg-primary mb-8"></div>
+          <p class="text-gray-600 text-lg leading-relaxed mb-8">
+            Aportamos experiencia estratégica en múltiples sectores económicos,
+            potenciando el crecimiento, la innovación y la competitividad de
+            industrias clave dentro del territorio.
+          </p>
+          <a
+            href="/industrias"
+            class="group inline-flex items-center text-primary font-bold text-lg hover:text-primary-dark transition-colors"
+          >
+            <span>Ver Industrias</span>
+            <svg
+              class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Imagen (Derecha en Desktop) -->
+        <div class="w-full lg:w-1/2 order-2">
+          <div
+            class="relative overflow-hidden rounded-sm shadow-lg aspect-video"
+          >
+            <img
+              src="https://res.cloudinary.com/ccdcloudy/image/upload/v1778831559/Web%20CCD/Capacidades%20e%20Industrias/industrias_nlankz.png"
+              alt="Nuestras Industrias"
+              class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: EQUIPO PRINCIPAL -->
+  <section
+    class="bg-gradient-to-b from-secondary-light/20 to-secondary py-16 md:py-24"
+  >
+    <div class="container mx-auto px-6">
+      <h2
+        class="font-serif text-4xl md:text-5xl font-bold text-black text-center mb-4"
+      >
+        Nuestro Equipo
+      </h2>
+      <p class="text-center text-gray-600 text-lg max-w-2xl mx-auto mb-16">
+        Líderes especializados con amplia experiencia en competitividad y
+        desarrollo, con alcance comunal, distrital, provincial, regional y
+        nacional.
+      </p>
+
+      <!-- Grid de Equipo: 3 columnas centradas -->
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto gsap-team-grid"
+      >
+        {
+          directores.map((member) => (
+            <div class="gsap-team-card">
+              <TeamCard
+                name={member.name}
+                role={member.role}
+                image={member.photos.formal}
+                link={`/nosotros/equipo/${member.slug}`}
+                linkedin={member.linkedin}
+              />
+            </div>
+          ))
+        }
+      </div>
+
+      <!-- Enlace a equipo completo -->
+      <div class="text-center mt-16">
+        <a
+          href="/nosotros/equipo"
+          class="inline-block bg-primary border-2 border-primary text-white font-bold py-3 px-8 rounded-lg hover:bg-primary-dark hover:text-white transition-all duration-300"
+        >
+          Ver Equipo CCD
+        </a>
+      </div>
+    </div>
+  </section>
 </Layout>
 
 <script>
-    import { gsap } from "gsap";
-    import { ScrollTrigger } from "gsap/ScrollTrigger";
+  import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-    // Registramos el plugin para que funcione con el scroll
-    gsap.registerPlugin(ScrollTrigger);
+  // Registramos el plugin para que funcione con el scroll
+  gsap.registerPlugin(ScrollTrigger);
 
-    // ==========================================
-    // 1. ANIMACIÓN DEL HERO (Aparece al cargar)
-    // ==========================================
-    // Eliminada por solicitud del usuario para dejar solo efectos hover
+  // ==========================================
+  // 1. ANIMACIÓN DEL HERO (Aparece al cargar)
+  // ==========================================
+  // Eliminada por solicitud del usuario para dejar solo efectos hover
 
-    // ==========================================
-    // 2. ANIMACIONES AL HACER SCROLL
-    // ==========================================
+  // ==========================================
+  // 2. ANIMACIONES AL HACER SCROLL
+  // ==========================================
 
-    // A. Elementos que suben suavemente (Textos, Títulos)
-    gsap.utils.toArray(".gsap-fade-up").forEach((elem: any) => {
-        gsap.from(elem, {
-            scrollTrigger: {
-                trigger: elem,
-                start: "top 85%", // La animación empieza cuando el elemento toca el 85% de la pantalla
-                toggleActions: "play none none none",
-            },
-            y: 50,
-            opacity: 0,
-            duration: 1,
-            ease: "power3.out",
-        });
+  // A. Elementos que suben suavemente (Textos, Títulos)
+  gsap.utils.toArray(".gsap-fade-up").forEach((elem: any) => {
+    gsap.from(elem, {
+      scrollTrigger: {
+        trigger: elem,
+        start: "top 85%", // La animación empieza cuando el elemento toca el 85% de la pantalla
+        toggleActions: "play none none none",
+      },
+      y: 50,
+      opacity: 0,
+      duration: 1,
+      ease: "power3.out",
     });
+  });
 
-    // B. Elementos que entran desde la Izquierda (Imágenes o Textos)
-    gsap.utils.toArray(".gsap-slide-left").forEach((elem: any) => {
-        gsap.from(elem, {
-            scrollTrigger: { trigger: elem, start: "top 85%" },
-            x: -60,
-            opacity: 0,
-            duration: 1.2,
-            ease: "power3.out",
-        });
+  // B. Elementos que entran desde la Izquierda (Imágenes o Textos)
+  gsap.utils.toArray(".gsap-slide-left").forEach((elem: any) => {
+    gsap.from(elem, {
+      scrollTrigger: { trigger: elem, start: "top 85%" },
+      x: -60,
+      opacity: 0,
+      duration: 1.2,
+      ease: "power3.out",
     });
+  });
 
-    // C. Elementos que entran desde la Derecha (Imágenes o Textos)
-    gsap.utils.toArray(".gsap-slide-right").forEach((elem: any) => {
-        gsap.from(elem, {
-            scrollTrigger: { trigger: elem, start: "top 85%" },
-            x: 60,
-            opacity: 0,
-            duration: 1.2,
-            ease: "power3.out",
-        });
+  // C. Elementos que entran desde la Derecha (Imágenes o Textos)
+  gsap.utils.toArray(".gsap-slide-right").forEach((elem: any) => {
+    gsap.from(elem, {
+      scrollTrigger: { trigger: elem, start: "top 85%" },
+      x: 60,
+      opacity: 0,
+      duration: 1.2,
+      ease: "power3.out",
     });
+  });
 
-    // D. Efecto Cascada (Stagger) para las tarjetas del Equipo
-    gsap.from(".gsap-team-card", {
-        scrollTrigger: {
-            trigger: ".gsap-team-grid", // Contenedor padre
-            start: "top 80%",
-        },
-        y: 50,
-        opacity: 0,
-        duration: 0.8,
-        stagger: 0.2, // Cada tarjeta aparece 0.2s después de la anterior
-        ease: "power3.out",
-    });
+  // D. Efecto Cascada (Stagger) para las tarjetas del Equipo
+  gsap.from(".gsap-team-card", {
+    scrollTrigger: {
+      trigger: ".gsap-team-grid", // Contenedor padre
+      start: "top 80%",
+    },
+    y: 50,
+    opacity: 0,
+    duration: 0.8,
+    stagger: 0.2, // Cada tarjeta aparece 0.2s después de la anterior
+    ease: "power3.out",
+  });
 
-    // E. Animación de Contadores de Impacto
-    // Animación de aparición de las tarjetas
-    gsap.from(".gsap-counter-section > div", {
-        scrollTrigger: {
-            trigger: ".gsap-counter-section",
-            start: "top 85%",
-        },
-        y: 30,
-        opacity: 0,
-        duration: 0.6,
-        stagger: 0.15,
-        ease: "power3.out",
-    });
+  // E. Animación de Contadores de Impacto
+  // Animación de aparición de las tarjetas
+  gsap.from(".gsap-counter-section > div", {
+    scrollTrigger: {
+      trigger: ".gsap-counter-section",
+      start: "top 85%",
+    },
+    y: 30,
+    opacity: 0,
+    duration: 0.6,
+    stagger: 0.15,
+    ease: "power3.out",
+  });
 
-    // Animación del conteo de números
-    gsap.utils.toArray(".counter-number").forEach((el: any) => {
-        const target = parseInt(el.getAttribute("data-target") || "0", 10);
-        const obj = { val: 0 };
-        gsap.to(obj, {
-            val: target,
-            duration: 2.5,
-            ease: "power3.out",
-            scrollTrigger: {
-                trigger: ".gsap-counter-section",
-                start: "top 85%",
-            },
-            onUpdate: () => {
-                el.innerText = Math.floor(obj.val).toLocaleString("es-PE");
-            },
-        });
+  // Animación del conteo de números
+  gsap.utils.toArray(".counter-number").forEach((el: any) => {
+    const target = parseInt(el.getAttribute("data-target") || "0", 10);
+    const obj = { val: 0 };
+    gsap.to(obj, {
+      val: target,
+      duration: 2.5,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: ".gsap-counter-section",
+        start: "top 85%",
+      },
+      onUpdate: () => {
+        el.innerText = Math.floor(obj.val).toLocaleString("es-PE");
+      },
     });
+  });
 </script>

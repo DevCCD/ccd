@@ -468,7 +468,7 @@ export const teamMembers = {
             "detail": "/alex-carbajal.png",
             "extra": "/alex-carbajal.png"
         },
-        "linkedin": "https://www.linkedin.com",
+        "linkedin": "https://www.linkedin.com/in/afcarbajal/",
         "intro": "Alex es especialista en desarrollo, gestión pública y evaluación de proyectos en el Centro para la Competitividad y el Desarrollo (CCD). En la evaluación integral de programas y proyectos, Alex lidera el análisis y la evaluación de los criterios de medición de Impacto, Pertinencia, Eficiencia, Eficacia y Sostenibilidad.",
         "about": "Alex cuenta con más de 15 años de experiencia profesional, desempeñándose en diversas entidades públicas y privadas, pilares de la competitividad y el desarrollo. Alex comenzó su carrera en el Centro para la Competitividad y el Desarrollo en el año 2023, en la evaluación de proyectos multisectoriales, principalmente en los sectores Educación, Tecnologías de la Información y Comunicación (TICs), Agropecuario, Ambiental, Forestal y Laboral, así como en la elaboración de planes de desarrollo concertados de alcances regional y local.",
         "experience": [
@@ -520,7 +520,7 @@ export const teamMembers = {
             "detail": "/elmer-huaman.png",
             "extra": "/elmer-huaman.png"
         },
-        "linkedin": "https://www.linkedin.com",
+        "linkedin": "https://www.linkedin.com/in/elmer-rub%C3%A9n-huam%C3%A1n-romero-59298883/",
         "intro": "Especialista en administración financiera, inversión pública y privada, sistema de transferencias de recursos a gobiernos regionales y locales (provincias y distrito), con amplia trayectoria en el sector construcción, consultoría y gestión de proyectos de gran envergadura. Actualmente Elmer es jefe de proyectos en el Centro para la Competitividad y el Desarrollo (CCD), especialmente en desarrollo e inversión y gestión financiera.",
         "about": "Elmer cuenta con más de 20 años de experiencia en los ámbitos público y privado, con especialidad en inversión y finanzas públicas, construcción y a nivel corporativo en las gerencias de administración y finanzas. Ha ocupado cargos directivos en empresas constructoras y consultoras, supervisando proyectos de gran impacto económico y social. La experiencia de Elmer incluye asesoría a entidades gubernamentales en inversión pública y concesiones viales de alcance nacional, regional y local.",
         "experience": [
@@ -583,10 +583,10 @@ export const teamMembers = {
         "name": "Mario Huamán",
         "role": "Estudios Económicos",
         "photos": {
-            "formal": "/mario-huaman.png",
-            "casual": "/mario-huaman.png",
-            "detail": "/mario-huaman.png",
-            "extra": "/mario-huaman.png"
+            "formal": "https://res.cloudinary.com/ccdcloudy/image/upload/v1779489861/Web%20CCD/Equipo/Mario/Mario-Huaman-rostro_st55pw.png",
+            "casual": "https://res.cloudinary.com/ccdcloudy/image/upload/v1779489395/Web%20CCD/Equipo/Mario/Mario-Huaman-rostro_onsgdi.png",
+            "detail": "https://res.cloudinary.com/ccdcloudy/image/upload/v1779489391/Web%20CCD/Equipo/Mario/Mario-Huaman_s18eew.png",
+            "extra": "https://res.cloudinary.com/ccdcloudy/image/upload/v1779489395/Web%20CCD/Equipo/Mario/Mario-Huaman-rostro_onsgdi.png"
         },
         "linkedin": "https://www.linkedin.com/in/mario-jes%C3%BAs-huam%C3%A1n-mart%C3%ADnez-a430351b5/",
         "intro": "Mario lidera nuestro trabajo en estudios económicos, análisis sectorial y empresarial en los ámbitos macroeconómicos y microeconómicos.",
@@ -628,7 +628,7 @@ export const teamMembers = {
         "highlightedCapabilities": [
             "competitividad",
             "evaluacion",
-            "fondos"
+            "inversiones"
         ],
         "highlightedIndustries": [
             "mineria",

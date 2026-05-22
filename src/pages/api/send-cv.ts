@@ -24,7 +24,7 @@ export const POST = async ({ request }) => {
     const buffer = Buffer.from(arrayBuffer);
 
     const { data: resendData, error } = await resend.emails.send({
-      from: 'Web CCD <noreply@tudominio.com>',
+      from: 'Web CCD <onboarding@resend.dev>',
       to: ['ccdcompetitividad@gmail.com'], // Pon tu correo
       subject: `Nueva Postulación: ${nombre} - ${pais}`,
       html: `

@@ -99,11 +99,13 @@ export const POST = async ({ request }) => {
     });
 
     if (error) {
-      return new Response(JSON.stringify({ error }), { status: 500 });
+      console.error('[send-cv] Resend error:', JSON.stringify(error));
+      return new Response(JSON.stringify({ error: error.message || error }), { status: 500 });
     }
 
     return new Response(JSON.stringify({ success: true }), { status: 200 });
   } catch (error: any) {
+    console.error('[send-cv] Caught exception:', error?.message, error);
     return new Response(JSON.stringify({ error: error.message }), { status: 500 });
   }
 };

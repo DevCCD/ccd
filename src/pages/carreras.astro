@@ -692,7 +692,7 @@ const countries = [
         console.error("Error enviando:", error);
         if (statusMessage) {
           statusMessage.textContent =
-            "Ocurrió un error al enviar el CV. Inténtalo de nuevo más tarde.";
+            "Error: " + (error?.message || "Ocurrió un error al enviar el CV. Inténtalo de nuevo más tarde.");
           statusMessage.classList.remove("hidden", "text-green-600");
           statusMessage.classList.add("text-red-600");
         }

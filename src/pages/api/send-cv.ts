@@ -3,10 +3,19 @@ export const prerender = false; // <-- AÑADE ESTA LÍNEA AQUÍ
 
 import { Resend } from 'resend';
 
-const resend = new Resend(import.meta.env.RESEND_API_KEY);
+const apiKey = process.env.RESEND_API_KEY ?? import.meta.env.RESEND_API_KEY;
+const resend = new Resend(apiKey);
 
 export const POST = async ({ request }) => {
   try {
+    if (!apiKey) {
+      console.error('[send-cv] RESEND_API_KEY no está definida en el entorno');
+      return new Response(
+        JSON.stringify({ error: 'RESEND_API_KEY no configurada en el servidor' }),
+        { status: 500 }
+      );
+    }
+
     const data = await request.formData();
     
     const nombre = data.get('nombre')?.toString();

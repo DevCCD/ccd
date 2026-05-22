@@ -6,5 +6,8 @@ export default defineConfig({
   site: 'https://ccd-iota.vercel.app',
   output: 'server',
   adapter: vercel(),
-  integrations: [tailwind()]
+  integrations: [tailwind()],
+  security: {
+    checkOrigin: false
+  }
 });

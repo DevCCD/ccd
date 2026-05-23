@@ -1,64 +1,17 @@
 ---
 import Layout from "../../../layouts/Layout.astro";
 import SidebarCard from "../../../components/SidebarCard.astro";
-
-// --- DATOS SIMULADOS (Mismos que antes) ---
-const ALL_CAPABILITIES_DATA = {
-  competitividad: {
-    name: "Competitividad",
-    image: "/capacidades/competitividad2.jpeg",
-  },
-  desarrollo: { name: "Desarrollo", image: "/capacidades/desarrollo.jpg" },
-  fortalecimiento: {
-    name: "Fortalecimiento de Capacidades y Capital Humano",
-    image: "/capacidades/fortalecimiento.jpg",
-  },
-  fondos: { name: "Fondos de Desarrollo", image: "/capacidades/fondos.jpg" },
-  evaluacion: {
-    name: "Evaluación de Programas y Proyectos",
-    image: "/capacidades/evaluacion2.jpg",
-  },
-  corredores: {
-    name: "Corredores Económicos Territoriales",
-    image: "/capacidades/corredores.jpg",
-  },
-  inversiones: {
-    name: "Inversión y Proyectos",
-    image: "/capacidades/inversiones.jpg",
-  },
-};
-
-const ALL_INDUSTRIES_DATA = {
-  agricultura: { name: "Agricultura", image: "/industrias/agricultura.jpg" },
-  educacion: { name: "Educación", image: "/industrias/educacion.jpg" },
-  infraestructura: {
-    name: "Infraestructura",
-    image: "/industrias/infraestructura.jpg",
-  },
-  mineria: { name: "Minería", image: "/industrias/mineria.jpg" },
-  sector_publico: {
-    name: "Sector Público",
-    image:
-      "https://res.cloudinary.com/ccdcloudy/image/upload/v1770796429/Web%20CCD/Industrias/publico_zqyito.jpg",
-  },
-  sector_social: {
-    name: "Sector Social",
-    image: "/industrias/sector-social.jpg",
-  },
-};
-
 import { teamMembers } from "../../../data/teamData";
+import { industriesContent } from "../../../data/industriesContent";
+import { capacidadesContent } from "../../../data/capacidadesContent";
 
-export async function getStaticPaths() {
-  const teamData = Object.values(teamMembers);
+// En modo SSR, obtener el miembro dinámicamente desde el slug
+const { slug } = Astro.params;
+const member = teamMembers[slug];
 
-  return teamData.map((member) => ({
-    params: { slug: member.slug },
-    props: { member },
-  }));
+if (!member) {
+  return Astro.redirect("/404");
 }
-
-const { member } = Astro.props;
 ---
 
 <Layout title={`${member.name} - CCD`}>
@@ -233,15 +186,12 @@ const { member } = Astro.props;
             <div class="space-y-4">
               {
                 member.highlightedCapabilities.map((capId) => {
-                  const cap =
-                    ALL_CAPABILITIES_DATA[
-                      capId as keyof typeof ALL_CAPABILITIES_DATA
-                    ];
+                  const cap = capacidadesContent[capId];
                   if (!cap) return null;
                   return (
                     <SidebarCard
-                      title={cap.name}
-                      image={cap.image}
+                      title={cap.title}
+                      image={cap.headerImage}
                       link={`/capacidades/${capId}`}
                     />
                   );
@@ -260,15 +210,12 @@ const { member } = Astro.props;
             <div class="space-y-4">
               {
                 member.highlightedIndustries.map((indId) => {
-                  const ind =
-                    ALL_INDUSTRIES_DATA[
-                      indId as keyof typeof ALL_INDUSTRIES_DATA
-                    ];
+                  const ind = industriesContent[indId];
                   if (!ind) return null;
                   return (
                     <SidebarCard
-                      title={ind.name}
-                      image={ind.image}
+                      title={ind.title}
+                      image={ind.introImage}
                       link={`/industrias/${indId}`}
                     />
                   );

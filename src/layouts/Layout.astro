@@ -20,7 +20,10 @@ const {
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,23 +34,15 @@ const {
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="flex flex-col min-h-screen font-sans bg-gray-50 text-gray-800 overflow-x-hidden">
+  <body
+    class="flex flex-col min-h-screen font-sans bg-gray-50 text-gray-800 overflow-x-hidden"
+  >
     <Navbar currentPath={Astro.url.pathname} />
 
     <main class="flex-grow">
       <slot />
     </main>
-    <!-- Indicador de Breakpoint (Solo para desarrollo) -->
-    <div
-      class="fixed bottom-0 left-0 m-4 p-2 bg-black text-white text-xs rounded z-50 font-mono"
-    >
-      <span class="block sm:hidden">XS (móvil)</span>
-      <span class="hidden sm:block md:hidden">SM (640px+)</span>
-      <span class="hidden md:block lg:hidden">MD (768px+)</span>
-      <span class="hidden lg:block xl:hidden">LG (1024px+)</span>
-      <span class="hidden xl:block 2xl:hidden">XL (1280px+)</span>
-      <span class="hidden 2xl:block">2XL (1536px+)</span>
-    </div>
+
     <ContactForm />
 
     <Footer />

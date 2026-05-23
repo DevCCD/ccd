@@ -52,8 +52,8 @@ export const teamMembers = {
         ],
         "highlightedIndustries": [
             "educacion",
-            "sector_publico",
-            "sector_social"
+            "publico",
+            "mineria"
         ]
     },
     "viviana-sanchez": {
@@ -133,12 +133,12 @@ export const teamMembers = {
         ],
         "highlightedCapabilities": [
             "desarrollo",
-            "fondos",
+            "inversiones",
             "evaluacion"
         ],
         "highlightedIndustries": [
             "mineria",
-            "sector_publico",
+            "publico",
             "infraestructura"
         ]
     },
@@ -181,8 +181,8 @@ export const teamMembers = {
             "desarrollo"
         ],
         "highlightedIndustries": [
-            "sector_publico",
-            "sector_social",
+            "publico",
+            "financiero",
             "educacion"
         ]
     },
@@ -233,10 +233,10 @@ export const teamMembers = {
         "highlightedCapabilities": [
             "competitividad",
             "desarrollo",
-            "inversion"
+            "inversiones"
         ],
         "highlightedIndustries": [
-            "agricultura",
+            "agropecuario",
             "educacion",
             "mineria"
         ]
@@ -287,7 +287,7 @@ export const teamMembers = {
         "highlightedIndustries": [
             "infraestructura",
             "educacion",
-            "sector_social"
+            "portuarios"
         ]
     },
     "jorge-ruiz": {
@@ -330,8 +330,8 @@ export const teamMembers = {
         ],
         "highlightedIndustries": [
             "infraestructura",
-            "agricultura",
-            "sector_social"
+            "agropecuario",
+            "educacion"
         ]
     },
     "fernando-jauregui": {
@@ -378,13 +378,13 @@ export const teamMembers = {
         ],
         "highlightedCapabilities": [
             "inversiones",
-            "fondos",
+            "ia-y-analitica",
             "evaluacion"
         ],
         "highlightedIndustries": [
             "mineria",
             "educacion",
-            "sector_publico"
+            "publico"
         ]
     },
     "sergio-villegas": {
@@ -450,12 +450,12 @@ export const teamMembers = {
         "highlightedCapabilities": [
             "inversiones",
             "evaluacion",
-            "fondos"
+            "fortalecimiento"
         ],
         "highlightedIndustries": [
             "infraestructura",
             "educacion",
-            "sector_social"
+            "publico"
         ]
     },
     "alex-carbajal": {
@@ -502,12 +502,12 @@ export const teamMembers = {
         "highlightedCapabilities": [
             "evaluacion",
             "desarrollo",
-            "fondos"
+            "fortalecimiento"
         ],
         "highlightedIndustries": [
             "educacion",
-            "sector_social",
-            "agricultura"
+            "publico",
+            "agropecuario"
         ]
     },
     "elmer-huaman": {
@@ -566,14 +566,14 @@ export const teamMembers = {
             }
         ],
         "highlightedCapabilities": [
-            "inversion",
-            "fondos",
+            "inversiones",
+            "evaluacion",
             "competitividad"
         ],
         "highlightedIndustries": [
             "infraestructura",
             "mineria",
-            "sector_publico"
+            "publico"
         ]
     },
 
@@ -632,8 +632,8 @@ export const teamMembers = {
         ],
         "highlightedIndustries": [
             "mineria",
-            "sector_publico",
-            "agricultura"
+            "publico",
+            "agropecuario"
         ]
     },
 };

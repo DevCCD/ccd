@@ -17,6 +17,62 @@ const directores = [
   title="CCD - Centro para la Competitividad y el Desarrollo"
   description="Promovemos el desarrollo territorial sostenible a través de soluciones integrales en competitividad, inversión y evaluación de proyectos."
 >
+  <!-- ============================================== -->
+  <!-- HERO BANNER (Estilo McKinsey) -->
+  <!-- ============================================== -->
+  <section
+    class="relative w-full h-[80vh] min-h-[520px] max-h-[780px] overflow-hidden bg-gray-900"
+  >
+    <!-- Imagen de fondo (reemplazable) -->
+    <img
+      src="https://res.cloudinary.com/ccdcloudy/image/upload/v1780664364/Web%20CCD/Capacidades%20e%20Industrias/ChatGPT_Image_5_jun_2026_07_58_23_cvskog.png"
+      alt="Comunidades y territorios donde trabajamos"
+      class="absolute inset-0 w-full h-full object-cover scale-105 gsap-hero-image"
+    />
+
+    <!-- Degradado sutil solo sobre el área del texto (superior) -->
+    <div
+      class="absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-gray-950/85 via-gray-950/40 to-transparent"
+    >
+    </div>
+
+    <!-- Contenido (superior centrado) -->
+    <div
+      class="relative z-10 h-full max-w-screen-xl mx-auto px-6 sm:px-8 flex justify-center items-start pt-16 md:pt-20"
+    >
+      <div class="max-w-4xl text-center">
+        <!-- Headline -->
+        <h1
+          class="font-serif text-white font-light leading-[1.2] tracking-wide gsap-hero-fade"
+        >
+          <span
+            class="block text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem]"
+          >
+            Pasión por nuestro trabajo,
+          </span>
+          <span
+            class="block mt-4 text-white/90 leading-[2] md:leading-[1.2] text-2xl sm:text-3xl md:text-4xl lg:text-[2.5rem]"
+          >
+            creamos verdaderas historias de{" "}
+            <a
+              href="/capacidades/competitividad"
+              class="text-white px-2 py-0.5 rounded-sm hover:bg-white hover:text-[#910121] transition-all duration-300"
+            >
+              Competitividad
+            </a>{" "}
+            y{" "}
+            <a
+              href="/capacidades/desarrollo"
+              class="text-white px-2 py-0.5 rounded-sm hover:bg-white hover:text-[#910121] transition-all duration-300"
+            >
+              Desarrollo
+            </a>
+          </span>
+        </h1>
+      </div>
+    </div>
+  </section>
+
   <section class="bg-white pt-16 pb-16 px-6 sm:px-8 xl:px-0">
     <div class="max-w-screen-xl mx-auto">
       <!-- 9 Cards Grid -->
@@ -541,9 +597,25 @@ const directores = [
   gsap.registerPlugin(ScrollTrigger);
 
   // ==========================================
-  // 1. ANIMACIÓN DEL HERO (Aparece al cargar)
+  // 1. ANIMACIÓN DEL HERO BANNER (Al cargar)
   // ==========================================
-  // Eliminada por solicitud del usuario para dejar solo efectos hover
+  const heroTl = gsap.timeline({ defaults: { ease: "power3.out" } });
+  heroTl
+    .from(".gsap-hero-image", {
+      scale: 1.15,
+      opacity: 0,
+      duration: 1.8,
+    })
+    .from(
+      ".gsap-hero-fade",
+      {
+        y: 40,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.2,
+      },
+      "-=1.2",
+    );
 
   // ==========================================
   // 2. ANIMACIONES AL HACER SCROLL

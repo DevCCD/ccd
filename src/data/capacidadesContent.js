@@ -87,7 +87,7 @@ export const capacidadesContent = {
             {
                 title: "Cierre de Brechas",
                 text: "Promover el desarrollo mediante el cierre de brechas para mejorar el bienestar económico y social de las personas.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774880235/Web%20CCD/Capacidades%20e%20Industrias/Desarrollo/mangos_g4prb3.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1780664549/Web%20CCD/Capacidades%20e%20Industrias/Imagen_animada_profesional_de_comunidad_202606050802_ptg68l.jpg",
                 cols: 1
             },
             {

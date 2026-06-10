@@ -32,13 +32,16 @@ const directores = [
 
     <!-- Degradado sutil solo sobre el área del texto (superior) -->
     <div
-      class="absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-gray-950/85 via-gray-950/40 to-transparent"
+      class="hidden md:block absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-gray-950/85 via-gray-950/40 to-transparent"
     >
     </div>
 
-    <!-- Contenido (superior centrado) -->
+    <!-- Overlay móvil: más oscuro para mejor legibilidad del texto centrado -->
+    <div class="md:hidden absolute inset-0 bg-gray-950/55"></div>
+
+    <!-- Contenido (móvil: centrado al medio | desktop: superior) -->
     <div
-      class="relative z-10 h-full max-w-screen-xl mx-auto px-6 sm:px-8 flex justify-center items-start pt-16 md:pt-20"
+      class="relative z-10 h-full max-w-screen-xl mx-auto px-6 sm:px-8 flex justify-center items-center md:items-start md:pt-20"
     >
       <div class="max-w-4xl text-center">
         <!-- Headline -->
@@ -51,7 +54,7 @@ const directores = [
             Pasión por nuestro trabajo,
           </span>
           <span
-            class="block mt-4 text-white/90 leading-[2] md:leading-[1.2] text-2xl sm:text-3xl md:text-4xl lg:text-[2.5rem]"
+            class="block mt-4 text-white/90 leading-[1.5] md:leading-[1.2] text-2xl sm:text-3xl md:text-4xl lg:text-[2.5rem]"
           >
             creamos verdaderas historias de{" "}
             <a
@@ -231,7 +234,7 @@ const directores = [
             class="relative inline-flex items-center justify-center font-sans text-6xl md:text-7xl font-black text-primary mb-4"
           >
             <span class="absolute right-full mr-2 text-4xl md:text-5xl">+</span>
-            <span class="counter-number" data-target="15">0</span>
+            <span class="counter-number" data-target="15">15</span>
           </div>
           <p
             class="text-xl md:text-xl text-gray-500 max-w-[220px] tracking-widest font-semibold"
@@ -262,7 +265,7 @@ const directores = [
             class="relative inline-flex items-center justify-center font-sans text-6xl md:text-7xl font-black text-primary mb-4"
           >
             <span class="absolute right-full mr-2 text-4xl md:text-5xl">+</span>
-            <span class="counter-number" data-target="100">0</span>
+            <span class="counter-number" data-target="100">100</span>
           </div>
           <p
             class="text-xl md:text-xl text-gray-500 max-w-[220px] tracking-widest font-semibold"
@@ -296,12 +299,12 @@ const directores = [
             class="relative inline-flex items-center justify-center font-sans text-6xl md:text-7xl font-black text-primary mb-4"
           >
             <span class="absolute right-full mr-2 text-4xl md:text-5xl">+</span>
-            <span class="counter-number" data-target="75">0</span>
+            <span class="counter-number" data-target="110">110</span>
           </div>
           <p
             class="text-xl md:text-xl text-gray-500 max-w-[220px] tracking-widest font-semibold"
           >
-            Consultores Externos
+            Consultores
           </p>
         </div>
       </div>
@@ -325,7 +328,7 @@ const directores = [
             class="relative inline-flex items-center justify-center font-sans text-5xl md:text-6xl font-black text-primary mb-4"
           >
             <span class="absolute right-full mr-2 text-3xl md:text-xl">+</span>
-            <span class="counter-number" data-target="20">0</span>
+            <span class="counter-number" data-target="20">20</span>
           </div>
           <p
             class="text-xl md:text-lg text-gray-500 max-w-[200px] tracking-widest font-semibold"
@@ -349,7 +352,7 @@ const directores = [
             class="relative inline-flex items-center justify-center font-sans text-5xl md:text-6xl font-black text-primary mb-4"
           >
             <span class="absolute right-full mr-2 text-3xl md:text-4xl">+</span>
-            <span class="counter-number" data-target="20">0</span>
+            <span class="counter-number" data-target="20">20</span>
           </div>
           <p
             class="text-xl md:text-lg text-gray-500 max-w-[200px] tracking-widest font-semibold"
@@ -373,7 +376,7 @@ const directores = [
             class="relative inline-flex items-center justify-center font-sans text-5xl md:text-6xl font-black text-primary mb-4"
           >
             <span class="absolute right-full mr-2 text-3xl md:text-4xl">+</span>
-            <span class="counter-number" data-target="25">0</span>
+            <span class="counter-number" data-target="25">25</span>
           </div>
           <p
             class="text-xl md:text-lg text-gray-500 max-w-[200px] tracking-widest font-semibold"
@@ -400,7 +403,7 @@ const directores = [
             class="relative inline-flex items-center justify-center font-sans text-5xl md:text-6xl font-black text-primary mb-4"
           >
             <span class="absolute right-full mr-2 text-3xl md:text-4xl">+</span>
-            <span class="counter-number" data-target="190">0</span>
+            <span class="counter-number" data-target="190">190</span>
           </div>
           <p
             class="text-xl md:text-lg text-gray-500 max-w-[200px] tracking-widest font-semibold"
@@ -424,7 +427,7 @@ const directores = [
             class="relative inline-flex items-center justify-center font-sans text-5xl md:text-6xl font-black text-primary mb-4"
           >
             <span class="absolute right-full mr-2 text-3xl md:text-4xl">+</span>
-            <span class="counter-number" data-target="350">0</span>
+            <span class="counter-number" data-target="350">350</span>
           </div>
           <p
             class="text-xl md:text-lg text-gray-500 max-w-[200px] tracking-widest font-semibold"

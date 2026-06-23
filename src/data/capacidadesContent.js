@@ -5,32 +5,32 @@ export const capacidadesContent = {
         area: "Competitividad y Desarrollo",
         areaColor: "#00B050",
         specialistSlugs: ["alvaro-gordillo", "fernando-jauregui"],
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772640888/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/Competitividad_inpcde.webp",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1772640888/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/Competitividad_inpcde.webp",
 
         valorClienteIntro: "Mejorar productividad, empleabilidad e ingresos de la población en edad de trabajar que se encuentra en la zona de influencia directa e indirectamente relacionada: comunidades, distritos, provincias, regiones, países o zonas económicas.",
         valorClienteBullets: [
             {
                 title: "Nivel de Productividad",
                 text: "La competitividad es el conjunto de instituciones, políticas, normas, procedimientos, interacciones y participación público y privado que determina el nivel de productividad.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774878411/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/3_tzmzpt.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774878411/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/3_tzmzpt.jpg",
                 cols: 1
             },
             {
                 title: "Capacidad de Producción",
                 text: "La productividad es la capacidad de producción de los agentes económicos como personas, empresas, organizaciones y entidades gubernamentales, dado los recursos disponibles.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774878422/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/8_crktyy.webp",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774878422/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/8_crktyy.webp",
                 cols: 3
             },
             {
                 title: "Corredores Económicos",
                 text: "La competitividad y productividad determinan el desarrollo de la zona de influencia directa e indirectamente relacionada, así como el crecimiento de los sectores económicos, cadenas de valor de bienes y servicios, clusters y el desarrollo de corredores económicos territoriales.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774878415/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/5_upy7px.webp",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774878415/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/5_upy7px.webp",
                 cols: 3
             },
             {
                 title: "Bienestar y Calidad",
                 text: "La competitividad y productividad al impulsar las condiciones de empleabilidad y los ingresos mejora el bienestar y la calidad de vida de las personas.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774878423/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/7_q1af8i.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774878423/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/7_q1af8i.jpg",
                 cols: 3
             }
         ],
@@ -44,12 +44,12 @@ export const capacidadesContent = {
             {
                 title: "Asistencia Sectorial",
                 bullet: "Asesoría y asistencia técnica para mejorar la competitividad y productividad de sectores económicos, proveedores, clusters, cadenas de valor de bienes y servicios, y de corredores económicos territoriales.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772646621/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_7_kr73ms.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1772646621/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_7_kr73ms.jpg"
             },
             {
                 title: "Planes de Competitividad",
                 bullet: "Asistencia técnica en planes de competitividad y productividad para regiones y países, teniendo en cuenta determinantes clave.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774879386/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/banner-para-web_mg03wf.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774879386/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/banner-para-web_mg03wf.jpg",
                 subBullets: [
                     "Infraestructura", "Capital Humano", "Innovación", "Financiamiento",
                     "Mercado laboral", "Ambiente de negocios", "Comercio exterior y turismo",
@@ -65,12 +65,12 @@ export const capacidadesContent = {
             {
                 title: "Iniciativas Productivas",
                 bullet: "Diseño, creación, implementación, seguimiento y acompañamiento en iniciativas de competitividad y productividad en zonas de influencia directa e indirectamente relacionadas, para sectores y productos de alto potencial de crecimiento: comercialización, logística, transformación e industrialización y producción.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774878409/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/2_r8m7sg.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774878409/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/2_r8m7sg.jpg"
             },
             {
                 title: "Sistemas de Medición",
                 bullet: "Creación de sistemas de medición parciales e integrales para impulsar competitividad y productividad.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774878412/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/3_w70hd7.webp"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774878412/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/3_w70hd7.webp"
             }
         ]
     },
@@ -80,26 +80,26 @@ export const capacidadesContent = {
         area: "Competitividad y Desarrollo",
         areaColor: "#00B050",
         specialistSlugs: ["karla-casas", "jorge-ruiz"],
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772640288/Web%20CCD/Capacidades%20e%20Industrias/Desarrollo/Desarrollo_xepqfz.webp",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1772640288/Web%20CCD/Capacidades%20e%20Industrias/Desarrollo/Desarrollo_xepqfz.webp",
 
         valorClienteIntro: "Mejorar oportunidades y calidad de vida de personas de manera integral, para circunscripciones territoriales comunal, distrital, provincial, regional o países.",
         valorClienteBullets: [
             {
                 title: "Cierre de Brechas",
                 text: "Promover el desarrollo mediante el cierre de brechas para mejorar el bienestar económico y social de las personas.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1780664549/Web%20CCD/Capacidades%20e%20Industrias/Imagen_animada_profesional_de_comunidad_202606050802_ptg68l.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1780664549/Web%20CCD/Capacidades%20e%20Industrias/Imagen_animada_profesional_de_comunidad_202606050802_ptg68l.jpg",
                 cols: 1
             },
             {
                 title: "Prosperidad",
                 text: "Crear riqueza para la prosperidad de los habitantes.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774880197/Web%20CCD/Capacidades%20e%20Industrias/Desarrollo/Truchas_en_Huancan%C3%A9_evnxeo.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774880197/Web%20CCD/Capacidades%20e%20Industrias/Desarrollo/Truchas_en_Huancan%C3%A9_evnxeo.jpg",
                 cols: 2
             },
             {
                 title: "Igualdad Oportunidades",
                 text: "Mejorar las condiciones de vida de las personas: educación para igualar oportunidades, calidad en la atención de la salud, dotación de servicios básicos, conectividad física y virtual, mayores ingresos, buena gobernanza y desarrollo sostenible.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774880253/Web%20CCD/Capacidades%20e%20Industrias/Desarrollo/IMG_3369_yor2xh.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774880253/Web%20CCD/Capacidades%20e%20Industrias/Desarrollo/IMG_3369_yor2xh.jpg",
                 cols: 2
             }
         ],
@@ -108,29 +108,29 @@ export const capacidadesContent = {
             {
                 title: "Planes Concertados",
                 bullet: "Elaborar planes territoriales de desarrollo concertados.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774879386/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/banner-para-web_mg03wf.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774879386/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/banner-para-web_mg03wf.jpg",
                 subBullets: ["Comunidades, localidades o caseríos", "Distritos", "Provincias", "Regiones", "Zonas de influencia directa e indirectamente relacionadas", "Contextos de reasentamiento poblacional"]
             },
             {
                 title: "Asistencia Técnica",
                 bullet: "Brindar asistencia técnica en planes territoriales de desarrollo concertados.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1760666268/Web%20CCD/Capacidades%20e%20Industrias/Proyectos_3_hkawuf.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1760666268/Web%20CCD/Capacidades%20e%20Industrias/Proyectos_3_hkawuf.jpg",
                 subBullets: ["Sociodemográfico", "Crecimiento económico", "Conectividad", "Ambiental", "Riesgos y desastres", "Gobernanza"]
             },
             {
                 title: "Corredores Territoriales",
                 bullet: "Identificar, diseñar y brindar asistencia técnica sobre corredores económicos territoriales a escalas comunal, local, regional y nacional.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774879757/Web%20CCD/Capacidades%20e%20Industrias/Corredores/corredores_eqjmn8.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774879757/Web%20CCD/Capacidades%20e%20Industrias/Corredores/corredores_eqjmn8.jpg"
             },
             {
                 title: "Sistemas KPls",
                 bullet: "Creación de sistemas de medición y KPIs (Key Performance Indicators) para el desarrollo de zonas de influencia directa e indirectamente relacionadas.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770857524/Web%20CCD/Corporate%20Flat%20Illustration/planes_de_desarrollo2_tb0bj3.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1770857524/Web%20CCD/Corporate%20Flat%20Illustration/planes_de_desarrollo2_tb0bj3.jpg"
             },
             {
                 title: "Proyectos Educativos",
                 bullet: "Diseñar e implementar proyectos para mejorar la educación en niveles básico regular, técnico y universitario.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774880236/Web%20CCD/Capacidades%20e%20Industrias/Desarrollo/InstitucionEducativaIntegrada_hzma4b.png"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774880236/Web%20CCD/Capacidades%20e%20Industrias/Desarrollo/InstitucionEducativaIntegrada_hzma4b.png"
             }
         ]
     },
@@ -140,14 +140,14 @@ export const capacidadesContent = {
         area: "Competitividad y Desarrollo",
         areaColor: "#00B050",
         specialistSlugs: ["jorge-ruiz"],
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772650924/Web%20CCD/Capacidades%20e%20Industrias/Corredores/trenes_sls9p0.png",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1772650924/Web%20CCD/Capacidades%20e%20Industrias/Corredores/trenes_sls9p0.png",
 
         valorClienteIntro: "Aprovechar sinergias, economías de escala y potenciar oportunidades económicas y sociales que ofrecen a pobladores, empresas y organizaciones públicas y privadas que se encuentran ubicadas en el recorrido de los corredores económicos territoriales.",
         valorClienteBullets: [
             {
                 title: "Inversión Social Óptima",
                 text: "Optimiza la inversión social pública y privada.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774879749/Web%20CCD/Capacidades%20e%20Industrias/Corredores/pesca-1_gprrk5.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774879749/Web%20CCD/Capacidades%20e%20Industrias/Corredores/pesca-1_gprrk5.jpg",
                 cols: 1,
                 subBullets: [
                     "Visión de prosperidad para múltiples zonas: comunales, distritales, provinciales y regionales.",
@@ -159,13 +159,13 @@ export const capacidadesContent = {
             {
                 title: "Desarrollo Integrado",
                 text: "Desarrollo integrado de zonas de influencia directa e indirectamente relacionadas.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772651016/Web%20CCD/Capacidades%20e%20Industrias/Corredores/Corredor-logistico_yold3l.webp",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1772651016/Web%20CCD/Capacidades%20e%20Industrias/Corredores/Corredor-logistico_yold3l.webp",
                 cols: 2
             },
             {
                 title: "Enfoque Territorial",
                 text: "Robustece el desarrollo bajo el enfoque territorial.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772641842/Web%20CCD/Capacidades%20e%20Industrias/Corredores/Corredores_wctx4s.webp",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1772641842/Web%20CCD/Capacidades%20e%20Industrias/Corredores/Corredores_wctx4s.webp",
                 cols: 2
             }
         ],
@@ -174,17 +174,17 @@ export const capacidadesContent = {
             {
                 title: "Estudios Metodológicos",
                 bullet: "Elaboración de estudios metodológicos para creación, potenciación, gobernanza, planeamiento y gestión con actores públicos y privados clave en la formación, consolidación y crecimiento de corredores económicos territoriales.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772651018/Web%20CCD/Capacidades%20e%20Industrias/Corredores/corredores_tren_acembc.png"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1772651018/Web%20CCD/Capacidades%20e%20Industrias/Corredores/corredores_tren_acembc.png"
             },
             {
                 title: "Cartera de Proyectos",
                 bullet: "Elaboración de cartera de proyectos (megas, grandes, medianos y pequeños) para potenciar el impacto en el cierre de brechas y el desarrollo de la población ubicada en el corredor económico territorial.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774879753/Web%20CCD/Capacidades%20e%20Industrias/Corredores/APLCMEZPQZBZ3OIEJQMS5TLVYQ_rziadw.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774879753/Web%20CCD/Capacidades%20e%20Industrias/Corredores/APLCMEZPQZBZ3OIEJQMS5TLVYQ_rziadw.jpg"
             },
             {
                 title: "Sistemas de Datos",
                 bullet: "KPIs (Key Performance Indicators) y sistemas de datos e información digital sobre corredores económicos territoriales.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774879746/Web%20CCD/Capacidades%20e%20Industrias/Corredores/kpi_eylmrc.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774879746/Web%20CCD/Capacidades%20e%20Industrias/Corredores/kpi_eylmrc.jpg"
             }
         ]
     },
@@ -194,50 +194,50 @@ export const capacidadesContent = {
         area: "Política y Gestión Pública",
         areaColor: "#E26B0A",
         specialistSlugs: ["sergio-villegas", "alvaro-gordillo"],
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772640780/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/Fortalecimiento_hk8y2r.webp",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1772640780/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/Fortalecimiento_hk8y2r.webp",
 
         valorClienteIntro: "Potenciar las capacidades estratégicas y operativas de los funcionarios y colaboradores de los sectores público y privado para mejorar los habilitadores del proceso de desarrollo y competitividad.",
         valorClienteBullets: [
             {
                 title: "Inversión Eficiente",
                 text: "Rapidez y calidad de la inversión.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774886113/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/5_irat7h.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774886113/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/5_irat7h.jpg",
                 cols: 1
             },
             {
                 title: "Cofinanciamiento Social",
                 text: "Cofinanciamiento público y privado y escalamiento de programas y proyectos sociales.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774887095/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/images_6_ngcjvn.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774887095/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/images_6_ngcjvn.jpg",
                 cols: 3
             },
             {
                 title: "Viabilidad Dual",
                 text: "Viabilizar componentes político y técnico para el desarrollo.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774887269/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/La_relaci%C3%B3n_entre_t%C3%A9cnica_pol%C3%ADtica_y_burocracia4_egjrda.webp",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774887269/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/La_relaci%C3%B3n_entre_t%C3%A9cnica_pol%C3%ADtica_y_burocracia4_egjrda.webp",
                 cols: 3
             },
             {
                 title: "Generar Confianza",
                 text: "Generar confianza para el desarrollo.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774886192/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/IMG_1050_xeogkv.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774886192/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/IMG_1050_xeogkv.jpg",
                 cols: 3
             },
             {
                 title: "Logro de Acuerdos",
                 text: "Lograr acuerdos para el desarrollo.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774887578/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/Taller-de-identificacion-de-especies-mderables-780x470_htm1qi.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774887578/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/Taller-de-identificacion-de-especies-mderables-780x470_htm1qi.jpg",
                 cols: 3
             },
             {
                 title: "Articulación Clave",
                 text: "Mayor articulación e integración con los actores clave del desarrollo.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774886129/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/reunion_i85wsm.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774886129/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/reunion_i85wsm.jpg",
                 cols: 3
             },
             {
                 title: "Eficiencias Internas",
                 text: "Generación de eficiencias internas y externas para el desarrollo.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1760666264/Web%20CCD/Capacidades%20e%20Industrias/Infraestructura_1_tshlor.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1760666264/Web%20CCD/Capacidades%20e%20Industrias/Infraestructura_1_tshlor.jpg",
                 cols: 3
             }
         ],
@@ -247,22 +247,22 @@ export const capacidadesContent = {
             {
                 title: "Preparación para Cierre de Brechas",
                 bullet: "Fortalecimiento de capacidades en desarrollo y proceso de cierre de brechas económicas y sociales a líderes y actores clave.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778782113/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/genera_una_imagen_los_mas_202605141308_rqqhtg.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778782113/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/genera_una_imagen_los_mas_202605141308_rqqhtg.jpg"
             },
             {
                 title: "Fortalecimiento con los Mejores Gestores",
                 bullet: "Retroalimentación de mejores experiencias con los mejores gestores de inversión a nivel nacional.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778781871/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/Imagen41_zctxns.png"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778781871/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/Imagen41_zctxns.png"
             },
             {
                 title: "Creación de Plataformas Digitales",
                 bullet: "Diseño y creación de plataformas y campus físico y virtual para el fortalecimiento de capacidades para planeamiento y gestión del desarrollo.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778781937/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/Imagen42_iqidho.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778781937/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/Imagen42_iqidho.jpg"
             },
             {
                 title: "Uso de Múltiples Modalidades",
                 bullet: "Fortalecimiento de capacidades bajo las modalidades correspondientes:",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778781869/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/Imagen43_vruewi.png",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778781869/Web%20CCD/Capacidades%20e%20Industrias/Fortalecimiento/Imagen43_vruewi.png",
                 subBullets: ["Presencial", "Virtual", "Semipresencial"]
             }
         ]
@@ -273,26 +273,26 @@ export const capacidadesContent = {
         area: "Política y Gestión Pública",
         areaColor: "#E26B0A",
         specialistSlugs: ["rudy-laguna"],
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774878115/Web%20CCD/Capacidades%20e%20Industrias/Politica%20Fiscal/Editorial_invhvu.jpg",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774878115/Web%20CCD/Capacidades%20e%20Industrias/Politica%20Fiscal/Editorial_invhvu.jpg",
 
         valorClienteIntro: "La política fiscal es determinante para la competitividad y el desarrollo. Preservando la sostenibilidad fiscal y la condición necesaria de estabilidad de precios, con los instrumentos fiscales como tributos, gasto público, endeudamiento público y financiamiento público se logra la prosperidad de las naciones.",
         valorClienteBullets: [
             {
                 title: "Estabilidad Económica",
                 text: "Estabilidad económica para la prosperidad.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778789297/Web%20CCD/Industrias/image-1536x768_muqd5a.png",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778789297/Web%20CCD/Industrias/image-1536x768_muqd5a.png",
                 cols: 3
             },
             {
                 title: "Cierre de Brechas",
                 text: "Dotación de servicios y cierre de brechas económicas y sociales.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774891350/Web%20CCD/Capacidades%20e%20Industrias/Politica%20Fiscal/crecimiento-economico-peru-1_l7bvif.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774891350/Web%20CCD/Capacidades%20e%20Industrias/Politica%20Fiscal/crecimiento-economico-peru-1_l7bvif.jpg",
                 cols: 3
             },
             {
                 title: "Igualdad de Oportunidades",
                 text: "Crea condiciones de igualdad de oportunidades.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774892068/Web%20CCD/Capacidades%20e%20Industrias/Politica%20Fiscal/63e45ec741bdd9d8fc69932e_Acqui-Hiring_zuqxd4.webp",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774892068/Web%20CCD/Capacidades%20e%20Industrias/Politica%20Fiscal/63e45ec741bdd9d8fc69932e_Acqui-Hiring_zuqxd4.webp",
                 cols: 3
             }
         ],
@@ -301,24 +301,24 @@ export const capacidadesContent = {
             {
                 title: "Asistencia Técnica",
                 bullet: "Asesoría y asistencia técnica en política fiscal.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778792370/Web%20CCD/Industrias/necesito_esta_imagen_pero_resultado_202605141557_sqdsf6.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778792370/Web%20CCD/Industrias/necesito_esta_imagen_pero_resultado_202605141557_sqdsf6.jpg",
 
             },
             {
                 title: "Estudios Fiscales",
                 bullet: "Elaboración de estudios sobre política fiscal.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778792811/Web%20CCD/Industrias/eliminar_este_titulo_2K_202605141606_ofkg7f.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778792811/Web%20CCD/Industrias/eliminar_este_titulo_2K_202605141606_ofkg7f.jpg",
 
             },
             {
                 title: "Marcos Fiscales",
                 bullet: "Diseño y actualización de marcos fiscales de mediano y largo plazo.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778793229/Web%20CCD/Industrias/imagen_en_muy_alta_resolucion_202605141613_tmkvdb.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778793229/Web%20CCD/Industrias/imagen_en_muy_alta_resolucion_202605141613_tmkvdb.jpg"
             },
             {
                 title: "Instrumentos Innovadores",
                 bullet: "Creación de instrumentos fiscales innovadores para la promoción y el crecimiento de sectores productivos de la economía.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778793175/Web%20CCD/Industrias/imagen_en_muy_alta_resolucion_202605141612_lzasli.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778793175/Web%20CCD/Industrias/imagen_en_muy_alta_resolucion_202605141612_lzasli.jpg"
             }
         ]
     },
@@ -328,14 +328,14 @@ export const capacidadesContent = {
         area: "Política y Gestión Pública",
         areaColor: "#E26B0A",
         specialistSlugs: ["alex-carbajal"],
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774876365/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/shutterstock_2021271824_v6ykz2.webp",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774876365/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/shutterstock_2021271824_v6ykz2.webp",
 
         valorClienteIntro: "Los fondos sociales para el desarrollo local o comunal (públicos, privados o públicos-privados) contribuyen en la gestión social de las empresas en las zonas de influencia directa e indirectamente relacionadas.",
         valorClienteBullets: [
             {
                 title: "Gestión Social",
                 text: "Los fondos sociales contribuyen con la gestión social de la empresa y el desarrollo de la zona de influencia, principalmente mediante:",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774886325/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/image_j2vjuk.webp",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774886325/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/image_j2vjuk.webp",
                 cols: 1,
                 subBullets: [
                     "Generación de confianza con actores.",
@@ -348,13 +348,13 @@ export const capacidadesContent = {
             {
                 title: "Aceleración del Desarrollo",
                 text: "Los fondos sociales crean herramientas estratégicas que permiten mayor rapidez en el proceso de desarrollo local y comunal de la zona de influencia.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774886784/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/images_5_mkgc6f.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774886784/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/images_5_mkgc6f.jpg",
                 cols: 2
             },
             {
                 title: "Sinergias para el Desarrollo",
                 text: "Los fondos sociales cofinancian y potencian la intervención pública y privada en favor del desarrollo de la población local y comunal.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774886544/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/village-of-carania-peru-2023-11-27-05-31-55-utc-jpg_igb12q.webp",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774886544/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/village-of-carania-peru-2023-11-27-05-31-55-utc-jpg_igb12q.webp",
                 cols: 2
             }
         ],
@@ -363,37 +363,37 @@ export const capacidadesContent = {
             {
                 title: "Asistencia Técnica en Fondos Sociales",
                 bullet: "Evaluar, diseñar y brindar asistencia técnica en constitución y operatividad de fondos sociales.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778778707/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/Imagen33_h1n3xd.png"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778778707/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/Imagen33_h1n3xd.png"
             },
             {
                 title: "Fortalecimiento de Gobernanza",
                 bullet: "Mejorar gobernanza de fondos sociales.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778779985/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/Imagen35_vn5mr1.png"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778779985/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/Imagen35_vn5mr1.png"
             },
             {
                 title: "Optimizar Procesos",
                 bullet: "Diseñar, fortalecer capacidades y asistencia técnica para mejorar y optimizar la organización, procesos, MAPROS, comités, protocolos y manuales para mejorar rapidez y calidad de la inversión social.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778778813/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/genera_una_imagen_los_mas_202605141213_c64a3c.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778778813/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/genera_una_imagen_los_mas_202605141213_c64a3c.jpg"
             },
             {
                 title: "Participación de Beneficiarios",
                 bullet: "Diseñar e implementar estrategias para potenciar procesos participativos de los beneficiarios en los fondos sociales.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778780110/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/genera_una_imagen_los_mas_202605141235_pkqxo7.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778780110/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/genera_una_imagen_los_mas_202605141235_pkqxo7.jpg"
             },
             {
                 title: "Mecanismos de Sostenibilidad",
                 bullet: "Estructurar mecanismos de complementariedad y sostenibilidad de fondos sociales con otras fuentes de financiamiento para el desarrollo.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778780002/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/Imagen36_ia44bo.png"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778780002/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/Imagen36_ia44bo.png"
             },
             {
                 title: "Optimizar Procesos en Fondos Sociales",
                 bullet: "Asesoría y asistencia técnica en planeamiento y gestión de proyectos de inversión de fondos sociales.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778778713/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/Imagen34_kmabpi.png"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778778713/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/Imagen34_kmabpi.png"
             },
             {
                 title: "Creación de Fondos Sociales",
                 bullet: "Crear y operativizar personas jurídicas para administrar fondos sociales e inversión social para el desarrollo de zonas de influencia directa e indirectamente relacionadas.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778778624/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/genera_una_imagen_los_mas_202605141210_n8vnh3.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778778624/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/genera_una_imagen_los_mas_202605141210_n8vnh3.jpg"
             }
         ]
     },
@@ -410,25 +410,25 @@ export const capacidadesContent = {
             {
                 title: "Atenuación de Riesgos",
                 text: "Atenuar los efectos negativos de la variación de precios de commodities sobre las finanzas públicas y los precios de la economía.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778776625/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20de%20Estabilizacion/genera_una_imagen_los_mas_202605141136_y7qdfa.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778776625/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20de%20Estabilizacion/genera_una_imagen_los_mas_202605141136_y7qdfa.jpg",
                 cols: 2
             },
             {
                 title: "Diversificación Fiscal",
                 text: "Diversificar los riesgos y la exposición de las cuentas fiscales por variaciones de los precios de los commodities.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774885799/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20de%20Estabilizacion/6428e823a05aa704cfa2974c_funding-financing-business-project-2022-02-12-01-24-13-utc-_1__j6luuj.webp",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774885799/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20de%20Estabilizacion/6428e823a05aa704cfa2974c_funding-financing-business-project-2022-02-12-01-24-13-utc-_1__j6luuj.webp",
                 cols: 2
             },
             {
                 title: "Nuevas Oportunidades",
                 text: "Identificar nuevas oportunidades de desarrollo generados por los cambios estructurales de los precios internacionales.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774885868/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20de%20Estabilizacion/WhatsApp-Image-2022-07-05-at-12.20.30-PM_qs5wmb.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774885868/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20de%20Estabilizacion/WhatsApp-Image-2022-07-05-at-12.20.30-PM_qs5wmb.jpg",
                 cols: 2
             },
             {
                 title: "Medidas Preventivas",
                 text: "Disponer mecanismos preventivos y medidas de política fiscal para responder a crisis económicas y financieras internacionales motivadas por desarreglos institucionales, conflictos geopolíticos y bélicos, embates de la naturaleza y eventos de sanidad.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774885974/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20de%20Estabilizacion/prevencion-de-riesgos-en-economia_dsjp5z.webp",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774885974/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20de%20Estabilizacion/prevencion-de-riesgos-en-economia_dsjp5z.webp",
                 cols: 2
             }
         ],
@@ -437,22 +437,22 @@ export const capacidadesContent = {
             {
                 title: "Asistencia Técnica",
                 bullet: "Evaluar, diseñar y brindar asistencia técnica sobre fondos de estabilización de precios de commodities, principalmente en petróleo crudo, gas natural y minerales, así como en mecanismos que reducen la exposición a los riesgos.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778777140/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20de%20Estabilizacion/genera_una_imagen_los_mas_202605141145_pbmnn7.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778777140/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20de%20Estabilizacion/genera_una_imagen_los_mas_202605141145_pbmnn7.jpg"
             },
             {
                 title: "Estudios de Riesgos",
                 bullet: "Elaboración de estudios sobre exposición, riesgos y oportunidades en las cuentas fiscales nacional, regional, local y comunal por cambios transitorios y permanentes en los precios de commodities.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778776735/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20de%20Estabilizacion/Imagen31_kta0p0.png"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778776735/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20de%20Estabilizacion/Imagen31_kta0p0.png"
             },
             {
                 title: "Mecanismos Preventivos",
                 bullet: "Diseñar y elaborar mecanismos preventivos y medidas de política fiscal para atenuar los efectos de las crisis económicas y financieras internacionales.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778776165/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20de%20Estabilizacion/genera_una_imagen_los_mas_202605141127_rga6og.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778776165/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20de%20Estabilizacion/genera_una_imagen_los_mas_202605141127_rga6og.jpg"
             },
             {
                 title: "Estrategias Combinadas",
                 bullet: "Elaborar estrategias combinadas de fondos de estabilización de precios de commodities y hudge funds, así como instrumentos fiscales innovadores para atenuar los riesgos.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778776736/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20de%20Estabilizacion/Imagen32_jabysr.png"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778776736/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20de%20Estabilizacion/Imagen32_jabysr.png"
             }
         ]
     },
@@ -462,32 +462,32 @@ export const capacidadesContent = {
         area: "Estudios Económicos",
         areaColor: "#0070C0",
         specialistSlugs: ["mario-huaman"],
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774647866/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/pexels-mikhail-nilov-9301831_l5gyaj.jpg",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774647866/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/pexels-mikhail-nilov-9301831_l5gyaj.jpg",
 
         valorClienteIntro: "Transformar datos cuantitativos, series de tiempo e información transversal, así como información cualitativa, en conclusiones, recomendaciones, relaciones causa efecto, fuentes de explicación y descripción de comportamientos para la mejor toma de decisiones en materia de competitividad y desarrollo.",
         valorClienteBullets: [
             {
                 title: "Estimación Causal",
                 text: "Estimar parámetros causa efecto para evaluar y crear medidas correctivas.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774881924/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/images_2_qwphjg.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774881924/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/images_2_qwphjg.jpg",
                 cols: 3
             },
             {
                 title: "Modelos Predictivos",
                 text: "Estimación de modelos económicos y financieros para explicar comportamientos y proyectar valores.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774881975/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/3_pi7h2h.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774881975/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/3_pi7h2h.jpg",
                 cols: 3
             },
             {
                 title: "Gestión de Crisis",
                 text: "Preparación preventiva para afrontar crisis económicas y financieras internacionales.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774882077/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/4_sen%CC%83ales_de_que_se_avecina_una_crisis_empresarial_zgjt0x.png",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774882077/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/4_sen%CC%83ales_de_que_se_avecina_una_crisis_empresarial_zgjt0x.png",
                 cols: 3
             },
             {
                 title: "Proyección Económica",
                 text: "Interrelación y proyección de variables económicas de ámbito nacional, regional, local y comunal.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774881849/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/Engen_Capital_Estudios_economicos_Economia_internacional_1_c86796f673_rcmeqz.png",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774881849/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/Engen_Capital_Estudios_economicos_Economia_internacional_1_c86796f673_rcmeqz.png",
                 cols: 1
             }
         ],
@@ -496,32 +496,32 @@ export const capacidadesContent = {
             {
                 title: "Análisis Global",
                 bullet: "Análisis global, macroeconómico y de mercados para impulsar competitividad y desarrollo.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774876926/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/embeddings-y-busqueda-semantica-la-tecnologia-detras-de-las-apps-de-ia-modernas_sy2oa0.webp"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774876926/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/embeddings-y-busqueda-semantica-la-tecnologia-detras-de-las-apps-de-ia-modernas_sy2oa0.webp"
             },
             {
                 title: "Impacto Sectorial",
                 bullet: "Elaboración de estudios sobre beneficios e impactos de industrias o sectores económicos.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774882345/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/sem-1084_economia-060821-021316_ku858i.png"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774882345/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/sem-1084_economia-060821-021316_ku858i.png"
             },
             {
                 title: "Modelación Económica y Finaciera",
                 bullet: "Modelación estadística y econometría sobre asuntos económico y financieros relacionados al desarrollo y la competitividad.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774882866/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/modelos-predictivos-series-de-tiempo_hrcwyt.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774882866/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/modelos-predictivos-series-de-tiempo_hrcwyt.jpg"
             },
             {
                 title: "Paneles de Indicadores",
                 bullet: "Elaboración de paneles de indicadores para evaluar y promover la competitividad local y global de industrias específicas.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774882250/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/1556117030116_zhjnz7.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774882250/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/1556117030116_zhjnz7.jpg"
             },
             {
                 title: "Tendencias Globales",
                 bullet: "Análisis de tendencias globales para decisiones estratégicas y mitigar riesgos.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774882664/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/images_3_qofxu4.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774882664/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/images_3_qofxu4.jpg"
             },
             {
                 title: "Optimización Estratégica",
                 bullet: "Identificar oportunidades para potenciar los beneficios y resultados esperados de las intervenciones sobre las industrias y los sectores económicos.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774882549/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/Analisis-de-Modelos-Economicos-Exitosos-1_lfoc36.webp"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774882549/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/Analisis-de-Modelos-Economicos-Exitosos-1_lfoc36.webp"
             }
         ]
     },
@@ -531,26 +531,26 @@ export const capacidadesContent = {
         area: "Inversiones",
         areaColor: "#76933C",
         specialistSlugs: ["elmer-huaman", "sergio-villegas"],
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774890805/Web%20CCD/Capacidades%20e%20Industrias/Inversiones/pexels-betongsmcsg-32690815_hirs0b.jpg",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774890805/Web%20CCD/Capacidades%20e%20Industrias/Inversiones/pexels-betongsmcsg-32690815_hirs0b.jpg",
 
         valorClienteIntro: "Inversiones y proyectos reducen brechas económicas y sociales, generan desarrollo y mejoran la calidad de vida de la población.",
         valorClienteBullets: [
             /* {
                 title: "Cierre de Brechas",
                 text: "Inversiones y proyectos permiten reducir y cerrar brechas, generan desarrollo y mejoran la calidad de vida de la población.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772651507/Web%20CCD/Capacidades%20e%20Industrias/Inversiones/exportaciones_ee3b4a.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1772651507/Web%20CCD/Capacidades%20e%20Industrias/Inversiones/exportaciones_ee3b4a.jpg",
                 cols: 1
             }, */
             {
                 title: "Oportunidades",
                 text: "Contribuye a crear igualdad de oportunidades.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772651826/Web%20CCD/Capacidades%20e%20Industrias/Inversiones/ejec_a3blzb.png",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1772651826/Web%20CCD/Capacidades%20e%20Industrias/Inversiones/ejec_a3blzb.png",
                 cols: 2
             },
             {
                 title: "Dinamismo Económico",
                 text: "Dinamiza la economía comunal, local, regional y nacional a corto, mediano y largo plazo.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774893657/Web%20CCD/Capacidades%20e%20Industrias/Inversiones/fruit-2_ms0dwz.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774893657/Web%20CCD/Capacidades%20e%20Industrias/Inversiones/fruit-2_ms0dwz.jpg",
                 cols: 2
             }
         ],
@@ -570,22 +570,22 @@ export const capacidadesContent = {
             {
                 title: "Programas Multianuales",
                 bullet: "Fortalecer capacidades y asistencia técnica para elaborar Programas Multianuales de Inversiones (PMI).",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778787991/Web%20CCD/Industrias/no_uses_texto_para_describir_202605141446_o5k5ua.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778787991/Web%20CCD/Industrias/no_uses_texto_para_describir_202605141446_o5k5ua.jpg"
             },
             {
                 title: "Capacitación Técnica",
                 bullet: "Fortalecer capacidades y asistencia técnica integral a equipos de profesionales y colaboradores de organizaciones públicas y privadas para mejorar la rapidez y calidad en la ejecución de inversión.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778787524/Web%20CCD/Industrias/Imagen52_zhztg3.png"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778787524/Web%20CCD/Industrias/Imagen52_zhztg3.png"
             },
             {
                 title: "Proyectos Innovadores",
                 bullet: "Diseñar e implementar proyectos innovadores de inversión en todas las dimensiones del desarrollo y determinantes de la competitividad.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778788165/Web%20CCD/Industrias/aumntar_la_resolucion_y_quede_202605141448_p08udd.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778788165/Web%20CCD/Industrias/aumntar_la_resolucion_y_quede_202605141448_p08udd.jpg"
             },
             {
                 title: "Programas de inversión",
                 bullet: "Elaborar programas de inversiones para impulsar el desarrollo y la competitividad.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778788166/Web%20CCD/Industrias/no_uses_texto_para_describir_202605141449_du6gac.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778788166/Web%20CCD/Industrias/no_uses_texto_para_describir_202605141449_du6gac.jpg"
             }
         ]
     },
@@ -595,42 +595,42 @@ export const capacidadesContent = {
         area: "Inversiones",
         areaColor: "#76933C",
         specialistSlugs: ["alex-carbajal"],
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774648166/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/Evaluacion_paq2ri_smtush.webp",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774648166/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/Evaluacion_paq2ri_smtush.webp",
 
         valorClienteIntro: "Maximizar el retorno de la inversión y gestión social de la organización en el zona de influencia directa e indirectamente relacionada.",
         valorClienteBullets: [
             {
                 title: "Optimizar Calidad y Rendimiento",
                 text: "Alcanzar los mayores niveles de calidad y rendimiento en la entidad pública o privada, producto de la inversión social en proyectos realizados en la zona de influencia directa e indirectamente relacionada, principalmente para:",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774882930/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/casual-business-man-working-with-laptop_qencii.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774882930/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/casual-business-man-working-with-laptop_qencii.jpg",
                 cols: 1,
                 subBullets: ["Mejorar objetivos, proceso y actividades", "Lecciones aprendidas y extrapolar buenas prácticas", "Comunicación en la organización y stakeholders"]
             },
             {
                 title: "Integridad del proyecto de inversión social",
                 text: "Optimización e integridad vertical y horizontal de la inversión social en todas las etapas.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778773734/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/Imagen22_va1g5o.png ",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778773734/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/Imagen22_va1g5o.png ",
                 cols: 2,
                 subBullets: ["Negociación", "Aprobación", "Elaboración de estudios", "Implementación", "Operación y mantenimiento"]
             },
             {
                 title: "Sistema de comunicación",
                 text: "Transparencia, ganancias de eficiencias y reportes.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778773734/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/Imagen23_xwhexx.png",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778773734/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/Imagen23_xwhexx.png",
                 cols: 2,
                 subBullets: ["Accionistas", "Directorio", "Documentos de sostenibilidad y desarrollo", "Anuarios", "Líderes comunales", "Población beneficiaria"]
             },
             {
                 title: "Sinergia Público-Privada",
                 text: "Generación de complementariedad con intervenciones público y privadas.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774885403/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/images_4_whuxr6.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774885403/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/images_4_whuxr6.jpg",
                 cols: 2,
                 subBullets: ["Inversión", "Operación y mantenimiento", "Financiamiento"]
             },
             {
                 title: "Decisiones Estratégicas",
                 text: "Optimizar decisiones sobre intervenciones sociales para el desarrollo.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774885516/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/10_redim_0_u2hb1r.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774885516/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/10_redim_0_u2hb1r.jpg",
                 cols: 2,
                 subBullets: ["Potenciación", "Restructuración", "Culminación"]
             }
@@ -652,22 +652,22 @@ export const capacidadesContent = {
             {
                 title: "Integración de Actores",
                 bullet: "Participación de stakeholders y actores clave de los programas y proyectos en el proceso de evaluación.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778775651/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/Imagen24_id2na6.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778775651/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/Imagen24_id2na6.jpg"
             },
             {
                 title: "Exposición de Resultados",
                 bullet: "Presentación de resultados de la evaluación a stakeholders y actores clave.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778775583/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/Imagen26_n9jjy1.png"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778775583/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/Imagen26_n9jjy1.png"
             },
             {
                 title: "Medición de Impactos",
                 bullet: "Cuantificación de impactos de los proyectos de inversión social con variables continuas y discretas.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778775582/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/Imagen27_wenkrn.png"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778775582/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/Imagen27_wenkrn.png"
             },
             {
                 title: "Acompañamiento Interno",
                 bullet: "Implementación de recomendaciones de la evaluación en todas las áreas de la empresa u organización.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778775427/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/Imagen25_zte6or.png"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778775427/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/Imagen25_zte6or.png"
             }
         ]
     },
@@ -684,19 +684,19 @@ export const capacidadesContent = {
             {
                 title: "Crear Oportunidades",
                 text: "Mejorar los mecanismos creadores de oportunidades de desarrollo.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774892719/Web%20CCD/Capacidades%20e%20Industrias/Legal/12_goqxmm.webp",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774892719/Web%20CCD/Capacidades%20e%20Industrias/Legal/12_goqxmm.webp",
                 cols: 1
             },
             {
                 title: "Acelerar Desarrollo",
                 text: "Acelerar el proceso de desarrollo sectorial y las oportunidades de desarrollo.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774892594/Web%20CCD/Capacidades%20e%20Industrias/Legal/images_7_q2yalq.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774892594/Web%20CCD/Capacidades%20e%20Industrias/Legal/images_7_q2yalq.jpg",
                 cols: 2
             },
             {
                 title: "Eficiencias Regulatorias",
                 text: "Generación de eficiencias en los sistemas regulatorios.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774892958/Web%20CCD/Capacidades%20e%20Industrias/Legal/images_8_js6rnr.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774892958/Web%20CCD/Capacidades%20e%20Industrias/Legal/images_8_js6rnr.jpg",
                 cols: 2
             }
         ],
@@ -705,27 +705,27 @@ export const capacidadesContent = {
             {
                 title: "Mejora de Políticas Públicas",
                 bullet: "Evaluación y mejora de políticas públicas, principalmente en desarrollo, competitividad, crecimiento económico, infraestructura, planeamiento y descentralización fiscal.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778789169/Web%20CCD/Industrias/imagen_en_muy_alta_resolucion_202605141505_jcn1sp.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778789169/Web%20CCD/Industrias/imagen_en_muy_alta_resolucion_202605141505_jcn1sp.jpg"
             },
             {
                 title: "Mecanismos de Inversión",
                 bullet: "Mejora de mecanismos de inversión pública y privada: asociaciones público privadas, obras por impuestos e inversión pública.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778789442/Web%20CCD/Industrias/imagen_en_muy_alta_resolucion_202605141510_ek0prh.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778789442/Web%20CCD/Industrias/imagen_en_muy_alta_resolucion_202605141510_ek0prh.jpg"
             },
             {
                 title: "Instrumentos Fiscales",
                 bullet: "Evaluación y propuesta de instrumentos fiscales innovadores para promover competitividad y desarrollo nacional y sectorial.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778789386/Web%20CCD/Industrias/imagen_en_muy_alta_resolucion_202605141509_pf17vr.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778789386/Web%20CCD/Industrias/imagen_en_muy_alta_resolucion_202605141509_pf17vr.jpg"
             },
             {
                 title: "Transferencias",
                 bullet: "Sistema de transferencias intergubernamental de recursos descentralizados: canon, regalías y fondos públicos.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778789584/Web%20CCD/Industrias/imagen_en_muy_alta_resolucion_202605141512_ipt8cp.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778789584/Web%20CCD/Industrias/imagen_en_muy_alta_resolucion_202605141512_ipt8cp.jpg"
             },
             {
                 title: "Descentralización",
                 bullet: "Descentralización fiscal y sistemas de administración financiera del sector público.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778790061/Web%20CCD/Industrias/upscalemedia-transformed_vyhwlc.jpg"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778790061/Web%20CCD/Industrias/upscalemedia-transformed_vyhwlc.jpg"
             }
             /* {
                 title: "Fortalecimiento de Fondos",
@@ -741,28 +741,28 @@ export const capacidadesContent = {
         area: "CCD Tech",
         areaColor: "#31869B",
         specialistSlugs: ["fernando-jauregui"],
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774876876/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/Progetto-senza-titolo-2025-03-10T112054.013_icetri.webp",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774876876/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/Progetto-senza-titolo-2025-03-10T112054.013_icetri.webp",
 
         valorClienteIntro: "Desarrollo de sistemas tecnológicos para aumentar la productividad en los procesos y las actividades vinculadas a la competitividad y desarrollo.",
         valorClienteBullets: [
             {
                 title: "Decisiones Informadas",
                 text: "Mejora en proceso de toma de decisiones y acompañamiento en el desarrollo.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1760666258/Web%20CCD/Capacidades%20e%20Industrias/Estudios_2_oisfwm.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1760666258/Web%20CCD/Capacidades%20e%20Industrias/Estudios_2_oisfwm.jpg",
                 cols: 2,
                 subBullets: ["Reducción de la incertidumbre mediante modelos predictivos", "Uso de datos históricos y en tiempo real para anticipar escenarios", "Mejora en la calidad, oportunidad y trazabilidad"]
             },
             {
                 title: "Eficiencia Operativa",
                 text: "Optimización de recursos y eficiencia operativa.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1774888836/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/descarga_eo8vxw.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774888836/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/descarga_eo8vxw.jpg",
                 cols: 2,
                 subBullets: ["Identificación de ineficiencias operativas y cuellos de botella", "Optimización del presupuesto público y privado", "Priorización inteligente de intervenciones y proyectos", "Automatización de procesos analíticos"]
             },
             {
                 title: "Valor Socioeconómico",
                 text: "Generación de valor económico y social.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1760666256/Web%20CCD/Capacidades%20e%20Industrias/Agricultura_1_ffftyc.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1760666256/Web%20CCD/Capacidades%20e%20Industrias/Agricultura_1_ffftyc.jpg",
                 cols: 1,
                 subBullets: ["Mejora del impacto de políticas públicas e inversiones", "Incremento del retorno social y económico", "Mejora del targeting de beneficiarios y territorios", "Reducción de riesgos estratégicos"]
             }
@@ -772,36 +772,36 @@ export const capacidadesContent = {
             {
                 title: "Sistemas de Administración",
                 bullet: "Sistema de Administración del Desarrollo (SAD).",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778784299/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/Imagen44_jjiza3.png",
-                diagramImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778784701/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/necesito_generar_una_imagen_que_202605141351_dh399m.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778784299/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/Imagen44_jjiza3.png",
+                diagramImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778784701/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/necesito_generar_una_imagen_que_202605141351_dh399m.jpg",
                 subBullets: ["Plataformas tecnológicas", "Planeamiento", "Niveles de referencia", "Medidas correctivas", "Supervisar avances", "Evaluar efectos"]
             },
             {
                 title: "Analítica de Datos",
                 bullet: "Analítica de Datos y Ciencia de Datos.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778784297/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/Imagen46_kzslbd.png",
-                diagramImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778785861/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/vamos_a_generar_un_diagrama_202605141410_pgkjda.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778784297/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/Imagen46_kzslbd.png",
+                diagramImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778785861/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/vamos_a_generar_un_diagrama_202605141410_pgkjda.jpg",
                 subBullets: ["Análisis exploratorio", "Gobierno de datos", "Integración de fuentes", "Dashboards interactivos", "Modelos descriptivos y predictivos"]
             },
             {
                 title: "Modelos Predictivos",
                 bullet: "Modelos Predictivos y Prescriptivos con Machine Learning avanzado.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778784305/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/Imagen48_qzvwkc.png", // Intentionally empty to test layout
-                diagramImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778786013/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/vamos_a_generar_un_diagrama_202605141413_vvwujh.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778784305/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/Imagen48_qzvwkc.png", // Intentionally empty to test layout
+                diagramImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778786013/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/vamos_a_generar_un_diagrama_202605141413_vvwujh.jpg",
                 subBullets: ["Proyección de demanda", "Predicción de crecimiento", "Machine Learning supervisado", "Redes neuronales", "Segmentación"]
             },
             {
                 title: "Inteligencia Artificial",
                 bullet: "Inteligencia Artificial para Planeamiento y Gestión Pública.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778784301/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/Imagen45_hspnml.png",
-                diagramImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778785557/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/vamos_a_generar_un_diagrama_202605141405_wofdjx.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778784301/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/Imagen45_hspnml.png",
+                diagramImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778785557/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/vamos_a_generar_un_diagrama_202605141405_wofdjx.jpg",
                 subBullets: ["Planificación territorial inteligente", "Automatización del análisis", "Priorización de inversiones", "Evaluación de políticas públicas"]
             },
             {
                 title: "Sistemas de Información",
                 bullet: "Plataformas Inteligentes y Sistemas de Información estructurada.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778784308/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/Imagen49_wn0pay.png",
-                diagramImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778786354/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/vamos_a_generar_un_diagrama_202605141419_nwk2i5.jpg", // Intentionally empty
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778784308/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/Imagen49_wn0pay.png",
+                diagramImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778786354/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/vamos_a_generar_un_diagrama_202605141419_nwk2i5.jpg", // Intentionally empty
                 subBullets: ["Observatorios económicos y sociales", "Sistemas de monitoreo territorial", "Dashboards estratégicos"]
             }
         ]

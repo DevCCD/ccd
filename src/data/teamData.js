@@ -5,11 +5,11 @@ export const teamMembers = {
         "role": "Director",
         "photos": {
             "formal": "https://res.cloudinary.com/ccdcloudy/image/upload/q_auto/f_auto/v1774896750/Web%20CCD/Equipo/Rudy/rudy-formal_ncf9gl.png",
-            "casual": "https://res.cloudinary.com/ccdcloudy/image/upload/v1778778040/Web%20CCD/Equipo/Rudy/pro_1_b5qmej.png",
-            "detail": "https://res.cloudinary.com/ccdcloudy/image/upload/v1774896750/Web%20CCD/Equipo/Rudy/rudy-formal_ncf9gl.png",
+            "casual": "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778778040/Web%20CCD/Equipo/Rudy/pro_1_b5qmej.png",
+            "detail": "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774896750/Web%20CCD/Equipo/Rudy/rudy-formal_ncf9gl.png",
             "extra": ""
         },
-        "linkedin": "https://www.linkedin.com/in/rudy-laguna-b2432a39/",
+        "linkedin": "https://www.linkedin.com/in/rudy-laguna-48034120b/",
         "intro": "Rudy lidera el trabajo sobre competitividad y desarrollo para circunscripciones nacional, regional, local y comunal, y para sectores económicos de la economía.",
         "about": "Rudy cuenta con más de 25 años de experiencia en competitividad y desarrollo en los ámbitos público y privado. Comenzó su carrera en el Centro para la Competitividad y el Desarrollo (CCD) en el año 2011, luego de una amplia experiencia en los sectores público y privado, así como en proyectos para instituciones de la banca multilateral. Desde el año 2017, Rudy es director del CCD.",
         "experience": [
@@ -246,20 +246,30 @@ export const teamMembers = {
         "name": "Karla Casas",
         "role": "Competitividad, Desarrollo y Proyectos Sociales",
         "photos": {
-            "formal": "https://res.cloudinary.com/ccdcloudy/image/upload/v1778831945/Web%20CCD/Equipo/Karla/karla-casas_ia4gb9.png",
-            "casual": "https://res.cloudinary.com/ccdcloudy/image/upload/v1778832960/Web%20CCD/Equipo/Karla/Karla-casas_gdfadu.png",
-            "detail": "https://res.cloudinary.com/ccdcloudy/image/upload/v1778832960/Web%20CCD/Equipo/Karla/Karla-casas_gdfadu.png",
+            "formal": "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778831945/Web%20CCD/Equipo/Karla/karla-casas_ia4gb9.png",
+            "casual": "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778832960/Web%20CCD/Equipo/Karla/Karla-casas_gdfadu.png",
+            "detail": "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778832960/Web%20CCD/Equipo/Karla/Karla-casas_gdfadu.png",
             "extra": ""
         },
         "linkedin": "https://www.linkedin.com/in/karla-casas-b1384146/",
-        "intro": "Economista con amplia experiencia en desarrollo y competitividad e impacto social en la gestión pública y privada para el desarrollo regional, local y comunal. Lidera proyectos clave orientados a generar impacto social e innovación a través de soluciones estratégicas y sostenibles en sectores como educación y salud, entre otros sectores pilares del desarrollo.",
-        "about": "Karla cuenta con más de 7 años de experiencia en desarrollo, competitividad e impacto social de programas y proyectos, tanto en el sector público como privado. Ha trabajado como especialista en prospectiva y estudios estratégicos en el Centro Nacional de Planeamiento Estratégico (CEPLAN), además de participar en la formulación de planes de desarrollo local concertados para diversos gobiernos regionales y locales (provinciales y distritales). Asimismo, trabajó como especialista en Walsh Perú, participando en la elaboración de estudios de impacto ambiental (EIA y MEIA) de importantes proyectos para el desarrollo del país. Actualmente, ocupa el cargo de Jefe de Proyecto en el Centro para la Competitividad y el Desarrollo (CCD), donde lidera proyectos estratégicos de alto impacto en competitividad, desarrollo económico y gestión pública.",
+        "intro": "Economista con amplia experiencia en desarrollo y competitividad e impacto social en la gestión pública y privada para el desarrollo regional, local y comunal. Lidera proyectos claves orientados a generar impacto social e innovación a través de soluciones estratégicas y sostenibles en sectores como educación, salud, económico y entre otros sectores pilares del desarrollo.",
+        "about": "Karla cuenta con más de 8 años de experiencia en desarrollo, competitividad e impacto social de programas y proyectos, tanto en el sector público como privado. En el sector Público Ha trabajado como Economista en el soporte analítico de información para el AIR Ex Ante del Reglamento de la Ley N° 32434, Ley que promueve la transformación productiva, competitiva y sostenible del sector agrario con protección social hacia la agricultura moderna, a cargo de la Dirección de Políticas y Normatividad Agraria (DIPNA), también ha desempeñado funciones como especialista en prospectiva y estudios estratégicos en el Centro Nacional de Planeamiento Estratégico (CEPLAN), además ha participado en la formulación de planes de desarrollo local concertado para diversos gobiernos regionales y locales (provinciales y distritales). En el Sector Privado, trabajó como especialista en Walsh Perú, participando en la elaboración de estudios de impacto ambiental (EIA y MEIA) de importantes proyectos para el desarrollo del país. Actualmente, ocupa el cargo de Jefe de Proyecto en el Centro para la Competitividad y el Desarrollo (CCD), donde lidera proyectos estratégicos de alto impacto en competitividad, desarrollo económico y gestión pública.",
         "experience": [
-            "Karla ha sido especialista en la Dirección Nacional de Prospectiva y Estudios Estratégicos de CEPLAN, participando en proyectos clave relacionados con la actividad portuaria y el impacto en el desarrollo nacional: 'Actividad portuaria: impactos y oportunidades para el desarrollo nacional'. En esta herramienta fundamental para convertir al país en un megahub portuario del Pacífico participaron especialistas y actores clave para profundizar en el análisis, además de desarrollar propuestas estratégicas para mejorar la competitividad de los territorios con conectividad portuaria.",
-            "Por más de 5 años ha sido consultora en el Centro para la Competitividad y el Desarrollo (CCD), como líder y co-líder en proyectos de competitividad, fortalecimiento institucional, desarrollo económico, gestión pública y estudios económicos. Karla laboró como especialista en Estudios Sociales Junior en Walsh Perú, en la elaboración de la Línea de Base Socioeconómica y Catastro para proyectos clave para importantes empresas minero-energéticas del país, utilizando herramientas como KMZ y QGIS.",
-            "Karla cuenta con experiencia en la jefatura de prácticas en la Escuela de Economía en la Universidad de San Martín de Porres (USMP), en los cursos: Economía Pública y Recursos Naturales; y Dinámica, Ciclos y Estabilización."
+            "Karla ha brindado soporte analítico en información para el AIR Ex Ante del Reglamento de la Ley N° 32434, Ley que promueve la transformación productiva, competitiva y sostenible del sector agrario con protección social hacia la agricultura moderna, a cargo de la Dirección de Políticas y Normatividad Agraria (DIPNA).",
+            "Además también ha sido especialista en la Dirección Nacional de Prospectiva y Estudios Estratégicos de CEPLAN, participando en proyectos claves relacionado con la actividad portuaria y el impacto en el desarrollo nacional: 'Actividad portuaria: impactos y oportunidades para el desarrollo nacional'. En esta herramienta fundamental para convertir al país en un megahub portuario del pacífico participaron especialistas y actores claves para profundizar en el análisis, además de desarrollar propuestas estratégicas para mejorar la competitividad de los territorios con conectividad portuaria.",
+            "Por más de 6 años ha sido consultor en el Centro para la Competitividad y el Desarrollo (CCD), como líder y co-líder en proyectos de competitividad, fortalecimiento institucional, desarrollo económico, gestión pública y estudios económicos. Karla laboró como especialista en Estudios Sociales Junior en Walsh Perú, en la elaboración de la Línea de Base Socioeconómica y Catastro para proyectos claves para importantes empresas mineroenergéticas del país, utilizando herramientas como KMZ y QGIS.",
+            "Karla cuenta con experiencia en la jefatura de de prácticas en la Escuela de Economía en la Universidad de San Martín de Porres (USMP), en los cursos:",
+            "• Economía Pública y Recursos Naturales",
+            "• Dinámica, Ciclos y Estabilización"
         ],
         "education": [
+            {
+                "degree": "Especialidad en Seguimiento y Evaluación de Políticas y Planes",
+                "institution": "Autoridad Nacional de Servicio Civil - SERVIR",
+                "logos": [
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1781894102/Web%20CCD/Logos%20Instituciones/logo-servir_tpam4n.png"
+                ]
+            },
             {
                 "degree": "Diplomado de Gobernabilidad e Innovación Pública",
                 "institution": [
@@ -295,10 +305,10 @@ export const teamMembers = {
         "name": "Jorge Ruiz",
         "role": "Competitividad, Desarrollo y Manufactura",
         "photos": {
-            "formal": "https://res.cloudinary.com/ccdcloudy/image/upload/v1778835514/Web%20CCD/Equipo/Jorge/jorge-ruiz1_nthcep.png",
-            "casual": "https://res.cloudinary.com/ccdcloudy/image/upload/v1778835514/Web%20CCD/Equipo/Jorge/jorge-ruiz1_nthcep.png",
-            "detail": "https://res.cloudinary.com/ccdcloudy/image/upload/v1778835514/Web%20CCD/Equipo/Jorge/jorge-ruiz1_nthcep.png",
-            "extra": "https://res.cloudinary.com/ccdcloudy/image/upload/v1778835514/Web%20CCD/Equipo/Jorge/jorge-ruiz1_nthcep.png"
+            "formal": "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778835514/Web%20CCD/Equipo/Jorge/jorge-ruiz1_nthcep.png",
+            "casual": "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778835514/Web%20CCD/Equipo/Jorge/jorge-ruiz1_nthcep.png",
+            "detail": "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778835514/Web%20CCD/Equipo/Jorge/jorge-ruiz1_nthcep.png",
+            "extra": "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778835514/Web%20CCD/Equipo/Jorge/jorge-ruiz1_nthcep.png"
         },
         "linkedin": "https://www.linkedin.com/in/jorge-andrew-ruiz-barrios-ba27b1203/",
         "intro": "Jorge lidera nuestro trabajo sobre competitividad y desarrollo local concertado a nivel distrital, con soporte del área de estudios económicos, investigación, sistematización y análisis de información estadística.",
@@ -583,10 +593,10 @@ export const teamMembers = {
         "name": "Mario Huamán",
         "role": "Estudios Económicos",
         "photos": {
-            "formal": "https://res.cloudinary.com/ccdcloudy/image/upload/v1779489861/Web%20CCD/Equipo/Mario/Mario-Huaman-rostro_st55pw.png",
-            "casual": "https://res.cloudinary.com/ccdcloudy/image/upload/v1779489395/Web%20CCD/Equipo/Mario/Mario-Huaman-rostro_onsgdi.png",
-            "detail": "https://res.cloudinary.com/ccdcloudy/image/upload/v1779489391/Web%20CCD/Equipo/Mario/Mario-Huaman_s18eew.png",
-            "extra": "https://res.cloudinary.com/ccdcloudy/image/upload/v1779489395/Web%20CCD/Equipo/Mario/Mario-Huaman-rostro_onsgdi.png"
+            "formal": "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1779489861/Web%20CCD/Equipo/Mario/Mario-Huaman-rostro_st55pw.png",
+            "casual": "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1779489395/Web%20CCD/Equipo/Mario/Mario-Huaman-rostro_onsgdi.png",
+            "detail": "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1779489391/Web%20CCD/Equipo/Mario/Mario-Huaman_s18eew.png",
+            "extra": "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1779489395/Web%20CCD/Equipo/Mario/Mario-Huaman-rostro_onsgdi.png"
         },
         "linkedin": "https://www.linkedin.com/in/mario-jes%C3%BAs-huam%C3%A1n-mart%C3%ADnez-a430351b5/",
         "intro": "Mario lidera nuestro trabajo en estudios económicos, análisis sectorial y empresarial en los ámbitos macroeconómicos y microeconómicos.",
@@ -640,8 +650,8 @@ export const teamMembers = {
 
 // Datos de las industrias para reutilizar en el sidebar
 export const industriesData = {
-    "agropecuario": { title: "Agropecuario", image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770791069/Web%20CCD/Industrias/agropecuario_pjqvtz.jpg", link: "/industrias/agropecuario" },
-    "agroexportacion": { title: "Agroexportación", image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770795356/Web%20CCD/Industrias/agroexportacion_uwbi1c.jpg", link: "/industrias/agroexportacion" },
+    "agropecuario": { title: "Agropecuario", image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1770791069/Web%20CCD/Industrias/agropecuario_pjqvtz.jpg", link: "/industrias/agropecuario" },
+    "agroexportacion": { title: "Agroexportación", image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1770795356/Web%20CCD/Industrias/agroexportacion_uwbi1c.jpg", link: "/industrias/agroexportacion" },
     "educacion": { title: "Educación", image: "/industrias/educacion.jpg", link: "/industrias/educacion" },
     "hidrocarburos": { title: "Hidrocarburos", image: "/industrias/hidrocarburos.jpg", link: "/industrias/hidrocarburos" },
     "infraestructura": { title: "Infraestructura y Construcción", image: "/industrias/infraestructura.jpg", link: "/industrias/infraestructura" },
@@ -649,7 +659,7 @@ export const industriesData = {
     "manufactura": { title: "Manufactura", image: "/industrias/manufactura.jpg", link: "/industrias/manufactura" },
     "mineria": { title: "Minería", image: "/industrias/mineria.jpg", link: "/industrias/mineria" },
     "seguridad": { title: "Seguridad", image: "/industrias/seguridad.jpg", link: "/industrias/seguridad" },
-    "publico": { title: "Sector Público", image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770796429/Web%20CCD/Industrias/publico_zqyito.jpg", link: "/industrias/publico" },
+    "publico": { title: "Sector Público", image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1770796429/Web%20CCD/Industrias/publico_zqyito.jpg", link: "/industrias/publico" },
     "portuarios": { title: "Servicios Portuarios", image: "/industrias/portuarios.jpg", link: "/industrias/portuarios" },
     "financiero": { title: "Sistema Financiero", image: "/industrias/financiero.jpg", link: "/industrias/financiero" },
     "tecnologia": { title: "Tecnología", image: "/industrias/tecnologia.jpg", link: "/industrias/tecnologia" },

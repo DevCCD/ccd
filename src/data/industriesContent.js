@@ -2,7 +2,7 @@ export const industriesContent = {
     "agropecuario": {
         title: "Agropecuario",
         shortDescription: "El sector agropecuario está conformado por las actividades agrícolas y pecuarias. La agrícola, realizada principalmente a través del uso de la tierra, produce alimentos para la población y los animales.",
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778793571/Web%20CCD/Industrias/ChatGPT_Image_14_may_2026_04_19_07_p.m_dinu1k.png",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778793571/Web%20CCD/Industrias/ChatGPT_Image_14_may_2026_04_19_07_p.m_dinu1k.png",
         headerImagePosition: "center",
         paragraphs: [
             "El sector agropecuario está conformado por las actividades agrícolas y pecuarias. La agrícola, realizada principalmente a través del uso de la tierra, produce alimentos para la población y los animales, mientras que el pecuario está conformado por aquellas actividades dedicadas a la crianza, manejo y explotación de animales para la obtención de alimentos y materias primas.",
@@ -14,26 +14,26 @@ export const industriesContent = {
         flourishId: "28018262",
         specialistSlugs: ["alvaro-gordillo"],
         capabilitySlugs: ["corredores", "desarrollo"],
-        introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770794345/Web%20CCD/Industrias/agropecuario_w2ulef.jpg",
+        introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1770794345/Web%20CCD/Industrias/agropecuario_w2ulef.jpg",
         relatedWork: [
             {
                 title: "Planes de competitividad y productividad agrícola y/o pecuario",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1778786558/Web%20CCD/Industrias/Imagen50_ovhwvz.png",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778786558/Web%20CCD/Industrias/Imagen50_ovhwvz.png",
                 link: "/capacidades/competitividad#nuestro-trabajo"
             },
             {
                 title: "Estudio y asistencia técnica en proyectos para mejorar la productividad en cadenas de valor de productos agropecuarios",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773296981/Web%20CCD/Industrias/agricultura-peruana_zd2ogr.webp",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773296981/Web%20CCD/Industrias/agricultura-peruana_zd2ogr.webp",
                 link: "/capacidades/desarrollo#nuestro-trabajo"
             },
             {
                 title: "Evaluación de proyectos de infraestructura agropecuaria",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773297099/Web%20CCD/Industrias/standard_WhatsApp-Image-2023-04-25-at-11.24.51-AM-2_judom4.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773297099/Web%20CCD/Industrias/standard_WhatsApp-Image-2023-04-25-at-11.24.51-AM-2_judom4.jpg",
                 link: "/capacidades/evaluacion#nuestro-trabajo"
             },
             {
                 title: "Fortalecimiento de capacidades a organizaciones agropecuarias para mejorar la productividad de las cadenas de valor de productos",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773297234/Web%20CCD/Industrias/El-rol-de-ingeniero-agroindustrial1_owf0wj.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773297234/Web%20CCD/Industrias/El-rol-de-ingeniero-agroindustrial1_owf0wj.jpg",
                 link: "/capacidades/fortalecimiento#nuestro-trabajo"
             }
         ]
@@ -41,7 +41,7 @@ export const industriesContent = {
     "agroexportacion": {
         title: "Agroexportación",
         shortDescription: "Es una industria creciente cuyos productos agrícolas se comercializan globalmente, influenciado por el aumento de la población, los ingresos, la aplicación de nuevas tecnologías que amplían fronteras agrícolas.",
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770795356/Web%20CCD/Industrias/agroexportacion_uwbi1c.jpg",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1770795356/Web%20CCD/Industrias/agroexportacion_uwbi1c.jpg",
         headerImagePosition: "center",
         paragraphs: [
             "Es una industria creciente cuyos productos agrícolas se comercializan globalmente, influenciado por el aumento de la población, los ingresos, la aplicación de nuevas tecnologías que amplían fronteras agrícolas, así como por la tendencia creciente en el consumo de productos naturales, frescos y saludables, los productos de la agroexportación, al transarse en mercado global, requieren sistemas complejos de transformación o industrialización, logísticos, tarifarios y fitosanitarios.",
@@ -51,26 +51,26 @@ export const industriesContent = {
         flourishId: "28143097",
         specialistSlugs: ["jorge-ruiz"],
         capabilitySlugs: ["competitividad", "corredores", "inversiones"],
-        introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770795288/Web%20CCD/Industrias/agroexportacion_oeftc2.jpg",
+        introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1770795288/Web%20CCD/Industrias/agroexportacion_oeftc2.jpg",
         relatedWork: [
             {
                 title: "Planes de agroexportación",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773300048/Web%20CCD/Industrias/boom-agroexportador-scaled_d4qkqo.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773300048/Web%20CCD/Industrias/boom-agroexportador-scaled_d4qkqo.jpg",
                 link: "/capacidades/competitividad#nuestro-trabajo"
             },
             {
                 title: "Estudios de impactos de proyectos agroexportables",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773300238/Web%20CCD/Industrias/Agroexportacion-02-scaled_gdxep3.webp",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773300238/Web%20CCD/Industrias/Agroexportacion-02-scaled_gdxep3.webp",
                 link: "/capacidades/desarrollo#nuestro-trabajo"
             },
             {
                 title: "Desarrollo de clusters y microclusters agroexportables",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773300051/Web%20CCD/Industrias/07-DE-FEBRERO-AGRO-CHAVIC-2_sgsd8q.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773300051/Web%20CCD/Industrias/07-DE-FEBRERO-AGRO-CHAVIC-2_sgsd8q.jpg",
                 link: "/capacidades/competitividad#nuestro-trabajo"
             },
             {
                 title: "Evaluación integral de proyectos agroexportables",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773300235/Web%20CCD/Industrias/Westfalia-Peru-impulsa-un-modelo-sostenible-de-agroexportacion-con-foco-en-calidad-tecnologia-y-alianzas-con-pequenos-medianos-y-grandes-productores_ufc8bm.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773300235/Web%20CCD/Industrias/Westfalia-Peru-impulsa-un-modelo-sostenible-de-agroexportacion-con-foco-en-calidad-tecnologia-y-alianzas-con-pequenos-medianos-y-grandes-productores_ufc8bm.jpg",
                 link: "/capacidades/evaluacion#nuestro-trabajo"
             }
         ]
@@ -78,7 +78,7 @@ export const industriesContent = {
     "educacion": {
         title: "Educación",
         shortDescription: "La educación adecuada y de calidad es fundamental en todo proceso de desarrollo sostenible. La educación genera importantes externalidades positivas en los factores productivo, social y cultural.",
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770795786/Web%20CCD/Industrias/educacion_ftmssr.jpg",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1770795786/Web%20CCD/Industrias/educacion_ftmssr.jpg",
         headerImagePosition: "center",
         paragraphs: [
             "La educación adecuada y de calidad es fundamental en todo proceso de desarrollo sostenible. La educación genera importantes externalidades positivas, principalmente en los factores productivo, social y cultural. En lo productivo dinamiza la actividad económica al crear una masa crítica de trabajadores especializados y capacitados, con habilidades y potencial creciente. La educación superior de calidad impulsa sustancialmente la productividad, los ingresos y los aportes al Estado por tributos. En el factor social, mayor educación genera cohesión, confianza, paz social y desarrollo, contribuye a generar sinergias sociales para ser más productivos y promueve un mayor desarrollo en los niveles individual, familiar, empresarial y estatal. En el factor cultural, la mayor educación contribuye a formar identidades individuales y colectivas, y genera mayores retornos por la experiencia intercultural.",
@@ -92,27 +92,27 @@ export const industriesContent = {
         relatedWork: [
             {
                 title: "Estudios de preinversión y expedientes técnicos para la construcción de infraestructura educativa básica regular y superior",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773325072/Web%20CCD/Industrias/javier-heraud-escuela-bicentenario-sjm-dron-1_gegcjs.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773325072/Web%20CCD/Industrias/javier-heraud-escuela-bicentenario-sjm-dron-1_gegcjs.jpg",
                 link: "/capacidades/evaluacion"
             },
             {
                 title: "Líneas de base, estudios de preinversión y definitivos y evaluación de proyectos sobre logros de aprendizaje",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773325188/Web%20CCD/Industrias/WhatsApp-Image-2022-01-09-at-12.17.29_obwqrq.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773325188/Web%20CCD/Industrias/WhatsApp-Image-2022-01-09-at-12.17.29_obwqrq.jpg",
                 link: "/capacidades/competitividad#nuestro-trabajo"
             },
             {
                 title: "Implementación de proyectos de formación digital en la educación básica regular",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773325307/Web%20CCD/Industrias/PDOXVC4YSNDWXGGXAG75TDDPHU_xdcpny.avif",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773325307/Web%20CCD/Industrias/PDOXVC4YSNDWXGGXAG75TDDPHU_xdcpny.avif",
                 link: "/capacidades/desarrollo"
             },
             {
                 title: "Implementación de proyectos de formación tecnológica en la educación básica regular: computación, electrónica y electricidad",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1777494184/Web%20CCD/Industrias/1_apoezz_rt5h6j.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1777494184/Web%20CCD/Industrias/1_apoezz_rt5h6j.jpg",
                 link: "/capacidades/fortalecimiento#nuestro-trabajo"
             },
             {
                 title: "Evaluación de proyectos ambientales en la educación básica regular",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773325927/Web%20CCD/Industrias/unnamed_1_ywua4m.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773325927/Web%20CCD/Industrias/unnamed_1_ywua4m.jpg",
                 link: "/capacidades/fortalecimiento#nuestro-trabajo"
             }
         ]
@@ -120,7 +120,7 @@ export const industriesContent = {
     "hidrocarburos": {
         title: "Hidrocarburos",
         shortDescription: "El desarrollo de un proyecto en el sector hidrocarburos comprenden principalmente el proceso de obtención de los lotes, la exploración, la construcción y el desarrollo de los lotes y pozos hidrocarburiferos.",
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770796112/Web%20CCD/Industrias/hidrocarburos_mz5gjc.jpg",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1770796112/Web%20CCD/Industrias/hidrocarburos_mz5gjc.jpg",
         headerImagePosition: "center",
         paragraphs: [
             "El desarrollo de un proyecto en el sector hidrocarburos comprende principalmente el proceso de obtención del lote, la exploración, la construcción y el desarrollo del lote y del pozo, la explotación, el transporte de hidrocarburos, la transformación o refinación en destilados o combustibles y el transporte de los productos comercializables a almacenes, centros productivos e industriales y centros de servicios para abastecer a los consumidores finales. En cada una de estas actividades, las empresas del sector hidrocarburos interactúan y contribuyen con el desarrollo de la población que se encuentran directa e indirectamente relacionada. Dependiendo de cada proyecto en concreto, dicha interacción entre las actividades del proyecto de hidrocarburos y la población puede circunscribirse a escalas multi comunidades, distritos, provincias, regiones y países.",
@@ -130,36 +130,36 @@ export const industriesContent = {
         flourishId: "28026948",
         specialistSlugs: ["rudy-laguna", "karla-casas"],
         capabilitySlugs: ["inversiones", "fondos"],
-        introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773326472/Web%20CCD/Industrias/La-historia-del-transporte-de-hidrocarburos-en-el-Peru-el-D.S.-081-2007-EM-e1730707238392_wf5xsp.webp",
+        introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773326472/Web%20CCD/Industrias/La-historia-del-transporte-de-hidrocarburos-en-el-Peru-el-D.S.-081-2007-EM-e1730707238392_wf5xsp.webp",
         relatedWork: [
             {
                 title: "Planes de competitividad y productividad para circunscripciones de proyectos hidrocarburiferos",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1779469824/Web%20CCD/Industrias/Imagen12_d819jw.png",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1779469824/Web%20CCD/Industrias/Imagen12_d819jw.png",
                 link: "/capacidades/evaluacion"
             },
             {
                 title: "Planes de desarrollo concertados regionales y locales",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1779470408/Web%20CCD/Industrias/Imagen11_pioicy.png",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1779470408/Web%20CCD/Industrias/Imagen11_pioicy.png",
                 link: "/capacidades/competitividad#nuestro-trabajo"
             },
             {
                 title: "Potenciación del desarrollo con impulso de corredores económicos territoriales",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773326357/Web%20CCD/Industrias/c1c20ba6b6da1ca7f128e2aeac74c8c1_xljpg_wx2axg.webp",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773326357/Web%20CCD/Industrias/c1c20ba6b6da1ca7f128e2aeac74c8c1_xljpg_wx2axg.webp",
                 link: "/capacidades/desarrollo"
             },
             {
                 title: "Desarrollo de clusters y microclusters relacionados a los proyectos hidrocarburiferos",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772646621/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_7_kr73ms.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1772646621/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_7_kr73ms.jpg",
                 link: "/capacidades/fortalecimiento"
             },
             {
                 title: "Fortalecimiento de capacidades a colaboradores y funcionarios de las instituciones públicas y privadas para mejora el sistema de inversión y desarrollo",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772649545/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_15_nltxde.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1772649545/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_15_nltxde.jpg",
                 link: "/capacidades/fortalecimiento"
             },
             {
                 title: "Evaluación integral de proyectos de inversión social relacionados a proyectos del sector hidrocarburos",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772647752/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_9_rnzit5.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1772647752/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_9_rnzit5.jpg",
                 link: "/capacidades/fortalecimiento"
             }
         ]
@@ -167,7 +167,7 @@ export const industriesContent = {
     "infraestructura": {
         title: "Infraestructura y Construcción",
         shortDescription: "El sector infraestructura y construcción es uno de los pilares del crecimiento económico para mejorar la calidad de vida de la población a niveles global, nacional, regional, provincial, distrital y comunal.",
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773279732/Web%20CCD/Industrias/pexels-diego-pontes-901015-2314021_spgwqa.jpg",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773279732/Web%20CCD/Industrias/pexels-diego-pontes-901015-2314021_spgwqa.jpg",
         headerImagePosition: "center",
         paragraphs: [
             "El sector infraestructura y construcción es uno de los pilares del crecimiento económico para mejorar la calidad de vida de la población a niveles global, nacional, regional, provincial, distrital y comunal. La infraestructura es el conjunto de estructuras de ingeniería y equipos cuya utilidad y uso se prolonga por un largo periodo. A través del uso de la infraestructura los agentes económicos (familias, empresas y Estado) generan bienes y servicios con fines individuales, sociales y productivos e incrementan los ingresos. La construcción es la creación de infraestructura, principalmente mediante la preparación de terrenos, demoliciones, edificaciones, obras civiles, acondicionamientos, entre otras actividades.",
@@ -186,31 +186,31 @@ export const industriesContent = {
         flourishId: "28028742",
         specialistSlugs: ["sergio-villegas"],
         capabilitySlugs: ["inversiones", "desarrollo"],
-        introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773279609/Web%20CCD/Industrias/pexels-sevenstormphotography-439416_kkzgsq.jpg",
+        introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773279609/Web%20CCD/Industrias/pexels-sevenstormphotography-439416_kkzgsq.jpg",
         relatedWork: [
             {
                 title: "Líneas de base, estudios de impactos, estudios de preinversión y expedientes técnicos para la construcción de infraestructura de servicios básicos y conectividad",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773332045/Web%20CCD/Corporate%20Flat%20Illustration/Carretera_realista_con_autos_y_conectividad__minim_delpmaspu_pcrovb.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773332045/Web%20CCD/Corporate%20Flat%20Illustration/Carretera_realista_con_autos_y_conectividad__minim_delpmaspu_pcrovb.jpg",
                 link: "/capacidades/evaluacion"
             },
             {
                 title: "Asesoría y asistencia técnica especializada en la ejecución de proyectos mediante Obras por Impuestos (OxIs)",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773331509/Web%20CCD/Corporate%20Flat%20Illustration/Obras_y_construcciones_minimalist_flat_vector_illu_delpmaspu_ghwdul.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773331509/Web%20CCD/Corporate%20Flat%20Illustration/Obras_y_construcciones_minimalist_flat_vector_illu_delpmaspu_ghwdul.jpg",
                 link: "/capacidades/competitividad#nuestro-trabajo"
             },
             {
                 title: "Asesoría y asistencia técnica especializada en la ejecución de proyectos de inversión mediante Asociaciones Público Privadas (APPs) y Proyectos en Activos (PAs)",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773331787/Web%20CCD/Industrias/APPS-en-Peru_lkpeng.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773331787/Web%20CCD/Industrias/APPS-en-Peru_lkpeng.jpg",
                 link: "/capacidades/desarrollo"
             },
             {
                 title: "Programas de fortalecimiento de capacidades en inversión pública, OxIs, APPs y PAs",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773332027/Web%20CCD/Industrias/IMG_4021_mdoqwg.webp",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773332027/Web%20CCD/Industrias/IMG_4021_mdoqwg.webp",
                 link: "/capacidades/fortalecimiento"
             },
             {
                 title: "Estudios de viabilidad y asistencia técnica para servicios de seguridad tecnológica en centros penitenciarios",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773332280/Web%20CCD/Industrias/357-PENAL-5-LOS-TELARES-ph-gonzalo-viramonte-0300-20-04-2023-HDR-Mejorado-SR-scaled_behagu.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773332280/Web%20CCD/Industrias/357-PENAL-5-LOS-TELARES-ph-gonzalo-viramonte-0300-20-04-2023-HDR-Mejorado-SR-scaled_behagu.jpg",
                 link: "/capacidades/fortalecimiento"
             }
         ]
@@ -218,7 +218,7 @@ export const industriesContent = {
     "inteligencia": {
         title: "Inteligencia Artificial",
         shortDescription: "La inteligencia artificial es un conjunto de sistemas tecnológicos (software o hardware) diseñados y elaborados para realizar funciones de aprendizaje profundo (deep learning).",
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1772644019/Web%20CCD/Industrias/ia_k5ny4x.webp",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1772644019/Web%20CCD/Industrias/ia_k5ny4x.webp",
         headerImagePosition: "center",
         paragraphs: ["La inteligencia artificial es un conjunto de sistemas tecnológicos (software o hardware) diseñados y elaborados para realizar funciones de aprendizaje profundo (deep learning), análisis de grandes volúmenes de datos, razonamiento y percepción, a fin de resolver problemas de manera creativa buscando imitar funcionalidades de la inteligencia humana.",
             "Los sistemas tecnológicos de inteligencia artificial son aplicables a los procesos de desarrollo y competitividad a escalas comunal, local, regional y nacional al tener como objetivos cerrar brechas en las dimensiones del desarrollo o en los determinantes u objetivos priorizados de la competitividad. Para alcanzar estos objetivos se establecen variables e indicadores cuyos comportamientos son explicados con datos que cambian como resultado de la aplicación de políticas y estrategias, programas, proyectos, acciones y actividades públicas y privadas. En todo este ecosistema interactúan agentes económicos como individuos, familias, empresas e instituciones y el Estado, con procesos de aprendizaje e interacciones tipo causa efecto que obedecen a comportamientos económicos, sociales, políticos y culturales en el pasado, en el presente y en el futuro (corto, mediano y largo plazo).",
@@ -227,26 +227,26 @@ export const industriesContent = {
         flourishId: "28143981",
         specialistSlugs: ["fernando-jauregui"],
         capabilitySlugs: ["fortalecimiento", "evaluacion"],
-        introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773339070/Web%20CCD/Industrias/la-inteligencia-artificial-y-su-impacto-en-el-sector-agricola-de-urugu_rqhP1Df_ron3ay.png",
+        introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773339070/Web%20CCD/Industrias/la-inteligencia-artificial-y-su-impacto-en-el-sector-agricola-de-urugu_rqhP1Df_ron3ay.png",
         relatedWork: [
             {
                 title: "Fortalecimiento de capacidades en inteligencia artificial para actores vinculados a la competitividad y el desarrollo",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773339593/Web%20CCD/Corporate%20Flat%20Illustration/Inteligencia_artificial_fortalecimiento_de_capcaca_delpmaspu_ihwcua.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773339593/Web%20CCD/Corporate%20Flat%20Illustration/Inteligencia_artificial_fortalecimiento_de_capcaca_delpmaspu_ihwcua.jpg",
                 link: "/capacidades/evaluacion"
             },
             {
                 title: "Desarrollo de soluciones en procesamiento y analítica avanzada de datos, ciencias de datos aplicada y modelos predictivos y prescriptivos.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773339522/Web%20CCD/Industrias/analisis-de-datos-con-inteligencia-artificial-1_kreapv.png",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773339522/Web%20CCD/Industrias/analisis-de-datos-con-inteligencia-artificial-1_kreapv.png",
                 link: "/capacidades/competitividad#nuestro-trabajo"
             },
             {
                 title: "Automatización del análisis situacional y la priorización de inversiones bajo enfoques multicriterio",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773339343/Web%20CCD/Corporate%20Flat%20Illustration/Inteligencia_artificial_automatizacion_minimalist__delpmaspu_rekjjx.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773339343/Web%20CCD/Corporate%20Flat%20Illustration/Inteligencia_artificial_automatizacion_minimalist__delpmaspu_rekjjx.jpg",
                 link: "/capacidades/desarrollo"
             },
             {
                 title: "Diseño y desarrollo de plataformas inteligentes y sistemas de información institucional orientados a la toma de decisiones basada en evidencia",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773339326/Web%20CCD/Industrias/integracion-de-ia-en-plataformas-de-analisis-de-datos-avances-y-beneficios_dxlryg.webp",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773339326/Web%20CCD/Industrias/integracion-de-ia-en-plataformas-de-analisis-de-datos-avances-y-beneficios_dxlryg.webp",
                 link: "/capacidades/fortalecimiento"
             }
         ]
@@ -254,28 +254,28 @@ export const industriesContent = {
     "manufactura": {
         title: "Manufactura",
         shortDescription: "El sector manufacturero mediante métodos, formulas, procesos y actividades se encarga de transformar insumos, materias primas o productos intermedios en bienes terminados o finales para los consumidores.",
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773280947/Web%20CCD/Industrias/pexels-883349675-29899505_vu3z9a.jpg",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773280947/Web%20CCD/Industrias/pexels-883349675-29899505_vu3z9a.jpg",
         headerImagePosition: "center",
         paragraphs: ["El sector manufacturero mediante métodos, formulas, procesos y actividades se encarga de transformar insumos, materias primas o productos intermedios en bienes terminados o finales para los consumidores o bienes semielaborados demandados por diversos sectores de la economía. La manufactura es un sector altamente diversificado y cuando los participantes alcanzan altos niveles de productividad logran posicionamiento local y global. Esto genera importantes impactos y beneficios como eslabonamientos con múltiples sectores y ramas de la economía, crea y consolida una red importante de proveedores y negocios conexos y relacionados, vincula a los sectores económicos con la academia formativa de profesionales, crea empleos directos, indirectos e inducidos y mayores ingresos, así como mayores pagos de impuestos.", "En el Centro para la Competitividad y el Desarrollo (CCD) elaboramos paneles de indicadores para evaluar y promover medidas para mejorar la competitividad local y global de industrias específicas de la manufactura. Elaboramos estudios de impactos y beneficios generados por las múltiples industrias manufactureras sobre la economía nacional, regional y local en términos de producción, ingresos, empleos, desarrollo de proveedores e industrias conexas y relacionadas, pago de impuestos y generación de recursos para el desarrollo."],
         mainImageAlt: "Manufactura",
         flourishId: "27781708",
         specialistSlugs: ["mario-huaman"],
         capabilitySlugs: ["inversiones", "fondos"],
-        introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773339941/Web%20CCD/Industrias/IJI72JLZWRFB5MICJP5ULP5LAI_wggg3u.avif",
+        introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773339941/Web%20CCD/Industrias/IJI72JLZWRFB5MICJP5ULP5LAI_wggg3u.avif",
         relatedWork: [
             {
                 title: "Elaboración de paneles de indicadores para evaluar y promover medidas para mejorar la competitividad",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773340050/Web%20CCD/Industrias/La_Internet_en_la_elaboraci%C3%B3n_de_estudios_de_mercado_para_la_exportaci%C3%B3n_jcwbdo.png",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773340050/Web%20CCD/Industrias/La_Internet_en_la_elaboraci%C3%B3n_de_estudios_de_mercado_para_la_exportaci%C3%B3n_jcwbdo.png",
                 link: "/capacidades/evaluacion"
             },
             {
                 title: "Elaboración de estudios de impactos y beneficios generados por industrias sobre la economía nacional, regional y local",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773340151/Web%20CCD/Industrias/eemm-online-principal_gkghyn.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773340151/Web%20CCD/Industrias/eemm-online-principal_gkghyn.jpg",
                 link: "/capacidades/competitividad#nuestro-trabajo"
             },
             {
                 title: "Elaboración de estudios sobre crecimiento industrial y crecimiento económico regional",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773340155/Web%20CCD/Industrias/latinoamerica-a-vuelo-de-pajaro_mesa-de-trabajo-1_ll9pjf.png",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773340155/Web%20CCD/Industrias/latinoamerica-a-vuelo-de-pajaro_mesa-de-trabajo-1_ll9pjf.png",
                 link: "/capacidades/desarrollo"
             }
         ]
@@ -283,7 +283,7 @@ export const industriesContent = {
     "mineria": {
         title: "Minería",
         shortDescription: "Las etapas de la actividad minera comprenden el proceso de obtención de la concesión minera, la exploración, la construcción y el desarrollo de la mina, la explotación y transformación del recursos minero.",
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773340513/Web%20CCD/Industrias/mineria4_mmrqhs.jpg",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773340513/Web%20CCD/Industrias/mineria4_mmrqhs.jpg",
         headerImagePosition: "center",
         paragraphs: [
             "Las etapas de la actividad minera comprenden principalmente obtención de la concesión minera, exploración, construcción y desarrollo de la mina, explotación y transformación de minerales en productos comercializables y metales, transporte y cierre de minas. En cada una de estas etapas las empresas mineras interactúan y contribuyen con el desarrollo de la población que se encuentran directa e indirectamente relacionada. Dependiendo de cada proyecto minero en concreto, esta interacción de las actividades con la población puede circunscribirse a escalas multi comunales, distritales, provinciales, regionales y países.",
@@ -293,41 +293,41 @@ export const industriesContent = {
         flourishId: "28142481",
         specialistSlugs: ["rudy-laguna", "karla-casas"],
         capabilitySlugs: ["inversiones", "corredores"],
-        introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773340518/Web%20CCD/Industrias/mineria_ymbax9.jpg",
+        introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773340518/Web%20CCD/Industrias/mineria_ymbax9.jpg",
         relatedWork: [
             {
                 title: "Planes de competitividad y productividad para circunscripciones de proyectos mineros",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1779462762/Web%20CCD/Industrias/Imagen2_lnqcou.png",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1779462762/Web%20CCD/Industrias/Imagen2_lnqcou.png",
                 link: "/capacidades/evaluacion"
             },
             {
                 title: "Planes de desarrollo concertados regionales y locales",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1779462763/Web%20CCD/Industrias/Imagen3_qrko8y.png",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1779462763/Web%20CCD/Industrias/Imagen3_qrko8y.png",
                 link: "/capacidades/competitividad#nuestro-trabajo"
             },
             {
                 title: "Potenciación del desarrollo con impulso de corredores económicos territoriales",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1779464389/Web%20CCD/Industrias/Captura_de_pantalla_2026-05-22_103931_o3rnjg.png",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1779464389/Web%20CCD/Industrias/Captura_de_pantalla_2026-05-22_103931_o3rnjg.png",
                 link: "/capacidades/desarrollo"
             },
             {
                 title: "Evaluación integral de proyectos de inversión social relacionados a proyectos mineros",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1779464980/Web%20CCD/Industrias/Imagen6_ss5fve.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1779464980/Web%20CCD/Industrias/Imagen6_ss5fve.jpg",
                 link: "/capacidades/fortalecimiento"
             },
             {
                 title: "Fortalecimiento de capacidades a colaboradores y funcionarios de las instituciones públicas y privadas para mejora el sistema se inversión y desarrollo",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773341036/Web%20CCD/Industrias/como-es-la-puesta-en-marcha-de-un-proyecto-de-inversion-1-1_vihjbe.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773341036/Web%20CCD/Industrias/como-es-la-puesta-en-marcha-de-un-proyecto-de-inversion-1-1_vihjbe.jpg",
                 link: "/capacidades/fortalecimiento"
             },
             {
                 title: "Desarrollo de proveedores y fuerza laboral local",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1779468594/Web%20CCD/Industrias/Imagen7_mz8hao.png",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1779468594/Web%20CCD/Industrias/Imagen7_mz8hao.png",
                 link: "/capacidades/ia-y-analitica"
             },
             {
                 title: "Desarrollo de clusters y microclusters relacionados a los proyectos mineros",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773341268/Web%20CCD/Corporate%20Flat%20Illustration/Planes_de_desarrollo_evolucion_mineria_minimalist__delpmaspu_pjjmed.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773341268/Web%20CCD/Corporate%20Flat%20Illustration/Planes_de_desarrollo_evolucion_mineria_minimalist__delpmaspu_pjjmed.jpg",
                 link: "/capacidades/fortalecimiento"
             },
         ]
@@ -335,28 +335,28 @@ export const industriesContent = {
     "seguridad": {
         title: "Seguridad Ciudadana",
         shortDescription: "La seguridad ciudadana es un derecho humano y un bien público que deben ser garantizados por los Estados, en labor conjunta con la sociedad.",
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773281534/Web%20CCD/Industrias/seguridad-taxi-san-francisco-halloween-1-scaled-1_zxp7te.webp",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773281534/Web%20CCD/Industrias/seguridad-taxi-san-francisco-halloween-1-scaled-1_zxp7te.webp",
         headerImagePosition: "center",
         paragraphs: ["La seguridad ciudadana es un derecho humano y un bien público que debe ser garantizado por los Estados, en labor conjunta con la sociedad. El objetivo de la seguridad ciudadana es tener convivencia pacífica que proteja la integridad de las personas naturales y jurídicas, con resguardo de los bienes para realizar actividades económicas, sociales, políticas y culturales en un entorno ordenado, seguro y sostenible.", "En el Centro para la Competitividad y el Desarrollo (CCD) elaboramos estudios de viabilidad y preinversión, expedientes técnicos, estudios de impactos en el entorno o zona de influencia de la construcción de establecimientos penitenciarios e infraestructura policial, brindamos asistencia técnica en asociaciones público privada y obras por impuestos para la instalación de sistemas tecnológicos y de bloqueo de telecomunicaciones."],
         mainImageAlt: "Seguridad",
         flourishId: "28141987",
         specialistSlugs: ["viviana-sanchez"],
         capabilitySlugs: ["evaluacion", "fortalecimiento"],
-        introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773388020/Web%20CCD/Industrias/carcel_penal_tqpons.jpg",
+        introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773388020/Web%20CCD/Industrias/carcel_penal_tqpons.jpg",
         relatedWork: [
             {
                 title: "Elaboración de estudios de preinversión y definitivos para la construcción de establecimientos penitenciarios e infraestructura policial",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773388601/Web%20CCD/Industrias/Carcel-de-maxima-seguridad-930x620_o3dl5r.webp",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773388601/Web%20CCD/Industrias/Carcel-de-maxima-seguridad-930x620_o3dl5r.webp",
                 link: "/capacidades/evaluacion"
             },
             {
                 title: "Evaluación de proyectos de construcción de establecimientos penitenciarios e infraestructura policial",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773388453/Web%20CCD/Industrias/66e3302459d4012797018c69_dcal0a.png",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773388453/Web%20CCD/Industrias/66e3302459d4012797018c69_dcal0a.png",
                 link: "/capacidades/evaluacion"
             },
             {
                 title: "Asistencia técnica en asociaciones público privada y obras por impuestos en sistemas tecnológicos y bloqueo de telecomunicaciones",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773388527/Web%20CCD/Industrias/etecsa-cienfuegos-telefonia_zysyn9.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773388527/Web%20CCD/Industrias/etecsa-cienfuegos-telefonia_zysyn9.jpg",
                 link: "/capacidades/desarrollo"
             }
         ]
@@ -364,7 +364,7 @@ export const industriesContent = {
     "publico": {
         title: "Sector Público",
         shortDescription: "El sector público está constituido por un conjunto de instituciones y organismos controlados por el Estado a fin de proveer servicios públicos.",
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770796429/Web%20CCD/Industrias/publico_zqyito.jpg",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1770796429/Web%20CCD/Industrias/publico_zqyito.jpg",
         headerImagePosition: "center",
         paragraphs: [
             "El sector público está constituido por un conjunto de instituciones y organismos controlados por el Estado a fin de proveer servicios públicos como seguridad, protección de la propiedad, justicia, salud, educación, infraestructura física y blanda (instituciones, marcos legales y capital humano necesarios para que la infraestructura física funcione), así como brindar condiciones de estabilidad económica y promoción de los sectores económicos para el crecimiento sostenido y la generación de prosperidad de la población. Para lograr estos fines, el sector público está organizado bajo un sistema de gobernanza nacional, regional o local que debe garantizar el cumplimiento de la ley, con eficiencia, transparencia y rendición de cuentas.",
@@ -377,36 +377,36 @@ export const industriesContent = {
         flourishId: "28045098",
         specialistSlugs: ["alex-carbajal", "viviana-sanchez"],
         capabilitySlugs: ["competitividad", "desarrollo"],
-        introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770796907/Web%20CCD/Industrias/financiero_sp68st.webp",
+        introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1770796907/Web%20CCD/Industrias/financiero_sp68st.webp",
         relatedWork: [
             {
                 title: "Asesoría, asistencia técnica y fortalecimiento de capacidades en diseño, normatividad e implementación y evaluación de políticas públicas",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773386288/Web%20CCD/Industrias/Entidades-y-Autoridades-Publicas-en-Peru-Mas-Ejemplos_ek2pgk.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773386288/Web%20CCD/Industrias/Entidades-y-Autoridades-Publicas-en-Peru-Mas-Ejemplos_ek2pgk.jpg",
                 link: "/capacidades/evaluacion"
             },
             {
                 title: "Asesoría, asistencia técnica y fortalecimiento de capacidades en políticas fiscales",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773386503/Web%20CCD/Industrias/centrocfpMainimage_1745425368_jnsva5.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773386503/Web%20CCD/Industrias/centrocfpMainimage_1745425368_jnsva5.jpg",
                 link: "/capacidades/competitividad#nuestro-trabajo"
             },
             {
                 title: "Creación de nuevos instrumentos fiscales para el desarrollo",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773387673/Web%20CCD/Industrias/leyesfiscales_lamr5f.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773387673/Web%20CCD/Industrias/leyesfiscales_lamr5f.jpg",
                 link: "/capacidades/desarrollo"
             },
             {
                 title: "Asistencia técnica en fondos de desarrollo: gobernanza, estrategias políticas y técnicas, planeamiento, proyectos de inversión para el desarrollo y socialización participación de actores",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773386702/Web%20CCD/Industrias/congreso_andina_un1o7h.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773386702/Web%20CCD/Industrias/congreso_andina_un1o7h.jpg",
                 link: "/capacidades/fortalecimiento"
             },
             {
                 title: "Asesoría en determinantes e impulso del crecimiento económico, competitividad y desarrollo",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773387571/Web%20CCD/Industrias/1500x844-competitividad-crecimiento-economico_ky1wrn.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773387571/Web%20CCD/Industrias/1500x844-competitividad-crecimiento-economico_ky1wrn.jpg",
                 link: "/capacidades/fortalecimiento"
             },
             {
                 title: "Asesoría y asistencia técnica en diseño e implementación de KPIs para funcionarios y colaboradores para ganancia de eficiencias",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773387312/Web%20CCD/Industrias/1-41_dehq91.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773387312/Web%20CCD/Industrias/1-41_dehq91.jpg",
                 link: "/capacidades/fortalecimiento"
             }
         ]
@@ -414,7 +414,7 @@ export const industriesContent = {
     "portuarios": {
         title: "Servicios Portuarios",
         shortDescription: "Son fundamentales en todo proceso de desarrollo porque permiten mayor comercio internacional, ampliación de mercados y expansión de las ventas de las empresas ubicadas en el país.",
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773281993/Web%20CCD/Industrias/96694_j7iiry.jpg",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773281993/Web%20CCD/Industrias/96694_j7iiry.jpg",
         headerImagePosition: "center",
         paragraphs: ["Los sistemas portuarios son fundamentales en todo proceso de desarrollo porque permiten la transacción de bienes, mayor comercio internacional, ampliación de mercados y expansión de las ventas de las grandes, medianas, pequeñas y micro empresas ubicadas en el país, región, distrito o comunidad. Esto a su vez genera empleos directos, indirectos e inducidos, así como ingresos para los trabajadores y las familias para mejorar la calidad de vida.",
             "El Centro para la Competitividad y el Desarrollo (CCD) apoya en identificar acciones estratégicas y operativas para el crecimiento sostenido de las actividades del entorno portuario. Brindamos asistencia técnica en planificación, competitividad y desarrollo de la zona de influencia económica y social del sistema portuario, con un enfoque de corredores económicos territoriales. Evaluamos los beneficios generados por el sistema portuario en la zona de influencia. Fortalecemos capacidades en competitividad y desarrollo a los actores relacionados a los sistemas portuarios, principalmente en proyectos de inversión, sistemas tecnológicos de información para la evaluación, seguimiento y acompañamiento del proceso de prosperidad portuario."],
@@ -422,36 +422,36 @@ export const industriesContent = {
         flourishId: "28237648",
         specialistSlugs: ["karla-casas"],
         capabilitySlugs: ["corredores", "competitividad"],
-        introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773281938/Web%20CCD/Industrias/PCB7W7DFSFE45EF3IWTFQSBESQ_iixzjw.avif",
+        introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773281938/Web%20CCD/Industrias/PCB7W7DFSFE45EF3IWTFQSBESQ_iixzjw.avif",
         relatedWork: [
             {
                 title: "Planes de competitividad y productividad regionales de la zona de influencia portuaria",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773376126/Web%20CCD/Industrias/puertos-de-peru-933-526_y1xkj3.webp",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773376126/Web%20CCD/Industrias/puertos-de-peru-933-526_y1xkj3.webp",
                 link: "/capacidades/evaluacion"
             },
             {
                 title: "Planes de desarrollo concertados regionales y locales de la zona de influencia portuaria",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773376252/Web%20CCD/Industrias/nave-y-acceso-del-ingeniero-3163442_khsxod.webp",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773376252/Web%20CCD/Industrias/nave-y-acceso-del-ingeniero-3163442_khsxod.webp",
                 link: "/capacidades/competitividad#nuestro-trabajo"
             },
             {
                 title: "Desarrollo de corredores económicos territoriales relacionados al sistema portuario",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773376131/Web%20CCD/Industrias/000991147W_wjxsgr.webp",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773376131/Web%20CCD/Industrias/000991147W_wjxsgr.webp",
                 link: "/capacidades/desarrollo"
             },
             {
                 title: "Desarrollo de clusters y microclusters relacionados al sistema portuario",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773376441/Web%20CCD/Industrias/66849911a815d2104b6451b2_zsj2bn.png",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773376441/Web%20CCD/Industrias/66849911a815d2104b6451b2_zsj2bn.png",
                 link: "/capacidades/fortalecimiento"
             },
             {
                 title: "Fortalecimiento de capacidades para el crecimiento del ecosistema portuario",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773376525/Web%20CCD/Industrias/transporte-wordpress_w1mwxs.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773376525/Web%20CCD/Industrias/transporte-wordpress_w1mwxs.jpg",
                 link: "/capacidades/fortalecimiento"
             },
             {
                 title: "Evaluación integral de programas y proyectos de inversión para el desarrollo portuario",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773376523/Web%20CCD/Industrias/67e4811ea11d8cc643066814_n99mkf.webp",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773376523/Web%20CCD/Industrias/67e4811ea11d8cc643066814_n99mkf.webp",
                 link: "/capacidades/fortalecimiento"
             }
         ]
@@ -459,7 +459,7 @@ export const industriesContent = {
     "financiero": {
         title: "Sistema Financiero",
         shortDescription: "El sistema financiero es el conjunto de instituciones, normas, medios físicos y virtuales y mercados que tienen por objetivo principal canalizar el ahorro de quienes tienen excedente de dinero.",
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1770796907/Web%20CCD/Industrias/financiero_sp68st.webp",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1770796907/Web%20CCD/Industrias/financiero_sp68st.webp",
         headerImagePosition: "center",
         paragraphs: [
             "El sistema financiero es el conjunto de instituciones, normas, medios físicos y virtuales y mercados que tienen por objetivo principal canalizar el ahorro de quienes tienen excedente de dinero (ahorradores) hacia quienes necesitan financiamiento (inversores o deudores). Asimismo, el sistema financiero dispone de acuerdos nacionales e internacionales que regulan el flujo de capitales, facilitando la inversión y el financiamiento nacional y global, buscando preservar la estabilidad y la diversificación de riesgos.",
@@ -472,21 +472,21 @@ export const industriesContent = {
         flourishId: "28140484",
         specialistSlugs: ["fernando-jauregui"],
         capabilitySlugs: ["inversiones", "fondos"],
-        introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773375649/Web%20CCD/Industrias/JG3OO5KEDJGWXE4EHASHNTD3YE_zjzqge.jpg",
+        introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773375649/Web%20CCD/Industrias/JG3OO5KEDJGWXE4EHASHNTD3YE_zjzqge.jpg",
         relatedWork: [
             {
                 title: "Elaboración de líneas de base, estudios de impactos, estudios de preinversión y definitivos y estudios de evaluación de proyectos",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773375858/Web%20CCD/Industrias/1500x844-evaluar-proyectos-inversion_kcsu6y.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773375858/Web%20CCD/Industrias/1500x844-evaluar-proyectos-inversion_kcsu6y.jpg",
                 link: "/capacidades/evaluacion"
             },
             {
                 title: "Asesoría y asistencia técnica especializada en la ejecución de proyectos mediante Obras por Impuestos (OxI)",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773375962/Web%20CCD/Industrias/Gerencia_Construccion_v3vb0z.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773375962/Web%20CCD/Industrias/Gerencia_Construccion_v3vb0z.jpg",
                 link: "/capacidades/competitividad#nuestro-trabajo"
             },
             {
                 title: "Asesoría y asistencia técnica especializada en la ejecución de proyectos de inversión mediante Asociaciones Público Privadas (APPs)",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773331787/Web%20CCD/Industrias/APPS-en-Peru_lkpeng.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773331787/Web%20CCD/Industrias/APPS-en-Peru_lkpeng.jpg",
                 link: "/capacidades/desarrollo"
             }
         ]
@@ -494,28 +494,28 @@ export const industriesContent = {
     "tecnologia": {
         title: "Tecnología",
         shortDescription: "La tecnología integra y realiza aplicación práctica del conocimiento para crear dispositivos y servicios que funcionen de manera autónoma y reproducible para resolver problemas y mejorar la calidad de vida de las personas.",
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773289166/Web%20CCD/Industrias/energi%CC%81a_renovable_apertura-paneles-sostenible-panel-solar-eolica-molinos-medioambiente_zuseid.avif",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773289166/Web%20CCD/Industrias/energi%CC%81a_renovable_apertura-paneles-sostenible-panel-solar-eolica-molinos-medioambiente_zuseid.avif",
         headerImagePosition: "center",
         paragraphs: ["La tecnología integra y realiza aplicación práctica del conocimiento para crear dispositivos y servicios que funcionen de manera autónoma y reproducible para resolver problemas y mejorar la calidad de vida de las personas. Mediante aspectos conceptuales, evidencia empírica, métodos, formulas y herramientas digitales, la tecnología permite crear plataformas informáticas para recopilar, analizar y administrar datos, vincular variables e indicadores en el proceso de cierre de brechas en las dimensiones del desarrollo y en los determinantes de la competitividad. Las plataformas tecnológicas sobre el desarrollo y la competitividad permiten planeamiento, fijar niveles de referencia, identificar medidas públicas y privadas correctivas y eficaces, determinar objetivos y metas, fortalecer capacidades, monitorear y acompañar a actores, supervisar avances, evaluar efectos y beneficios, así como comunicar para generar confianza.", "En el Centro para la Competitividad y el Desarrollo (CCD) desarrollamos técnicas, instrumentos y métodos informáticos y digitales para resolver problemas específicos sobre desarrollo y competitividad para circunscripciones de escalas nacional, regional, local o comunal. Elaboramos Sistemas de Administración del Desarrollo (SAD) para todo tipo de circunscripción o zona de influencia, en versiones ofimática y digitales. Asimismo, creamos sistemas digitales para el fortalecimiento de capacidades para actores clave; y evaluamos, diseñamos e implementamos sistemas virtuales institucionales para promover el desarrollo y la competitividad."],
         mainImageAlt: "Tecnología",
         flourishId: "28139841",
         specialistSlugs: ["melissa-sanchez"],
         capabilitySlugs: ["fortalecimiento", "inversiones"],
-        introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773278321/Web%20CCD/Industrias/tecnologia_kx2cv2.jpg",
+        introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773278321/Web%20CCD/Industrias/tecnologia_kx2cv2.jpg",
         relatedWork: [
             {
                 title: "Elaboramos Sistemas de Administración del Desarrollo (SAD)",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773371430/Web%20CCD/Industrias/1755267813DFQM5lTm_kathir.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773371430/Web%20CCD/Industrias/1755267813DFQM5lTm_kathir.jpg",
                 link: "/capacidades/evaluacion"
             },
             {
                 title: "Desarrollamos sistemas digitales para el fortalecimiento de capacidades para actores clave",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773371403/Web%20CCD/Industrias/capacitacion-DGI-3_hf7oie.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773371403/Web%20CCD/Industrias/capacitacion-DGI-3_hf7oie.jpg",
                 link: "/capacidades/competitividad#nuestro-trabajo"
             },
             {
                 title: "Evaluamos, diseñamos e implementamos sistemas virtuales institucionales para promover el desarrollo y la competitividad",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1773371536/Web%20CCD/Industrias/SMID-training1_ehfdcg.png",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773371536/Web%20CCD/Industrias/SMID-training1_ehfdcg.png",
                 link: "/capacidades/desarrollo"
             }
         ]

@@ -39,7 +39,7 @@ const { specialists, industries } = Astro.props;
                             class="group block transition-all"
                         >
                             <div class="mb-3 h-68 bg-gray-100 rounded-xl overflow-hidden shadow-sm group-hover:shadow-md transition-all">
-                                <img
+                                <img loading="lazy"
                                     src={member.photos.casual}
                                     alt={member.name}
                                     class="h-full w-full object-cover transition-all duration-500 group-hover:scale-105"
@@ -69,7 +69,7 @@ const { specialists, industries } = Astro.props;
                     industries.map((ind) => (
                         <a href={ind.link} class="group block transition-all">
                             <div class="mb-3 h-48 bg-gray-100 rounded-xl overflow-hidden shadow-sm group-hover:shadow-md transition-all">
-                                <img
+                                <img loading="lazy"
                                     src={ind.image}
                                     alt={ind.title}
                                     class="h-full w-full object-cover transition-all duration-500 group-hover:scale-105"
@@ -88,7 +88,7 @@ const { specialists, industries } = Astro.props;
         <!-- <div
             class="rounded-2xl overflow-hidden relative h-64 group cursor-pointer border border-gray-100 shadow-sm"
         >
-            <img
+            <img loading="lazy"
                 src="/capacidades/competitividad/5.webp"
                 alt="Proyectos"
                 class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"

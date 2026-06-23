@@ -38,7 +38,7 @@ const { workList } = Astro.props;
                             {/* Imagen Encabezado Condicional (Solo si tiene imagen asignada) */}
                             {work.image && work.image.trim() !== "" && (
                                 <div class="h-[300px] relative overflow-hidden bg-gray-100 shrink-0">
-                                    <img
+                                    <img loading="lazy"
                                         src={work.image}
                                         alt={work.title || "Nuestro Trabajo"}
                                         class="w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-105"

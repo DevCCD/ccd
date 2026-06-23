@@ -38,9 +38,9 @@ const specialists = specialistSlugs
         class="relative w-full h-[65vh] md:h-[75vh] overflow-hidden bg-gray-900"
         style={`border-bottom-color: ${areaColor};`}
     >
-        <img
+        <img loading="lazy"
             src={headerImage ||
-                "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"}
+                "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"}
             alt={title}
             class="w-full h-full object-cover opacity-80 transition-transform duration-[30000ms] hover:scale-110"
         />
@@ -107,7 +107,7 @@ const specialists = specialistSlugs
                                 class={`group flex flex-col items-center text-center w-full px-8 py-12 bg-white transition-all duration-300 hover:shadow-xl relative z-10 ${specialists.length === 1 ? "max-w-[450px]" : "md:flex-1"}`}
                             >
                                 <div class="w-48 h-48 md:w-56 md:h-56 lg:w-[280px] lg:h-[280px] mb-10 overflow-hidden rounded-full bg-gray-100 border-4 border-gray-50/50">
-                                    <img
+                                    <img loading="lazy"
                                         src={member.photos?.casual}
                                         alt={member.name}
                                         class="w-full h-full object-cover object-top scale-225 transition-transform duration-700 group-hover:scale-[1.1]"

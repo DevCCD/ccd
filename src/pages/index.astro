@@ -21,32 +21,41 @@ const directores = [
   <!-- HERO BANNER (Estilo McKinsey) -->
   <!-- ============================================== -->
   <section
-    class="relative w-full h-[80vh] min-h-[520px] max-h-[780px] overflow-hidden bg-gray-900"
+    class="relative w-full h-[88vh] min-h-[572px] max-h-[858px] overflow-hidden bg-gray-900"
   >
-    <!-- Imagen de fondo (reemplazable) -->
-    <img
-      src="https://res.cloudinary.com/ccdcloudy/image/upload/v1780664364/Web%20CCD/Capacidades%20e%20Industrias/ChatGPT_Image_5_jun_2026_07_58_23_cvskog.png"
-      alt="Comunidades y territorios donde trabajamos"
-      class="absolute inset-0 w-full h-full object-cover scale-105 gsap-hero-image"
-    />
+    <!-- Imagen de fondo (responsive: vertical en móvil, horizontal en desktop) -->
+    <picture class="absolute inset-0 w-full h-full gsap-hero-image">
+      <source
+        media="(max-width: 767px)"
+        srcset="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1781889713/Web%20CCD/Portada/HeroVertical_fzxrw6.png"
+      />
+      <img
+        loading="eager"
+        fetchpriority="high"
+        decoding="async"
+        src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1781890281/Web%20CCD/Portada/HeroHorizontal2_au01zl.png"
+        alt="Comunidades y territorios donde trabajamos"
+        class="absolute inset-0 w-full h-full object-cover scale-105"
+      />
+    </picture>
 
     <!-- Degradado sutil solo sobre el área del texto (superior) -->
     <div
-      class="hidden md:block absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-gray-950/85 via-gray-950/40 to-transparent"
+      class="hidden md:block absolute inset-x-0 top-0 h-2/3 bg-gradient-to-b from-gray-950/90 via-gray-950/60 to-transparent"
     >
     </div>
 
     <!-- Overlay móvil: más oscuro para mejor legibilidad del texto centrado -->
-    <div class="md:hidden absolute inset-0 bg-gray-950/55"></div>
+    <div class="md:hidden absolute inset-0 bg-gray-950/45"></div>
 
     <!-- Contenido (móvil: centrado al medio | desktop: superior) -->
     <div
-      class="relative z-10 h-full max-w-screen-xl mx-auto px-6 sm:px-8 flex justify-center items-center md:items-start md:pt-20"
+      class="relative z-10 h-full max-w-screen-xl mx-auto px-6 sm:px-8 flex justify-center items-center md:items-start md:pt-36"
     >
       <div class="max-w-4xl text-center">
         <!-- Headline -->
         <h1
-          class="font-serif text-white font-light leading-[1.2] tracking-wide gsap-hero-fade"
+          class="font-serif text-white font-light leading-[1.2] tracking-wide gsap-hero-fade [text-shadow:_0_2px_12px_rgb(0_0_0_/_0.55)]"
         >
           <span
             class="block text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem]"
@@ -59,14 +68,14 @@ const directores = [
             creamos verdaderas historias de{" "}
             <a
               href="/capacidades/competitividad"
-              class="text-white px-2 py-0.5 rounded-sm hover:bg-white hover:text-[#910121] transition-all duration-300"
+              class="text-white px-2 py-0.5 rounded-sm underline decoration-white/30 decoration-1 underline-offset-4 hover:no-underline hover:bg-white hover:text-[#910121] transition-all duration-300"
             >
               Competitividad
             </a>{" "}
             y{" "}
             <a
               href="/capacidades/desarrollo"
-              class="text-white px-2 py-0.5 rounded-sm hover:bg-white hover:text-[#910121] transition-all duration-300"
+              class="text-white px-2 py-0.5 rounded-sm underline decoration-white/30 decoration-1 underline-offset-4 hover:no-underline hover:bg-white hover:text-[#910121] transition-all duration-300"
             >
               Desarrollo
             </a>
@@ -86,49 +95,49 @@ const directores = [
               title: "Competitividad",
               link: "/capacidades/competitividad",
               image:
-                "https://res.cloudinary.com/ccdcloudy/image/upload/v1772640888/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/Competitividad_inpcde.webp",
+                "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1772640888/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/Competitividad_inpcde.webp",
               category: "Capacidades",
             },
             {
               title: "Desarrollo",
               link: "/capacidades/desarrollo",
               image:
-                "https://res.cloudinary.com/ccdcloudy/image/upload/v1772640288/Web%20CCD/Capacidades%20e%20Industrias/Desarrollo/Desarrollo_xepqfz.webp",
+                "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1772640288/Web%20CCD/Capacidades%20e%20Industrias/Desarrollo/Desarrollo_xepqfz.webp",
               category: "Capacidades",
             },
             {
               title: "Industrias",
               link: "/industrias",
               image:
-                "https://res.cloudinary.com/ccdcloudy/image/upload/v1773279609/Web%20CCD/Industrias/pexels-sevenstormphotography-439416_kkzgsq.jpg",
+                "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773279609/Web%20CCD/Industrias/pexels-sevenstormphotography-439416_kkzgsq.jpg",
               category: "Experiencia",
             },
             {
               title: "Minería",
               link: "/industrias/mineria",
               image:
-                "https://res.cloudinary.com/ccdcloudy/image/upload/v1773340518/Web%20CCD/Industrias/mineria_ymbax9.jpg",
+                "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773340518/Web%20CCD/Industrias/mineria_ymbax9.jpg",
               category: "Industrias",
             },
             {
               title: "Hidrocarburos",
               link: "/industrias/hidrocarburos",
               image:
-                "https://res.cloudinary.com/ccdcloudy/image/upload/v1770796112/Web%20CCD/Industrias/hidrocarburos_mz5gjc.jpg",
+                "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1770796112/Web%20CCD/Industrias/hidrocarburos_mz5gjc.jpg",
               category: "Industrias",
             },
             {
               title: "Agropecuario",
               link: "/industrias/agropecuario",
               image:
-                "https://res.cloudinary.com/ccdcloudy/image/upload/v1778793571/Web%20CCD/Industrias/ChatGPT_Image_14_may_2026_04_19_07_p.m_dinu1k.png",
+                "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778793571/Web%20CCD/Industrias/ChatGPT_Image_14_may_2026_04_19_07_p.m_dinu1k.png",
               category: "Industrias",
             },
             {
               title: "Inteligencia Artificial",
               link: "/capacidades/ia-y-analitica",
               image:
-                "https://res.cloudinary.com/ccdcloudy/image/upload/v1772644019/Web%20CCD/Industrias/ia_k5ny4x.webp",
+                "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1772644019/Web%20CCD/Industrias/ia_k5ny4x.webp",
               category: "Industrias",
             },
             {
@@ -142,7 +151,7 @@ const directores = [
               title: "Enfoque de trabajo",
               link: "/nosotros/enfoque",
               image:
-                "https://res.cloudinary.com/ccdcloudy/image/upload/v1778831173/Web%20CCD/Industrias/modificar_imagen_para___cambiar_202605150245_g35r1u.jpg",
+                "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778831173/Web%20CCD/Industrias/modificar_imagen_para___cambiar_202605150245_g35r1u.jpg",
               category: "Metodología",
             },
           ].map((card) => (
@@ -150,7 +159,7 @@ const directores = [
               href={card.link}
               class="group relative overflow-hidden flex flex-col justify-end bg-gray-900 h-[220px] md:h-[240px] rounded-sm gsap-hero-card hover:-translate-y-1 hover:shadow-2xl transition-all duration-500 ease-out"
             >
-              <img
+              <img loading="lazy"
                 src={card.image}
                 alt={card.title}
                 class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-1000 bg-white"
@@ -198,9 +207,9 @@ const directores = [
       <p
         class="font-serif text-3xl md:text-4xl text-white leading-relaxed font-light gsap-fade-up leading-[1.8] md:leading-[1.3]"
       >
-        "Promover el desarrollo y la prosperidad con oportunidades y alta
-        calidad de vida de la población nacional, regional, provincial,
-        distrital y comunal."
+        Promover el desarrollo y la prosperidad con oportunidades y alta calidad
+        de vida de la población nacional, regional, provincial, distrital y
+        comunal
       </p>
     </div>
   </section>
@@ -318,8 +327,8 @@ const directores = [
           class="flex flex-col items-center justify-center p-6 md:p-8 bg-gray-200/80 hover:bg-gray-300 transition-colors border-b-4 border-transparent hover:border-primary"
         >
           <div class="mb-6 flex justify-center items-center h-24">
-            <img
-              src="https://res.cloudinary.com/ccdcloudy/image/upload/v1779479803/Web%20CCD/Iconos/Imagen16_lbdq3q.png"
+            <img loading="lazy"
+              src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1779479803/Web%20CCD/Iconos/Imagen16_lbdq3q.png"
               alt="Localidades"
               class="w-24 h-24 md:w-32 md:h-32 object-contain"
             />
@@ -342,8 +351,8 @@ const directores = [
           class="flex flex-col items-center justify-center p-6 md:p-8 bg-gray-200/80 hover:bg-gray-300 transition-colors border-b-4 border-transparent hover:border-primary"
         >
           <div class="mb-6 flex justify-center items-center h-24">
-            <img
-              src="https://res.cloudinary.com/ccdcloudy/image/upload/v1779476975/Web%20CCD/Iconos/Imagen18_u9a6eb.png"
+            <img loading="lazy"
+              src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1779476975/Web%20CCD/Iconos/Imagen18_u9a6eb.png"
               alt="Iniciativas"
               class="w-24 h-24 md:w-32 md:h-32 object-contain"
             />
@@ -366,8 +375,8 @@ const directores = [
           class="flex flex-col items-center justify-center p-6 md:p-8 bg-gray-200/80 hover:bg-gray-300 transition-colors border-b-4 border-transparent hover:border-primary"
         >
           <div class="mb-6 flex justify-center items-center h-24">
-            <img
-              src="https://res.cloudinary.com/ccdcloudy/image/upload/v1779479801/Web%20CCD/Iconos/Imagen21_rkyahu.png"
+            <img loading="lazy"
+              src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1779479801/Web%20CCD/Iconos/Imagen21_rkyahu.png"
               alt="Profesionales"
               class="w-24 h-24 md:w-32 md:h-32 object-contain"
             />
@@ -390,8 +399,8 @@ const directores = [
           class="flex flex-col items-center justify-center p-6 md:p-8 bg-gray-200/80 hover:bg-gray-300 transition-colors border-b-4 border-transparent hover:border-primary"
         >
           <div class="mb-6 flex justify-center items-center h-24">
-            <img
-              src="https://res.cloudinary.com/ccdcloudy/image/upload/v1779479802/Web%20CCD/Iconos/Imagen92_wfncxt.png"
+            <img loading="lazy"
+              src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1779479802/Web%20CCD/Iconos/Imagen92_wfncxt.png"
               class="w-24
               h-24
               md:w-32
@@ -417,8 +426,8 @@ const directores = [
           class="flex flex-col items-center justify-center p-6 md:p-8 bg-gray-200/80 hover:bg-gray-300 transition-colors border-b-4 border-transparent hover:border-primary"
         >
           <div class="mb-6 flex justify-center items-center h-24">
-            <img
-              src="https://res.cloudinary.com/ccdcloudy/image/upload/v1779479801/Web%20CCD/Iconos/Imagen23_vujbwi.png"
+            <img loading="lazy"
+              src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1779479801/Web%20CCD/Iconos/Imagen23_vujbwi.png"
               alt="Colaboraciones"
               class="w-24 h-24 md:w-32 md:h-32 object-contain"
             />
@@ -448,8 +457,8 @@ const directores = [
           <div
             class="relative overflow-hidden rounded-sm shadow-lg aspect-video"
           >
-            <img
-              src="https://res.cloudinary.com/ccdcloudy/image/upload/v1778831465/Web%20CCD/Capacidades%20e%20Industrias/capacidades_ewyx6g.png"
+            <img loading="lazy"
+              src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778831465/Web%20CCD/Capacidades%20e%20Industrias/capacidades_ewyx6g.png"
               alt="Nuestras Capacidades"
               class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
             />
@@ -533,8 +542,8 @@ const directores = [
           <div
             class="relative overflow-hidden rounded-sm shadow-lg aspect-video"
           >
-            <img
-              src="https://res.cloudinary.com/ccdcloudy/image/upload/v1778831559/Web%20CCD/Capacidades%20e%20Industrias/industrias_nlankz.png"
+            <img loading="lazy"
+              src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778831559/Web%20CCD/Capacidades%20e%20Industrias/industrias_nlankz.png"
               alt="Nuestras Industrias"
               class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
             />

@@ -5,9 +5,9 @@ import PageHeader from "../components/PageHeader.astro";
 // Contenido para la página de Países
 // Usamos imágenes de referencia que el usuario ha estado utilizando o placeholders premium
 const headerImage =
-    "https://res.cloudinary.com/ccdcloudy/image/upload/v1778794273/Web%20CCD/Industrias/ChatGPT_Image_14_may_2026_04_27_39_p.m_ycbgxu.png";
+    "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778794273/Web%20CCD/Industrias/ChatGPT_Image_14_may_2026_04_27_39_p.m_ycbgxu.png";
 const introImage =
-    "https://res.cloudinary.com/ccdcloudy/image/upload/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"; // Placeholder para imagen de impacto
+    "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773305978/Web%20CCD/paises/comercio-exterior_indice-de-conectividad-global-050424-010226_gvj4pp.jpg"; // Placeholder para imagen de impacto
 ---
 
 <Layout title="Países - CCD">
@@ -33,8 +33,8 @@ const introImage =
         <div
             class="relative w-full lg:w-1/2 min-h-[400px] lg:min-h-[600px] overflow-hidden"
         >
-            <img
-                src="https://res.cloudinary.com/ccdcloudy/image/upload/v1774377986/Web%20CCD/paises/global_eppyyo.jpg"
+            <img loading="lazy"
+                src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774377986/Web%20CCD/paises/global_eppyyo.jpg"
                 alt="Impacto global"
                 class="absolute inset-0 w-full h-full object-cover"
             />
@@ -294,7 +294,7 @@ const introImage =
             <div class="flourish-clean-wrapper w-full">
                 <div class="flourish-embed flourish-chart w-full" data-src="visualisation/28019801" data-width="100%">
                     <script is:inline src="https://public.flourish.studio/resources/embed.js"></script>
-                    <noscript><img src="https://public.flourish.studio/visualisation/28019801/thumbnail" width="100%" alt="visualization" /></noscript>
+                    <noscript><img loading="lazy" src="https://public.flourish.studio/visualisation/28019801/thumbnail" width="100%" alt="visualization" /></noscript>
                 </div>
             </div>
         </div>

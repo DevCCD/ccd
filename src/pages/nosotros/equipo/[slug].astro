@@ -81,7 +81,7 @@ if (!member) {
                     - object-bottom: Se alinea a la base.
                     - drop-shadow-2xl: Sombra suave para separarla del fondo.
                 -->
-        <img
+        <img loading="lazy"
           src={member.photos.detail}
           alt={member.name}
           class="w-full h-auto max-h-[500px] lg:max-h-[600px] object-contain object-bottom drop-shadow-2xl"
@@ -159,7 +159,7 @@ if (!member) {
                     {item.logos && item.logos.length > 0 && (
                       <div class="flex flex-row items-center justify-center gap-6 mt-4 sm:mt-0 flex-shrink-0">
                         {item.logos.map((logoUrl) => (
-                          <img
+                          <img loading="lazy"
                             src={logoUrl}
                             alt="Logo Institución"
                             class="h-16 md:h-18 w-auto object-contain mix-blend-multiply filter grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 ease-in-out"

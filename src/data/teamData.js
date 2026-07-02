@@ -61,10 +61,10 @@ export const teamMembers = {
         "name": "Viviana Sánchez",
         "role": "Directora",
         "photos": {
-            "formal": "/viviana-sanchez.png",
-            "casual": "/viviana-sanchez.png",
-            "detail": "/viviana-sanchez.png",
-            "extra": "/viviana-sanchez.png"
+            "formal": "https://res.cloudinary.com/ccdcloudy/image/upload/v1782980925/Web%20CCD/Equipo/Viviana/viviana-sanchez_md3iem.png",
+            "casual": "https://res.cloudinary.com/ccdcloudy/image/upload/v1782980925/Web%20CCD/Equipo/Viviana/viviana-sanchez_md3iem.png",
+            "detail": "https://res.cloudinary.com/ccdcloudy/image/upload/v1782980925/Web%20CCD/Equipo/Viviana/viviana-sanchez_md3iem.png",
+            "extra": "https://res.cloudinary.com/ccdcloudy/image/upload/v1782980925/Web%20CCD/Equipo/Viviana/viviana-sanchez_md3iem.png"
         },
         "linkedin": "https://www.linkedin.com",
         "intro": "Viviana es directora del Centro para la Competitividad y el Desarrollo (CCD), con amplia experiencia en análisis legal y marco regulatorio vinculado a trasferencias de recursos a los gobiernos locales y regionales, fondos sociales de desarrollo públicos y privados, asociaciones público privadas, iniciativas privadas, obras por impuestos, comercio exterior, entre otros mecanismos para impulsar el desarrollo nacional, regional y local.",
@@ -147,10 +147,10 @@ export const teamMembers = {
         "name": "Melissa Sánchez",
         "role": "Directora",
         "photos": {
-            "formal": "/melissa-sanchez.png",
-            "casual": "/melissa-sanchez.png",
-            "detail": "/melissa-sanchez.png",
-            "extra": "/melissa-sanchez.png"
+            "formal": "https://res.cloudinary.com/ccdcloudy/image/upload/v1782980660/Web%20CCD/Equipo/Melissa/melissa-sanchez_kjcf0x.png",
+            "casual": "https://res.cloudinary.com/ccdcloudy/image/upload/v1782980660/Web%20CCD/Equipo/Melissa/melissa-sanchez_kjcf0x.png",
+            "detail": "https://res.cloudinary.com/ccdcloudy/image/upload/v1782980660/Web%20CCD/Equipo/Melissa/melissa-sanchez_kjcf0x.png",
+            "extra": "https://res.cloudinary.com/ccdcloudy/image/upload/v1782980660/Web%20CCD/Equipo/Melissa/melissa-sanchez_kjcf0x.png"
         },
         "linkedin": "https://www.linkedin.com/in/melissa-s%C3%A1nchez-cam%C3%A1n-a2b67b161/",
         "intro": "Melissa lidera el área administrativa del Centro para la Competitividad y el Desarrollo (CCD), principalmente en la gestión y organización de los recursos, personas y procesos dentro de la organización.",

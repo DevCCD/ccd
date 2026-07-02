@@ -3,6 +3,12 @@ import IndustryLayout from "../../components/industrias/IndustryLayout.astro";
 import { teamMembers, capabilitiesData } from "../../data/teamData";
 import { industriesContent } from "../../data/industriesContent";
 
+export function getStaticPaths() {
+    return Object.keys(industriesContent).map((slug) => ({
+        params: { slug },
+    }));
+}
+
 const { slug } = Astro.params;
 const content = industriesContent[slug];
 

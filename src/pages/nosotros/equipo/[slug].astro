@@ -5,7 +5,13 @@ import { teamMembers } from "../../../data/teamData";
 import { industriesContent } from "../../../data/industriesContent";
 import { capacidadesContent } from "../../../data/capacidadesContent";
 
-// En modo SSR, obtener el miembro dinámicamente desde el slug
+export function getStaticPaths() {
+  return Object.keys(teamMembers).map((slug) => ({
+    params: { slug },
+  }));
+}
+
+// En modo SSR o Estático, obtener el miembro dinámicamente desde el slug
 const { slug } = Astro.params;
 const member = teamMembers[slug];
 

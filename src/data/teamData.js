@@ -33,15 +33,15 @@ export const teamMembers = {
                     "Universidad de Lima (ULima)"
                 ],
                 "logos": [
-                    "/logos/logo-uam3.png",
-                    "/logos/logo-ulima3.jpg"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985672/Web%20CCD/Logos%20Instituciones/logo-uam3_dg7vet.png",
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985678/Web%20CCD/Logos%20Instituciones/logo-ulima3_btw4nk.jpg"
                 ]
             },
             {
                 "degree": "Ingeniero Economista",
                 "institution": "Universidad Nacional de Ingeniería (UNI)",
                 "logos": [
-                    "/logos/logo-uni2.png"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985680/Web%20CCD/Logos%20Instituciones/logo-uni2_wvxzt8.png"
                 ]
             }
         ],
@@ -77,57 +77,57 @@ export const teamMembers = {
                 "degree": "Maestría en Derecho en Estudios Legales Internacionales",
                 "institution": "Georgetown University",
                 "logos": [
-                    "/logos/logo-Georgetown University.jpg",
-                    "/logos/logo-Georgetown-letras.png"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985630/Web%20CCD/Logos%20Instituciones/logo-Georgetown_University_sayqhk.jpg",
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985632/Web%20CCD/Logos%20Instituciones/logo-Georgetown-letras_ns5v1s.png"
                 ]
             },
             {
                 "degree": "Curso Foundations of American Law and Legal Education",
                 "institution": "Georgetown University Law Center",
                 "logos": [
-                    "/logos/logo-georgetownlaw.jpg"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985631/Web%20CCD/Logos%20Instituciones/logo-georgetownlaw_tokpaa.png"
                 ]
             },
             {
                 "degree": "Título de Abogada",
                 "institution": "Pontificia Universidad Católica del Perú (PUCP)",
                 "logos": [
-                    "/logos/logo-pucp.png"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985640/Web%20CCD/Logos%20Instituciones/logo-pucp_ptzyxb.png"
                 ]
             },
             {
                 "degree": "Postgrado en Derecho Administrativo Económico",
                 "institution": "Universidad Peruana de Ciencias Aplicadas (UPC)",
                 "logos": [
-                    "/logos/logo-upc2.png"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985687/Web%20CCD/Logos%20Instituciones/logo-upc2_zmp7rn.png"
                 ]
             },
             {
                 "degree": "Postgrado en Derecho Administrativo, Poder Reglamentario y Regulación Económica",
                 "institution": "Universidad de Salamanca",
                 "logos": [
-                    "/logos/logo-universidad_de_salamanca.png"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985684/Web%20CCD/Logos%20Instituciones/logo-universidad_de_salamanca_shhrav.png"
                 ]
             },
             {
                 "degree": "Diplomado en Programa Internacional de Alta Dirección",
                 "institution": "Universidad Adolfo Ibáñez",
                 "logos": [
-                    "/logos/logo-uni-adolfo.jpg"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985682/Web%20CCD/Logos%20Instituciones/logo-uni-adolfo_hjjcjr.png"
                 ]
             },
             {
                 "degree": "Curso de Minería para Ejecutivos No Mineros",
                 "institution": "GERENS",
                 "logos": [
-                    "/logos/logo-gerens.png"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985634/Web%20CCD/Logos%20Instituciones/logo-gerens_tzu702.png"
                 ]
             },
             {
                 "degree": "Taller de Asociaciones Público Privadas",
                 "institution": "Partnerships UK",
                 "logos": [
-                    "/logos/logo-partnerships.png"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985639/Web%20CCD/Logos%20Instituciones/logo-partnerships_i2hzv3.gif"
                 ]
             }
         ],
@@ -164,14 +164,14 @@ export const teamMembers = {
                 "degree": "Bachiller en Administración de Negocios Internacionales",
                 "institution": "Universidad Femenina del Sagrado Corazón (UNIFE)",
                 "logos": [
-                    "/logos/logo-unife.jpg"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985683/Web%20CCD/Logos%20Instituciones/logo-unife_r77jlq.jpg"
                 ]
             },
             {
                 "degree": "KEY USER SAP B1",
                 "institution": "ITSYSTEMS PERU",
                 "logos": [
-                    "/logos/logo-its.jpg"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985638/Web%20CCD/Logos%20Instituciones/logo-its_gsxufo.jpg"
                 ]
             }
         ],
@@ -208,14 +208,14 @@ export const teamMembers = {
                 "degree": "Maestría en Agronegocios",
                 "institution": "Universidad Nacional Agraria La Molina (UNALM)",
                 "logos": [
-                    "/logos/logo-agraria.jpg"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985627/Web%20CCD/Logos%20Instituciones/logo-agraria_traebq.png"
                 ]
             },
             {
                 "degree": "Ingeniero Zootecnista",
                 "institution": "Universidad Nacional Agraria La Molina (UNALM)",
                 "logos": [
-                    "/logos/logo-agraria.jpg"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985627/Web%20CCD/Logos%20Instituciones/logo-agraria_traebq.png"
                 ]
             },
             {
@@ -225,8 +225,8 @@ export const teamMembers = {
                     "Invierte Perú (INVIERTE.PE)"
                 ],
                 "logos": [
-                    "/logos/logo-snip.jpg",
-                    "/logos/logo-invierte.png"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985669/Web%20CCD/Logos%20Instituciones/logo-snip_nyf3lx.jpg",
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985636/Web%20CCD/Logos%20Instituciones/logo-invierte_kfulub.png"
                 ]
             }
         ],
@@ -277,15 +277,15 @@ export const teamMembers = {
                     "Banco de Desarrollo de América Latina y el Caribe (CAF)"
                 ],
                 "logos": [
-                    "/logos/logo-pucp.png",
-                    "/logos/logo-caf.jpg"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985640/Web%20CCD/Logos%20Instituciones/logo-pucp_ptzyxb.png",
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985625/Web%20CCD/Logos%20Instituciones/logo-caf_bm74er.jpg"
                 ]
             },
             {
                 "degree": "Economista",
                 "institution": "Universidad San Martín de Porres (USMP)",
                 "logos": [
-                    "/logos/logo-usmp.png"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985688/Web%20CCD/Logos%20Instituciones/logo-usmp_q0ssmw.png"
                 ]
             }
         ],
@@ -322,14 +322,14 @@ export const teamMembers = {
                 "degree": "Metodología Ágil – Scrum Master",
                 "institution": "Edúcate Perú Consultores",
                 "logos": [
-                    "/logos/logo-epc.png"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985625/Web%20CCD/Logos%20Instituciones/logo-epc_h8qtwk.png"
                 ]
             },
             {
                 "degree": "Bachiller en Ingeniería Económica",
                 "institution": "Universidad Nacional de Ingeniería (UNI)",
                 "logos": [
-                    "/logos/logo-uni2.png"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985680/Web%20CCD/Logos%20Instituciones/logo-uni2_wvxzt8.png"
                 ]
             }
         ],
@@ -367,22 +367,22 @@ export const teamMembers = {
                 "degree": "Executive Master in Financial Analysis",
                 "institution": "Universidad Carlos III de Madrid",
                 "logos": [
-                    "/logos/logo-uc3m2.png",
-                    "/logos/logo-uc3m.png"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985674/Web%20CCD/Logos%20Instituciones/logo-uc3m2_ivxbnp.png",
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985673/Web%20CCD/Logos%20Instituciones/logo-uc3m_jztryi.png"
                 ]
             },
             {
                 "degree": "Especialista en Formulación y Evaluación de Proyectos de Inversión Pública",
                 "institution": "Universidad ESAN",
                 "logos": [
-                    "/logos/logo-esan.png"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985628/Web%20CCD/Logos%20Instituciones/logo-esan_xccqs5.png"
                 ]
             },
             {
                 "degree": "Bachiller en Ingeniería Económica",
                 "institution": "Universidad Nacional de Ingeniería (UNI)",
                 "logos": [
-                    "/logos/logo-uni2.png"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985680/Web%20CCD/Logos%20Instituciones/logo-uni2_wvxzt8.png"
                 ]
             }
         ],
@@ -421,7 +421,7 @@ export const teamMembers = {
                 "degree": "Magíster en Administración",
                 "institution": "Escuela de Administración de Negocios para Graduados (ESAN)",
                 "logos": [
-                    "/logos/logo-esan-bgs.png"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985629/Web%20CCD/Logos%20Instituciones/logo-esan-bgs_dl2cy4.png"
                 ]
             },
             {
@@ -431,29 +431,29 @@ export const teamMembers = {
                     "CAF"
                 ],
                 "logos": [
-                    "/logos/logo-gwu.png",
-                    "/logos/logo-caf.jpg"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985633/Web%20CCD/Logos%20Instituciones/logo-gwu_wnigue.png",
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985625/Web%20CCD/Logos%20Instituciones/logo-caf_bm74er.jpg"
                 ]
             },
             {
                 "degree": "Marco Lógico para Proyectos de Inversión",
                 "institution": "Universidad Nacional de Ingeniería (UNI)",
                 "logos": [
-                    "/logos/logo-uni3.png"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985680/Web%20CCD/Logos%20Instituciones/logo-uni2_wvxzt8.png"
                 ]
             },
             {
                 "degree": "Post-Grado: Formulación y Evaluación de Proyectos de Inversión",
                 "institution": "Universidad Nacional Mayor de San Marcos",
                 "logos": [
-                    "/logos/logo-unmsm.png"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985685/Web%20CCD/Logos%20Instituciones/logo-unmsm_lbsyzo.png"
                 ]
             },
             {
                 "degree": "Título Profesional de Economista",
                 "institution": "Universidad Nacional Mayor de San Marcos",
                 "logos": [
-                    "/logos/logo-unmsm.png"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985685/Web%20CCD/Logos%20Instituciones/logo-unmsm_lbsyzo.png"
                 ]
             }
         ],
@@ -490,22 +490,22 @@ export const teamMembers = {
                 "degree": "Magíster en Ciencias Políticas con mención en Políticas Públicas y Sociedad Civil",
                 "institution": "Pontificia Universidad Católica del Perú (PUCP)",
                 "logos": [
-                    "/logos/logo-pucp.png"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985640/Web%20CCD/Logos%20Instituciones/logo-pucp_ptzyxb.png"
                 ]
             },
             {
                 "degree": "Programa de Gobernabilidad e Innovación Pública",
                 "institution": "Pontificia Universidad Católica del Perú (PUCP) y Banco de Desarrollo de América Latina y El Caribe (CAF)",
                 "logos": [
-                    "/logos/logo-pucp.png",
-                    "/logos/logo-caf.jpg"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985640/Web%20CCD/Logos%20Instituciones/logo-pucp_ptzyxb.png",
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985625/Web%20CCD/Logos%20Instituciones/logo-caf_bm74er.jpg"
                 ]
             },
             {
                 "degree": "Licenciado en Ciencias Sociales con Mención en Economía",
                 "institution": "Pontificia Universidad Católica del Perú (PUCP)",
                 "logos": [
-                    "/logos/logo-pucp.png"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985640/Web%20CCD/Logos%20Instituciones/logo-pucp_ptzyxb.png"
                 ]
             }
         ],
@@ -543,35 +543,35 @@ export const teamMembers = {
                 "degree": "Master in Business Administration con énfasis en Economía y Finanzas",
                 "institution": "Incae Business School - Costa Rica",
                 "logos": [
-                    "/logos/logo-incae.jpg"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985635/Web%20CCD/Logos%20Instituciones/logo-incae_cbijsn.jpg"
                 ]
             },
             {
                 "degree": "Especialización en Análisis Financiero",
                 "institution": "Universidad Mayor de San Marcos (UNMSM)",
                 "logos": [
-                    "/logos/logo-unmsm.png"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985685/Web%20CCD/Logos%20Instituciones/logo-unmsm_lbsyzo.png"
                 ]
             },
             {
                 "degree": "Contador Público",
                 "institution": "Universidad Federico Villarreal",
                 "logos": [
-                    "/logos/logo-villarreal.jpg"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985689/Web%20CCD/Logos%20Instituciones/logo-villarreal_egkiet.jpg"
                 ]
             },
             {
                 "degree": "Curso de Extensión Universitaria",
                 "institution": "Banco Central de Reserva del Perú (BCRP)",
                 "logos": [
-                    "/logos/logo-bcrp.png"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985626/Web%20CCD/Logos%20Instituciones/logo-bcrp_zuetop.png"
                 ]
             },
             {
                 "degree": "Licenciado en Economía",
                 "institution": "Pontificia Universidad Católica del Perú (PUCP)",
                 "logos": [
-                    "/logos/logo-pucp.png"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985640/Web%20CCD/Logos%20Instituciones/logo-pucp_ptzyxb.png"
                 ]
             }
         ],
@@ -610,28 +610,28 @@ export const teamMembers = {
                 "degree": "Título profesional de Economista",
                 "institution": "Universidad de San Martín de Porres (USMP)",
                 "logos": [
-                    "/logos/logo-usmp.png"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985688/Web%20CCD/Logos%20Instituciones/logo-usmp_q0ssmw.png"
                 ]
             },
             {
                 "degree": "Bachiller en Ciencias Económicas",
                 "institution": "Universidad de San Martín de Porres (USMP)",
                 "logos": [
-                    "/logos/logo-usmp.png"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985688/Web%20CCD/Logos%20Instituciones/logo-usmp_q0ssmw.png"
                 ]
             },
             {
                 "degree": "Especialista en Finanzas",
                 "institution": "Universidad de San Martín de Porres (USMP)",
                 "logos": [
-                    "/logos/logo-usmp.png"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985688/Web%20CCD/Logos%20Instituciones/logo-usmp_q0ssmw.png"
                 ]
             },
             {
                 "degree": "Seminario Internacional para Economistas",
                 "institution": "Universidad de San Martín de Porres (USMP)",
                 "logos": [
-                    "/logos/logo-usmp.png"
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985688/Web%20CCD/Logos%20Instituciones/logo-usmp_q0ssmw.png"
                 ]
             }
         ],
@@ -644,6 +644,65 @@ export const teamMembers = {
             "mineria",
             "publico",
             "agropecuario"
+        ]
+    },
+    "eduardo-black": {
+        "slug": "eduardo-black",
+        "name": "Eduardo Black",
+        "role": "Tecnología para la Competitividad y el Desarrollo",
+        "photos": {
+            "formal": "https://res.cloudinary.com/ccdcloudy/image/upload/v1782972434/Web%20CCD/Equipo/Eduardo/Eduardo-black_zil75x.png",
+            "casual": "https://res.cloudinary.com/ccdcloudy/image/upload/v1782972434/Web%20CCD/Equipo/Eduardo/Eduardo-black_zil75x.png",
+            "detail": "https://res.cloudinary.com/ccdcloudy/image/upload/v1782973379/Web%20CCD/Equipo/Eduardo/edaurdodetalle_kikoe4.png",
+            "extra": "https://res.cloudinary.com/ccdcloudy/image/upload/v1782972434/Web%20CCD/Equipo/Eduardo/Eduardo-black_zil75x.png"
+        },
+        "linkedin": "https://www.linkedin.com/in/eduardo-black-ferruzo/",
+        "intro": "Eduardo lidera la transformación digital del CCD, desarrollando herramientas web y plataformas interactivas que potencian la comunicación estratégica y la gestión interna de la organización.",
+        "about": "Eduardo cuenta con experiencia en diseño UI/UX y desarrollo frontend aplicados a entornos de consultoría y gestión institucional. Egresado de la carrera de Diseño y Desarrollo de Software del Instituto TECSUP, combina una sólida formación técnica con una visión orientada al usuario y al impacto organizacional. En el CCD, Eduardo es el responsable del área de tecnología, liderando el diseño y desarrollo de plataformas web corporativas, la implementación de herramientas internas de gestión y el desarrollo de dashboards para la visualización de indicadores estratégicos. Su enfoque integra metodologías ágiles, diseño centrado en el usuario y el uso estratégico de herramientas de inteligencia artificial para acelerar el prototipado y la entrega de soluciones digitales.",
+        "experience": [
+            "Antes de asumir su rol en el CCD, Eduardo se desempeñó como Coordinador de TI y Desarrollador Web en una institución del sector privado, donde lideró en solitario el área tecnológica. En ese rol diseñó y lanzó páginas web corporativas con énfasis en identidad de marca y experiencia de usuario. Además desarrolló herramientas de software a medida para el control de productividad para la visualización de datos de rendimiento estratégico.",
+            "Previamente, trabajó en el área de TI de empresas, donde automatizó reportes contables y logísticos mediante macros en Excel y gestionó bases de datos en SAP. También acumuló experiencia en roles de liderazgo operativo en empresas como la Sunat, entornos que forjaron su capacidad de resolución de problemas bajo presión, gestión de equipos y análisis de KPIs."
+        ],
+        "education": [
+            {
+                "degree": "Egresado en Diseño y Desarrollo de Software",
+                "institution": "Instituto TECSUP",
+                "logos": [
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1782970202/Web%20CCD/Logos%20Instituciones/logo-tecsup_zes1u0.png"
+                ]
+            },
+            {
+                "degree": "Certificado en Diseño UX/UI",
+                "institution": ["Universidad Nacional de Ingeniería (UNI)", "Instituto IDAT"],
+                "logos": [
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985680/Web%20CCD/Logos%20Instituciones/logo-uni2_wvxzt8.png",
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1782969699/Web%20CCD/Logos%20Instituciones/logo-idat_xrddhn.png"
+                ]
+            },
+            {
+                "degree": "Certificado en SQL Server",
+                "institution": ["Universidad Nacional de Ingeniería (UNI)"],
+                "logos": [
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1781985680/Web%20CCD/Logos%20Instituciones/logo-uni2_wvxzt8.png"
+                ]
+            },
+            {
+                "degree": "Desarrollo de Apps Móviles",
+                "institution": "Google Developers",
+                "logos": [
+                    "https://res.cloudinary.com/ccdcloudy/image/upload/v1782969931/Web%20CCD/Logos%20Instituciones/logo-googledev_mgeltj.png"
+                ]
+            }
+        ],
+        "highlightedCapabilities": [
+            "ia-y-analitica",
+            "corredores",
+            "competitividad"
+        ],
+        "highlightedIndustries": [
+            "tecnologia",
+            "inteligencia",
+            "educacion"
         ]
     },
 };

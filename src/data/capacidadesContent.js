@@ -10,15 +10,15 @@ export const capacidadesContent = {
         valorClienteIntro: "Mejorar productividad, empleabilidad e ingresos de la población en edad de trabajar que se encuentra en la zona de influencia directa e indirectamente relacionada: comunidades, distritos, provincias, regiones, países o zonas económicas.",
         valorClienteBullets: [
             {
-                title: "Nivel de Productividad",
-                text: "La competitividad es el conjunto de instituciones, políticas, normas, procedimientos, interacciones y participación público y privado que determina el nivel de productividad.",
+                title: "Competitividad",
+                text: "Conjunto de instituciones, políticas, normas, procedimientos, interacciones y participación público y privado que determina el nivel de productividad.",
                 image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774878411/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/3_tzmzpt.jpg",
                 cols: 1
             },
             {
-                title: "Capacidad de Producción",
-                text: "La productividad es la capacidad de producción de los agentes económicos como personas, empresas, organizaciones y entidades gubernamentales, dado los recursos disponibles.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774878422/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/8_crktyy.webp",
+                title: "Productividad",
+                text: "Capacidad de producción de los agentes económicos como personas, empresas, organizaciones y entidades gubernamentales, dado los recursos disponibles.",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1782974305/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/Productividad_fbms96.jpg",
                 cols: 3
             },
             {
@@ -92,14 +92,14 @@ export const capacidadesContent = {
             },
             {
                 title: "Prosperidad",
-                text: "Crear riqueza para la prosperidad de los habitantes.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774880197/Web%20CCD/Capacidades%20e%20Industrias/Desarrollo/Truchas_en_Huancan%C3%A9_evnxeo.jpg",
+                text: "Creación de mecanismos y gestión para generar riqueza y cerrar brechas para la prosperidad de los habitantes.",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1782975465/Web%20CCD/Capacidades%20e%20Industrias/Desarrollo/prosperidad_xiesxx.png",
                 cols: 2
             },
             {
                 title: "Igualdad Oportunidades",
                 text: "Mejorar las condiciones de vida de las personas: educación para igualar oportunidades, calidad en la atención de la salud, dotación de servicios básicos, conectividad física y virtual, mayores ingresos, buena gobernanza y desarrollo sostenible.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774880253/Web%20CCD/Capacidades%20e%20Industrias/Desarrollo/IMG_3369_yor2xh.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1782976050/Web%20CCD/Capacidades%20e%20Industrias/Desarrollo/duplicar_rdbqnb.jpg",
                 cols: 2
             }
         ],
@@ -269,7 +269,7 @@ export const capacidadesContent = {
     },
     "politica": {
         title: "Política Fiscal",
-        shortDescription: "Los instrumentos fiscales logran la prosperidad de las naciones, en contextos de estabilidad de precios.",
+        shortDescription: "Instrumentos y nuevos mecanismos fiscales para lograr la prosperidad de los países, en contextos de estabilidad de precios.",
         area: "Política y Gestión Pública",
         areaColor: "#E26B0A",
         specialistSlugs: ["rudy-laguna"],
@@ -324,7 +324,7 @@ export const capacidadesContent = {
     },
     "fondos-sociales": {
         title: "Fondos Sociales",
-        shortDescription: "Con adecuada gobernanza contribuyen en la gestión social de las empresas y en el desarrollo acelerado de la población de las zonas de influencia directa e indirectamente relacionadas.",
+        shortDescription: "Gobernanza que contribuye con la gestión social de las empresas y acelera el desarrollo en las zonas de influencia directa e indirectamente relacionadas.",
         area: "Política y Gestión Pública",
         areaColor: "#E26B0A",
         specialistSlugs: ["alex-carbajal"],
@@ -338,11 +338,11 @@ export const capacidadesContent = {
                 image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774886325/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20Sociales/image_j2vjuk.webp",
                 cols: 1,
                 subBullets: [
-                    "Generación de confianza con actores.",
-                    "Proceso participativo.",
-                    "Legitimidad.",
-                    "Mayor calidad y rapidez en intervenciones de proyectos sociales.",
-                    "Mejores beneficios para la población."
+                    "Generación de confianza con actores",
+                    "Proceso participativo",
+                    "Legitimidad",
+                    "Mayor calidad y rapidez en intervenciones de proyectos sociales",
+                    "Mejores beneficios para la población"
                 ]
             },
             {
@@ -414,8 +414,8 @@ export const capacidadesContent = {
                 cols: 2
             },
             {
-                title: "Diversificación Fiscal",
-                text: "Diversificar los riesgos y la exposición de las cuentas fiscales por variaciones de los precios de los commodities.",
+                title: "Reductores de Riesgos Fiscales",
+                text: "Diversificación de mecanismos para atenuar los riesgos y la exposición de las cuentas fiscales a variaciones de los precios de los commodities.",
                 image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774885799/Web%20CCD/Capacidades%20e%20Industrias/Fondos%20de%20Estabilizacion/6428e823a05aa704cfa2974c_funding-financing-business-project-2022-02-12-01-24-13-utc-_1__j6luuj.webp",
                 cols: 2
             },
@@ -458,7 +458,7 @@ export const capacidadesContent = {
     },
     "estudios": {
         title: "Estudios Económicos",
-        shortDescription: "Transformamos datos cuantitativos y series de tiempo e información transversal para la mejor toma de decisiones en competitividad y desarrollo.",
+        shortDescription: "Transformamos datos cuantitativos, series de tiempo y corte transversal, en información para tomar las mejores decisiones en competitividad y desarrollo.",
         area: "Estudios Económicos",
         areaColor: "#0070C0",
         specialistSlugs: ["mario-huaman"],
@@ -500,7 +500,7 @@ export const capacidadesContent = {
             },
             {
                 title: "Impacto Sectorial",
-                bullet: "Elaboración de estudios sobre beneficios e impactos de industrias o sectores económicos.",
+                bullet: "Elaboración de estudios sobre beneficios e impactos en industrias y sectores económicos.",
                 image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774882345/Web%20CCD/Capacidades%20e%20Industrias/Estudios%20Economicos/sem-1084_economia-060821-021316_ku858i.png"
             },
             {
@@ -550,7 +550,7 @@ export const capacidadesContent = {
             {
                 title: "Dinamismo Económico",
                 text: "Dinamiza la economía comunal, local, regional y nacional a corto, mediano y largo plazo.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774893657/Web%20CCD/Capacidades%20e%20Industrias/Inversiones/fruit-2_ms0dwz.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1782979327/Web%20CCD/Capacidades%20e%20Industrias/Inversiones/productos_cobht6.jpg",
                 cols: 2
             }
         ],
@@ -601,7 +601,7 @@ export const capacidadesContent = {
         valorClienteBullets: [
             {
                 title: "Optimizar Calidad y Rendimiento",
-                text: "Alcanzar los mayores niveles de calidad y rendimiento en la entidad pública o privada, producto de la inversión social en proyectos realizados en la zona de influencia directa e indirectamente relacionada, principalmente para:",
+                text: "Alcanzar altos niveles de calidad y de retorno de la inversión social realizadas por las entidades públicas y privadas en la zona de influencia directa e indirectamente relacionada, principalmente para:",
                 image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774882930/Web%20CCD/Capacidades%20e%20Industrias/Evaluacion%20de%20Proyectos/casual-business-man-working-with-laptop_qencii.jpg",
                 cols: 1,
                 subBullets: ["Mejorar objetivos, proceso y actividades", "Lecciones aprendidas y extrapolar buenas prácticas", "Comunicación en la organización y stakeholders"]
@@ -673,13 +673,13 @@ export const capacidadesContent = {
     },
     "legal": {
         title: "Legal",
-        shortDescription: "Interpretación, aplicación y mejora de la normatividad vinculada a la competitividad y al desarrollo para crear nuevas oportunidades de prosperidad.",
+        shortDescription: "Interpretación, aplicación y mejorar normatividad vinculada a la competitividad y al desarrollo para crear nuevas oportunidades de prosperidad.",
         area: "Legal",
         areaColor: "#60497A",
         specialistSlugs: ["viviana-sanchez"],
         headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/q_auto/f_auto/v1774877122/Web%20CCD/Capacidades%20e%20Industrias/Legal/administracion-legal-que-es-asesoria-legal-en-una-empresa-lanzatesoloelblog_svwnge.jpg",
 
-        valorClienteIntro: "La interpretación, aplicación y mejora de la normatividad vinculada a la competitividad y al desarrollo crea oportunidades para acelerar el proceso de mejora de calidad de vida de la población.",
+        valorClienteIntro: "Evaluar, diseñar, crear, interpretar, aplicar y mejorar la normatividad existente vinculada a la competitividad y al desarrollo genera oportunidades y acelera la prosperidad de las personas.",
         valorClienteBullets: [
             {
                 title: "Crear Oportunidades",
@@ -773,7 +773,7 @@ export const capacidadesContent = {
                 title: "Sistemas de Administración",
                 bullet: "Sistema de Administración del Desarrollo (SAD).",
                 image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778784299/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/Imagen44_jjiza3.png",
-                diagramImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778784701/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/necesito_generar_una_imagen_que_202605141351_dh399m.jpg",
+                diagramImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1782978529/Web%20CCD/Capacidades%20e%20Industrias/IA%20y%20Analitica/sad_ekpezp.jpg",
                 subBullets: ["Plataformas tecnológicas", "Planeamiento", "Niveles de referencia", "Medidas correctivas", "Supervisar avances", "Evaluar efectos"]
             },
             {

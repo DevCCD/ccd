@@ -31,6 +31,13 @@ const {
       rel="stylesheet"
     />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#910121" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="CCD" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <style is:global>
@@ -109,6 +116,20 @@ const {
           }
         }).observe(document.body, { childList: true, subtree: true });
       })();
+    </script>
+    <script is:inline>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker
+            .register('/sw.js')
+            .then(function (reg) {
+              console.log('[CCD PWA] Service Worker registrado:', reg.scope);
+            })
+            .catch(function (err) {
+              console.warn('[CCD PWA] Error al registrar SW:', err);
+            });
+        });
+      }
     </script>
   </body>
 </html>

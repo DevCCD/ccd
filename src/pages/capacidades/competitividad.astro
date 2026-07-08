@@ -95,13 +95,14 @@ const determinantes = [
       <!-- Imagen protagonista (60%) + título + subtítulo breve         -->
       <!-- ============================================================ -->
       <div
-        class="featured-card group bg-white overflow-hidden shadow-2xl mb-10 md:mb-14 flex flex-col lg:flex-row min-h-[460px] md:min-h-[520px]"
+        class="featured-card group bg-white overflow-hidden shadow-2xl mb-10 md:mb-14 flex flex-col lg:flex-row min-h-[460px] lg:min-h-[520px]"
       >
         <!-- Imagen dominante -->
         <div
-          class="relative overflow-hidden w-full lg:w-[60%] min-h-[300px] lg:min-h-full shrink-0"
+          class="relative overflow-hidden w-full lg:w-[60%] min-h-[280px] md:min-h-[360px] lg:min-h-full shrink-0"
         >
-          <img loading="lazy"
+          <img
+            loading="lazy"
             src="https://res.cloudinary.com/ccdcloudy/image/upload/q_auto/f_auto/v1776427578/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/aeropuerto-anta_ofyc0q.png"
             alt="Aeropuerto de Anta — Planes de Competitividad"
             class="absolute inset-0 w-full h-full object-cover transition-transform duration-[4000ms] ease-in-out group-hover:scale-[1.04]"
@@ -115,15 +116,15 @@ const determinantes = [
 
         <!-- Contenido — solo título y subtítulo -->
         <div
-          class="flex flex-col justify-center p-10 md:p-14 lg:p-16 flex-grow border-t-4 border-primary lg:border-t-0 lg:border-l-4"
+          class="flex flex-col justify-center p-6 lg:p-8 xl:p-14 flex-grow border-t-4 border-primary lg:border-t-0 lg:border-l-4 min-w-0"
         >
           <h3
-            class="font-serif text-4xl md:text-5xl lg:text-6xl font-black text-primary leading-[1.1] mb-6 tracking-tight"
+            class="font-serif text-2xl md:text-3xl lg:text-5xl font-black text-primary leading-[1.15] mb-6 tracking-tight"
           >
-            Planes de<br />Competitividad
+            Planes de Competitividad
           </h3>
           <p
-            class="font-sans text-lg md:text-xl text-gray-500 leading-relaxed max-w-lg"
+            class="font-sans text-base md:text-lg lg:text-xl text-gray-500 leading-relaxed max-w-lg"
           >
             Asistencia técnica en la elaboración de planes de competitividad y
             productividad para regiones y países, teniendo en cuenta los
@@ -155,7 +156,8 @@ const determinantes = [
                 style={`background-color: ${d.bg}; animation-delay: ${i * 0.07}s`}
               >
                 <span class="text-2xl w-14 h-14 bg-white/20 flex items-center justify-center rounded-full shrink-0 group-hover:scale-110 transition-transform duration-300 overflow-hidden p-3">
-                  <img loading="lazy"
+                  <img
+                    loading="lazy"
                     src={d.icon}
                     alt={d.label}
                     class="w-full h-full object-contain filter brightness-0 invert"
@@ -177,7 +179,8 @@ const determinantes = [
           <span
             class="text-2xl w-14 h-14 bg-white/20 flex items-center justify-center rounded-full shrink-0 group-hover:scale-110 transition-transform duration-300 overflow-hidden p-3"
           >
-            <img loading="lazy"
+            <img
+              loading="lazy"
               src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778770899/Web%20CCD/Iconos/Capacidades/Proyectos_rktwrw.png"
               alt="Icono"
               class="w-full h-full object-contain filter brightness-0 invert"
@@ -197,7 +200,8 @@ const determinantes = [
           <span
             class="text-2xl w-14 h-14 bg-white/20 flex items-center justify-center rounded-full shrink-0 group-hover:scale-110 transition-transform duration-300 overflow-hidden p-3"
           >
-            <img loading="lazy"
+            <img
+              loading="lazy"
               src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778770899/Web%20CCD/Iconos/Capacidades/Suelo_pdptjm.png"
               alt="Icono"
               class="w-full h-full object-contain"
@@ -225,7 +229,8 @@ const determinantes = [
             <div
               class="relative h-[260px] overflow-hidden bg-gray-100 shrink-0"
             >
-              <img loading="lazy"
+              <img
+                loading="lazy"
                 src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778771704/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/Imagen13_jnjpfk.png"
                 alt="Asesoría Estratégica"
                 class="w-full h-full object-cover transition-transform duration-[2500ms] group-hover:scale-[1.06]"
@@ -256,7 +261,8 @@ const determinantes = [
             <div
               class="relative h-[260px] overflow-hidden bg-gray-100 shrink-0"
             >
-              <img loading="lazy"
+              <img
+                loading="lazy"
                 src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1772646621/Web%20CCD/Corporate%20Flat%20Illustration/Image_fx_7_kr73ms.jpg"
                 alt="Asistencia Sectorial"
                 class="w-full h-full object-cover transition-transform duration-[2500ms] group-hover:scale-[1.06]"
@@ -286,7 +292,8 @@ const determinantes = [
             <div
               class="relative h-[260px] overflow-hidden bg-gray-100 shrink-0"
             >
-              <img loading="lazy"
+              <img
+                loading="lazy"
                 src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774878409/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/2_r8m7sg.jpg"
                 alt="Iniciativas Productivas"
                 class="w-full h-full object-cover transition-transform duration-[2500ms] group-hover:scale-[1.06]"
@@ -326,7 +333,8 @@ const determinantes = [
             <div
               class="relative h-[340px] overflow-hidden bg-gray-100 shrink-0"
             >
-              <img loading="lazy"
+              <img
+                loading="lazy"
                 src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1778771705/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/Imagen14_mjp7xf.png"
                 alt="Evaluación de Clústeres"
                 class="w-full h-full object-cover transition-transform duration-[2500ms] group-hover:scale-[1.07]"
@@ -357,7 +365,8 @@ const determinantes = [
             <div
               class="relative h-[340px] overflow-hidden bg-gray-100 shrink-0"
             >
-              <img loading="lazy"
+              <img
+                loading="lazy"
                 src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774878412/Web%20CCD/Capacidades%20e%20Industrias/Competitividad/3_w70hd7.webp"
                 alt="Sistemas de Medición"
                 class="w-full h-full object-cover transition-transform duration-[2500ms] group-hover:scale-[1.07]"

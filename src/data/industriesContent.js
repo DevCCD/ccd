@@ -44,7 +44,7 @@ export const industriesContent = {
         headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1770795356/Web%20CCD/Industrias/agroexportacion_uwbi1c.jpg",
         headerImagePosition: "center",
         paragraphs: [
-            "Es una industria creciente cuyos productos agrícolas se comercializan globalmente, influenciado por el aumento de la población, los ingresos, la aplicación de nuevas tecnologías que amplían fronteras agrícolas, así como por la tendencia creciente en el consumo de productos naturales, frescos y saludables, los productos de la agroexportación, al transarse en mercado global, requieren sistemas complejos de transformación o industrialización, logísticos, tarifarios y fitosanitarios.",
+            "Industria creciente cuyos productos agrícolas se comercializan globalmente, explicado por el aumento de la población, los ingresos, la aplicación de nuevas tecnologías que amplían fronteras agrícolas, así como por la tendencia creciente en el consumo de productos naturales, frescos y saludables. Los productos de la agroexportación, al transarse en el mercado global, requieren sistemas complejos de transformación o industrialización, logísticos, tarifarios y fitosanitarios.",
             "En el Centro para la Competitividad y el Desarrollo (CCD) brindamos asesoría y asesoría técnica para identificar y crear oportunidades agroexportables. Evaluamos el potencial de los productos para ser insertados en la cadena global, nacional y regional, bajo un enfoque integral que considera comercialización, transformación o industrialización, logística y producción, con un enfoque de crecimiento basado en capital, trabajo y productividad total de factores."
         ],
         mainImageAlt: "Agroexportación",
@@ -82,7 +82,7 @@ export const industriesContent = {
         headerImagePosition: "center",
         paragraphs: [
             "La educación adecuada y de calidad es fundamental en todo proceso de desarrollo sostenible. La educación genera importantes externalidades positivas, principalmente en los factores productivo, social y cultural. En lo productivo dinamiza la actividad económica al crear una masa crítica de trabajadores especializados y capacitados, con habilidades y potencial creciente. La educación superior de calidad impulsa sustancialmente la productividad, los ingresos y los aportes al Estado por tributos. En el factor social, mayor educación genera cohesión, confianza, paz social y desarrollo, contribuye a generar sinergias sociales para ser más productivos y promueve un mayor desarrollo en los niveles individual, familiar, empresarial y estatal. En el factor cultural, la mayor educación contribuye a formar identidades individuales y colectivas, y genera mayores retornos por la experiencia intercultural.",
-            "En el Centro para la Competitividad y el Desarrollo (CCD) promovemos la educación para el desarrollo y la prosperidad, con el objetivo de generar oportunidades y alta calidad de vida para toda circunscripción comunal, distrital provincial, regional y nacional. Con este propósito formulamos estudios de preinversión y expedientes técnicos para la construcción de infraestructura educativa básica regular y para la educación superior. Evaluamos, formulamos estudios e implementamos proyectos para mejorar los servicios educativos, principalmente logros de aprendizaje y educación tecnológica y digital, en convenio con universidades e instituciones lideres en la materia."
+            "En el Centro para la Competitividad y el Desarrollo (CCD) promovemos la educación para el desarrollo y la prosperidad, con el objetivo de generar oportunidades y alta calidad de vida para las personas de circunscripciones comunal, distrital provincial, regional y nacional. Con este propósito, formulamos estudios de preinversión y expedientes técnicos para construir infraestructura educativa básica regular y para educación superior. Evaluamos y formulamos estudios e implementamos proyectos para mejorar servicios educativos, principalmente logros de aprendizaje y educación tecnológica y digital, en alianzas estratégicas con universidades e instituciones lideres en la materia."
         ],
         mainImageAlt: "Educación",
         flourishId: "27519702",
@@ -124,7 +124,7 @@ export const industriesContent = {
         headerImagePosition: "center",
         paragraphs: [
             "El desarrollo de un proyecto en el sector hidrocarburos comprende principalmente el proceso de obtención del lote, la exploración, la construcción y el desarrollo del lote y del pozo, la explotación, el transporte de hidrocarburos, la transformación o refinación en destilados o combustibles y el transporte de los productos comercializables a almacenes, centros productivos e industriales y centros de servicios para abastecer a los consumidores finales. En cada una de estas actividades, las empresas del sector hidrocarburos interactúan y contribuyen con el desarrollo de la población que se encuentran directa e indirectamente relacionada. Dependiendo de cada proyecto en concreto, dicha interacción entre las actividades del proyecto de hidrocarburos y la población puede circunscribirse a escalas multi comunidades, distritos, provincias, regiones y países.",
-            "En cada uno de los procesos del sector hidrocarburos, el Centro para la Competitividad y el Desarrollo (CCD) acompaña con asistencia técnica en acciones estratégica y operativas para el desarrollo sostenido del proyecto, del sector y la población relacionada. Planificamos el desarrollo promoviendo la competitividad, creamos instrumentos fiscales para el desarrollo, evaluamos proyectos (improvement/accountability/enligtenment) para encontrar su máximo potencial de impacto y creamos sistemas tecnológicos y digitales para monitorear y acompañar en la ruta hacia el desarrollo."
+            "En cada una de las actividades del proyecto del sector hidrocarburos, el Centro para la Competitividad y el Desarrollo (CCD) acompaña con asistencia técnica en acciones estratégica y operativas con la población directa e indirectamente relacionada. Planificamos el desarrollo promoviendo la competitividad, creamos instrumentos fiscales para el desarrollo, evaluamos proyectos sociales (improvement / accountability / enligtenment) para encontrar su máximo potencial de impacto y creamos sistemas tecnológicos y digitales para monitorear y acompañar en la ruta hacia el desarrollo."
         ],
         mainImageAlt: "Hidrocarburos",
         flourishId: "28026948",
@@ -178,7 +178,7 @@ export const industriesContent = {
 
             "La infraestructura en vías de comunicación en condiciones óptimas de transitabilidad permite que las personas que viven en lugares aislados puedan mejorar el acceso a centros de educación, de salud, de producción y a mercados, lo cual genera acceso a oportunidades de consumo de otros bienes y servicios y empleo, con efectos positivos en el ingreso y en el consumo real. Asimismo, la infraestructura reduce los costos de comercialización, logística, transformación, industrialización y producción, disminuye la depreciación del capital, amplia mercados con rendimientos a escala, mejora la eficiencia de la productividad marginal del capital y del trabajo, consecuentemente favorecen el desempeño de las micros, pequeñas, medianas y grandes empresas. También la existencia de infraestructura adecuada permite la atracción de flujos adicionales de recursos privados, lo que genera la reducción de costos de factores y de transacción en dicho lugar.",
 
-            "En el Centro para la Competitividad y el Desarrollo (CCD) elaboramos líneas de base, estudios de impactos, estudios de preinversión y expedientes técnicos para la construcción de infraestructura social enfocada al bienestar y a mejorar la calidad de vida de las personas, principalmente hospitales, escuelas para la educación básica regular y superior, sistemas de agua potable, alcantarillado, energía e infraestructura económica para el desarrollo de la población directa e indirectamente relacionada, en los sectores agropecuario, banca y finanzas, electricidad, hidrocarburos, minería, seguridad, sistemas portuarios, transportes y comunicación como conectividad terrestre, fluvial, aeronáutica y virtual."
+            "En el Centro para la Competitividad y el Desarrollo (CCD) elaboramos líneas de base, estudios de impactos, estudios de preinversión y expedientes técnicos para la construcción de infraestructura social enfocada al bienestar y a mejorar la calidad de vida de las personas, principalmente hospitales, escuelas para la educación básica regular y superior, sistemas de agua potable, alcantarillado, energía e infraestructura económica para el desarrollo de la población directa e indirectamente relacionada a empresas de los sectores agropecuario, banca y finanzas, electricidad, hidrocarburos, minería, seguridad, sistemas portuarios, transportes y comunicación como conectividad terrestre, fluvial, aeronáutica y virtual."
 
 
         ],
@@ -259,7 +259,7 @@ export const industriesContent = {
         paragraphs: ["El sector manufacturero mediante métodos, formulas, procesos y actividades se encarga de transformar insumos, materias primas o productos intermedios en bienes terminados o finales para los consumidores o bienes semielaborados demandados por diversos sectores de la economía. La manufactura es un sector altamente diversificado y cuando los participantes alcanzan altos niveles de productividad logran posicionamiento local y global. Esto genera importantes impactos y beneficios como eslabonamientos con múltiples sectores y ramas de la economía, crea y consolida una red importante de proveedores y negocios conexos y relacionados, vincula a los sectores económicos con la academia formativa de profesionales, crea empleos directos, indirectos e inducidos y mayores ingresos, así como mayores pagos de impuestos.", "En el Centro para la Competitividad y el Desarrollo (CCD) elaboramos paneles de indicadores para evaluar y promover medidas para mejorar la competitividad local y global de industrias específicas de la manufactura. Elaboramos estudios de impactos y beneficios generados por las múltiples industrias manufactureras sobre la economía nacional, regional y local en términos de producción, ingresos, empleos, desarrollo de proveedores e industrias conexas y relacionadas, pago de impuestos y generación de recursos para el desarrollo."],
         mainImageAlt: "Manufactura",
         flourishId: "27781708",
-        specialistSlugs: ["mario-huaman"],
+        specialistSlugs: ["jorge-ruiz","mario-huaman"],
         capabilitySlugs: ["inversiones", "fondos"],
         introImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773339941/Web%20CCD/Industrias/IJI72JLZWRFB5MICJP5ULP5LAI_wggg3u.avif",
         relatedWork: [
@@ -307,8 +307,8 @@ export const industriesContent = {
             },
             {
                 title: "Potenciación del desarrollo con impulso de corredores económicos territoriales",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1779464389/Web%20CCD/Industrias/Captura_de_pantalla_2026-05-22_103931_o3rnjg.png",
-                link: "/capacidades/desarrollo"
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1783525038/Web%20CCD/Industrias/Potenciacion_del_desarrollo_fubqqu.png",
+                link: "/capacidades/corredores"
             },
             {
                 title: "Evaluación integral de proyectos de inversión social relacionados a proyectos mineros",
@@ -395,7 +395,7 @@ export const industriesContent = {
                 link: "/capacidades/desarrollo"
             },
             {
-                title: "Asistencia técnica en fondos de desarrollo: gobernanza, estrategias políticas y técnicas, planeamiento, proyectos de inversión para el desarrollo y socialización participación de actores",
+                title: "Asistencia técnica en fondos de desarrollo: gobernanza, estrategias políticas y técnicas, planeamiento, proyectos de inversión para el desarrollo, socialización y participación de actores",
                 image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1773386702/Web%20CCD/Industrias/congreso_andina_un1o7h.jpg",
                 link: "/capacidades/fortalecimiento"
             },

@@ -273,9 +273,9 @@ export const capacidadesContent = {
         area: "Política y Gestión Pública",
         areaColor: "#E26B0A",
         specialistSlugs: ["rudy-laguna"],
-        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774878115/Web%20CCD/Capacidades%20e%20Industrias/Politica%20Fiscal/Editorial_invhvu.jpg",
+        headerImage: "https://res.cloudinary.com/ccdcloudy/image/upload/v1783521626/Web%20CCD/Capacidades%20e%20Industrias/Politica%20Fiscal/Politica_Fiscal_lg49ct.jpg",
 
-        valorClienteIntro: "La política fiscal es determinante para la competitividad y el desarrollo. Preservando la sostenibilidad fiscal y la condición necesaria de estabilidad de precios, con los instrumentos fiscales como tributos, gasto público, endeudamiento público y financiamiento público se logra la prosperidad de las naciones.",
+        valorClienteIntro: "La política fiscal es determinante para la competitividad y el desarrollo. Preservando la condición necesaria de estabilidad de precios, el manejo sostenible de los instrumentos fiscales como tributos, gasto, endeudamiento y financiamiento público contribuye de manera importante en lograr la prosperidad de las naciones.",
         valorClienteBullets: [
             {
                 title: "Estabilidad Económica",
@@ -286,7 +286,7 @@ export const capacidadesContent = {
             {
                 title: "Cierre de Brechas",
                 text: "Dotación de servicios y cierre de brechas económicas y sociales.",
-                image: "https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1774891350/Web%20CCD/Capacidades%20e%20Industrias/Politica%20Fiscal/crecimiento-economico-peru-1_l7bvif.jpg",
+                image: "https://res.cloudinary.com/ccdcloudy/image/upload/v1783521765/Web%20CCD/Capacidades%20e%20Industrias/Politica%20Fiscal/Cierre_de_Brechas_qbpjn8.jpg",
                 cols: 3
             },
             {

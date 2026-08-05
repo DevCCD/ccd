@@ -218,9 +218,9 @@ const directores = [
   <!-- SECCIÓN: CONTADORES DE IMPACTO -->
   <section class="bg-white py-12 md:py-20 border-t border-gray-100">
     <div class="container mx-auto px-6">
-      <!-- Primera fila: 3 tarjetas principales -->
+      <!-- Primera fila: 2 tarjetas independientes (Años de Experiencia y Consultores) -->
       <div
-        class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 text-center gsap-counter-section mb-6"
+        class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 text-center gsap-counter-section mb-6 md:mb-8"
       >
         <!-- Contador 1: Años de Experiencia -->
         <div
@@ -253,7 +253,7 @@ const directores = [
           </p>
         </div>
 
-        <!-- Contador 3: Estudios Económicos -->
+        <!-- Contador 2: Consultores -->
         <div
           class="flex flex-col items-center justify-center p-8 bg-gray-200/80 hover:bg-gray-300 transition-colors border-b-4 border-transparent hover:border-primary"
         >
@@ -287,11 +287,15 @@ const directores = [
             Consultores
           </p>
         </div>
-        <!-- Contador 2: Proyectos Ejecutados -->
-        <div
-          class="flex flex-col items-center justify-center p-8 bg-gray-200/80 hover:bg-gray-300 transition-colors border-b-4 border-transparent hover:border-primary"
-        >
-          <div class="text-primary mb-6 flex justify-center items-center h-16">
+      </div>
+
+      <!-- Bloque Integrado: Tarjeta Madre Proyectos Ejecutados -->
+      <div
+        class="bg-gray-200/80 p-6 md:p-8 border-b-4 border-primary gsap-counter-section text-center"
+      >
+        <!-- Encabezado Centrado: Proyectos Ejecutados (+100 y título justo debajo) -->
+        <div class="flex flex-col items-center justify-center mb-8">
+          <div class="text-primary mb-4 flex justify-center items-center h-16">
             <svg
               class="w-14 h-14 md:w-16 md:h-16"
               fill="none"
@@ -307,149 +311,156 @@ const directores = [
             </svg>
           </div>
           <div
-            class="relative inline-flex items-center justify-center font-sans text-6xl md:text-7xl font-black text-primary mb-4"
+            class="relative inline-flex items-center justify-center font-sans text-6xl md:text-7xl font-black text-primary mb-3"
           >
             <span class="absolute right-full mr-2 text-4xl md:text-5xl">+</span>
             <span class="counter-number" data-target="100">100</span>
           </div>
-          <p
-            class="text-xl md:text-xl text-gray-500 max-w-[220px] tracking-widest font-semibold"
+          <h3
+            class="text-xl md:text-2xl text-gray-500 tracking-widest font-semibold"
           >
             Proyectos Ejecutados
-          </p>
-        </div>
-      </div>
-
-      <!-- Segunda fila: 5 tarjetas simétricas -->
-      <div
-        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6 text-center gsap-counter-section"
-      >
-        <!-- Contador 4: Localidades y Comunidades -->
-        <div
-          class="flex flex-col items-center justify-center p-6 md:p-8 bg-gray-200/80 hover:bg-gray-300 transition-colors border-b-4 border-transparent hover:border-primary"
-        >
-          <div class="mb-6 flex justify-center items-center h-24">
-            <img
-              loading="lazy"
-              src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1779479803/Web%20CCD/Iconos/Imagen16_lbdq3q.png"
-              alt="Localidades"
-              class="w-24 h-24 md:w-32 md:h-32 object-contain"
-            />
-          </div>
-          <div
-            class="relative inline-flex items-center justify-center font-sans text-5xl md:text-6xl font-black text-primary mb-4"
-          >
-            <span class="absolute right-full mr-2 text-3xl md:text-xl">+</span>
-            <span class="counter-number" data-target="20">20</span>
-          </div>
-          <p
-            class="text-xl md:text-lg text-gray-500 max-w-[200px] tracking-widest font-semibold"
-          >
-            Nivel<br /> Países
-          </p>
+          </h3>
         </div>
 
-        <!-- Contador 5: Iniciativas Activas -->
+        <!-- 5 Subtarjetas de Niveles totalmente uniformes con el diseño del sitio -->
         <div
-          class="flex flex-col items-center justify-center p-6 md:p-8 bg-gray-200/80 hover:bg-gray-300 transition-colors border-b-4 border-transparent hover:border-primary"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6 text-center"
         >
-          <div class="mb-6 flex justify-center items-center h-24">
-            <img
-              loading="lazy"
-              src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1779476975/Web%20CCD/Iconos/Imagen18_u9a6eb.png"
-              alt="Iniciativas"
-              class="w-24 h-24 md:w-32 md:h-32 object-contain"
-            />
-          </div>
+          <!-- Subtarjeta 1: Nivel Países -->
           <div
-            class="relative inline-flex items-center justify-center font-sans text-5xl md:text-6xl font-black text-primary mb-4"
+            class="flex flex-col items-center justify-center p-6 md:p-8 bg-white/90 hover:bg-white transition-colors border-b-4 border-transparent hover:border-primary"
           >
-            <span class="absolute right-full mr-2 text-3xl md:text-4xl">+</span>
-            <span class="counter-number" data-target="20">20</span>
+            <div class="mb-6 flex justify-center items-center h-24">
+              <img
+                loading="lazy"
+                src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1779479803/Web%20CCD/Iconos/Imagen16_lbdq3q.png"
+                alt="Países"
+                class="w-24 h-24 md:w-32 md:h-32 object-contain"
+              />
+            </div>
+            <div
+              class="relative inline-flex items-center justify-center font-sans text-5xl md:text-6xl font-black text-primary mb-4"
+            >
+              <span class="absolute right-full mr-2 text-3xl md:text-4xl"
+                >+</span
+              >
+              <span class="counter-number" data-target="20">20</span>
+            </div>
+            <p
+              class="text-xl md:text-lg text-gray-500 max-w-[200px] tracking-widest font-semibold"
+            >
+              Nivel<br /> Países
+            </p>
           </div>
-          <p
-            class="text-xl md:text-lg text-gray-500 max-w-[200px] tracking-widest font-semibold"
-          >
-            Nivel<br /> Regiones
-          </p>
-        </div>
 
-        <!-- Contador 6: Profesionales Especializados -->
-        <div
-          class="flex flex-col items-center justify-center p-6 md:p-8 bg-gray-200/80 hover:bg-gray-300 transition-colors border-b-4 border-transparent hover:border-primary"
-        >
-          <div class="mb-6 flex justify-center items-center h-24">
-            <img
-              loading="lazy"
-              src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1779479801/Web%20CCD/Iconos/Imagen21_rkyahu.png"
-              alt="Profesionales"
-              class="w-24 h-24 md:w-32 md:h-32 object-contain"
-            />
-          </div>
+          <!-- Subtarjeta 2: Nivel Regiones -->
           <div
-            class="relative inline-flex items-center justify-center font-sans text-5xl md:text-6xl font-black text-primary mb-4"
+            class="flex flex-col items-center justify-center p-6 md:p-8 bg-white/90 hover:bg-white transition-colors border-b-4 border-transparent hover:border-primary"
           >
-            <span class="absolute right-full mr-2 text-3xl md:text-4xl">+</span>
-            <span class="counter-number" data-target="25">25</span>
+            <div class="mb-6 flex justify-center items-center h-24">
+              <img
+                loading="lazy"
+                src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1779476975/Web%20CCD/Iconos/Imagen18_u9a6eb.png"
+                alt="Regiones"
+                class="w-24 h-24 md:w-32 md:h-32 object-contain"
+              />
+            </div>
+            <div
+              class="relative inline-flex items-center justify-center font-sans text-5xl md:text-6xl font-black text-primary mb-4"
+            >
+              <span class="absolute right-full mr-2 text-3xl md:text-4xl"
+                >+</span
+              >
+              <span class="counter-number" data-target="20">20</span>
+            </div>
+            <p
+              class="text-xl md:text-lg text-gray-500 max-w-[200px] tracking-widest font-semibold"
+            >
+              Nivel<br /> Regiones
+            </p>
           </div>
-          <p
-            class="text-xl md:text-lg text-gray-500 max-w-[200px] tracking-widest font-semibold"
-          >
-            Nivel<br /> Provincias
-          </p>
-        </div>
 
-        <!-- Contador 7: Soluciones Implementadas -->
-        <div
-          class="flex flex-col items-center justify-center p-6 md:p-8 bg-gray-200/80 hover:bg-gray-300 transition-colors border-b-4 border-transparent hover:border-primary"
-        >
-          <div class="mb-6 flex justify-center items-center h-24">
-            <img
-              loading="lazy"
-              src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1779479802/Web%20CCD/Iconos/Imagen92_wfncxt.png"
-              class="w-24
-              h-24
-              md:w-32
-              md:h-32
-              object-contain"
-            />
-          </div>
+          <!-- Subtarjeta 3: Nivel Provincias -->
           <div
-            class="relative inline-flex items-center justify-center font-sans text-5xl md:text-6xl font-black text-primary mb-4"
+            class="flex flex-col items-center justify-center p-6 md:p-8 bg-white/90 hover:bg-white transition-colors border-b-4 border-transparent hover:border-primary"
           >
-            <span class="absolute right-full mr-2 text-3xl md:text-4xl">+</span>
-            <span class="counter-number" data-target="190">190</span>
+            <div class="mb-6 flex justify-center items-center h-24">
+              <img
+                loading="lazy"
+                src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1779479801/Web%20CCD/Iconos/Imagen21_rkyahu.png"
+                alt="Provincias"
+                class="w-24 h-24 md:w-32 md:h-32 object-contain"
+              />
+            </div>
+            <div
+              class="relative inline-flex items-center justify-center font-sans text-5xl md:text-6xl font-black text-primary mb-4"
+            >
+              <span class="absolute right-full mr-2 text-3xl md:text-4xl"
+                >+</span
+              >
+              <span class="counter-number" data-target="25">25</span>
+            </div>
+            <p
+              class="text-xl md:text-lg text-gray-500 max-w-[200px] tracking-widest font-semibold"
+            >
+              Nivel<br /> Provincias
+            </p>
           </div>
-          <p
-            class="text-xl md:text-lg text-gray-500 max-w-[200px] tracking-widest font-semibold"
-          >
-            Nivel<br /> Distritos
-          </p>
-        </div>
 
-        <!-- Contador 8: Colaboraciones Estratégicas -->
-        <div
-          class="flex flex-col items-center justify-center p-6 md:p-8 bg-gray-200/80 hover:bg-gray-300 transition-colors border-b-4 border-transparent hover:border-primary"
-        >
-          <div class="mb-6 flex justify-center items-center h-24">
-            <img
-              loading="lazy"
-              src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1779479801/Web%20CCD/Iconos/Imagen23_vujbwi.png"
-              alt="Colaboraciones"
-              class="w-24 h-24 md:w-32 md:h-32 object-contain"
-            />
-          </div>
+          <!-- Subtarjeta 4: Nivel Distritos -->
           <div
-            class="relative inline-flex items-center justify-center font-sans text-5xl md:text-6xl font-black text-primary mb-4"
+            class="flex flex-col items-center justify-center p-6 md:p-8 bg-white/90 hover:bg-white transition-colors border-b-4 border-transparent hover:border-primary"
           >
-            <span class="absolute right-full mr-2 text-3xl md:text-4xl">+</span>
-            <span class="counter-number" data-target="350">350</span>
+            <div class="mb-6 flex justify-center items-center h-24">
+              <img
+                loading="lazy"
+                src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1779479802/Web%20CCD/Iconos/Imagen92_wfncxt.png"
+                alt="Distritos"
+                class="w-24 h-24 md:w-32 md:h-32 object-contain"
+              />
+            </div>
+            <div
+              class="relative inline-flex items-center justify-center font-sans text-5xl md:text-6xl font-black text-primary mb-4"
+            >
+              <span class="absolute right-full mr-2 text-3xl md:text-4xl"
+                >+</span
+              >
+              <span class="counter-number" data-target="190">190</span>
+            </div>
+            <p
+              class="text-xl md:text-lg text-gray-500 max-w-[200px] tracking-widest font-semibold"
+            >
+              Nivel<br /> Distritos
+            </p>
           </div>
-          <p
-            class="text-xl md:text-lg text-gray-500 max-w-[200px] tracking-widest font-semibold"
+
+          <!-- Subtarjeta 5: Nivel Comunidades -->
+          <div
+            class="flex flex-col items-center justify-center p-6 md:p-8 bg-white/90 hover:bg-white transition-colors border-b-4 border-transparent hover:border-primary"
           >
-            Nivel<br /> Comunidades
-          </p>
+            <div class="mb-6 flex justify-center items-center h-24">
+              <img
+                loading="lazy"
+                src="https://res.cloudinary.com/ccdcloudy/image/upload/f_auto,q_auto/v1779479801/Web%20CCD/Iconos/Imagen23_vujbwi.png"
+                alt="Comunidades"
+                class="w-24 h-24 md:w-32 md:h-32 object-contain"
+              />
+            </div>
+            <div
+              class="relative inline-flex items-center justify-center font-sans text-5xl md:text-6xl font-black text-primary mb-4"
+            >
+              <span class="absolute right-full mr-2 text-3xl md:text-4xl"
+                >+</span
+              >
+              <span class="counter-number" data-target="350">350</span>
+            </div>
+            <p
+              class="text-xl md:text-lg text-gray-500 max-w-[200px] tracking-widest font-semibold"
+            >
+              Nivel<br /> Comunidades
+            </p>
+          </div>
         </div>
       </div>
     </div>

@@ -36,10 +36,10 @@ const chunk2 = nuestroTrabajo.slice(4, 6); // Medición y Acompañamiento
       </div>
 
       <div
-        class="featured-card group bg-white overflow-hidden shadow-2xl mb-12 flex flex-col lg:flex-row min-h-[580px]"
+        class="featured-card group bg-white overflow-hidden shadow-2xl mb-12 flex flex-col lg:flex-row"
       >
-        <div class="w-full lg:w-[60%] p-10 md:p-14 lg:p-16 flex flex-col">
-          <div class="mb-8">
+        <div class="w-full lg:w-[60%] p-6 md:p-10 lg:p-14 flex flex-col">
+          <div class="mb-4">
             <h3
               class="font-serif text-4xl md:text-5xl font-black text-primary leading-tight mb-4"
             >
@@ -53,56 +53,14 @@ const chunk2 = nuestroTrabajo.slice(4, 6); // Medición y Acompañamiento
             </p>
           </div>
 
-          <div
-            class="relative mt-auto pt-14 pb-14 px-4 flex justify-center items-center bg-[#DDF3FF] rounded-[40px] overflow-hidden min-h-[400px]"
-          >
-            <div
-              class="absolute w-[90%] h-[75%] border-4 border-white/40 rounded-[100%] pointer-events-none"
-            >
-            </div>
-            <div
-              class="relative z-20 w-48 h-28 bg-gradient-to-br from-[#5D467E] to-[#3B2A52] rounded-full shadow-xl flex items-center justify-center p-4 text-center border-4 border-white/20"
-            >
-              <span
-                class="text-white font-serif font-black text-xl md:text-2xl leading-tight"
-                >Evaluación Integral</span
-              >
-            </div>
-            <div
-              class="absolute top-4 z-10 w-40 h-24 bg-[#4A90E2] rounded-[100%/120%] shadow-lg border-4 border-white flex items-center justify-center p-3 text-center transition-transform hover:scale-110"
-            >
-              <span class="text-white font-sans font-bold text-base"
-                >Pertinencia</span
-              >
-            </div>
-            <div
-              class="absolute right-4 top-1/2 -translate-y-12 z-10 w-40 h-24 bg-[#8B4513] rounded-[100%/120%] shadow-lg border-4 border-white flex items-center justify-center p-3 text-center transition-transform hover:scale-110"
-            >
-              <span class="text-white font-sans font-bold text-base"
-                >Eficiencia</span
-              >
-            </div>
-            <div
-              class="absolute bottom-4 right-12 z-10 w-40 h-24 bg-[#F57C00] rounded-[100%/120%] shadow-lg border-4 border-white flex items-center justify-center p-3 text-center transition-transform hover:scale-110"
-            >
-              <span class="text-white font-sans font-bold text-base"
-                >Eficacia</span
-              >
-            </div>
-            <div
-              class="absolute bottom-4 left-12 z-10 w-40 h-24 bg-[#3A86AD] rounded-[100%/120%] shadow-lg border-4 border-white flex items-center justify-center p-3 text-center transition-transform hover:scale-110"
-            >
-              <span class="text-white font-sans font-bold text-base"
-                >Impacto</span
-              >
-            </div>
-            <div
-              class="absolute left-4 top-1/2 -translate-y-12 z-10 w-40 h-24 bg-[#00A650] rounded-[100%/120%] shadow-lg border-4 border-white flex items-center justify-center p-3 text-center transition-transform hover:scale-110"
-            >
-              <span class="text-white font-sans font-bold text-base"
-                >Sostenibilidad</span
-              >
-            </div>
+          <!-- Imagen del diagrama de Evaluación Integral -->
+          <div class="mt-auto flex-1 flex items-stretch overflow-hidden">
+            <img
+              loading="lazy"
+              src="https://res.cloudinary.com/ccdcloudy/image/upload/v1785969315/Web%20CCD/Industrias/evaluacion_integral_wwj91u.png"
+              alt="Diagrama de Evaluación Integral"
+              class="w-full h-full object-contain"
+            />
           </div>
         </div>
         <div class="w-full lg:w-[40%] relative overflow-hidden bg-primary/10">
@@ -125,10 +83,10 @@ const chunk2 = nuestroTrabajo.slice(4, 6); // Medición y Acompañamiento
   <section class="bg-[#F1F5F9] py-20 md:py-24 border-y border-gray-200">
     <div class="container mx-auto px-6 lg:px-12 max-w-[1600px]">
       <div
-        class="featured-card group bg-white overflow-hidden shadow-2xl flex flex-col lg:flex-row-reverse min-h-[580px]"
+        class="featured-card group bg-white overflow-hidden shadow-2xl flex flex-col lg:flex-row-reverse"
       >
-        <div class="w-full lg:w-[60%] p-10 md:p-14 lg:p-16 flex flex-col">
-          <div class="mb-8">
+        <div class="w-full lg:w-[60%] p-6 md:p-10 lg:p-14 flex flex-col">
+          <div class="mb-4">
             <h3
               class="font-serif text-4xl md:text-5xl font-black text-primary leading-tight mb-4 text-right"
             >
@@ -142,89 +100,14 @@ const chunk2 = nuestroTrabajo.slice(4, 6); // Medición y Acompañamiento
             </p>
           </div>
 
-          <!-- Infografía Etapas (Ajustada según referencia) -->
-          <div
-            class="relative mt-auto p-8 bg-[#E2E8F0] rounded-[30px] overflow-hidden min-h-[380px] flex flex-col"
-          >
-            <div class="flex flex-row gap-6 items-stretch h-full">
-              <!-- Columna Izquierda: Flecha + Bloques -->
-              <div class="flex flex-[2.5] flex-col">
-                <!-- Flecha ajustada: empieza arriba de ExAnte y termina en el panel -->
-                <div class="relative w-full mb-4">
-                  <svg
-                    viewBox="0 0 600 60"
-                    class="w-full h-14 overflow-visible drop-shadow-sm"
-                  >
-                    <path
-                      d="M0,15 L540,15 L540,0 L600,30 L540,60 L540,45 L0,45 Z"
-                      fill="#3A86AD"></path>
-                    <text
-                      x="270"
-                      y="38"
-                      text-anchor="middle"
-                      fill="white"
-                      font-family="sans-serif"
-                      font-weight="800"
-                      font-size="22">Etapas</text
-                    >
-                  </svg>
-                </div>
-                <!-- Bloques de Etapas -->
-                <div class="flex gap-4 h-full">
-                  <div
-                    class="flex-1 bg-[#D99A9A] flex items-end p-5 shadow-sm border-t-4 border-white/20 transition-transform hover:-translate-y-1"
-                    style="clip-path: polygon(0 0, 65% 0, 100% 35%, 100% 100%, 0 100%);"
-                  >
-                    <span class="text-white font-black text-xl md:text-2xl"
-                      >ExAnte</span
-                    >
-                  </div>
-                  <div
-                    class="flex-1 bg-[#00A650] flex items-end p-5 shadow-sm border-t-4 border-white/20 transition-transform hover:-translate-y-1"
-                    style="clip-path: polygon(0 0, 65% 0, 100% 35%, 100% 100%, 0 100%);"
-                  >
-                    <span class="text-white font-black text-xl md:text-2xl"
-                      >ExDure</span
-                    >
-                  </div>
-                  <div
-                    class="flex-1 bg-[#F57C00] flex items-end p-5 shadow-sm border-t-4 border-white/20 transition-transform hover:-translate-y-1"
-                    style="clip-path: polygon(0 0, 65% 0, 100% 35%, 100% 100%, 0 100%);"
-                  >
-                    <span class="text-white font-black text-xl md:text-2xl"
-                      >ExPost</span
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <!-- Columna Derecha: Panel de Objetivos -->
-              <div
-                class="w-full md:w-1/3 bg-[#A5D1E1] rounded-3xl p-4 flex flex-col gap-3 shadow-lg border-4 border-white/50"
-              >
-                <div
-                  class="flex-1 bg-[#FFB370] rounded-xl flex items-center justify-center p-3 text-center shadow-sm transition-all hover:brightness-105"
-                >
-                  <span class="text-gray-900 font-black text-base"
-                    >Improvement</span
-                  >
-                </div>
-                <div
-                  class="flex-1 bg-[#FFD4A1] rounded-xl flex items-center justify-center p-3 text-center shadow-sm transition-all hover:brightness-105"
-                >
-                  <span class="text-gray-900 font-black text-base"
-                    >Accountability</span
-                  >
-                </div>
-                <div
-                  class="flex-1 bg-[#FFE9D1] rounded-xl flex items-center justify-center p-3 text-center shadow-sm transition-all hover:brightness-105"
-                >
-                  <span class="text-gray-900 font-black text-base"
-                    >Enligtenment</span
-                  >
-                </div>
-              </div>
-            </div>
+          <!-- Imagen del diagrama de Análisis por Etapas -->
+          <div class="mt-auto flex-1 flex items-stretch overflow-hidden">
+            <img
+              loading="lazy"
+              src="https://res.cloudinary.com/ccdcloudy/image/upload/v1785969588/Web%20CCD/Industrias/Captura_de_pantalla_2026-08-05_173900_q5ko2l.png"
+              alt="Diagrama de Análisis por Etapas"
+              class="w-full h-full object-contain"
+            />
           </div>
         </div>
         <div class="w-full lg:w-[40%] relative overflow-hidden bg-primary/10">

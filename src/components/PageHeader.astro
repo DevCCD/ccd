@@ -3,9 +3,11 @@ export interface Props {
   title: string;
   description?: string;
   backgroundImage?: string;
+  titleKey?: string; // clave i18n opcional
+  descriptionKey?: string; // clave i18n opcional
 }
 
-const { title, description, backgroundImage } = Astro.props;
+const { title, description, backgroundImage, titleKey, descriptionKey } = Astro.props;
 ---
 
 
@@ -26,14 +28,14 @@ const { title, description, backgroundImage } = Astro.props;
     
     <div class={`${backgroundImage ? 'space-y-4 max-w-4xl animate-fade-in-up' : ''}`}>
         <!-- Título -->
-        <h1 class={`font-serif text-5xl md:text-7xl font-black leading-tight ${backgroundImage ? 'text-white drop-shadow-2xl' : 'text-gray-900 mb-6'}`}>
+        <h1 data-i18n={titleKey} class={`font-serif text-5xl md:text-7xl font-black leading-tight ${backgroundImage ? 'text-white drop-shadow-2xl' : 'text-gray-900 mb-6'}`}>
           {title}
         </h1>
 
         {backgroundImage && <div class="w-24 h-2 bg-primary rounded-full shadow-lg"></div>}
 
         {description && (
-          <p class={`font-sans text-2xl md:text-3xl font-semibold leading-[1.6] text-gray-900/70 ${backgroundImage ? 'text-gray-100 mt-4 max-w-3xl' : 'text-gray-900 max-w-4xl mx-auto'}`}>
+          <p data-i18n={descriptionKey} class={`font-sans text-2xl md:text-3xl font-semibold leading-[1.6] text-gray-900/70 ${backgroundImage ? 'text-gray-100 mt-4 max-w-3xl' : 'text-gray-900 max-w-4xl mx-auto'}`}>
             {description}
           </p>
         )}

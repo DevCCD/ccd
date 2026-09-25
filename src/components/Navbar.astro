@@ -31,6 +31,10 @@ const dropdownInactiveClass =
 // 4. INACTIVO SIMPLE:
 const simpleInactiveClass =
   "font-medium hover:[text-shadow:0.4px_0_0_currentColor,-0.4px_0_0_currentColor] after:absolute after:bottom-[16px] after:left-0 after:w-full after:h-[5px] after:bg-primary/40 after:opacity-0 hover:after:opacity-100 after:transition-opacity after:duration-300";
+
+// Clase compartida para los items (hoja) de los mega-menús
+const megaItemClass =
+  "text-base text-gray-700 group-hover/link:text-primary transition-colors";
 ---
 
 <header
@@ -70,7 +74,7 @@ const simpleInactiveClass =
               isCapacidadesActive ? activeClass : dropdownInactiveClass,
             ]}
           >
-            Capacidades
+            <span data-i18n="nav.capacidades">Capacidades</span>
             <svg
               class="w-3 h-3 transition-transform duration-300 group-hover:rotate-180"
               fill="none"
@@ -104,6 +108,7 @@ const simpleInactiveClass =
                     >
                       <h2
                         class="font-serif text-3xl font-bold text-gray-900 group-hover/title:text-primary transition-colors"
+                        data-i18n="nav.capacidades"
                       >
                         Capacidades
                       </h2>
@@ -122,6 +127,7 @@ const simpleInactiveClass =
                     </a>
                     <p
                       class="mt-4 pr-4 text-lg text-gray-500 leading-relaxed font-semibold"
+                      data-i18n="nav.capacidades.desc"
                     >
                       Soluciones integrales para transformar territorios y
                       generar valor sostenible.
@@ -139,32 +145,28 @@ const simpleInactiveClass =
                       <a
                         href="/capacidades/competitividad"
                         class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
-                        ><span
-                          class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                        ><span class={megaItemClass} data-i18n="cap.competitividad"
                           >Competitividad</span
                         ></a
                       >
                       <a
                         href="/capacidades/corredores"
                         class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
-                        ><span
-                          class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                        ><span class={megaItemClass} data-i18n="cap.corredores"
                           >Corredores Económicos Territoriales</span
                         ></a
                       >
                       <a
                         href="/capacidades/desarrollo"
                         class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
-                        ><span
-                          class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                        ><span class={megaItemClass} data-i18n="cap.desarrollo"
                           >Desarrollo</span
                         ></a
                       >
                       <a
                         href="/capacidades/estudios"
                         class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
-                        ><span
-                          class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                        ><span class={megaItemClass} data-i18n="cap.estudios"
                           >Estudios Económicos</span
                         ></a
                       >
@@ -175,8 +177,7 @@ const simpleInactiveClass =
                       <a
                         href="/capacidades/evaluacion"
                         class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
-                        ><span
-                          class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                        ><span class={megaItemClass} data-i18n="cap.evaluacion"
                           >Evaluación de Proyectos</span
                         ></a
                       >
@@ -184,24 +185,21 @@ const simpleInactiveClass =
                       <a
                         href="/capacidades/fondos-sociales"
                         class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
-                        ><span
-                          class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                        ><span class={megaItemClass} data-i18n="cap.fondosSociales"
                           >Fondos Sociales</span
                         ></a
                       >
                       <a
                         href="/capacidades/fortalecimiento"
                         class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
-                        ><span
-                          class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                        ><span class={megaItemClass} data-i18n="cap.fortalecimiento"
                           >Fortalecimiento de Capacidades</span
                         ></a
                       >
                       <a
                         href="/capacidades/ia-y-analitica"
                         class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
-                        ><span
-                          class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                        ><span class={megaItemClass} data-i18n="cap.ia"
                           >Inteligencia Artificial y Analítica</span
                         ></a
                       >
@@ -212,32 +210,28 @@ const simpleInactiveClass =
                       <a
                         href="/capacidades/inversiones"
                         class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
-                        ><span
-                          class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                        ><span class={megaItemClass} data-i18n="cap.inversiones"
                           >Inversiones y Proyectos</span
                         ></a
                       >
                       <a
                         href="/capacidades/legal"
                         class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
-                        ><span
-                          class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                        ><span class={megaItemClass} data-i18n="cap.legal"
                           >Legal</span
                         ></a
                       >
                       <a
                         href="/capacidades/fondos-de-estabilizacion"
                         class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
-                        ><span
-                          class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                        ><span class={megaItemClass} data-i18n="cap.riesgos"
                           >Mecanismos Reductores de Riesgos</span
                         ></a
                       >
                       <a
                         href="/capacidades/politica"
                         class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
-                        ><span
-                          class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                        ><span class={megaItemClass} data-i18n="cap.politica"
                           >Política Fiscal</span
                         ></a
                       >
@@ -258,7 +252,7 @@ const simpleInactiveClass =
               isIndustriasActive ? activeClass : dropdownInactiveClass,
             ]}
           >
-            Industrias
+            <span data-i18n="nav.industrias">Industrias</span>
             <svg
               class="w-3 h-3 transition-transform duration-300 group-hover:rotate-180"
               fill="none"
@@ -290,6 +284,7 @@ const simpleInactiveClass =
                     >
                       <h2
                         class="font-serif text-3xl font-bold text-gray-900 group-hover/title:text-primary transition-colors"
+                        data-i18n="nav.industrias"
                       >
                         Industrias
                       </h2>
@@ -308,6 +303,7 @@ const simpleInactiveClass =
                     </a>
                     <p
                       class="mt-4 pr-4 text-lg text-gray-500 leading-relaxed font-semibold"
+                      data-i18n="nav.industrias.desc"
                     >
                       Aportamos experiencia estratégica en múltiples sectores
                       económicos, potenciando la competitividad y el crecimiento
@@ -321,40 +317,35 @@ const simpleInactiveClass =
                       <a
                         href="/industrias/agropecuario"
                         class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
-                        ><span
-                          class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                        ><span class={megaItemClass} data-i18n="ind.agropecuario"
                           >Agropecuario</span
                         ></a
                       >
                       <a
                         href="/industrias/agroexportacion"
                         class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
-                        ><span
-                          class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                        ><span class={megaItemClass} data-i18n="ind.agroexportacion"
                           >Agroexportación</span
                         ></a
                       >
                       <a
                         href="/industrias/educacion"
                         class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
-                        ><span
-                          class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                        ><span class={megaItemClass} data-i18n="ind.educacion"
                           >Educación</span
                         ></a
                       >
                       <a
                         href="/industrias/hidrocarburos"
                         class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
-                        ><span
-                          class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                        ><span class={megaItemClass} data-i18n="ind.hidrocarburos"
                           >Hidrocarburos</span
                         ></a
                       >
                       <a
                         href="/industrias/infraestructura"
                         class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
-                        ><span
-                          class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                        ><span class={megaItemClass} data-i18n="ind.infraestructura"
                           >Infraestructura y Construcción</span
                         ></a
                       >
@@ -363,32 +354,28 @@ const simpleInactiveClass =
                       <a
                         href="/industrias/inteligencia"
                         class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
-                        ><span
-                          class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                        ><span class={megaItemClass} data-i18n="ind.ia"
                           >Inteligencia Artificial</span
                         ></a
                       >
                       <a
                         href="/industrias/manufactura"
                         class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
-                        ><span
-                          class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                        ><span class={megaItemClass} data-i18n="ind.manufactura"
                           >Manufactura</span
                         ></a
                       >
                       <a
                         href="/industrias/mineria"
                         class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
-                        ><span
-                          class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                        ><span class={megaItemClass} data-i18n="ind.mineria"
                           >Minería</span
                         ></a
                       >
                       <a
                         href="/industrias/seguridad"
                         class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
-                        ><span
-                          class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                        ><span class={megaItemClass} data-i18n="ind.seguridad"
                           >Seguridad Ciudadana</span
                         ></a
                       >
@@ -397,32 +384,28 @@ const simpleInactiveClass =
                       <a
                         href="/industrias/publico"
                         class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
-                        ><span
-                          class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                        ><span class={megaItemClass} data-i18n="ind.publico"
                           >Sector Público</span
                         ></a
                       >
                       <a
                         href="/industrias/portuarios"
                         class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
-                        ><span
-                          class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                        ><span class={megaItemClass} data-i18n="ind.portuarios"
                           >Servicios Portuarios</span
                         ></a
                       >
                       <a
                         href="/industrias/financiero"
                         class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
-                        ><span
-                          class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                        ><span class={megaItemClass} data-i18n="ind.financiero"
                           >Sistema Financiero</span
                         ></a
                       >
                       <a
                         href="/industrias/tecnologia"
                         class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
-                        ><span
-                          class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                        ><span class={megaItemClass} data-i18n="ind.tecnologia"
                           >Tecnología</span
                         ></a
                       >
@@ -443,7 +426,7 @@ const simpleInactiveClass =
               currentPath === "/paises" ? activeClass : simpleInactiveClass,
             ]}
           >
-            Países
+            <span data-i18n="nav.paises">Países</span>
           </a>
         </li>
 
@@ -456,7 +439,7 @@ const simpleInactiveClass =
               currentPath === "/carreras" ? activeClass : simpleInactiveClass,
             ]}
           >
-            Carreras
+            <span data-i18n="nav.carreras">Carreras</span>
           </a>
         </li>
 
@@ -469,7 +452,7 @@ const simpleInactiveClass =
               isNosotrosActive ? activeClass : dropdownInactiveClass,
             ]}
           >
-            Nosotros
+            <span data-i18n="nav.nosotros">Nosotros</span>
             <svg
               class="w-3 h-3 transition-transform duration-300 group-hover:rotate-180"
               fill="none"
@@ -498,12 +481,14 @@ const simpleInactiveClass =
                     <div class="group/title inline-flex items-center gap-3">
                       <h2
                         class="font-serif text-3xl font-bold text-gray-900 group-hover/title:text-primary transition-colors"
+                        data-i18n="nav.nosotros"
                       >
                         Nosotros
                       </h2>
                     </div>
                     <p
                       class="mt-4 pr-4 text-lg text-gray-500 leading-relaxed font-semibold"
+                      data-i18n="nav.nosotros.desc"
                     >
                       Promover el desarrollo y la prosperidad.
                     </p>
@@ -517,8 +502,7 @@ const simpleInactiveClass =
                         href="/nosotros/vision-historia"
                         class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
                       >
-                        <span
-                          class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                        <span class={megaItemClass} data-i18n="nav.vision"
                           >Visión</span
                         >
                       </a>
@@ -526,8 +510,7 @@ const simpleInactiveClass =
                         href="/nosotros/vision-historia#historia"
                         class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
                       >
-                        <span
-                          class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                        <span class={megaItemClass} data-i18n="nav.historia"
                           >Historia</span
                         >
                       </a>
@@ -539,8 +522,7 @@ const simpleInactiveClass =
                         href="/nosotros/equipo"
                         class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
                       >
-                        <span
-                          class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                        <span class={megaItemClass} data-i18n="nav.equipo"
                           >Nuestro Equipo</span
                         >
                       </a>
@@ -548,8 +530,7 @@ const simpleInactiveClass =
                         href="/nosotros/enfoque"
                         class="block p-2 -ml-2 rounded-lg group/link hover:bg-gray-50"
                       >
-                        <span
-                          class="text-base text-gray-700 group-hover/link:text-primary transition-colors"
+                        <span class={megaItemClass} data-i18n="nav.enfoque"
                           >Enfoque de trabajo</span
                         >
                       </a>
@@ -570,7 +551,7 @@ const simpleInactiveClass =
               currentPath === "/contacto" ? activeClass : simpleInactiveClass,
             ]}
           >
-            Contacto
+            <span data-i18n="nav.contacto">Contacto</span>
           </a>
         </li>
 
@@ -585,10 +566,62 @@ const simpleInactiveClass =
               currentPath === "/milink" ? activeClass : simpleInactiveClass,
             ]}
           >
-            MiLinkCCD
+            <span data-i18n="nav.milink">MiLinkCCD</span>
           </a>
         </li>
       </ul>
+
+      <!-- ============================================ -->
+      <!-- SELECTOR DE IDIOMA (Desktop)                 -->
+      <!-- ============================================ -->
+      <div class="group relative h-full flex items-center ml-4 pl-4 border-l border-gray-200">
+        <button
+          type="button"
+          class="flex items-center gap-1.5 px-2 py-1 text-[15px] font-medium text-primary transition-colors"
+          aria-haspopup="true"
+          data-i18n-aria-label="lang.label"
+          aria-label="Idioma"
+        >
+          <span data-lang-current>ES</span>
+          <svg
+            class="w-3 h-3 transition-transform duration-300 group-hover:rotate-180"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+
+        <div
+          class="absolute right-0 top-full pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
+        >
+          <ul
+            class="bg-white border border-gray-200 shadow-xl py-2 min-w-[150px]"
+          >
+            <li>
+              <button
+                type="button"
+                data-lang-option="es"
+                class="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors"
+                >Español</button
+              >
+            </li>
+            <li>
+              <button
+                type="button"
+                data-lang-option="en"
+                class="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors"
+                >English</button
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <!-- ============================================ -->
@@ -598,6 +631,8 @@ const simpleInactiveClass =
       <button
         id="mobile-menu-button"
         class="p-2 rounded-md border-2 border-primary text-primary hover:bg-primary/10 transition-colors"
+        data-i18n-aria-label="nav.menu"
+        aria-label="Abrir menú"
       >
         <svg
           id="hamburger-icon"
@@ -641,20 +676,20 @@ const simpleInactiveClass =
         href="/capacidades"
         class="block px-3 py-3 rounded-md text-base font-medium text-primary hover:bg-primary/5 transition-colors"
         class:list={{ "bg-primary/5 font-bold": isCapacidadesActive }}
-        >Capacidades</a
+        ><span data-i18n="nav.capacidades">Capacidades</span></a
       >
       <a
         href="/industrias"
         class="block px-3 py-3 rounded-md text-base font-medium text-primary hover:bg-primary/5 transition-colors"
         class:list={{ "bg-primary/5 font-bold": isIndustriasActive }}
-        >Industrias</a
+        ><span data-i18n="nav.industrias">Industrias</span></a
       >
       <a
         href="/paises"
         class="block px-3 py-3 rounded-md text-base font-medium text-primary hover:bg-primary/5 transition-colors"
         class:list={{
           "bg-primary/5 font-bold": currentPath === "/paises",
-        }}>Países</a
+        }}><span data-i18n="nav.paises">Países</span></a
       >
 
       <!-- ACORDEÓN NOSOTROS -->
@@ -664,7 +699,7 @@ const simpleInactiveClass =
           class="w-full flex justify-between items-center px-3 py-3 rounded-md text-base font-medium text-primary hover:bg-primary/5 transition-colors"
           class:list={{ "bg-primary/5 font-bold": isNosotrosActive }}
         >
-          <span>Nosotros</span>
+          <span data-i18n="nav.nosotros">Nosotros</span>
           <svg
             id="arrow-nosotros"
             class="w-5 h-5 transition-transform duration-300"
@@ -689,17 +724,17 @@ const simpleInactiveClass =
           <a
             href="/nosotros/vision-historia"
             class="block px-3 py-2 rounded-md text-base font-medium text-primary hover:bg-primary/5 transition-colors"
-            >Visión e Historia</a
+            ><span data-i18n="nav.visionHistoria">Visión e Historia</span></a
           >
           <a
             href="/nosotros/equipo"
             class="block px-3 py-2 rounded-md text-base font-medium text-primary hover:bg-primary/5 transition-colors"
-            >Equipo</a
+            ><span data-i18n="nav.equipoMobile">Equipo</span></a
           >
           <a
             href="/nosotros/enfoque"
             class="block px-3 py-2 rounded-md text-base font-medium text-primary hover:bg-primary/5 transition-colors"
-            >Enfoque de trabajo</a
+            ><span data-i18n="nav.enfoque">Enfoque de trabajo</span></a
           >
         </div>
       </div>
@@ -709,26 +744,57 @@ const simpleInactiveClass =
         class="block px-3 py-3 rounded-md text-base font-medium text-primary hover:bg-primary/5 transition-colors"
         class:list={{
           "bg-primary/5 font-bold": currentPath === "/contacto",
-        }}>Contacto</a
+        }}><span data-i18n="nav.contacto">Contacto</span></a
       >
       <a
         href="/carreras"
         class="block px-3 py-3 rounded-md text-base font-medium text-primary hover:bg-primary/5 transition-colors"
         class:list={{
           "bg-primary/5 font-bold": currentPath === "/carreras",
-        }}>Carreras</a
+        }}><span data-i18n="nav.carreras">Carreras</span></a
       >
       <a
         href="https://milink.competitividadccd.com/login/index.php"
         target="_blank"
         rel="noopener noreferrer"
         class="block px-3 py-3 rounded-md text-base text-primary hover:bg-primary/5 transition-colors"
-        >MiLinkCCD</a
+        ><span data-i18n="nav.milink">MiLinkCCD</span></a
       >
+
+      <!-- ============================================ -->
+      <!-- SELECTOR DE IDIOMA (Móvil)                   -->
+      <!-- ============================================ -->
+      <div class="mt-3 pt-3 border-t border-gray-100">
+        <p
+          class="px-3 pb-1 text-xs font-semibold uppercase tracking-wide text-gray-400"
+          data-i18n="lang.label"
+        >
+          Idioma
+        </p>
+        <div class="flex gap-2 px-3">
+          <button
+            type="button"
+            data-lang-option="es"
+            class="flex-1 px-3 py-2 rounded-md border border-primary/30 text-sm font-medium text-primary hover:bg-primary/5 transition-colors"
+            >Español</button
+          >
+          <button
+            type="button"
+            data-lang-option="en"
+            class="flex-1 px-3 py-2 rounded-md border border-primary/30 text-sm font-medium text-primary hover:bg-primary/5 transition-colors"
+            >English</button
+          >
+        </div>
+      </div>
     </div>
   </div>
 </header>
 <div id="header-spacer" class="h-[72px]"></div>
+
+<!-- Motor de traducción (bundle de Astro, se carga como módulo) -->
+<script>
+  import "../i18n/client.js";
+</script>
 
 <script is:inline>
   // Script Menú Hamburguesa

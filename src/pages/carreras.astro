@@ -481,6 +481,7 @@ const countries = [
             <select
               id="pais"
               name="pais"
+              data-i18n-sort
               required
               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
             >
@@ -602,6 +603,10 @@ const countries = [
 </Layout>
 
 <script>
+  import { t } from "../i18n/translations.js";
+  import { getLang } from "../i18n/client.js";
+  const tt = (key: string) => t(getLang(), key);
+
   // Script para manejar interacciones del DOM
   const countrySelect = document.getElementById("pais") as HTMLSelectElement;
   const provinceContainer = document.getElementById("provinceContainer");
@@ -639,18 +644,14 @@ const countries = [
         const file = this.files[0];
 
         if (file.size > maxSize) {
-          alert(
-            "El archivo es muy grande. Por favor sube un archivo menor a 10MB"
-          );
+          alert(tt("careers.fileTooBig"));
           this.value = "";
           fileNameDisplay.textContent = "";
           return;
         }
-        fileNameDisplay.textContent = `Archivo seleccionado: ${file.name} (${(
-          file.size /
-          1024 /
-          1024
-        ).toFixed(2)}MB)`;
+        fileNameDisplay.textContent = tt("careers.fileSelected")
+          .replace("{name}", file.name)
+          .replace("{size}", (file.size / 1024 / 1024).toFixed(2));
       } else {
         fileNameDisplay.textContent = "";
       }
@@ -664,7 +665,7 @@ const countries = [
 
       const originalText = submitButton.textContent;
       submitButton.disabled = true;
-      submitButton.textContent = "Enviando, por favor espera...";
+      submitButton.textContent = tt("careers.sending");
 
       if (statusMessage) {
         statusMessage.classList.add("hidden");
@@ -684,23 +685,21 @@ const countries = [
 
         if (response.ok) {
           if (statusMessage) {
-            statusMessage.textContent =
-              "¡Gracias por tu candidatura! Nos pondremos en contacto pronto.";
+            statusMessage.textContent = tt("careers.success");
             statusMessage.classList.remove("hidden", "text-red-600");
             statusMessage.classList.add("text-green-600");
           }
           form.reset();
           if (fileNameDisplay) fileNameDisplay.textContent = "";
         } else {
-          throw new Error(result.message || "Error al enviar el formulario.");
+          throw new Error(result.message || tt("careers.errorForm"));
         }
       } catch (error: any) {
         console.error("Error enviando:", error);
         if (statusMessage) {
           statusMessage.textContent =
-            "Error: " +
-            (error?.message ||
-              "Ocurrió un error al enviar el CV. Inténtalo de nuevo más tarde.");
+            tt("careers.errorPrefix") +
+            (error?.message || tt("careers.errorGeneric"));
           statusMessage.classList.remove("hidden", "text-green-600");
           statusMessage.classList.add("text-red-600");
         }

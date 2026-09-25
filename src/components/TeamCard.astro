@@ -34,6 +34,8 @@ const { name, role, image, link, linkedin } = Astro.props;
         <img loading="lazy"
             src={image}
             alt={`Foto de ${name}`}
+            data-i18n-alt="team.photoOf"
+            data-name={name}
             class="h-full w-auto max-w-full object-contain filter grayscale-[10%] group-hover:grayscale-0 transition-all duration-500"
         />
     </div>
@@ -51,7 +53,7 @@ const { name, role, image, link, linkedin } = Astro.props;
             <p
                 class="font-sans text-base text-gray-600 mt-3 font-medium leading-snug line-clamp-2"
             >
-                {role}
+                <span data-i18n={`role.${role}`}>{role}</span>
             </p>
         </div>
 
@@ -65,6 +67,8 @@ const { name, role, image, link, linkedin } = Astro.props;
                             rel="noopener noreferrer"
                             class="text-gray-400 hover:text-[#0A66C2] transition-colors duration-300"
                             title={`LinkedIn de ${name}`}
+                            data-i18n-title="team.linkedinOf"
+                            data-name={name}
                             onclick="event.stopPropagation();"
                         >
                             <svg

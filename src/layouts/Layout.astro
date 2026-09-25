@@ -7,9 +7,13 @@ import Footer from "../components/Footer.astro";
 export interface Props {
   title: string;
   description?: string;
+  titleKey?: string; // clave i18n opcional para <title>
+  descriptionKey?: string; // clave i18n opcional para <meta description>
 }
 
 const {
+  titleKey,
+  descriptionKey,
   title,
   description = "Centro para la Competitividad y el Desarrollo (CCD) - Expertos en soluciones estratégicas para el desarrollo territorial y competitividad regional.",
 } = Astro.props;
@@ -19,7 +23,22 @@ const {
 <html lang="es" class="overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content={description} />
+    <script is:inline>
+      // Fija el idioma guardado lo antes posible (evita parpadeo del <html lang>)
+      (function () {
+        try {
+          var l = localStorage.getItem("ccd-lang");
+          if (l === "es" || l === "en") {
+            document.documentElement.lang = l;
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <meta
+      name="description"
+      content={description}
+      data-i18n-content={descriptionKey}
+    />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
@@ -39,7 +58,7 @@ const {
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="CCD" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <title data-i18n={titleKey}>{title}</title>
     <style is:global>
       img:not(.img-loaded) {
         background-color: #e5e7eb;

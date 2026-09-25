@@ -8,10 +8,12 @@ import { teamMembers } from '../../data/teamData';
 const teamMembersArray = Object.values(teamMembers);
 ---
 
-<Layout title="Nuestro Equipo - CCD">
+<Layout title="Nuestro Equipo - CCD" titleKey="team.meta.title">
     
     <PageHeader 
-        title="Nuestro Equipo" 
+        title="Nuestro Equipo"
+        titleKey="nav.equipo"
+        descriptionKey="team.desc"
         description="Profesionales altamente especializados y comprometidos con impulsar la competitividad y desarrollo comunal, local, regional y nacional."
     />
 
@@ -80,7 +82,7 @@ const teamMembersArray = Object.values(teamMembers);
           </div>
           <p
             class="text-lg md:text-xl text-gray-500 max-w-[220px] tracking-widest font-semibold"
-          >
+           data-i18n="home.stats.years">
             Años de Experiencia
           </p>
         </div>
@@ -115,7 +117,7 @@ const teamMembersArray = Object.values(teamMembers);
           </div>
           <p
             class="text-lg md:text-xl text-gray-500 max-w-[220px] tracking-widest font-semibold"
-          >
+           data-i18n="home.stats.consultants">
             Consultores
           </p>
         </div>
@@ -147,7 +149,7 @@ const teamMembersArray = Object.values(teamMembers);
           </div>
           <p
             class="text-lg md:text-xl text-gray-500 max-w-[220px] tracking-widest font-semibold"
-          >
+           data-i18n="home.stats.projects">
             Proyectos Ejecutados
           </p>
         </div>
@@ -177,7 +179,8 @@ const teamMembersArray = Object.values(teamMembers);
           <p
             class="text-sm md:text-lg text-gray-500 max-w-[200px] tracking-widest font-semibold"
           >
-            Nivel<br /> Países
+            <span data-i18n="home.stats.level">Nivel</span><br />
+            <span data-i18n="home.stats.countries">Países</span>
           </p>
         </div>
 
@@ -201,7 +204,8 @@ const teamMembersArray = Object.values(teamMembers);
           <p
             class="text-sm md:text-lg text-gray-500 max-w-[200px] tracking-widest font-semibold"
           >
-            Nivel<br /> Regiones
+            <span data-i18n="home.stats.level">Nivel</span><br />
+            <span data-i18n="home.stats.regions">Regiones</span>
           </p>
         </div>
 
@@ -225,7 +229,8 @@ const teamMembersArray = Object.values(teamMembers);
           <p
             class="text-sm md:text-lg text-gray-500 max-w-[200px] tracking-widest font-semibold"
           >
-            Nivel<br /> Provincias
+            <span data-i18n="home.stats.level">Nivel</span><br />
+            <span data-i18n="home.stats.provinces">Provincias</span>
           </p>
         </div>
 
@@ -252,7 +257,8 @@ const teamMembersArray = Object.values(teamMembers);
           <p
             class="text-sm md:text-lg text-gray-500 max-w-[200px] tracking-widest font-semibold"
           >
-            Nivel<br /> Distritos
+            <span data-i18n="home.stats.level">Nivel</span><br />
+            <span data-i18n="home.stats.districts">Distritos</span>
           </p>
         </div>
 
@@ -276,7 +282,8 @@ const teamMembersArray = Object.values(teamMembers);
           <p
             class="text-sm md:text-lg text-gray-500 max-w-[200px] tracking-widest font-semibold"
           >
-            Nivel<br /> Comunidades
+            <span data-i18n="home.stats.level">Nivel</span><br />
+            <span data-i18n="home.stats.communities">Comunidades</span>
           </p>
         </div>
       </div>

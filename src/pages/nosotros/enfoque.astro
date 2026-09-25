@@ -3,10 +3,12 @@ import Layout from "../../layouts/Layout.astro";
 import PageHeader from "../../components/PageHeader.astro";
 ---
 
-<Layout title="Enfoque de Trabajo - CCD">
+<Layout title="Enfoque de Trabajo - CCD" titleKey="approach.meta.title">
     <!-- 1. ENCABEZADO REUTILIZABLE -->
     <PageHeader
         title="Enfoque de Trabajo"
+        titleKey="approach.title"
+        descriptionKey="approach.desc"
         description="Promover la competitividad y desarrollo con principios de libertad, persuasión, análisis integral y procesos metodológicos."
     />
 
@@ -16,7 +18,9 @@ import PageHeader from "../../components/PageHeader.astro";
             <div class="max-w-3xl mx-auto">
                 <img loading="lazy"
                     src="/enfoque-trabajo.svg"
+                    data-i18n-src="approach.img1"
                     alt="Gráfico circular de enfoque: Diagnóstico, Intervenciones, Visión, etc."
+                    data-i18n-alt="approach.img1.alt"
                     class="w-full h-auto object-contain mx-auto animate-fade-up"
                 />
             </div>
@@ -31,7 +35,7 @@ import PageHeader from "../../components/PageHeader.astro";
             <!-- Título de la sección -->
             <h2
                 class="text-center font-serif text-4xl md:text-5xl font-bold text-primary mb-16 md:mb-20"
-            >
+             data-i18n="approach.workflow">
                 Flujo de Trabajo
             </h2>
 
@@ -39,7 +43,9 @@ import PageHeader from "../../components/PageHeader.astro";
             <div class="max-w-6xl mx-auto">
                 <img loading="lazy"
                     src="/flujo-trabajo.svg"
+                    data-i18n-src="approach.img2"
                     alt="Diagrama de flujo de trabajo: Planificación, Gestión, Fortalecimiento..."
+                    data-i18n-alt="approach.img2.alt"
                     class="w-full h-auto object-contain mx-auto animate-fade-up delay-200"
                 />
             </div>

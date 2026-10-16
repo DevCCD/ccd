@@ -9,12 +9,46 @@ export interface Props {
   description?: string;
   titleKey?: string; // clave i18n opcional para <title>
   descriptionKey?: string; // clave i18n opcional para <meta description>
+  image?: string; // imagen para Open Graph / Twitter (1200x630)
+  noindex?: boolean; // true: pide a los buscadores no indexar la página
 }
+
+// Imagen por defecto al compartir enlaces (WhatsApp, LinkedIn, X...): recorte 1200x630 del hero
+const DEFAULT_OG_IMAGE =
+  "https://res.cloudinary.com/ccdcloudy/image/upload/c_fill,g_auto,w_1200,h_630,f_jpg,q_auto/v1781890281/Web%20CCD/Portada/HeroHorizontal2_au01zl.png";
+
+// URL canónica: sigue a `site` de astro.config.mjs
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const siteName = "CCD – Centro para la Competitividad y el Desarrollo";
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Centro para la Competitividad y el Desarrollo",
+  alternateName: "CCD",
+  url: new URL("/", Astro.site).href,
+  logo: new URL("/icons/web-app-manifest-512x512.png", Astro.site).href,
+  telephone: "+51922753771",
+  email: "administracion@competitividadccd.com",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Calle German Schreiber 276",
+    addressLocality: "San Isidro, Lima",
+    addressCountry: "PE",
+  },
+  sameAs: [
+    "https://pe.linkedin.com/company/ccdcompetitividad",
+    "https://x.com/CentroCCD",
+    "https://www.facebook.com/profile.php?id=100063956947676",
+  ],
+};
 
 const {
   titleKey,
   descriptionKey,
   title,
+  image = DEFAULT_OG_IMAGE,
+  noindex = false,
   description = "Centro para la Competitividad y el Desarrollo (CCD) - Expertos en soluciones estratégicas para el desarrollo territorial y competitividad regional.",
 } = Astro.props;
 ---
@@ -41,7 +75,7 @@ const {
     />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+      content="width=device-width, initial-scale=1.0"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -50,14 +84,30 @@ const {
       rel="stylesheet"
     />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
     <link rel="manifest" href="/manifest.json" />
     <meta name="theme-color" content="#910121" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="CCD" />
     <meta name="generator" content={Astro.generator} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:title" content={title} data-i18n-content={titleKey} />
+    <meta property="og:description" content={description} data-i18n-content={descriptionKey} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={image} />
+    <meta property="og:locale" content="es_PE" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} data-i18n-content={titleKey} />
+    <meta name="twitter:description" content={description} data-i18n-content={descriptionKey} />
+    <meta name="twitter:image" content={image} />
+    <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
     <title data-i18n={titleKey}>{title}</title>
     <style is:global>
       img:not(.img-loaded) {

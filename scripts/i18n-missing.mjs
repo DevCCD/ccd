@@ -44,7 +44,8 @@ function htmlFiles(dir) {
   return fs.readdirSync(dir, { withFileTypes: true }).flatMap((e) => {
     const p = path.join(dir, e.name);
     if (e.isDirectory()) return e.name === "_astro" ? [] : htmlFiles(p);
-    return e.name.endsWith(".html") ? [p] : [];
+    // offline.html es estática y trae su propio inglés incorporado
+    return e.name.endsWith(".html") && e.name !== "offline.html" ? [p] : [];
   });
 }
 

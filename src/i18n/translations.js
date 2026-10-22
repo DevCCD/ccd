@@ -254,6 +254,13 @@ export const translations = {
       "Error al enviar el formulario.",
     "careers.errorGeneric":
       "Ocurrió un error al enviar el CV. Inténtalo de nuevo más tarde.",
+
+    // --- Aviso de instalación (PWA) ---
+    "install.title": "Instala la app de CCD",
+    "install.text": "Accede más rápido desde tu pantalla de inicio.",
+    "install.button": "Instalar",
+    "install.close": "Cerrar",
+    "install.ios": "Toca Compartir y luego «Añadir a pantalla de inicio».",
   },
 
   en: {
@@ -487,6 +494,13 @@ export const translations = {
       "Error submitting the form.",
     "careers.errorGeneric":
       "An error occurred while submitting your CV. Please try again later.",
+
+    // --- Aviso de instalación (PWA) ---
+    "install.title": "Install the CCD app",
+    "install.text": "Get faster access from your home screen.",
+    "install.button": "Install",
+    "install.close": "Close",
+    "install.ios": "Tap Share, then “Add to Home Screen”.",
   },
 };
 

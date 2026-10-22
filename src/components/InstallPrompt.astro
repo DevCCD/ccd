@@ -1,0 +1,173 @@
+---
+// Aviso para instalar la PWA.
+// - Chrome / Edge (Android y escritorio): usa el evento `beforeinstallprompt`
+//   y abre el diálogo nativo de instalación al pulsar "Instalar".
+// - Safari en iPhone/iPad: no existe ese evento, así que muestra las
+//   instrucciones de "Añadir a pantalla de inicio".
+// - No aparece si la app ya está instalada ni durante 30 días tras cerrarlo.
+// Para que salga con retraso (p. ej. tras 30 s) cambia SHOW_DELAY_MS.
+---
+
+<div
+  id="install-banner"
+  role="dialog"
+  aria-live="polite"
+  data-i18n-aria-label="install.title"
+  aria-label="Instala la app de CCD"
+  class="hidden fixed inset-x-0 bottom-0 z-[60] translate-y-full transition-transform duration-500 ease-out bg-white border-t-4 border-primary shadow-[0_-8px_30px_rgba(0,0,0,0.15)]"
+>
+  <div
+    class="container mx-auto px-4 sm:px-6 py-4 flex items-center gap-4"
+  >
+    <img
+      src="/icons/favicon-96x96.png"
+      alt=""
+      width="48"
+      height="48"
+      class="w-12 h-12 flex-shrink-0"
+    />
+
+    <div class="flex-1 min-w-0">
+      <p
+        class="font-serif font-bold text-gray-900 leading-tight"
+        data-i18n="install.title"
+      >
+        Instala la app de CCD
+      </p>
+      <p
+        id="install-text-prompt"
+        class="text-sm text-gray-600 mt-0.5"
+        data-i18n="install.text"
+      >
+        Accede más rápido desde tu pantalla de inicio.
+      </p>
+      <p
+        id="install-text-ios"
+        class="hidden text-sm text-gray-600 mt-0.5"
+        data-i18n="install.ios"
+      >
+        Toca Compartir y luego «Añadir a pantalla de inicio».
+      </p>
+    </div>
+
+    <button
+      id="install-button"
+      type="button"
+      class="flex-shrink-0 bg-primary hover:bg-primary-dark text-white font-bold px-5 py-2.5 transition-colors"
+      data-i18n="install.button"
+    >
+      Instalar
+    </button>
+
+    <button
+      id="install-close"
+      type="button"
+      class="flex-shrink-0 p-2 text-gray-400 hover:text-gray-700 transition-colors"
+      aria-label="Cerrar"
+      data-i18n-aria-label="install.close"
+    >
+      <svg
+        class="w-5 h-5"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<script is:inline>
+  (function () {
+    var KEY = "ccd-install-dismissed"; // marca de tiempo del último cierre
+    var HIDE_DAYS = 30; // días sin volver a mostrarlo tras cerrarlo
+    var SHOW_DELAY_MS = 1500; // 0 = inmediato; p. ej. 30000 para salir tras 30 s
+
+    var banner = document.getElementById("install-banner");
+    var installBtn = document.getElementById("install-button");
+    var closeBtn = document.getElementById("install-close");
+    var textPrompt = document.getElementById("install-text-prompt");
+    var textIos = document.getElementById("install-text-ios");
+    if (!banner) return;
+
+    function isInstalled() {
+      return (
+        window.matchMedia("(display-mode: standalone)").matches ||
+        window.navigator.standalone === true
+      );
+    }
+    function recentlyDismissed() {
+      try {
+        var t = parseInt(localStorage.getItem(KEY) || "0", 10);
+        return t > 0 && Date.now() - t < HIDE_DAYS * 86400000;
+      } catch (e) {
+        return false;
+      }
+    }
+    function remember() {
+      try {
+        localStorage.setItem(KEY, String(Date.now()));
+      } catch (e) {}
+    }
+
+    if (isInstalled() || recentlyDismissed()) return;
+
+    function show(mode) {
+      var ios = mode === "ios";
+      installBtn.classList.toggle("hidden", ios);
+      textPrompt.classList.toggle("hidden", ios);
+      textIos.classList.toggle("hidden", !ios);
+      setTimeout(function () {
+        banner.classList.remove("hidden");
+        void banner.offsetWidth; // fuerza el reflujo para animar la entrada
+        banner.classList.remove("translate-y-full");
+      }, SHOW_DELAY_MS);
+    }
+    function hide() {
+      banner.classList.add("translate-y-full");
+      setTimeout(function () {
+        banner.classList.add("hidden");
+      }, 500);
+    }
+
+    // --- Chrome / Edge: diálogo nativo ---
+    var deferred = null;
+    window.addEventListener("beforeinstallprompt", function (e) {
+      e.preventDefault();
+      deferred = e;
+      show("prompt");
+    });
+    window.addEventListener("appinstalled", function () {
+      deferred = null;
+      remember();
+      hide();
+    });
+    installBtn.addEventListener("click", function () {
+      if (!deferred) return;
+      deferred.prompt();
+      deferred.userChoice.then(function (choice) {
+        deferred = null;
+        if (choice && choice.outcome === "dismissed") remember();
+        hide();
+      });
+    });
+    closeBtn.addEventListener("click", function () {
+      remember();
+      hide();
+    });
+
+    // --- Safari en iPhone/iPad: instrucciones manuales ---
+    var ua = navigator.userAgent;
+    var isIOS =
+      /iphone|ipad|ipod/i.test(ua) ||
+      (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+    var isSafari = /safari/i.test(ua) && !/crios|fxios|edgios|opios/i.test(ua);
+    if (isIOS && isSafari) show("ios");
+  })();
+</script>

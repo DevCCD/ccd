@@ -256,11 +256,11 @@ export const translations = {
       "Ocurrió un error al enviar el CV. Inténtalo de nuevo más tarde.",
 
     // --- Aviso de instalación (PWA) ---
-    "install.title": "Instala la app de CCD",
+    "install.title": "Instala la App del CCD",
     "install.text": "Accede más rápido desde tu pantalla de inicio.",
     "install.button": "Instalar",
     "install.close": "Cerrar",
-    "install.ios": "Toca Compartir y luego «Añadir a pantalla de inicio».",
+    "install.ios": "Toca Compartir y luego «Añadir a Inicio».",
   },
 
   en: {
@@ -496,7 +496,7 @@ export const translations = {
       "An error occurred while submitting your CV. Please try again later.",
 
     // --- Aviso de instalación (PWA) ---
-    "install.title": "Install the CCD app",
+    "install.title": "Install the CCD App",
     "install.text": "Get faster access from your home screen.",
     "install.button": "Install",
     "install.close": "Close",
